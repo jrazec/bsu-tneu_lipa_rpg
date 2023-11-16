@@ -12,18 +12,29 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Sign_up : Form
     {
+        public static Sign_up instance;
         public Sign_up()
         {
             InitializeComponent();
+            instance = this;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String srCode, fName, lName, pass, gender, passValidator;
+            String srCode = Crt_sr_code_tbox.Text;
+            String fName = Crt_first_name_tbox.Text;
+            String lName = Crt_last_name_tbox.Text;
+            String gender = Crt_gender_tbox.Text;
+            String pass = Crt_password_tbox.Text;
+            String passValidator = password_validator_tbox.Text;
 
-            if(String.IsNullOrEmpty(Crt_sr_code_tbox.Text))
+            if(String.IsNullOrEmpty(srCode) && String.IsNullOrEmpty(fName) && String.IsNullOrEmpty(lName) && String.IsNullOrEmpty(pass) && String.IsNullOrEmpty(passValidator))
+            {//try catch part
+                MessageBox.Show("Enter values to empty!");
+            }
+            else
             {
-                MessageBox.Show("nice");
+
             }
         }
     }

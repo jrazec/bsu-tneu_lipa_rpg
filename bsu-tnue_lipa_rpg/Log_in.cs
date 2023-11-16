@@ -12,9 +12,11 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Log_in : Form
     {
+        public static Log_in instance;
         public Log_in()
         {
             InitializeComponent();
+            instance = this; 
         }
 
         private void back_btn_Click(object sender, EventArgs e)

@@ -41,3 +41,5 @@ C:\Users\JOHN RAZEC\source\repos\bsu-tnue_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\b
 C:\Users\JOHN RAZEC\source\repos\bsu-tnue_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu-tnue_lipa_rpg.csproj.CopyComplete
 C:\Users\JOHN RAZEC\source\repos\bsu-tnue_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu-tnue_lipa_rpg.exe
 C:\Users\JOHN RAZEC\source\repos\bsu-tnue_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu-tnue_lipa_rpg.pdb
+C:\Users\JOHN RAZEC\source\repos\bsu-tnue_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu_tnue_lipa_rpg.Log_in.resources
+C:\Users\JOHN RAZEC\source\repos\bsu-tnue_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu_tnue_lipa_rpg.Sign_up.resources

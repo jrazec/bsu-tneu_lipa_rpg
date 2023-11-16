@@ -13,9 +13,11 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Form1 : Form
     {
+        public static Form1 instance;
         public Form1()
         {
             InitializeComponent();
+            instance = this;
             string mysqlConn= "server=127.0.0.1; user=root; database=bsu-tnue_lipa_rpg_database; password=";
             MySqlConnection mysqlConnection = new MySqlConnection(mysqlConn);
             try
