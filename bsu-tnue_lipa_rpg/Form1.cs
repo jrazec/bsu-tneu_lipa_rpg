@@ -21,11 +21,11 @@ namespace bsu_tnue_lipa_rpg
             try
             {
                 mysqlConnection.Open();
-                MessageBox.Show("Ni open mo na sya dili na error!! nakuha mo man ui!");
+                MessageBox.Show("Success");
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message + "Dili sya success :< kasi pinatai mo man ung xamp ui!");//will show the eror
+                MessageBox.Show(ex.Message);//will show the eror
             }
             finally
             {
@@ -37,6 +37,14 @@ namespace bsu_tnue_lipa_rpg
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Log_in logInWindow = new Log_in();
+            this.Hide();
+            logInWindow.Show();
+            
         }
     }
 }
