@@ -16,5 +16,15 @@ namespace bsu_tnue_lipa_rpg
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            String srCode, fName, lName, pass, gender, passValidator;
+
+            if(String.IsNullOrEmpty(Crt_sr_code_tbox.Text))
+            {
+                MessageBox.Show("nice");
+            }
+        }
     }
 }

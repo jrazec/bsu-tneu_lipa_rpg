@@ -46,5 +46,12 @@ namespace bsu_tnue_lipa_rpg
             logInWindow.Show();
             
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Sign_up signUpWindow = new Sign_up();
+            this.Hide();
+            signUpWindow.Show();
+        }
     }
 }
