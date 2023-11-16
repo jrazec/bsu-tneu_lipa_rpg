@@ -26,7 +26,7 @@ namespace bsu_tnue_lipa_rpg
             String pass = Crt_password_tbox.Text;
             String passValidator = password_validator_tbox.Text;
 
-            if(String.IsNullOrEmpty(srCode) && String.IsNullOrEmpty(fName) && String.IsNullOrEmpty(lName) && String.IsNullOrEmpty(pass) && String.IsNullOrEmpty(passValidator))
+            if(String.IsNullOrEmpty(srCode) || String.IsNullOrEmpty(fName) || String.IsNullOrEmpty(lName) || String.IsNullOrEmpty(pass) || String.IsNullOrEmpty(passValidator))
             {//try catch part
                 MessageBox.Show("Enter values to empty!");
             }
