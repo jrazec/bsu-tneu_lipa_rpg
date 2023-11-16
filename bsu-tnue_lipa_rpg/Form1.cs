@@ -23,11 +23,13 @@ namespace bsu_tnue_lipa_rpg
             try
             {
                 mysqlConnection.Open();
-                MessageBox.Show("Success");
+                //MessageBox.Show("Success");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);//will show the eror
+                //mysqlConnection.Close();
+                //this.Close();
             }
             finally
             {
@@ -43,17 +45,18 @@ namespace bsu_tnue_lipa_rpg
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Log_in logInWindow = new Log_in();
             this.Hide();
-            logInWindow.Show();
-            
+            Log_in logIn = new Log_in();
+            logIn.ShowDialog();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Sign_up signUpWindow = new Sign_up();
             this.Hide();
-            signUpWindow.Show();
+            Sign_up signUp = new Sign_up();
+            signUp.ShowDialog();
+            this.Close();
         }
     }
 }

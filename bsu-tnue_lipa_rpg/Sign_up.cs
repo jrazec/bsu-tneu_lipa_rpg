@@ -12,11 +12,9 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Sign_up : Form
     {
-        public static Sign_up instance;
         public Sign_up()
         {
             InitializeComponent();
-            instance = this;
         }
 
         private void button2_Click(object sender, EventArgs e)

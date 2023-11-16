@@ -12,17 +12,18 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Log_in : Form
     {
-        public static Log_in instance;
         public Log_in()
         {
             InitializeComponent();
-            instance = this; 
         }
 
         private void back_btn_Click(object sender, EventArgs e)
         {
-            Form1 mainWindow = new Form1();//not sure here, seems leik wrong
-            mainWindow.Show();
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
+            this.Close();
+          
         }
     }
 }
