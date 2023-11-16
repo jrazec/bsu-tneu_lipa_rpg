@@ -18,21 +18,21 @@ namespace bsu_tnue_lipa_rpg
         {
             InitializeComponent();
             instance = this;
-            string mysqlConn= "server=127.0.0.1; user=root; database=bsu-tnue_lipa_rpg_database; password=";
+            string mysqlConn= "server=127.0.0.1; user=root; database=bsu-tnue_lipa_rpg_database; password=";//cam create a function for this
             MySqlConnection mysqlConnection = new MySqlConnection(mysqlConn);
             try
-            {
+            {//try to open the sql connection
                 mysqlConnection.Open();
                 //MessageBox.Show("Success");
             }
             catch (Exception ex)
-            {
+            {//if uncessecful, will show what error it is and will be stored in the ex var
                 MessageBox.Show(ex.Message);//will show the eror
                 //mysqlConnection.Close();
                 //this.Close();
             }
             finally
-            {
+            {//after try OR catch is done, this will prosecute
                 mysqlConnection.Close();
 
             }
