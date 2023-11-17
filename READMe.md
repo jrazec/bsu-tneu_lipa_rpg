@@ -4,9 +4,12 @@ To Run the Application, please follow the instructions below:
 
 ## MUST HAVEs BEFORE TO ACCESS THE GAME
 -Computer DEVICES ONLY
+
 -XAMPP application
 (if you dont have this yet, it is important so please download it here first: https://hanapinmosagoogle.com)
+
 -At Least (2gb of space)
+
 -...
 ## INSTRUCTIONS
 1. Download the zip file of this repository
