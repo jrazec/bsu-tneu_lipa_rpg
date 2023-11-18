@@ -33,6 +33,7 @@
             this.password_tbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.back_btn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // sr_code_tbox
@@ -71,17 +72,27 @@
             // 
             this.back_btn.Location = new System.Drawing.Point(245, 198);
             this.back_btn.Name = "back_btn";
-            this.back_btn.Size = new System.Drawing.Size(75, 23);
+            this.back_btn.Size = new System.Drawing.Size(75, 31);
             this.back_btn.TabIndex = 4;
             this.back_btn.Text = "back";
             this.back_btn.UseVisualStyleBackColor = true;
             this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(353, 198);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(83, 31);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Log-in";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Log_in
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.back_btn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.password_tbox);
@@ -101,5 +112,6 @@
         private System.Windows.Forms.TextBox password_tbox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button back_btn;
+        private System.Windows.Forms.Button button1;
     }
 }

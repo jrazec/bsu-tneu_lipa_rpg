@@ -23,7 +23,6 @@ namespace bsu_tnue_lipa_rpg
             Form1 f1 = new Form1();
             f1.ShowDialog();
             this.Close();
-  
         }
     }
 }
