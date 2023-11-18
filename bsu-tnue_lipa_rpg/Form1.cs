@@ -30,7 +30,7 @@ namespace bsu_tnue_lipa_rpg
             instance = this;
         }
 
-        private void login_btn_Click(object sender, EventArgs e)
+        private void loginAcc_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
             Log_in logIn = new Log_in();
@@ -38,7 +38,7 @@ namespace bsu_tnue_lipa_rpg
             this.Close();
         }
 
-        private void sign_up_btn_Click(object sender, EventArgs e)
+        private void signupAcc_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
             Sign_up signUp = new Sign_up();

@@ -24,5 +24,10 @@ namespace bsu_tnue_lipa_rpg
             f1.ShowDialog();
             this.Close();
         }
+
+        private void login_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

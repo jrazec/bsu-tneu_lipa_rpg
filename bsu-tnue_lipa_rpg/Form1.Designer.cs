@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.login_btn = new System.Windows.Forms.Button();
-            this.sign_up_btn = new System.Windows.Forms.Button();
+            this.loginAcc_btn = new System.Windows.Forms.Button();
+            this.signupAcc_btn = new System.Windows.Forms.Button();
             this.set_up_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // login_btn
+            // loginAcc_btn
             // 
-            this.login_btn.Location = new System.Drawing.Point(255, 133);
-            this.login_btn.Name = "login_btn";
-            this.login_btn.Size = new System.Drawing.Size(347, 78);
-            this.login_btn.TabIndex = 1;
-            this.login_btn.Text = "Log-in";
-            this.login_btn.UseVisualStyleBackColor = true;
-            this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
+            this.loginAcc_btn.Location = new System.Drawing.Point(255, 133);
+            this.loginAcc_btn.Name = "loginAcc_btn";
+            this.loginAcc_btn.Size = new System.Drawing.Size(347, 78);
+            this.loginAcc_btn.TabIndex = 1;
+            this.loginAcc_btn.Text = "Log-in Account";
+            this.loginAcc_btn.UseVisualStyleBackColor = true;
+            this.loginAcc_btn.Click += new System.EventHandler(this.loginAcc_btn_Click);
             // 
-            // sign_up_btn
+            // signupAcc_btn
             // 
-            this.sign_up_btn.Location = new System.Drawing.Point(255, 230);
-            this.sign_up_btn.Name = "sign_up_btn";
-            this.sign_up_btn.Size = new System.Drawing.Size(347, 77);
-            this.sign_up_btn.TabIndex = 2;
-            this.sign_up_btn.Text = "Sign-up";
-            this.sign_up_btn.UseVisualStyleBackColor = true;
-            this.sign_up_btn.Click += new System.EventHandler(this.sign_up_btn_Click);
+            this.signupAcc_btn.Location = new System.Drawing.Point(255, 230);
+            this.signupAcc_btn.Name = "signupAcc_btn";
+            this.signupAcc_btn.Size = new System.Drawing.Size(347, 77);
+            this.signupAcc_btn.TabIndex = 2;
+            this.signupAcc_btn.Text = "Create Account";
+            this.signupAcc_btn.UseVisualStyleBackColor = true;
+            this.signupAcc_btn.Click += new System.EventHandler(this.signupAcc_btn_Click);
             // 
             // set_up_btn
             // 
@@ -80,8 +80,8 @@
             this.ClientSize = new System.Drawing.Size(835, 484);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.set_up_btn);
-            this.Controls.Add(this.sign_up_btn);
-            this.Controls.Add(this.login_btn);
+            this.Controls.Add(this.signupAcc_btn);
+            this.Controls.Add(this.loginAcc_btn);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -92,8 +92,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button login_btn;
-        private System.Windows.Forms.Button sign_up_btn;
+        private System.Windows.Forms.Button loginAcc_btn;
+        private System.Windows.Forms.Button signupAcc_btn;
         private System.Windows.Forms.Button set_up_btn;
         private System.Windows.Forms.Label label1;
     }
