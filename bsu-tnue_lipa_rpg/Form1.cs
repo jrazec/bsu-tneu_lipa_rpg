@@ -19,9 +19,10 @@ namespace bsu_tnue_lipa_rpg
         const string dBase = "bsu_lipa_rpg_database";//database that you will connect
         //---------Created a delgate void function inorder to allow the callback function to be stored in a variable as wel as used in a parameter
         public delegate void callback();
-        private string fMysqlConn = $"server=127.0.0.1; user=root;password=";//FOR FIRST TIME DATABASE CREATION
+        
 
         public static string mysqlConn = $"server=127.0.0.1; user=root; database={dBase}; password=";//For general use for CRUD operations
+        private string fMysqlConn = $"server=127.0.0.1; user=root;password=";//FOR FIRST TIME DATABASE CREATION
         private void setUpDatabase_Tables()//will only use in this forms once
         {
             MySqlConnection FmysqlConnection = new MySqlConnection(fMysqlConn);//for db
