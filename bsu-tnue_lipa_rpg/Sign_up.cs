@@ -29,22 +29,34 @@ namespace bsu_tnue_lipa_rpg
 
             if(String.IsNullOrEmpty(srCode) || String.IsNullOrEmpty(fName) || String.IsNullOrEmpty(lName) || String.IsNullOrEmpty(pass) || String.IsNullOrEmpty(passValidator))
             {//try catch part; if one of the values above is empty, then the following action wont prosecute or be saved in the database
-                MessageBox.Show("Enter values to empty!");
+                MessageBox.Show("Enter valid values!");
                 
             }
             else
             {
                 if (pass == passValidator)
                 {//used this to make sure that the user is sure of his/her password
-                    //WILL MAKE A FUNCTION TO EASILY ACCESS THE CONNECTIONS!
-                    string mysqlConn = "server=127.0.0.1; user=root; database=bsu-tnue_lipa_rpg_database; password=";//will use try catch here
-                    MySqlConnection mySqlConnection = new MySqlConnection(mysqlConn);
-                    mySqlConnection.Open();
-                    string insertStudent = $"INSERT INTO students(sr_code,password,gender,first_name,last_name) VALUES('{srCode}','{pass}','{gender}','{fName}','{lName}')";//gender and in_game_name could be null, ign will be added on the gameplay
-                    MySqlCommand ins = new MySqlCommand(insertStudent, mySqlConnection);
-                    ins.ExecuteNonQuery();
-                    MessageBox.Show("Account Saved.");
-                    mySqlConnection.Close();
+                    MySqlConnection mySqlConnection = new MySqlConnection(Form1.mysqlConn);
+                    //---This will register the students input to the students table, along with it will be the predefined data
+                    // and records.
+                    try
+                    { 
+                        mySqlConnection.Open();
+                        string insertStudent = $@"INSERT INTO students(sr_code,password,gender,first_name,last_name) 
+                                              VALUES('{srCode}','{pass}','{gender}','{fName}','{lName}');";
+                        MySqlCommand insStudRecCmd = new MySqlCommand(insertStudent, mySqlConnection);
+                        insStudRecCmd.ExecuteNonQuery();
+                        MessageBox.Show("Account Saved.");
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                        mySqlConnection.Close();
+                    }
+                    
                 }
                 else
                 {
