@@ -52,6 +52,7 @@
             // signupAcc_btn
             // 
             this.signupAcc_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.signupAcc_btn.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupAcc_btn.Location = new System.Drawing.Point(351, 345);
             this.signupAcc_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.signupAcc_btn.Name = "signupAcc_btn";
@@ -92,6 +93,7 @@
             this.Controls.Add(this.signupAcc_btn);
             this.Controls.Add(this.loginAcc_btn);
             this.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
