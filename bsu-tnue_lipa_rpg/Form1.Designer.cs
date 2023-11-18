@@ -36,12 +36,13 @@
             // 
             // loginAcc_btn
             // 
+            this.loginAcc_btn.BackColor = System.Drawing.Color.Maroon;
             this.loginAcc_btn.Location = new System.Drawing.Point(255, 133);
             this.loginAcc_btn.Name = "loginAcc_btn";
             this.loginAcc_btn.Size = new System.Drawing.Size(347, 78);
             this.loginAcc_btn.TabIndex = 1;
             this.loginAcc_btn.Text = "Log-in Account";
-            this.loginAcc_btn.UseVisualStyleBackColor = true;
+            this.loginAcc_btn.UseVisualStyleBackColor = false;
             this.loginAcc_btn.Click += new System.EventHandler(this.loginAcc_btn_Click);
             // 
             // signupAcc_btn
