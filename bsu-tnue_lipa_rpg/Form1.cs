@@ -219,5 +219,10 @@ namespace bsu_tnue_lipa_rpg
             }
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
