@@ -83,6 +83,7 @@ namespace bsu_tnue_lipa_rpg.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap loginpng {
             get {
                 object obj = ResourceManager.GetObject("loginpng", resourceCulture);
@@ -116,6 +117,11 @@ namespace bsu_tnue_lipa_rpg.Properties {
         internal static System.Drawing.Bitmap sub_title {
             get {
                 object obj = ResourceManager.GetObject("sub_title", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap SIGNUPPNG {
+            get {
+                object obj = ResourceManager.GetObject("SIGNUPPNG", resourceCulture);
+>>>>>>> feat/sign_up
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
