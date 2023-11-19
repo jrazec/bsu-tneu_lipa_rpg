@@ -22,7 +22,9 @@ namespace bsu_tnue_lipa_rpg
         
         public static string mysqlConn = $"server=127.0.0.1; user=root; database={dBase}; password=";//For general use for CRUD operations
         private string fMysqlConn = $"server=127.0.0.1; user=root;password=";//FOR FIRST TIME DATABASE CREATION
-       
+
+        public static string STUDENT_USER_SR_CODE;
+
         public static Form1 instance;
         public Form1()
         {

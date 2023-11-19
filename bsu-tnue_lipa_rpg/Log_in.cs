@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,7 +28,48 @@ namespace bsu_tnue_lipa_rpg
 
         private void login_btn_Click(object sender, EventArgs e)
         {
+            checkAccount();
+        }
+        private void checkAccount()
+        {//this will query if the account is existing, then will return name
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
+            string srCode = sr_code_tbox.Text;
+            string password = password_tbox.Text;
 
+            string slctSrCodePassword = $@"
+                SELECT sr_code, password
+                FROM students
+                WHERE sr_code = '{srCode}' AND password = '{password}'";
+
+            try
+            {
+                mysqlConnection.Open();
+                MySqlDataAdapter slctSrPassCmd = new MySqlDataAdapter(slctSrCodePassword, mysqlConnection);
+
+                DataTable dt = new DataTable();
+                slctSrPassCmd.Fill(dt);
+
+                //Try to find a better solution here para macheck ung values ng row
+                //If there is a way to check the value of dt.Row 
+                if (dt.Rows.Count == 1)//if makikita ung sr code nya na nag iisa naman
+                {
+                    Form1.STUDENT_USER_SR_CODE = srCode;
+                    login_btn.Text = Form1.STUDENT_USER_SR_CODE;
+                    MessageBox.Show("Log-in Success");
+                }
+                else//if walang magpopop up na query, ito lalabas
+                {
+                    MessageBox.Show("Invalid Log-in Credentials", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                mysqlConnection.Close();
+            }
         }
     }
 }
