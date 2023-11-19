@@ -160,5 +160,17 @@
   <ItemGroup>
     <None Include="Resources\Exit Icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sub title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upper main title dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\low.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
