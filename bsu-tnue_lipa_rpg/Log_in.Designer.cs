@@ -34,8 +34,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.back_btn = new System.Windows.Forms.Button();
             this.login_btn = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -43,7 +46,7 @@
             // sr_code_tbox
             // 
             this.sr_code_tbox.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sr_code_tbox.Location = new System.Drawing.Point(439, 211);
+            this.sr_code_tbox.Location = new System.Drawing.Point(439, 262);
             this.sr_code_tbox.Name = "sr_code_tbox";
             this.sr_code_tbox.Size = new System.Drawing.Size(272, 39);
             this.sr_code_tbox.TabIndex = 0;
@@ -51,18 +54,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(526, 253);
+            this.label1.Location = new System.Drawing.Point(540, 304);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 28);
+            this.label1.Size = new System.Drawing.Size(71, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "SR CODE";
             // 
             // password_tbox
             // 
             this.password_tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password_tbox.Location = new System.Drawing.Point(439, 312);
+            this.password_tbox.Location = new System.Drawing.Point(439, 345);
             this.password_tbox.Name = "password_tbox";
             this.password_tbox.Size = new System.Drawing.Size(272, 38);
             this.password_tbox.TabIndex = 2;
@@ -70,19 +73,19 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(515, 354);
+            this.label2.Location = new System.Drawing.Point(531, 387);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 28);
+            this.label2.Size = new System.Drawing.Size(89, 22);
             this.label2.TabIndex = 3;
-            this.label2.Text = "PASSOWRD";
+            this.label2.Text = "PASSWORD";
             // 
             // back_btn
             // 
             this.back_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.back_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back_btn.Location = new System.Drawing.Point(464, 451);
+            this.back_btn.Location = new System.Drawing.Point(464, 474);
             this.back_btn.Name = "back_btn";
             this.back_btn.Size = new System.Drawing.Size(97, 38);
             this.back_btn.TabIndex = 4;
@@ -94,13 +97,34 @@
             // 
             this.login_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_btn.Location = new System.Drawing.Point(582, 451);
+            this.login_btn.Location = new System.Drawing.Point(582, 474);
             this.login_btn.Name = "login_btn";
             this.login_btn.Size = new System.Drawing.Size(105, 38);
             this.login_btn.TabIndex = 5;
             this.login_btn.Text = "LOGIN";
             this.login_btn.UseVisualStyleBackColor = true;
             this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(43, 604);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 26);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "RazBerYie";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.loginpng;
+            this.pictureBox3.Location = new System.Drawing.Point(370, 95);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(410, 116);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -128,6 +152,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.login_btn);
@@ -140,6 +166,7 @@
             this.Name = "Log_in";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log_in";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -157,5 +184,7 @@
         private System.Windows.Forms.Button login_btn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
