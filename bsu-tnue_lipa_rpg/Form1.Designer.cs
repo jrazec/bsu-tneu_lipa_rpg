@@ -33,7 +33,10 @@
             this.set_up_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.company = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.exit_pbox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,10 +46,10 @@
             this.loginAcc_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginAcc_btn.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginAcc_btn.ForeColor = System.Drawing.Color.Black;
-            this.loginAcc_btn.Location = new System.Drawing.Point(358, 318);
+            this.loginAcc_btn.Location = new System.Drawing.Point(369, 350);
             this.loginAcc_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginAcc_btn.Name = "loginAcc_btn";
-            this.loginAcc_btn.Size = new System.Drawing.Size(428, 89);
+            this.loginAcc_btn.Size = new System.Drawing.Size(413, 76);
             this.loginAcc_btn.TabIndex = 1;
             this.loginAcc_btn.Text = "LOGIN ACCOUNT";
             this.loginAcc_btn.UseVisualStyleBackColor = false;
@@ -58,10 +61,10 @@
             this.signupAcc_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signupAcc_btn.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupAcc_btn.ForeColor = System.Drawing.Color.White;
-            this.signupAcc_btn.Location = new System.Drawing.Point(358, 438);
+            this.signupAcc_btn.Location = new System.Drawing.Point(369, 443);
             this.signupAcc_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.signupAcc_btn.Name = "signupAcc_btn";
-            this.signupAcc_btn.Size = new System.Drawing.Size(428, 88);
+            this.signupAcc_btn.Size = new System.Drawing.Size(413, 75);
             this.signupAcc_btn.TabIndex = 2;
             this.signupAcc_btn.Text = "Create Account";
             this.signupAcc_btn.UseVisualStyleBackColor = false;
@@ -103,6 +106,27 @@
             this.company.TabIndex = 5;
             this.company.Text = "RazBerYie";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label2.Location = new System.Drawing.Point(531, 535);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "version 0.1";
+            // 
+            // exit_pbox
+            // 
+            this.exit_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Exit_Icon;
+            this.exit_pbox.Location = new System.Drawing.Point(1103, 12);
+            this.exit_pbox.Name = "exit_pbox";
+            this.exit_pbox.Size = new System.Drawing.Size(35, 31);
+            this.exit_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exit_pbox.TabIndex = 8;
+            this.exit_pbox.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._111_01;
@@ -119,6 +143,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.exit_pbox);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.company);
             this.Controls.Add(this.set_up_btn);
@@ -132,6 +158,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.exit_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -146,6 +173,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label company;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox exit_pbox;
     }
 }
 
