@@ -83,39 +83,9 @@ namespace bsu_tnue_lipa_rpg.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap low {
+        internal static System.Drawing.Bitmap loginpng {
             get {
-                object obj = ResourceManager.GetObject("low", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap main_title {
-            get {
-                object obj = ResourceManager.GetObject("main title", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sub_title {
-            get {
-                object obj = ResourceManager.GetObject("sub title", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap upper_main_title_dark {
-            get {
-                object obj = ResourceManager.GetObject("upper main title dark", resourceCulture);
+                object obj = ResourceManager.GetObject("loginpng", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

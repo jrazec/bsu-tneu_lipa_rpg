@@ -155,22 +155,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\111-01.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Exit Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\main title.png" />
+    <None Include="Resources\111-01.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sub title.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\upper main title dark.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\low.png" />
+    <None Include="Resources\loginpng.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
