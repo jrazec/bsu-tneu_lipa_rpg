@@ -34,6 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.back_btn = new System.Windows.Forms.Button();
             this.login_btn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sr_code_tbox
@@ -96,12 +98,23 @@
             this.login_btn.UseVisualStyleBackColor = true;
             this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Exit_Icon;
+            this.pictureBox1.Location = new System.Drawing.Point(1102, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(37, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // Log_in
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.login_btn);
             this.Controls.Add(this.back_btn);
             this.Controls.Add(this.label2);
@@ -111,6 +124,7 @@
             this.Name = "Log_in";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log_in";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,5 +138,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button back_btn;
         private System.Windows.Forms.Button login_btn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
