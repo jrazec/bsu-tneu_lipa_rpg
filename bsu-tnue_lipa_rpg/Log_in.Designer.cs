@@ -38,53 +38,61 @@
             // 
             // sr_code_tbox
             // 
-            this.sr_code_tbox.Location = new System.Drawing.Point(245, 104);
+            this.sr_code_tbox.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sr_code_tbox.Location = new System.Drawing.Point(439, 211);
             this.sr_code_tbox.Name = "sr_code_tbox";
-            this.sr_code_tbox.Size = new System.Drawing.Size(100, 22);
+            this.sr_code_tbox.Size = new System.Drawing.Size(272, 39);
             this.sr_code_tbox.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(184, 104);
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(515, 263);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 16);
+            this.label1.Size = new System.Drawing.Size(120, 36);
             this.label1.TabIndex = 1;
-            this.label1.Text = "sr code:";
+            this.label1.Text = "SR CODE";
             // 
             // password_tbox
             // 
-            this.password_tbox.Location = new System.Drawing.Point(245, 141);
+            this.password_tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_tbox.Location = new System.Drawing.Point(439, 312);
             this.password_tbox.Name = "password_tbox";
-            this.password_tbox.Size = new System.Drawing.Size(100, 22);
+            this.password_tbox.Size = new System.Drawing.Size(272, 38);
             this.password_tbox.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(170, 147);
+            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(502, 362);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 16);
+            this.label2.Size = new System.Drawing.Size(147, 36);
             this.label2.TabIndex = 3;
-            this.label2.Text = "password:";
+            this.label2.Text = "PASSOWRD";
             // 
             // back_btn
             // 
-            this.back_btn.Location = new System.Drawing.Point(245, 198);
+            this.back_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_btn.Location = new System.Drawing.Point(464, 464);
             this.back_btn.Name = "back_btn";
-            this.back_btn.Size = new System.Drawing.Size(75, 31);
+            this.back_btn.Size = new System.Drawing.Size(97, 38);
             this.back_btn.TabIndex = 4;
-            this.back_btn.Text = "back";
+            this.back_btn.Text = "BACK";
             this.back_btn.UseVisualStyleBackColor = true;
             this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
             // 
             // login_btn
             // 
-            this.login_btn.Location = new System.Drawing.Point(353, 198);
+            this.login_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_btn.Location = new System.Drawing.Point(582, 464);
             this.login_btn.Name = "login_btn";
-            this.login_btn.Size = new System.Drawing.Size(83, 31);
+            this.login_btn.Size = new System.Drawing.Size(105, 38);
             this.login_btn.TabIndex = 5;
-            this.login_btn.Text = "Log-in";
+            this.login_btn.Text = "LOGIN";
             this.login_btn.UseVisualStyleBackColor = true;
             this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
             // 
@@ -92,7 +100,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Maroon;
+            this.ClientSize = new System.Drawing.Size(1151, 639);
             this.Controls.Add(this.login_btn);
             this.Controls.Add(this.back_btn);
             this.Controls.Add(this.label2);
@@ -100,6 +109,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.sr_code_tbox);
             this.Name = "Log_in";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log_in";
             this.ResumeLayout(false);
             this.PerformLayout();
