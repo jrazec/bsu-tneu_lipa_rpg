@@ -64,5 +64,45 @@ namespace bsu_tnue_lipa_rpg
                 }
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Crt_first_name_tbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void password_validator_tbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Crt_gender_tbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Sign_up_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
