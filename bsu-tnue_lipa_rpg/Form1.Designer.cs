@@ -36,10 +36,10 @@
             // 
             // loginAcc_btn
             // 
-            this.loginAcc_btn.BackColor = System.Drawing.Color.Maroon;
+            this.loginAcc_btn.BackColor = System.Drawing.Color.White;
             this.loginAcc_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginAcc_btn.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginAcc_btn.ForeColor = System.Drawing.Color.White;
+            this.loginAcc_btn.ForeColor = System.Drawing.Color.Black;
             this.loginAcc_btn.Location = new System.Drawing.Point(361, 292);
             this.loginAcc_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginAcc_btn.Name = "loginAcc_btn";
@@ -51,15 +51,17 @@
             // 
             // signupAcc_btn
             // 
+            this.signupAcc_btn.BackColor = System.Drawing.Color.Maroon;
             this.signupAcc_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signupAcc_btn.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signupAcc_btn.ForeColor = System.Drawing.Color.White;
             this.signupAcc_btn.Location = new System.Drawing.Point(361, 400);
             this.signupAcc_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.signupAcc_btn.Name = "signupAcc_btn";
             this.signupAcc_btn.Size = new System.Drawing.Size(428, 88);
             this.signupAcc_btn.TabIndex = 2;
             this.signupAcc_btn.Text = "Create Account";
-            this.signupAcc_btn.UseVisualStyleBackColor = true;
+            this.signupAcc_btn.UseVisualStyleBackColor = false;
             this.signupAcc_btn.Click += new System.EventHandler(this.signupAcc_btn_Click);
             // 
             // set_up_btn
@@ -79,7 +81,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(930, 602);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -91,6 +93,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1151, 639);
             this.Controls.Add(this.set_up_btn);
             this.Controls.Add(this.signupAcc_btn);
