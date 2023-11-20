@@ -53,7 +53,7 @@
             this.loginAcc_btn.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginAcc_btn.ForeColor = System.Drawing.Color.Black;
             this.loginAcc_btn.Location = new System.Drawing.Point(369, 350);
-            this.loginAcc_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginAcc_btn.Margin = new System.Windows.Forms.Padding(4);
             this.loginAcc_btn.Name = "loginAcc_btn";
             this.loginAcc_btn.Size = new System.Drawing.Size(413, 76);
             this.loginAcc_btn.TabIndex = 1;
@@ -68,7 +68,7 @@
             this.signupAcc_btn.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupAcc_btn.ForeColor = System.Drawing.Color.White;
             this.signupAcc_btn.Location = new System.Drawing.Point(369, 443);
-            this.signupAcc_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.signupAcc_btn.Margin = new System.Windows.Forms.Padding(4);
             this.signupAcc_btn.Name = "signupAcc_btn";
             this.signupAcc_btn.Size = new System.Drawing.Size(413, 75);
             this.signupAcc_btn.TabIndex = 2;
@@ -82,7 +82,7 @@
             this.set_up_btn.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.set_up_btn.ForeColor = System.Drawing.Color.Black;
             this.set_up_btn.Location = new System.Drawing.Point(1060, 597);
-            this.set_up_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.set_up_btn.Margin = new System.Windows.Forms.Padding(4);
             this.set_up_btn.Name = "set_up_btn";
             this.set_up_btn.Size = new System.Drawing.Size(78, 29);
             this.set_up_btn.TabIndex = 3;
@@ -165,6 +165,7 @@
             this.exit_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.exit_pbox.TabIndex = 8;
             this.exit_pbox.TabStop = false;
+            this.exit_pbox.Click += new System.EventHandler(this.exit_pbox_Click);
             // 
             // pictureBox1
             // 
@@ -195,7 +196,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

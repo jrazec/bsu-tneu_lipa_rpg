@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.back_btn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Crt_sr_code_tbox = new System.Windows.Forms.TextBox();
             this.Crt_password_tbox = new System.Windows.Forms.TextBox();
@@ -51,15 +51,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // back_btn
             // 
-            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(448, 528);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 39);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "back";
-            this.button1.UseVisualStyleBackColor = true;
+            this.back_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_btn.Location = new System.Drawing.Point(448, 528);
+            this.back_btn.Name = "back_btn";
+            this.back_btn.Size = new System.Drawing.Size(117, 39);
+            this.back_btn.TabIndex = 12;
+            this.back_btn.Text = "back";
+            this.back_btn.UseVisualStyleBackColor = true;
+            this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
             // 
             // button2
             // 
@@ -233,6 +234,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Sign_up
             // 
@@ -257,7 +259,7 @@
             this.Controls.Add(this.Crt_password_tbox);
             this.Controls.Add(this.Crt_sr_code_tbox);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.back_btn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sign_up";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -273,7 +275,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button back_btn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox Crt_sr_code_tbox;
         private System.Windows.Forms.TextBox Crt_password_tbox;
