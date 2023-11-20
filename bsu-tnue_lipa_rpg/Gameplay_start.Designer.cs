@@ -33,7 +33,11 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_play
@@ -41,9 +45,9 @@
             this.btn_play.BackColor = System.Drawing.Color.White;
             this.btn_play.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_play.ForeColor = System.Drawing.Color.Black;
-            this.btn_play.Location = new System.Drawing.Point(369, 265);
+            this.btn_play.Location = new System.Drawing.Point(433, 306);
             this.btn_play.Name = "btn_play";
-            this.btn_play.Size = new System.Drawing.Size(413, 76);
+            this.btn_play.Size = new System.Drawing.Size(285, 76);
             this.btn_play.TabIndex = 0;
             this.btn_play.Text = "START";
             this.btn_play.UseVisualStyleBackColor = false;
@@ -53,10 +57,10 @@
             this.btn_options.BackColor = System.Drawing.Color.Maroon;
             this.btn_options.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_options.ForeColor = System.Drawing.Color.White;
-            this.btn_options.Location = new System.Drawing.Point(369, 366);
+            this.btn_options.Location = new System.Drawing.Point(433, 399);
             this.btn_options.Name = "btn_options";
             this.btn_options.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btn_options.Size = new System.Drawing.Size(413, 75);
+            this.btn_options.Size = new System.Drawing.Size(285, 75);
             this.btn_options.TabIndex = 1;
             this.btn_options.Text = "OPTIONS";
             this.btn_options.UseVisualStyleBackColor = false;
@@ -66,9 +70,9 @@
             this.btn_exit.BackColor = System.Drawing.Color.Maroon;
             this.btn_exit.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.Color.White;
-            this.btn_exit.Location = new System.Drawing.Point(369, 466);
+            this.btn_exit.Location = new System.Drawing.Point(433, 491);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(413, 74);
+            this.btn_exit.Size = new System.Drawing.Size(285, 74);
             this.btn_exit.TabIndex = 2;
             this.btn_exit.Text = "EXIT";
             this.btn_exit.UseVisualStyleBackColor = false;
@@ -94,22 +98,46 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBox2.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.main_title;
+            this.pictureBox2.Location = new System.Drawing.Point(272, 145);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(606, 64);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(400, 240);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
             // Gameplay_start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1151, 639);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_options);
             this.Controls.Add(this.btn_play);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Gameplay_start";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gameplay_start";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,5 +150,7 @@
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
