@@ -21,5 +21,27 @@ namespace bsu_tnue_lipa_rpg
         {
 
         }
+
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            DialogResult sure = MessageBox.Show("Are you sure log out your account?", "Log-out", MessageBoxButtons.YesNo);
+            if (sure == DialogResult.Yes)
+            {
+                Form1.STUDENT_USER_SR_CODE = "";
+                this.Hide();
+                Log_in logIn = new Log_in();
+                logIn.ShowDialog();
+                this.Close();
+            }
+            
+            
+        }
+
+        private void start_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            //page here
+            this.Close();
+        }
     }
 }

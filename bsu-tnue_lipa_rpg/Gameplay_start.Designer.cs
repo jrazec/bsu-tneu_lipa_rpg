@@ -54,6 +54,7 @@
             this.start_btn.TabIndex = 0;
             this.start_btn.Text = "START";
             this.start_btn.UseVisualStyleBackColor = false;
+            this.start_btn.Click += new System.EventHandler(this.start_btn_Click);
             // 
             // options_btn
             // 
@@ -81,6 +82,7 @@
             this.logout_btn.TabIndex = 2;
             this.logout_btn.Text = "LOG-OUT";
             this.logout_btn.UseVisualStyleBackColor = false;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
             // label2
             // 

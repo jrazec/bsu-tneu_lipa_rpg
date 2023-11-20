@@ -113,6 +113,12 @@
     <Compile Include="Gameplay_start.Designer.cs">
       <DependentUpon>Gameplay_start.cs</DependentUpon>
     </Compile>
+    <Compile Include="Game_mechanics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game_mechanics.Designer.cs">
+      <DependentUpon>Game_mechanics.cs</DependentUpon>
+    </Compile>
     <Compile Include="Log_in.cs">
       <SubType>Form</SubType>
     </Compile>
