@@ -146,7 +146,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.spartan_transparent;
+            this.pictureBox2.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.main_title;
             this.pictureBox2.Location = new System.Drawing.Point(83, 69);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(984, 224);
