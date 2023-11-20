@@ -102,9 +102,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox2.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.main_title;
-            this.pictureBox2.Location = new System.Drawing.Point(272, 145);
+            this.pictureBox2.Location = new System.Drawing.Point(225, 140);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(606, 64);
+            this.pictureBox2.Size = new System.Drawing.Size(701, 69);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -112,9 +112,11 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(400, 240);
+            this.pictureBox3.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.sub_title;
+            this.pictureBox3.Location = new System.Drawing.Point(286, 215);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(578, 52);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
             // 
