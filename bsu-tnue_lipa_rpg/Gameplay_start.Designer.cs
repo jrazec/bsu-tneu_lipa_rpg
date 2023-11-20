@@ -29,17 +29,31 @@
         private void InitializeComponent()
         {
             this.btn_play = new System.Windows.Forms.Button();
+            this.btn_options = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_play
             // 
+            this.btn_play.BackColor = System.Drawing.Color.White;
             this.btn_play.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_play.Location = new System.Drawing.Point(447, 320);
+            this.btn_play.ForeColor = System.Drawing.Color.Black;
+            this.btn_play.Location = new System.Drawing.Point(369, 290);
             this.btn_play.Name = "btn_play";
-            this.btn_play.Size = new System.Drawing.Size(263, 55);
+            this.btn_play.Size = new System.Drawing.Size(413, 76);
             this.btn_play.TabIndex = 0;
-            this.btn_play.Text = "PLAY";
-            this.btn_play.UseVisualStyleBackColor = true;
+            this.btn_play.Text = "START";
+            this.btn_play.UseVisualStyleBackColor = false;
+            // 
+            // btn_options
+            // 
+            this.btn_options.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_options.Location = new System.Drawing.Point(369, 394);
+            this.btn_options.Name = "btn_options";
+            this.btn_options.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btn_options.Size = new System.Drawing.Size(413, 75);
+            this.btn_options.TabIndex = 1;
+            this.btn_options.Text = "OPTIONS";
+            this.btn_options.UseVisualStyleBackColor = true;
             // 
             // Gameplay_start
             // 
@@ -47,6 +61,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.btn_options);
             this.Controls.Add(this.btn_play);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Gameplay_start";
@@ -59,5 +74,6 @@
         #endregion
 
         private System.Windows.Forms.Button btn_play;
+        private System.Windows.Forms.Button btn_options;
     }
 }
