@@ -181,5 +181,8 @@
   <ItemGroup>
     <None Include="Resources\SIGNUPPNG.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spartan-transparent.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
