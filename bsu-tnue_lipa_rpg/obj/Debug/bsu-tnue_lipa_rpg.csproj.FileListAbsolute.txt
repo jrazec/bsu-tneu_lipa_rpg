@@ -88,3 +88,5 @@ C:\Users\carlos\Desktop\game\bsu-tnue_lipa_rpg\obj\Debug\bsu-tnue_lipa_rpg.cspro
 C:\Users\carlos\Desktop\game\bsu-tnue_lipa_rpg\obj\Debug\bsu-tnue_lipa_rpg.csproj.CopyComplete
 C:\Users\carlos\Desktop\game\bsu-tnue_lipa_rpg\obj\Debug\bsu-tnue_lipa_rpg.exe
 C:\Users\carlos\Desktop\game\bsu-tnue_lipa_rpg\obj\Debug\bsu-tnue_lipa_rpg.pdb
+C:\Users\carlos\Desktop\game\bsu-tnue_lipa_rpg\obj\Debug\bsu_tnue_lipa_rpg.Gameplay_start.resources
+C:\Users\JOHN RAZEC\source\repos\bsu-tnue_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu_tnue_lipa_rpg.Gameplay_start.resources
