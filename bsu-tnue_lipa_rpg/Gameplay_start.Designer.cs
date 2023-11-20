@@ -30,6 +30,7 @@
         {
             this.btn_play = new System.Windows.Forms.Button();
             this.btn_options = new System.Windows.Forms.Button();
+            this.btn_exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_play
@@ -46,14 +47,28 @@
             // 
             // btn_options
             // 
+            this.btn_options.BackColor = System.Drawing.Color.Maroon;
             this.btn_options.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_options.Location = new System.Drawing.Point(369, 394);
+            this.btn_options.ForeColor = System.Drawing.Color.White;
+            this.btn_options.Location = new System.Drawing.Point(369, 391);
             this.btn_options.Name = "btn_options";
             this.btn_options.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_options.Size = new System.Drawing.Size(413, 75);
             this.btn_options.TabIndex = 1;
             this.btn_options.Text = "OPTIONS";
-            this.btn_options.UseVisualStyleBackColor = true;
+            this.btn_options.UseVisualStyleBackColor = false;
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.BackColor = System.Drawing.Color.Maroon;
+            this.btn_exit.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exit.ForeColor = System.Drawing.Color.White;
+            this.btn_exit.Location = new System.Drawing.Point(369, 491);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(413, 74);
+            this.btn_exit.TabIndex = 2;
+            this.btn_exit.Text = "EXIT";
+            this.btn_exit.UseVisualStyleBackColor = false;
             // 
             // Gameplay_start
             // 
@@ -61,6 +76,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_options);
             this.Controls.Add(this.btn_play);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -75,5 +91,6 @@
 
         private System.Windows.Forms.Button btn_play;
         private System.Windows.Forms.Button btn_options;
+        private System.Windows.Forms.Button btn_exit;
     }
 }
