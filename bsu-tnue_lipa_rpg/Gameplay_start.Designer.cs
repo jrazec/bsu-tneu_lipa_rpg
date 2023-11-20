@@ -28,7 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btn_play = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btn_play
+            // 
+            this.btn_play.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_play.Location = new System.Drawing.Point(447, 320);
+            this.btn_play.Name = "btn_play";
+            this.btn_play.Size = new System.Drawing.Size(263, 55);
+            this.btn_play.TabIndex = 0;
+            this.btn_play.Text = "PLAY";
+            this.btn_play.UseVisualStyleBackColor = true;
             // 
             // Gameplay_start
             // 
@@ -36,13 +47,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.btn_play);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Gameplay_start";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gameplay_start";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btn_play;
     }
 }
