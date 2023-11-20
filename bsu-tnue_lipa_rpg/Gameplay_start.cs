@@ -40,7 +40,8 @@ namespace bsu_tnue_lipa_rpg
         private void start_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //page here
+            Game_mechanics gMech = new Game_mechanics();
+            gMech.ShowDialog();
             this.Close();
         }
     }
