@@ -56,6 +56,10 @@ namespace bsu_tnue_lipa_rpg
                     Form1.STUDENT_USER_SR_CODE = srCode;
                     login_btn.Text = Form1.STUDENT_USER_SR_CODE;
                     MessageBox.Show("Log-in Success");
+                    this.Hide();
+                    Gameplay_start gStart = new Gameplay_start();
+                    gStart.ShowDialog();
+                    this.Close();
                 }
                 else//if walang magpopop up na query, ito lalabas
                 {
