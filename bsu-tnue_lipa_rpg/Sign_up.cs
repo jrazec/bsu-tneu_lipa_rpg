@@ -116,11 +116,10 @@ namespace bsu_tnue_lipa_rpg
 
         private void back_btn_Click(object sender, EventArgs e)
         {
-            DialogResult sure = MessageBox.Show("Are you sure you want to exit the program?", "Warning", MessageBoxButtons.YesNo);
-            if (sure == DialogResult.Yes)
-            {
-                this.Close();
-            }
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+            this.Close();
         }
     }
 }
