@@ -47,9 +47,10 @@
             this.btn_play.BackColor = System.Drawing.Color.White;
             this.btn_play.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_play.ForeColor = System.Drawing.Color.Black;
-            this.btn_play.Location = new System.Drawing.Point(433, 306);
+            this.btn_play.Location = new System.Drawing.Point(412, 326);
+            this.btn_play.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_play.Name = "btn_play";
-            this.btn_play.Size = new System.Drawing.Size(285, 76);
+            this.btn_play.Size = new System.Drawing.Size(326, 72);
             this.btn_play.TabIndex = 0;
             this.btn_play.Text = "START";
             this.btn_play.UseVisualStyleBackColor = false;
@@ -59,10 +60,11 @@
             this.btn_options.BackColor = System.Drawing.Color.Maroon;
             this.btn_options.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_options.ForeColor = System.Drawing.Color.White;
-            this.btn_options.Location = new System.Drawing.Point(433, 399);
+            this.btn_options.Location = new System.Drawing.Point(412, 417);
+            this.btn_options.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_options.Name = "btn_options";
             this.btn_options.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btn_options.Size = new System.Drawing.Size(285, 75);
+            this.btn_options.Size = new System.Drawing.Size(326, 71);
             this.btn_options.TabIndex = 1;
             this.btn_options.Text = "SETTINGS";
             this.btn_options.UseVisualStyleBackColor = false;
@@ -72,9 +74,10 @@
             this.btn_exit.BackColor = System.Drawing.Color.Maroon;
             this.btn_exit.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.Color.White;
-            this.btn_exit.Location = new System.Drawing.Point(433, 491);
+            this.btn_exit.Location = new System.Drawing.Point(412, 505);
+            this.btn_exit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(285, 74);
+            this.btn_exit.Size = new System.Drawing.Size(326, 70);
             this.btn_exit.TabIndex = 2;
             this.btn_exit.Text = "EXIT";
             this.btn_exit.UseVisualStyleBackColor = false;
@@ -93,9 +96,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.spartan_transparent;
-            this.pictureBox3.Location = new System.Drawing.Point(722, 25);
+            this.pictureBox3.Location = new System.Drawing.Point(668, -3);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(538, 578);
+            this.pictureBox3.Size = new System.Drawing.Size(629, 629);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
@@ -103,9 +107,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.low;
-            this.pictureBox4.Location = new System.Drawing.Point(435, 118);
+            this.pictureBox4.Location = new System.Drawing.Point(453, 135);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(281, 36);
+            this.pictureBox4.Size = new System.Drawing.Size(246, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
@@ -114,9 +119,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.main_title;
-            this.pictureBox2.Location = new System.Drawing.Point(225, 167);
+            this.pictureBox2.Location = new System.Drawing.Point(269, 203);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(701, 69);
+            this.pictureBox2.Size = new System.Drawing.Size(613, 95);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -126,15 +132,16 @@
             // 
             this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._111_01;
             this.pictureBox1.Location = new System.Drawing.Point(12, 604);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(29, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(25, 34);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
             // Gameplay_start
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1151, 639);
@@ -146,7 +153,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox3);
+            this.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Gameplay_start";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gameplay_start";
