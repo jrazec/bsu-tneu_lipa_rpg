@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_play = new System.Windows.Forms.Button();
-            this.btn_options = new System.Windows.Forms.Button();
-            this.btn_exit = new System.Windows.Forms.Button();
+            this.start_btn = new System.Windows.Forms.Button();
+            this.options_btn = new System.Windows.Forms.Button();
+            this.logout_btn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -42,45 +42,45 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_play
+            // start_btn
             // 
-            this.btn_play.BackColor = System.Drawing.Color.White;
-            this.btn_play.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_play.ForeColor = System.Drawing.Color.Black;
-            this.btn_play.Location = new System.Drawing.Point(412, 326);
-            this.btn_play.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_play.Name = "btn_play";
-            this.btn_play.Size = new System.Drawing.Size(326, 72);
-            this.btn_play.TabIndex = 0;
-            this.btn_play.Text = "START";
-            this.btn_play.UseVisualStyleBackColor = false;
+            this.start_btn.BackColor = System.Drawing.Color.White;
+            this.start_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.start_btn.ForeColor = System.Drawing.Color.Black;
+            this.start_btn.Location = new System.Drawing.Point(412, 326);
+            this.start_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.start_btn.Name = "start_btn";
+            this.start_btn.Size = new System.Drawing.Size(326, 72);
+            this.start_btn.TabIndex = 0;
+            this.start_btn.Text = "START";
+            this.start_btn.UseVisualStyleBackColor = false;
             // 
-            // btn_options
+            // options_btn
             // 
-            this.btn_options.BackColor = System.Drawing.Color.Maroon;
-            this.btn_options.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_options.ForeColor = System.Drawing.Color.White;
-            this.btn_options.Location = new System.Drawing.Point(412, 417);
-            this.btn_options.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_options.Name = "btn_options";
-            this.btn_options.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btn_options.Size = new System.Drawing.Size(326, 71);
-            this.btn_options.TabIndex = 1;
-            this.btn_options.Text = "SETTINGS";
-            this.btn_options.UseVisualStyleBackColor = false;
+            this.options_btn.BackColor = System.Drawing.Color.Maroon;
+            this.options_btn.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.options_btn.ForeColor = System.Drawing.Color.White;
+            this.options_btn.Location = new System.Drawing.Point(412, 417);
+            this.options_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.options_btn.Name = "options_btn";
+            this.options_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.options_btn.Size = new System.Drawing.Size(326, 71);
+            this.options_btn.TabIndex = 1;
+            this.options_btn.Text = "OPTIONS";
+            this.options_btn.UseVisualStyleBackColor = false;
             // 
-            // btn_exit
+            // logout_btn
             // 
-            this.btn_exit.BackColor = System.Drawing.Color.Maroon;
-            this.btn_exit.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exit.ForeColor = System.Drawing.Color.White;
-            this.btn_exit.Location = new System.Drawing.Point(412, 505);
-            this.btn_exit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(326, 70);
-            this.btn_exit.TabIndex = 2;
-            this.btn_exit.Text = "EXIT";
-            this.btn_exit.UseVisualStyleBackColor = false;
+            this.logout_btn.BackColor = System.Drawing.Color.Maroon;
+            this.logout_btn.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_btn.ForeColor = System.Drawing.Color.White;
+            this.logout_btn.Location = new System.Drawing.Point(412, 505);
+            this.logout_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(326, 70);
+            this.logout_btn.TabIndex = 2;
+            this.logout_btn.Text = "LOG-OUT";
+            this.logout_btn.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -147,9 +147,9 @@
             this.ClientSize = new System.Drawing.Size(1151, 639);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btn_exit);
-            this.Controls.Add(this.btn_options);
-            this.Controls.Add(this.btn_play);
+            this.Controls.Add(this.logout_btn);
+            this.Controls.Add(this.options_btn);
+            this.Controls.Add(this.start_btn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox3);
@@ -170,9 +170,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_play;
-        private System.Windows.Forms.Button btn_options;
-        private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Button start_btn;
+        private System.Windows.Forms.Button options_btn;
+        private System.Windows.Forms.Button logout_btn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
