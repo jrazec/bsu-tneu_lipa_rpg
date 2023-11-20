@@ -123,6 +123,16 @@ namespace bsu_tnue_lipa_rpg.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap spartan_transparent {
+            get {
+                object obj = ResourceManager.GetObject("spartan-transparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sub_title {
             get {
                 object obj = ResourceManager.GetObject("sub_title", resourceCulture);
