@@ -47,6 +47,10 @@ namespace bsu_tnue_lipa_rpg
                         MySqlCommand insStudRecCmd = new MySqlCommand(insertStudent, mySqlConnection);
                         insStudRecCmd.ExecuteNonQuery();
                         MessageBox.Show("Account Saved.");
+                        this.Hide();
+                        Log_in logIn = new Log_in();
+                        logIn.ShowDialog();
+                        this.Close();
                     }
                     catch(Exception ex)
                     {
