@@ -21,15 +21,15 @@ namespace bsu_tnue_lipa_rpg
 
         private void bedroomWalkTimer_Tick(object sender, EventArgs e)
         {
-            if (go_left == true && bedroom_charac.Left > 0)
+            if (go_left == true && bedroom_charac.Left > 149)
             {
                 bedroom_charac.Left -= walk;
             }
-            if (go_right == true && bedroom_charac.Left + bedroom_charac.Width < this.ClientSize.Width)
+            if (go_right == true && bedroom_charac.Left < 897)
             {
                 bedroom_charac.Left += walk;
             }
-            if (go_up == true && bedroom_charac.Top > 0)
+            if (go_up == true && bedroom_charac.Top > 46)
             {
                 bedroom_charac.Top -= walk;
             }

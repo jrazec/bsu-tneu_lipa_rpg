@@ -16,5 +16,13 @@ namespace bsu_tnue_lipa_rpg
         {
             InitializeComponent();
         }
+
+        private void backtoroom_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Bedroom bedroom = new Bedroom();
+            bedroom.ShowDialog();
+            this.Close();
+        }
     }
 }

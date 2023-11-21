@@ -103,6 +103,7 @@
             this.backtoroom_btn.TabIndex = 5;
             this.backtoroom_btn.Text = "Back";
             this.backtoroom_btn.UseVisualStyleBackColor = false;
+            this.backtoroom_btn.Click += new System.EventHandler(this.backtoroom_btn_Click);
             // 
             // Closet
             // 
@@ -118,7 +119,7 @@
             this.Controls.Add(this.menu_panel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Closet";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Closet";
