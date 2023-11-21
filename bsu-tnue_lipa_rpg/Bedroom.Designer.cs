@@ -48,7 +48,7 @@
             // 
             // closetcollision_pbox
             // 
-            this.closetcollision_pbox.Location = new System.Drawing.Point(268, 182);
+            this.closetcollision_pbox.Location = new System.Drawing.Point(264, 132);
             this.closetcollision_pbox.Name = "closetcollision_pbox";
             this.closetcollision_pbox.Size = new System.Drawing.Size(143, 45);
             this.closetcollision_pbox.TabIndex = 1;

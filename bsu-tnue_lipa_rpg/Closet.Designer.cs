@@ -120,6 +120,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Closet";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Closet";
             ((System.ComponentModel.ISupportInitialize)(this.top_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pants_pbox)).EndInit();
