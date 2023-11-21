@@ -19,6 +19,7 @@ namespace bsu_tnue_lipa_rpg
             InitializeComponent();
         }
 
+        //initiate character movement in the bedroom
         private void bedroomWalkTimer_Tick(object sender, EventArgs e)
         {
             if (go_left == true && bedroom_charac.Left > 149)
@@ -95,6 +96,7 @@ namespace bsu_tnue_lipa_rpg
             }
         }
 
+        //navigation button events
         private void key_is_down(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)

@@ -37,6 +37,34 @@ namespace bsu_tnue_lipa_rpg
             {
                 facade_charac.Top += walk;
             }
+
+            //to return home
+            foreach (Control gohome in this.Controls)
+            {
+                if (gohome is PictureBox && (string)gohome.Tag == "return_home")
+                {
+                    if (facade_charac.Bounds.IntersectsWith(gohome.Bounds))
+                    {
+                        //stop character movement
+                        facadeWalkTimer.Stop();
+
+                        //move character away from collision box
+                        facade_charac.Location = new Point(277, 322);
+
+                        //reset boolean directions
+                        go_left = false;
+                        go_right = false;
+                        go_up = false;
+                        go_down = false;
+
+                        //switch to closet form
+                        this.Hide();
+                        Bedroom returned = new Bedroom();
+                        returned.ShowDialog();
+                        this.Close();
+                    }
+                }
+            }
         }
 
         private void key_is_down(object sender, KeyEventArgs e)
@@ -44,25 +72,25 @@ namespace bsu_tnue_lipa_rpg
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
                 go_left = true;
-                facade_charac.Image = Properties.Resources.male_casual_left;
+                facade_charac.Image = Properties.Resources.male_uni_left;
             }
 
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 go_right = true;
-                facade_charac.Image = Properties.Resources.male_casual_right;
+                facade_charac.Image = Properties.Resources.male_uni_right;
             }
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
             {
                 go_up = true;
-                facade_charac.Image = Properties.Resources.male_casual_back;
+                facade_charac.Image = Properties.Resources.male_uni_back;
             }
 
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
                 go_down = true;
-                facade_charac.Image = Properties.Resources.male_casual_front;
+                facade_charac.Image = Properties.Resources.male_uni_front;
             }
         }
 

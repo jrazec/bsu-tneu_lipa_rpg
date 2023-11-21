@@ -79,6 +79,7 @@
             this.interactcollision_pbox.Size = new System.Drawing.Size(189, 28);
             this.interactcollision_pbox.TabIndex = 3;
             this.interactcollision_pbox.TabStop = false;
+            this.interactcollision_pbox.Tag = "interact_w_guard";
             // 
             // returncollision_pbox
             // 
@@ -87,6 +88,7 @@
             this.returncollision_pbox.Size = new System.Drawing.Size(16, 149);
             this.returncollision_pbox.TabIndex = 4;
             this.returncollision_pbox.TabStop = false;
+            this.returncollision_pbox.Tag = "return_home";
             // 
             // facadeWalkTimer
             // 
