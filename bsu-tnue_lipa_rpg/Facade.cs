@@ -38,6 +38,33 @@ namespace bsu_tnue_lipa_rpg
                 facade_charac.Top += walk;
             }
 
+            //to interact with guard
+            foreach (Control interact in this.Controls)
+            {
+                if (interact is PictureBox && (string)interact.Tag == "interact_w_guard")
+                {
+                    if (facade_charac.Bounds.IntersectsWith(interact.Bounds))
+                    {
+                        //stop character movement
+                        facadeWalkTimer.Stop();
+
+                        //move character away from collision box
+                        facade_charac.Location = new Point(277, 322);
+
+                        //reset boolean directions
+                        go_left = false;
+                        go_right = false;
+                        go_up = false;
+                        go_down = false;
+
+                        //code here to initiate dialogue:
+                        //
+                        //
+                        
+                    }
+                }
+            }
+
             //to return home
             foreach (Control gohome in this.Controls)
             {
