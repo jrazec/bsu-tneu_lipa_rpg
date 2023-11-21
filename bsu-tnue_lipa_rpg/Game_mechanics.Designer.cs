@@ -49,6 +49,7 @@
             this.t4_pbox.TabIndex = 0;
             this.t4_pbox.TabStop = false;
             this.t4_pbox.Visible = false;
+            this.t4_pbox.Click += new System.EventHandler(this.t4_pbox_Click);
             // 
             // t3_pbox
             // 
@@ -61,6 +62,7 @@
             this.t3_pbox.TabIndex = 1;
             this.t3_pbox.TabStop = false;
             this.t3_pbox.Visible = false;
+            this.t3_pbox.Click += new System.EventHandler(this.t3_pbox_Click);
             // 
             // t2_pbox
             // 
@@ -73,6 +75,7 @@
             this.t2_pbox.TabIndex = 2;
             this.t2_pbox.TabStop = false;
             this.t2_pbox.Visible = false;
+            this.t2_pbox.Click += new System.EventHandler(this.t2_pbox_Click);
             // 
             // t1_pbox
             // 
@@ -84,6 +87,7 @@
             this.t1_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.t1_pbox.TabIndex = 3;
             this.t1_pbox.TabStop = false;
+            this.t1_pbox.Click += new System.EventHandler(this.t1_pbox_Click);
             // 
             // Game_mechanics
             // 
