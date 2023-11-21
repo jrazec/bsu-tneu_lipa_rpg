@@ -43,11 +43,15 @@
             this.dg2_clicknxt_lbl = new System.Windows.Forms.Label();
             this.dg_chracter_sel2 = new System.Windows.Forms.Label();
             this.dg2_pbox = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dg1_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.baddey_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuhgie_pbox)).BeginInit();
             this.cs_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg2_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dg1_pbox
@@ -232,12 +236,54 @@
             this.dg2_pbox.TabStop = false;
             this.dg2_pbox.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(840, 588);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 18);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Click to proceed....";
+            this.label1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(212, 537);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(707, 28);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Splendid! You have acquired the requirements to confront the challenges of the un" +
+    "iversity.";
+            this.label2.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.dialogue_base;
+            this.pictureBox1.Location = new System.Drawing.Point(106, 463);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(954, 174);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
             // Character_sel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.bedroom;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dg2_clicknxt_lbl);
             this.Controls.Add(this.dg_chracter_sel2);
             this.Controls.Add(this.dg2_pbox);
@@ -265,6 +311,7 @@
             this.cs_panel.ResumeLayout(false);
             this.cs_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg2_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,5 +334,8 @@
         private System.Windows.Forms.Label dg2_clicknxt_lbl;
         private System.Windows.Forms.Label dg_chracter_sel2;
         private System.Windows.Forms.PictureBox dg2_pbox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
