@@ -46,7 +46,7 @@ namespace bsu_tnue_lipa_rpg
                     if (facade_charac.Bounds.IntersectsWith(interact.Bounds))
                     {
                         //stop character movement
-                        facadeWalkTimer.Stop();
+                        //facadeWalkTimer.Stop();
 
                         //move character away from collision box
                         facade_charac.Location = new Point(277, 322);

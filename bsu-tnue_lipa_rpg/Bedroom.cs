@@ -70,7 +70,7 @@ namespace bsu_tnue_lipa_rpg
             //to go out
             foreach (Control door in this.Controls)
             {
-                if (door is PictureBox && (string)door.Tag == "go_out")
+                if (door is PictureBox && (string)door.Tag == "go_outside")
                 {
                     if (bedroom_charac.Bounds.IntersectsWith(door.Bounds))
                     {

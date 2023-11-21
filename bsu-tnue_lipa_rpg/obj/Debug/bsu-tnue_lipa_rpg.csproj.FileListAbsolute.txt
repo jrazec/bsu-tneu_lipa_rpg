@@ -140,3 +140,4 @@ C:\Users\julmar luna\Desktop\bsu-tneu_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu-t
 C:\Users\julmar luna\Desktop\bsu-tneu_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu-tnue_lipa_rpg.csproj.CopyComplete
 C:\Users\julmar luna\Desktop\bsu-tneu_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu-tnue_lipa_rpg.exe
 C:\Users\julmar luna\Desktop\bsu-tneu_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu-tnue_lipa_rpg.pdb
+C:\Users\julmar luna\Desktop\bsu-tneu_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu_tnue_lipa_rpg.Facade.resources
