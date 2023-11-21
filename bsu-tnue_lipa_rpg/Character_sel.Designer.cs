@@ -31,19 +31,23 @@
             this.dg1_pbox = new System.Windows.Forms.PictureBox();
             this.dg_chracter_sel1 = new System.Windows.Forms.Label();
             this.ign_tbox = new System.Windows.Forms.TextBox();
-            this.dg_clicknxt_lbl = new System.Windows.Forms.Label();
+            this.dg1_clicknxt_lbl = new System.Windows.Forms.Label();
             this.baddey_pbox = new System.Windows.Forms.PictureBox();
             this.yuhgie_pbox = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.cs_panel = new System.Windows.Forms.Panel();
+            this.cs_lbl = new System.Windows.Forms.Label();
+            this.c1name_lbl = new System.Windows.Forms.Label();
+            this.c2name_lbl = new System.Windows.Forms.Label();
+            this.c1desc_lbl = new System.Windows.Forms.Label();
+            this.c2desc_lbl = new System.Windows.Forms.Label();
+            this.dg2_clicknxt_lbl = new System.Windows.Forms.Label();
+            this.dg_chracter_sel2 = new System.Windows.Forms.Label();
+            this.dg2_pbox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dg1_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.baddey_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuhgie_pbox)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.cs_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dg2_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // dg1_pbox
@@ -81,17 +85,17 @@
             this.ign_tbox.TabIndex = 2;
             this.ign_tbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // dg_clicknxt_lbl
+            // dg1_clicknxt_lbl
             // 
-            this.dg_clicknxt_lbl.AutoSize = true;
-            this.dg_clicknxt_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.dg_clicknxt_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dg_clicknxt_lbl.ForeColor = System.Drawing.Color.White;
-            this.dg_clicknxt_lbl.Location = new System.Drawing.Point(840, 588);
-            this.dg_clicknxt_lbl.Name = "dg_clicknxt_lbl";
-            this.dg_clicknxt_lbl.Size = new System.Drawing.Size(116, 18);
-            this.dg_clicknxt_lbl.TabIndex = 3;
-            this.dg_clicknxt_lbl.Text = "Click to proceed....";
+            this.dg1_clicknxt_lbl.AutoSize = true;
+            this.dg1_clicknxt_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.dg1_clicknxt_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dg1_clicknxt_lbl.ForeColor = System.Drawing.Color.White;
+            this.dg1_clicknxt_lbl.Location = new System.Drawing.Point(840, 588);
+            this.dg1_clicknxt_lbl.Name = "dg1_clicknxt_lbl";
+            this.dg1_clicknxt_lbl.Size = new System.Drawing.Size(116, 18);
+            this.dg1_clicknxt_lbl.TabIndex = 3;
+            this.dg1_clicknxt_lbl.Text = "Click to proceed....";
             // 
             // baddey_pbox
             // 
@@ -103,6 +107,7 @@
             this.baddey_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.baddey_pbox.TabIndex = 4;
             this.baddey_pbox.TabStop = false;
+            this.baddey_pbox.Visible = false;
             // 
             // yuhgie_pbox
             // 
@@ -114,73 +119,118 @@
             this.yuhgie_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.yuhgie_pbox.TabIndex = 5;
             this.yuhgie_pbox.TabStop = false;
+            this.yuhgie_pbox.Visible = false;
             // 
-            // panel1
+            // cs_panel
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(700, 107);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(167, 234);
-            this.panel1.TabIndex = 6;
+            this.cs_panel.BackColor = System.Drawing.Color.White;
+            this.cs_panel.Controls.Add(this.cs_lbl);
+            this.cs_panel.Location = new System.Drawing.Point(700, 107);
+            this.cs_panel.Name = "cs_panel";
+            this.cs_panel.Size = new System.Drawing.Size(167, 234);
+            this.cs_panel.TabIndex = 6;
+            this.cs_panel.Visible = false;
             // 
-            // label1
+            // cs_lbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(24, 110);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 28);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "COMING SOON...";
+            this.cs_lbl.AutoSize = true;
+            this.cs_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.cs_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cs_lbl.ForeColor = System.Drawing.Color.Maroon;
+            this.cs_lbl.Location = new System.Drawing.Point(24, 110);
+            this.cs_lbl.Name = "cs_lbl";
+            this.cs_lbl.Size = new System.Drawing.Size(126, 28);
+            this.cs_lbl.TabIndex = 7;
+            this.cs_lbl.Text = "COMING SOON...";
+            this.cs_lbl.Visible = false;
             // 
-            // label2
+            // c1name_lbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(330, 353);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 28);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Baddey";
+            this.c1name_lbl.AutoSize = true;
+            this.c1name_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.c1name_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c1name_lbl.ForeColor = System.Drawing.Color.Black;
+            this.c1name_lbl.Location = new System.Drawing.Point(330, 353);
+            this.c1name_lbl.Name = "c1name_lbl";
+            this.c1name_lbl.Size = new System.Drawing.Size(67, 28);
+            this.c1name_lbl.TabIndex = 7;
+            this.c1name_lbl.Text = "Baddey";
+            this.c1name_lbl.Visible = false;
             // 
-            // label3
+            // c2name_lbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(542, 353);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 28);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Yuh Gie";
+            this.c2name_lbl.AutoSize = true;
+            this.c2name_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.c2name_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c2name_lbl.ForeColor = System.Drawing.Color.Black;
+            this.c2name_lbl.Location = new System.Drawing.Point(542, 353);
+            this.c2name_lbl.Name = "c2name_lbl";
+            this.c2name_lbl.Size = new System.Drawing.Size(67, 28);
+            this.c2name_lbl.TabIndex = 8;
+            this.c2name_lbl.Text = "Yuh Gie";
+            this.c2name_lbl.Visible = false;
             // 
-            // label4
+            // c1desc_lbl
             // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.LightGray;
-            this.label4.Location = new System.Drawing.Point(286, 390);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(165, 70);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Welcome to your bedroom! But first what do you want to be called?";
+            this.c1desc_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.c1desc_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c1desc_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.c1desc_lbl.Location = new System.Drawing.Point(286, 390);
+            this.c1desc_lbl.Name = "c1desc_lbl";
+            this.c1desc_lbl.Size = new System.Drawing.Size(165, 70);
+            this.c1desc_lbl.TabIndex = 9;
+            this.c1desc_lbl.Text = "Welcome to your bedroom! But first what do you want to be called?";
+            this.c1desc_lbl.Visible = false;
             // 
-            // label5
+            // c2desc_lbl
             // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.LightGray;
-            this.label5.Location = new System.Drawing.Point(490, 390);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(165, 70);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Welcome to your bedroom! But first what do you want to be called?";
+            this.c2desc_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.c2desc_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c2desc_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.c2desc_lbl.Location = new System.Drawing.Point(490, 390);
+            this.c2desc_lbl.Name = "c2desc_lbl";
+            this.c2desc_lbl.Size = new System.Drawing.Size(165, 70);
+            this.c2desc_lbl.TabIndex = 10;
+            this.c2desc_lbl.Text = "Welcome to your bedroom! But first what do you want to be called?";
+            this.c2desc_lbl.Visible = false;
+            // 
+            // dg2_clicknxt_lbl
+            // 
+            this.dg2_clicknxt_lbl.AutoSize = true;
+            this.dg2_clicknxt_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.dg2_clicknxt_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dg2_clicknxt_lbl.ForeColor = System.Drawing.Color.White;
+            this.dg2_clicknxt_lbl.Location = new System.Drawing.Point(840, 588);
+            this.dg2_clicknxt_lbl.Name = "dg2_clicknxt_lbl";
+            this.dg2_clicknxt_lbl.Size = new System.Drawing.Size(116, 18);
+            this.dg2_clicknxt_lbl.TabIndex = 14;
+            this.dg2_clicknxt_lbl.Text = "Click to proceed....";
+            this.dg2_clicknxt_lbl.Visible = false;
+            // 
+            // dg_chracter_sel2
+            // 
+            this.dg_chracter_sel2.AutoSize = true;
+            this.dg_chracter_sel2.BackColor = System.Drawing.Color.Transparent;
+            this.dg_chracter_sel2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dg_chracter_sel2.ForeColor = System.Drawing.Color.White;
+            this.dg_chracter_sel2.Location = new System.Drawing.Point(212, 537);
+            this.dg_chracter_sel2.Name = "dg_chracter_sel2";
+            this.dg_chracter_sel2.Size = new System.Drawing.Size(363, 28);
+            this.dg_chracter_sel2.TabIndex = 12;
+            this.dg_chracter_sel2.Text = "Great! Now Please choose your character.........\r\n";
+            this.dg_chracter_sel2.Visible = false;
+            // 
+            // dg2_pbox
+            // 
+            this.dg2_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.dg2_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.dialogue_base;
+            this.dg2_pbox.Location = new System.Drawing.Point(106, 463);
+            this.dg2_pbox.Name = "dg2_pbox";
+            this.dg2_pbox.Size = new System.Drawing.Size(954, 174);
+            this.dg2_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.dg2_pbox.TabIndex = 11;
+            this.dg2_pbox.TabStop = false;
+            this.dg2_pbox.Visible = false;
             // 
             // Character_sel
             // 
@@ -188,14 +238,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.bedroom;
             this.ClientSize = new System.Drawing.Size(1151, 639);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dg2_clicknxt_lbl);
+            this.Controls.Add(this.dg_chracter_sel2);
+            this.Controls.Add(this.dg2_pbox);
+            this.Controls.Add(this.c2desc_lbl);
+            this.Controls.Add(this.c1desc_lbl);
+            this.Controls.Add(this.c2name_lbl);
+            this.Controls.Add(this.c1name_lbl);
+            this.Controls.Add(this.cs_panel);
             this.Controls.Add(this.yuhgie_pbox);
             this.Controls.Add(this.baddey_pbox);
-            this.Controls.Add(this.dg_clicknxt_lbl);
+            this.Controls.Add(this.dg1_clicknxt_lbl);
             this.Controls.Add(this.ign_tbox);
             this.Controls.Add(this.dg_chracter_sel1);
             this.Controls.Add(this.dg1_pbox);
@@ -209,8 +262,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dg1_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.baddey_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuhgie_pbox)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.cs_panel.ResumeLayout(false);
+            this.cs_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dg2_pbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,14 +275,17 @@
         private System.Windows.Forms.PictureBox dg1_pbox;
         private System.Windows.Forms.Label dg_chracter_sel1;
         private System.Windows.Forms.TextBox ign_tbox;
-        private System.Windows.Forms.Label dg_clicknxt_lbl;
+        private System.Windows.Forms.Label dg1_clicknxt_lbl;
         private System.Windows.Forms.PictureBox baddey_pbox;
         private System.Windows.Forms.PictureBox yuhgie_pbox;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel cs_panel;
+        private System.Windows.Forms.Label cs_lbl;
+        private System.Windows.Forms.Label c1name_lbl;
+        private System.Windows.Forms.Label c2name_lbl;
+        private System.Windows.Forms.Label c1desc_lbl;
+        private System.Windows.Forms.Label c2desc_lbl;
+        private System.Windows.Forms.Label dg2_clicknxt_lbl;
+        private System.Windows.Forms.Label dg_chracter_sel2;
+        private System.Windows.Forms.PictureBox dg2_pbox;
     }
 }
