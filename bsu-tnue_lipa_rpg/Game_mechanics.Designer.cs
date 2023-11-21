@@ -32,10 +32,13 @@
             this.t3_pbox = new System.Windows.Forms.PictureBox();
             this.t2_pbox = new System.Windows.Forms.PictureBox();
             this.t1_pbox = new System.Windows.Forms.PictureBox();
+            this.t5_pbox = new System.Windows.Forms.PictureBox();
+            this.label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.t4_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.t3_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.t2_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.t1_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t5_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // t4_pbox
@@ -89,6 +92,32 @@
             this.t1_pbox.TabStop = false;
             this.t1_pbox.Click += new System.EventHandler(this.t1_pbox_Click);
             // 
+            // t5_pbox
+            // 
+            this.t5_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.t5_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.chapter_end;
+            this.t5_pbox.Location = new System.Drawing.Point(39, 12);
+            this.t5_pbox.Name = "t5_pbox";
+            this.t5_pbox.Size = new System.Drawing.Size(1073, 601);
+            this.t5_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.t5_pbox.TabIndex = 4;
+            this.t5_pbox.TabStop = false;
+            this.t5_pbox.Visible = false;
+            // 
+            // label
+            // 
+            this.label.BackColor = System.Drawing.Color.Transparent;
+            this.label.Font = new System.Drawing.Font("Trebuchet MS", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.ForeColor = System.Drawing.Color.White;
+            this.label.Location = new System.Drawing.Point(167, 279);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(813, 139);
+            this.label.TabIndex = 5;
+            this.label.Text = "Now, get ready to explore the interactive map \r\nof the school and navigate the gi" +
+    "st of\r\n challenges in college life!\" \r\n";
+            this.label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label.Visible = false;
+            // 
             // Game_mechanics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -99,9 +128,11 @@
             this.Controls.Add(this.t2_pbox);
             this.Controls.Add(this.t3_pbox);
             this.Controls.Add(this.t4_pbox);
+            this.Controls.Add(this.label);
+            this.Controls.Add(this.t5_pbox);
             this.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Game_mechanics";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game_mechanics";
@@ -109,6 +140,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.t3_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.t2_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.t1_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t5_pbox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -119,5 +151,7 @@
         private System.Windows.Forms.PictureBox t3_pbox;
         private System.Windows.Forms.PictureBox t2_pbox;
         private System.Windows.Forms.PictureBox t1_pbox;
+        private System.Windows.Forms.PictureBox t5_pbox;
+        private System.Windows.Forms.Label label;
     }
 }
