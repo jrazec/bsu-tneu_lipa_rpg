@@ -57,6 +57,7 @@ namespace bsu_tnue_lipa_rpg
             t5_pbox.Visible = true;
             label.Visible = true;
             label.BringToFront();
+            proceed_btn.Visible = true;
         }
     }
 }

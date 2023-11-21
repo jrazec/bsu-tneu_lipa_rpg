@@ -34,6 +34,7 @@
             this.t1_pbox = new System.Windows.Forms.PictureBox();
             this.t5_pbox = new System.Windows.Forms.PictureBox();
             this.label = new System.Windows.Forms.Label();
+            this.proceed_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.t4_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.t3_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.t2_pbox)).BeginInit();
@@ -118,12 +119,26 @@
             this.label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label.Visible = false;
             // 
+            // proceed_btn
+            // 
+            this.proceed_btn.BackColor = System.Drawing.Color.White;
+            this.proceed_btn.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.proceed_btn.ForeColor = System.Drawing.Color.Black;
+            this.proceed_btn.Location = new System.Drawing.Point(930, 565);
+            this.proceed_btn.Name = "proceed_btn";
+            this.proceed_btn.Size = new System.Drawing.Size(117, 39);
+            this.proceed_btn.TabIndex = 6;
+            this.proceed_btn.Text = "PROCEED";
+            this.proceed_btn.UseVisualStyleBackColor = false;
+            this.proceed_btn.Visible = false;
+            // 
             // Game_mechanics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.map_blur;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.proceed_btn);
             this.Controls.Add(this.t1_pbox);
             this.Controls.Add(this.t2_pbox);
             this.Controls.Add(this.t3_pbox);
@@ -153,5 +168,6 @@
         private System.Windows.Forms.PictureBox t1_pbox;
         private System.Windows.Forms.PictureBox t5_pbox;
         private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Button proceed_btn;
     }
 }
