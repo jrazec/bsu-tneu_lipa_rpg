@@ -34,9 +34,16 @@
             this.dg_clicknxt_lbl = new System.Windows.Forms.Label();
             this.baddey_pbox = new System.Windows.Forms.PictureBox();
             this.yuhgie_pbox = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dg1_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.baddey_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuhgie_pbox)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dg1_pbox
@@ -90,7 +97,7 @@
             // 
             this.baddey_pbox.BackColor = System.Drawing.Color.Transparent;
             this.baddey_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.female_casual_front;
-            this.baddey_pbox.Location = new System.Drawing.Point(400, 103);
+            this.baddey_pbox.Location = new System.Drawing.Point(284, 107);
             this.baddey_pbox.Name = "baddey_pbox";
             this.baddey_pbox.Size = new System.Drawing.Size(167, 234);
             this.baddey_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -101,12 +108,79 @@
             // 
             this.yuhgie_pbox.BackColor = System.Drawing.Color.Transparent;
             this.yuhgie_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.male_casual_front;
-            this.yuhgie_pbox.Location = new System.Drawing.Point(610, 103);
+            this.yuhgie_pbox.Location = new System.Drawing.Point(494, 107);
             this.yuhgie_pbox.Name = "yuhgie_pbox";
             this.yuhgie_pbox.Size = new System.Drawing.Size(167, 234);
             this.yuhgie_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.yuhgie_pbox.TabIndex = 5;
             this.yuhgie_pbox.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(700, 107);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(167, 234);
+            this.panel1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(24, 110);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(126, 28);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "COMING SOON...";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(330, 353);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 28);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Baddey";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(542, 353);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 28);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Yuh Gie";
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.LightGray;
+            this.label4.Location = new System.Drawing.Point(286, 390);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(165, 70);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Welcome to your bedroom! But first what do you want to be called?";
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.LightGray;
+            this.label5.Location = new System.Drawing.Point(490, 390);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(165, 70);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Welcome to your bedroom! But first what do you want to be called?";
             // 
             // Character_sel
             // 
@@ -114,6 +188,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.bedroom;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.yuhgie_pbox);
             this.Controls.Add(this.baddey_pbox);
             this.Controls.Add(this.dg_clicknxt_lbl);
@@ -130,6 +209,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dg1_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.baddey_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuhgie_pbox)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,5 +224,11 @@
         private System.Windows.Forms.Label dg_clicknxt_lbl;
         private System.Windows.Forms.PictureBox baddey_pbox;
         private System.Windows.Forms.PictureBox yuhgie_pbox;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
