@@ -28,7 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.t4_pbox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.t4_pbox)).BeginInit();
             this.SuspendLayout();
+            // 
+            // t4_pbox
+            // 
+            this.t4_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.t4_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.tutorial_4;
+            this.t4_pbox.Location = new System.Drawing.Point(39, 12);
+            this.t4_pbox.Name = "t4_pbox";
+            this.t4_pbox.Size = new System.Drawing.Size(1073, 601);
+            this.t4_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.t4_pbox.TabIndex = 0;
+            this.t4_pbox.TabStop = false;
             // 
             // Game_mechanics
             // 
@@ -36,15 +49,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.map_blur;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.t4_pbox);
             this.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Game_mechanics";
             this.Text = "Game_mechanics";
+            ((System.ComponentModel.ISupportInitialize)(this.t4_pbox)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox t4_pbox;
     }
 }
