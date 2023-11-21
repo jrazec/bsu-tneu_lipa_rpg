@@ -33,6 +33,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.backtoroom_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -92,12 +93,24 @@
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
+            // backtoroom_btn
+            // 
+            this.backtoroom_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.backtoroom_btn.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backtoroom_btn.Location = new System.Drawing.Point(12, 67);
+            this.backtoroom_btn.Name = "backtoroom_btn";
+            this.backtoroom_btn.Size = new System.Drawing.Size(75, 33);
+            this.backtoroom_btn.TabIndex = 5;
+            this.backtoroom_btn.Text = "Back";
+            this.backtoroom_btn.UseVisualStyleBackColor = false;
+            // 
             // Closet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.closet;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.backtoroom_btn);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -123,5 +136,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button backtoroom_btn;
     }
 }

@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menu_panel = new System.Windows.Forms.Panel();
             this.closetcollision_pbox = new System.Windows.Forms.PictureBox();
             this.bedroom_charac = new System.Windows.Forms.PictureBox();
+            this.bedroomWalkTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.closetcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bedroom_charac)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +65,12 @@
             this.bedroom_charac.TabIndex = 2;
             this.bedroom_charac.TabStop = false;
             // 
+            // bedroomWalkTimer
+            // 
+            this.bedroomWalkTimer.Enabled = true;
+            this.bedroomWalkTimer.Interval = 50;
+            this.bedroomWalkTimer.Tick += new System.EventHandler(this.bedroomWalkTimer_Tick);
+            // 
             // Bedroom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -74,9 +82,11 @@
             this.Controls.Add(this.menu_panel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Bedroom";
             this.Text = "Bedroom";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.key_is_down);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.key_is_up);
             ((System.ComponentModel.ISupportInitialize)(this.closetcollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bedroom_charac)).EndInit();
             this.ResumeLayout(false);
@@ -88,5 +98,6 @@
         private System.Windows.Forms.Panel menu_panel;
         private System.Windows.Forms.PictureBox closetcollision_pbox;
         private System.Windows.Forms.PictureBox bedroom_charac;
+        private System.Windows.Forms.Timer bedroomWalkTimer;
     }
 }
