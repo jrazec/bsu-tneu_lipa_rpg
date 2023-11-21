@@ -23,9 +23,6 @@ namespace bsu_tnue_lipa_rpg
 
         private void t1_pbox_Click(object sender, EventArgs e)
         {
-
-            //39, 12
-
             t1_pbox.Visible = false;
             t2_pbox.Visible = true;
             t3_pbox.Visible = false;
@@ -58,6 +55,14 @@ namespace bsu_tnue_lipa_rpg
             label.Visible = true;
             label.BringToFront();
             proceed_btn.Visible = true;
+        }
+
+        private void proceed_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Character_sel cSel = new Character_sel();
+            cSel.ShowDialog();
+            this.Close();
         }
     }
 }

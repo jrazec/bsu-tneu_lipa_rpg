@@ -131,6 +131,7 @@
             this.proceed_btn.Text = "PROCEED";
             this.proceed_btn.UseVisualStyleBackColor = false;
             this.proceed_btn.Visible = false;
+            this.proceed_btn.Click += new System.EventHandler(this.proceed_btn_Click);
             // 
             // Game_mechanics
             // 

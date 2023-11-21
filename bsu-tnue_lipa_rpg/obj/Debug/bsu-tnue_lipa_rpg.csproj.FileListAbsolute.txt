@@ -92,3 +92,5 @@ C:\Users\carlos\Desktop\game\bsu-tnue_lipa_rpg\obj\Debug\bsu_tnue_lipa_rpg.Gamep
 C:\Users\JOHN RAZEC\source\repos\bsu-tnue_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu_tnue_lipa_rpg.Gameplay_start.resources
 C:\Users\carlos\Desktop\game\bsu-tnue_lipa_rpg\obj\Debug\bsu_tnue_lipa_rpg.Game_mechanics.resources
 C:\Users\carlos\Desktop\game\bsu-tnue_lipa_rpg\obj\Debug\bsu_tnue_lipa_rpg.Character_sel.resources
+C:\Users\JOHN RAZEC\source\repos\bsu-tnue_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu_tnue_lipa_rpg.Character_sel.resources
+C:\Users\JOHN RAZEC\source\repos\bsu-tnue_lipa_rpg\bsu-tnue_lipa_rpg\obj\Debug\bsu_tnue_lipa_rpg.Game_mechanics.resources
