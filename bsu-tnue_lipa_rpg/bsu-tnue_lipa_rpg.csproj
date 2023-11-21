@@ -113,6 +113,12 @@
     <Compile Include="Closet.Designer.cs">
       <DependentUpon>Closet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Facade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facade.Designer.cs">
+      <DependentUpon>Facade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Closet.resx">
       <DependentUpon>Closet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facade.resx">
+      <DependentUpon>Facade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
