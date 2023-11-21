@@ -99,6 +99,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Game_mechanics";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game_mechanics";
             ((System.ComponentModel.ISupportInitialize)(this.t4_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.t3_pbox)).EndInit();
