@@ -37,6 +37,62 @@ namespace bsu_tnue_lipa_rpg
             {
                 bedroom_charac.Top += walk;
             }
+
+            //to open closet
+            foreach (Control closet in this.Controls)
+            {
+                if (closet is PictureBox && (string)closet.Tag == "closet_open")
+                {
+                    if (bedroom_charac.Bounds.IntersectsWith(closet.Bounds))
+                    {
+                        //stop character movement
+                        bedroomWalkTimer.Stop();
+
+                        //move character away from collision box
+                        bedroom_charac.Location = new Point(277, 322);
+
+                        //reset boolean directions
+                        go_left = false;
+                        go_right = false;
+                        go_up = false;
+                        go_down = false;
+
+                        //switch to closet form
+                        this.Hide();
+                        Closet opened_closet = new Closet();
+                        opened_closet.ShowDialog();
+                        this.Close();
+                    }
+                }
+            }
+
+            //to go out
+            foreach (Control door in this.Controls)
+            {
+                if (door is PictureBox && (string)door.Tag == "go_out")
+                {
+                    if (bedroom_charac.Bounds.IntersectsWith(door.Bounds))
+                    {
+                        //stop character movement
+                        bedroomWalkTimer.Stop();
+
+                        //move character away from collision box
+                        bedroom_charac.Location = new Point(277, 322);
+
+                        //reset boolean directions
+                        go_left = false;
+                        go_right = false;
+                        go_up = false;
+                        go_down = false;
+
+                        //switch to closet form
+                        this.Hide();
+                        Facade to_facade = new Facade();
+                        to_facade.ShowDialog();
+                        this.Close();
+                    }
+                }
+            }
         }
 
         private void key_is_down(object sender, KeyEventArgs e)
@@ -87,34 +143,7 @@ namespace bsu_tnue_lipa_rpg
             {
                 go_down = false;
             }
-
-
-            foreach (Control closet in this.Controls)
-            {
-                if (closet is PictureBox && (string)closet.Tag == "closet_open")
-                {
-                    if (bedroom_charac.Bounds.IntersectsWith(closet.Bounds))
-                    {
-                        //stop character movement
-                        bedroomWalkTimer.Stop();
-
-                        //move character away from collision box
-                        bedroom_charac.Location = new Point(277, 322);
-
-                        //reset boolean directions
-                        go_left = false;
-                        go_right = false;
-                        go_up = false;
-                        go_down = false;
-                   
-                        //switch to closet form
-                        this.Hide();
-                        Closet opened_closet = new Closet();
-                        opened_closet.ShowDialog();
-                        this.Close();
-                    }
-                }
-            }
+            
         }
     }
 }

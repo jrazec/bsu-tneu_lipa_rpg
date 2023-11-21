@@ -28,13 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guard_pbox = new System.Windows.Forms.PictureBox();
             this.facade_charac = new System.Windows.Forms.PictureBox();
             this.interactcollision_pbox = new System.Windows.Forms.PictureBox();
+            this.returncollision_pbox = new System.Windows.Forms.PictureBox();
+            this.facadeWalkTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guard_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facade_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.interactcollision_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returncollision_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,12 +80,27 @@
             this.interactcollision_pbox.TabIndex = 3;
             this.interactcollision_pbox.TabStop = false;
             // 
+            // returncollision_pbox
+            // 
+            this.returncollision_pbox.Location = new System.Drawing.Point(0, 454);
+            this.returncollision_pbox.Name = "returncollision_pbox";
+            this.returncollision_pbox.Size = new System.Drawing.Size(16, 149);
+            this.returncollision_pbox.TabIndex = 4;
+            this.returncollision_pbox.TabStop = false;
+            // 
+            // facadeWalkTimer
+            // 
+            this.facadeWalkTimer.Enabled = true;
+            this.facadeWalkTimer.Interval = 40;
+            this.facadeWalkTimer.Tick += new System.EventHandler(this.facadeWalkTimer_Tick);
+            // 
             // Facade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.facade;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.returncollision_pbox);
             this.Controls.Add(this.interactcollision_pbox);
             this.Controls.Add(this.facade_charac);
             this.Controls.Add(this.guard_pbox);
@@ -92,9 +111,12 @@
             this.Name = "Facade";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Facade";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.key_is_down);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.key_is_up);
             ((System.ComponentModel.ISupportInitialize)(this.guard_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facade_charac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.interactcollision_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returncollision_pbox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -105,5 +127,7 @@
         private System.Windows.Forms.PictureBox guard_pbox;
         private System.Windows.Forms.PictureBox facade_charac;
         private System.Windows.Forms.PictureBox interactcollision_pbox;
+        private System.Windows.Forms.PictureBox returncollision_pbox;
+        private System.Windows.Forms.Timer facadeWalkTimer;
     }
 }
