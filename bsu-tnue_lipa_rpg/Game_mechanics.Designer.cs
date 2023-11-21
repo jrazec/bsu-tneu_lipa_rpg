@@ -31,9 +31,11 @@
             this.t4_pbox = new System.Windows.Forms.PictureBox();
             this.t3_pbox = new System.Windows.Forms.PictureBox();
             this.t2_pbox = new System.Windows.Forms.PictureBox();
+            this.t1_pbox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.t4_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.t3_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.t2_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t1_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // t4_pbox
@@ -72,12 +74,24 @@
             this.t2_pbox.TabStop = false;
             this.t2_pbox.Visible = false;
             // 
+            // t1_pbox
+            // 
+            this.t1_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.t1_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.tutorial_1;
+            this.t1_pbox.Location = new System.Drawing.Point(39, 12);
+            this.t1_pbox.Name = "t1_pbox";
+            this.t1_pbox.Size = new System.Drawing.Size(1073, 601);
+            this.t1_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.t1_pbox.TabIndex = 3;
+            this.t1_pbox.TabStop = false;
+            // 
             // Game_mechanics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.map_blur;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.t1_pbox);
             this.Controls.Add(this.t2_pbox);
             this.Controls.Add(this.t3_pbox);
             this.Controls.Add(this.t4_pbox);
@@ -89,6 +103,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.t4_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.t3_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.t2_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t1_pbox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -98,5 +113,6 @@
         private System.Windows.Forms.PictureBox t4_pbox;
         private System.Windows.Forms.PictureBox t3_pbox;
         private System.Windows.Forms.PictureBox t2_pbox;
+        private System.Windows.Forms.PictureBox t1_pbox;
     }
 }
