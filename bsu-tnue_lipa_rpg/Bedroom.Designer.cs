@@ -53,14 +53,15 @@
             this.closetcollision_pbox.Size = new System.Drawing.Size(143, 45);
             this.closetcollision_pbox.TabIndex = 1;
             this.closetcollision_pbox.TabStop = false;
+            this.closetcollision_pbox.Tag = "closet_open";
             // 
             // bedroom_charac
             // 
             this.bedroom_charac.BackColor = System.Drawing.Color.Transparent;
             this.bedroom_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.male_casual_front;
-            this.bedroom_charac.Location = new System.Drawing.Point(729, 406);
+            this.bedroom_charac.Location = new System.Drawing.Point(749, 406);
             this.bedroom_charac.Name = "bedroom_charac";
-            this.bedroom_charac.Size = new System.Drawing.Size(162, 221);
+            this.bedroom_charac.Size = new System.Drawing.Size(125, 221);
             this.bedroom_charac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bedroom_charac.TabIndex = 2;
             this.bedroom_charac.TabStop = false;

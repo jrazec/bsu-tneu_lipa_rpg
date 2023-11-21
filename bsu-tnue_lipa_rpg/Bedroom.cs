@@ -87,6 +87,24 @@ namespace bsu_tnue_lipa_rpg
             {
                 go_down = false;
             }
+
+
+            foreach (Control closet in this.Controls)
+            {
+                if (closet is PictureBox && (string)closet.Tag == "closet_open")
+                {
+                    //stop character movement
+                    bedroomWalkTimer.Stop();
+
+                    //move character away from collision box
+                    bedroom_charac.Location = new Point(277, 322);
+                   
+                    //switch to closet form
+                    Closet opened_closet = new Closet();
+                    opened_closet.Show();
+                    this.Close();
+                }
+            }
         }
     }
 }
