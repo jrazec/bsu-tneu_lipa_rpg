@@ -139,6 +139,9 @@
     <EmbeddedResource Include="Gameplay_start.resx">
       <DependentUpon>Gameplay_start.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Game_mechanics.resx">
+      <DependentUpon>Game_mechanics.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Log_in.resx">
       <DependentUpon>Log_in.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +201,264 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\spartan-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atty-Alvin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dr-Balazon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Engr-Jonnah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sir-Daryl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chapter-end.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neck-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pants-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoes-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tutorial-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tutorial-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tutorial-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tutorial-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cecs-hallway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-art.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-blur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ob-1stflr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ob-clinic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ob-hallway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ob-libr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-casual-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-casual-front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-casual-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-casual-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-org-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-org-front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-org-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-org-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-pe-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-pe-front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-pe-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-pe-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-uni-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-uni-front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-uni-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-uni-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CICS Org Shirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Civilian Bottom-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Civilian Bottom-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Civilian Top-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Civilian Top-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\College Barong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\College Blouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\College Pants.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\College Skirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Denim Pants.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Necklace Unisex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PE Jogging Pant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PE T-Shirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\School ID Lace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-casual-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-casual-front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-casual-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-casual-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-org-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-org-front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-org-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-org-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-pe-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-pe-front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-pe-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-pe-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-uni-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-uni-front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-uni-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-uni-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-dialogue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atty-dialogue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialogue-base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dr-dialogue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\engr-dialogue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-dialogue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guard-dialogue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sir-dialogue.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
