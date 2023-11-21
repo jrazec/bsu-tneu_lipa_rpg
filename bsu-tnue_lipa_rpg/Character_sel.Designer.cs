@@ -32,7 +32,9 @@
             this.dg_chracter_sel1 = new System.Windows.Forms.Label();
             this.ign_tbox = new System.Windows.Forms.TextBox();
             this.dg_clicknxt_lbl = new System.Windows.Forms.Label();
+            this.baddey_pbox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dg1_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baddey_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // dg1_pbox
@@ -82,12 +84,24 @@
             this.dg_clicknxt_lbl.TabIndex = 3;
             this.dg_clicknxt_lbl.Text = "Click to proceed....";
             // 
+            // baddey_pbox
+            // 
+            this.baddey_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.baddey_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.female_casual_front;
+            this.baddey_pbox.Location = new System.Drawing.Point(324, 103);
+            this.baddey_pbox.Name = "baddey_pbox";
+            this.baddey_pbox.Size = new System.Drawing.Size(167, 234);
+            this.baddey_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.baddey_pbox.TabIndex = 4;
+            this.baddey_pbox.TabStop = false;
+            // 
             // Character_sel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.bedroom;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.baddey_pbox);
             this.Controls.Add(this.dg_clicknxt_lbl);
             this.Controls.Add(this.ign_tbox);
             this.Controls.Add(this.dg_chracter_sel1);
@@ -100,6 +114,7 @@
             this.Text = "Character_sel";
             this.Load += new System.EventHandler(this.Character_sel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg1_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baddey_pbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,5 +126,6 @@
         private System.Windows.Forms.Label dg_chracter_sel1;
         private System.Windows.Forms.TextBox ign_tbox;
         private System.Windows.Forms.Label dg_clicknxt_lbl;
+        private System.Windows.Forms.PictureBox baddey_pbox;
     }
 }
