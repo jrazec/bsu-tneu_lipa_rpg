@@ -44,14 +44,15 @@
             this.dg_chracter_sel2 = new System.Windows.Forms.Label();
             this.dg2_pbox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dg_chracter_sel3 = new System.Windows.Forms.Label();
+            this.dg3_pbox = new System.Windows.Forms.PictureBox();
+            this.enter_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dg1_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.baddey_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuhgie_pbox)).BeginInit();
             this.cs_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg2_pbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg3_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // dg1_pbox
@@ -64,6 +65,7 @@
             this.dg1_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dg1_pbox.TabIndex = 0;
             this.dg1_pbox.TabStop = false;
+            this.dg1_pbox.Click += new System.EventHandler(this.dg1_pbox_Click);
             // 
             // dg_chracter_sel1
             // 
@@ -79,6 +81,7 @@
             // 
             // ign_tbox
             // 
+            this.ign_tbox.AcceptsTab = true;
             this.ign_tbox.BackColor = System.Drawing.Color.White;
             this.ign_tbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ign_tbox.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -88,6 +91,8 @@
             this.ign_tbox.Size = new System.Drawing.Size(198, 28);
             this.ign_tbox.TabIndex = 2;
             this.ign_tbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ign_tbox.UseSystemPasswordChar = true;
+            this.ign_tbox.WordWrap = false;
             // 
             // dg1_clicknxt_lbl
             // 
@@ -112,6 +117,7 @@
             this.baddey_pbox.TabIndex = 4;
             this.baddey_pbox.TabStop = false;
             this.baddey_pbox.Visible = false;
+            this.baddey_pbox.Click += new System.EventHandler(this.baddey_pbox_Click);
             // 
             // yuhgie_pbox
             // 
@@ -124,6 +130,7 @@
             this.yuhgie_pbox.TabIndex = 5;
             this.yuhgie_pbox.TabStop = false;
             this.yuhgie_pbox.Visible = false;
+            this.yuhgie_pbox.Click += new System.EventHandler(this.yuhgie_pbox_Click);
             // 
             // cs_panel
             // 
@@ -209,7 +216,6 @@
             this.dg2_clicknxt_lbl.Size = new System.Drawing.Size(116, 18);
             this.dg2_clicknxt_lbl.TabIndex = 14;
             this.dg2_clicknxt_lbl.Text = "Click to proceed....";
-            this.dg2_clicknxt_lbl.Visible = false;
             // 
             // dg_chracter_sel2
             // 
@@ -217,7 +223,7 @@
             this.dg_chracter_sel2.BackColor = System.Drawing.Color.Transparent;
             this.dg_chracter_sel2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dg_chracter_sel2.ForeColor = System.Drawing.Color.White;
-            this.dg_chracter_sel2.Location = new System.Drawing.Point(212, 537);
+            this.dg_chracter_sel2.Location = new System.Drawing.Point(212, 525);
             this.dg_chracter_sel2.Name = "dg_chracter_sel2";
             this.dg_chracter_sel2.Size = new System.Drawing.Size(363, 28);
             this.dg_chracter_sel2.TabIndex = 12;
@@ -235,6 +241,7 @@
             this.dg2_pbox.TabIndex = 11;
             this.dg2_pbox.TabStop = false;
             this.dg2_pbox.Visible = false;
+            this.dg2_pbox.Click += new System.EventHandler(this.dg2_pbox_Click);
             // 
             // label1
             // 
@@ -249,31 +256,45 @@
             this.label1.Text = "Click to proceed....";
             this.label1.Visible = false;
             // 
-            // label2
+            // dg_chracter_sel3
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(212, 537);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(707, 28);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Splendid! You have acquired the requirements to confront the challenges of the un" +
+            this.dg_chracter_sel3.AutoSize = true;
+            this.dg_chracter_sel3.BackColor = System.Drawing.Color.Transparent;
+            this.dg_chracter_sel3.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dg_chracter_sel3.ForeColor = System.Drawing.Color.White;
+            this.dg_chracter_sel3.Location = new System.Drawing.Point(212, 525);
+            this.dg_chracter_sel3.Name = "dg_chracter_sel3";
+            this.dg_chracter_sel3.Size = new System.Drawing.Size(707, 28);
+            this.dg_chracter_sel3.TabIndex = 16;
+            this.dg_chracter_sel3.Text = "Splendid! You have acquired the requirements to confront the challenges of the un" +
     "iversity.";
-            this.label2.Visible = false;
+            this.dg_chracter_sel3.Visible = false;
             // 
-            // pictureBox1
+            // dg3_pbox
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.dialogue_base;
-            this.pictureBox1.Location = new System.Drawing.Point(106, 463);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(954, 174);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
+            this.dg3_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.dg3_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.dialogue_base;
+            this.dg3_pbox.Location = new System.Drawing.Point(106, 463);
+            this.dg3_pbox.Name = "dg3_pbox";
+            this.dg3_pbox.Size = new System.Drawing.Size(954, 174);
+            this.dg3_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.dg3_pbox.TabIndex = 15;
+            this.dg3_pbox.TabStop = false;
+            this.dg3_pbox.Visible = false;
+            this.dg3_pbox.Click += new System.EventHandler(this.dg3_pbox_Click);
+            // 
+            // enter_btn
+            // 
+            this.enter_btn.BackColor = System.Drawing.Color.White;
+            this.enter_btn.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enter_btn.ForeColor = System.Drawing.Color.Black;
+            this.enter_btn.Location = new System.Drawing.Point(527, 567);
+            this.enter_btn.Name = "enter_btn";
+            this.enter_btn.Size = new System.Drawing.Size(82, 39);
+            this.enter_btn.TabIndex = 18;
+            this.enter_btn.Text = "Enter";
+            this.enter_btn.UseVisualStyleBackColor = false;
+            this.enter_btn.Click += new System.EventHandler(this.enter_btn_Click);
             // 
             // Character_sel
             // 
@@ -281,22 +302,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.bedroom;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.enter_btn);
+            this.Controls.Add(this.dg_chracter_sel3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dg2_clicknxt_lbl);
-            this.Controls.Add(this.dg_chracter_sel2);
-            this.Controls.Add(this.dg2_pbox);
             this.Controls.Add(this.c2desc_lbl);
             this.Controls.Add(this.c1desc_lbl);
             this.Controls.Add(this.c2name_lbl);
             this.Controls.Add(this.c1name_lbl);
-            this.Controls.Add(this.cs_panel);
             this.Controls.Add(this.yuhgie_pbox);
             this.Controls.Add(this.baddey_pbox);
             this.Controls.Add(this.dg1_clicknxt_lbl);
             this.Controls.Add(this.ign_tbox);
+            this.Controls.Add(this.cs_panel);
+            this.Controls.Add(this.dg_chracter_sel2);
+            this.Controls.Add(this.dg3_pbox);
             this.Controls.Add(this.dg_chracter_sel1);
+            this.Controls.Add(this.dg2_pbox);
             this.Controls.Add(this.dg1_pbox);
             this.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -311,7 +333,7 @@
             this.cs_panel.ResumeLayout(false);
             this.cs_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg2_pbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg3_pbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,7 +357,8 @@
         private System.Windows.Forms.Label dg_chracter_sel2;
         private System.Windows.Forms.PictureBox dg2_pbox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label dg_chracter_sel3;
+        private System.Windows.Forms.PictureBox dg3_pbox;
+        private System.Windows.Forms.Button enter_btn;
     }
 }
