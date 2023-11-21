@@ -72,7 +72,9 @@ namespace bsu_tnue_lipa_rpg
 
                 dg3_pbox.Visible = true;
                 dg_chracter_sel3.Visible = true;
+                dg_chracter_sel3.BringToFront();
                 label1.Visible = true;
+                label1.BringToFront();
             }
         }
 
@@ -100,7 +102,9 @@ namespace bsu_tnue_lipa_rpg
 
                 dg3_pbox.Visible = true;
                 dg_chracter_sel3.Visible = true;
+                dg_chracter_sel3.BringToFront();
                 label1.Visible=true;
+                label1.BringToFront();
             }
         }
 
@@ -120,6 +124,7 @@ namespace bsu_tnue_lipa_rpg
 
             dg2_pbox.Visible = true;
             dg_chracter_sel2.Visible = true;
+            dg_chracter_sel2.BringToFront();
 
             yuhgie_pbox.Visible = true;
             baddey_pbox.Visible = true;

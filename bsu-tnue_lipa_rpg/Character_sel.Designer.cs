@@ -30,7 +30,6 @@
         {
             this.dg1_pbox = new System.Windows.Forms.PictureBox();
             this.dg_chracter_sel1 = new System.Windows.Forms.Label();
-            this.ign_tbox = new System.Windows.Forms.TextBox();
             this.dg1_clicknxt_lbl = new System.Windows.Forms.Label();
             this.baddey_pbox = new System.Windows.Forms.PictureBox();
             this.yuhgie_pbox = new System.Windows.Forms.PictureBox();
@@ -47,6 +46,7 @@
             this.dg_chracter_sel3 = new System.Windows.Forms.Label();
             this.dg3_pbox = new System.Windows.Forms.PictureBox();
             this.enter_btn = new System.Windows.Forms.Button();
+            this.ign_tbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dg1_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.baddey_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuhgie_pbox)).BeginInit();
@@ -79,21 +79,6 @@
             this.dg_chracter_sel1.TabIndex = 1;
             this.dg_chracter_sel1.Text = "Welcome to your bedroom! But first what do you want to be called?";
             // 
-            // ign_tbox
-            // 
-            this.ign_tbox.AcceptsTab = true;
-            this.ign_tbox.BackColor = System.Drawing.Color.White;
-            this.ign_tbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ign_tbox.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ign_tbox.ForeColor = System.Drawing.Color.Black;
-            this.ign_tbox.Location = new System.Drawing.Point(758, 525);
-            this.ign_tbox.Name = "ign_tbox";
-            this.ign_tbox.Size = new System.Drawing.Size(198, 28);
-            this.ign_tbox.TabIndex = 2;
-            this.ign_tbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ign_tbox.UseSystemPasswordChar = true;
-            this.ign_tbox.WordWrap = false;
-            // 
             // dg1_clicknxt_lbl
             // 
             this.dg1_clicknxt_lbl.AutoSize = true;
@@ -105,6 +90,7 @@
             this.dg1_clicknxt_lbl.Size = new System.Drawing.Size(116, 18);
             this.dg1_clicknxt_lbl.TabIndex = 3;
             this.dg1_clicknxt_lbl.Text = "Click to proceed....";
+            this.dg1_clicknxt_lbl.Visible = false;
             // 
             // baddey_pbox
             // 
@@ -216,6 +202,7 @@
             this.dg2_clicknxt_lbl.Size = new System.Drawing.Size(116, 18);
             this.dg2_clicknxt_lbl.TabIndex = 14;
             this.dg2_clicknxt_lbl.Text = "Click to proceed....";
+            this.dg2_clicknxt_lbl.Visible = false;
             // 
             // dg_chracter_sel2
             // 
@@ -296,16 +283,22 @@
             this.enter_btn.UseVisualStyleBackColor = false;
             this.enter_btn.Click += new System.EventHandler(this.enter_btn_Click);
             // 
+            // ign_tbox
+            // 
+            this.ign_tbox.Location = new System.Drawing.Point(713, 524);
+            this.ign_tbox.Name = "ign_tbox";
+            this.ign_tbox.Size = new System.Drawing.Size(198, 29);
+            this.ign_tbox.TabIndex = 19;
+            // 
             // Character_sel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.bedroom;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.dg_chracter_sel1);
+            this.Controls.Add(this.ign_tbox);
             this.Controls.Add(this.enter_btn);
-            this.Controls.Add(this.dg_chracter_sel3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dg2_clicknxt_lbl);
             this.Controls.Add(this.c2desc_lbl);
             this.Controls.Add(this.c1desc_lbl);
             this.Controls.Add(this.c2name_lbl);
@@ -313,13 +306,14 @@
             this.Controls.Add(this.yuhgie_pbox);
             this.Controls.Add(this.baddey_pbox);
             this.Controls.Add(this.dg1_clicknxt_lbl);
-            this.Controls.Add(this.ign_tbox);
             this.Controls.Add(this.cs_panel);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dg2_clicknxt_lbl);
             this.Controls.Add(this.dg_chracter_sel2);
-            this.Controls.Add(this.dg3_pbox);
-            this.Controls.Add(this.dg_chracter_sel1);
+            this.Controls.Add(this.dg_chracter_sel3);
             this.Controls.Add(this.dg2_pbox);
             this.Controls.Add(this.dg1_pbox);
+            this.Controls.Add(this.dg3_pbox);
             this.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -343,7 +337,6 @@
 
         private System.Windows.Forms.PictureBox dg1_pbox;
         private System.Windows.Forms.Label dg_chracter_sel1;
-        private System.Windows.Forms.TextBox ign_tbox;
         private System.Windows.Forms.Label dg1_clicknxt_lbl;
         private System.Windows.Forms.PictureBox baddey_pbox;
         private System.Windows.Forms.PictureBox yuhgie_pbox;
@@ -360,5 +353,6 @@
         private System.Windows.Forms.Label dg_chracter_sel3;
         private System.Windows.Forms.PictureBox dg3_pbox;
         private System.Windows.Forms.Button enter_btn;
+        private System.Windows.Forms.TextBox ign_tbox;
     }
 }
