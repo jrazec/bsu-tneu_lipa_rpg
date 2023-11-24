@@ -59,10 +59,19 @@ namespace bsu_tnue_lipa_rpg
 
         private void proceed_btn_Click(object sender, EventArgs e)
         {
+            //if walang lumabas na query or record sa task 1, this will show up
             this.Hide();
             Character_sel cSel = new Character_sel();
             cSel.ShowDialog();
             this.Close();
+
+            //if meron this will prosecute naman
+            /*
+            this.Hide();
+            Bedroom bd = new Bedroom();
+            bd.ShowDialog();
+            this.Close();
+            */
         }
     }
 }

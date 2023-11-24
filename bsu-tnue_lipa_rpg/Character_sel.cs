@@ -118,28 +118,34 @@ namespace bsu_tnue_lipa_rpg
 
         private void enter_btn_Click(object sender, EventArgs e)
         {
-            dg_chracter_sel1.Visible = false;
-            dg1_pbox.Visible = false;
-            ign_tbox.Visible = false;
-            label1.Visible = false;
-            dg1_pbox.SendToBack();
-            //code here to insert into  ign tbox to students table
+            if (ign_tbox.Text != string.Empty) {
+                dg_chracter_sel1.Visible = false;
+                dg1_pbox.Visible = false;
+                ign_tbox.Visible = false;
+                label1.Visible = false;
+                dg1_pbox.SendToBack();
+                //code here to insert into  ign tbox to students table
 
-            dg2_pbox.Visible = true;
-            dg_chracter_sel2.Visible = true;
-            dg_chracter_sel2.BringToFront();
+                dg2_pbox.Visible = true;
+                dg_chracter_sel2.Visible = true;
+                dg_chracter_sel2.BringToFront();
 
-            yuhgie_pbox.Visible = true;
-            baddey_pbox.Visible = true;
+                yuhgie_pbox.Visible = true;
+                baddey_pbox.Visible = true;
 
-            c1name_lbl.Visible = true;
-            c2name_lbl.Visible = true;
-            c1desc_lbl.Visible = true;
-            c2desc_lbl.Visible = true;
-            cs_lbl.Visible = true;
-            cs_panel.Visible = true;
+                c1name_lbl.Visible = true;
+                c2name_lbl.Visible = true;
+                c1desc_lbl.Visible = true;
+                c2desc_lbl.Visible = true;
+                cs_lbl.Visible = true;
+                cs_panel.Visible = true;
 
-            enter_btn.Visible = false;
+                enter_btn.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Please type your ign.");
+            }
         }
     }
 }

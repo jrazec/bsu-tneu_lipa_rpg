@@ -194,7 +194,7 @@
             // dg2_clicknxt_lbl
             // 
             this.dg2_clicknxt_lbl.AutoSize = true;
-            this.dg2_clicknxt_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.dg2_clicknxt_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.dg2_clicknxt_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dg2_clicknxt_lbl.ForeColor = System.Drawing.Color.White;
             this.dg2_clicknxt_lbl.Location = new System.Drawing.Point(840, 588);
@@ -233,7 +233,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(840, 588);
@@ -305,15 +305,15 @@
             this.Controls.Add(this.c1name_lbl);
             this.Controls.Add(this.yuhgie_pbox);
             this.Controls.Add(this.baddey_pbox);
-            this.Controls.Add(this.dg1_clicknxt_lbl);
             this.Controls.Add(this.cs_panel);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dg2_clicknxt_lbl);
             this.Controls.Add(this.dg_chracter_sel2);
             this.Controls.Add(this.dg_chracter_sel3);
             this.Controls.Add(this.dg2_pbox);
             this.Controls.Add(this.dg1_pbox);
             this.Controls.Add(this.dg3_pbox);
+            this.Controls.Add(this.dg1_clicknxt_lbl);
+            this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
