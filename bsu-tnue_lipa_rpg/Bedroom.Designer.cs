@@ -30,19 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menu_panel = new System.Windows.Forms.Panel();
+            this.hint_pbox = new System.Windows.Forms.PictureBox();
+            this.menu_pbox = new System.Windows.Forms.PictureBox();
+            this.currency_lbl = new System.Windows.Forms.Label();
+            this.day_lbl = new System.Windows.Forms.Label();
             this.closetcollision_pbox = new System.Windows.Forms.PictureBox();
             this.bedroom_charac = new System.Windows.Forms.PictureBox();
             this.bedroomWalkTimer = new System.Windows.Forms.Timer(this.components);
-            this.day_lbl = new System.Windows.Forms.Label();
-            this.currency_lbl = new System.Windows.Forms.Label();
-            this.menu_pbox = new System.Windows.Forms.PictureBox();
-            this.hint_pbox = new System.Windows.Forms.PictureBox();
             this.doorcollision_pbox = new System.Windows.Forms.PictureBox();
             this.menu_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closetcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bedroom_charac)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.doorcollision_pbox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,6 +58,48 @@
             this.menu_panel.Name = "menu_panel";
             this.menu_panel.Size = new System.Drawing.Size(1151, 50);
             this.menu_panel.TabIndex = 0;
+            // 
+            // hint_pbox
+            // 
+            this.hint_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._1;
+            this.hint_pbox.Location = new System.Drawing.Point(978, 6);
+            this.hint_pbox.Name = "hint_pbox";
+            this.hint_pbox.Size = new System.Drawing.Size(44, 34);
+            this.hint_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hint_pbox.TabIndex = 3;
+            this.hint_pbox.TabStop = false;
+            // 
+            // menu_pbox
+            // 
+            this.menu_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._1;
+            this.menu_pbox.Location = new System.Drawing.Point(13, 5);
+            this.menu_pbox.Name = "menu_pbox";
+            this.menu_pbox.Size = new System.Drawing.Size(44, 34);
+            this.menu_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.menu_pbox.TabIndex = 2;
+            this.menu_pbox.TabStop = false;
+            // 
+            // currency_lbl
+            // 
+            this.currency_lbl.AutoSize = true;
+            this.currency_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.currency_lbl.Location = new System.Drawing.Point(776, 6);
+            this.currency_lbl.Name = "currency_lbl";
+            this.currency_lbl.Size = new System.Drawing.Size(110, 34);
+            this.currency_lbl.TabIndex = 1;
+            this.currency_lbl.Text = "₱ 800.00";
+            // 
+            // day_lbl
+            // 
+            this.day_lbl.AutoSize = true;
+            this.day_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.day_lbl.Location = new System.Drawing.Point(147, 6);
+            this.day_lbl.Name = "day_lbl";
+            this.day_lbl.Size = new System.Drawing.Size(99, 34);
+            this.day_lbl.TabIndex = 0;
+            this.day_lbl.Text = "Monday";
             // 
             // closetcollision_pbox
             // 
@@ -85,48 +127,6 @@
             this.bedroomWalkTimer.Interval = 50;
             this.bedroomWalkTimer.Tick += new System.EventHandler(this.bedroomWalkTimer_Tick);
             // 
-            // day_lbl
-            // 
-            this.day_lbl.AutoSize = true;
-            this.day_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.day_lbl.Location = new System.Drawing.Point(147, 6);
-            this.day_lbl.Name = "day_lbl";
-            this.day_lbl.Size = new System.Drawing.Size(99, 34);
-            this.day_lbl.TabIndex = 0;
-            this.day_lbl.Text = "Monday";
-            // 
-            // currency_lbl
-            // 
-            this.currency_lbl.AutoSize = true;
-            this.currency_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.currency_lbl.Location = new System.Drawing.Point(776, 6);
-            this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Size = new System.Drawing.Size(110, 34);
-            this.currency_lbl.TabIndex = 1;
-            this.currency_lbl.Text = "₱ 800.00";
-            // 
-            // menu_pbox
-            // 
-            this.menu_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._1;
-            this.menu_pbox.Location = new System.Drawing.Point(13, 5);
-            this.menu_pbox.Name = "menu_pbox";
-            this.menu_pbox.Size = new System.Drawing.Size(44, 34);
-            this.menu_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu_pbox.TabIndex = 2;
-            this.menu_pbox.TabStop = false;
-            // 
-            // hint_pbox
-            // 
-            this.hint_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._1;
-            this.hint_pbox.Location = new System.Drawing.Point(978, 6);
-            this.hint_pbox.Name = "hint_pbox";
-            this.hint_pbox.Size = new System.Drawing.Size(44, 34);
-            this.hint_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hint_pbox.TabIndex = 3;
-            this.hint_pbox.TabStop = false;
-            // 
             // doorcollision_pbox
             // 
             this.doorcollision_pbox.Location = new System.Drawing.Point(1001, 500);
@@ -146,6 +146,7 @@
             this.Controls.Add(this.menu_panel);
             this.Controls.Add(this.bedroom_charac);
             this.Controls.Add(this.closetcollision_pbox);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -156,10 +157,10 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.key_is_up);
             this.menu_panel.ResumeLayout(false);
             this.menu_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closetcollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bedroom_charac)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.doorcollision_pbox)).EndInit();
             this.ResumeLayout(false);
 

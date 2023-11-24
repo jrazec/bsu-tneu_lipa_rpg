@@ -146,6 +146,7 @@
             this.Controls.Add(this.t4_pbox);
             this.Controls.Add(this.label);
             this.Controls.Add(this.t5_pbox);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);

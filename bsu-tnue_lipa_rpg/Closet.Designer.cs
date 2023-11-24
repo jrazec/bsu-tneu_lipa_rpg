@@ -117,6 +117,7 @@
             this.Controls.Add(this.pants_pbox);
             this.Controls.Add(this.top_pbox);
             this.Controls.Add(this.menu_panel);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);

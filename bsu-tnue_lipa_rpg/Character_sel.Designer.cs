@@ -70,7 +70,7 @@
             // dg_chracter_sel1
             // 
             this.dg_chracter_sel1.AutoSize = true;
-            this.dg_chracter_sel1.BackColor = System.Drawing.Color.Transparent;
+            this.dg_chracter_sel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.dg_chracter_sel1.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dg_chracter_sel1.ForeColor = System.Drawing.Color.White;
             this.dg_chracter_sel1.Location = new System.Drawing.Point(212, 525);
@@ -82,7 +82,7 @@
             // dg1_clicknxt_lbl
             // 
             this.dg1_clicknxt_lbl.AutoSize = true;
-            this.dg1_clicknxt_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.dg1_clicknxt_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.dg1_clicknxt_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dg1_clicknxt_lbl.ForeColor = System.Drawing.Color.White;
             this.dg1_clicknxt_lbl.Location = new System.Drawing.Point(840, 588);
@@ -207,7 +207,7 @@
             // dg_chracter_sel2
             // 
             this.dg_chracter_sel2.AutoSize = true;
-            this.dg_chracter_sel2.BackColor = System.Drawing.Color.Transparent;
+            this.dg_chracter_sel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.dg_chracter_sel2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dg_chracter_sel2.ForeColor = System.Drawing.Color.White;
             this.dg_chracter_sel2.Location = new System.Drawing.Point(212, 525);
@@ -246,7 +246,7 @@
             // dg_chracter_sel3
             // 
             this.dg_chracter_sel3.AutoSize = true;
-            this.dg_chracter_sel3.BackColor = System.Drawing.Color.Transparent;
+            this.dg_chracter_sel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.dg_chracter_sel3.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dg_chracter_sel3.ForeColor = System.Drawing.Color.White;
             this.dg_chracter_sel3.Location = new System.Drawing.Point(212, 525);
@@ -314,6 +314,7 @@
             this.Controls.Add(this.dg2_pbox);
             this.Controls.Add(this.dg1_pbox);
             this.Controls.Add(this.dg3_pbox);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
