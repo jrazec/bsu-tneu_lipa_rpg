@@ -110,7 +110,10 @@ namespace bsu_tnue_lipa_rpg
 
         private void dg3_pbox_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            Bedroom signUp = new Bedroom();
+            signUp.ShowDialog();
+            this.Close();
         }
 
         private void enter_btn_Click(object sender, EventArgs e)
