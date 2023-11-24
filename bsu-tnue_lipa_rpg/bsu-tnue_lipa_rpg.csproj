@@ -107,6 +107,24 @@
     <Compile Include="Character_sel.Designer.cs">
       <DependentUpon>Character_sel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bedroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bedroom.Designer.cs">
+      <DependentUpon>Bedroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Closet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Closet.Designer.cs">
+      <DependentUpon>Closet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facade.Designer.cs">
+      <DependentUpon>Facade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +159,15 @@
     </Compile>
     <EmbeddedResource Include="Character_sel.resx">
       <DependentUpon>Character_sel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bedroom.resx">
+      <DependentUpon>Bedroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Closet.resx">
+      <DependentUpon>Closet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facade.resx">
+      <DependentUpon>Facade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
