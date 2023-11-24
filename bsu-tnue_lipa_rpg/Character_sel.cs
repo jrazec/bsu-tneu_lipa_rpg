@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace bsu_tnue_lipa_rpg
 {
     public partial class Character_sel : Form
     {
+        
         public Character_sel()
         {
             InitializeComponent();
@@ -24,36 +27,28 @@ namespace bsu_tnue_lipa_rpg
         }
 
 
-
-
-
-        private void Character_sel_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dg1_pbox_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void dg2_pbox_Click(object sender, EventArgs e)
-        {
-            //dg_chracter_sel2.Visible = false;
-            //dg2_pbox.Visible = false;
-            //dg2_pbox.SendToBack();
-            //code here to insert into  ign tbox to students table
-
-            //dg3_pbox.Visible = true;
-            //dg_chracter_sel3.Visible = true;
-
-        }
-
         private void baddey_pbox_Click(object sender, EventArgs e)
         {
             DialogResult choose = MessageBox.Show("You are choosing Baddey?", "Choosing", MessageBoxButtons.YesNo);
             if (choose == DialogResult.Yes)
             {
+                MySqlConnection mySqlConnection = new MySqlConnection(Form1.mysqlConn);
+                try
+                {
+                    mySqlConnection.Open();
+                    string insertChar = $@"INSERT INTO student_characters(charac_id,sr_code) VALUES(2,'{Form1.STUDENT_USER_SR_CODE}');";
+                    MySqlCommand insCharCmd = new MySqlCommand(insertChar, mySqlConnection);
+                    insCharCmd.ExecuteNonQuery();
+                    MessageBox.Show("Character Saved.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    mySqlConnection.Close();
+                }
                 //sql here to insert into character with SRCODEVARIABLE sa forms1, ung student character
                 dg2_pbox.SendToBack();
 
@@ -83,6 +78,23 @@ namespace bsu_tnue_lipa_rpg
             DialogResult choose = MessageBox.Show("You are choosing Yuh Gie?","Choosing",MessageBoxButtons.YesNo);
             if (choose == DialogResult.Yes)
             {
+                MySqlConnection mySqlConnection = new MySqlConnection(Form1.mysqlConn);
+                try
+                {
+                    mySqlConnection.Open();
+                    string insertChar = $@"INSERT INTO student_characters(charac_id,sr_code) VALUES(1,'{Form1.STUDENT_USER_SR_CODE}');";
+                    MySqlCommand insCharCmd = new MySqlCommand(insertChar, mySqlConnection);
+                    insCharCmd.ExecuteNonQuery();
+                    MessageBox.Show("Character Saved.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    mySqlConnection.Close();
+                }
                 //sql here to insert into character with SRCODEVARIABLE sa forms1, ung student character
                 dg2_pbox.SendToBack();
 
@@ -125,6 +137,25 @@ namespace bsu_tnue_lipa_rpg
                 label1.Visible = false;
                 dg1_pbox.SendToBack();
                 //code here to insert into  ign tbox to students table
+                MySqlConnection mySqlConnection = new MySqlConnection(Form1.mysqlConn);
+                try
+                {
+                    mySqlConnection.Open();
+                    string insertIGN = $@"UPDATE students 
+                                          SET in_game_name='{ign_tbox.Text}'
+                                          WHERE sr_code = '{Form1.STUDENT_USER_SR_CODE}';";
+                    MySqlCommand insIgnCmd = new MySqlCommand(insertIGN, mySqlConnection);
+                    insIgnCmd.ExecuteNonQuery();
+                    MessageBox.Show("IGN Saved.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    mySqlConnection.Close();
+                }
 
                 dg2_pbox.Visible = true;
                 dg_chracter_sel2.Visible = true;
@@ -146,6 +177,27 @@ namespace bsu_tnue_lipa_rpg
             {
                 MessageBox.Show("Please type your ign.");
             }
+        }
+        private void Character_sel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dg1_pbox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dg2_pbox_Click(object sender, EventArgs e)
+        {
+            //dg_chracter_sel2.Visible = false;
+            //dg2_pbox.Visible = false;
+            //dg2_pbox.SendToBack();
+            //code here to insert into  ign tbox to students table
+
+            //dg3_pbox.Visible = true;
+            //dg_chracter_sel3.Visible = true;
+
         }
     }
 }
