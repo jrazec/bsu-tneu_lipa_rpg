@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Pqc.Crypto.Lms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,14 +19,46 @@ namespace bsu_tnue_lipa_rpg
         public Character_sel()
         {
             InitializeComponent();
-            //Doesnt show up... No Braincells left
-            //dg1_pbox.Controls.Add(dg_chracter_sel1);
-            //dg1_pbox.Controls.Add(label1);
-            //dg1_pbox.Controls.Add(ign_tbox);
-            //dg1_pbox.Location = new Point(106, 463);
-           // dg1_pbox.BackColor = Color.Transparent;
         }
 
+        private void enter_btn_Click(object sender, EventArgs e)
+        {
+            if (ign_tbox.Text != string.Empty)
+            {
+                dg_chracter_sel1.Visible = false;
+                dg1_pbox.Visible = false;
+                ign_tbox.Visible = false;
+                label1.Visible = false;
+                dg1_pbox.SendToBack();
+                //code here to insert into  ign tbox to students table
+                MySqlConnection mySqlConnection = new MySqlConnection(Form1.mysqlConn);
+                try
+                {
+                    mySqlConnection.Open();
+                    string insertIGN = $@"UPDATE students 
+                                          SET in_game_name='{ign_tbox.Text}'
+                                          WHERE sr_code = '{Form1.STUDENT_USER_SR_CODE}';";
+                    MySqlCommand insIgnCmd = new MySqlCommand(insertIGN, mySqlConnection);
+                    insIgnCmd.ExecuteNonQuery();
+                    MessageBox.Show("IGN Saved.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    mySqlConnection.Close();
+                }
+                hideOrShowDialogue2entities(true);
+                dg_chracter_sel2.BringToFront();
+                enter_btn.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Please type your ign.");
+            }
+        }
 
         private void baddey_pbox_Click(object sender, EventArgs e)
         {
@@ -50,26 +83,14 @@ namespace bsu_tnue_lipa_rpg
                     mySqlConnection.Close();
                 }
                 //sql here to insert into character with SRCODEVARIABLE sa forms1, ung student character
+                hideOrShowDialogue2entities(false); 
                 dg2_pbox.SendToBack();
-
-                dg2_pbox.Visible = false;
-                dg_chracter_sel2.Visible = false;
-                
-                yuhgie_pbox.Visible = false;
-                baddey_pbox.Visible = false;
-
-                c1name_lbl.Visible = false;
-                c2name_lbl.Visible = false;
-                c1desc_lbl.Visible = false;
-                c2desc_lbl.Visible = false;
-                cs_lbl.Visible = false;
-                cs_panel.Visible = false;
+                dg_chracter_sel3.BringToFront();
+                label1.BringToFront();
 
                 dg3_pbox.Visible = true;
                 dg_chracter_sel3.Visible = true;
-                dg_chracter_sel3.BringToFront();
                 label1.Visible = true;
-                label1.BringToFront();
             }
         }
 
@@ -96,27 +117,14 @@ namespace bsu_tnue_lipa_rpg
                     mySqlConnection.Close();
                 }
                 //sql here to insert into character with SRCODEVARIABLE sa forms1, ung student character
+                hideOrShowDialogue2entities(false);
                 dg2_pbox.SendToBack();
-
-                dg2_pbox.Visible = false;
-                dg_chracter_sel2.Visible = false;
-
-                yuhgie_pbox.Visible = false;
-                baddey_pbox.Visible = false;
-
-                c1name_lbl.Visible = false;
-                c2name_lbl.Visible = false;
-                c1desc_lbl.Visible = false;
-                c2desc_lbl.Visible = false;
-                cs_lbl.Visible = false;
-                cs_panel.Visible = false;
-                
+                dg_chracter_sel3.BringToFront();
+                label1.BringToFront();
 
                 dg3_pbox.Visible = true;
                 dg_chracter_sel3.Visible = true;
-                dg_chracter_sel3.BringToFront();
-                label1.Visible=true;
-                label1.BringToFront();
+                label1.Visible = true;
             }
         }
 
@@ -127,56 +135,18 @@ namespace bsu_tnue_lipa_rpg
             signUp.ShowDialog();
             this.Close();
         }
-
-        private void enter_btn_Click(object sender, EventArgs e)
+        private void hideOrShowDialogue2entities(bool H_S)
         {
-            if (ign_tbox.Text != string.Empty) {
-                dg_chracter_sel1.Visible = false;
-                dg1_pbox.Visible = false;
-                ign_tbox.Visible = false;
-                label1.Visible = false;
-                dg1_pbox.SendToBack();
-                //code here to insert into  ign tbox to students table
-                MySqlConnection mySqlConnection = new MySqlConnection(Form1.mysqlConn);
-                try
-                {
-                    mySqlConnection.Open();
-                    string insertIGN = $@"UPDATE students 
-                                          SET in_game_name='{ign_tbox.Text}'
-                                          WHERE sr_code = '{Form1.STUDENT_USER_SR_CODE}';";
-                    MySqlCommand insIgnCmd = new MySqlCommand(insertIGN, mySqlConnection);
-                    insIgnCmd.ExecuteNonQuery();
-                    MessageBox.Show("IGN Saved.");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    mySqlConnection.Close();
-                }
-
-                dg2_pbox.Visible = true;
-                dg_chracter_sel2.Visible = true;
-                dg_chracter_sel2.BringToFront();
-
-                yuhgie_pbox.Visible = true;
-                baddey_pbox.Visible = true;
-
-                c1name_lbl.Visible = true;
-                c2name_lbl.Visible = true;
-                c1desc_lbl.Visible = true;
-                c2desc_lbl.Visible = true;
-                cs_lbl.Visible = true;
-                cs_panel.Visible = true;
-
-                enter_btn.Visible = false;
-            }
-            else
-            {
-                MessageBox.Show("Please type your ign.");
-            }
+            dg2_pbox.Visible = H_S;
+            dg_chracter_sel2.Visible = H_S;
+            yuhgie_pbox.Visible = H_S;
+            baddey_pbox.Visible = H_S;
+            c1name_lbl.Visible = H_S;
+            c2name_lbl.Visible = H_S;
+            c1desc_lbl.Visible = H_S;
+            c2desc_lbl.Visible = H_S;
+            cs_lbl.Visible = H_S;
+            cs_panel.Visible = H_S;
         }
         private void Character_sel_Load(object sender, EventArgs e)
         {
