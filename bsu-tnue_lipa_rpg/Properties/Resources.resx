@@ -118,131 +118,146 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="spartan-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\spartan-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="female-pe-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-pe-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sub_title" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sub title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dialogue-base" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dialogue-base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="111-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\111-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sir-dialogue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sir-dialogue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="loginpng" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loginpng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exit Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="main_title" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\main title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SIGNUPPNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SIGNUPPNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="low" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\low.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Atty-Alvin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Atty-Alvin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dr-Balazon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dr-Balazon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Engr-Jonnah" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Engr-Jonnah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Guard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Guard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sir-Daryl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sir-Daryl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="female-pe-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-pe-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chapter-end" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chapter-end.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="neck-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\neck-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pants-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pants-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shoes-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shoes-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="top-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\top-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="tutorial-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tutorial-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tutorial-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tutorial-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="male-org-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male-org-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tutorial-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tutorial-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tutorial-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tutorial-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bedroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bedroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cecs-hallway" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cecs-hallway.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="closet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\closet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="elev" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\elev.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="facade" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\facade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="map-art" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\map-art.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="map-blur" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\map-blur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ob-1stflr" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ob-1stflr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ob-clinic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ob-clinic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ob-hallway" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ob-hallway.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ob-libr" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ob-libr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="registrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\registrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="female-org-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-org-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="male-casual-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\male-casual-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="male-casual-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-casual-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="male-uni-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male-uni-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="male-casual-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-casual-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bedroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bedroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-org-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-org-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Guard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="male-pe-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male-pe-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="College Blouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\College Blouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-casual-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-casual-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loginpng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loginpng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ob-clinic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ob-clinic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="School ID Lace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\School ID Lace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SIGNUPPNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SIGNUPPNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-pe-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-pe-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Civilian Top-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Civilian Top-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ob-libr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ob-libr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tutorial-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tutorial-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="map-art" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\map-art.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shoes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shoes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tutorial-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tutorial-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="male-pe-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male-pe-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-casual-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-casual-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CICS Org Shirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CICS Org Shirt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="male-pe-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male-pe-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sub_title" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sub title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="male-uni-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male-uni-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="College Barong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\College Barong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="neck-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\neck-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="registrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\registrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="low" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\low.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ob-1stflr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ob-1stflr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-org-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-org-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Denim Pants" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Denim Pants.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-uni-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-uni-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="map-blur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\map-blur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-uni-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-uni-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dr-Balazon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dr-Balazon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="male-casual-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\male-casual-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,154 +265,148 @@
   <data name="male-org-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\male-org-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="male-org-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-org-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="male-org-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-org-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="male-org-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-org-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="male-pe-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-pe-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="male-pe-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-pe-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="male-pe-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-pe-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="male-pe-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-pe-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="male-uni-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-uni-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="male-uni-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-uni-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="male-uni-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-uni-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="male-uni-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male-uni-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CICS Org Shirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CICS Org Shirt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Civilian Bottom-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Civilian Bottom-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Civilian Bottom-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Civilian Bottom-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Civilian Top-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Civilian Top-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Civilian Top-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Civilian Top-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="College Barong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\College Barong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="College Blouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\College Blouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="College Pants" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\College Pants.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="College Skirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\College Skirt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Denim Pants" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Denim Pants.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Necklace Unisex" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Necklace Unisex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PE Jogging Pant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PE Jogging Pant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PE T-Shirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PE T-Shirt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="School ID Lace" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\School ID Lace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shoes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shoes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-casual-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-casual-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-casual-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-casual-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-casual-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-casual-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-casual-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-casual-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-org-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-org-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-org-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-org-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-org-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-org-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-org-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-org-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-pe-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-pe-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-pe-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-pe-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-pe-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-pe-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-pe-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-pe-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-uni-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-uni-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-uni-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-uni-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-uni-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-uni-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="female-uni-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-uni-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="male-dialogue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\male-dialogue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="atty-dialogue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\atty-dialogue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dialogue-base" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dialogue-base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dr-dialogue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dr-dialogue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pants-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pants-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="engr-dialogue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\engr-dialogue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="female-dialogue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\female-dialogue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="female-casual-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-casual-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Engr-Jonnah" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Engr-Jonnah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-pe-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-pe-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="male-pe-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male-pe-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PE T-Shirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PE T-Shirt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="elev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elev.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="main_title" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\main title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="atty-dialogue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\atty-dialogue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="College Skirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\College Skirt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="male-casual-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male-casual-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="guard-dialogue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guard-dialogue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sir-dialogue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sir-dialogue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cecs-hallway" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cecs-hallway.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dr-dialogue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dr-dialogue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sir-Daryl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sir-Daryl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="facade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\facade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Civilian Bottom-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Civilian Bottom-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Atty-Alvin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Atty-Alvin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="male-casual-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male-casual-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spartan-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spartan-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Civilian Bottom-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Civilian Bottom-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-casual-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-casual-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exit Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ob-hallway" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ob-hallway.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Civilian Top-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Civilian Top-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-org-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-org-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="male-uni-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male-uni-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shoes-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shoes-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PE Jogging Pant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PE Jogging Pant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Necklace Unisex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Necklace Unisex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="111-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\111-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-uni-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-uni-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="male-org-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male-org-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="male-uni-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male-uni-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-dialogue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-dialogue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tutorial-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tutorial-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female-uni-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female-uni-front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="male-org-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male-org-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="College Pants" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\College Pants.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hint-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hint-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sched" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sched.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

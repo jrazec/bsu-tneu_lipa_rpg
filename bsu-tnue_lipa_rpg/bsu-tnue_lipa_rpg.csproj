@@ -542,5 +542,14 @@
   <ItemGroup>
     <None Include="Resources\sir-dialogue.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hint-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sched.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

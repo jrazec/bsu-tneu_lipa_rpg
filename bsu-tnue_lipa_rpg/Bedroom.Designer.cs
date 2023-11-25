@@ -45,6 +45,7 @@
             this.next_pbox = new System.Windows.Forms.PictureBox();
             this.view_lbl = new System.Windows.Forms.Label();
             this.enter_lbl = new System.Windows.Forms.Label();
+            this.hint_lbl = new System.Windows.Forms.Label();
             this.menu_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).BeginInit();
@@ -59,6 +60,7 @@
             // menu_panel
             // 
             this.menu_panel.BackColor = System.Drawing.Color.Maroon;
+            this.menu_panel.Controls.Add(this.hint_lbl);
             this.menu_panel.Controls.Add(this.hint_pbox);
             this.menu_panel.Controls.Add(this.menu_pbox);
             this.menu_panel.Controls.Add(this.currency_lbl);
@@ -71,7 +73,7 @@
             // 
             // hint_pbox
             // 
-            this.hint_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._1;
+            this.hint_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.hint_icon;
             this.hint_pbox.Location = new System.Drawing.Point(978, 6);
             this.hint_pbox.Name = "hint_pbox";
             this.hint_pbox.Size = new System.Drawing.Size(44, 34);
@@ -81,10 +83,10 @@
             // 
             // menu_pbox
             // 
-            this.menu_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._1;
-            this.menu_pbox.Location = new System.Drawing.Point(13, 5);
+            this.menu_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.menu_icon;
+            this.menu_pbox.Location = new System.Drawing.Point(24, 7);
             this.menu_pbox.Name = "menu_pbox";
-            this.menu_pbox.Size = new System.Drawing.Size(44, 34);
+            this.menu_pbox.Size = new System.Drawing.Size(38, 33);
             this.menu_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menu_pbox.TabIndex = 2;
             this.menu_pbox.TabStop = false;
@@ -229,6 +231,17 @@
             this.enter_lbl.Visible = false;
             this.enter_lbl.Click += new System.EventHandler(this.enter_lbl_Click);
             // 
+            // hint_lbl
+            // 
+            this.hint_lbl.AutoSize = true;
+            this.hint_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hint_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.hint_lbl.Location = new System.Drawing.Point(1019, 6);
+            this.hint_lbl.Name = "hint_lbl";
+            this.hint_lbl.Size = new System.Drawing.Size(58, 34);
+            this.hint_lbl.TabIndex = 4;
+            this.hint_lbl.Text = "Hint";
+            // 
             // Bedroom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -246,6 +259,7 @@
             this.Controls.Add(this.closetcollision_pbox);
             this.Controls.Add(this.dg_pbox);
             this.Controls.Add(this.doorcollision_pbox);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -288,5 +302,6 @@
         private System.Windows.Forms.PictureBox next_pbox;
         private System.Windows.Forms.Label view_lbl;
         private System.Windows.Forms.Label enter_lbl;
+        private System.Windows.Forms.Label hint_lbl;
     }
 }
