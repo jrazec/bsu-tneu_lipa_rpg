@@ -134,6 +134,25 @@ namespace bsu_tnue_lipa_rpg
 
         private void dg3_pbox_Click(object sender, EventArgs e)
         {
+            //Will create tasks in database
+            MySqlConnection mySqlConnection = new MySqlConnection(Form1.mysqlConn);
+            try
+            {
+                mySqlConnection.Open();
+                string updateChar = $@"INSERT INTO gameplay_records(sr_code,task_id,status,current_money)
+                                       VALUES ('{Form1.STUDENT_USER_SR_CODE}',1,false,800.00);";
+                MySqlCommand updtCharCmd = new MySqlCommand(updateChar, mySqlConnection);
+                updtCharCmd.ExecuteNonQuery();
+                MessageBox.Show("Character Saved.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                mySqlConnection.Close();
+            }
             this.Hide();
             Bedroom signUp = new Bedroom();
             signUp.ShowDialog();

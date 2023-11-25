@@ -29,8 +29,9 @@ namespace bsu_tnue_lipa_rpg
             view_lbl.Visible = false;
             sched_pbox.Visible = false; // to make sure it is clsoed.
             next_pbox.Visible = false;
-            dg_bedroom.Text = @"Before you head out, remember to dress appropriately. Today's schedule includes prescribed
-garments and you'll need to choose the right ones.";
+            dg_bedroom.Text = @"Before you head out, remember to dress appropriately. Today's schedule includes prescribed garments and you'll need to 
+choose the right ones.";
+            click_lbl.Visible = true;
             click_lbl.Text = "Press to start.";
             enter_lbl.Visible = true;
             
@@ -40,6 +41,9 @@ garments and you'll need to choose the right ones.";
 
         private void view_lbl_Click(object sender, EventArgs e)
         {
+            click_lbl.Visible = true;
+            next_pbox.Visible = true;
+
             if (openSched == false)
             {
                 openSched = true;
@@ -69,7 +73,7 @@ garments and you'll need to choose the right ones.";
         {
 
         }
-
+        
         //initiate character movement in the bedroom
         private void bedroomWalkTimer_Tick(object sender, EventArgs e)
         {

@@ -17,6 +17,8 @@ namespace bsu_tnue_lipa_rpg
         public Closet()
         {
             InitializeComponent();
+            top top_uc = new top();
+            addUC(top_uc);
         }
         private void addUC(UserControl uc)
         {

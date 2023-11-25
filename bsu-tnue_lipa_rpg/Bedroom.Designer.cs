@@ -169,6 +169,7 @@
             this.click_lbl.Size = new System.Drawing.Size(124, 24);
             this.click_lbl.TabIndex = 10;
             this.click_lbl.Text = "Click to proceed..";
+            this.click_lbl.Visible = false;
             // 
             // dg_pbox
             // 
@@ -198,6 +199,7 @@
             this.next_pbox.Size = new System.Drawing.Size(33, 32);
             this.next_pbox.TabIndex = 9;
             this.next_pbox.TabStop = false;
+            this.next_pbox.Visible = false;
             this.next_pbox.Click += new System.EventHandler(this.next_pbox_Click);
             // 
             // view_lbl
