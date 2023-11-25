@@ -119,6 +119,30 @@
     <Compile Include="Closet.Designer.cs">
       <DependentUpon>Closet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Closet_garments_uc\bottom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Closet_garments_uc\bottom.Designer.cs">
+      <DependentUpon>bottom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Closet_garments_uc\neck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Closet_garments_uc\neck.Designer.cs">
+      <DependentUpon>neck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Closet_garments_uc\shoes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Closet_garments_uc\shoes.Designer.cs">
+      <DependentUpon>shoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Closet_garments_uc\top.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Closet_garments_uc\top.Designer.cs">
+      <DependentUpon>top.cs</DependentUpon>
+    </Compile>
     <Compile Include="Facade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +190,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Closet.resx">
       <DependentUpon>Closet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Closet_garments_uc\bottom.resx">
+      <DependentUpon>bottom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Closet_garments_uc\neck.resx">
+      <DependentUpon>neck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Closet_garments_uc\shoes.resx">
+      <DependentUpon>shoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Closet_garments_uc\top.resx">
+      <DependentUpon>top.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Facade.resx">
       <DependentUpon>Facade.cs</DependentUpon>

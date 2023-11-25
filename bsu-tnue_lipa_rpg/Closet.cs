@@ -12,6 +12,7 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Closet : Form
     {
+        
         public Closet()
         {
             InitializeComponent();

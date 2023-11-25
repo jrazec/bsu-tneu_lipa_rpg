@@ -34,6 +34,7 @@
             this.necklace_pbox = new System.Windows.Forms.PictureBox();
             this.shoes_pbox = new System.Windows.Forms.PictureBox();
             this.backtoroom_btn = new System.Windows.Forms.Button();
+            this.garments_panel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.top_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pants_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.necklace_pbox)).BeginInit();
@@ -105,12 +106,20 @@
             this.backtoroom_btn.UseVisualStyleBackColor = false;
             this.backtoroom_btn.Click += new System.EventHandler(this.backtoroom_btn_Click);
             // 
+            // garments_panel
+            // 
+            this.garments_panel.Location = new System.Drawing.Point(359, 87);
+            this.garments_panel.Name = "garments_panel";
+            this.garments_panel.Size = new System.Drawing.Size(671, 518);
+            this.garments_panel.TabIndex = 6;
+            // 
             // Closet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.closet;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.garments_panel);
             this.Controls.Add(this.backtoroom_btn);
             this.Controls.Add(this.shoes_pbox);
             this.Controls.Add(this.necklace_pbox);
@@ -140,5 +149,6 @@
         private System.Windows.Forms.PictureBox necklace_pbox;
         private System.Windows.Forms.PictureBox shoes_pbox;
         private System.Windows.Forms.Button backtoroom_btn;
+        private System.Windows.Forms.Panel garments_panel;
     }
 }
