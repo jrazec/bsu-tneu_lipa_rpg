@@ -32,7 +32,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.map_charac = new System.Windows.Forms.PictureBox();
             this.mapWalkTimer = new System.Windows.Forms.Timer(this.components);
+            this.cecscollision_pbox = new System.Windows.Forms.PictureBox();
+            this.obcollision_pbox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.map_charac)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cecscollision_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.obcollision_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,12 +64,30 @@
             this.mapWalkTimer.Interval = 50;
             this.mapWalkTimer.Tick += new System.EventHandler(this.mapWalkTimer_Tick);
             // 
+            // cecscollision_pbox
+            // 
+            this.cecscollision_pbox.Location = new System.Drawing.Point(159, 370);
+            this.cecscollision_pbox.Name = "cecscollision_pbox";
+            this.cecscollision_pbox.Size = new System.Drawing.Size(48, 213);
+            this.cecscollision_pbox.TabIndex = 2;
+            this.cecscollision_pbox.TabStop = false;
+            // 
+            // obcollision_pbox
+            // 
+            this.obcollision_pbox.Location = new System.Drawing.Point(980, 219);
+            this.obcollision_pbox.Name = "obcollision_pbox";
+            this.obcollision_pbox.Size = new System.Drawing.Size(48, 125);
+            this.obcollision_pbox.TabIndex = 3;
+            this.obcollision_pbox.TabStop = false;
+            // 
             // Map
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.map_art;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.obcollision_pbox);
+            this.Controls.Add(this.cecscollision_pbox);
             this.Controls.Add(this.map_charac);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -77,6 +99,8 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.key_is_down);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.key_is_up);
             ((System.ComponentModel.ISupportInitialize)(this.map_charac)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cecscollision_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.obcollision_pbox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -86,5 +110,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox map_charac;
         private System.Windows.Forms.Timer mapWalkTimer;
+        private System.Windows.Forms.PictureBox cecscollision_pbox;
+        private System.Windows.Forms.PictureBox obcollision_pbox;
     }
 }
