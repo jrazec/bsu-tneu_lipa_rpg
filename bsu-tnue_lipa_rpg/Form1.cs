@@ -133,7 +133,7 @@ namespace bsu_tnue_lipa_rpg
                     );
 
                     CREATE TABLE IF NOT EXISTS gameplay_records (
-                        gameplay_id INT PRIMARY KEY,
+                        gameplay_id SERIAL PRIMARY KEY,
                         date_finished DATE,
                         total_time_spent TIME,
                         current_money NUMERIC(7,2),
