@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bsu_tnue_lipa_rpg.Closet_garments_uc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,13 +18,43 @@ namespace bsu_tnue_lipa_rpg
         {
             InitializeComponent();
         }
-
+        private void addUC(UserControl uc)
+        {
+            uc.Dock = DockStyle.Fill;
+            garments_panel.Controls.Clear();
+            garments_panel.Controls.Add(uc);
+            uc.BringToFront();
+        }
         private void backtoroom_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
             Bedroom bedroom = new Bedroom();
             bedroom.ShowDialog();
             this.Close();
+        }
+
+        private void top_pbox_Click(object sender, EventArgs e)
+        {
+            top top_uc = new top();
+            addUC(top_uc);
+        }
+
+        private void pants_pbox_Click(object sender, EventArgs e)
+        {
+            bottom bot_uc = new bottom();
+            addUC(bot_uc);
+        }
+
+        private void necklace_pbox_Click(object sender, EventArgs e)
+        {
+            neck neck_uc = new neck();
+            addUC(neck_uc);
+        }
+
+        private void shoes_pbox_Click(object sender, EventArgs e)
+        {
+            shoes shoes_uc = new shoes();
+            addUC(shoes_uc);
         }
     }
 }

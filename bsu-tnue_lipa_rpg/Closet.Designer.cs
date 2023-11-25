@@ -60,6 +60,7 @@
             this.top_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.top_pbox.TabIndex = 1;
             this.top_pbox.TabStop = false;
+            this.top_pbox.Click += new System.EventHandler(this.top_pbox_Click);
             // 
             // pants_pbox
             // 
@@ -71,6 +72,7 @@
             this.pants_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pants_pbox.TabIndex = 2;
             this.pants_pbox.TabStop = false;
+            this.pants_pbox.Click += new System.EventHandler(this.pants_pbox_Click);
             // 
             // necklace_pbox
             // 
@@ -82,6 +84,7 @@
             this.necklace_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.necklace_pbox.TabIndex = 3;
             this.necklace_pbox.TabStop = false;
+            this.necklace_pbox.Click += new System.EventHandler(this.necklace_pbox_Click);
             // 
             // shoes_pbox
             // 
@@ -93,6 +96,7 @@
             this.shoes_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.shoes_pbox.TabIndex = 4;
             this.shoes_pbox.TabStop = false;
+            this.shoes_pbox.Click += new System.EventHandler(this.shoes_pbox_Click);
             // 
             // backtoroom_btn
             // 
