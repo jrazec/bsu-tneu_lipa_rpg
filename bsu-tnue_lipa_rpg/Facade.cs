@@ -12,6 +12,15 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Facade : Form
     {
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParams = base.CreateParams;
+                handleParams.ExStyle |= 0x02000000;
+                return handleParams;
+            }
+        }
         bool go_up, go_down, go_left, go_right;
         int walk = 20;
         public Facade()

@@ -1,25 +1,47 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace bsu_tnue_lipa_rpg
 {
+
    
     public partial class Bedroom : Form
     {
+        public int CHARAC_ID;
+
         public static Bedroom instance;
         bool go_up, go_down, go_left, go_right;
         int walk = 20;
+
+        //THIS SOLVED THE PROBLEM HUUHUH FINALYY!!!!!!!!!!
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParams = base.CreateParams;
+                handleParams.ExStyle |= 0x02000000;
+                return handleParams;
+            }
+        }
         public Bedroom()
         {
+
             InitializeComponent();
             instance = this;
+
+            checkCharac();
+            characCasualFront();
+
         }
         bool openSched = false;
 
@@ -37,7 +59,6 @@ choose the right ones.";
             
         }
         
-
 
         private void view_lbl_Click(object sender, EventArgs e)
         {
@@ -158,28 +179,28 @@ choose the right ones.";
             {
                 e.Handled = true;
                 go_left = true;
-                bedroom_charac.Image = Properties.Resources.male_casual_left;
+                characCasualLeft();
             }
 
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 e.Handled = true;
                 go_right = true;
-                bedroom_charac.Image = Properties.Resources.male_casual_right;
+                characCasualRight();
             }
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
             {
                 e.Handled = true;
                 go_up = true;
-                bedroom_charac.Image = Properties.Resources.male_casual_back;
+                characCasualBack();
             }
 
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
                 e.Handled = true;
                 go_down = true;
-                bedroom_charac.Image = Properties.Resources.male_casual_front;
+                characCasualFront();
             }
         }
 
@@ -203,8 +224,90 @@ choose the right ones.";
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
                 go_down = false;
-            }
-            
+            }     
         }
+        private void characCasualFront()
+        {
+            if(CHARAC_ID == 1)
+            {
+                bedroom_charac.Image = Properties.Resources.male_casual_front;
+            }
+            else if(CHARAC_ID == 2)
+            {
+                bedroom_charac.Image = Properties.Resources.female_casual_front;
+            }    
+        }
+
+        private void characCasualBack()
+        {
+            if (CHARAC_ID == 1)
+            {
+                bedroom_charac.Image = Properties.Resources.male_casual_back;
+            }
+            else if (CHARAC_ID == 2)
+            {
+                bedroom_charac.Image = Properties.Resources.female_casual_back;
+            }
+        }
+
+        private void characCasualLeft()
+        {
+            if (CHARAC_ID == 1)
+            {
+                bedroom_charac.Image = Properties.Resources.male_casual_left;
+            }
+            else if (CHARAC_ID == 2)
+            {
+                bedroom_charac.Image = Properties.Resources.female_casual_left;
+            }
+        }
+
+        private void characCasualRight()
+        {
+            if (CHARAC_ID == 1)
+            {
+                bedroom_charac.Image = Properties.Resources.male_casual_right;
+            }
+            else if (CHARAC_ID == 2)
+            {
+                bedroom_charac.Image = Properties.Resources.female_casual_right;
+            }
+        }
+
+        private void checkCharac()
+        {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
+
+            string slctCharacID = $@"
+                SELECT charac_id
+                FROM students
+                WHERE sr_code = '{Form1.STUDENT_USER_SR_CODE}'";
+
+            try
+            {
+                mysqlConnection.Open();
+                MySqlCommand sltcCharacIDCmd = new MySqlCommand(slctCharacID,mysqlConnection); 
+
+                using (MySqlDataReader reader = sltcCharacIDCmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        CHARAC_ID = Convert.ToInt32(reader["charac_id"]);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                mysqlConnection.Close();
+            }
+            //to be removed
+            day_lbl.Text = CHARAC_ID.ToString();
+        }
+
+
     }
 }

@@ -96,7 +96,6 @@
             this.shoes_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.shoes_pbox.TabIndex = 4;
             this.shoes_pbox.TabStop = false;
-            this.shoes_pbox.Click += new System.EventHandler(this.shoes_pbox_Click);
             // 
             // backtoroom_btn
             // 

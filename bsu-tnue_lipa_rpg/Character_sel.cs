@@ -15,7 +15,15 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Character_sel : Form
     {
-        
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParams = base.CreateParams;
+                handleParams.ExStyle |= 0x02000000;
+                return handleParams;
+            }
+        }
         public Character_sel()
         {
             InitializeComponent();
@@ -157,6 +165,7 @@ namespace bsu_tnue_lipa_rpg
             Bedroom signUp = new Bedroom();
             signUp.ShowDialog();
             this.Close();
+
         }
         private void hideOrShowDialogue2entities(bool H_S)
         {
