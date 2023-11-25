@@ -19,6 +19,25 @@ namespace bsu_tnue_lipa_rpg
             InitializeComponent();
         }
 
+        private void next_pbox_Click(object sender, EventArgs e)
+        {
+            next_pbox.Visible = false;
+            dg_map.Text = "Clue: ...";
+            click_lbl.Visible = true;
+            click_lbl.Text = "Press to start.";
+            enter_lbl.Visible = true;
+        }
+
+        private void enter_lbl_Click(object sender, EventArgs e)
+        {
+            enter_lbl.Visible = false;
+            dg_pbox.Visible = false;
+            dg_map.Visible = false;
+            click_lbl.Visible = false;
+            mapWalkTimer.Start();
+        }
+
+
         private void mapWalkTimer_Tick(object sender, EventArgs e)
         {
             if (go_left == true && map_charac.Left > 149)
