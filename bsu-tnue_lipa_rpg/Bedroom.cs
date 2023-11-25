@@ -18,6 +18,54 @@ namespace bsu_tnue_lipa_rpg
         {
             InitializeComponent();
         }
+        bool openSched = false;
+
+        
+        private void next_pbox_Click(object sender, EventArgs e)
+        {
+            view_lbl.Visible = false;
+            sched_pbox.Visible = false; // to make sure it is clsoed.
+            next_pbox.Visible = false;
+            dg_bedroom.Text = @"Before you head out, remember to dress appropriately. Today's schedule includes prescribed
+garments and you'll need to choose the right ones.";
+            click_lbl.Text = "Press to start.";
+            enter_lbl.Visible = true;
+            
+        }
+        
+
+
+        private void view_lbl_Click(object sender, EventArgs e)
+        {
+            if (openSched == false)
+            {
+                openSched = true;
+                sched_pbox.Visible = true;
+                sched_pbox.BringToFront();
+                view_lbl.Text = "HIDE";
+            }
+            else
+            {
+                openSched = false;
+                sched_pbox.Visible = false;
+                sched_pbox.SendToBack();
+                view_lbl.Text = "VIEW";
+            }
+        }
+
+        private void enter_lbl_Click(object sender, EventArgs e)
+        {
+            enter_lbl.Visible = false;
+            dg_pbox.Visible = false;
+            dg_bedroom.Visible = false;
+            click_lbl.Visible = false;
+            bedroomWalkTimer.Start();
+        }
+
+        private void menu_pbox_Click(object sender, EventArgs e)
+        {
+
+        }
 
         //initiate character movement in the bedroom
         private void bedroomWalkTimer_Tick(object sender, EventArgs e)
@@ -101,24 +149,28 @@ namespace bsu_tnue_lipa_rpg
         {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
+                e.Handled = true;
                 go_left = true;
                 bedroom_charac.Image = Properties.Resources.male_casual_left;
             }
 
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
+                e.Handled = true;
                 go_right = true;
                 bedroom_charac.Image = Properties.Resources.male_casual_right;
             }
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
             {
+                e.Handled = true;
                 go_up = true;
                 bedroom_charac.Image = Properties.Resources.male_casual_back;
             }
 
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
+                e.Handled = true;
                 go_down = true;
                 bedroom_charac.Image = Properties.Resources.male_casual_front;
             }
