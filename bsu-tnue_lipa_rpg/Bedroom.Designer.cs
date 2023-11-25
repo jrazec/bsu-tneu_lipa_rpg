@@ -273,7 +273,7 @@
         private System.Windows.Forms.Panel menu_panel;
         private System.Windows.Forms.PictureBox closetcollision_pbox;
         private System.Windows.Forms.PictureBox bedroom_charac;
-        private System.Windows.Forms.Timer bedroomWalkTimer;
+        public System.Windows.Forms.Timer bedroomWalkTimer;//made this public to access it to closet form
         private System.Windows.Forms.Label currency_lbl;
         private System.Windows.Forms.Label day_lbl;
         private System.Windows.Forms.PictureBox hint_pbox;

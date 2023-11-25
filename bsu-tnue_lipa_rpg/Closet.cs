@@ -28,8 +28,8 @@ namespace bsu_tnue_lipa_rpg
         private void backtoroom_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Bedroom bedroom = new Bedroom();
-            bedroom.ShowDialog();
+            Bedroom.instance.Show();//to load the recent form
+            Bedroom.instance.bedroomWalkTimer.Start();//to access the bedroom timer;made this public in designer.cs
             this.Close();
         }
 

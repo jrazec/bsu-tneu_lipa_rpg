@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace bsu_tnue_lipa_rpg
 {
+   
     public partial class Bedroom : Form
     {
+        public static Bedroom instance;
         bool go_up, go_down, go_left, go_right;
         int walk = 20;
         public Bedroom()
         {
             InitializeComponent();
+            instance = this;
         }
         bool openSched = false;
 
@@ -110,7 +113,7 @@ garments and you'll need to choose the right ones.";
                         this.Hide();
                         Closet opened_closet = new Closet();
                         opened_closet.ShowDialog();
-                        this.Close();
+
                     }
                 }
             }
