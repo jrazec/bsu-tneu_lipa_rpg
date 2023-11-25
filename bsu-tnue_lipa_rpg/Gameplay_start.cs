@@ -60,6 +60,7 @@ namespace bsu_tnue_lipa_rpg
 
                 if (dt.Rows.Count == 1)//if makikita ung gameplay record na task # 1 nya na nag iisa naman
                 {
+                    MessageBox.Show("Gameplay found, redirecting where you left out..");
                     this.Hide();
                     Bedroom bd = new Bedroom();
                     bd.ShowDialog();
@@ -67,6 +68,7 @@ namespace bsu_tnue_lipa_rpg
                 }
                 else//if walang magpopop up na query, ito lalabas
                 {
+                    MessageBox.Show("No Gameplay Record found, proceeding to the tutorial..");
                     this.Hide();
                     Game_mechanics gMech = new Game_mechanics();
                     gMech.ShowDialog();
