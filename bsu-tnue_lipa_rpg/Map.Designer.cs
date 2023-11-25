@@ -39,13 +39,11 @@
             this.next_pbox = new System.Windows.Forms.PictureBox();
             this.click_lbl = new System.Windows.Forms.Label();
             this.enter_lbl = new System.Windows.Forms.Label();
-            this.charac_panel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.map_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cecscollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.next_pbox)).BeginInit();
-            this.charac_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,7 +59,7 @@
             // 
             this.map_charac.BackColor = System.Drawing.Color.Transparent;
             this.map_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.male_uni_front;
-            this.map_charac.Location = new System.Drawing.Point(5, 5);
+            this.map_charac.Location = new System.Drawing.Point(522, 378);
             this.map_charac.Name = "map_charac";
             this.map_charac.Size = new System.Drawing.Size(53, 86);
             this.map_charac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -70,7 +68,7 @@
             // 
             // mapWalkTimer
             // 
-            this.mapWalkTimer.Interval = 50;
+            this.mapWalkTimer.Interval = 90;
             this.mapWalkTimer.Tick += new System.EventHandler(this.mapWalkTimer_Tick);
             // 
             // cecscollision_pbox
@@ -115,12 +113,12 @@
             // 
             // next_pbox
             // 
+            this.next_pbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.next_pbox.Location = new System.Drawing.Point(971, 595);
             this.next_pbox.Name = "next_pbox";
             this.next_pbox.Size = new System.Drawing.Size(33, 32);
             this.next_pbox.TabIndex = 10;
             this.next_pbox.TabStop = false;
-            this.next_pbox.Visible = false;
             this.next_pbox.Click += new System.EventHandler(this.next_pbox_Click);
             // 
             // click_lbl
@@ -134,12 +132,12 @@
             this.click_lbl.Size = new System.Drawing.Size(124, 24);
             this.click_lbl.TabIndex = 11;
             this.click_lbl.Text = "Click to proceed..";
-            this.click_lbl.Visible = false;
             // 
             // enter_lbl
             // 
             this.enter_lbl.AutoSize = true;
             this.enter_lbl.BackColor = System.Drawing.Color.Maroon;
+            this.enter_lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.enter_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enter_lbl.ForeColor = System.Drawing.Color.White;
             this.enter_lbl.Location = new System.Drawing.Point(947, 599);
@@ -150,22 +148,13 @@
             this.enter_lbl.Visible = false;
             this.enter_lbl.Click += new System.EventHandler(this.enter_lbl_Click);
             // 
-            // charac_panel
-            // 
-            this.charac_panel.BackColor = System.Drawing.Color.Transparent;
-            this.charac_panel.Controls.Add(this.map_charac);
-            this.charac_panel.Location = new System.Drawing.Point(503, 370);
-            this.charac_panel.Name = "charac_panel";
-            this.charac_panel.Size = new System.Drawing.Size(63, 94);
-            this.charac_panel.TabIndex = 15;
-            // 
             // Map
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.map_art;
             this.ClientSize = new System.Drawing.Size(1151, 639);
-            this.Controls.Add(this.charac_panel);
+            this.Controls.Add(this.map_charac);
             this.Controls.Add(this.enter_lbl);
             this.Controls.Add(this.next_pbox);
             this.Controls.Add(this.click_lbl);
@@ -187,7 +176,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.obcollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.next_pbox)).EndInit();
-            this.charac_panel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,6 +193,5 @@
         private System.Windows.Forms.PictureBox next_pbox;
         private System.Windows.Forms.Label click_lbl;
         private System.Windows.Forms.Label enter_lbl;
-        private System.Windows.Forms.Panel charac_panel;
     }
 }

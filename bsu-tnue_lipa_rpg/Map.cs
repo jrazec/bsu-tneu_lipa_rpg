@@ -13,7 +13,7 @@ namespace bsu_tnue_lipa_rpg
     public partial class Map : Form
     {
         bool go_up, go_down, go_left, go_right;
-        int walk = 20;
+        int walk = 10;
         public Map()
         {
             InitializeComponent();
