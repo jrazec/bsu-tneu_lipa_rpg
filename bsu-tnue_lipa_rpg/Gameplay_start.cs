@@ -67,6 +67,7 @@ namespace bsu_tnue_lipa_rpg
                 }
                 else//if walang magpopop up na query, ito lalabas
                 {
+                    this.Hide();
                     Game_mechanics gMech = new Game_mechanics();
                     gMech.ShowDialog();
                     this.Close();

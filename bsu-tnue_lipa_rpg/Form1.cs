@@ -16,7 +16,7 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Form1 : Form
     {
-        const string dBase = "bsu_lipa_rpg_database";//database that you will connect
+        const string dBase = "bsu_lipa_cc_db";//database that you will connect
         //---------Created a delgate void function inorder to allow the callback function to be stored in a variable as wel as used in a parameter
         public delegate void callback();
         
@@ -25,11 +25,9 @@ namespace bsu_tnue_lipa_rpg
 
         public static string STUDENT_USER_SR_CODE;
 
-        public static Form1 instance;
         public Form1()
         {
             InitializeComponent();
-            instance = this;
         }
 
         private void loginAcc_btn_Click(object sender, EventArgs e)
@@ -47,15 +45,23 @@ namespace bsu_tnue_lipa_rpg
             signUp.ShowDialog();
             this.Close();
         }
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
-
-        }
         private void set_up_btn_Click(object sender, EventArgs e)
         {
             setUpDatabase_Tables();
         }
+        private void exit_pbox_Click(object sender, EventArgs e)
+        {
+            DialogResult sure = MessageBox.Show("Are you sure you want to exit the program?", "Warning", MessageBoxButtons.YesNo);
+            if (sure == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+
+//------------------------------------------------------------------------------------------------------------------------------------
+
 
         private void setUpDatabase_Tables()//will only use in this forms once
         {
@@ -83,15 +89,11 @@ namespace bsu_tnue_lipa_rpg
                     CREATE TABLE IF NOT EXISTS students(
                         sr_code VARCHAR(8) PRIMARY KEY,
                         password VARCHAR(30) NOT NULL,
-                        in_game_name VARCHAR(20) NOT NULL,
+                        in_game_name VARCHAR(20),
                         first_name VARCHAR(50) NOT NULL,
                         last_name VARCHAR(50) NOT NULL,
-                        gender VARCHAR(20)
-                    );
-
-                    CREATE TABLE IF NOT EXISTS student_characters(
-                        charac_id INT REFERENCES characters(charac_id),
-                        sr_code VARCHAR(8) REFERENCES students(sr_code)
+                        gender VARCHAR(20),
+                        charac_id INT REFERENCES characters(charac_id)
                     );
 
                     CREATE TABLE IF NOT EXISTS items(
@@ -225,13 +227,10 @@ namespace bsu_tnue_lipa_rpg
 
         }
 
-        private void exit_pbox_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            DialogResult sure = MessageBox.Show("Are you sure you want to exit the program?","Warning",MessageBoxButtons.YesNo);
-            if(sure == DialogResult.Yes)
-            {
-                this.Close();
-            }
+
+
         }
     }
 }

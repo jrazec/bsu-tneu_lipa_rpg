@@ -69,9 +69,11 @@ namespace bsu_tnue_lipa_rpg
                 try
                 {
                     mySqlConnection.Open();
-                    string insertChar = $@"INSERT INTO student_characters(charac_id,sr_code) VALUES(2,'{Form1.STUDENT_USER_SR_CODE}');";
-                    MySqlCommand insCharCmd = new MySqlCommand(insertChar, mySqlConnection);
-                    insCharCmd.ExecuteNonQuery();
+                    string updateChar = $@"UPDATE students 
+                                           SET charac_id=2
+                                           WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';";
+                    MySqlCommand updtCharCmd = new MySqlCommand(updateChar, mySqlConnection);
+                    updtCharCmd.ExecuteNonQuery();
                     MessageBox.Show("Character Saved.");
                 }
                 catch (Exception ex)
@@ -103,9 +105,11 @@ namespace bsu_tnue_lipa_rpg
                 try
                 {
                     mySqlConnection.Open();
-                    string insertChar = $@"INSERT INTO student_characters(charac_id,sr_code) VALUES(1,'{Form1.STUDENT_USER_SR_CODE}');";
-                    MySqlCommand insCharCmd = new MySqlCommand(insertChar, mySqlConnection);
-                    insCharCmd.ExecuteNonQuery();
+                    string updateChar = $@"UPDATE students 
+                                           SET charac_id=1
+                                           WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';";
+                    MySqlCommand updtCharCmd = new MySqlCommand(updateChar, mySqlConnection);
+                    updtCharCmd.ExecuteNonQuery();
                     MessageBox.Show("Character Saved.");
                 }
                 catch (Exception ex)
