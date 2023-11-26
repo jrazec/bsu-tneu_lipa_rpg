@@ -56,6 +56,60 @@ namespace bsu_tnue_lipa_rpg
             {
                 map_charac.Top += walk;
             }
+
+            //to enter bldgs
+            foreach (Control bldg in this.Controls)
+            {
+                //enter cecs building
+                if (bldg is PictureBox && (string)bldg.Tag == "cecs")
+                {
+                    if (map_charac.Bounds.IntersectsWith(bldg.Bounds))
+                    {
+                        //stop character movement
+                        mapWalkTimer.Stop();
+
+                        //move character away from collision box
+                        map_charac.Location = new Point(277, 322);
+
+                        //reset boolean directions
+                        go_left = false;
+                        go_right = false;
+                        go_up = false;
+                        go_down = false;
+
+                        //switch to CECS form
+                        this.Hide();
+                        //CECS enter_cecs = new CECS();
+                        //enter_cecs.ShowDialog();
+
+                    }
+                }
+
+                //enter ob building
+                if (bldg is PictureBox && (string)bldg.Tag == "ob")
+                {
+                    if (map_charac.Bounds.IntersectsWith(bldg.Bounds))
+                    {
+                        //stop character movement
+                        mapWalkTimer.Stop();
+
+                        //move character away from collision box
+                        map_charac.Location = new Point(277, 322);
+
+                        //reset boolean directions
+                        go_left = false;
+                        go_right = false;
+                        go_up = false;
+                        go_down = false;
+
+                        //switch to OB form
+                        this.Hide();
+                        //OB enter_ob = new OB();
+                        //enter_ob.ShowDialog();
+
+                    }
+                }
+            }
         }
 
         private void key_is_down(object sender, KeyEventArgs e)

@@ -78,14 +78,16 @@
             this.cecscollision_pbox.Size = new System.Drawing.Size(48, 213);
             this.cecscollision_pbox.TabIndex = 2;
             this.cecscollision_pbox.TabStop = false;
+            this.cecscollision_pbox.Tag = "cecs";
             // 
             // obcollision_pbox
             // 
-            this.obcollision_pbox.Location = new System.Drawing.Point(980, 219);
+            this.obcollision_pbox.Location = new System.Drawing.Point(977, 212);
             this.obcollision_pbox.Name = "obcollision_pbox";
             this.obcollision_pbox.Size = new System.Drawing.Size(48, 125);
             this.obcollision_pbox.TabIndex = 3;
             this.obcollision_pbox.TabStop = false;
+            this.obcollision_pbox.Tag = "ob";
             // 
             // dg_pbox
             // 
