@@ -551,5 +551,8 @@
   <ItemGroup>
     <None Include="Resources\sched.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_pbtn.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

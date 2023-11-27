@@ -813,6 +813,16 @@ namespace bsu_tnue_lipa_rpg.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap next_pbtn {
+            get {
+                object obj = ResourceManager.GetObject("next_pbtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ob_1stflr {
             get {
                 object obj = ResourceManager.GetObject("ob-1stflr", resourceCulture);

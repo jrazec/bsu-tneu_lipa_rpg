@@ -18,11 +18,13 @@ namespace bsu_tnue_lipa_rpg
     public partial class Bedroom : Form
     {
         public int CHARAC_ID;
+        public string CHARAC_CLOTHES;
 
         public static Bedroom instance;
         bool go_up, go_down, go_left, go_right;
         int walk = 20;
 
+        #region FIX : PictureBox Flickering!
         //THIS SOLVED THE PROBLEM HUUHUH FINALYY!!!!!!!!!!
         protected override CreateParams CreateParams
         {
@@ -33,14 +35,16 @@ namespace bsu_tnue_lipa_rpg
                 return handleParams;
             }
         }
+        #endregion
         public Bedroom()
         {
 
             InitializeComponent();
             instance = this;
+            CHARAC_CLOTHES = "UNI";
 
             checkCharac();
-            characCasualFront();
+            characFront();
 
         }
         bool openSched = false;
@@ -59,7 +63,6 @@ choose the right ones.";
             
         }
         
-
         private void view_lbl_Click(object sender, EventArgs e)
         {
             click_lbl.Visible = true;
@@ -179,28 +182,28 @@ choose the right ones.";
             {
                 e.Handled = true;
                 go_left = true;
-                characCasualLeft();
+                characLeft();
             }
 
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 e.Handled = true;
                 go_right = true;
-                characCasualRight();
+                characRight();
             }
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
             {
                 e.Handled = true;
                 go_up = true;
-                characCasualBack();
+                characBack();
             }
 
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
                 e.Handled = true;
                 go_down = true;
-                characCasualFront();
+                characFront();
             }
         }
 
@@ -226,51 +229,204 @@ choose the right ones.";
                 go_down = false;
             }     
         }
-        private void characCasualFront()
+        private void characFront()
         {
+
             if(CHARAC_ID == 1)
             {
-                bedroom_charac.Image = Properties.Resources.male_casual_front;
+                if(CHARAC_CLOTHES == "CASUAL")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_casual_front;
+                }
+                else if (CHARAC_CLOTHES == "UNI")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_uni_front;
+                }
+                else if (CHARAC_CLOTHES == "ORG")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_org_front;
+                }
+                else if (CHARAC_CLOTHES == "PE")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_pe_front;
+                }
+                else//Default Character garment
+                {
+                    bedroom_charac.Image = Properties.Resources.male_casual_front;
+                }
             }
             else if(CHARAC_ID == 2)
             {
-                bedroom_charac.Image = Properties.Resources.female_casual_front;
+                if (CHARAC_CLOTHES == "CASUAL")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_casual_front;
+                }
+                else if (CHARAC_CLOTHES == "UNI")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_uni_front;
+                }
+                else if (CHARAC_CLOTHES == "ORG")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_org_front;
+                }
+                else if (CHARAC_CLOTHES == "PE")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_pe_front;
+                }
+                else//Default Character garment
+                {
+                    bedroom_charac.Image = Properties.Resources.female_casual_front;
+                }
             }    
         }
 
-        private void characCasualBack()
+        private void characBack()
         {
             if (CHARAC_ID == 1)
             {
-                bedroom_charac.Image = Properties.Resources.male_casual_back;
+                if (CHARAC_CLOTHES == "CASUAL")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_casual_back;
+                }
+                else if (CHARAC_CLOTHES == "UNI")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_uni_back;
+                }
+                else if (CHARAC_CLOTHES == "ORG")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_org_back;
+                }
+                else if (CHARAC_CLOTHES == "PE")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_pe_back;
+                }
+                else//Default Character garment
+                {
+                    bedroom_charac.Image = Properties.Resources.male_casual_back;
+                }
             }
             else if (CHARAC_ID == 2)
             {
-                bedroom_charac.Image = Properties.Resources.female_casual_back;
+                if (CHARAC_CLOTHES == "CASUAL")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_casual_back;
+                }
+                else if (CHARAC_CLOTHES == "UNI")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_uni_back;
+                }
+                else if (CHARAC_CLOTHES == "ORG")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_org_back;
+                }
+                else if (CHARAC_CLOTHES == "PE")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_pe_back;
+                }
+                else//Default Character garment
+                {
+                    bedroom_charac.Image = Properties.Resources.female_casual_back;
+                }
             }
         }
 
-        private void characCasualLeft()
+        private void characLeft()
         {
             if (CHARAC_ID == 1)
             {
-                bedroom_charac.Image = Properties.Resources.male_casual_left;
+                if (CHARAC_CLOTHES == "CASUAL")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_casual_left;
+                }
+                else if (CHARAC_CLOTHES == "UNI")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_uni_left;
+                }
+                else if (CHARAC_CLOTHES == "ORG")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_org_left;
+                }
+                else if (CHARAC_CLOTHES == "PE")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_pe_left;
+                }
+                else//Default Character garment
+                {
+                    bedroom_charac.Image = Properties.Resources.male_casual_left;
+                }
             }
             else if (CHARAC_ID == 2)
             {
-                bedroom_charac.Image = Properties.Resources.female_casual_left;
+                if (CHARAC_CLOTHES == "CASUAL")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_casual_left;
+                }
+                else if (CHARAC_CLOTHES == "UNI")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_uni_left;
+                }
+                else if (CHARAC_CLOTHES == "ORG")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_org_left;
+                }
+                else if (CHARAC_CLOTHES == "PE")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_pe_left;
+                }
+                else//Default Character garment
+                {
+                    bedroom_charac.Image = Properties.Resources.female_casual_left;
+                }
             }
         }
 
-        private void characCasualRight()
+        private void characRight()
         {
             if (CHARAC_ID == 1)
             {
-                bedroom_charac.Image = Properties.Resources.male_casual_right;
+                if (CHARAC_CLOTHES == "CASUAL")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_casual_right;
+                }
+                else if (CHARAC_CLOTHES == "UNI")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_uni_right;
+                }
+                else if (CHARAC_CLOTHES == "ORG")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_org_right;
+                }
+                else if (CHARAC_CLOTHES == "PE")
+                {
+                    bedroom_charac.Image = Properties.Resources.male_pe_right;
+                }
+                else//Default Character garment
+                {
+                    bedroom_charac.Image = Properties.Resources.male_casual_right;
+                }
             }
             else if (CHARAC_ID == 2)
             {
-                bedroom_charac.Image = Properties.Resources.female_casual_right;
+                if (CHARAC_CLOTHES == "CASUAL")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_casual_right;
+                }
+                else if (CHARAC_CLOTHES == "UNI")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_uni_right;
+                }
+                else if (CHARAC_CLOTHES == "ORG")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_org_right;
+                }
+                else if (CHARAC_CLOTHES == "PE")
+                {
+                    bedroom_charac.Image = Properties.Resources.female_pe_right;
+                }
+                else//Default Character garment
+                {
+                    bedroom_charac.Image = Properties.Resources.female_casual_right;
+                }
             }
         }
 
@@ -307,6 +463,8 @@ choose the right ones.";
             //to be removed
             day_lbl.Text = CHARAC_ID.ToString();
         }
+
+
 
 
     }

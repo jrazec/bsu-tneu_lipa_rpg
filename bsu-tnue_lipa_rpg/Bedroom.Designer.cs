@@ -32,28 +32,28 @@
             this.doorcollision_pbox = new System.Windows.Forms.PictureBox();
             this.dg_pbox = new System.Windows.Forms.PictureBox();
             this.menu_panel = new System.Windows.Forms.Panel();
+            this.hint_lbl = new System.Windows.Forms.Label();
+            this.hint_pbox = new System.Windows.Forms.PictureBox();
+            this.menu_pbox = new System.Windows.Forms.PictureBox();
+            this.currency_lbl = new System.Windows.Forms.Label();
+            this.day_lbl = new System.Windows.Forms.Label();
             this.dg_bedroom = new System.Windows.Forms.Label();
             this.click_lbl = new System.Windows.Forms.Label();
             this.next_pbox = new System.Windows.Forms.PictureBox();
             this.view_lbl = new System.Windows.Forms.Label();
             this.enter_lbl = new System.Windows.Forms.Label();
-            this.hint_lbl = new System.Windows.Forms.Label();
             this.bedroomWalkTimer = new System.Windows.Forms.Timer(this.components);
             this.sched_pbox = new System.Windows.Forms.PictureBox();
             this.closetcollision_pbox = new System.Windows.Forms.PictureBox();
-            this.day_lbl = new System.Windows.Forms.Label();
-            this.currency_lbl = new System.Windows.Forms.Label();
-            this.menu_pbox = new System.Windows.Forms.PictureBox();
-            this.hint_pbox = new System.Windows.Forms.PictureBox();
             this.bedroom_charac = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.doorcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
             this.menu_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.next_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sched_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closetcollision_pbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bedroom_charac)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,6 +91,17 @@
             this.menu_panel.Size = new System.Drawing.Size(1151, 50);
             this.menu_panel.TabIndex = 0;
             // 
+            // hint_lbl
+            // 
+            this.hint_lbl.AutoSize = true;
+            this.hint_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hint_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.hint_lbl.Location = new System.Drawing.Point(1019, 6);
+            this.hint_lbl.Name = "hint_lbl";
+            this.hint_lbl.Size = new System.Drawing.Size(58, 34);
+            this.hint_lbl.TabIndex = 4;
+            this.hint_lbl.Text = "Hint";
+            // 
             // hint_pbox
             // 
             this.hint_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.hint_icon;
@@ -104,9 +115,9 @@
             // menu_pbox
             // 
             this.menu_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.menu_icon;
-            this.menu_pbox.Location = new System.Drawing.Point(24, 7);
+            this.menu_pbox.Location = new System.Drawing.Point(10, 8);
             this.menu_pbox.Name = "menu_pbox";
-            this.menu_pbox.Size = new System.Drawing.Size(38, 33);
+            this.menu_pbox.Size = new System.Drawing.Size(44, 34);
             this.menu_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menu_pbox.TabIndex = 2;
             this.menu_pbox.TabStop = false;
@@ -133,40 +144,6 @@
             this.day_lbl.Size = new System.Drawing.Size(99, 34);
             this.day_lbl.TabIndex = 0;
             this.day_lbl.Text = "Monday";
-            // 
-            // closetcollision_pbox
-            // 
-            this.closetcollision_pbox.Location = new System.Drawing.Point(264, 132);
-            this.closetcollision_pbox.Name = "closetcollision_pbox";
-            this.closetcollision_pbox.Size = new System.Drawing.Size(143, 45);
-            this.closetcollision_pbox.TabIndex = 1;
-            this.closetcollision_pbox.TabStop = false;
-            this.closetcollision_pbox.Tag = "closet_open";
-            // 
-            // bedroom_charac
-            // 
-            this.bedroom_charac.BackColor = System.Drawing.Color.Transparent;
-            this.bedroom_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.male_casual_front;
-            this.bedroom_charac.Location = new System.Drawing.Point(500, 243);
-            this.bedroom_charac.Name = "bedroom_charac";
-            this.bedroom_charac.Size = new System.Drawing.Size(125, 221);
-            this.bedroom_charac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bedroom_charac.TabIndex = 2;
-            this.bedroom_charac.TabStop = false;
-            // 
-            // bedroomWalkTimer
-            // 
-            this.bedroomWalkTimer.Interval = 50;
-            this.bedroomWalkTimer.Tick += new System.EventHandler(this.bedroomWalkTimer_Tick);
-            // 
-            // doorcollision_pbox
-            // 
-            this.doorcollision_pbox.Location = new System.Drawing.Point(1001, 500);
-            this.doorcollision_pbox.Name = "doorcollision_pbox";
-            this.doorcollision_pbox.Size = new System.Drawing.Size(11, 108);
-            this.doorcollision_pbox.TabIndex = 3;
-            this.doorcollision_pbox.TabStop = false;
-            this.doorcollision_pbox.Tag = "go_outside";
             // 
             // dg_bedroom
             // 
@@ -195,9 +172,12 @@
             // 
             // next_pbox
             // 
+            this.next_pbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.next_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.next_pbtn;
             this.next_pbox.Location = new System.Drawing.Point(962, 591);
             this.next_pbox.Name = "next_pbox";
             this.next_pbox.Size = new System.Drawing.Size(33, 32);
+            this.next_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.next_pbox.TabIndex = 9;
             this.next_pbox.TabStop = false;
             this.next_pbox.Visible = false;
@@ -209,7 +189,7 @@
             this.view_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.view_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.view_lbl.ForeColor = System.Drawing.Color.Black;
-            this.view_lbl.Location = new System.Drawing.Point(682, 541);
+            this.view_lbl.Location = new System.Drawing.Point(631, 541);
             this.view_lbl.Name = "view_lbl";
             this.view_lbl.Size = new System.Drawing.Size(47, 28);
             this.view_lbl.TabIndex = 12;
@@ -230,17 +210,6 @@
             this.enter_lbl.Visible = false;
             this.enter_lbl.Click += new System.EventHandler(this.enter_lbl_Click);
             // 
-            // hint_lbl
-            // 
-            this.hint_lbl.AutoSize = true;
-            this.hint_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hint_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.hint_lbl.Location = new System.Drawing.Point(1019, 6);
-            this.hint_lbl.Name = "hint_lbl";
-            this.hint_lbl.Size = new System.Drawing.Size(58, 34);
-            this.hint_lbl.TabIndex = 4;
-            this.hint_lbl.Text = "Hint";
-            // 
             // bedroomWalkTimer
             // 
             this.bedroomWalkTimer.Interval = 50;
@@ -249,9 +218,11 @@
             // sched_pbox
             // 
             this.sched_pbox.BackColor = System.Drawing.SystemColors.Control;
-            this.sched_pbox.Location = new System.Drawing.Point(264, 108);
+            this.sched_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.sched;
+            this.sched_pbox.Location = new System.Drawing.Point(288, 111);
             this.sched_pbox.Name = "sched_pbox";
-            this.sched_pbox.Size = new System.Drawing.Size(650, 391);
+            this.sched_pbox.Size = new System.Drawing.Size(584, 386);
+            this.sched_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sched_pbox.TabIndex = 8;
             this.sched_pbox.TabStop = false;
             this.sched_pbox.Visible = false;
@@ -264,49 +235,6 @@
             this.closetcollision_pbox.TabIndex = 1;
             this.closetcollision_pbox.TabStop = false;
             this.closetcollision_pbox.Tag = "closet_open";
-            // 
-            // day_lbl
-            // 
-            this.day_lbl.AutoSize = true;
-            this.day_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.day_lbl.Location = new System.Drawing.Point(147, 6);
-            this.day_lbl.Name = "day_lbl";
-            this.day_lbl.Size = new System.Drawing.Size(99, 34);
-            this.day_lbl.TabIndex = 0;
-            this.day_lbl.Text = "Monday";
-            // 
-            // currency_lbl
-            // 
-            this.currency_lbl.AutoSize = true;
-            this.currency_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.currency_lbl.Location = new System.Drawing.Point(776, 6);
-            this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Size = new System.Drawing.Size(110, 34);
-            this.currency_lbl.TabIndex = 1;
-            this.currency_lbl.Text = "₱ 800.00";
-            // 
-            // menu_pbox
-            // 
-            this.menu_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._1;
-            this.menu_pbox.Location = new System.Drawing.Point(13, 5);
-            this.menu_pbox.Name = "menu_pbox";
-            this.menu_pbox.Size = new System.Drawing.Size(44, 34);
-            this.menu_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu_pbox.TabIndex = 2;
-            this.menu_pbox.TabStop = false;
-            this.menu_pbox.Click += new System.EventHandler(this.menu_pbox_Click);
-            // 
-            // hint_pbox
-            // 
-            this.hint_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._1;
-            this.hint_pbox.Location = new System.Drawing.Point(978, 6);
-            this.hint_pbox.Name = "hint_pbox";
-            this.hint_pbox.Size = new System.Drawing.Size(44, 34);
-            this.hint_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hint_pbox.TabIndex = 3;
-            this.hint_pbox.TabStop = false;
             // 
             // bedroom_charac
             // 
@@ -325,6 +253,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.bedroom;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.sched_pbox);
             this.Controls.Add(this.enter_lbl);
             this.Controls.Add(this.view_lbl);
             this.Controls.Add(this.next_pbox);
@@ -337,7 +266,6 @@
             this.Controls.Add(this.doorcollision_pbox);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoubleBuffered = true;
-            this.Controls.Add(this.sched_pbox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -350,11 +278,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).EndInit();
             this.menu_panel.ResumeLayout(false);
             this.menu_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.next_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sched_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closetcollision_pbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bedroom_charac)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
