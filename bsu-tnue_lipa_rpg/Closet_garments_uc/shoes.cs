@@ -16,5 +16,10 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             InitializeComponent();
         }
+
+        private void shoes1_pbox_Click(object sender, EventArgs e)
+        {
+            shoes1_pbox.BorderStyle = BorderStyle.FixedSingle;
+        }
     }
 }

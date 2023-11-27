@@ -13,7 +13,19 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Closet : Form
     {
-        
+        #region FIX : PictureBox Flickering!
+        //THIS SOLVED THE PROBLEM HUUHUH FINALYY!!!!!!!!!!
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParams = base.CreateParams;
+                handleParams.ExStyle |= 0x02000000;
+                return handleParams;
+            }
+        }
+        #endregion
+
         public Closet()
         {
             InitializeComponent();

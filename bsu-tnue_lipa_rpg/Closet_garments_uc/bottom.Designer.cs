@@ -36,14 +36,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.bottom3_pbox = new System.Windows.Forms.PictureBox();
+            this.bottom4_pbox = new System.Windows.Forms.PictureBox();
+            this.bottom2_pbox = new System.Windows.Forms.PictureBox();
+            this.bottom1_pbox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.bottom3_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bottom4_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bottom2_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bottom1_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -125,50 +125,63 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "College Pants";
             // 
-            // pictureBox3
+            // bottom3_pbox
             // 
-            this.pictureBox3.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Denim_Pants;
-            this.pictureBox3.Location = new System.Drawing.Point(487, 37);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(122, 113);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 19;
-            this.pictureBox3.TabStop = false;
+            this.bottom3_pbox.BackColor = System.Drawing.Color.DarkGray;
+            this.bottom3_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bottom3_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Denim_Pants;
+            this.bottom3_pbox.Location = new System.Drawing.Point(487, 37);
+            this.bottom3_pbox.Name = "bottom3_pbox";
+            this.bottom3_pbox.Size = new System.Drawing.Size(122, 113);
+            this.bottom3_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bottom3_pbox.TabIndex = 19;
+            this.bottom3_pbox.TabStop = false;
+            this.bottom3_pbox.Click += new System.EventHandler(this.bottom3_pbox_Click);
             // 
-            // pictureBox2
+            // bottom4_pbox
             // 
-            this.pictureBox2.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Civilian_Bottom_2;
-            this.pictureBox2.Location = new System.Drawing.Point(61, 269);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(122, 113);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 18;
-            this.pictureBox2.TabStop = false;
+            this.bottom4_pbox.BackColor = System.Drawing.Color.DarkGray;
+            this.bottom4_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bottom4_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Civilian_Bottom_2;
+            this.bottom4_pbox.Location = new System.Drawing.Point(61, 269);
+            this.bottom4_pbox.Name = "bottom4_pbox";
+            this.bottom4_pbox.Size = new System.Drawing.Size(122, 113);
+            this.bottom4_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bottom4_pbox.TabIndex = 18;
+            this.bottom4_pbox.TabStop = false;
+            this.bottom4_pbox.Click += new System.EventHandler(this.bottom4_pbox_Click);
             // 
-            // pictureBox1
+            // bottom2_pbox
             // 
-            this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.PE_Jogging_Pant;
-            this.pictureBox1.Location = new System.Drawing.Point(277, 37);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(122, 113);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.bottom2_pbox.BackColor = System.Drawing.Color.DarkGray;
+            this.bottom2_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bottom2_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.PE_Jogging_Pant;
+            this.bottom2_pbox.Location = new System.Drawing.Point(277, 37);
+            this.bottom2_pbox.Name = "bottom2_pbox";
+            this.bottom2_pbox.Size = new System.Drawing.Size(122, 113);
+            this.bottom2_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bottom2_pbox.TabIndex = 17;
+            this.bottom2_pbox.TabStop = false;
+            this.bottom2_pbox.Click += new System.EventHandler(this.bottom2_pbox_Click);
             // 
-            // pictureBox4
+            // bottom1_pbox
             // 
-            this.pictureBox4.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.College_Pants;
-            this.pictureBox4.Location = new System.Drawing.Point(61, 37);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(122, 113);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
+            this.bottom1_pbox.BackColor = System.Drawing.Color.DarkGray;
+            this.bottom1_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bottom1_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.College_Pants;
+            this.bottom1_pbox.Location = new System.Drawing.Point(61, 37);
+            this.bottom1_pbox.Name = "bottom1_pbox";
+            this.bottom1_pbox.Size = new System.Drawing.Size(122, 113);
+            this.bottom1_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bottom1_pbox.TabIndex = 16;
+            this.bottom1_pbox.TabStop = false;
+            this.bottom1_pbox.Click += new System.EventHandler(this.bottom1_pbox_Click);
             // 
             // bottom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -177,16 +190,16 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.bottom3_pbox);
+            this.Controls.Add(this.bottom4_pbox);
+            this.Controls.Add(this.bottom2_pbox);
+            this.Controls.Add(this.bottom1_pbox);
             this.Name = "bottom";
             this.Size = new System.Drawing.Size(671, 518);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bottom3_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bottom4_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bottom2_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bottom1_pbox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -201,9 +214,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox bottom3_pbox;
+        private System.Windows.Forms.PictureBox bottom4_pbox;
+        private System.Windows.Forms.PictureBox bottom2_pbox;
+        private System.Windows.Forms.PictureBox bottom1_pbox;
     }
 }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.shoes1_pbox = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoes1_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -43,15 +43,18 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "shoes";
             // 
-            // pictureBox4
+            // shoes1_pbox
             // 
-            this.pictureBox4.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Shoes;
-            this.pictureBox4.Location = new System.Drawing.Point(61, 37);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(122, 113);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
+            this.shoes1_pbox.BackColor = System.Drawing.Color.DarkGray;
+            this.shoes1_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.shoes1_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Shoes;
+            this.shoes1_pbox.Location = new System.Drawing.Point(61, 37);
+            this.shoes1_pbox.Name = "shoes1_pbox";
+            this.shoes1_pbox.Size = new System.Drawing.Size(122, 113);
+            this.shoes1_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.shoes1_pbox.TabIndex = 16;
+            this.shoes1_pbox.TabStop = false;
+            this.shoes1_pbox.Click += new System.EventHandler(this.shoes1_pbox_Click);
             // 
             // label8
             // 
@@ -67,19 +70,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.shoes1_pbox);
             this.Name = "shoes";
             this.Size = new System.Drawing.Size(671, 518);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoes1_pbox)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox shoes1_pbox;
         private System.Windows.Forms.Label label8;
     }
 }

@@ -32,10 +32,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.neck2_pbox = new System.Windows.Forms.PictureBox();
+            this.neck1_pbox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.neck2_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.neck1_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -78,40 +78,47 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "College Barong";
             // 
-            // pictureBox1
+            // neck2_pbox
             // 
-            this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.School_ID_Lace;
-            this.pictureBox1.Location = new System.Drawing.Point(277, 37);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(122, 113);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.neck2_pbox.BackColor = System.Drawing.Color.DarkGray;
+            this.neck2_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.neck2_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.School_ID_Lace;
+            this.neck2_pbox.Location = new System.Drawing.Point(277, 37);
+            this.neck2_pbox.Name = "neck2_pbox";
+            this.neck2_pbox.Size = new System.Drawing.Size(122, 113);
+            this.neck2_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.neck2_pbox.TabIndex = 17;
+            this.neck2_pbox.TabStop = false;
+            this.neck2_pbox.Click += new System.EventHandler(this.neck2_pbox_Click);
             // 
-            // pictureBox4
+            // neck1_pbox
             // 
-            this.pictureBox4.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Necklace_Unisex;
-            this.pictureBox4.Location = new System.Drawing.Point(61, 37);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(122, 113);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
+            this.neck1_pbox.BackColor = System.Drawing.Color.DarkGray;
+            this.neck1_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.neck1_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Necklace_Unisex;
+            this.neck1_pbox.Location = new System.Drawing.Point(61, 37);
+            this.neck1_pbox.Name = "neck1_pbox";
+            this.neck1_pbox.Size = new System.Drawing.Size(122, 113);
+            this.neck1_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.neck1_pbox.TabIndex = 16;
+            this.neck1_pbox.TabStop = false;
+            this.neck1_pbox.Click += new System.EventHandler(this.neck1_pbox_Click);
             // 
             // neck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.neck2_pbox);
+            this.Controls.Add(this.neck1_pbox);
             this.Name = "neck";
             this.Size = new System.Drawing.Size(671, 518);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.neck2_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.neck1_pbox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -121,7 +128,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox neck2_pbox;
+        private System.Windows.Forms.PictureBox neck1_pbox;
     }
 }
