@@ -63,20 +63,22 @@
             // neck2_lbl
             // 
             this.neck2_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.neck2_lbl.Location = new System.Drawing.Point(300, 161);
+            this.neck2_lbl.Location = new System.Drawing.Point(245, 154);
             this.neck2_lbl.Name = "neck2_lbl";
-            this.neck2_lbl.Size = new System.Drawing.Size(77, 34);
+            this.neck2_lbl.Size = new System.Drawing.Size(192, 42);
             this.neck2_lbl.TabIndex = 21;
             this.neck2_lbl.Text = "PE T-Shirt";
+            this.neck2_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // neck1_lbl
             // 
             this.neck1_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.neck1_lbl.Location = new System.Drawing.Point(73, 162);
+            this.neck1_lbl.Location = new System.Drawing.Point(57, 158);
             this.neck1_lbl.Name = "neck1_lbl";
-            this.neck1_lbl.Size = new System.Drawing.Size(113, 34);
+            this.neck1_lbl.Size = new System.Drawing.Size(137, 34);
             this.neck1_lbl.TabIndex = 20;
             this.neck1_lbl.Text = "College Barong";
+            this.neck1_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // neck2_pbox
             // 
@@ -126,8 +128,8 @@
         #endregion
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label neck2_lbl;
-        private System.Windows.Forms.Label neck1_lbl;
+        public System.Windows.Forms.Label neck2_lbl;
+        public System.Windows.Forms.Label neck1_lbl;
         private System.Windows.Forms.PictureBox neck2_pbox;
         private System.Windows.Forms.PictureBox neck1_pbox;
     }

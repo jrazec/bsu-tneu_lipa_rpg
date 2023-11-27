@@ -82,7 +82,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label shoes1_lbl;
+        public System.Windows.Forms.Label shoes1_lbl;
         private System.Windows.Forms.PictureBox shoes1_pbox;
         private System.Windows.Forms.Label label8;
     }

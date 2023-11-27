@@ -28,7 +28,7 @@ namespace bsu_tnue_lipa_rpg
         {
             InitializeComponent();
         }
-
+        
         private void enter_btn_Click(object sender, EventArgs e)
         {
             if (ign_tbox.Text != string.Empty)

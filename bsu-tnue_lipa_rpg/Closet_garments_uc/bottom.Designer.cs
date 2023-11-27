@@ -92,38 +92,42 @@
             // bot4_lbl
             // 
             this.bot4_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bot4_lbl.Location = new System.Drawing.Point(96, 395);
+            this.bot4_lbl.Location = new System.Drawing.Point(44, 385);
             this.bot4_lbl.Name = "bot4_lbl";
-            this.bot4_lbl.Size = new System.Drawing.Size(58, 30);
+            this.bot4_lbl.Size = new System.Drawing.Size(149, 40);
             this.bot4_lbl.TabIndex = 23;
             this.bot4_lbl.Text = "Shorts";
+            this.bot4_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bot2_lbl
             // 
             this.bot2_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bot2_lbl.Location = new System.Drawing.Point(280, 161);
+            this.bot2_lbl.Location = new System.Drawing.Point(263, 153);
             this.bot2_lbl.Name = "bot2_lbl";
-            this.bot2_lbl.Size = new System.Drawing.Size(126, 34);
+            this.bot2_lbl.Size = new System.Drawing.Size(162, 43);
             this.bot2_lbl.TabIndex = 21;
             this.bot2_lbl.Text = "PE Jogging Pants";
+            this.bot2_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bot3_lbl
             // 
             this.bot3_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bot3_lbl.Location = new System.Drawing.Point(519, 162);
+            this.bot3_lbl.Location = new System.Drawing.Point(509, 153);
             this.bot3_lbl.Name = "bot3_lbl";
-            this.bot3_lbl.Size = new System.Drawing.Size(79, 33);
+            this.bot3_lbl.Size = new System.Drawing.Size(125, 42);
             this.bot3_lbl.TabIndex = 22;
             this.bot3_lbl.Text = "Denim Pants";
+            this.bot3_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bot1_lbl
             // 
             this.bot1_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bot1_lbl.Location = new System.Drawing.Point(73, 162);
+            this.bot1_lbl.Location = new System.Drawing.Point(66, 153);
             this.bot1_lbl.Name = "bot1_lbl";
-            this.bot1_lbl.Size = new System.Drawing.Size(113, 34);
+            this.bot1_lbl.Size = new System.Drawing.Size(143, 43);
             this.bot1_lbl.TabIndex = 20;
             this.bot1_lbl.Text = "College Pants";
+            this.bot1_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bottom3_pbox
             // 
@@ -210,10 +214,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label bot4_lbl;
-        private System.Windows.Forms.Label bot2_lbl;
-        private System.Windows.Forms.Label bot3_lbl;
-        private System.Windows.Forms.Label bot1_lbl;
+        public System.Windows.Forms.Label bot4_lbl;
+        public System.Windows.Forms.Label bot2_lbl;
+        public System.Windows.Forms.Label bot3_lbl;
+        public System.Windows.Forms.Label bot1_lbl;
         private System.Windows.Forms.PictureBox bottom3_pbox;
         private System.Windows.Forms.PictureBox bottom4_pbox;
         private System.Windows.Forms.PictureBox bottom2_pbox;

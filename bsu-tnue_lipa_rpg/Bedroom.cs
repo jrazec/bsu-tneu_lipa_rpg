@@ -515,6 +515,7 @@ choose the right ones.";
                 INNER JOIN students
                 ON gameplay_records.sr_code=students.sr_code
                 WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'";
+            //SHOULD BE LATEST UNG MONEY NA MAKUKUHA, siguro limit by one tas desc order
 
             try
             {

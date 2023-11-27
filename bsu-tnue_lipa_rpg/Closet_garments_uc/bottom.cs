@@ -55,7 +55,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
             bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
         }
-
+        
         private void bottom4_pbox_Click(object sender, EventArgs e)
         {
             bottom4_pbox.BorderStyle = BorderStyle.FixedSingle;
