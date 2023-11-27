@@ -130,9 +130,9 @@
             this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.currency_lbl.Location = new System.Drawing.Point(776, 6);
             this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Size = new System.Drawing.Size(110, 34);
+            this.currency_lbl.Size = new System.Drawing.Size(104, 43);
             this.currency_lbl.TabIndex = 1;
-            this.currency_lbl.Text = "₱ 800.00";
+            this.currency_lbl.Text = "₱ 0.00";
             // 
             // day_lbl
             // 
@@ -264,7 +264,7 @@
             this.Controls.Add(this.closetcollision_pbox);
             this.Controls.Add(this.dg_pbox);
             this.Controls.Add(this.doorcollision_pbox);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

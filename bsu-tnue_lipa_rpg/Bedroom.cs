@@ -14,11 +14,13 @@ using System.Windows.Forms;
 namespace bsu_tnue_lipa_rpg
 {
 
-   
+
     public partial class Bedroom : Form
     {
         public int CHARAC_ID;
         public string CHARAC_CLOTHES;
+        public string DAY;
+        public double CURRENT_MONEY;
 
         public static Bedroom instance;
         bool go_up, go_down, go_left, go_right;
@@ -44,12 +46,14 @@ namespace bsu_tnue_lipa_rpg
             CHARAC_CLOTHES = "UNI";
 
             checkCharac();
+            checkMoney();
             characFront();
+            checkDay();
 
         }
         bool openSched = false;
 
-        
+
         private void next_pbox_Click(object sender, EventArgs e)
         {
             view_lbl.Visible = false;
@@ -60,9 +64,9 @@ choose the right ones.";
             click_lbl.Visible = true;
             click_lbl.Text = "Press to start.";
             enter_lbl.Visible = true;
-            
+
         }
-        
+
         private void view_lbl_Click(object sender, EventArgs e)
         {
             click_lbl.Visible = true;
@@ -97,7 +101,7 @@ choose the right ones.";
         {
 
         }
-        
+
         //initiate character movement in the bedroom
         private void bedroomWalkTimer_Tick(object sender, EventArgs e)
         {
@@ -227,14 +231,14 @@ choose the right ones.";
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
                 go_down = false;
-            }     
+            }
         }
         private void characFront()
         {
 
-            if(CHARAC_ID == 1)
+            if (CHARAC_ID == 1)
             {
-                if(CHARAC_CLOTHES == "CASUAL")
+                if (CHARAC_CLOTHES == "CASUAL")
                 {
                     bedroom_charac.Image = Properties.Resources.male_casual_front;
                 }
@@ -255,7 +259,7 @@ choose the right ones.";
                     bedroom_charac.Image = Properties.Resources.male_casual_front;
                 }
             }
-            else if(CHARAC_ID == 2)
+            else if (CHARAC_ID == 2)
             {
                 if (CHARAC_CLOTHES == "CASUAL")
                 {
@@ -277,7 +281,7 @@ choose the right ones.";
                 {
                     bedroom_charac.Image = Properties.Resources.female_casual_front;
                 }
-            }    
+            }
         }
 
         private void characBack()
@@ -442,7 +446,7 @@ choose the right ones.";
             try
             {
                 mysqlConnection.Open();
-                MySqlCommand sltcCharacIDCmd = new MySqlCommand(slctCharacID,mysqlConnection); 
+                MySqlCommand sltcCharacIDCmd = new MySqlCommand(slctCharacID, mysqlConnection);
 
                 using (MySqlDataReader reader = sltcCharacIDCmd.ExecuteReader())
                 {
@@ -460,12 +464,81 @@ choose the right ones.";
             {
                 mysqlConnection.Close();
             }
-            //to be removed
-            day_lbl.Text = CHARAC_ID.ToString();
         }
 
+        private void checkDay()
+        {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
+            string slctDayName = $@"
+                SELECT day_tasks.day_name AS day
+                FROM day_tasks
+                INNER JOIN tasks
+                ON tasks.day_task_id=day_tasks.day_task_id
+                INNER JOIN gameplay_records
+                ON gameplay_records.task_id=tasks.task_id
+                INNER JOIN students
+                ON gameplay_records.sr_code=students.sr_code
+                WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'";
 
+            try
+            {
+                mysqlConnection.Open();
+                MySqlCommand slctDayNameCmd = new MySqlCommand(slctDayName, mysqlConnection);
+
+                using (MySqlDataReader reader = slctDayNameCmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        DAY = (string)reader["day"];
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                mysqlConnection.Close();
+            }
+            day_lbl.Text = DAY;
+        }
+
+        private void checkMoney()
+        {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
+
+            string slctCurrMoney = $@"
+                SELECT gameplay_records.current_money AS money
+                FROM gameplay_records 
+                INNER JOIN students
+                ON gameplay_records.sr_code=students.sr_code
+                WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'";
+
+            try
+            {
+                mysqlConnection.Open();
+                MySqlCommand slctCurrMoneyCmd = new MySqlCommand(slctCurrMoney, mysqlConnection);
+
+                using (MySqlDataReader reader = slctCurrMoneyCmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        CURRENT_MONEY = Convert.ToDouble(reader["money"]);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                mysqlConnection.Close();
+            }
+            currency_lbl.Text = CURRENT_MONEY.ToString("C");
+        }
 
     }
 }

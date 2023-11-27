@@ -31,6 +31,19 @@ namespace bsu_tnue_lipa_rpg
         bottom bot_uc = new bottom();
         neck neck_uc = new neck();
         shoes shoes_uc = new shoes();
+
+        //Array to prevent user from mix & matching unmatched garments
+        public string[,] 
+            GARMENTS = {
+                        //0         1       2       3
+                        {"top",    "bot",  "neck","shoes"},//serves as attributes     
+                        {"uni-top","uni-bot","id","gen-shoes"},//For monday       - 1   
+                        {"uni-top","uni-bot","id","gen-shoes"},//For tuesday      - 2
+                        {"org-top","org-bot","id","gen-shoes"},//For wednesday    - 3   
+                        {"uni-top","uni-bot","id","gen-shoes"},//For thursday     - 4 
+                        {"pe-top", "pe-bot", "id","gen-shoes"},//For friday       - 5
+                        };
+        public string[,] Garments_Worn;
         public Closet()
         {
             InitializeComponent();
