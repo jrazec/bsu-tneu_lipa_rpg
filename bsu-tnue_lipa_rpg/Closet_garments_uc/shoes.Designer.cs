@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.shoes1_lbl = new System.Windows.Forms.Label();
             this.shoes1_pbox = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.shoes1_pbox)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // shoes1_lbl
             // 
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(96, 162);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 34);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "shoes";
+            this.shoes1_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shoes1_lbl.Location = new System.Drawing.Point(96, 162);
+            this.shoes1_lbl.Name = "shoes1_lbl";
+            this.shoes1_lbl.Size = new System.Drawing.Size(45, 34);
+            this.shoes1_lbl.TabIndex = 20;
+            this.shoes1_lbl.Text = "shoes";
             // 
             // shoes1_pbox
             // 
@@ -72,7 +72,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.shoes1_lbl);
             this.Controls.Add(this.shoes1_pbox);
             this.Name = "shoes";
             this.Size = new System.Drawing.Size(671, 518);
@@ -82,7 +82,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label shoes1_lbl;
         private System.Windows.Forms.PictureBox shoes1_pbox;
         private System.Windows.Forms.Label label8;
     }

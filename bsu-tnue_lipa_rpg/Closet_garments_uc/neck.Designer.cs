@@ -30,8 +30,8 @@
         {
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.neck2_lbl = new System.Windows.Forms.Label();
+            this.neck1_lbl = new System.Windows.Forms.Label();
             this.neck2_pbox = new System.Windows.Forms.PictureBox();
             this.neck1_pbox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.neck2_pbox)).BeginInit();
@@ -60,23 +60,23 @@
             this.label5.Text = "Unlock";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // neck2_lbl
             // 
-            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(300, 161);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 34);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "PE T-Shirt";
+            this.neck2_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.neck2_lbl.Location = new System.Drawing.Point(300, 161);
+            this.neck2_lbl.Name = "neck2_lbl";
+            this.neck2_lbl.Size = new System.Drawing.Size(77, 34);
+            this.neck2_lbl.TabIndex = 21;
+            this.neck2_lbl.Text = "PE T-Shirt";
             // 
-            // label9
+            // neck1_lbl
             // 
-            this.label9.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(73, 162);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(113, 34);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "College Barong";
+            this.neck1_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.neck1_lbl.Location = new System.Drawing.Point(73, 162);
+            this.neck1_lbl.Name = "neck1_lbl";
+            this.neck1_lbl.Size = new System.Drawing.Size(113, 34);
+            this.neck1_lbl.TabIndex = 20;
+            this.neck1_lbl.Text = "College Barong";
             // 
             // neck2_pbox
             // 
@@ -111,8 +111,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.neck2_lbl);
+            this.Controls.Add(this.neck1_lbl);
             this.Controls.Add(this.neck2_pbox);
             this.Controls.Add(this.neck1_pbox);
             this.Name = "neck";
@@ -126,8 +126,8 @@
         #endregion
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label neck2_lbl;
+        private System.Windows.Forms.Label neck1_lbl;
         private System.Windows.Forms.PictureBox neck2_pbox;
         private System.Windows.Forms.PictureBox neck1_pbox;
     }

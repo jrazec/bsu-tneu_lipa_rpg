@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.top1_lbl = new System.Windows.Forms.Label();
+            this.top3_lbl = new System.Windows.Forms.Label();
+            this.top2_lbl = new System.Windows.Forms.Label();
+            this.top4_lbl = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -46,41 +46,41 @@
             ((System.ComponentModel.ISupportInitialize)(this.top1_pbox)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // top1_lbl
             // 
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 162);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 34);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "College Barong";
+            this.top1_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top1_lbl.Location = new System.Drawing.Point(65, 162);
+            this.top1_lbl.Name = "top1_lbl";
+            this.top1_lbl.Size = new System.Drawing.Size(113, 34);
+            this.top1_lbl.TabIndex = 9;
+            this.top1_lbl.Text = "College Barong";
             // 
-            // label2
+            // top3_lbl
             // 
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(511, 162);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 33);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Org Shirt";
+            this.top3_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top3_lbl.Location = new System.Drawing.Point(511, 162);
+            this.top3_lbl.Name = "top3_lbl";
+            this.top3_lbl.Size = new System.Drawing.Size(79, 33);
+            this.top3_lbl.TabIndex = 10;
+            this.top3_lbl.Text = "Org Shirt";
             // 
-            // label3
+            // top2_lbl
             // 
-            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(292, 161);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 34);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "PE T-Shirt";
+            this.top2_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top2_lbl.Location = new System.Drawing.Point(292, 161);
+            this.top2_lbl.Name = "top2_lbl";
+            this.top2_lbl.Size = new System.Drawing.Size(77, 34);
+            this.top2_lbl.TabIndex = 10;
+            this.top2_lbl.Text = "PE T-Shirt";
             // 
-            // label4
+            // top4_lbl
             // 
-            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(88, 395);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 30);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Sando";
+            this.top4_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top4_lbl.Location = new System.Drawing.Point(88, 395);
+            this.top4_lbl.Name = "top4_lbl";
+            this.top4_lbl.Size = new System.Drawing.Size(58, 30);
+            this.top4_lbl.TabIndex = 11;
+            this.top4_lbl.Text = "Sando";
             // 
             // label5
             // 
@@ -186,10 +186,10 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.top4_lbl);
+            this.Controls.Add(this.top2_lbl);
+            this.Controls.Add(this.top3_lbl);
+            this.Controls.Add(this.top1_lbl);
             this.Controls.Add(this.top3_pbox);
             this.Controls.Add(this.top4_pbox);
             this.Controls.Add(this.top2_pbox);
@@ -205,14 +205,14 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox top1_pbox;
-        private System.Windows.Forms.PictureBox top2_pbox;
-        private System.Windows.Forms.PictureBox top4_pbox;
-        private System.Windows.Forms.PictureBox top3_pbox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.PictureBox top1_pbox;//MADE THESE PUBLIC TO ACCESS IT IN CLOSET.CS
+        public System.Windows.Forms.PictureBox top2_pbox;
+        public System.Windows.Forms.PictureBox top4_pbox;
+        public System.Windows.Forms.PictureBox top3_pbox;
+        public System.Windows.Forms.Label top1_lbl;
+        public System.Windows.Forms.Label top3_lbl;
+        public System.Windows.Forms.Label top2_lbl;
+        public System.Windows.Forms.Label top4_lbl;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;

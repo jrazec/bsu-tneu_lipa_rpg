@@ -32,10 +32,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.bot4_lbl = new System.Windows.Forms.Label();
+            this.bot2_lbl = new System.Windows.Forms.Label();
+            this.bot3_lbl = new System.Windows.Forms.Label();
+            this.bot1_lbl = new System.Windows.Forms.Label();
             this.bottom3_pbox = new System.Windows.Forms.PictureBox();
             this.bottom4_pbox = new System.Windows.Forms.PictureBox();
             this.bottom2_pbox = new System.Windows.Forms.PictureBox();
@@ -89,41 +89,41 @@
             this.label5.Text = "Unlock";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // bot4_lbl
             // 
-            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(96, 395);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 30);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Shorts";
+            this.bot4_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot4_lbl.Location = new System.Drawing.Point(96, 395);
+            this.bot4_lbl.Name = "bot4_lbl";
+            this.bot4_lbl.Size = new System.Drawing.Size(58, 30);
+            this.bot4_lbl.TabIndex = 23;
+            this.bot4_lbl.Text = "Shorts";
             // 
-            // label3
+            // bot2_lbl
             // 
-            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(280, 161);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 34);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "PE Jogging Pants";
+            this.bot2_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot2_lbl.Location = new System.Drawing.Point(280, 161);
+            this.bot2_lbl.Name = "bot2_lbl";
+            this.bot2_lbl.Size = new System.Drawing.Size(126, 34);
+            this.bot2_lbl.TabIndex = 21;
+            this.bot2_lbl.Text = "PE Jogging Pants";
             // 
-            // label2
+            // bot3_lbl
             // 
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(519, 162);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 33);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Denim Pants";
+            this.bot3_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot3_lbl.Location = new System.Drawing.Point(519, 162);
+            this.bot3_lbl.Name = "bot3_lbl";
+            this.bot3_lbl.Size = new System.Drawing.Size(79, 33);
+            this.bot3_lbl.TabIndex = 22;
+            this.bot3_lbl.Text = "Denim Pants";
             // 
-            // label1
+            // bot1_lbl
             // 
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(73, 162);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 34);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "College Pants";
+            this.bot1_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot1_lbl.Location = new System.Drawing.Point(73, 162);
+            this.bot1_lbl.Name = "bot1_lbl";
+            this.bot1_lbl.Size = new System.Drawing.Size(113, 34);
+            this.bot1_lbl.TabIndex = 20;
+            this.bot1_lbl.Text = "College Pants";
             // 
             // bottom3_pbox
             // 
@@ -186,16 +186,16 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bot4_lbl);
+            this.Controls.Add(this.bot2_lbl);
+            this.Controls.Add(this.bot3_lbl);
+            this.Controls.Add(this.bot1_lbl);
             this.Controls.Add(this.bottom3_pbox);
             this.Controls.Add(this.bottom4_pbox);
             this.Controls.Add(this.bottom2_pbox);
             this.Controls.Add(this.bottom1_pbox);
             this.Name = "bottom";
-            this.Size = new System.Drawing.Size(671, 518);
+            this.Size = new System.Drawing.Size(536, 414);
             ((System.ComponentModel.ISupportInitialize)(this.bottom3_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottom4_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottom2_pbox)).EndInit();
@@ -210,10 +210,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label bot4_lbl;
+        private System.Windows.Forms.Label bot2_lbl;
+        private System.Windows.Forms.Label bot3_lbl;
+        private System.Windows.Forms.Label bot1_lbl;
         private System.Windows.Forms.PictureBox bottom3_pbox;
         private System.Windows.Forms.PictureBox bottom4_pbox;
         private System.Windows.Forms.PictureBox bottom2_pbox;

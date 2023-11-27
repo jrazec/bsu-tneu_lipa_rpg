@@ -1,4 +1,5 @@
 ﻿using bsu_tnue_lipa_rpg.Closet_garments_uc;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -44,6 +45,8 @@ namespace bsu_tnue_lipa_rpg
                         {"pe-top", "pe-bot", "id","gen-shoes"},//For friday       - 5
                         };
         public string[,] Garments_Worn;
+
+        public string[][] ITEMS;
         public Closet()
         {
             InitializeComponent();
@@ -87,5 +90,49 @@ namespace bsu_tnue_lipa_rpg
            shoes_uc = shoes.instance;
             addUC(shoes_uc);
         }
+/*
+        private void displayItemNames()
+        {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
+
+            string slctItemNames = $@"
+                ";
+
+            try
+            {
+                mysqlConnection.Open();
+                MySqlCommand slctItemNamesCmd = new MySqlCommand(slctItemNames, mysqlConnection);
+
+                using (MySqlDataReader reader = slctItemNamesCmd.ExecuteReader())
+                {
+                    int i = 0;
+                    int j = 0;
+                    while (reader.Read())
+                    {
+                        ITEMS[i][j] = (string)reader["item"];
+                        if(i == 4)
+                        {
+                            items
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                mysqlConnection.Close();
+            }
+            top.instance.top1_lbl.Text = ITEMS[0][0];
+        }
+    }
+
+        private void displayItemDesc()
+        {
+
+        }
+*/
     }
 }
