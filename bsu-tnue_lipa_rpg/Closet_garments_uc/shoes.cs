@@ -12,9 +12,11 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
 {
     public partial class shoes : UserControl
     {
+        public static shoes instance;
         public shoes()
         {
             InitializeComponent();
+            instance = this;
         }
 
         private void shoes1_pbox_Click(object sender, EventArgs e)

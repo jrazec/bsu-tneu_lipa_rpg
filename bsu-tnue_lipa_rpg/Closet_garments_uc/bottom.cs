@@ -24,9 +24,12 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             }
         }
         #endregion
+
+        public static bottom instance;
         public bottom()
         {
             InitializeComponent();
+            instance = this;
         }
 
         private void bottom1_pbox_Click(object sender, EventArgs e)

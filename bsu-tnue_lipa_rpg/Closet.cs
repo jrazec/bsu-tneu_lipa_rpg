@@ -26,10 +26,14 @@ namespace bsu_tnue_lipa_rpg
         }
         #endregion
 
+        //Initialized them at first inorder to create the instance firsthand
+        top top_uc = new top();
+        bottom bot_uc = new bottom();
+        neck neck_uc = new neck();
+        shoes shoes_uc = new shoes();
         public Closet()
         {
             InitializeComponent();
-            top top_uc = new top();
             addUC(top_uc);
         }
         private void addUC(UserControl uc)
@@ -49,25 +53,25 @@ namespace bsu_tnue_lipa_rpg
 
         private void top_pbox_Click(object sender, EventArgs e)
         {
-            top top_uc = new top();
+            top_uc = top.instance;
             addUC(top_uc);
         }
 
         private void pants_pbox_Click(object sender, EventArgs e)
         {
-            bottom bot_uc = new bottom();
+            bot_uc = bottom.instance;
             addUC(bot_uc);
         }
 
         private void necklace_pbox_Click(object sender, EventArgs e)
         {
-            neck neck_uc = new neck();
+            neck_uc = neck.instance;
             addUC(neck_uc);
         }
 
         private void shoes_pbox_Click(object sender, EventArgs e)
         {
-            shoes shoes_uc = new shoes();
+           shoes_uc = shoes.instance;
             addUC(shoes_uc);
         }
     }
