@@ -77,11 +77,26 @@ namespace bsu_tnue_lipa_rpg
                 try
                 {
                     mySqlConnection.Open();
-                    string updateChar = $@"UPDATE students 
+                    string updateChar_insrtStudItems = $@"
+                                           UPDATE students 
                                            SET charac_id=2
-                                           WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';";
-                    MySqlCommand updtCharCmd = new MySqlCommand(updateChar, mySqlConnection);
-                    updtCharCmd.ExecuteNonQuery();
+                                           WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';
+
+                                           INSERT INTO student_items(sr_code,item_id,is_owned) 
+                                           VALUES   ('{Form1.STUDENT_USER_SR_CODE}',1001,false),
+                                                    ('{Form1.STUDENT_USER_SR_CODE}',1002,false),
+                                                    ('{Form1.STUDENT_USER_SR_CODE}',1005,false),
+                                                    ('{Form1.STUDENT_USER_SR_CODE}',1006,false),
+                                                    ('{Form1.STUDENT_USER_SR_CODE}',1007,false),
+                                                    ('{Form1.STUDENT_USER_SR_CODE}',1008,false),
+                                                    ('{Form1.STUDENT_USER_SR_CODE}',1009,false),
+                                                    ('{Form1.STUDENT_USER_SR_CODE}',1010,false),
+                                                    ('{Form1.STUDENT_USER_SR_CODE}',1011,false),
+                                                    ('{Form1.STUDENT_USER_SR_CODE}',1014,false),
+                                                    ('{Form1.STUDENT_USER_SR_CODE}',1015,false);
+                                           ";
+                    MySqlCommand updtChar_insrtStudItemsCmd = new MySqlCommand(updateChar_insrtStudItems, mySqlConnection);
+                    updtChar_insrtStudItemsCmd.ExecuteNonQuery();
                     MessageBox.Show("Character Saved.");
                 }
                 catch (Exception ex)
@@ -113,11 +128,26 @@ namespace bsu_tnue_lipa_rpg
                 try
                 {
                     mySqlConnection.Open();
-                    string updateChar = $@"UPDATE students 
+                    string updateChar_insrtStudItems = $@"
+                                           UPDATE students 
                                            SET charac_id=1
-                                           WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';";
-                    MySqlCommand updtCharCmd = new MySqlCommand(updateChar, mySqlConnection);
-                    updtCharCmd.ExecuteNonQuery();
+                                           WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';
+
+                                           INSERT INTO student_items(sr_code,item_id,is_owned) 
+                                           VALUES ('{Form1.STUDENT_USER_SR_CODE}',1003,false),
+                                                  ('{Form1.STUDENT_USER_SR_CODE}',1004,false),
+                                                  ('{Form1.STUDENT_USER_SR_CODE}',1005,false),
+                                                  ('{Form1.STUDENT_USER_SR_CODE}',1006,false),
+                                                  ('{Form1.STUDENT_USER_SR_CODE}',1007,false),
+                                                  ('{Form1.STUDENT_USER_SR_CODE}',1008,false),
+                                                  ('{Form1.STUDENT_USER_SR_CODE}',1009,false),
+                                                  ('{Form1.STUDENT_USER_SR_CODE}',1012,false),
+                                                  ('{Form1.STUDENT_USER_SR_CODE}',1013,false),
+                                                  ('{Form1.STUDENT_USER_SR_CODE}',1014,false),
+                                                  ('{Form1.STUDENT_USER_SR_CODE}',1015,false);
+                                           ";
+                    MySqlCommand updtChar_insrtStudItemsCmd = new MySqlCommand(updateChar_insrtStudItems, mySqlConnection);
+                    updtChar_insrtStudItemsCmd.ExecuteNonQuery();
                     MessageBox.Show("Character Saved.");
                 }
                 catch (Exception ex)

@@ -105,7 +105,8 @@ namespace bsu_tnue_lipa_rpg
                     );
 
                     CREATE TABLE IF NOT EXISTS student_items (
-                        student_item_id INT PRIMARY KEY,
+                        student_item_id SERIAL PRIMARY KEY,
+                        is_owned BOOLEAN,
                         sr_code VARCHAR(8) REFERENCES students(sr_code),
                         item_id INT REFERENCES items(item_id)
                     );
