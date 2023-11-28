@@ -25,7 +25,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             {
                 shoes1_sel = true;
                 shoes1_pbox.BorderStyle = BorderStyle.FixedSingle;
-                Closet.Garments_Worn[0, 3] = "shoes";
+                Closet.Garments_Worn[0, 3] = "gen-shoes";
             }
             else
             {

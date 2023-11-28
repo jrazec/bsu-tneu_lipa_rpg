@@ -36,7 +36,7 @@ namespace bsu_tnue_lipa_rpg
 
         //Array to prevent user from mix & matching unmatched garments
         public static string[,] 
-            GARMENTS = {
+            GARMENTS_FOR_DAY = {
                         //0         1       2       3
                         {"top",    "bot",  "neck","shoes"},//serves as attributes     
                         {"uni-top","uni-bot","id","gen-shoes"},//For monday       - 1   
@@ -46,6 +46,15 @@ namespace bsu_tnue_lipa_rpg
                         {"pe-top", "pe-bot", "id","gen-shoes"}//For friday       - 5
                         };
         //i = day_id & j = item_class
+
+        public static string[,]
+            GARMENTS_MATCH = {
+                        //0           1            2          
+                        {"uni-top","uni-bot","gen-shoes"},//For uni     - 0   
+                        {"org-top","org-bot","gen-shoes"},//For org     - 1
+                        {"cas-top","cas-bot","gen-shoes"},//For casual  - 2   
+                        {"pe-top" ,"pe-bot" ,"gen-shoes"}//For pe       - 3 
+                        };
 
         public static string[,] Garments_Worn = new string[1,4];
 
@@ -66,10 +75,28 @@ namespace bsu_tnue_lipa_rpg
         }
         private void backtoroom_btn_Click(object sender, EventArgs e)
         {
+            //if (GARMENTS[Bedroom.instance.DAY_ID,0] == Garments_Worn[0,0])//Eto ay pancheck if tama ba ung garment sa given day
+            if ((GARMENTS_MATCH[0, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[0, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[0, 2] == Garments_Worn[0, 3]) ||
+                (GARMENTS_MATCH[1, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[1, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[1, 2] == Garments_Worn[0, 3]) ||
+                (GARMENTS_MATCH[2, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[2, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[2, 2] == Garments_Worn[0, 3])  )
+            {
+                this.Hide();
+                Bedroom.instance.Show();//to load the recent form
+                Bedroom.instance.bedroomWalkTimer.Start();//to access the bedroom timer;made this public in designer.cs
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Wag ka naman mag mix & match ui! Dili man ito Mcdo ba..");
+            }
+
+
+            /*
             this.Hide();
             Bedroom.instance.Show();//to load the recent form
             Bedroom.instance.bedroomWalkTimer.Start();//to access the bedroom timer;made this public in designer.cs
             this.Close();
+             */
         }
 
         private void top_pbox_Click(object sender, EventArgs e)
