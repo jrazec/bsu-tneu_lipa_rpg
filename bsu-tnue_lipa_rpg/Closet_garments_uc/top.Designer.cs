@@ -53,7 +53,6 @@
             this.top1_lbl.Name = "top1_lbl";
             this.top1_lbl.Size = new System.Drawing.Size(145, 34);
             this.top1_lbl.TabIndex = 9;
-            this.top1_lbl.Text = "..";
             this.top1_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // top3_lbl
