@@ -77,9 +77,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.loginpng;
-            this.pictureBox2.Location = new System.Drawing.Point(452, 152);
+            this.pictureBox2.Location = new System.Drawing.Point(370, 95);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(410, 116);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
