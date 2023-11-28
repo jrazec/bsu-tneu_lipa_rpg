@@ -229,6 +229,9 @@
     <EmbeddedResource Include="Admin_section.resx">
       <DependentUpon>Admin_section.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Update.resx">
+      <DependentUpon>Admin_Update.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Character_sel.resx">
       <DependentUpon>Character_sel.cs</DependentUpon>
     </EmbeddedResource>
