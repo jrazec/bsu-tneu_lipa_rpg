@@ -172,5 +172,31 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             }
             Closet.instance.label1.Text = Closet.Garments_Worn[0, 0];
         }
+
+        private void top1_desc_Click(object sender, EventArgs e)
+        {
+            Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[0, 0]);
+            Closet.instance.displayItemDesc();
+        }
+
+        private void top2_desc_Click(object sender, EventArgs e)
+        {
+            Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[0, 1]);
+            Closet.instance.displayItemDesc();
+        }
+
+        private void top3_desc_Click(object sender, EventArgs e)
+        {
+            Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[0, 2]);
+            Closet.instance.displayItemDesc();
+        }
+
+        private void top4_lbl_Click(object sender, EventArgs e)
+        {
+            Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[0, 3]);
+            Closet.instance.displayItemDesc();
+        }
+
+        
     }
 }

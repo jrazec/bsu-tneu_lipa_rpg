@@ -56,6 +56,7 @@
             this.bot4_desc.TabIndex = 27;
             this.bot4_desc.Text = "Unlock";
             this.bot4_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot4_desc.Click += new System.EventHandler(this.bot4_desc_Click);
             // 
             // bot3_desc
             // 
@@ -67,6 +68,7 @@
             this.bot3_desc.TabIndex = 26;
             this.bot3_desc.Text = "Unlock";
             this.bot3_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot3_desc.Click += new System.EventHandler(this.bot3_desc_Click);
             // 
             // bot2_desc
             // 
@@ -78,6 +80,7 @@
             this.bot2_desc.TabIndex = 25;
             this.bot2_desc.Text = "Unlock";
             this.bot2_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot2_desc.Click += new System.EventHandler(this.bot2_desc_Click);
             // 
             // bot1_desc
             // 
@@ -89,6 +92,7 @@
             this.bot1_desc.TabIndex = 24;
             this.bot1_desc.Text = "Unlock";
             this.bot1_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot1_desc.Click += new System.EventHandler(this.bot1_desc_Click);
             // 
             // bot4_lbl
             // 

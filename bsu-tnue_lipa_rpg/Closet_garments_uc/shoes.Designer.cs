@@ -66,6 +66,7 @@
             this.shoes1_desc.TabIndex = 27;
             this.shoes1_desc.Text = "Unlock";
             this.shoes1_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.shoes1_desc.Click += new System.EventHandler(this.shoes1_desc_Click);
             // 
             // shoes
             // 

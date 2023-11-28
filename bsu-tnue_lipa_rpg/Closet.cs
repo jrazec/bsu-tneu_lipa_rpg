@@ -61,6 +61,7 @@ namespace bsu_tnue_lipa_rpg
         public static string[,] Garments_Worn = new string[1, 4];
 
         public string[,] ITEMS = new string[4, 12];// this is HOW TO DECLARE MULTIDIMENSIONAL ARRAY!?
+        public int[,] ITEM_ID = new int[4, 12];
         public string[,] ITEM_DESC = new string[4, 12];
         public Closet()
         {
@@ -165,7 +166,7 @@ namespace bsu_tnue_lipa_rpg
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
             string slctItemNames = $@"
-                        SELECT items.item_name AS name,items.item_class AS class
+                        SELECT items.item_name AS name,items.item_class AS class, items.item_id AS id
                         FROM items 
                         INNER JOIN student_items
                         ON student_items.item_id=items.item_id
@@ -190,21 +191,25 @@ namespace bsu_tnue_lipa_rpg
                         if ((string)reader["class"] == "Top")
                         {
                             ITEMS[0, TOP] = (string)reader["name"];
+                            ITEM_ID[0, TOP]= (int)reader["id"];
                             TOP++;
                         }
                         else if ((string)reader["class"] == "Bottom")
                         {
                             ITEMS[1, BOT] = (string)reader["name"];
+                            ITEM_ID[1, BOT] = (int)reader["id"];
                             BOT++;
                         }
                         else if ((string)reader["class"] == "Neck")
                         {
                             ITEMS[2, NECK] = (string)reader["name"];
+                            ITEM_ID[2, NECK] = (int)reader["id"];
                             NECK++;
                         }
                         else if ((string)reader["class"] == "Shoes")
                         {
                             ITEMS[3, SHOES] = (string)reader["name"];
+                            ITEM_ID[3, SHOES] = (int)reader["id"];
                             SHOES++;
                         }
                     }
@@ -233,11 +238,11 @@ namespace bsu_tnue_lipa_rpg
 
 
 
-        private void displayItemDesc()
+        public void displayItemDesc()
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
-            string slctItemNames = $@"
+            string slctItemDesc = $@"
                             SELECT items.item_desc AS dsc,items.item_class AS class,student_items.is_owned AS own
                             FROM items 
                             INNER JOIN student_items
@@ -250,9 +255,9 @@ namespace bsu_tnue_lipa_rpg
             try
             {
                 mysqlConnection.Open();
-                MySqlCommand slctItemNamesCmd = new MySqlCommand(slctItemNames, mysqlConnection);
+                MySqlCommand slctItemDescCmd = new MySqlCommand(slctItemDesc, mysqlConnection);
 
-                using (MySqlDataReader reader = slctItemNamesCmd.ExecuteReader())
+                using (MySqlDataReader reader = slctItemDescCmd.ExecuteReader())
                 {
                     int TOP = 0;
                     int BOT = 0;
@@ -265,6 +270,22 @@ namespace bsu_tnue_lipa_rpg
                             if ((bool)reader["own"])
                             {
                                 ITEM_DESC[0, TOP] = (string)reader["dsc"];
+                                if (TOP == 0)
+                                {
+                                    top.instance.top1_pbox.Enabled = true;
+                                }
+                                else if (TOP == 1)
+                                {
+                                    top.instance.top2_pbox.Enabled = true;
+                                }
+                                else if (TOP == 2)
+                                {
+                                    top.instance.top3_pbox.Enabled = true;
+                                }
+                                else if (TOP == 3)
+                                {
+                                    top.instance.top4_pbox.Enabled = true;
+                                }
                             }
                             else
                             {
@@ -292,6 +313,22 @@ namespace bsu_tnue_lipa_rpg
                             if ((bool)reader["own"])
                             {
                                 ITEM_DESC[1, BOT] = (string)reader["dsc"];
+                                if (BOT == 0)
+                                {
+                                    bottom.instance.bottom1_pbox.Enabled = true;
+                                }
+                                else if (BOT == 1)
+                                {
+                                    bottom.instance.bottom2_pbox.Enabled = true;
+                                }
+                                else if (BOT == 2)
+                                {
+                                    bottom.instance.bottom3_pbox.Enabled = true;
+                                }
+                                else if (BOT == 3)
+                                {
+                                    bottom.instance.bottom4_pbox.Enabled = true;
+                                }
                             }
                             else
                             {
@@ -320,6 +357,14 @@ namespace bsu_tnue_lipa_rpg
                             if ((bool)reader["own"])
                             {
                                 ITEM_DESC[2, NECK] = (string)reader["dsc"];
+                                if (NECK == 0)
+                                {
+                                    neck.instance.neck1_pbox.Enabled = true;
+                                }
+                                else if (NECK == 1)
+                                {
+                                    neck.instance.neck2_pbox.Enabled = true;
+                                }
                             }
                             else
                             {
@@ -340,6 +385,7 @@ namespace bsu_tnue_lipa_rpg
                             if ((bool)reader["own"])
                             {
                                 ITEM_DESC[3, SHOES] = (string)reader["dsc"];
+                                shoes.instance.shoes1_pbox.Enabled = true ;
                             }
                             else
                             {
@@ -370,6 +416,25 @@ namespace bsu_tnue_lipa_rpg
             {
                 mysqlConnection.Close();
             }
+        }
+
+
+        public void buyItems(string sr, int id)
+        {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);//for tb
+
+            try//---Try to open the sql connection
+            {
+                mysqlConnection.Open();
+                string updtStudItem = $"UPDATE student_items SET is_owned=true WHERE sr_code = '{sr}' AND item_id = {id};";
+                MySqlCommand updtStudItemCmd = new MySqlCommand(updtStudItem, mysqlConnection);
+                updtStudItemCmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally { mysqlConnection.Close(); }
         }
     }
 }

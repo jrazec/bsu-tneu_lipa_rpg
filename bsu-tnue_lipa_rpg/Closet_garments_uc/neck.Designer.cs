@@ -48,6 +48,7 @@
             this.neck2_desc.TabIndex = 25;
             this.neck2_desc.Text = "Unlock";
             this.neck2_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.neck2_desc.Click += new System.EventHandler(this.neck2_desc_Click);
             // 
             // neck1_desc
             // 
@@ -59,6 +60,7 @@
             this.neck1_desc.TabIndex = 24;
             this.neck1_desc.Text = "Unlock";
             this.neck1_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.neck1_desc.Click += new System.EventHandler(this.neck1_desc_Click);
             // 
             // neck2_lbl
             // 

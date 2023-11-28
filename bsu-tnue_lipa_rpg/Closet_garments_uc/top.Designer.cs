@@ -81,6 +81,7 @@
             this.top4_lbl.Size = new System.Drawing.Size(139, 30);
             this.top4_lbl.TabIndex = 11;
             this.top4_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top4_lbl.Click += new System.EventHandler(this.top4_lbl_Click);
             // 
             // top1_desc
             // 
@@ -92,6 +93,7 @@
             this.top1_desc.TabIndex = 12;
             this.top1_desc.Text = "Unlock";
             this.top1_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top1_desc.Click += new System.EventHandler(this.top1_desc_Click);
             // 
             // top2_desc
             // 
@@ -103,6 +105,7 @@
             this.top2_desc.TabIndex = 13;
             this.top2_desc.Text = "Unlock";
             this.top2_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top2_desc.Click += new System.EventHandler(this.top2_desc_Click);
             // 
             // top3_desc
             // 
@@ -114,6 +117,7 @@
             this.top3_desc.TabIndex = 14;
             this.top3_desc.Text = "Unlock";
             this.top3_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top3_desc.Click += new System.EventHandler(this.top3_desc_Click);
             // 
             // top4_desc
             // 
