@@ -35,7 +35,7 @@ namespace bsu_tnue_lipa_rpg
         shoes shoes_uc = new shoes();
 
         //Array to check if the player wears the correct garments for the day
-        public static string[,] 
+        public static string[,]
             GARMENTS_FOR_DAY = {
                         //0         1       2       3
                         {"top",    "bot",  "neck","shoes"},//serves as attributes     
@@ -43,11 +43,11 @@ namespace bsu_tnue_lipa_rpg
                         {"uni-top","uni-bot","id","gen-shoes"},//For tuesday      - 2
                         {"org-top","org-bot","id","gen-shoes"},//For wednesday    - 3   
                         {"uni-top","uni-bot","id","gen-shoes"},//For thursday     - 4 
-                        {"pe-top", "pe-bot", "id","gen-shoes"}//For friday       - 5
+                        {"pe-top", "pe-bot", "id","gen-shoes"}//For friday        - 5
                         };
         //i = day_id & j = item_class
-        
-        
+
+
         //Array to prevent user from mix & matching unmatched garments
         public static string[,]
             GARMENTS_MATCH = {
@@ -60,12 +60,14 @@ namespace bsu_tnue_lipa_rpg
 
         public static string[,] Garments_Worn = new string[1, 4];
 
-        public string[,] ITEMS = new string[4,12];// this is HOW TO DECLARE MULTIDIMENSIONAL ARRAY!?
+        public string[,] ITEMS = new string[4, 12];// this is HOW TO DECLARE MULTIDIMENSIONAL ARRAY!?
+        public string[,] ITEM_DESC = new string[4, 12];
         public Closet()
         {
             InitializeComponent();
             addUC(top_uc);
             displayItemNames();
+            displayItemDesc();
             instance = this;
         }
         private void addUC(UserControl uc)
@@ -83,24 +85,27 @@ namespace bsu_tnue_lipa_rpg
             if ((GARMENTS_MATCH[0, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[0, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[0, 2] == Garments_Worn[0, 3]) ||
                 (GARMENTS_MATCH[1, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[1, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[1, 2] == Garments_Worn[0, 3]) ||
                 (GARMENTS_MATCH[2, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[2, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[2, 2] == Garments_Worn[0, 3]) ||
-                (GARMENTS_MATCH[3, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[3, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[3, 2] == Garments_Worn[0, 3])   )
+                (GARMENTS_MATCH[3, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[3, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[3, 2] == Garments_Worn[0, 3]))
             {
-            
 
-                if((GARMENTS_MATCH[0, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[0, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[0, 2] == Garments_Worn[0, 3]))
+
+                if ((GARMENTS_MATCH[0, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[0, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[0, 2] == Garments_Worn[0, 3]))
                 {
                     Bedroom.instance.CHARAC_CLOTHES = "UNI";
-                }else if((GARMENTS_MATCH[1, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[1, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[1, 2] == Garments_Worn[0, 3]))
+                }
+                else if ((GARMENTS_MATCH[1, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[1, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[1, 2] == Garments_Worn[0, 3]))
                 {
                     Bedroom.instance.CHARAC_CLOTHES = "ORG";
-                }else if((GARMENTS_MATCH[2, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[2, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[2, 2] == Garments_Worn[0, 3]))
+                }
+                else if ((GARMENTS_MATCH[2, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[2, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[2, 2] == Garments_Worn[0, 3]))
                 {
                     Bedroom.instance.CHARAC_CLOTHES = "CASUAL";
                 }
-                else if((GARMENTS_MATCH[3, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[3, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[3, 2] == Garments_Worn[0, 3]))
+                else if ((GARMENTS_MATCH[3, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[3, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[3, 2] == Garments_Worn[0, 3]))
                 {
                     Bedroom.instance.CHARAC_CLOTHES = "PE";
-                }else
+                }
+                else
                 {
                     Bedroom.instance.CHARAC_CLOTHES = "CASUAL";
                 }
@@ -151,14 +156,14 @@ namespace bsu_tnue_lipa_rpg
 
         private void shoes_pbox_Click(object sender, EventArgs e)
         {
-           shoes_uc = shoes.instance;
+            shoes_uc = shoes.instance;
             addUC(shoes_uc);
         }
 
         private void displayItemNames()
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
-            
+
             string slctItemNames = $@"
                         SELECT items.item_name AS name,items.item_class AS class
                         FROM items 
@@ -184,22 +189,22 @@ namespace bsu_tnue_lipa_rpg
                     {
                         if ((string)reader["class"] == "Top")
                         {
-                            ITEMS[0,TOP] = (string)reader["name"];
+                            ITEMS[0, TOP] = (string)reader["name"];
                             TOP++;
                         }
-                        else if ((string)reader["class"] == "Bottom")                 
+                        else if ((string)reader["class"] == "Bottom")
                         {
-                            ITEMS[1,BOT] = (string)reader["name"];
+                            ITEMS[1, BOT] = (string)reader["name"];
                             BOT++;
                         }
                         else if ((string)reader["class"] == "Neck")
                         {
-                            ITEMS[2,NECK] = (string)reader["name"];
+                            ITEMS[2, NECK] = (string)reader["name"];
                             NECK++;
                         }
                         else if ((string)reader["class"] == "Shoes")
                         {
-                            ITEMS[3,SHOES] = (string)reader["name"];
+                            ITEMS[3, SHOES] = (string)reader["name"];
                             SHOES++;
                         }
                     }
@@ -226,13 +231,145 @@ namespace bsu_tnue_lipa_rpg
             shoes.instance.shoes1_lbl.Text = ITEMS[3, 0];
         }
 
-    }
-/*
+
+
         private void displayItemDesc()
         {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
+            string slctItemNames = $@"
+                            SELECT items.item_desc AS dsc,items.item_class AS class,student_items.is_owned AS own
+                            FROM items 
+                            INNER JOIN student_items
+                            ON student_items.item_id=items.item_id
+                            INNER JOIN students
+                            ON student_items.sr_code=students.sr_code
+                            WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
+                            ORDER BY class,items.item_name;";
+            
+            try
+            {
+                mysqlConnection.Open();
+                MySqlCommand slctItemNamesCmd = new MySqlCommand(slctItemNames, mysqlConnection);
+
+                using (MySqlDataReader reader = slctItemNamesCmd.ExecuteReader())
+                {
+                    int TOP = 0;
+                    int BOT = 0;
+                    int NECK = 0;
+                    int SHOES = 0;
+                    while (reader.Read())
+                    {
+                        if ((string)reader["class"] == "Top")
+                        {
+                            if ((bool)reader["own"])
+                            {
+                                ITEM_DESC[0, TOP] = (string)reader["dsc"];
+                            }
+                            else
+                            {
+                                ITEM_DESC[0, TOP] = "Unlock";
+                                if(TOP == 0)
+                                {
+                                    top.instance.top1_pbox.Enabled = false;
+                                }else if (TOP == 1)
+                                {
+                                    top.instance.top2_pbox.Enabled = false;
+                                }else if (TOP == 2)
+                                {
+                                    top.instance.top3_pbox.Enabled = false;
+                                }
+                                else if(TOP == 3)
+                                {
+                                    top.instance.top4_pbox.Enabled = false;
+                                }
+                            }
+                            
+                            TOP++;
+                        }
+                        else if ((string)reader["class"] == "Bottom")
+                        {
+                            if ((bool)reader["own"])
+                            {
+                                ITEM_DESC[1, BOT] = (string)reader["dsc"];
+                            }
+                            else
+                            {
+                                ITEM_DESC[1, BOT] = "Unlock";
+                                if (BOT == 0)
+                                {
+                                    bottom.instance.bottom1_pbox.Enabled = false;
+                                }
+                                else if (BOT == 1)
+                                {
+                                    bottom.instance.bottom2_pbox.Enabled = false;
+                                }
+                                else if (BOT == 2)
+                                {
+                                    bottom.instance.bottom3_pbox.Enabled = false;
+                                }
+                                else if(BOT == 3)
+                                {
+                                    bottom.instance.bottom4_pbox.Enabled = false;
+                                }
+                            }
+                            BOT++;
+                        }
+                        else if ((string)reader["class"] == "Neck")
+                        {
+                            if ((bool)reader["own"])
+                            {
+                                ITEM_DESC[2, NECK] = (string)reader["dsc"];
+                            }
+                            else
+                            {
+                                ITEM_DESC[2, NECK] = "Unlock";
+                                if (NECK == 0)
+                                {
+                                    neck.instance.neck1_pbox.Enabled = false;
+                                }
+                                else if (NECK == 1)
+                                {
+                                    neck.instance.neck2_pbox.Enabled = false;
+                                }
+                            }
+                            NECK++;
+                        }
+                        else if ((string)reader["class"] == "Shoes")
+                        {
+                            if ((bool)reader["own"])
+                            {
+                                ITEM_DESC[3, SHOES] = (string)reader["dsc"];
+                            }
+                            else
+                            {
+                                ITEM_DESC[3, SHOES] = "Unlock";
+                                shoes.instance.shoes1_pbox.Enabled = false;
+                            }
+                            SHOES++;
+                        }
+                    }
+                }
+                top.instance.top1_desc.Text = ITEM_DESC[0, 0];
+                top.instance.top2_desc.Text = ITEM_DESC[0, 1];
+                top.instance.top3_desc.Text = ITEM_DESC[0, 2];
+                top.instance.top4_desc.Text = ITEM_DESC[0, 3];
+                bottom.instance.bot1_desc.Text = ITEM_DESC[1, 0];
+                bottom.instance.bot2_desc.Text = ITEM_DESC[1, 1];
+                bottom.instance.bot3_desc.Text = ITEM_DESC[1, 2];
+                bottom.instance.bot4_desc.Text = ITEM_DESC[1, 3];
+                neck.instance.neck1_desc.Text = ITEM_DESC[2, 0];
+                neck.instance.neck2_desc.Text = ITEM_DESC[2, 1];
+                shoes.instance.shoes1_desc.Text = ITEM_DESC[3, 0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                mysqlConnection.Close();
+            }
         }
-    */
-    
-    
+    }
 }
