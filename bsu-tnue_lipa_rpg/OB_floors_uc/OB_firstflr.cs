@@ -117,6 +117,7 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
                         
                         Old_Bldg.instance.obcontainer_panel.Controls.Clear();
                         Old_Bldg.instance.obcontainer_panel.Controls.Add(ob2);
+                        ob2.obsecondWalkTimer.Start();
                         ob2.BringToFront();
 
                         // above code works but character in 2nd flr wont move like cecs 2nd flr and up

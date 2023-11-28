@@ -73,6 +73,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox obsecondflr_charac;
-        private System.Windows.Forms.Timer obsecondWalkTimer;
+        public System.Windows.Forms.Timer obsecondWalkTimer;
     }
 }
