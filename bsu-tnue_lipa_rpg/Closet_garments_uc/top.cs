@@ -63,13 +63,14 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 top3_pbox.BorderStyle = BorderStyle.Fixed3D;
                 top4_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 0] = "org-top";
-                
+                Closet.instance.top_pbox.Image = Properties.Resources.CICS_Org_Shirt;
             }
             else
             {
                 top1_sel = false;
                 top1_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 0] = "";
+                Closet.instance.top_pbox.Image = Properties.Resources.top_icon;
             }
             Closet.instance.label1.Text = Closet.Garments_Worn[0, 0];
         }
@@ -87,12 +88,21 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 top3_pbox.BorderStyle = BorderStyle.Fixed3D;
                 top4_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 0] = "uni-top";
+                if(Bedroom.instance.CHARAC_ID == 1)
+                {
+                    Closet.instance.top_pbox.Image = Properties.Resources.College_Barong;
+                }
+                else
+                {
+                    Closet.instance.top_pbox.Image = Properties.Resources.College_Blouse;
+                }
             }
             else
             {
                 top2_sel = false;
                 top2_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 0] = "";
+                Closet.instance.top_pbox.Image = Properties.Resources.top_icon;
             }
             Closet.instance.label1.Text = Closet.Garments_Worn[0, 0];
         }
@@ -112,10 +122,12 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 if(Bedroom.instance.CHARAC_ID == 1)
                 {
                     Closet.Garments_Worn[0, 0] = "pe-top";
+                    Closet.instance.top_pbox.Image = Properties.Resources.PE_T_Shirt;
                 }
                 else
                 {
                     Closet.Garments_Worn[0, 0] = "cas-top";
+                    Closet.instance.top_pbox.Image = Properties.Resources.Civilian_Top_1;
                 }
             }
             else
@@ -123,6 +135,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 top3_sel = false;
                 top3_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 0] = "";
+                Closet.instance.top_pbox.Image = Properties.Resources.top_icon;
             }
             Closet.instance.label1.Text = Closet.Garments_Worn[0, 0];
         }
@@ -142,10 +155,12 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 if (Bedroom.instance.CHARAC_ID == 1)
                 {
                     Closet.Garments_Worn[0, 0] = "cas-top";
+                    Closet.instance.top_pbox.Image = Properties.Resources.Civilian_Top_2;
                 }
                 else
                 {
                     Closet.Garments_Worn[0, 0] = "pe-top";
+                    Closet.instance.top_pbox.Image = Properties.Resources.PE_T_Shirt;
                 }
             }
             else
@@ -153,6 +168,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 top4_sel = false;
                 top4_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 0] = "";
+                Closet.instance.top_pbox.Image = Properties.Resources.top_icon;
             }
             Closet.instance.label1.Text = Closet.Garments_Worn[0, 0];
         }

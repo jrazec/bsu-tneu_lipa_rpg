@@ -26,12 +26,14 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 shoes1_sel = true;
                 shoes1_pbox.BorderStyle = BorderStyle.FixedSingle;
                 Closet.Garments_Worn[0, 3] = "gen-shoes";
+                Closet.instance.shoes_pbox.Image = Properties.Resources.Shoes;
             }
             else
             {
                 shoes1_sel = false;
                 shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 3] = "";
+                Closet.instance.shoes_pbox.Image = Properties.Resources.shoes_icon;
             }
             Closet.instance.label4.Text = Closet.Garments_Worn[0, 3];
         }

@@ -63,12 +63,21 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
                 bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 1] = "uni-bot";
+                if (Bedroom.instance.CHARAC_ID == 1)
+                {
+                    Closet.instance.pants_pbox.Image = Properties.Resources.College_Pants;
+                }
+                else
+                {
+                    Closet.instance.pants_pbox.Image = Properties.Resources.College_Skirt;
+                }
             }
             else
             {
                 bot1_sel = false;
                 bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 1] = "";
+                Closet.instance.pants_pbox.Image = Properties.Resources.pants_icon;
             }
             Closet.instance.label2.Text = Closet.Garments_Worn[0, 1];
        
@@ -87,12 +96,15 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
                 bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 1] = "org-bot";
+                Closet.instance.pants_pbox.Image = Properties.Resources.Denim_Pants;
+
             }
             else
             {
                 bot2_sel = false;
                 bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 1] = "";
+                Closet.instance.pants_pbox.Image = Properties.Resources.pants_icon;
             }
             Closet.instance.label2.Text = Closet.Garments_Worn[0, 1];
         }
@@ -110,12 +122,15 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
                 bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 1] = "pe-bot";
+                Closet.instance.pants_pbox.Image = Properties.Resources.PE_Jogging_Pant;
+
             }
             else
             {
                 bot3_sel = false;
                 bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 1] = "";
+                Closet.instance.pants_pbox.Image = Properties.Resources.pants_icon;
             }
             Closet.instance.label2.Text = Closet.Garments_Worn[0, 1];
         }
@@ -133,12 +148,21 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
                 bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 1] = "cas-bot";
+                if (Bedroom.instance.CHARAC_ID == 1)
+                {
+                    Closet.instance.pants_pbox.Image = Properties.Resources.Civilian_Bottom_2;
+                }
+                else
+                {
+                    Closet.instance.pants_pbox.Image = Properties.Resources.Civilian_Bottom_1;
+                }
             }
             else
             {
                 bot4_sel = false;
                 bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 1] = "";
+                Closet.instance.pants_pbox.Image = Properties.Resources.pants_icon;
             }
             Closet.instance.label2.Text = Closet.Garments_Worn[0, 1];
         }

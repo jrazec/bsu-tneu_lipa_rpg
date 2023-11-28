@@ -42,12 +42,14 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 neck1_pbox.BorderStyle = BorderStyle.FixedSingle;
                 neck2_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 2] = "gold-neck";
+                Closet.instance.necklace_pbox.Image = Properties.Resources.Necklace_Unisex;
             }
             else
             {
                 neck1_sel = false;
                 neck1_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 2] = "";
+                Closet.instance.necklace_pbox.Image = Properties.Resources.neck_icon;
             }
             Closet.instance.label3.Text = Closet.Garments_Worn[0, 2];
         }
@@ -61,12 +63,14 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 neck2_pbox.BorderStyle = BorderStyle.FixedSingle;
                 neck1_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 2] = "id";
+                Closet.instance.necklace_pbox.Image = Properties.Resources.School_ID_Lace;
             }
             else
             {
                 neck2_sel = false;
                 neck2_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 2] = "";
+                Closet.instance.necklace_pbox.Image = Properties.Resources.neck_icon;
             }
             Closet.instance.label3.Text = Closet.Garments_Worn[0, 2];
         }

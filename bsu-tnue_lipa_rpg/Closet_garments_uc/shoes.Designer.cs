@@ -58,12 +58,13 @@
             // 
             // label8
             // 
+            this.label8.BackColor = System.Drawing.Color.IndianRed;
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label8.Location = new System.Drawing.Point(61, 196);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(122, 56);
             this.label8.TabIndex = 27;
-            this.label8.Text = "Estetik Starter Pack";
+            this.label8.Text = "Unlock";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // shoes

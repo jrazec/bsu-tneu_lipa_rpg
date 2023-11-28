@@ -48,12 +48,13 @@
             // 
             // label8
             // 
+            this.label8.BackColor = System.Drawing.Color.IndianRed;
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label8.Location = new System.Drawing.Point(61, 425);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(122, 56);
             this.label8.TabIndex = 27;
-            this.label8.Text = "Estetik Starter Pack";
+            this.label8.Text = "Unlock";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
@@ -199,7 +200,7 @@
             this.Controls.Add(this.bottom2_pbox);
             this.Controls.Add(this.bottom1_pbox);
             this.Name = "bottom";
-            this.Size = new System.Drawing.Size(536, 414);
+            this.Size = new System.Drawing.Size(671, 518);
             ((System.ComponentModel.ISupportInitialize)(this.bottom3_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottom4_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bottom2_pbox)).EndInit();

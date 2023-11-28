@@ -125,7 +125,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(202, 188);
+            this.label1.Location = new System.Drawing.Point(62, 141);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 22);
             this.label1.TabIndex = 7;
@@ -134,7 +134,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(202, 323);
+            this.label2.Location = new System.Drawing.Point(62, 268);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 22);
             this.label2.TabIndex = 8;
@@ -143,7 +143,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(202, 452);
+            this.label3.Location = new System.Drawing.Point(62, 402);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 22);
             this.label3.TabIndex = 9;
@@ -152,7 +152,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(202, 583);
+            this.label4.Location = new System.Drawing.Point(62, 528);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 22);
             this.label4.TabIndex = 10;
@@ -194,10 +194,10 @@
         #endregion
 
         private System.Windows.Forms.Panel menu_panel;
-        private System.Windows.Forms.PictureBox top_pbox;
-        private System.Windows.Forms.PictureBox pants_pbox;
-        private System.Windows.Forms.PictureBox necklace_pbox;
-        private System.Windows.Forms.PictureBox shoes_pbox;
+        public System.Windows.Forms.PictureBox top_pbox;
+        public System.Windows.Forms.PictureBox pants_pbox;
+        public System.Windows.Forms.PictureBox necklace_pbox;
+        public System.Windows.Forms.PictureBox shoes_pbox;
         private System.Windows.Forms.Button backtoroom_btn;
         private System.Windows.Forms.Panel garments_panel;
         public  System.Windows.Forms.Label label1;
