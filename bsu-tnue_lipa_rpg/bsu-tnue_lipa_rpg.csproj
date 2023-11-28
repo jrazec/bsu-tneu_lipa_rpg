@@ -125,6 +125,12 @@
     <Compile Include="Admin_section.Designer.cs">
       <DependentUpon>Admin_section.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_Update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Update.Designer.cs">
+      <DependentUpon>Admin_Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Character_sel.cs">
       <SubType>Form</SubType>
     </Compile>
