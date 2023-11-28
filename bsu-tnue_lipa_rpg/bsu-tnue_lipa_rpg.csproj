@@ -107,6 +107,12 @@
     <Compile Include="CECS_bldg.Designer.cs">
       <DependentUpon>CECS_bldg.cs</DependentUpon>
     </Compile>
+    <Compile Include="CECS_firstflr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CECS_firstflr.Designer.cs">
+      <DependentUpon>CECS_firstflr.cs</DependentUpon>
+    </Compile>
     <Compile Include="Character_sel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +201,9 @@
     </Compile>
     <EmbeddedResource Include="CECS_bldg.resx">
       <DependentUpon>CECS_bldg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CECS_firstflr.resx">
+      <DependentUpon>CECS_firstflr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Character_sel.resx">
       <DependentUpon>Character_sel.cs</DependentUpon>

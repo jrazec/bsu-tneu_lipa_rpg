@@ -12,9 +12,18 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class CECS_bldg : Form
     {
+        CECS_firstflr cecs1 = new CECS_firstflr();
         public CECS_bldg()
         {
             InitializeComponent();
+            addUC(cecs1);
+        }
+        private void addUC(UserControl uc)
+        {
+            uc.Dock = DockStyle.Fill;
+            cecscontainer_panel.Controls.Clear();
+            cecscontainer_panel.Controls.Add(uc);
+            uc.BringToFront();
         }
     }
 }
