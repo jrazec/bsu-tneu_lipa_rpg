@@ -106,7 +106,7 @@ namespace bsu_tnue_lipa_rpg
                 }
 
 
-                Bedroom.instance.characBack();
+                Bedroom.instance.characBack(Bedroom.instance.bedroom_charac);
                 this.Hide();
                 Bedroom.instance.Show();//to load the recent form
                 Bedroom.instance.bedroomWalkTimer.Start();//to access the bedroom timer;made this public in designer.cs

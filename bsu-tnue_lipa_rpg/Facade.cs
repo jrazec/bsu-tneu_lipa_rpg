@@ -26,6 +26,8 @@ namespace bsu_tnue_lipa_rpg
         public Facade()
         {
             InitializeComponent();
+            Bedroom.instance.characBack(facade_charac);
+
         }
 
         private void facadeWalkTimer_Tick(object sender, EventArgs e)
@@ -108,25 +110,26 @@ namespace bsu_tnue_lipa_rpg
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
                 go_left = true;
-                facade_charac.Image = Properties.Resources.male_uni_left;
+                Bedroom.instance.characLeft(facade_charac);
             }
 
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 go_right = true;
-                facade_charac.Image = Properties.Resources.male_uni_right;
+                Bedroom.instance.characRight(facade_charac);
+
             }
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
             {
                 go_up = true;
-                facade_charac.Image = Properties.Resources.male_uni_back;
+                Bedroom.instance.characBack(facade_charac);
             }
 
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
                 go_down = true;
-                facade_charac.Image = Properties.Resources.male_uni_front;
+                Bedroom.instance.characFront(facade_charac);
             }
         }
 

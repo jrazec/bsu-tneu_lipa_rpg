@@ -307,6 +307,6 @@
         public System.Windows.Forms.Timer bedroomWalkTimer;
         private System.Windows.Forms.PictureBox sched_pbox;
         private System.Windows.Forms.PictureBox closetcollision_pbox;
-        private System.Windows.Forms.PictureBox bedroom_charac;
+        public System.Windows.Forms.PictureBox bedroom_charac;
     }
 }

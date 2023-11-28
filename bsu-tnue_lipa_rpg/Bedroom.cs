@@ -47,8 +47,9 @@ namespace bsu_tnue_lipa_rpg
             Closet.instance = new Closet();
             checkCharac();
             checkMoney();
-            characFront();//Will remove as it is already initialized in check charac what the costume would be 
             checkDay();
+
+            characFront(bedroom_charac);
 
         }
         bool openSched = false;
@@ -185,28 +186,28 @@ choose the right ones.";
             {
                 e.Handled = true;
                 go_left = true;
-                characLeft();
+                characLeft(bedroom_charac);
             }
 
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 e.Handled = true;
                 go_right = true;
-                characRight();
+                characRight(bedroom_charac);
             }
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
             {
                 e.Handled = true;
                 go_up = true;
-                characBack();
+                characBack(bedroom_charac);
             }
 
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
                 e.Handled = true;
                 go_down = true;
-                characFront();
+                characFront(bedroom_charac);
             }
         }
 
@@ -232,7 +233,7 @@ choose the right ones.";
                 go_down = false;
             }
         }
-        private void characFront()
+        public void characFront(PictureBox bedroom_charac)
         {
 
             if (CHARAC_ID == 1)
@@ -283,7 +284,7 @@ choose the right ones.";
             }
         }
 
-        public void characBack()
+        public void characBack(PictureBox bedroom_charac)
         {
             if (CHARAC_ID == 1)
             {
@@ -333,7 +334,7 @@ choose the right ones.";
             }
         }
 
-        private void characLeft()
+        public void characLeft(PictureBox bedroom_charac)
         {
             if (CHARAC_ID == 1)
             {
@@ -383,7 +384,7 @@ choose the right ones.";
             }
         }
 
-        private void characRight()
+        public void characRight(PictureBox bedroom_charac)
         {
             if (CHARAC_ID == 1)
             {
