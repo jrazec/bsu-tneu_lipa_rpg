@@ -15,8 +15,13 @@ namespace bsu_tnue_lipa_rpg
         public Admin_section()
         {
             InitializeComponent();
-     
+            create_lbl.Click += create_lbl_Click;
         }
 
+        private void create_lbl_Click(object sender, EventArgs e)
+        {
+            Admin_Create adminCreateForm = new Admin_Create();
+            adminCreateForm.Show();
+        }
     }
 }

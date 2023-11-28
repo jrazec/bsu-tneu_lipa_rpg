@@ -37,15 +37,16 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.create_pbox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.create_lbl = new System.Windows.Forms.Label();
             this.home_lbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.search_txt = new System.Windows.Forms.TextBox();
             this.search_btn = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -59,14 +60,13 @@
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.exit_btn = new System.Windows.Forms.Button();
-            this.search_txt = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.id_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.create_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -88,12 +88,12 @@
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.create_pbox);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.create_lbl);
             this.panel1.Controls.Add(this.home_lbl);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(-4, -3);
@@ -173,15 +173,15 @@
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox2
+            // create_pbox
             // 
-            this.pictureBox2.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.select;
-            this.pictureBox2.Location = new System.Drawing.Point(64, 291);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.create_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.select;
+            this.create_pbox.Location = new System.Drawing.Point(64, 291);
+            this.create_pbox.Name = "create_pbox";
+            this.create_pbox.Size = new System.Drawing.Size(25, 25);
+            this.create_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.create_pbox.TabIndex = 6;
+            this.create_pbox.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -224,15 +224,16 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "READ";
             // 
-            // label1
+            // create_lbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(99, 287);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 34);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "CREATE";
+            this.create_lbl.AutoSize = true;
+            this.create_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.create_lbl.Location = new System.Drawing.Point(99, 287);
+            this.create_lbl.Name = "create_lbl";
+            this.create_lbl.Size = new System.Drawing.Size(84, 34);
+            this.create_lbl.TabIndex = 1;
+            this.create_lbl.Text = "CREATE";
+            this.create_lbl.Click += new System.EventHandler(this.create_lbl_Click);
             // 
             // home_lbl
             // 
@@ -264,6 +265,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(911, 57);
             this.panel3.TabIndex = 1;
+            // 
+            // search_txt
+            // 
+            this.search_txt.BackColor = System.Drawing.Color.White;
+            this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.search_txt.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_txt.Location = new System.Drawing.Point(685, 18);
+            this.search_txt.Name = "search_txt";
+            this.search_txt.Size = new System.Drawing.Size(180, 29);
+            this.search_txt.TabIndex = 14;
             // 
             // search_btn
             // 
@@ -400,16 +411,6 @@
             this.exit_btn.TabIndex = 13;
             this.exit_btn.UseVisualStyleBackColor = false;
             // 
-            // search_txt
-            // 
-            this.search_txt.BackColor = System.Drawing.Color.White;
-            this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.search_txt.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_txt.Location = new System.Drawing.Point(685, 18);
-            this.search_txt.Name = "search_txt";
-            this.search_txt.Size = new System.Drawing.Size(180, 29);
-            this.search_txt.TabIndex = 14;
-            // 
             // Admin_section
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -435,7 +436,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.create_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -456,13 +457,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label create_lbl;
         private System.Windows.Forms.Label home_lbl;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox create_pbox;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox id_pbox;
