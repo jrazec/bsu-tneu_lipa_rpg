@@ -209,6 +209,12 @@
     <Compile Include="Game_mechanics.Designer.cs">
       <DependentUpon>Game_mechanics.cs</DependentUpon>
     </Compile>
+    <Compile Include="home_colorpanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="home_colorpanel.Designer.cs">
+      <DependentUpon>home_colorpanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Log_in.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -283,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Game_mechanics.resx">
       <DependentUpon>Game_mechanics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home_colorpanel.resx">
+      <DependentUpon>home_colorpanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log_in.resx">
       <DependentUpon>Log_in.cs</DependentUpon>

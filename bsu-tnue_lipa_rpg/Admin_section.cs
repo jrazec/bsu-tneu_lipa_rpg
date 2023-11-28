@@ -36,7 +36,7 @@ namespace bsu_tnue_lipa_rpg
             panel4.Controls.Add(adminCreateControl);
             adminCreateControl.Dock = DockStyle.Fill;
             adminCreateControl.Show();
-
+                       
         }
 
         private void read_lbl_Click(object sender, EventArgs e)
