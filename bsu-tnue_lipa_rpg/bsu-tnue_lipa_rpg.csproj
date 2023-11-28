@@ -101,6 +101,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_Create.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Create.Designer.cs">
+      <DependentUpon>Admin_Create.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     <Compile Include="Sign_up.Designer.cs">
       <DependentUpon>Sign_up.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin_Create.resx">
+      <DependentUpon>Admin_Create.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_login.resx">
       <DependentUpon>Admin_login.cs</DependentUpon>
     </EmbeddedResource>
