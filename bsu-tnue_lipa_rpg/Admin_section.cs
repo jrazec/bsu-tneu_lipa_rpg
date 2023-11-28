@@ -15,6 +15,8 @@ namespace bsu_tnue_lipa_rpg
         public Admin_section()
         {
             InitializeComponent();
+     
         }
+
     }
 }

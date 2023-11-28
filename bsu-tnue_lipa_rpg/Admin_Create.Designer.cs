@@ -68,9 +68,10 @@
             // 
             this.search_txt.BackColor = System.Drawing.Color.White;
             this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.search_txt.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_txt.Location = new System.Drawing.Point(685, 18);
             this.search_txt.Name = "search_txt";
-            this.search_txt.Size = new System.Drawing.Size(180, 28);
+            this.search_txt.Size = new System.Drawing.Size(180, 29);
             this.search_txt.TabIndex = 11;
             // 
             // panel3
@@ -309,9 +310,9 @@
             // create_btn
             // 
             this.create_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.create_btn.Location = new System.Drawing.Point(338, 560);
+            this.create_btn.Location = new System.Drawing.Point(338, 556);
             this.create_btn.Name = "create_btn";
-            this.create_btn.Size = new System.Drawing.Size(88, 29);
+            this.create_btn.Size = new System.Drawing.Size(96, 40);
             this.create_btn.TabIndex = 22;
             this.create_btn.Text = "CREATE";
             this.create_btn.UseVisualStyleBackColor = true;
