@@ -18,10 +18,23 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             InitializeComponent();
             instance = this;
         }
-
+        public bool shoes1_sel = false;
         private void shoes1_pbox_Click(object sender, EventArgs e)
         {
-            shoes1_pbox.BorderStyle = BorderStyle.FixedSingle;
+            if (shoes1_sel == false)
+            {
+                shoes1_sel = true;
+                shoes1_pbox.BorderStyle = BorderStyle.FixedSingle;
+                Closet.Garments_Worn[0, 3] = "shoes";
+            }
+            else
+            {
+                shoes1_sel = false;
+                shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 3] = "";
+            }
+            Closet.instance.label4.Text = Closet.Garments_Worn[0, 3];
         }
     }
+    
 }
