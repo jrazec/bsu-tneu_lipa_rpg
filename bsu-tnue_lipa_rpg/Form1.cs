@@ -161,11 +161,11 @@ namespace bsu_tnue_lipa_rpg
                         (1007,'School ID Lace',75.00,'Part of School Uniform for ID','Neck'),
                         (1008,'Shoes',10.00,'A beautiful black shoes!','Shoes'),
                         (1009,'Necklace Unisex',5.00,'Estetik Starter Pack','Neck'),
-                        (1010,'Civilian Top-G',70.00,'Estetik Starter Pack for Girls Crop Top','Top'),
-                        (1011,'Civilian Bottom-G',70.00,'Estetik Starter Pack for Girls Short Shorts','Bottom'),
-                        (1012,'Civilian Top-B',70.00,'Estetik Starter Pack for Boys Sando','Top'),
-                        (1013,'Civilian Bottom-B',70.00,'Estetik Starter Pack for Boys Short','Bottom'),
-                        (1014,'CICS Org Shirt',500.00,'A casual organizational shirt of AICSS this s.y. 2022-2023 for Any Gender','Top'),
+                        (1010,'Crop Top',70.00,'Estetik Starter Pack for Girls Crop Top','Top'),
+                        (1011,'Short-Shorts',70.00,'Estetik Starter Pack for Girls Short Shorts','Bottom'),
+                        (1012,'Sando',70.00,'Estetik Starter Pack for Boys Sando','Top'),
+                        (1013,'Short-z',70.00,'Estetik Starter Pack for Boys Short','Bottom'),
+                        (1014,'CICS Org Shirt',500.00,'Org Shirt of AICSS (2022-2023) ','Top'),
                         (1015,'Denim Pants',150.00,'Normal Unisex Pants','Bottom');
 
                     INSERT INTO
