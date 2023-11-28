@@ -85,6 +85,7 @@
             this.flr5_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.flr5_pbox.TabIndex = 2;
             this.flr5_pbox.TabStop = false;
+            this.flr5_pbox.Click += new System.EventHandler(this.flr5_pbox_Click);
             // 
             // flr4_pbox
             // 
@@ -97,6 +98,7 @@
             this.flr4_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.flr4_pbox.TabIndex = 3;
             this.flr4_pbox.TabStop = false;
+            this.flr4_pbox.Click += new System.EventHandler(this.flr4_pbox_Click);
             // 
             // flr3_pbox
             // 
@@ -109,6 +111,7 @@
             this.flr3_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.flr3_pbox.TabIndex = 4;
             this.flr3_pbox.TabStop = false;
+            this.flr3_pbox.Click += new System.EventHandler(this.flr3_pbox_Click);
             // 
             // flr2_pbox
             // 
@@ -121,6 +124,7 @@
             this.flr2_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.flr2_pbox.TabIndex = 5;
             this.flr2_pbox.TabStop = false;
+            this.flr2_pbox.Click += new System.EventHandler(this.flr2_pbox_Click);
             // 
             // flr1_pbox
             // 

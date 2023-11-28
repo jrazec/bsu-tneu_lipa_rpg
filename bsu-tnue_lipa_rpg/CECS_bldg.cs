@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bsu_tnue_lipa_rpg.CECS_floors_uc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,7 @@ namespace bsu_tnue_lipa_rpg
     {
         public static CECS_bldg instance;
         CECS_firstflr cecs1 = new CECS_firstflr();
+        CECS_secondflr cecs2 = new CECS_secondflr();
         public CECS_bldg()
         {
             InitializeComponent();
@@ -30,6 +32,7 @@ namespace bsu_tnue_lipa_rpg
 
         private void flr1_pbox_Click(object sender, EventArgs e)
         {
+            //to be fixed
             cecscontainer_panel.Visible = true;
             
             cecs1 = CECS_firstflr.instance;
@@ -42,6 +45,38 @@ namespace bsu_tnue_lipa_rpg
             flr3_pbox.Enabled = false;
             flr4_pbox.Enabled = false;
             flr5_pbox.Enabled = false;
+        }
+
+        private void flr2_pbox_Click(object sender, EventArgs e)
+        {
+            cecscontainer_panel.Visible = true;
+
+            cecs2 = CECS_secondflr.instance;
+            CECS_secondflr.instance.Show();
+
+            addUC(cecs2);
+
+        }
+
+        private void flr3_pbox_Click(object sender, EventArgs e)
+        {
+            cecscontainer_panel.Visible = true;
+
+            //addUC(cecs3);
+        }
+
+        private void flr4_pbox_Click(object sender, EventArgs e)
+        {
+            cecscontainer_panel.Visible = true;
+
+            //addUC(cecs4);
+        }
+
+        private void flr5_pbox_Click(object sender, EventArgs e)
+        {
+            cecscontainer_panel.Visible = true;
+
+            //addUC(cecs5);
         }
     }
 }

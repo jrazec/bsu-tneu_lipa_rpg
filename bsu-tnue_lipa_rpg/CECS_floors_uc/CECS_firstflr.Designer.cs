@@ -52,7 +52,7 @@
             // returncollision_pbox
             // 
             this.returncollision_pbox.BackColor = System.Drawing.Color.White;
-            this.returncollision_pbox.Location = new System.Drawing.Point(3, 231);
+            this.returncollision_pbox.Location = new System.Drawing.Point(3, 258);
             this.returncollision_pbox.Name = "returncollision_pbox";
             this.returncollision_pbox.Size = new System.Drawing.Size(27, 128);
             this.returncollision_pbox.TabIndex = 1;
@@ -62,7 +62,7 @@
             // elevcollision_pbox
             // 
             this.elevcollision_pbox.BackColor = System.Drawing.Color.White;
-            this.elevcollision_pbox.Location = new System.Drawing.Point(1396, 279);
+            this.elevcollision_pbox.Location = new System.Drawing.Point(1406, 279);
             this.elevcollision_pbox.Name = "elevcollision_pbox";
             this.elevcollision_pbox.Size = new System.Drawing.Size(27, 128);
             this.elevcollision_pbox.TabIndex = 2;

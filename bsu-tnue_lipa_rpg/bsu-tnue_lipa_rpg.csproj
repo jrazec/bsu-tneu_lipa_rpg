@@ -113,6 +113,12 @@
     <Compile Include="CECS_floors_uc\CECS_firstflr.Designer.cs">
       <DependentUpon>CECS_firstflr.cs</DependentUpon>
     </Compile>
+    <Compile Include="CECS_floors_uc\CECS_secondflr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CECS_floors_uc\CECS_secondflr.Designer.cs">
+      <DependentUpon>CECS_secondflr.cs</DependentUpon>
+    </Compile>
     <Compile Include="Character_sel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CECS_floors_uc\CECS_firstflr.resx">
       <DependentUpon>CECS_firstflr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CECS_floors_uc\CECS_secondflr.resx">
+      <DependentUpon>CECS_secondflr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Character_sel.resx">
       <DependentUpon>Character_sel.cs</DependentUpon>

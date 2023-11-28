@@ -8,11 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace bsu_tnue_lipa_rpg
+namespace bsu_tnue_lipa_rpg.CECS_floors_uc
 {
-    public partial class CECS_firstflr : UserControl
+    public partial class CECS_secondflr : UserControl
     {
-        public static CECS_firstflr instance;
+        public static CECS_secondflr instance;
+
         protected override CreateParams CreateParams
         {
             get
@@ -60,83 +61,46 @@ namespace bsu_tnue_lipa_rpg
             }
         }
         #endregion
-       
+
         bool go_up, go_down, go_left, go_right;
         int walk = 20;
-        
-        public CECS_firstflr()
+        public CECS_secondflr()
         {
             InitializeComponent();
             instance = this;
-            //cecsfirstWalkTimer.Start();
-            //this.Focus();
-            //this.KeyDown += key_is_down;
-            //this.KeyUp += key_is_up;
-            //this.TabStop = true;
-            //this.Enter += (sender, e) => this.Focus();
-
         }
-
-        private void cecsfirstWalkTimer_Tick(object sender, EventArgs e)
+        private void cecssecondWalkTimer_Tick(object sender, EventArgs e)
         {
-            if (go_left == true && cecsfirstflr_charac.Left > 0)
+            if (go_left == true && cecssecondflr_charac.Left > 0)
             {
-                cecsfirstflr_charac.Left -= walk;
+                cecssecondflr_charac.Left -= walk;
             }
-            if (go_right == true && cecsfirstflr_charac.Left + cecsfirstflr_charac.Width < this.ClientSize.Width)
+            if (go_right == true && cecssecondflr_charac.Left + cecssecondflr_charac.Width < this.ClientSize.Width)
             {
-                cecsfirstflr_charac.Left += walk;
+                cecssecondflr_charac.Left += walk;
             }
-            if (go_up == true && cecsfirstflr_charac.Top > 175)
+            if (go_up == true && cecssecondflr_charac.Top > 175)
             {
-                cecsfirstflr_charac.Top -= walk;
+                cecssecondflr_charac.Top -= walk;
             }
-            if (go_down == true && cecsfirstflr_charac.Top < 354)
+            if (go_down == true && cecssecondflr_charac.Top < 354)
             {
-                cecsfirstflr_charac.Top += walk;
+                cecssecondflr_charac.Top += walk;
             }
 
             //to navigate
             foreach (Control navigation in this.Controls)
             {
-                //return to map
-                if (navigation is PictureBox && (string)navigation.Tag == "return_to_map")
-                {
-                    if (cecsfirstflr_charac.Bounds.IntersectsWith(navigation.Bounds))
-                    {
-                        //stop character movement
-                        cecsfirstWalkTimer.Stop();
-
-                        //move character away from collision box
-                        cecsfirstflr_charac.Location = new Point(277, 322);
-
-                        //reset boolean directions
-                        go_left = false;
-                        go_right = false;
-                        go_up = false;
-                        go_down = false;
-
-                        //return to map form
-                        this.Hide();
-                        CECS_bldg.instance.Hide();
-                        CECS_bldg.instance.Close();
-                        Map returntomap = new Map();
-                        returntomap.ShowDialog();
-                       
-
-                    }
-                }
-
                 //go to elevator
                 if (navigation is PictureBox && (string)navigation.Tag == "go_to_elev")
                 {
-                    if (cecsfirstflr_charac.Bounds.IntersectsWith(navigation.Bounds))
+                    if (cecssecondflr_charac.Bounds.IntersectsWith(navigation.Bounds))
                     {
                         //stop character movement
-                        cecsfirstWalkTimer.Stop();
+                        cecssecondWalkTimer.Stop();
 
                         //move character away from collision box
-                        cecsfirstflr_charac.Location = new Point(277, 322);
+                        cecssecondflr_charac.Location = new Point(277, 322);
 
                         //reset boolean directions
                         go_left = false;
@@ -146,12 +110,13 @@ namespace bsu_tnue_lipa_rpg
 
                         //proceed to elev -- to be debugged
                         CECS_bldg.instance.cecscontainer_panel.Visible = false;
-                        cecsfirstWalkTimer.Start();
-                        
+                        //cecssecondWalkTimer.Start();
+
                     }
                 }
             }
         }
+
         private void key_is_down(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
@@ -159,7 +124,7 @@ namespace bsu_tnue_lipa_rpg
                 e.Handled = true;
                 go_left = true;
                 //characLeft();
-                cecsfirstflr_charac.Image = Properties.Resources.female_org_left;
+                cecssecondflr_charac.Image = Properties.Resources.female_org_left;
             }
 
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
@@ -167,7 +132,7 @@ namespace bsu_tnue_lipa_rpg
                 e.Handled = true;
                 go_right = true;
                 //characRight();
-                cecsfirstflr_charac.Image = Properties.Resources.female_org_right;
+                cecssecondflr_charac.Image = Properties.Resources.female_org_right;
             }
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
@@ -175,7 +140,7 @@ namespace bsu_tnue_lipa_rpg
                 e.Handled = true;
                 go_up = true;
                 // characBack();
-                cecsfirstflr_charac.Image = Properties.Resources.female_org_back;
+                cecssecondflr_charac.Image = Properties.Resources.female_org_back;
             }
 
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
@@ -183,7 +148,7 @@ namespace bsu_tnue_lipa_rpg
                 e.Handled = true;
                 go_down = true;
                 //characFront();
-                cecsfirstflr_charac.Image = Properties.Resources.female_org_front;
+                cecssecondflr_charac.Image = Properties.Resources.female_org_front;
             }
         }
 
@@ -210,5 +175,6 @@ namespace bsu_tnue_lipa_rpg
             }
         }
 
+        
     }
 }
