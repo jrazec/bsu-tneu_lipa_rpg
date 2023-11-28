@@ -67,6 +67,7 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
         public OB_secondflr()
         {
             InitializeComponent();
+            obsecondWalkTimer.Start();
             instance = this;
         }
 

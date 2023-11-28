@@ -15,6 +15,16 @@ namespace bsu_tnue_lipa_rpg
     {
         public static Old_Bldg instance;
         OB_firstflr ob1 = new OB_firstflr();
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParams = base.CreateParams;
+                handleParams.ExStyle |= 0x02000000;
+                return handleParams;
+            }
+        }
         public Old_Bldg()
         {
             InitializeComponent();
