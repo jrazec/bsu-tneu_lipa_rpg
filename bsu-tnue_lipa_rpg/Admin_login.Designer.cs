@@ -35,9 +35,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.exit_pbox = new System.Windows.Forms.PictureBox();
+            this.login_btn = new System.Windows.Forms.Button();
+            this.back_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // admin_user_txt
@@ -115,16 +117,44 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "ADMIN";
             // 
-            // pictureBox2
+            // exit_pbox
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox2.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Exit_Icon;
-            this.pictureBox2.Location = new System.Drawing.Point(1103, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 31);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
+            this.exit_pbox.BackColor = System.Drawing.Color.Maroon;
+            this.exit_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Exit_Icon;
+            this.exit_pbox.Location = new System.Drawing.Point(1103, 12);
+            this.exit_pbox.Name = "exit_pbox";
+            this.exit_pbox.Size = new System.Drawing.Size(35, 31);
+            this.exit_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exit_pbox.TabIndex = 8;
+            this.exit_pbox.TabStop = false;
+            // 
+            // login_btn
+            // 
+            this.login_btn.BackColor = System.Drawing.Color.Maroon;
+            this.login_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.login_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.login_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_btn.ForeColor = System.Drawing.Color.White;
+            this.login_btn.Location = new System.Drawing.Point(582, 474);
+            this.login_btn.Name = "login_btn";
+            this.login_btn.Size = new System.Drawing.Size(105, 38);
+            this.login_btn.TabIndex = 10;
+            this.login_btn.Text = "LOGIN";
+            this.login_btn.UseVisualStyleBackColor = false;
+            // 
+            // back_btn
+            // 
+            this.back_btn.BackColor = System.Drawing.Color.Maroon;
+            this.back_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.back_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_btn.ForeColor = System.Drawing.Color.White;
+            this.back_btn.Location = new System.Drawing.Point(464, 474);
+            this.back_btn.Name = "back_btn";
+            this.back_btn.Size = new System.Drawing.Size(97, 38);
+            this.back_btn.TabIndex = 9;
+            this.back_btn.Text = "BACK";
+            this.back_btn.UseVisualStyleBackColor = false;
             // 
             // Admin_login
             // 
@@ -132,7 +162,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1151, 639);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.login_btn);
+            this.Controls.Add(this.back_btn);
+            this.Controls.Add(this.exit_pbox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -147,7 +179,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin_login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_pbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,6 +194,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox exit_pbox;
+        private System.Windows.Forms.Button login_btn;
+        private System.Windows.Forms.Button back_btn;
     }
 }
