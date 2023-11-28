@@ -202,7 +202,7 @@
         private System.Windows.Forms.Panel garments_panel;
         public  System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
     }
 }

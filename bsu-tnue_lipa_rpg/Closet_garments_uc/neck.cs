@@ -31,17 +31,44 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             InitializeComponent();
             instance = this;
         }
-
+        public bool neck1_sel = false;
+        public bool neck2_sel = false;
         private void neck1_pbox_Click(object sender, EventArgs e)
         {
-            neck1_pbox.BorderStyle = BorderStyle.FixedSingle;
-            neck2_pbox.BorderStyle = BorderStyle.Fixed3D;
+            if (neck1_sel == false)
+            {
+                neck1_sel = true;
+                neck2_sel = false;
+                neck1_pbox.BorderStyle = BorderStyle.FixedSingle;
+                neck2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 2] = "gold-neck";
+            }
+            else
+            {
+                neck1_sel = false;
+                neck1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 2] = "";
+            }
+            Closet.instance.label3.Text = Closet.Garments_Worn[0, 2];
         }
 
         private void neck2_pbox_Click(object sender, EventArgs e)
         {
-            neck2_pbox.BorderStyle = BorderStyle.FixedSingle;
-            neck1_pbox.BorderStyle = BorderStyle.Fixed3D;
+            if (neck2_sel == false)
+            {
+                neck2_sel = true;
+                neck1_sel = false;
+                neck2_pbox.BorderStyle = BorderStyle.FixedSingle;
+                neck1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 2] = "id";
+            }
+            else
+            {
+                neck2_sel = false;
+                neck2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 2] = "";
+            }
+            Closet.instance.label3.Text = Closet.Garments_Worn[0, 2];
         }
     }
 }
