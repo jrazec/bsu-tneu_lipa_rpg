@@ -28,7 +28,7 @@ namespace bsu_tnue_lipa_rpg
         }
         private void addUC(UserControl uc)
         {
-            uc.Dock = DockStyle.Fill;
+            //uc.Dock = DockStyle.Fill;
             cecscontainer_panel.Controls.Clear();
             cecscontainer_panel.Controls.Add(uc);
             uc.BringToFront();

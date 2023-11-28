@@ -113,13 +113,12 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
                         //go to second floor uc
                         this.Hide();
                         OB_secondflr ob2 = new OB_secondflr();
-                        ob2.Show(); //nothing shows up
+                        ob2.Show(); 
                         
                         Old_Bldg.instance.obcontainer_panel.Controls.Clear();
                         Old_Bldg.instance.obcontainer_panel.Controls.Add(ob2);
-                        
-                        
 
+                        // above code works but character in 2nd flr wont move like cecs 2nd flr and up
                     }
                 }
             }
