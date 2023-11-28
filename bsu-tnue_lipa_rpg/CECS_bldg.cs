@@ -24,6 +24,7 @@ namespace bsu_tnue_lipa_rpg
             InitializeComponent();
             instance = this;
             addUC(cecs1);
+            
         }
         private void addUC(UserControl uc)
         {
@@ -37,10 +38,13 @@ namespace bsu_tnue_lipa_rpg
         {
             //to be fixed
             cecscontainer_panel.Visible = true;
+            cecscontainer_panel.BringToFront();
             
             cecs1 = CECS_firstflr.instance;
             cecs1.Show();
+            cecs1.Select();
             cecs1.cecsfirstWalkTimer.Start();
+
             addUC(cecs1);
 
             flr1_pbox.Enabled = false;
@@ -48,6 +52,12 @@ namespace bsu_tnue_lipa_rpg
             flr3_pbox.Enabled = false;
             flr4_pbox.Enabled = false;
             flr5_pbox.Enabled = false;
+
+            flr1_pbox.Visible = false;
+            flr2_pbox.Visible = false;
+            flr3_pbox.Visible = false;
+            flr4_pbox.Visible = false;
+            flr5_pbox.Visible = false;
         }
 
         private void flr2_pbox_Click(object sender, EventArgs e)

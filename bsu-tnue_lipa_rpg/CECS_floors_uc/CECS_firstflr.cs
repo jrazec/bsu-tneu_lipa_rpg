@@ -68,7 +68,7 @@ namespace bsu_tnue_lipa_rpg
         {
             InitializeComponent();
             instance = this;
-            //cecsfirstWalkTimer.Start();
+            cecsfirstWalkTimer.Start();
             //this.Focus();
             //this.KeyDown += key_is_down;
             //this.KeyUp += key_is_up;
@@ -144,9 +144,11 @@ namespace bsu_tnue_lipa_rpg
                         go_up = false;
                         go_down = false;
 
-                        //proceed to elev -- to be debugged
+                        //proceed to elev -- to be fixed
+                        this.Hide();
                         CECS_bldg.instance.cecscontainer_panel.Visible = false;
-                        cecsfirstWalkTimer.Start();
+                        //cecsfirstWalkTimer.Enabled = true;
+                        //cecsfirstWalkTimer.Start();
                         
                     }
                 }

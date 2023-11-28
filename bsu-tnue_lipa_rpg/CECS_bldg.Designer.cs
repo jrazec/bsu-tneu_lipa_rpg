@@ -68,10 +68,9 @@
             // cecscontainer_panel
             // 
             this.cecscontainer_panel.BackColor = System.Drawing.Color.White;
-            this.cecscontainer_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cecscontainer_panel.Location = new System.Drawing.Point(0, 50);
+            this.cecscontainer_panel.Location = new System.Drawing.Point(793, 50);
             this.cecscontainer_panel.Name = "cecscontainer_panel";
-            this.cecscontainer_panel.Size = new System.Drawing.Size(1436, 589);
+            this.cecscontainer_panel.Size = new System.Drawing.Size(643, 589);
             this.cecscontainer_panel.TabIndex = 1;
             // 
             // flr5_pbox

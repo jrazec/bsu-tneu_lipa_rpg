@@ -96,7 +96,7 @@ namespace bsu_tnue_lipa_rpg
                     }
                 }
 
-                //enter ob building
+                //enter old building
                 if (bldg is PictureBox && (string)bldg.Tag == "ob")
                 {
                     if (map_charac.Bounds.IntersectsWith(bldg.Bounds))
@@ -115,8 +115,9 @@ namespace bsu_tnue_lipa_rpg
 
                         //switch to OB form
                         this.Hide();
-                        //OB enter_ob = new OB();
-                        //enter_ob.ShowDialog();
+                        Old_Bldg enter_ob = new Old_Bldg();
+                        enter_ob.ShowDialog();
+                        this.Close();
 
                     }
                 }
