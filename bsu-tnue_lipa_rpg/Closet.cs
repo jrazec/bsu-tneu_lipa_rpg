@@ -63,6 +63,7 @@ namespace bsu_tnue_lipa_rpg
         public string[,] ITEMS = new string[4, 12];// this is HOW TO DECLARE MULTIDIMENSIONAL ARRAY!?
         public int[,] ITEM_ID = new int[4, 12];
         public string[,] ITEM_DESC = new string[4, 12];
+        public double[,] ITEM_PRICE = new double[4, 12];
         public Closet()
         {
             InitializeComponent();
@@ -243,7 +244,7 @@ namespace bsu_tnue_lipa_rpg
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
             string slctItemDesc = $@"
-                            SELECT items.item_desc AS dsc,items.item_class AS class,student_items.is_owned AS own
+                            SELECT items.item_desc AS dsc,items.item_class AS class,student_items.is_owned AS own, items.item_price AS price
                             FROM items 
                             INNER JOIN student_items
                             ON student_items.item_id=items.item_id
@@ -305,7 +306,7 @@ namespace bsu_tnue_lipa_rpg
                                     top.instance.top4_pbox.Enabled = false;
                                 }
                             }
-                            
+                            ITEM_PRICE[0, TOP] = Convert.ToDouble(reader["price"]);
                             TOP++;
                         }
                         else if ((string)reader["class"] == "Bottom")
@@ -350,6 +351,7 @@ namespace bsu_tnue_lipa_rpg
                                     bottom.instance.bottom4_pbox.Enabled = false;
                                 }
                             }
+                            ITEM_PRICE[1, BOT] = Convert.ToDouble(reader["price"]);
                             BOT++;
                         }
                         else if ((string)reader["class"] == "Neck")
@@ -378,6 +380,7 @@ namespace bsu_tnue_lipa_rpg
                                     neck.instance.neck2_pbox.Enabled = false;
                                 }
                             }
+                            ITEM_PRICE[2, NECK] = Convert.ToDouble(reader["price"]);
                             NECK++;
                         }
                         else if ((string)reader["class"] == "Shoes")
@@ -392,6 +395,7 @@ namespace bsu_tnue_lipa_rpg
                                 ITEM_DESC[3, SHOES] = "Unlock";
                                 shoes.instance.shoes1_pbox.Enabled = false;
                             }
+                            ITEM_PRICE[3, SHOES] = Convert.ToDouble(reader["price"]);
                             SHOES++;
                         }
                     }

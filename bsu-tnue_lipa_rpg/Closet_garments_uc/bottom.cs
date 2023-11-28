@@ -169,24 +169,28 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
 
         private void bot1_desc_Click(object sender, EventArgs e)
         {
+            Closet.instance.label2.Text = Closet.instance.ITEM_PRICE[1, 0].ToString();
             Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[1, 0]);
             Closet.instance.displayItemDesc();
         }
 
         private void bot2_desc_Click(object sender, EventArgs e)
         {
+            Closet.instance.label2.Text = Closet.instance.ITEM_PRICE[1, 1].ToString();
             Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[1, 1]);
             Closet.instance.displayItemDesc();
         }
 
         private void bot3_desc_Click(object sender, EventArgs e)
         {
+            Closet.instance.label2.Text = Closet.instance.ITEM_PRICE[1, 2].ToString();
             Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[1, 2]);
             Closet.instance.displayItemDesc();
         }
 
         private void bot4_desc_Click(object sender, EventArgs e)
         {
+            Closet.instance.label2.Text = Closet.instance.ITEM_PRICE[1, 3].ToString();
             Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[1, 3]);
             Closet.instance.displayItemDesc();
         }

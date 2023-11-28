@@ -129,6 +129,7 @@
             this.top4_desc.TabIndex = 15;
             this.top4_desc.Text = "Unlock";
             this.top4_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top4_desc.Click += new System.EventHandler(this.top4_desc_Click);
             // 
             // top3_pbox
             // 
@@ -200,7 +201,7 @@
             this.Controls.Add(this.top2_pbox);
             this.Controls.Add(this.top1_pbox);
             this.Name = "top";
-            this.Size = new System.Drawing.Size(536, 414);
+            this.Size = new System.Drawing.Size(671, 518);
             ((System.ComponentModel.ISupportInitialize)(this.top3_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.top4_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.top2_pbox)).EndInit();

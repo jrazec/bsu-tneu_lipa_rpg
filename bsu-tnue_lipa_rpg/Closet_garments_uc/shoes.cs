@@ -40,6 +40,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
 
         private void shoes1_desc_Click(object sender, EventArgs e)
         {
+            Closet.instance.label4.Text = Closet.instance.ITEM_PRICE[3, 0].ToString();
             Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[3, 0]);
             Closet.instance.displayItemDesc();
         }
