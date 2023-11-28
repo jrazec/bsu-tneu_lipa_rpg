@@ -43,9 +43,10 @@
             // 
             // obcontainer_panel
             // 
-            this.obcontainer_panel.Location = new System.Drawing.Point(173, 120);
+            this.obcontainer_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.obcontainer_panel.Location = new System.Drawing.Point(0, 50);
             this.obcontainer_panel.Name = "obcontainer_panel";
-            this.obcontainer_panel.Size = new System.Drawing.Size(978, 404);
+            this.obcontainer_panel.Size = new System.Drawing.Size(1436, 589);
             this.obcontainer_panel.TabIndex = 1;
             // 
             // Old_Bldg
@@ -68,6 +69,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel obcontainer_panel;
+        public System.Windows.Forms.Panel obcontainer_panel;
     }
 }

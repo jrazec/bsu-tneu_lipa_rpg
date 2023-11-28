@@ -29,5 +29,7 @@ namespace bsu_tnue_lipa_rpg
             obcontainer_panel.Controls.Add(uc);
             uc.BringToFront();
         }
+
+        
     }
 }
