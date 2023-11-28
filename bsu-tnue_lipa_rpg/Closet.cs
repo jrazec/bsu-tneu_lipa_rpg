@@ -86,6 +86,27 @@ namespace bsu_tnue_lipa_rpg
                 (GARMENTS_MATCH[3, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[3, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[3, 2] == Garments_Worn[0, 3])   )
             {
             
+
+                if((GARMENTS_MATCH[0, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[0, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[0, 2] == Garments_Worn[0, 3]))
+                {
+                    Bedroom.instance.CHARAC_CLOTHES = "UNI";
+                }else if((GARMENTS_MATCH[1, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[1, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[1, 2] == Garments_Worn[0, 3]))
+                {
+                    Bedroom.instance.CHARAC_CLOTHES = "ORG";
+                }else if((GARMENTS_MATCH[2, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[2, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[2, 2] == Garments_Worn[0, 3]))
+                {
+                    Bedroom.instance.CHARAC_CLOTHES = "CASUAL";
+                }
+                else if((GARMENTS_MATCH[3, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[3, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[3, 2] == Garments_Worn[0, 3]))
+                {
+                    Bedroom.instance.CHARAC_CLOTHES = "PE";
+                }else
+                {
+                    Bedroom.instance.CHARAC_CLOTHES = "CASUAL";
+                }
+
+
+                Bedroom.instance.characBack();
                 this.Hide();
                 Bedroom.instance.Show();//to load the recent form
                 Bedroom.instance.bedroomWalkTimer.Start();//to access the bedroom timer;made this public in designer.cs

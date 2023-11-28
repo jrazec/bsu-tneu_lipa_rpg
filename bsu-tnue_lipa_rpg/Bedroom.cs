@@ -45,7 +45,6 @@ namespace bsu_tnue_lipa_rpg
             InitializeComponent();
             instance = this;
             Closet.instance = new Closet();
-            CHARAC_CLOTHES = "UNI";
             checkCharac();
             checkMoney();
             characFront();//Will remove as it is already initialized in check charac what the costume would be 
@@ -284,7 +283,7 @@ choose the right ones.";
             }
         }
 
-        private void characBack()
+        public void characBack()
         {
             if (CHARAC_ID == 1)
             {
