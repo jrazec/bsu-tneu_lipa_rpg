@@ -39,6 +39,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.search_txt = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.exit_btn = new System.Windows.Forms.Button();
             this.search_btn = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -49,7 +50,12 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.create_pbox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -60,6 +66,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.create_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,6 +88,10 @@
             this.panel1.Controls.Add(this.create_lbl);
             this.panel1.Controls.Add(this.home_lbl);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.panel9);
             this.panel1.Location = new System.Drawing.Point(-4, -3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(246, 645);
@@ -166,7 +178,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(3, 213);
+            this.panel2.Location = new System.Drawing.Point(3, 212);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 55);
             this.panel2.TabIndex = 12;
@@ -191,6 +203,13 @@
             this.search_txt.Name = "search_txt";
             this.search_txt.Size = new System.Drawing.Size(180, 29);
             this.search_txt.TabIndex = 14;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(271, 81);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(862, 489);
+            this.panel4.TabIndex = 14;
             // 
             // exit_btn
             // 
@@ -299,12 +318,55 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // panel4
+            // panel5
             // 
-            this.panel4.Location = new System.Drawing.Point(271, 81);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(862, 489);
-            this.panel4.TabIndex = 14;
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(3, 278);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(243, 55);
+            this.panel5.TabIndex = 13;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(3, 342);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(243, 55);
+            this.panel6.TabIndex = 14;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Location = new System.Drawing.Point(3, 403);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(243, 55);
+            this.panel7.TabIndex = 15;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Location = new System.Drawing.Point(3, 52);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(243, 55);
+            this.panel8.TabIndex = 16;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Location = new System.Drawing.Point(5, 465);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(243, 55);
+            this.panel9.TabIndex = 17;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Location = new System.Drawing.Point(3, 52);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(243, 55);
+            this.panel10.TabIndex = 16;
             // 
             // Admin_section
             // 
@@ -333,6 +395,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.create_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -361,5 +425,11 @@
         private System.Windows.Forms.Button exit_btn;
         private System.Windows.Forms.TextBox search_txt;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
     }
 }
