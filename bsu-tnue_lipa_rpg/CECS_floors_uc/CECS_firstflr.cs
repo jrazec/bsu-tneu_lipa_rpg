@@ -12,6 +12,7 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class CECS_firstflr : UserControl
     {
+        public static CECS_firstflr instance;
         protected override CreateParams CreateParams
         {
             get
@@ -21,18 +22,64 @@ namespace bsu_tnue_lipa_rpg
                 return handleParams;
             }
         }
+        #region FIX: Make arrow keys work inside uc w/o holding ctrl key
+        protected override bool IsInputKey(Keys keyData)
+        {
+            switch (keyData)
+            {
+                case Keys.Right:
+                case Keys.Left:
+                case Keys.Up:
+                case Keys.Down:
+                    return true;
+                case Keys.Shift | Keys.Right:
+                case Keys.Shift | Keys.Left:
+                case Keys.Shift | Keys.Up:
+                case Keys.Shift | Keys.Down:
+                    return true;
+            }
+            return base.IsInputKey(keyData);
+        }
+        protected override void OnKeyDown(KeyEventArgs e)
+        {
+            base.OnKeyDown(e);
+            switch (e.KeyCode)
+            {
+                case Keys.Left:
+                case Keys.Right:
+                case Keys.Up:
+                case Keys.Down:
+                    if (e.Shift)
+                    {
 
+                    }
+                    else
+                    {
+                    }
+                    break;
+            }
+        }
+        #endregion
+       
         bool go_up, go_down, go_left, go_right;
         int walk = 20;
         
         public CECS_firstflr()
         {
             InitializeComponent();
+            instance = this;
+            //cecsfirstWalkTimer.Start();
+            //this.Focus();
+            //this.KeyDown += key_is_down;
+            //this.KeyUp += key_is_up;
+            //this.TabStop = true;
+            //this.Enter += (sender, e) => this.Focus();
+
         }
 
         private void cecsfirstWalkTimer_Tick(object sender, EventArgs e)
         {
-            if (go_left == true && cecsfirstflr_charac.Left > 149)
+            if (go_left == true && cecsfirstflr_charac.Left > 0)
             {
                 cecsfirstflr_charac.Left -= walk;
             }
@@ -40,11 +87,11 @@ namespace bsu_tnue_lipa_rpg
             {
                 cecsfirstflr_charac.Left += walk;
             }
-            if (go_up == true && cecsfirstflr_charac.Top > 46)
+            if (go_up == true && cecsfirstflr_charac.Top > 175)
             {
                 cecsfirstflr_charac.Top -= walk;
             }
-            if (go_down == true && cecsfirstflr_charac.Top + cecsfirstflr_charac.Height < this.ClientSize.Height)
+            if (go_down == true && cecsfirstflr_charac.Top < 354)
             {
                 cecsfirstflr_charac.Top += walk;
             }
@@ -52,6 +99,7 @@ namespace bsu_tnue_lipa_rpg
             //to navigate
             foreach (Control navigation in this.Controls)
             {
+                //return to map
                 if (navigation is PictureBox && (string)navigation.Tag == "return_to_map")
                 {
                     if (cecsfirstflr_charac.Bounds.IntersectsWith(navigation.Bounds))
@@ -70,13 +118,16 @@ namespace bsu_tnue_lipa_rpg
 
                         //return to map form
                         this.Hide();
+                        CECS_bldg.instance.Hide();
+                        CECS_bldg.instance.Close();
                         Map returntomap = new Map();
                         returntomap.ShowDialog();
-                        CECS_bldg.instance.Close();
+                       
 
                     }
                 }
 
+                //go to elevator
                 if (navigation is PictureBox && (string)navigation.Tag == "go_to_elev")
                 {
                     if (cecsfirstflr_charac.Bounds.IntersectsWith(navigation.Bounds))
@@ -95,6 +146,8 @@ namespace bsu_tnue_lipa_rpg
 
                         //proceed to elev
                         CECS_bldg.instance.cecscontainer_panel.Visible = false;
+                        cecsfirstWalkTimer.Start();
+                        
                     }
                 }
             }
@@ -106,6 +159,7 @@ namespace bsu_tnue_lipa_rpg
                 e.Handled = true;
                 go_left = true;
                 //characLeft();
+                cecsfirstflr_charac.Image = Properties.Resources.female_org_left;
             }
 
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
@@ -113,13 +167,15 @@ namespace bsu_tnue_lipa_rpg
                 e.Handled = true;
                 go_right = true;
                 //characRight();
+                cecsfirstflr_charac.Image = Properties.Resources.female_org_right;
             }
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
             {
                 e.Handled = true;
                 go_up = true;
-               // characBack();
+                // characBack();
+                cecsfirstflr_charac.Image = Properties.Resources.female_org_back;
             }
 
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
@@ -127,6 +183,7 @@ namespace bsu_tnue_lipa_rpg
                 e.Handled = true;
                 go_down = true;
                 //characFront();
+                cecsfirstflr_charac.Image = Properties.Resources.female_org_front;
             }
         }
 

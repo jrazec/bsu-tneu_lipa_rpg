@@ -52,7 +52,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1330, 50);
+            this.panel1.Size = new System.Drawing.Size(1436, 50);
             this.panel1.TabIndex = 0;
             // 
             // menu_pbox
@@ -71,14 +71,15 @@
             this.cecscontainer_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cecscontainer_panel.Location = new System.Drawing.Point(0, 50);
             this.cecscontainer_panel.Name = "cecscontainer_panel";
-            this.cecscontainer_panel.Size = new System.Drawing.Size(1330, 589);
+            this.cecscontainer_panel.Size = new System.Drawing.Size(1436, 589);
             this.cecscontainer_panel.TabIndex = 1;
             // 
             // flr5_pbox
             // 
             this.flr5_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.flr5_pbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flr5_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._5;
-            this.flr5_pbox.Location = new System.Drawing.Point(602, 98);
+            this.flr5_pbox.Location = new System.Drawing.Point(659, 103);
             this.flr5_pbox.Name = "flr5_pbox";
             this.flr5_pbox.Size = new System.Drawing.Size(118, 93);
             this.flr5_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -88,8 +89,9 @@
             // flr4_pbox
             // 
             this.flr4_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.flr4_pbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flr4_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._4;
-            this.flr4_pbox.Location = new System.Drawing.Point(602, 197);
+            this.flr4_pbox.Location = new System.Drawing.Point(659, 202);
             this.flr4_pbox.Name = "flr4_pbox";
             this.flr4_pbox.Size = new System.Drawing.Size(118, 93);
             this.flr4_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -99,8 +101,9 @@
             // flr3_pbox
             // 
             this.flr3_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.flr3_pbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flr3_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._3;
-            this.flr3_pbox.Location = new System.Drawing.Point(602, 296);
+            this.flr3_pbox.Location = new System.Drawing.Point(659, 301);
             this.flr3_pbox.Name = "flr3_pbox";
             this.flr3_pbox.Size = new System.Drawing.Size(118, 93);
             this.flr3_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -110,8 +113,9 @@
             // flr2_pbox
             // 
             this.flr2_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.flr2_pbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flr2_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._2;
-            this.flr2_pbox.Location = new System.Drawing.Point(602, 395);
+            this.flr2_pbox.Location = new System.Drawing.Point(659, 400);
             this.flr2_pbox.Name = "flr2_pbox";
             this.flr2_pbox.Size = new System.Drawing.Size(118, 93);
             this.flr2_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -121,13 +125,15 @@
             // flr1_pbox
             // 
             this.flr1_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.flr1_pbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flr1_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._1;
-            this.flr1_pbox.Location = new System.Drawing.Point(602, 494);
+            this.flr1_pbox.Location = new System.Drawing.Point(659, 499);
             this.flr1_pbox.Name = "flr1_pbox";
             this.flr1_pbox.Size = new System.Drawing.Size(118, 93);
             this.flr1_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.flr1_pbox.TabIndex = 6;
             this.flr1_pbox.TabStop = false;
+            this.flr1_pbox.Click += new System.EventHandler(this.flr1_pbox_Click);
             // 
             // CECS_bldg
             // 
@@ -136,7 +142,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.elev;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1330, 639);
+            this.ClientSize = new System.Drawing.Size(1436, 639);
             this.Controls.Add(this.cecscontainer_panel);
             this.Controls.Add(this.flr1_pbox);
             this.Controls.Add(this.flr2_pbox);

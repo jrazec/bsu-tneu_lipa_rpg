@@ -42,7 +42,7 @@
             // 
             this.cecsfirstflr_charac.BackColor = System.Drawing.Color.Transparent;
             this.cecsfirstflr_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.female_org_front;
-            this.cecsfirstflr_charac.Location = new System.Drawing.Point(518, 279);
+            this.cecsfirstflr_charac.Location = new System.Drawing.Point(186, 255);
             this.cecsfirstflr_charac.Name = "cecsfirstflr_charac";
             this.cecsfirstflr_charac.Size = new System.Drawing.Size(101, 119);
             this.cecsfirstflr_charac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -62,7 +62,7 @@
             // elevcollision_pbox
             // 
             this.elevcollision_pbox.BackColor = System.Drawing.Color.White;
-            this.elevcollision_pbox.Location = new System.Drawing.Point(1397, 290);
+            this.elevcollision_pbox.Location = new System.Drawing.Point(1396, 279);
             this.elevcollision_pbox.Name = "elevcollision_pbox";
             this.elevcollision_pbox.Size = new System.Drawing.Size(27, 128);
             this.elevcollision_pbox.TabIndex = 2;
@@ -71,6 +71,8 @@
             // 
             // cecsfirstWalkTimer
             // 
+            this.cecsfirstWalkTimer.Enabled = true;
+            this.cecsfirstWalkTimer.Interval = 50;
             this.cecsfirstWalkTimer.Tick += new System.EventHandler(this.cecsfirstWalkTimer_Tick);
             // 
             // CECS_firstflr
@@ -101,6 +103,6 @@
         private System.Windows.Forms.PictureBox cecsfirstflr_charac;
         private System.Windows.Forms.PictureBox returncollision_pbox;
         private System.Windows.Forms.PictureBox elevcollision_pbox;
-        private System.Windows.Forms.Timer cecsfirstWalkTimer;
+        public System.Windows.Forms.Timer cecsfirstWalkTimer;
     }
 }

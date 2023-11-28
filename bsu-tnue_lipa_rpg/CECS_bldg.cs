@@ -27,5 +27,21 @@ namespace bsu_tnue_lipa_rpg
             cecscontainer_panel.Controls.Add(uc);
             uc.BringToFront();
         }
+
+        private void flr1_pbox_Click(object sender, EventArgs e)
+        {
+            cecscontainer_panel.Visible = true;
+            
+            cecs1 = CECS_firstflr.instance;
+            CECS_firstflr.instance.Show();
+            CECS_firstflr.instance.cecsfirstWalkTimer.Start();
+            addUC(cecs1);
+
+            flr1_pbox.Enabled = false;
+            flr2_pbox.Enabled = false;
+            flr3_pbox.Enabled = false;
+            flr4_pbox.Enabled = false;
+            flr5_pbox.Enabled = false;
+        }
     }
 }
