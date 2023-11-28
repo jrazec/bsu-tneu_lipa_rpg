@@ -107,6 +107,12 @@
     <Compile Include="Admin_Create.Designer.cs">
       <DependentUpon>Admin_Create.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_Delete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Delete.Designer.cs">
+      <DependentUpon>Admin_Delete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +225,9 @@
     </Compile>
     <EmbeddedResource Include="Admin_Create.resx">
       <DependentUpon>Admin_Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Delete.resx">
+      <DependentUpon>Admin_Delete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_login.resx">
       <DependentUpon>Admin_login.cs</DependentUpon>
