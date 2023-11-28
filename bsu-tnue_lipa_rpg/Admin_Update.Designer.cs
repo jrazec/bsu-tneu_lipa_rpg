@@ -178,6 +178,7 @@
             this.label4.Size = new System.Drawing.Size(82, 34);
             this.label4.TabIndex = 4;
             this.label4.Text = "DELETE";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -200,6 +201,7 @@
             this.label2.Size = new System.Drawing.Size(63, 34);
             this.label2.TabIndex = 2;
             this.label2.Text = "READ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -210,6 +212,7 @@
             this.label1.Size = new System.Drawing.Size(84, 34);
             this.label1.TabIndex = 1;
             this.label1.Text = "CREATE";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // home_lbl
             // 
@@ -222,6 +225,7 @@
             this.home_lbl.Size = new System.Drawing.Size(67, 34);
             this.home_lbl.TabIndex = 0;
             this.home_lbl.Text = "HOME";
+            this.home_lbl.Click += new System.EventHandler(this.home_lbl_Click);
             // 
             // exit_btn
             // 

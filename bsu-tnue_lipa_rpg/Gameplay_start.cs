@@ -93,13 +93,13 @@ namespace bsu_tnue_lipa_rpg
 
             if (adminsectionForm == null)
             {
-                // If the form is not open, create and show it
+                
                 adminsectionForm = new Admin_section();
                 adminsectionForm.Show();
             }
             else
             {
-                // If the form is already open, bring it to the front
+            
                 adminsectionForm.BringToFront();
             }
         }

@@ -136,6 +136,7 @@
             this.label4.Size = new System.Drawing.Size(82, 34);
             this.label4.TabIndex = 4;
             this.label4.Text = "DELETE";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -146,6 +147,7 @@
             this.label3.Size = new System.Drawing.Size(83, 34);
             this.label3.TabIndex = 3;
             this.label3.Text = "UPDATE";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -156,6 +158,7 @@
             this.label2.Size = new System.Drawing.Size(63, 34);
             this.label2.TabIndex = 2;
             this.label2.Text = "READ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 

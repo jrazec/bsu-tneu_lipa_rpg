@@ -31,9 +31,18 @@
             this.search_txt = new System.Windows.Forms.TextBox();
             this.delete_search_txt = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.search_btn = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.name_ign_lbl = new System.Windows.Forms.Label();
+            this.id_pbox = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,22 +50,13 @@
             this.home_lbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.del_search_btn = new System.Windows.Forms.Button();
-            this.search_btn = new System.Windows.Forms.Button();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.id_pbox = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.exit_btn = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.del_lbl = new System.Windows.Forms.Label();
             this.del_btn = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.id_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -96,6 +96,27 @@
             this.panel3.Size = new System.Drawing.Size(911, 57);
             this.panel3.TabIndex = 35;
             // 
+            // search_btn
+            // 
+            this.search_btn.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.search;
+            this.search_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.search_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_btn.Location = new System.Drawing.Point(868, 19);
+            this.search_btn.Name = "search_btn";
+            this.search_btn.Size = new System.Drawing.Size(24, 27);
+            this.search_btn.TabIndex = 12;
+            this.search_btn.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.main_title;
+            this.pictureBox7.Location = new System.Drawing.Point(15, 18);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(374, 26);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 10;
+            this.pictureBox7.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -129,114 +150,6 @@
             this.name_ign_lbl.TabIndex = 13;
             this.name_ign_lbl.Text = "name(ign)";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Maroon;
-            this.label5.Location = new System.Drawing.Point(47, 607);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 26);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "RazBerYie";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Maroon;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(100, 476);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 34);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "DELETE";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(99, 413);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 34);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "UPDATE";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(99, 350);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 34);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "READ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(99, 287);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 34);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "CREATE";
-            // 
-            // home_lbl
-            // 
-            this.home_lbl.AutoSize = true;
-            this.home_lbl.BackColor = System.Drawing.Color.White;
-            this.home_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.home_lbl.ForeColor = System.Drawing.Color.Black;
-            this.home_lbl.Location = new System.Drawing.Point(99, 224);
-            this.home_lbl.Name = "home_lbl";
-            this.home_lbl.Size = new System.Drawing.Size(67, 34);
-            this.home_lbl.TabIndex = 0;
-            this.home_lbl.Text = "HOME";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Maroon;
-            this.panel2.Location = new System.Drawing.Point(3, 465);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(243, 55);
-            this.panel2.TabIndex = 12;
-            // 
-            // del_search_btn
-            // 
-            this.del_search_btn.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.search;
-            this.del_search_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.del_search_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.del_search_btn.Location = new System.Drawing.Point(976, 160);
-            this.del_search_btn.Name = "del_search_btn";
-            this.del_search_btn.Size = new System.Drawing.Size(33, 35);
-            this.del_search_btn.TabIndex = 36;
-            this.del_search_btn.Text = " ";
-            this.del_search_btn.UseVisualStyleBackColor = true;
-            // 
-            // search_btn
-            // 
-            this.search_btn.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.search;
-            this.search_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.search_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_btn.Location = new System.Drawing.Point(868, 19);
-            this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(24, 27);
-            this.search_btn.TabIndex = 12;
-            this.search_btn.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.main_title;
-            this.pictureBox7.Location = new System.Drawing.Point(15, 18);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(374, 26);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 10;
-            this.pictureBox7.TabStop = false;
-            // 
             // id_pbox
             // 
             this.id_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.male_org_front;
@@ -257,6 +170,17 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Maroon;
+            this.label5.Location = new System.Drawing.Point(47, 607);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 26);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "RazBerYie";
             // 
             // pictureBox5
             // 
@@ -310,6 +234,86 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Maroon;
+            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(100, 476);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 34);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "DELETE";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(99, 413);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 34);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "UPDATE";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(99, 350);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 34);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "READ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(99, 287);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 34);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "CREATE";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // home_lbl
+            // 
+            this.home_lbl.AutoSize = true;
+            this.home_lbl.BackColor = System.Drawing.Color.White;
+            this.home_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home_lbl.ForeColor = System.Drawing.Color.Black;
+            this.home_lbl.Location = new System.Drawing.Point(99, 224);
+            this.home_lbl.Name = "home_lbl";
+            this.home_lbl.Size = new System.Drawing.Size(67, 34);
+            this.home_lbl.TabIndex = 0;
+            this.home_lbl.Text = "HOME";
+            this.home_lbl.Click += new System.EventHandler(this.home_lbl_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Maroon;
+            this.panel2.Location = new System.Drawing.Point(3, 465);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(243, 55);
+            this.panel2.TabIndex = 12;
+            // 
+            // del_search_btn
+            // 
+            this.del_search_btn.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.search;
+            this.del_search_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.del_search_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.del_search_btn.Location = new System.Drawing.Point(976, 160);
+            this.del_search_btn.Name = "del_search_btn";
+            this.del_search_btn.Size = new System.Drawing.Size(33, 35);
+            this.del_search_btn.TabIndex = 36;
+            this.del_search_btn.Text = " ";
+            this.del_search_btn.UseVisualStyleBackColor = true;
             // 
             // exit_btn
             // 
@@ -373,9 +377,9 @@
             this.Size = new System.Drawing.Size(1151, 639);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.id_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
