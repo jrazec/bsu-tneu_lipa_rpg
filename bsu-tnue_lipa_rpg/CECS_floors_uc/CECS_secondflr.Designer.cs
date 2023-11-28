@@ -62,7 +62,7 @@
             // 
             this.cecssecondflr_charac.BackColor = System.Drawing.Color.Transparent;
             this.cecssecondflr_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.female_org_front;
-            this.cecssecondflr_charac.Location = new System.Drawing.Point(86, 294);
+            this.cecssecondflr_charac.Location = new System.Drawing.Point(70, 267);
             this.cecssecondflr_charac.Name = "cecssecondflr_charac";
             this.cecssecondflr_charac.Size = new System.Drawing.Size(101, 119);
             this.cecssecondflr_charac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -81,6 +81,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.cecs_hallway;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Controls.Add(this.cecssecondflr_charac);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.elevcollision_pbox);
