@@ -153,19 +153,20 @@
             // home_lbl
             // 
             this.home_lbl.AutoSize = true;
-            this.home_lbl.BackColor = System.Drawing.Color.Maroon;
+            this.home_lbl.BackColor = System.Drawing.Color.White;
             this.home_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.home_lbl.ForeColor = System.Drawing.Color.White;
+            this.home_lbl.ForeColor = System.Drawing.Color.Black;
             this.home_lbl.Location = new System.Drawing.Point(99, 224);
             this.home_lbl.Name = "home_lbl";
             this.home_lbl.Size = new System.Drawing.Size(67, 34);
             this.home_lbl.TabIndex = 0;
             this.home_lbl.Text = "HOME";
+            this.home_lbl.Click += new System.EventHandler(this.home_lbl_Click);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Maroon;
-            this.panel2.Location = new System.Drawing.Point(3, 215);
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(3, 213);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 55);
             this.panel2.TabIndex = 12;
@@ -289,8 +290,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.home1;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.home;
             this.pictureBox1.Location = new System.Drawing.Point(64, 227);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);

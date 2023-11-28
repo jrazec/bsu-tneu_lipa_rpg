@@ -17,10 +17,7 @@ namespace bsu_tnue_lipa_rpg
         public Admin_Create()
         {
             InitializeComponent();
-            home_lbl.Click += home_lbl_Click;
-            label2.Click += label2_Click;
-            label3.Click += label3_Click;
-            label4.Click += label4_Click;
+      
         }
 
         
