@@ -434,7 +434,7 @@ choose the right ones.";
             }
         }
 
-        private void checkCharac()
+        public void checkCharac()
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
@@ -466,7 +466,7 @@ choose the right ones.";
             }
         }
 
-        private void checkDay()
+        public void checkDay()
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
@@ -506,7 +506,7 @@ choose the right ones.";
             day_lbl.Text = DAY;
         }
 
-        private void checkMoney()
+        public void checkMoney()
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 

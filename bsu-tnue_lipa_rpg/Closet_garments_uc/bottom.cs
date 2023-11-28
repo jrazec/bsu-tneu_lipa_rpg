@@ -30,6 +30,21 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             InitializeComponent();
             instance = this;
+            Bedroom.instance.checkCharac();
+            if (Bedroom.instance.CHARAC_ID == 1)
+            {
+                bottom1_pbox.Image = Properties.Resources.College_Pants;
+                bottom2_pbox.Image = Properties.Resources.Denim_Pants;
+                bottom3_pbox.Image = Properties.Resources.PE_Jogging_Pant;
+                bottom4_pbox.Image = Properties.Resources.Civilian_Bottom_2;
+            }
+            else
+            {
+                bottom1_pbox.Image = Properties.Resources.College_Skirt;
+                bottom2_pbox.Image = Properties.Resources.Denim_Pants;
+                bottom3_pbox.Image = Properties.Resources.PE_Jogging_Pant;
+                bottom4_pbox.Image = Properties.Resources.Civilian_Bottom_1;
+            }
         }
         public bool bot1_sel = false;
         public bool bot2_sel = false;
@@ -47,7 +62,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
                 bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
                 bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
-                Closet.Garments_Worn[0, 1] = "org-bot";
+                Closet.Garments_Worn[0, 1] = "uni-bot";
             }
             else
             {
@@ -71,7 +86,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
                 bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
                 bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
-                Closet.Garments_Worn[0, 1] = "cas-bot";
+                Closet.Garments_Worn[0, 1] = "org-bot";
             }
             else
             {
@@ -117,7 +132,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
                 bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
                 bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
-                Closet.Garments_Worn[0, 1] = "uni-bot";
+                Closet.Garments_Worn[0, 1] = "cas-bot";
             }
             else
             {

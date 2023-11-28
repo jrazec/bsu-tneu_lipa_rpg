@@ -30,6 +30,21 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             InitializeComponent();
             instance = this;
+            Bedroom.instance.checkCharac();
+            if (Bedroom.instance.CHARAC_ID == 1)
+            {
+                top1_pbox.Image = Properties.Resources.CICS_Org_Shirt;
+                top2_pbox.Image = Properties.Resources.College_Barong;
+                top3_pbox.Image = Properties.Resources.PE_T_Shirt;
+                top4_pbox.Image = Properties.Resources.Civilian_Top_2;
+            }
+            else
+            {
+                top1_pbox.Image = Properties.Resources.CICS_Org_Shirt;
+                top2_pbox.Image = Properties.Resources.College_Blouse;
+                top3_pbox.Image = Properties.Resources.Civilian_Top_1;
+                top4_pbox.Image = Properties.Resources.PE_T_Shirt;
+            }
         }
         public bool top1_sel = false;
         public bool top2_sel = false;
@@ -71,7 +86,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 top1_pbox.BorderStyle = BorderStyle.Fixed3D;
                 top3_pbox.BorderStyle = BorderStyle.Fixed3D;
                 top4_pbox.BorderStyle = BorderStyle.Fixed3D;
-                Closet.Garments_Worn[0, 0] = "cas-top";
+                Closet.Garments_Worn[0, 0] = "uni-top";
             }
             else
             {
@@ -94,7 +109,14 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 top2_pbox.BorderStyle = BorderStyle.Fixed3D;
                 top1_pbox.BorderStyle = BorderStyle.Fixed3D;
                 top4_pbox.BorderStyle = BorderStyle.Fixed3D;
-                Closet.Garments_Worn[0, 0] = "pe-top";
+                if(Bedroom.instance.CHARAC_ID == 1)
+                {
+                    Closet.Garments_Worn[0, 0] = "pe-top";
+                }
+                else
+                {
+                    Closet.Garments_Worn[0, 0] = "cas-top";
+                }
             }
             else
             {
@@ -117,7 +139,14 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 top2_pbox.BorderStyle = BorderStyle.Fixed3D;
                 top3_pbox.BorderStyle = BorderStyle.Fixed3D;
                 top1_pbox.BorderStyle = BorderStyle.Fixed3D;
-                Closet.Garments_Worn[0, 0] = "uni-top";
+                if (Bedroom.instance.CHARAC_ID == 1)
+                {
+                    Closet.Garments_Worn[0, 0] = "cas-top";
+                }
+                else
+                {
+                    Closet.Garments_Worn[0, 0] = "pe-top";
+                }
             }
             else
             {

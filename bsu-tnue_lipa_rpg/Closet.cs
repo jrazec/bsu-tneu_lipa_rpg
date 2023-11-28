@@ -167,7 +167,7 @@ namespace bsu_tnue_lipa_rpg
                         INNER JOIN students
                         ON student_items.sr_code=students.sr_code
                         WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
-                        ORDER BY items.item_class;";
+                        ORDER BY class,name;";
             try
             {
                 mysqlConnection.Open();
