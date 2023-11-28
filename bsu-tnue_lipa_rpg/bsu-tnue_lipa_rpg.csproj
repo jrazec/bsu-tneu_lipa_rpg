@@ -107,6 +107,12 @@
     <Compile Include="Admin_login.Designer.cs">
       <DependentUpon>Admin_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_section.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_section.Designer.cs">
+      <DependentUpon>Admin_section.cs</DependentUpon>
+    </Compile>
     <Compile Include="Character_sel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +201,9 @@
     </Compile>
     <EmbeddedResource Include="Admin_login.resx">
       <DependentUpon>Admin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_section.resx">
+      <DependentUpon>Admin_section.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Character_sel.resx">
       <DependentUpon>Character_sel.cs</DependentUpon>
@@ -562,6 +571,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\next_pbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-upload-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-upload-alt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
