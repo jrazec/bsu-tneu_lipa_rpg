@@ -13,7 +13,23 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
     public partial class CECS_secondflr : UserControl
     {
         public static CECS_secondflr instance;
+        public static CECS_secondflr INSTANCE
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new CECS_secondflr();
+                }
+                return instance;
+                /*else
+                {
+                    return instance;
+                }    
+                */
 
+            }
+        }
         protected override CreateParams CreateParams
         {
             get
@@ -109,6 +125,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
                         go_down = false;
 
                         //proceed to elev -- to be debugged
+                        this.Hide();
                         CECS_bldg.instance.cecscontainer_panel.Visible = false;
                         //cecssecondWalkTimer.Start();
 

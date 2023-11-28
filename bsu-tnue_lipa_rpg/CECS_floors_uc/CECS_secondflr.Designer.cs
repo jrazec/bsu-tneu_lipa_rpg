@@ -43,7 +43,7 @@
             this.label1.BackColor = System.Drawing.Color.DarkGreen;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(1299, 363);
+            this.label1.Location = new System.Drawing.Point(357, 311);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 23);
             this.label1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             // elevcollision_pbox
             // 
-            this.elevcollision_pbox.Location = new System.Drawing.Point(1407, 293);
+            this.elevcollision_pbox.Location = new System.Drawing.Point(465, 241);
             this.elevcollision_pbox.Name = "elevcollision_pbox";
             this.elevcollision_pbox.Size = new System.Drawing.Size(29, 185);
             this.elevcollision_pbox.TabIndex = 1;
@@ -86,7 +86,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.elevcollision_pbox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CECS_secondflr";
             this.Size = new System.Drawing.Size(1436, 589);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.key_is_down);
@@ -103,6 +103,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox elevcollision_pbox;
         private System.Windows.Forms.PictureBox cecssecondflr_charac;
-        private System.Windows.Forms.Timer cecssecondWalkTimer;
+        public System.Windows.Forms.Timer cecssecondWalkTimer;
     }
 }

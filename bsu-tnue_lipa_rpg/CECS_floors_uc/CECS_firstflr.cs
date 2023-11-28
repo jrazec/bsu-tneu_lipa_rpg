@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,24 @@ namespace bsu_tnue_lipa_rpg
     public partial class CECS_firstflr : UserControl
     {
         public static CECS_firstflr instance;
+
+        public static CECS_firstflr INSTANCE
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new CECS_firstflr(); 
+                }
+                return instance;
+                /*else
+                {
+                    return instance;
+                }    
+                */
+
+            }
+        }
         protected override CreateParams CreateParams
         {
             get
@@ -67,8 +86,8 @@ namespace bsu_tnue_lipa_rpg
         public CECS_firstflr()
         {
             InitializeComponent();
-            instance = this;
-            cecsfirstWalkTimer.Start();
+            //instance = this;
+            //cecsfirstWalkTimer.Start();
             //this.Focus();
             //this.KeyDown += key_is_down;
             //this.KeyUp += key_is_up;
@@ -79,6 +98,7 @@ namespace bsu_tnue_lipa_rpg
 
         private void cecsfirstWalkTimer_Tick(object sender, EventArgs e)
         {
+            //cecsfirstWalkTimer.Start();
             if (go_left == true && cecsfirstflr_charac.Left > 0)
             {
                 cecsfirstflr_charac.Left -= walk;
