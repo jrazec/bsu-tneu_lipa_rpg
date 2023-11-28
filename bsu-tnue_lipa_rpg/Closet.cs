@@ -26,6 +26,7 @@ namespace bsu_tnue_lipa_rpg
             }
         }
         #endregion
+        public static Closet instance;
 
         //Initialized them at first inorder to create the instance firsthand
         top top_uc = new top();
@@ -34,7 +35,7 @@ namespace bsu_tnue_lipa_rpg
         shoes shoes_uc = new shoes();
 
         //Array to prevent user from mix & matching unmatched garments
-        public string[,] 
+        public static string[,] 
             GARMENTS = {
                         //0         1       2       3
                         {"top",    "bot",  "neck","shoes"},//serves as attributes     
@@ -42,9 +43,11 @@ namespace bsu_tnue_lipa_rpg
                         {"uni-top","uni-bot","id","gen-shoes"},//For tuesday      - 2
                         {"org-top","org-bot","id","gen-shoes"},//For wednesday    - 3   
                         {"uni-top","uni-bot","id","gen-shoes"},//For thursday     - 4 
-                        {"pe-top", "pe-bot", "id","gen-shoes"},//For friday       - 5
+                        {"pe-top", "pe-bot", "id","gen-shoes"}//For friday       - 5
                         };
-        public string[,] Garments_Worn;
+        //i = day_id & j = item_class
+
+        public static string[,] Garments_Worn = new string[1,4];
 
         public string[,] ITEMS = new string[4,12];// this is HOW TO DECLARE MULTIDIMENSIONAL ARRAY!?
         public Closet()
@@ -52,6 +55,7 @@ namespace bsu_tnue_lipa_rpg
             InitializeComponent();
             addUC(top_uc);
             displayItemNames();
+            instance = this;
         }
         private void addUC(UserControl uc)
         {
@@ -162,6 +166,7 @@ namespace bsu_tnue_lipa_rpg
             neck.instance.neck2_lbl.Text = ITEMS[2, 1];
             shoes.instance.shoes1_lbl.Text = ITEMS[3, 0];
         }
+
     }
 /*
         private void displayItemDesc()
@@ -169,5 +174,6 @@ namespace bsu_tnue_lipa_rpg
 
         }
     */
+    
     
 }
