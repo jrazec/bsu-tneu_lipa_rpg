@@ -39,7 +39,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.name_ign_lbl = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.search_txt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -186,21 +186,21 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.LightCoral;
             this.panel3.Controls.Add(this.search_btn);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.search_txt);
             this.panel3.Controls.Add(this.pictureBox7);
             this.panel3.Location = new System.Drawing.Point(241, -3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(911, 57);
             this.panel3.TabIndex = 1;
             // 
-            // textBox1
+            // search_txt
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(685, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 28);
-            this.textBox1.TabIndex = 11;
+            this.search_txt.BackColor = System.Drawing.Color.White;
+            this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.search_txt.Location = new System.Drawing.Point(685, 18);
+            this.search_txt.Name = "search_txt";
+            this.search_txt.Size = new System.Drawing.Size(180, 28);
+            this.search_txt.TabIndex = 11;
             // 
             // label6
             // 
@@ -468,7 +468,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label name_ign_lbl;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox search_txt;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button search_btn;
         private System.Windows.Forms.Label label6;
