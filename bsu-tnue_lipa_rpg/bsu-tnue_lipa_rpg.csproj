@@ -113,6 +113,12 @@
     <Compile Include="Admin_login.Designer.cs">
       <DependentUpon>Admin_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_Read.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Read.Designer.cs">
+      <DependentUpon>Admin_Read.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_section.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_login.resx">
       <DependentUpon>Admin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Read.resx">
+      <DependentUpon>Admin_Read.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_section.resx">
       <DependentUpon>Admin_section.cs</DependentUpon>
