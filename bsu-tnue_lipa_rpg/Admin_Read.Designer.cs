@@ -356,6 +356,7 @@
             this.dg3.RowTemplate.Height = 24;
             this.dg3.Size = new System.Drawing.Size(802, 417);
             this.dg3.TabIndex = 0;
+            this.dg3.Visible = false;
             // 
             // Column1
             // 
