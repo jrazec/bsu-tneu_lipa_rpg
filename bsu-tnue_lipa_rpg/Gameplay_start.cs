@@ -89,19 +89,7 @@ namespace bsu_tnue_lipa_rpg
 
         private void options_btn_Click(object sender, EventArgs e)
         {
-            Admin_section adminsectionForm = Application.OpenForms["Admin_section"] as Admin_section;
-
-            if (adminsectionForm == null)
-            {
-                
-                adminsectionForm = new Admin_section();
-                adminsectionForm.Show();
-            }
-            else
-            {
-            
-                adminsectionForm.BringToFront();
-            }
+         
         }
     }
 }
