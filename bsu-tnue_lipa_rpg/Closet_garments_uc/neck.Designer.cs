@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.neck2_desc = new System.Windows.Forms.Label();
+            this.neck1_desc = new System.Windows.Forms.Label();
             this.neck2_lbl = new System.Windows.Forms.Label();
             this.neck1_lbl = new System.Windows.Forms.Label();
             this.neck2_pbox = new System.Windows.Forms.PictureBox();
@@ -38,27 +38,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.neck1_pbox)).BeginInit();
             this.SuspendLayout();
             // 
-            // label6
+            // neck2_desc
             // 
-            this.label6.BackColor = System.Drawing.Color.IndianRed;
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(281, 196);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 56);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Unlock";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.neck2_desc.BackColor = System.Drawing.Color.IndianRed;
+            this.neck2_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.neck2_desc.Location = new System.Drawing.Point(281, 196);
+            this.neck2_desc.Name = "neck2_desc";
+            this.neck2_desc.Size = new System.Drawing.Size(122, 56);
+            this.neck2_desc.TabIndex = 25;
+            this.neck2_desc.Text = "Unlock";
+            this.neck2_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // neck1_desc
             // 
-            this.label5.BackColor = System.Drawing.Color.IndianRed;
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(61, 196);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 56);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Unlock";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.neck1_desc.BackColor = System.Drawing.Color.IndianRed;
+            this.neck1_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.neck1_desc.Location = new System.Drawing.Point(61, 196);
+            this.neck1_desc.Name = "neck1_desc";
+            this.neck1_desc.Size = new System.Drawing.Size(122, 56);
+            this.neck1_desc.TabIndex = 24;
+            this.neck1_desc.Text = "Unlock";
+            this.neck1_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // neck2_lbl
             // 
@@ -111,8 +111,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.neck2_desc);
+            this.Controls.Add(this.neck1_desc);
             this.Controls.Add(this.neck2_lbl);
             this.Controls.Add(this.neck1_lbl);
             this.Controls.Add(this.neck2_pbox);
@@ -126,11 +126,11 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label neck2_desc;
+        public System.Windows.Forms.Label neck1_desc;
         public System.Windows.Forms.Label neck2_lbl;
         public System.Windows.Forms.Label neck1_lbl;
-        private System.Windows.Forms.PictureBox neck2_pbox;
-        private System.Windows.Forms.PictureBox neck1_pbox;
+        public System.Windows.Forms.PictureBox neck2_pbox;
+        public System.Windows.Forms.PictureBox neck1_pbox;
     }
 }

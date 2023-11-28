@@ -32,10 +32,10 @@
             this.top3_lbl = new System.Windows.Forms.Label();
             this.top2_lbl = new System.Windows.Forms.Label();
             this.top4_lbl = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.top1_desc = new System.Windows.Forms.Label();
+            this.top2_desc = new System.Windows.Forms.Label();
+            this.top3_desc = new System.Windows.Forms.Label();
+            this.top4_desc = new System.Windows.Forms.Label();
             this.top3_pbox = new System.Windows.Forms.PictureBox();
             this.top4_pbox = new System.Windows.Forms.PictureBox();
             this.top2_pbox = new System.Windows.Forms.PictureBox();
@@ -82,49 +82,49 @@
             this.top4_lbl.TabIndex = 11;
             this.top4_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // top1_desc
             // 
-            this.label5.BackColor = System.Drawing.Color.IndianRed;
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(53, 196);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 56);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Unlock";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top1_desc.BackColor = System.Drawing.Color.IndianRed;
+            this.top1_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.top1_desc.Location = new System.Drawing.Point(53, 196);
+            this.top1_desc.Name = "top1_desc";
+            this.top1_desc.Size = new System.Drawing.Size(122, 56);
+            this.top1_desc.TabIndex = 12;
+            this.top1_desc.Text = "Unlock";
+            this.top1_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // top2_desc
             // 
-            this.label6.BackColor = System.Drawing.Color.IndianRed;
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(273, 196);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 56);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Unlock";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top2_desc.BackColor = System.Drawing.Color.IndianRed;
+            this.top2_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.top2_desc.Location = new System.Drawing.Point(273, 196);
+            this.top2_desc.Name = "top2_desc";
+            this.top2_desc.Size = new System.Drawing.Size(122, 56);
+            this.top2_desc.TabIndex = 13;
+            this.top2_desc.Text = "Unlock";
+            this.top2_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label7
+            // top3_desc
             // 
-            this.label7.BackColor = System.Drawing.Color.IndianRed;
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(480, 196);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(122, 56);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Unlock";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top3_desc.BackColor = System.Drawing.Color.IndianRed;
+            this.top3_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.top3_desc.Location = new System.Drawing.Point(480, 196);
+            this.top3_desc.Name = "top3_desc";
+            this.top3_desc.Size = new System.Drawing.Size(122, 56);
+            this.top3_desc.TabIndex = 14;
+            this.top3_desc.Text = "Unlock";
+            this.top3_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
+            // top4_desc
             // 
-            this.label8.BackColor = System.Drawing.Color.IndianRed;
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(53, 425);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(122, 56);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Unlock";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top4_desc.BackColor = System.Drawing.Color.IndianRed;
+            this.top4_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.top4_desc.Location = new System.Drawing.Point(53, 425);
+            this.top4_desc.Name = "top4_desc";
+            this.top4_desc.Size = new System.Drawing.Size(122, 56);
+            this.top4_desc.TabIndex = 15;
+            this.top4_desc.Text = "Unlock";
+            this.top4_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // top3_pbox
             // 
@@ -183,10 +183,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.top4_desc);
+            this.Controls.Add(this.top3_desc);
+            this.Controls.Add(this.top2_desc);
+            this.Controls.Add(this.top1_desc);
             this.Controls.Add(this.top4_lbl);
             this.Controls.Add(this.top2_lbl);
             this.Controls.Add(this.top3_lbl);
@@ -196,7 +196,7 @@
             this.Controls.Add(this.top2_pbox);
             this.Controls.Add(this.top1_pbox);
             this.Name = "top";
-            this.Size = new System.Drawing.Size(671, 518);
+            this.Size = new System.Drawing.Size(536, 414);
             ((System.ComponentModel.ISupportInitialize)(this.top3_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.top4_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.top2_pbox)).EndInit();
@@ -214,9 +214,9 @@
         public System.Windows.Forms.Label top3_lbl;
         public System.Windows.Forms.Label top2_lbl;
         public System.Windows.Forms.Label top4_lbl;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label top1_desc;
+        public System.Windows.Forms.Label top2_desc;
+        public System.Windows.Forms.Label top3_desc;
+        public System.Windows.Forms.Label top4_desc;
     }
 }

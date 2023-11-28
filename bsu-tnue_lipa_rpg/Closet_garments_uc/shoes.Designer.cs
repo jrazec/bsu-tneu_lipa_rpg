@@ -30,7 +30,7 @@
         {
             this.shoes1_lbl = new System.Windows.Forms.Label();
             this.shoes1_pbox = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.shoes1_desc = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.shoes1_pbox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,23 +56,23 @@
             this.shoes1_pbox.TabStop = false;
             this.shoes1_pbox.Click += new System.EventHandler(this.shoes1_pbox_Click);
             // 
-            // label8
+            // shoes1_desc
             // 
-            this.label8.BackColor = System.Drawing.Color.IndianRed;
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(61, 196);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(122, 56);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "Unlock";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.shoes1_desc.BackColor = System.Drawing.Color.IndianRed;
+            this.shoes1_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.shoes1_desc.Location = new System.Drawing.Point(61, 196);
+            this.shoes1_desc.Name = "shoes1_desc";
+            this.shoes1_desc.Size = new System.Drawing.Size(122, 56);
+            this.shoes1_desc.TabIndex = 27;
+            this.shoes1_desc.Text = "Unlock";
+            this.shoes1_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // shoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.shoes1_desc);
             this.Controls.Add(this.shoes1_lbl);
             this.Controls.Add(this.shoes1_pbox);
             this.Name = "shoes";
@@ -84,7 +84,7 @@
 
         #endregion
         public System.Windows.Forms.Label shoes1_lbl;
-        private System.Windows.Forms.PictureBox shoes1_pbox;
-        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.PictureBox shoes1_pbox;
+        public System.Windows.Forms.Label shoes1_desc;
     }
 }
