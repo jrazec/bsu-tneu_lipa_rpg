@@ -30,6 +30,8 @@
         {
             this.search_txt = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.search_btn = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.name_ign_lbl = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,9 +41,6 @@
             this.home_lbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.exit_btn = new System.Windows.Forms.Button();
-            this.search_btn = new System.Windows.Forms.Button();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.id_pbox = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -49,11 +48,12 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.exit_btn = new System.Windows.Forms.Button();
             this.create_pbox = new System.Windows.Forms.PictureBox();
             this.create_btn = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.id_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -84,6 +84,27 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(911, 57);
             this.panel3.TabIndex = 15;
+            // 
+            // search_btn
+            // 
+            this.search_btn.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.search;
+            this.search_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.search_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_btn.Location = new System.Drawing.Point(868, 19);
+            this.search_btn.Name = "search_btn";
+            this.search_btn.Size = new System.Drawing.Size(24, 27);
+            this.search_btn.TabIndex = 12;
+            this.search_btn.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.main_title;
+            this.pictureBox7.Location = new System.Drawing.Point(15, 18);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(374, 26);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 10;
+            this.pictureBox7.TabStop = false;
             // 
             // name_ign_lbl
             // 
@@ -159,6 +180,7 @@
             this.home_lbl.Size = new System.Drawing.Size(67, 34);
             this.home_lbl.TabIndex = 0;
             this.home_lbl.Text = "HOME";
+            this.home_lbl.Click += new System.EventHandler(this.home_lbl_Click);
             // 
             // panel2
             // 
@@ -190,41 +212,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(246, 645);
             this.panel1.TabIndex = 14;
-            // 
-            // exit_btn
-            // 
-            this.exit_btn.BackColor = System.Drawing.Color.Maroon;
-            this.exit_btn.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.power;
-            this.exit_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit_btn.ForeColor = System.Drawing.Color.Maroon;
-            this.exit_btn.Location = new System.Drawing.Point(1098, 587);
-            this.exit_btn.Name = "exit_btn";
-            this.exit_btn.Size = new System.Drawing.Size(42, 40);
-            this.exit_btn.TabIndex = 20;
-            this.exit_btn.UseVisualStyleBackColor = false;
-            // 
-            // search_btn
-            // 
-            this.search_btn.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.search;
-            this.search_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.search_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_btn.Location = new System.Drawing.Point(868, 19);
-            this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(24, 27);
-            this.search_btn.TabIndex = 12;
-            this.search_btn.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.main_title;
-            this.pictureBox7.Location = new System.Drawing.Point(15, 18);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(374, 26);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 10;
-            this.pictureBox7.TabStop = false;
             // 
             // id_pbox
             // 
@@ -299,6 +286,20 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // exit_btn
+            // 
+            this.exit_btn.BackColor = System.Drawing.Color.Maroon;
+            this.exit_btn.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.power;
+            this.exit_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit_btn.ForeColor = System.Drawing.Color.Maroon;
+            this.exit_btn.Location = new System.Drawing.Point(1098, 587);
+            this.exit_btn.Name = "exit_btn";
+            this.exit_btn.Size = new System.Drawing.Size(42, 40);
+            this.exit_btn.TabIndex = 20;
+            this.exit_btn.UseVisualStyleBackColor = false;
+            // 
             // create_pbox
             // 
             this.create_pbox.Location = new System.Drawing.Point(338, 105);
@@ -328,14 +329,14 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Admin_Create";
             this.Size = new System.Drawing.Size(1151, 639);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.id_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

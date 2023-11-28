@@ -16,5 +16,10 @@ namespace bsu_tnue_lipa_rpg
         {
             InitializeComponent();
         }
+
+        private void home_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

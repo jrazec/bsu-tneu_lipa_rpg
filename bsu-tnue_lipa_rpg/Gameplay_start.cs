@@ -16,6 +16,7 @@ namespace bsu_tnue_lipa_rpg
         public Gameplay_start()
         {
             InitializeComponent();
+            options_btn.Click += options_btn_Click;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -84,6 +85,23 @@ namespace bsu_tnue_lipa_rpg
                 mysqlConnection.Close();
             }
 
+        }
+
+        private void options_btn_Click(object sender, EventArgs e)
+        {
+            Admin_section adminsectionForm = Application.OpenForms["Admin_section"] as Admin_section;
+
+            if (adminsectionForm == null)
+            {
+                // If the form is not open, create and show it
+                adminsectionForm = new Admin_section();
+                adminsectionForm.Show();
+            }
+            else
+            {
+                // If the form is already open, bring it to the front
+                adminsectionForm.BringToFront();
+            }
         }
     }
 }

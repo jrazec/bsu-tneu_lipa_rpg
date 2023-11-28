@@ -39,9 +39,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.create_pbox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.delete_lbl = new System.Windows.Forms.Label();
+            this.update_lbl = new System.Windows.Forms.Label();
+            this.read_lbl = new System.Windows.Forms.Label();
             this.create_lbl = new System.Windows.Forms.Label();
             this.home_lbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -90,9 +90,9 @@
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.create_pbox);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.delete_lbl);
+            this.panel1.Controls.Add(this.update_lbl);
+            this.panel1.Controls.Add(this.read_lbl);
             this.panel1.Controls.Add(this.create_lbl);
             this.panel1.Controls.Add(this.home_lbl);
             this.panel1.Controls.Add(this.panel2);
@@ -194,35 +194,38 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // label4
+            // delete_lbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(100, 476);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 34);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "DELETE";
+            this.delete_lbl.AutoSize = true;
+            this.delete_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_lbl.Location = new System.Drawing.Point(100, 476);
+            this.delete_lbl.Name = "delete_lbl";
+            this.delete_lbl.Size = new System.Drawing.Size(82, 34);
+            this.delete_lbl.TabIndex = 4;
+            this.delete_lbl.Text = "DELETE";
+            this.delete_lbl.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label3
+            // update_lbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(99, 413);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 34);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "UPDATE";
+            this.update_lbl.AutoSize = true;
+            this.update_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_lbl.Location = new System.Drawing.Point(99, 413);
+            this.update_lbl.Name = "update_lbl";
+            this.update_lbl.Size = new System.Drawing.Size(83, 34);
+            this.update_lbl.TabIndex = 3;
+            this.update_lbl.Text = "UPDATE";
+            this.update_lbl.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label2
+            // read_lbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(99, 350);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 34);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "READ";
+            this.read_lbl.AutoSize = true;
+            this.read_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.read_lbl.Location = new System.Drawing.Point(99, 350);
+            this.read_lbl.Name = "read_lbl";
+            this.read_lbl.Size = new System.Drawing.Size(63, 34);
+            this.read_lbl.TabIndex = 2;
+            this.read_lbl.Text = "READ";
+            this.read_lbl.Click += new System.EventHandler(this.read_lbl_Click);
             // 
             // create_lbl
             // 
@@ -454,9 +457,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label delete_lbl;
+        private System.Windows.Forms.Label update_lbl;
+        private System.Windows.Forms.Label read_lbl;
         private System.Windows.Forms.Label create_lbl;
         private System.Windows.Forms.Label home_lbl;
         private System.Windows.Forms.PictureBox pictureBox1;
