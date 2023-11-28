@@ -20,6 +20,7 @@ namespace bsu_tnue_lipa_rpg
         public int CHARAC_ID;
         public string CHARAC_CLOTHES;
         public string DAY;
+        public int DAY_ID;
         public double CURRENT_MONEY;
 
         public static Bedroom instance;
@@ -47,7 +48,7 @@ namespace bsu_tnue_lipa_rpg
 
             checkCharac();
             checkMoney();
-            characFront();
+            characFront();//Will remove as it is already initialized in check charac what the costume would be 
             checkDay();
 
         }
@@ -471,7 +472,7 @@ choose the right ones.";
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
             string slctDayName = $@"
-                SELECT day_tasks.day_name AS day
+                SELECT day_tasks.day_name AS day, day_tasks.day_task_id as ID
                 FROM day_tasks
                 INNER JOIN tasks
                 ON tasks.day_task_id=day_tasks.day_task_id
@@ -491,6 +492,7 @@ choose the right ones.";
                     if (reader.Read())
                     {
                         DAY = (string)reader["day"];
+                        DAY_ID = (int)reader["ID"];
                     }
                 }
             }
