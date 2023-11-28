@@ -34,7 +34,7 @@ namespace bsu_tnue_lipa_rpg
         neck neck_uc = new neck();
         shoes shoes_uc = new shoes();
 
-        //Array to prevent user from mix & matching unmatched garments
+        //Array to check if the player wears the correct garments for the day
         public static string[,] 
             GARMENTS_FOR_DAY = {
                         //0         1       2       3
@@ -46,7 +46,9 @@ namespace bsu_tnue_lipa_rpg
                         {"pe-top", "pe-bot", "id","gen-shoes"}//For friday       - 5
                         };
         //i = day_id & j = item_class
-
+        
+        
+        //Array to prevent user from mix & matching unmatched garments
         public static string[,]
             GARMENTS_MATCH = {
                         //0           1            2          
@@ -56,7 +58,7 @@ namespace bsu_tnue_lipa_rpg
                         {"pe-top" ,"pe-bot" ,"gen-shoes"}//For pe       - 3 
                         };
 
-        public static string[,] Garments_Worn = new string[1,4];
+        public static string[,] Garments_Worn = new string[1, 4];
 
         public string[,] ITEMS = new string[4,12];// this is HOW TO DECLARE MULTIDIMENSIONAL ARRAY!?
         public Closet()
@@ -76,27 +78,34 @@ namespace bsu_tnue_lipa_rpg
         private void backtoroom_btn_Click(object sender, EventArgs e)
         {
             //if (GARMENTS[Bedroom.instance.DAY_ID,0] == Garments_Worn[0,0])//Eto ay pancheck if tama ba ung garment sa given day
+
+            //IF THE PLAYER WORN THE CORRECT PAIRED GARMENTS
             if ((GARMENTS_MATCH[0, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[0, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[0, 2] == Garments_Worn[0, 3]) ||
                 (GARMENTS_MATCH[1, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[1, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[1, 2] == Garments_Worn[0, 3]) ||
                 (GARMENTS_MATCH[2, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[2, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[2, 2] == Garments_Worn[0, 3])  )
             {
+            
                 this.Hide();
                 Bedroom.instance.Show();//to load the recent form
                 Bedroom.instance.bedroomWalkTimer.Start();//to access the bedroom timer;made this public in designer.cs
                 this.Close();
             }
+
+            //IF THE PLAYER DIDNT WEAR THE CORRECT GARMENTS
             else
             {
-                MessageBox.Show("Wag ka naman mag mix & match ui! Dili man ito Mcdo ba..");
+                //IF THE PLAYER DOENST WEAR ANY OF THESE GARMENTS
+                if (Garments_Worn[0, 0] == null || Garments_Worn[0, 1] == null || Garments_Worn[0, 3] == null ||
+                    Garments_Worn[0, 0] == ""   || Garments_Worn[0, 1] == ""   || Garments_Worn[0, 3] == ""     )
+                {
+                    MessageBox.Show("Wear your garments!");
+                }
+                //IF THE PLAYER MIX & MATCH UNPAIRED GARMENTS
+                else
+                {
+                    MessageBox.Show("Don't mix & match garments! This isn't Mcdo");
+                }
             }
-
-
-            /*
-            this.Hide();
-            Bedroom.instance.Show();//to load the recent form
-            Bedroom.instance.bedroomWalkTimer.Start();//to access the bedroom timer;made this public in designer.cs
-            this.Close();
-             */
         }
 
         private void top_pbox_Click(object sender, EventArgs e)
