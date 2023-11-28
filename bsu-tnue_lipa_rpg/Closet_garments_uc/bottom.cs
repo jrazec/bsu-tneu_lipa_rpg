@@ -31,37 +31,101 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             InitializeComponent();
             instance = this;
         }
-
+        public bool bot1_sel = false;
+        public bool bot2_sel = false;
+        public bool bot3_sel = false;
+        public bool bot4_sel = false;
         private void bottom1_pbox_Click(object sender, EventArgs e)
         {
-            bottom1_pbox.BorderStyle = BorderStyle.FixedSingle;
-            bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
-            bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
-            bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+            if (bot1_sel == false)
+            {
+                bot1_sel = true;
+                bot2_sel = false;
+                bot3_sel = false;
+                bot4_sel = false;
+                bottom1_pbox.BorderStyle = BorderStyle.FixedSingle;
+                bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 1] = "org-bot";
+            }
+            else
+            {
+                bot1_sel = false;
+                bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 1] = "";
+            }
+            Closet.instance.label2.Text = Closet.Garments_Worn[0, 1];
+       
         }
 
         private void bottom2_pbox_Click(object sender, EventArgs e)
         {
-            bottom2_pbox.BorderStyle = BorderStyle.FixedSingle;
-            bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
-            bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
-            bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+            if (bot2_sel == false)
+            {
+                bot2_sel = true;
+                bot1_sel = false;
+                bot3_sel = false;
+                bot4_sel = false;
+                bottom2_pbox.BorderStyle = BorderStyle.FixedSingle;
+                bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 1] = "cas-bot";
+            }
+            else
+            {
+                bot2_sel = false;
+                bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 1] = "";
+            }
+            Closet.instance.label2.Text = Closet.Garments_Worn[0, 1];
         }
 
         private void bottom3_pbox_Click(object sender, EventArgs e)
         {
-            bottom3_pbox.BorderStyle = BorderStyle.FixedSingle;
-            bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
-            bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
-            bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+            if (bot3_sel == false)
+            {
+                bot3_sel = true;
+                bot1_sel = false;
+                bot2_sel = false;
+                bot4_sel = false;
+                bottom3_pbox.BorderStyle = BorderStyle.FixedSingle;
+                bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 1] = "pe-bot";
+            }
+            else
+            {
+                bot3_sel = false;
+                bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 1] = "";
+            }
+            Closet.instance.label2.Text = Closet.Garments_Worn[0, 1];
         }
         
         private void bottom4_pbox_Click(object sender, EventArgs e)
         {
-            bottom4_pbox.BorderStyle = BorderStyle.FixedSingle;
-            bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
-            bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
-            bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
+            if (bot4_sel == false)
+            {
+                bot4_sel = true;
+                bot1_sel = false;
+                bot2_sel = false;
+                bot3_sel = false;
+                bottom4_pbox.BorderStyle = BorderStyle.FixedSingle;
+                bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 1] = "uni-bot";
+            }
+            else
+            {
+                bot4_sel = false;
+                bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 1] = "";
+            }
+            Closet.instance.label2.Text = Closet.Garments_Worn[0, 1];
         }
     }
 }
