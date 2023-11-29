@@ -113,26 +113,32 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             //Closet.instance.label4.Text = Closet.instance.ITEM_PRICE[3, 0].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 3, 0, () => {
-                emptyIcon();
-                shoes1_sel = false;
-                shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                if (shoes1_sel) {
+                    emptyIcon();
+                    shoes1_sel = false;
+                    shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                }
             });
         }
         private void shoes2_desc_Click(object sender, EventArgs e)
         {
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 3, 1, () => {
-                emptyIcon();
-                shoes2_sel = false;
-                shoes2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                 if (shoes2_sel) {
+                    emptyIcon();
+                    shoes2_sel = false;
+                    shoes2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                }
             });
         }
 
         private void shoes3_desc_Click(object sender, EventArgs e)
         {
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 3, 2, () => {
-                emptyIcon();
-                shoes3_sel = false;
-                shoes3_pbox.BorderStyle = BorderStyle.Fixed3D;
+               if (shoes3_sel) {
+                    emptyIcon();
+                    shoes3_sel = false;
+                    shoes3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                }
             });
         }
 

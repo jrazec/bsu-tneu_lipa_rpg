@@ -51,11 +51,11 @@ namespace bsu_tnue_lipa_rpg
         //Array to prevent user from mix & matching unmatched garments
         public static string[,]
             GARMENTS_MATCH = {
-                        //0           1            2          
-                        {"uni-top","uni-bot","gen-shoes"},//For uni      - 0   
-                        {"org-top","org-bot","w-shoes"},//For org        - 1
-                        {"cas-top","cas-bot","cas-shoes"},//For casual   - 2   
-                        {"pe-top" ,"pe-bot" ,"w-shoes"}//For pe          - 3 
+                        //0           1            2      3    
+                        {"uni-top","uni-bot","gen-shoes","id"},//For uni      - 0   
+                        {"org-top","org-bot","w-shoes","id"},//For org        - 1
+                        {"cas-top","cas-bot","cas-shoes","id"},//For casual   - 2   
+                        {"pe-top" ,"pe-bot" ,"w-shoes","id"}//For pe          - 3 
                         };
 
         public static string[,] Garments_Worn = new string[1, 4];
@@ -86,10 +86,10 @@ namespace bsu_tnue_lipa_rpg
             //THIS IS PANGDRESS SA CHARAC ONCE THE PLAYER LEFT THE CLOSET
 
             //IF THE PLAYER WORN THE CORRECT PAIRED GARMENTS
-            if ((GARMENTS_MATCH[0, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[0, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[0, 2] == Garments_Worn[0, 3]) ||
-                (GARMENTS_MATCH[1, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[1, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[1, 2] == Garments_Worn[0, 3]) ||
-                (GARMENTS_MATCH[2, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[2, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[2, 2] == Garments_Worn[0, 3]) ||
-                (GARMENTS_MATCH[3, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[3, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[3, 2] == Garments_Worn[0, 3]))
+            if ((GARMENTS_MATCH[0, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[0, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[0, 2] == Garments_Worn[0, 3] && GARMENTS_MATCH[0, 3] == Garments_Worn[0, 2]) ||
+                (GARMENTS_MATCH[1, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[1, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[1, 2] == Garments_Worn[0, 3] && GARMENTS_MATCH[1, 3] == Garments_Worn[0, 2]) ||
+                (GARMENTS_MATCH[2, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[2, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[2, 2] == Garments_Worn[0, 3] && GARMENTS_MATCH[2, 3] == Garments_Worn[0, 2]) ||
+                (GARMENTS_MATCH[3, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[3, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[3, 2] == Garments_Worn[0, 3] && GARMENTS_MATCH[3, 3] == Garments_Worn[0, 2])   )
             {
 
 
@@ -126,8 +126,8 @@ namespace bsu_tnue_lipa_rpg
             else
             {
                 //IF THE PLAYER DOENST WEAR ANY OF THESE GARMENTS
-                if (Garments_Worn[0, 0] == null || Garments_Worn[0, 1] == null || Garments_Worn[0, 3] == null ||
-                    Garments_Worn[0, 0] == ""   || Garments_Worn[0, 1] == ""   || Garments_Worn[0, 3] == ""     )
+                if (Garments_Worn[0, 0] == null || Garments_Worn[0, 1] == null || Garments_Worn[0, 2] == null || Garments_Worn[0, 3] == null ||
+                    Garments_Worn[0, 0] == ""   || Garments_Worn[0, 1] == ""   || Garments_Worn[0, 2] == ""   || Garments_Worn[0, 3] == ""     )
                 {
                     MessageBox.Show("Wear your garments!");
                 }

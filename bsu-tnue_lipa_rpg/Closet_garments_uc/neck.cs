@@ -77,9 +77,11 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             //Closet.instance.label3.Text = Closet.instance.ITEM_PRICE[2, 0].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 0, () => {
-                emptyIcon();
-                neck1_sel = false;
-                neck1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                if (neck1_sel) {
+                    emptyIcon();
+                    neck1_sel = false;
+                    neck1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                }
             });
 
         }
@@ -88,9 +90,11 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             //Closet.instance.label3.Text = Closet.instance.ITEM_PRICE[2, 1].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 1, () => {
-                emptyIcon();
-                neck2_sel = false;
-                neck2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                if (neck2_sel) {
+                    emptyIcon();
+                    neck2_sel = false;
+                    neck2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                }
             });
 
         }

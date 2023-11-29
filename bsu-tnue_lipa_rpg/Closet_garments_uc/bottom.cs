@@ -167,9 +167,11 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             //Closet.instance.label2.Text = Closet.instance.ITEM_PRICE[1, 0].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 1, 0, () => {
-                emptyIcon();
-                bot1_sel = false;
-                bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                if (bot1_sel) { 
+                    emptyIcon();
+                    bot1_sel = false;
+                    bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                }
             });
 
         }
@@ -178,9 +180,11 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             //Closet.instance.label2.Text = Closet.instance.ITEM_PRICE[1, 1].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 1, 1, () => {
-                emptyIcon();
-                bot2_sel = false;
-                bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
+               if (bot2_sel) {
+                    emptyIcon();
+                    bot2_sel = false;
+                    bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                }
             });
 
         }
@@ -189,9 +193,11 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             //Closet.instance.label2.Text = Closet.instance.ITEM_PRICE[1, 2].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 1, 2, () => {
-                emptyIcon();
-                bot3_sel = false;
-                bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                if (bot3_sel) {
+                    emptyIcon();
+                    bot3_sel = false;
+                    bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                }
             });
 
         }
@@ -200,9 +206,11 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             //Closet.instance.label2.Text = Closet.instance.ITEM_PRICE[1, 3].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 1, 3, () => {
-                emptyIcon();
-                bot4_sel = false;
-                bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+                if (bot4_sel) {
+                    emptyIcon();
+                    bot4_sel = false;
+                    bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+                }
             });
 
         }
