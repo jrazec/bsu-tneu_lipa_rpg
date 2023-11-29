@@ -101,6 +101,48 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_Create.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Create.Designer.cs">
+      <DependentUpon>Admin_Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Delete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Delete.Designer.cs">
+      <DependentUpon>Admin_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Home.Designer.cs">
+      <DependentUpon>Admin_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_login.Designer.cs">
+      <DependentUpon>Admin_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Read.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Read.Designer.cs">
+      <DependentUpon>Admin_Read.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_section.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_section.Designer.cs">
+      <DependentUpon>Admin_section.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Update.Designer.cs">
+      <DependentUpon>Admin_Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Character_sel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +209,12 @@
     <Compile Include="Game_mechanics.Designer.cs">
       <DependentUpon>Game_mechanics.cs</DependentUpon>
     </Compile>
+    <Compile Include="home_colorpanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="home_colorpanel.Designer.cs">
+      <DependentUpon>home_colorpanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Log_in.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +235,27 @@
     <Compile Include="Sign_up.Designer.cs">
       <DependentUpon>Sign_up.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin_Create.resx">
+      <DependentUpon>Admin_Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Delete.resx">
+      <DependentUpon>Admin_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Home.resx">
+      <DependentUpon>Admin_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_login.resx">
+      <DependentUpon>Admin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Read.resx">
+      <DependentUpon>Admin_Read.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_section.resx">
+      <DependentUpon>Admin_section.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Update.resx">
+      <DependentUpon>Admin_Update.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Character_sel.resx">
       <DependentUpon>Character_sel.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Game_mechanics.resx">
       <DependentUpon>Game_mechanics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home_colorpanel.resx">
+      <DependentUpon>home_colorpanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log_in.resx">
       <DependentUpon>Log_in.cs</DependentUpon>
@@ -554,6 +626,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\next_pbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-upload-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-upload-alt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

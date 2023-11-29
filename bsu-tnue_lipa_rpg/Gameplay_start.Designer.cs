@@ -69,6 +69,7 @@
             this.options_btn.TabIndex = 1;
             this.options_btn.Text = "OPTIONS";
             this.options_btn.UseVisualStyleBackColor = false;
+            this.options_btn.Click += new System.EventHandler(this.options_btn_Click);
             // 
             // logout_btn
             // 
