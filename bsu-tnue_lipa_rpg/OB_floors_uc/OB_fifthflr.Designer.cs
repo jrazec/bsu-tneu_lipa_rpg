@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.engrjonnah_pbox = new System.Windows.Forms.PictureBox();
             this.obfifthflr_charac = new System.Windows.Forms.PictureBox();
             this.staircollision_pbox = new System.Windows.Forms.PictureBox();
+            this.obfifthWalkTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.engrjonnah_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obfifthflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staircollision_pbox)).BeginInit();
@@ -68,6 +70,12 @@
             this.staircollision_pbox.TabStop = false;
             this.staircollision_pbox.Tag = "go_down";
             // 
+            // obfifthWalkTimer
+            // 
+            this.obfifthWalkTimer.Enabled = true;
+            this.obfifthWalkTimer.Interval = 50;
+            this.obfifthWalkTimer.Tick += new System.EventHandler(this.obfifthWalkTimer_Tick);
+            // 
             // OB_fifthflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -82,6 +90,8 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OB_fifthflr";
             this.Size = new System.Drawing.Size(1436, 589);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.key_is_down);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.key_is_up);
             ((System.ComponentModel.ISupportInitialize)(this.engrjonnah_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.obfifthflr_charac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.staircollision_pbox)).EndInit();
@@ -94,5 +104,6 @@
         private System.Windows.Forms.PictureBox engrjonnah_pbox;
         private System.Windows.Forms.PictureBox obfifthflr_charac;
         private System.Windows.Forms.PictureBox staircollision_pbox;
+        public System.Windows.Forms.Timer obfifthWalkTimer;
     }
 }

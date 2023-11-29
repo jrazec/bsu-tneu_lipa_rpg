@@ -123,12 +123,12 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
                         this.Hide();
 
                         Old_Bldg.instance.obcontainer_panel.Controls.Clear();
-                        //Old_Bldg.instance.obcontainer_panel.Controls.Add(OB_fifthflr.INSTANCE);
+                        Old_Bldg.instance.obcontainer_panel.Controls.Add(OB_fifthflr.INSTANCE);
 
-                        //OB_fifthflr.INSTANCE.Show();
-                        //OB_fifthflr.INSTANCE.obfifthWalkTimer.Start();
-                        //OB_fifthflr.INSTANCE.Focus();
-                        //OB_fifthflr.INSTANCE.BringToFront();
+                        OB_fifthflr.INSTANCE.Show();
+                        OB_fifthflr.INSTANCE.obfifthWalkTimer.Start();
+                        OB_fifthflr.INSTANCE.Focus();
+                        OB_fifthflr.INSTANCE.BringToFront();
 
                     }
                 }
