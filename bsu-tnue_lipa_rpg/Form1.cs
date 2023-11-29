@@ -195,7 +195,7 @@ namespace bsu_tnue_lipa_rpg
                         tasks(task_id,task_name,reward,day_task_id,achievement_id)
                     VALUES
                         (1,'Your First day Starts Now.',500.00,1,1),
-                        (2,'Wednesday is a Free Day.',500.00,2,2),
+                        (2,'Wednesday is a Free Day.',500.00,3,2),
                         (3,'Embark on a rewarding week‘s journey.',500.00,5,3),
                         (4,'Seek Day, Monday!',200.00,1,4),
                         (5,'Navigate, Locate, and Ask this Tuesday Ahu!',200.00,2,5),
