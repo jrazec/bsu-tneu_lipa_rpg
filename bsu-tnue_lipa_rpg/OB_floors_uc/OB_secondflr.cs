@@ -13,6 +13,17 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
     public partial class OB_secondflr : UserControl
     {
         public static OB_secondflr instance;
+        public static OB_secondflr INSTANCE
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new OB_secondflr();
+                }
+                return instance;
+            }
+        }
         protected override CreateParams CreateParams
         {
             get
@@ -67,8 +78,6 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
         public OB_secondflr()
         {
             InitializeComponent();
-            obsecondWalkTimer.Start();
-            instance = this;
         }
 
         private void obsecondWalkTimer_Tick(object sender, EventArgs e)
@@ -88,6 +97,72 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
             if (go_down == true && obsecondflr_charac.Top < 354)
             {
                 obsecondflr_charac.Top += walk;
+            }
+
+            //to navigate
+            foreach (Control navigation in this.Controls)
+            {
+                //go up
+                if (navigation is PictureBox && (string)navigation.Tag == "go_up")
+                {
+                    if (obsecondflr_charac.Bounds.IntersectsWith(navigation.Bounds))
+                    {
+                        //stop character movement
+                        obsecondWalkTimer.Stop();
+
+                        //move character away from collision box
+                        obsecondflr_charac.Location = new Point(277, 322);
+
+                        //reset boolean directions
+                        go_left = false;
+                        go_right = false;
+                        go_up = false;
+                        go_down = false;
+
+                        //go to third floor uc
+                        this.Hide();
+
+                        Old_Bldg.instance.obcontainer_panel.Controls.Clear();
+                        Old_Bldg.instance.obcontainer_panel.Controls.Add(OB_secondflr.INSTANCE);
+
+                        OB_secondflr.INSTANCE.obsecondWalkTimer.Start();
+                        OB_secondflr.INSTANCE.Focus();
+                        OB_secondflr.INSTANCE.BringToFront();
+
+                    }
+
+
+                }
+                //go down
+                if (navigation is PictureBox && (string)navigation.Tag == "go_down")
+                {
+                    if (obsecondflr_charac.Bounds.IntersectsWith(navigation.Bounds))
+                    {
+                        //stop character movement
+                        obsecondWalkTimer.Stop();
+
+                        //move character away from collision box
+                        obsecondflr_charac.Location = new Point(277, 322);
+
+                        //reset boolean directions
+                        go_left = false;
+                        go_right = false;
+                        go_up = false;
+                        go_down = false;
+
+                        //go back to first floor uc
+                        this.Hide();
+
+                        Old_Bldg.instance.obcontainer_panel.Controls.Clear();
+                        Old_Bldg.instance.obcontainer_panel.Controls.Add(OB_firstflr.INSTANCE);
+
+                        OB_firstflr.INSTANCE.Show();
+                        OB_firstflr.INSTANCE.obfirstWalkTimer.Start();
+                        OB_firstflr.INSTANCE.Focus();
+                        OB_firstflr.INSTANCE.BringToFront();
+
+                    }
+                }
             }
         }
 

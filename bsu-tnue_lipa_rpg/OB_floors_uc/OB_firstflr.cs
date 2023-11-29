@@ -13,6 +13,17 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
     public partial class OB_firstflr : UserControl
     {
         public static OB_firstflr instance;
+        public static OB_firstflr INSTANCE
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new OB_firstflr();
+                }
+                return instance;
+            }
+        }
         protected override CreateParams CreateParams
         {
             get
@@ -68,7 +79,6 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
         public OB_firstflr()
         {
             InitializeComponent();
-            instance = this;
         }
 
         private void obfirstWalkTimer_Tick(object sender, EventArgs e)
@@ -93,7 +103,32 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
             //to navigate
             foreach (Control navigation in this.Controls)
             {
-                //return to map
+                //to return to map
+                if (navigation is PictureBox && (string)navigation.Tag == "return_to_map")
+                {
+                    if (obfirstflr_charac.Bounds.IntersectsWith(navigation.Bounds))
+                    {
+                        //stop character movement
+                        obfirstWalkTimer.Stop();
+
+                        //move character away from collision box
+                        obfirstflr_charac.Location = new Point(277, 322);
+
+                        //reset boolean directions
+                        go_left = false;
+                        go_right = false;
+                        go_up = false;
+                        go_down = false;
+
+                        //return to map form
+                        this.Hide();
+                        CECS_bldg.instance.Hide();
+                        CECS_bldg.instance.Close();
+                        Map returntomap = new Map();
+                        returntomap.ShowDialog();
+                    }
+                }
+                //go up
                 if (navigation is PictureBox && (string)navigation.Tag == "go_up")
                 {
                     if (obfirstflr_charac.Bounds.IntersectsWith(navigation.Bounds))
@@ -112,15 +147,15 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
 
                         //go to second floor uc
                         this.Hide();
-                        OB_secondflr ob2 = new OB_secondflr();
-                        ob2.Show(); 
                         
                         Old_Bldg.instance.obcontainer_panel.Controls.Clear();
-                        Old_Bldg.instance.obcontainer_panel.Controls.Add(ob2);
-                        ob2.obsecondWalkTimer.Start();
-                        ob2.BringToFront();
+                        Old_Bldg.instance.obcontainer_panel.Controls.Add(OB_secondflr.INSTANCE);
 
-                        // above code works but character in 2nd flr wont move like cecs 2nd flr and up
+                        OB_secondflr.INSTANCE.Show();
+                        OB_secondflr.INSTANCE.obsecondWalkTimer.Start();
+                        OB_secondflr.INSTANCE.Focus();
+                        OB_secondflr.INSTANCE.BringToFront();
+
                     }
                 }
             }

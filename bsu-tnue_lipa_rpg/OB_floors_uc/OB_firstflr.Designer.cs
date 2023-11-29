@@ -33,16 +33,18 @@
             this.obfirstWalkTimer = new System.Windows.Forms.Timer(this.components);
             this.staircollision_pbox = new System.Windows.Forms.PictureBox();
             this.upflrcollision_pbox = new System.Windows.Forms.PictureBox();
+            this.returncollision_pbox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.obfirstflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staircollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upflrcollision_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returncollision_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // obfirstflr_charac
             // 
             this.obfirstflr_charac.BackColor = System.Drawing.Color.Transparent;
             this.obfirstflr_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.female_org_front;
-            this.obfirstflr_charac.Location = new System.Drawing.Point(255, 380);
+            this.obfirstflr_charac.Location = new System.Drawing.Point(354, 295);
             this.obfirstflr_charac.Name = "obfirstflr_charac";
             this.obfirstflr_charac.Size = new System.Drawing.Size(133, 135);
             this.obfirstflr_charac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -75,6 +77,16 @@
             this.upflrcollision_pbox.TabStop = false;
             this.upflrcollision_pbox.Tag = "go_up";
             // 
+            // returncollision_pbox
+            // 
+            this.returncollision_pbox.BackColor = System.Drawing.Color.DimGray;
+            this.returncollision_pbox.Location = new System.Drawing.Point(267, 526);
+            this.returncollision_pbox.Name = "returncollision_pbox";
+            this.returncollision_pbox.Size = new System.Drawing.Size(343, 14);
+            this.returncollision_pbox.TabIndex = 3;
+            this.returncollision_pbox.TabStop = false;
+            this.returncollision_pbox.Tag = "return_to_map";
+            // 
             // OB_firstflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -82,6 +94,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.ob_1stflr;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.returncollision_pbox);
             this.Controls.Add(this.upflrcollision_pbox);
             this.Controls.Add(this.staircollision_pbox);
             this.Controls.Add(this.obfirstflr_charac);
@@ -94,6 +107,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.obfirstflr_charac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.staircollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.upflrcollision_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returncollision_pbox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -101,8 +115,9 @@
         #endregion
 
         private System.Windows.Forms.PictureBox obfirstflr_charac;
-        private System.Windows.Forms.Timer obfirstWalkTimer;
+        public System.Windows.Forms.Timer obfirstWalkTimer;
         private System.Windows.Forms.PictureBox staircollision_pbox;
         private System.Windows.Forms.PictureBox upflrcollision_pbox;
+        private System.Windows.Forms.PictureBox returncollision_pbox;
     }
 }

@@ -13,14 +13,17 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Old_Bldg : Form
     {
-        public static Old_Bldg instance;
-        OB_firstflr ob1 = new OB_firstflr();
-        
+        public static Old_Bldg instance;        
         public Old_Bldg()
         {
             InitializeComponent();
             instance = this;
-            addUC(ob1);
+            if (!OB_firstflr.INSTANCE.Visible)
+            {
+                OB_firstflr.INSTANCE.Show();
+                OB_firstflr.INSTANCE.obfirstWalkTimer.Start();
+            }
+            obcontainer_panel.Controls.Add(OB_firstflr.INSTANCE);
         }
 
         private void addUC(UserControl uc)
@@ -28,9 +31,8 @@ namespace bsu_tnue_lipa_rpg
             uc.Dock = DockStyle.Fill;
             obcontainer_panel.Controls.Clear();
             obcontainer_panel.Controls.Add(uc);
+            uc.Focus();
             uc.BringToFront();
         }
-
-        
     }
 }
