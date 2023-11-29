@@ -166,7 +166,10 @@ namespace bsu_tnue_lipa_rpg
                         (1012,'Sando',70.00,'Estetik Starter Pack for Boys Sando','Top'),
                         (1013,'Short-z',70.00,'Estetik Starter Pack for Boys Short','Bottom'),
                         (1014,'CICS Org Shirt',500.00,'Org Shirt of AICSS (2022-2023) ','Top'),
-                        (1015,'Denim Pants',150.00,'Normal Unisex Pants','Bottom');
+                        (1015,'Denim Pants',150.00,'Normal Unisex Pants','Bottom'),
+                        (1016,'Bluenelas', 20.00,'Estetik Starter Pack for Boys Shoes','Shoes'),
+                        (1017,'Pinkinelas', 20.00,'Estetik Starter Pack for Boys Shoes','Shoes'),
+                        (1018,'Wayt Shoes', 20.00,'White unisex rubber shoes','Shoes');
 
                     INSERT INTO
                         day_tasks(day_task_id,day_name,day_task_clue,day_task_hint,day_garment_type)
