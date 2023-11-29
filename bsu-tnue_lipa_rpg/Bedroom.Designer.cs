@@ -96,7 +96,7 @@
             this.hint_lbl.AutoSize = true;
             this.hint_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hint_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.hint_lbl.Location = new System.Drawing.Point(1019, 6);
+            this.hint_lbl.Location = new System.Drawing.Point(1019, 9);
             this.hint_lbl.Name = "hint_lbl";
             this.hint_lbl.Size = new System.Drawing.Size(58, 34);
             this.hint_lbl.TabIndex = 4;
@@ -105,7 +105,7 @@
             // hint_pbox
             // 
             this.hint_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.hint_icon;
-            this.hint_pbox.Location = new System.Drawing.Point(978, 6);
+            this.hint_pbox.Location = new System.Drawing.Point(978, 9);
             this.hint_pbox.Name = "hint_pbox";
             this.hint_pbox.Size = new System.Drawing.Size(44, 34);
             this.hint_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -128,9 +128,9 @@
             this.currency_lbl.AutoSize = true;
             this.currency_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.currency_lbl.Location = new System.Drawing.Point(776, 6);
+            this.currency_lbl.Location = new System.Drawing.Point(776, 9);
             this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Size = new System.Drawing.Size(104, 43);
+            this.currency_lbl.Size = new System.Drawing.Size(83, 34);
             this.currency_lbl.TabIndex = 1;
             this.currency_lbl.Text = "₱ 0.00";
             // 
@@ -139,7 +139,7 @@
             this.day_lbl.AutoSize = true;
             this.day_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.day_lbl.Location = new System.Drawing.Point(147, 6);
+            this.day_lbl.Location = new System.Drawing.Point(147, 9);
             this.day_lbl.Name = "day_lbl";
             this.day_lbl.Size = new System.Drawing.Size(99, 34);
             this.day_lbl.TabIndex = 0;

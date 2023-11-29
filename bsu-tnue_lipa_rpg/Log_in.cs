@@ -68,7 +68,7 @@ namespace bsu_tnue_lipa_rpg
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message,"Click The Set-up button First!",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             finally
             {

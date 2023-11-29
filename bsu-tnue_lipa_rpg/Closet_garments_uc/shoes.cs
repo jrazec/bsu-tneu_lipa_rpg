@@ -33,7 +33,6 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         public bool shoes1_sel = false;
         public bool shoes2_sel = false;
         public bool shoes3_sel = false;
-        public bool shoes4_sel = false;
         private void shoes1_pbox_Click(object sender, EventArgs e)
         {
             if (shoes1_sel == false)
@@ -61,7 +60,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
                 emptyIcon();
             }
-            Closet.instance.label1.Text = Closet.Garments_Worn[0, 3];
+            Closet.instance.label4.Text = Closet.Garments_Worn[0, 3];
         }
 
         private void shoes2_pbox_Click(object sender, EventArgs e)
@@ -83,7 +82,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 shoes2_pbox.BorderStyle = BorderStyle.Fixed3D;
                 emptyIcon();
             }
-            Closet.instance.label1.Text = Closet.Garments_Worn[0, 3];
+            Closet.instance.label4.Text = Closet.Garments_Worn[0, 3];
         }
 
         private void shoes3_pbox_Click(object sender, EventArgs e)
@@ -105,7 +104,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 shoes3_pbox.BorderStyle = BorderStyle.Fixed3D;
                 emptyIcon();
             }
-            Closet.instance.label3.Text = Closet.Garments_Worn[0, 3];
+            Closet.instance.label4.Text = Closet.Garments_Worn[0, 3];
         }
     
 

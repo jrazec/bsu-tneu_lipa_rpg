@@ -508,6 +508,7 @@ choose the right ones.";
                 mysqlConnection.Close();
             }
             day_lbl.Text = DAY;
+            Closet.instance.day_lbl.Text = DAY;
         }
 
         public void checkMoney()
@@ -546,6 +547,7 @@ choose the right ones.";
                 mysqlConnection.Close();
             }
             currency_lbl.Text = CURRENT_MONEY.ToString("C");
+            Closet.instance.currency_lbl.Text = CURRENT_MONEY.ToString("C");
         }
 
         public void checkTask()
@@ -586,6 +588,7 @@ choose the right ones.";
                 mysqlConnection.Close();
             }
             currency_lbl.Text = CURRENT_MONEY.ToString("C");
+            Closet.instance.currency_lbl.Text = CURRENT_MONEY.ToString("C");
         }
     }
 }

@@ -39,6 +39,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.currency_lbl = new System.Windows.Forms.Label();
+            this.day_lbl = new System.Windows.Forms.Label();
+            this.menu_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.top_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pants_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.necklace_pbox)).BeginInit();
@@ -48,6 +51,8 @@
             // menu_panel
             // 
             this.menu_panel.BackColor = System.Drawing.Color.Maroon;
+            this.menu_panel.Controls.Add(this.currency_lbl);
+            this.menu_panel.Controls.Add(this.day_lbl);
             this.menu_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.menu_panel.Location = new System.Drawing.Point(0, 0);
             this.menu_panel.Name = "menu_panel";
@@ -158,6 +163,28 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "label4";
             // 
+            // currency_lbl
+            // 
+            this.currency_lbl.AutoSize = true;
+            this.currency_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.currency_lbl.Location = new System.Drawing.Point(776, 9);
+            this.currency_lbl.Name = "currency_lbl";
+            this.currency_lbl.Size = new System.Drawing.Size(83, 34);
+            this.currency_lbl.TabIndex = 12;
+            this.currency_lbl.Text = "₱ 0.00";
+            // 
+            // day_lbl
+            // 
+            this.day_lbl.AutoSize = true;
+            this.day_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.day_lbl.Location = new System.Drawing.Point(176, 9);
+            this.day_lbl.Name = "day_lbl";
+            this.day_lbl.Size = new System.Drawing.Size(99, 34);
+            this.day_lbl.TabIndex = 11;
+            this.day_lbl.Text = "Monday";
+            // 
             // Closet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -182,6 +209,8 @@
             this.Name = "Closet";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Closet";
+            this.menu_panel.ResumeLayout(false);
+            this.menu_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.top_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pants_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.necklace_pbox)).EndInit();
@@ -204,5 +233,7 @@
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label currency_lbl;
+        public System.Windows.Forms.Label day_lbl;
     }
 }
