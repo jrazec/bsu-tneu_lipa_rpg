@@ -482,7 +482,7 @@ namespace bsu_tnue_lipa_rpg
             }
             finally { mysqlConnection.Close(); }
         }
-        public void buy_refundItems(double[,] ITEM_PRICE,string[,] ITEMS,int i, int j)
+        public void buy_refundItems(double[,] ITEM_PRICE,string[,] ITEMS,int i, int j,Form1.callback callback)
         {
             //IF NOT OWN
             if (!ITEM_OWN[i, j])
@@ -514,6 +514,7 @@ namespace bsu_tnue_lipa_rpg
                 DialogResult buy = MessageBox.Show($"Are you sure you want to refund: {ITEM_PRICE[i, j]:C}", "Warning", MessageBoxButtons.YesNo);
                 if (buy == DialogResult.Yes)
                 {
+                        callback();//Ill use this for arrow functionsss
                         double money = Bedroom.instance.CURRENT_MONEY;
                         money = money + ITEM_PRICE[i, j];
                         Bedroom.instance.checkTask();

@@ -78,16 +78,21 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         private void neck1_desc_Click(object sender, EventArgs e)
         {
             //Closet.instance.label3.Text = Closet.instance.ITEM_PRICE[2, 0].ToString();
-            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 0);
+            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 0, emptyIcon);
 
         }
 
         private void neck2_desc_Click(object sender, EventArgs e)
         {
             //Closet.instance.label3.Text = Closet.instance.ITEM_PRICE[2, 1].ToString();
-            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 1);
+            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 1,emptyIcon);
 
         }
 
+        private void emptyIcon()
+        {
+            Closet.Garments_Worn[0, 2] = "";
+            Closet.instance.necklace_pbox.Image = Properties.Resources.neck_icon;
+        }
     }
 }

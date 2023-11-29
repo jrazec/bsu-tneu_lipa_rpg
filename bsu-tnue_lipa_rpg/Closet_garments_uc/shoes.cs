@@ -32,8 +32,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             {
                 shoes1_sel = false;
                 shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
-                Closet.Garments_Worn[0, 3] = "";
-                Closet.instance.shoes_pbox.Image = Properties.Resources.shoes_icon;
+                emptyIcon();
             }
             Closet.instance.label4.Text = Closet.Garments_Worn[0, 3];
         }
@@ -41,7 +40,12 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         private void shoes1_desc_Click(object sender, EventArgs e)
         {
             //Closet.instance.label4.Text = Closet.instance.ITEM_PRICE[3, 0].ToString();
-            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 3,0);
+            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 3,0,emptyIcon);
+        }
+        private void emptyIcon()
+        {
+            Closet.Garments_Worn[0, 3] = "";
+            Closet.instance.shoes_pbox.Image = Properties.Resources.shoes_icon;
         }
 
     }
