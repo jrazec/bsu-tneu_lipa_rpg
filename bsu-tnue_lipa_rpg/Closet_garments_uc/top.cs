@@ -177,24 +177,19 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             //Closet.instance.label1.Text = Closet.instance.ITEM_PRICE[0, 0].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 0, 0);
-            Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[0, 0]);
-            Closet.instance.displayItemDesc();
+            
         }
 
         private void top2_desc_Click(object sender, EventArgs e)
         {
             //Closet.instance.label1.Text = Closet.instance.ITEM_PRICE[0, 1].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 0, 1);
-            Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[0, 1]);
-            Closet.instance.displayItemDesc();
         }
 
         private void top3_desc_Click(object sender, EventArgs e)
         {
             //Closet.instance.label1.Text = Closet.instance.ITEM_PRICE[0, 2].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 0, 2);
-            Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[0, 2]);
-            Closet.instance.displayItemDesc();
         }
 
         private void top4_desc_Click(object sender, EventArgs e)
@@ -203,8 +198,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
 
 
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 0, 3);
-            Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[0, 3]);
-            Closet.instance.displayItemDesc();
+
         }
         private void top4_lbl_Click(object sender, EventArgs e)
         {

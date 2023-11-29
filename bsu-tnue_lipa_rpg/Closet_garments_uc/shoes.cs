@@ -42,8 +42,6 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             //Closet.instance.label4.Text = Closet.instance.ITEM_PRICE[3, 0].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 3,0);
-            Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[3, 0]);
-            Closet.instance.displayItemDesc();
         }
 
     }

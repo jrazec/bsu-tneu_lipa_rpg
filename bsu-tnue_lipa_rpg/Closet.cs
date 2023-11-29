@@ -64,6 +64,7 @@ namespace bsu_tnue_lipa_rpg
         public int[,] ITEM_ID = new int[4, 12];
         public string[,] ITEM_DESC = new string[4, 12];
         public double[,] ITEM_PRICE = new double[4, 12];
+        public bool[,] ITEM_OWN = new bool[4, 12];
         public Closet()
         {
             InitializeComponent();
@@ -307,6 +308,7 @@ namespace bsu_tnue_lipa_rpg
                                 }
                             }
                             ITEM_PRICE[0, TOP] = Convert.ToDouble(reader["price"]);
+                            ITEM_OWN[0, TOP] = (bool)reader["own"];
                             TOP++;
                         }
                         else if ((string)reader["class"] == "Bottom")
@@ -352,6 +354,7 @@ namespace bsu_tnue_lipa_rpg
                                 }
                             }
                             ITEM_PRICE[1, BOT] = Convert.ToDouble(reader["price"]);
+                            ITEM_OWN[1, BOT] = (bool)reader["own"];
                             BOT++;
                         }
                         else if ((string)reader["class"] == "Neck")
@@ -381,6 +384,7 @@ namespace bsu_tnue_lipa_rpg
                                 }
                             }
                             ITEM_PRICE[2, NECK] = Convert.ToDouble(reader["price"]);
+                            ITEM_OWN[2, NECK] = (bool)reader["own"];
                             NECK++;
                         }
                         else if ((string)reader["class"] == "Shoes")
@@ -396,6 +400,7 @@ namespace bsu_tnue_lipa_rpg
                                 shoes.instance.shoes1_pbox.Enabled = false;
                             }
                             ITEM_PRICE[3, SHOES] = Convert.ToDouble(reader["price"]);
+                            ITEM_OWN[3, SHOES] = (bool)reader["own"];
                             SHOES++;
                         }
                     }
@@ -440,27 +445,57 @@ namespace bsu_tnue_lipa_rpg
             }
             finally { mysqlConnection.Close(); }
         }
+        public void refundItems(string sr, int id)
+        {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);//for tb
+
+            try//---Try to open the sql connection
+            {
+                mysqlConnection.Open();
+                string updtStudItem = $"UPDATE student_items SET is_owned=false WHERE sr_code = '{sr}' AND item_id = {id};";
+                MySqlCommand updtStudItemCmd = new MySqlCommand(updtStudItem, mysqlConnection);
+                updtStudItemCmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally { mysqlConnection.Close(); }
+        }
 
         public void buy_refundItems(double[,] ITEM_PRICE,string[,] ITEMS,int i, int j)
         {
             //IF NOT OWN
-            DialogResult buy = MessageBox.Show($"This item cost: {ITEM_PRICE[i, j]:C}", "Warning", MessageBoxButtons.YesNo);
-            if (buy == DialogResult.Yes)
+            if (!ITEM_OWN[i, j])
             {
-                if(Bedroom.instance.CURRENT_MONEY < ITEM_PRICE[i,j])
+                DialogResult buy = MessageBox.Show($"This item cost: {ITEM_PRICE[i, j]:C}", "Buying", MessageBoxButtons.YesNo);
+                if (buy == DialogResult.Yes)
                 {
-                    MessageBox.Show("Not Enough Pera :'<","Awweeee",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
-                }
-                else
-                {
-                    //Bawasan pera nya here by ITEM PRICE
-                    MessageBox.Show($"You may now wear {ITEMS[i,j]}","Success!");
+                    if (Bedroom.instance.CURRENT_MONEY < ITEM_PRICE[i, j])
+                    {
+                        MessageBox.Show("Not Enough Pera :'<", "Awweeee", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        //Bawasan pera nya here by ITEM PRICE
+                        buyItems(Form1.STUDENT_USER_SR_CODE, ITEM_ID[i, j]);
+                        MessageBox.Show($"You may now wear {ITEMS[i, j]}", "Success!");
+                        displayItemDesc();
+                    }
                 }
             }
-          //IF OWN
-            /*
-             ARE YOU SURE YOU WANNA REFUND YOUR ITEM?
-             */
+            //IF OWN
+            else
+            {
+                DialogResult buy = MessageBox.Show($"Are you sure you want to refund: {ITEM_PRICE[i, j]:C}", "Warning", MessageBoxButtons.YesNo);
+                if (buy == DialogResult.Yes)
+                {
+                        //Dagdagan ung current money
+                        refundItems(Form1.STUDENT_USER_SR_CODE, ITEM_ID[i, j]);
+                        MessageBox.Show($"{ITEMS[i, j]} Cannot be worn..", "Refunded");
+                        displayItemDesc();
+                    }
+                }
         }
     }
 }

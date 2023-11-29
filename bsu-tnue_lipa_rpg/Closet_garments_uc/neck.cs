@@ -79,16 +79,14 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             //Closet.instance.label3.Text = Closet.instance.ITEM_PRICE[2, 0].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 0);
-            Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[2, 0]);
-            Closet.instance.displayItemDesc();
+
         }
 
         private void neck2_desc_Click(object sender, EventArgs e)
         {
             //Closet.instance.label3.Text = Closet.instance.ITEM_PRICE[2, 1].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 1);
-            Closet.instance.buyItems(Form1.STUDENT_USER_SR_CODE, Closet.instance.ITEM_ID[2, 1]);
-            Closet.instance.displayItemDesc();
+
         }
 
     }
