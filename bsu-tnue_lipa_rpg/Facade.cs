@@ -71,6 +71,15 @@ namespace bsu_tnue_lipa_rpg
                         //code here to initiate dialogue:
                         //
                         //
+
+                        //temporary code to go to map
+                        //if makapasok
+                        Map gotomap = new Map();
+                        this.Hide();
+                        gotomap.ShowDialog();
+                        this.Close();
+                        //else balik sa bedroom
+                        
                         
                     }
                 }

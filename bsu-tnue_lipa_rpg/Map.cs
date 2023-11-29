@@ -12,6 +12,15 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Map : Form
     {
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParams = base.CreateParams;
+                handleParams.ExStyle |= 0x02000000;
+                return handleParams;
+            }
+        }
         bool go_up, go_down, go_left, go_right;
         int walk = 10;
         public Map()
@@ -79,13 +88,15 @@ namespace bsu_tnue_lipa_rpg
 
                         //switch to CECS form
                         this.Hide();
-                        //CECS enter_cecs = new CECS();
-                        //enter_cecs.ShowDialog();
+                        CECS_bldg enter_cecs = new CECS_bldg();
+                        enter_cecs.ShowDialog();
+                        this.Close();
+                        
 
                     }
                 }
 
-                //enter ob building
+                //enter old building
                 if (bldg is PictureBox && (string)bldg.Tag == "ob")
                 {
                     if (map_charac.Bounds.IntersectsWith(bldg.Bounds))
@@ -104,8 +115,9 @@ namespace bsu_tnue_lipa_rpg
 
                         //switch to OB form
                         this.Hide();
-                        //OB enter_ob = new OB();
-                        //enter_ob.ShowDialog();
+                        Old_Bldg enter_ob = new Old_Bldg();
+                        enter_ob.ShowDialog();
+                        this.Close();
 
                     }
                 }

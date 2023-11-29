@@ -101,6 +101,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CECS_bldg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CECS_bldg.Designer.cs">
+      <DependentUpon>CECS_bldg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CECS_floors_uc\CECS_fifthflr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CECS_floors_uc\CECS_fifthflr.Designer.cs">
+      <DependentUpon>CECS_fifthflr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CECS_floors_uc\CECS_firstflr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CECS_floors_uc\CECS_firstflr.Designer.cs">
+      <DependentUpon>CECS_firstflr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CECS_floors_uc\CECS_fourthflr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CECS_floors_uc\CECS_fourthflr.Designer.cs">
+      <DependentUpon>CECS_fourthflr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CECS_floors_uc\CECS_secondflr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CECS_floors_uc\CECS_secondflr.Designer.cs">
+      <DependentUpon>CECS_secondflr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CECS_floors_uc\CECS_thirdflr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CECS_floors_uc\CECS_thirdflr.Designer.cs">
+      <DependentUpon>CECS_thirdflr.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_uc\Admin_Create.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -227,6 +263,42 @@
     <Compile Include="Map.Designer.cs">
       <DependentUpon>Map.cs</DependentUpon>
     </Compile>
+    <Compile Include="OB_floors_uc\OB_fifthflr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OB_floors_uc\OB_fifthflr.Designer.cs">
+      <DependentUpon>OB_fifthflr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OB_floors_uc\OB_firstflr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OB_floors_uc\OB_firstflr.Designer.cs">
+      <DependentUpon>OB_firstflr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OB_floors_uc\OB_fourthflr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OB_floors_uc\OB_fourthflr.Designer.cs">
+      <DependentUpon>OB_fourthflr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OB_floors_uc\OB_secondflr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OB_floors_uc\OB_secondflr.Designer.cs">
+      <DependentUpon>OB_secondflr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OB_floors_uc\OB_thirdflr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OB_floors_uc\OB_thirdflr.Designer.cs">
+      <DependentUpon>OB_thirdflr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Old_Bldg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Old_Bldg.Designer.cs">
+      <DependentUpon>Old_Bldg.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sign_up.cs">
@@ -235,6 +307,24 @@
     <Compile Include="Sign_up.Designer.cs">
       <DependentUpon>Sign_up.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CECS_bldg.resx">
+      <DependentUpon>CECS_bldg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CECS_floors_uc\CECS_fifthflr.resx">
+      <DependentUpon>CECS_fifthflr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CECS_floors_uc\CECS_firstflr.resx">
+      <DependentUpon>CECS_firstflr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CECS_floors_uc\CECS_fourthflr.resx">
+      <DependentUpon>CECS_fourthflr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CECS_floors_uc\CECS_secondflr.resx">
+      <DependentUpon>CECS_secondflr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CECS_floors_uc\CECS_thirdflr.resx">
+      <DependentUpon>CECS_thirdflr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_uc\Admin_Create.resx">
       <DependentUpon>Admin_Create.cs</DependentUpon>
     </EmbeddedResource>
@@ -299,6 +389,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Map.resx">
       <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OB_floors_uc\OB_fifthflr.resx">
+      <DependentUpon>OB_fifthflr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OB_floors_uc\OB_firstflr.resx">
+      <DependentUpon>OB_firstflr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OB_floors_uc\OB_fourthflr.resx">
+      <DependentUpon>OB_fourthflr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OB_floors_uc\OB_secondflr.resx">
+      <DependentUpon>OB_secondflr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OB_floors_uc\OB_thirdflr.resx">
+      <DependentUpon>OB_thirdflr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old_Bldg.resx">
+      <DependentUpon>Old_Bldg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
