@@ -172,20 +172,32 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         private void top1_desc_Click(object sender, EventArgs e)
         {
             //Closet.instance.label1.Text = Closet.instance.ITEM_PRICE[0, 0].ToString();
-            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 0, 0,emptyIcon);
+            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 0, 0, () =>{
+                emptyIcon();
+                top1_sel = false;
+                top1_pbox.BorderStyle = BorderStyle.Fixed3D;
+            });
             
         }
 
         private void top2_desc_Click(object sender, EventArgs e)
         {
             //Closet.instance.label1.Text = Closet.instance.ITEM_PRICE[0, 1].ToString();
-            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 0, 1,emptyIcon);
+            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 0, 1, () =>{
+                emptyIcon();
+                top2_sel = false;
+                top2_pbox.BorderStyle = BorderStyle.Fixed3D;
+            });
         }
 
         private void top3_desc_Click(object sender, EventArgs e)
         {
             //Closet.instance.label1.Text = Closet.instance.ITEM_PRICE[0, 2].ToString();
-            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 0, 2,emptyIcon);
+            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 0, 2, () =>{
+                emptyIcon();
+                top3_sel = false;
+                top3_pbox.BorderStyle = BorderStyle.Fixed3D;
+            });
         }
 
         private void top4_desc_Click(object sender, EventArgs e)
@@ -193,7 +205,11 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             //Closet.instance.label1.Text = Closet.instance.ITEM_PRICE[0, 3].ToString();
 
 
-            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 0, 3,emptyIcon);
+            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 0, 3, () =>{
+                emptyIcon();
+                top4_sel = false;
+                top4_pbox.BorderStyle = BorderStyle.Fixed3D;
+            });
 
         }
         private void top4_lbl_Click(object sender, EventArgs e)

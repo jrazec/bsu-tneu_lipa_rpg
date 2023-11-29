@@ -48,8 +48,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             {
                 neck1_sel = false;
                 neck1_pbox.BorderStyle = BorderStyle.Fixed3D;
-                Closet.Garments_Worn[0, 2] = "";
-                Closet.instance.necklace_pbox.Image = Properties.Resources.neck_icon;
+                emptyIcon();
             }
             Closet.instance.label3.Text = Closet.Garments_Worn[0, 2];
         }
@@ -69,8 +68,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             {
                 neck2_sel = false;
                 neck2_pbox.BorderStyle = BorderStyle.Fixed3D;
-                Closet.Garments_Worn[0, 2] = "";
-                Closet.instance.necklace_pbox.Image = Properties.Resources.neck_icon;
+                emptyIcon();
             }
             Closet.instance.label3.Text = Closet.Garments_Worn[0, 2];
         }
@@ -78,14 +76,22 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         private void neck1_desc_Click(object sender, EventArgs e)
         {
             //Closet.instance.label3.Text = Closet.instance.ITEM_PRICE[2, 0].ToString();
-            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 0, emptyIcon);
+            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 0, () => {
+                emptyIcon();
+                neck1_sel = false;
+                neck1_pbox.BorderStyle = BorderStyle.Fixed3D;
+            });
 
         }
 
         private void neck2_desc_Click(object sender, EventArgs e)
         {
             //Closet.instance.label3.Text = Closet.instance.ITEM_PRICE[2, 1].ToString();
-            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 1,emptyIcon);
+            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 1, () => {
+                emptyIcon();
+                neck2_sel = false;
+                neck2_pbox.BorderStyle = BorderStyle.Fixed3D;
+            });
 
         }
 
