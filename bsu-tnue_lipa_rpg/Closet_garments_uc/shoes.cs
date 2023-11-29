@@ -17,16 +17,43 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             InitializeComponent();
             instance = this;
+            if (Bedroom.instance.CHARAC_ID == 1)
+            {
+                shoes1_pbox.Image = Properties.Resources.male_casual_front;
+                shoes2_pbox.Image = Properties.Resources.Shoes;
+                shoes3_pbox.Image = Properties.Resources._1;
+            }
+            else
+            {
+                shoes1_pbox.Image = Properties.Resources.female_casual_front;
+                shoes2_pbox.Image = Properties.Resources.Shoes;
+                shoes3_pbox.Image = Properties.Resources._1;
+            }
         }
         public bool shoes1_sel = false;
+        public bool shoes2_sel = false;
+        public bool shoes3_sel = false;
+        public bool shoes4_sel = false;
         private void shoes1_pbox_Click(object sender, EventArgs e)
         {
             if (shoes1_sel == false)
             {
                 shoes1_sel = true;
+                shoes2_sel = false;
+                shoes3_sel = false;
                 shoes1_pbox.BorderStyle = BorderStyle.FixedSingle;
-                Closet.Garments_Worn[0, 3] = "gen-shoes";
-                Closet.instance.shoes_pbox.Image = Properties.Resources.Shoes;
+                shoes2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                shoes3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                if (Bedroom.instance.CHARAC_ID == 1)
+                {
+                    Closet.Garments_Worn[0, 3] = "cas-shoes";
+                    Closet.instance.shoes_pbox.Image = Properties.Resources.male_casual_front;
+                }
+                else
+                {
+                    Closet.Garments_Worn[0, 3] = "cas-shoes";
+                    Closet.instance.shoes_pbox.Image = Properties.Resources.female_casual_front;
+                }
             }
             else
             {
@@ -34,8 +61,53 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
                 emptyIcon();
             }
-            Closet.instance.label4.Text = Closet.Garments_Worn[0, 3];
+            Closet.instance.label1.Text = Closet.Garments_Worn[0, 3];
         }
+
+        private void shoes2_pbox_Click(object sender, EventArgs e)
+        {
+            if (shoes2_sel == false)
+            {
+                shoes2_sel = true;
+                shoes1_sel = false;
+                shoes3_sel = false;
+                shoes2_pbox.BorderStyle = BorderStyle.FixedSingle;
+                shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                shoes3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 3] = "gen-shoes";
+                Closet.instance.shoes_pbox.Image = Properties.Resources.Shoes;
+            }
+            else
+            {
+                shoes2_sel = false;
+                shoes2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                emptyIcon();
+            }
+            Closet.instance.label1.Text = Closet.Garments_Worn[0, 3];
+        }
+
+        private void shoes3_pbox_Click(object sender, EventArgs e)
+        {
+            if (shoes3_sel == false)
+            {
+                shoes3_sel = true;
+                shoes1_sel = false;
+                shoes2_sel = false;
+                shoes3_pbox.BorderStyle = BorderStyle.FixedSingle;
+                shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                shoes2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                Closet.Garments_Worn[0, 3] = "w-shoes";
+                Closet.instance.shoes_pbox.Image = Properties.Resources._1;
+            }
+            else
+            {
+                shoes3_sel = false;
+                shoes3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                emptyIcon();
+            }
+            Closet.instance.label3.Text = Closet.Garments_Worn[0, 3];
+        }
+    
 
         private void shoes1_desc_Click(object sender, EventArgs e)
         {
@@ -46,6 +118,25 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
             });
         }
+        private void shoes2_desc_Click(object sender, EventArgs e)
+        {
+            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 3, 1, () => {
+                emptyIcon();
+                shoes2_sel = false;
+                shoes2_pbox.BorderStyle = BorderStyle.Fixed3D;
+            });
+        }
+
+        private void shoes3_desc_Click(object sender, EventArgs e)
+        {
+            Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 3, 2, () => {
+                emptyIcon();
+                shoes3_sel = false;
+                shoes3_pbox.BorderStyle = BorderStyle.Fixed3D;
+            });
+        }
+
+
         private void emptyIcon()
         {
             Closet.Garments_Worn[0, 3] = "";

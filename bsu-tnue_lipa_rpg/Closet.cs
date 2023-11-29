@@ -52,19 +52,20 @@ namespace bsu_tnue_lipa_rpg
         public static string[,]
             GARMENTS_MATCH = {
                         //0           1            2          
-                        {"uni-top","uni-bot","gen-shoes"},//For uni     - 0   
-                        {"org-top","org-bot","gen-shoes"},//For org     - 1
-                        {"cas-top","cas-bot","gen-shoes"},//For casual  - 2   
-                        {"pe-top" ,"pe-bot" ,"gen-shoes"}//For pe       - 3 
+                        {"uni-top","uni-bot","gen-shoes"},//For uni      - 0   
+                        {"org-top","org-bot","w-shoes"},//For org        - 1
+                        {"cas-top","cas-bot","cas-shoes"},//For casual   - 2   
+                        {"pe-top" ,"pe-bot" ,"w-shoes"}//For pe          - 3 
                         };
 
         public static string[,] Garments_Worn = new string[1, 4];
 
-        public string[,] ITEMS = new string[4, 12];// this is HOW TO DECLARE MULTIDIMENSIONAL ARRAY!?
-        public int[,] ITEM_ID = new int[4, 12];
-        public string[,] ITEM_DESC = new string[4, 12];
-        public double[,] ITEM_PRICE = new double[4, 12];
-        public bool[,] ITEM_OWN = new bool[4, 12];
+        //i = category, j = records
+        public string[,] ITEMS = new string[4, 15];// this is HOW TO DECLARE MULTIDIMENSIONAL ARRAY!?
+        public int[,] ITEM_ID = new int[4, 15];
+        public string[,] ITEM_DESC = new string[4, 15];
+        public double[,] ITEM_PRICE = new double[4, 15];
+        public bool[,] ITEM_OWN = new bool[4, 15];
         public Closet()
         {
             InitializeComponent();
@@ -82,7 +83,7 @@ namespace bsu_tnue_lipa_rpg
         }
         private void backtoroom_btn_Click(object sender, EventArgs e)
         {
-            //if (GARMENTS[Bedroom.instance.DAY_ID,0] == Garments_Worn[0,0])//Eto ay pancheck if tama ba ung garment sa given day
+            //THIS IS PANGDRESS SA CHARAC ONCE THE PLAYER LEFT THE CLOSET
 
             //IF THE PLAYER WORN THE CORRECT PAIRED GARMENTS
             if ((GARMENTS_MATCH[0, 0] == Garments_Worn[0, 0] && GARMENTS_MATCH[0, 1] == Garments_Worn[0, 1] && GARMENTS_MATCH[0, 2] == Garments_Worn[0, 3]) ||
@@ -113,7 +114,7 @@ namespace bsu_tnue_lipa_rpg
                     Bedroom.instance.CHARAC_CLOTHES = "CASUAL";
                 }
 
-
+                Bedroom.instance.checkMoney();
                 Bedroom.instance.characBack(Bedroom.instance.bedroom_charac);
                 this.Hide();
                 Bedroom.instance.Show();//to load the recent form
@@ -236,6 +237,8 @@ namespace bsu_tnue_lipa_rpg
             neck.instance.neck1_lbl.Text = ITEMS[2, 0];
             neck.instance.neck2_lbl.Text = ITEMS[2, 1];
             shoes.instance.shoes1_lbl.Text = ITEMS[3, 0];
+            shoes.instance.shoes2_lbl.Text = ITEMS[3, 1];
+            shoes.instance.shoes3_lbl.Text = ITEMS[3, 2];
         }
 
 
@@ -392,12 +395,34 @@ namespace bsu_tnue_lipa_rpg
                             if ((bool)reader["own"])
                             {
                                 ITEM_DESC[3, SHOES] = (string)reader["dsc"];
-                                shoes.instance.shoes1_pbox.Enabled = true ;
+                                if (SHOES == 0)
+                                {
+                                    shoes.instance.shoes1_pbox.Enabled = true;
+                                }
+                                else if (SHOES == 1)
+                                {
+                                    shoes.instance.shoes2_pbox.Enabled = true;
+                                }
+                                else if (SHOES == 2)
+                                {
+                                    shoes.instance.shoes3_pbox.Enabled = true;
+                                }
                             }
                             else
                             {
                                 ITEM_DESC[3, SHOES] = "Unlock";
-                                shoes.instance.shoes1_pbox.Enabled = false;
+                                if (SHOES == 0)
+                                {
+                                    shoes.instance.shoes1_pbox.Enabled = false;
+                                }
+                                else if (SHOES == 1)
+                                {
+                                    shoes.instance.shoes2_pbox.Enabled = false;
+                                }
+                                else if (SHOES == 2)
+                                {
+                                    shoes.instance.shoes3_pbox.Enabled = false;
+                                }
                             }
                             ITEM_PRICE[3, SHOES] = Convert.ToDouble(reader["price"]);
                             ITEM_OWN[3, SHOES] = (bool)reader["own"];
@@ -416,6 +441,8 @@ namespace bsu_tnue_lipa_rpg
                 neck.instance.neck1_desc.Text = ITEM_DESC[2, 0];
                 neck.instance.neck2_desc.Text = ITEM_DESC[2, 1];
                 shoes.instance.shoes1_desc.Text = ITEM_DESC[3, 0];
+                shoes.instance.shoes2_desc.Text = ITEM_DESC[3, 1];
+                shoes.instance.shoes3_desc.Text = ITEM_DESC[3, 2];
             }
             catch (Exception ex)
             {

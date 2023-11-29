@@ -93,7 +93,9 @@ namespace bsu_tnue_lipa_rpg
                                                     ('{Form1.STUDENT_USER_SR_CODE}',1010,false),
                                                     ('{Form1.STUDENT_USER_SR_CODE}',1011,false),
                                                     ('{Form1.STUDENT_USER_SR_CODE}',1014,false),
-                                                    ('{Form1.STUDENT_USER_SR_CODE}',1015,false);
+                                                    ('{Form1.STUDENT_USER_SR_CODE}',1015,false),
+                                                    ('{Form1.STUDENT_USER_SR_CODE}',1017,false),
+                                                    ('{Form1.STUDENT_USER_SR_CODE}',1018,false);
                                            ";
                     MySqlCommand updtChar_insrtStudItemsCmd = new MySqlCommand(updateChar_insrtStudItems, mySqlConnection);
                     updtChar_insrtStudItemsCmd.ExecuteNonQuery();
@@ -144,7 +146,9 @@ namespace bsu_tnue_lipa_rpg
                                                   ('{Form1.STUDENT_USER_SR_CODE}',1012,false),
                                                   ('{Form1.STUDENT_USER_SR_CODE}',1013,false),
                                                   ('{Form1.STUDENT_USER_SR_CODE}',1014,false),
-                                                  ('{Form1.STUDENT_USER_SR_CODE}',1015,false);
+                                                  ('{Form1.STUDENT_USER_SR_CODE}',1015,false),
+                                                  ('{Form1.STUDENT_USER_SR_CODE}',1016,false),
+                                                  ('{Form1.STUDENT_USER_SR_CODE}',1018,false);
                                            ";
                     MySqlCommand updtChar_insrtStudItemsCmd = new MySqlCommand(updateChar_insrtStudItems, mySqlConnection);
                     updtChar_insrtStudItemsCmd.ExecuteNonQuery();
