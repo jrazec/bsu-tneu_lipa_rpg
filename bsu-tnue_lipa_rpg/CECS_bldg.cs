@@ -14,10 +14,6 @@ namespace bsu_tnue_lipa_rpg
     public partial class CECS_bldg : Form
     {
         public static CECS_bldg instance;
-        
-        CECS_thirdflr cecs3 = new CECS_thirdflr();
-        CECS_fourthflr cecs4 = new CECS_fourthflr();
-        CECS_fifthflr cecs5 = new CECS_fifthflr();
         public CECS_bldg()
         {
             InitializeComponent();
@@ -58,37 +54,36 @@ namespace bsu_tnue_lipa_rpg
             CECS_secondflr.INSTANCE.Show();
             CECS_secondflr.INSTANCE.cecssecondWalkTimer.Start();
             addUC(CECS_secondflr.INSTANCE);
-
         }
 
         private void flr3_pbox_Click(object sender, EventArgs e)
         {
             cecscontainer_panel.Visible = true;
+            cecscontainer_panel.BringToFront();
 
-            cecs3 = CECS_thirdflr.instance;
-            cecs3.Show();
-
-            addUC(cecs3);
+            CECS_thirdflr.INSTANCE.Show();
+            CECS_thirdflr.INSTANCE.cecsthirdWalkTimer.Start();
+            addUC(CECS_thirdflr.INSTANCE);
         }
 
         private void flr4_pbox_Click(object sender, EventArgs e)
         {
             cecscontainer_panel.Visible = true;
+            cecscontainer_panel.BringToFront();
 
-            cecs4 = CECS_fourthflr.instance;
-            cecs4.Show();
-
-            addUC(cecs4);
+            CECS_fourthflr.INSTANCE.Show();
+            CECS_fourthflr.INSTANCE.cecsfourthWalkTimer.Start();
+            addUC(CECS_fourthflr.INSTANCE);
         }
 
         private void flr5_pbox_Click(object sender, EventArgs e)
         {
             cecscontainer_panel.Visible = true;
+            cecscontainer_panel.BringToFront();
 
-            cecs5 = CECS_fifthflr.instance;
-            cecs5.Show();
-
-            addUC(cecs5);
+            CECS_fifthflr.INSTANCE.Show();
+            CECS_fifthflr.INSTANCE.cecsfifthWalkTimer.Start();
+            addUC(CECS_fifthflr.INSTANCE);
         }
     }
 }

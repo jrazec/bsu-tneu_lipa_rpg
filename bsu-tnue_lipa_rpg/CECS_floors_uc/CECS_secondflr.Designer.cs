@@ -43,7 +43,7 @@
             this.label1.BackColor = System.Drawing.Color.DarkGreen;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(357, 311);
+            this.label1.Location = new System.Drawing.Point(1296, 285);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 23);
             this.label1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             // elevcollision_pbox
             // 
-            this.elevcollision_pbox.Location = new System.Drawing.Point(465, 241);
+            this.elevcollision_pbox.Location = new System.Drawing.Point(1404, 215);
             this.elevcollision_pbox.Name = "elevcollision_pbox";
             this.elevcollision_pbox.Size = new System.Drawing.Size(29, 185);
             this.elevcollision_pbox.TabIndex = 1;

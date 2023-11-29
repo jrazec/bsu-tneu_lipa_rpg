@@ -22,12 +22,6 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
                     instance = new CECS_secondflr();
                 }
                 return instance;
-                /*else
-                {
-                    return instance;
-                }    
-                */
-
             }
         }
         protected override CreateParams CreateParams
@@ -83,7 +77,6 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         public CECS_secondflr()
         {
             InitializeComponent();
-            instance = this;
         }
         private void cecssecondWalkTimer_Tick(object sender, EventArgs e)
         {
@@ -124,11 +117,9 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
                         go_up = false;
                         go_down = false;
 
-                        //proceed to elev -- to be debugged
+                        //proceed to elev
                         this.Hide();
                         CECS_bldg.instance.cecscontainer_panel.Visible = false;
-                        //cecssecondWalkTimer.Start();
-
                     }
                 }
             }

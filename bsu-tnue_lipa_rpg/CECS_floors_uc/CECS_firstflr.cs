@@ -24,12 +24,6 @@ namespace bsu_tnue_lipa_rpg
                     instance = new CECS_firstflr(); 
                 }
                 return instance;
-                /*else
-                {
-                    return instance;
-                }    
-                */
-
             }
         }
         protected override CreateParams CreateParams
@@ -86,14 +80,6 @@ namespace bsu_tnue_lipa_rpg
         public CECS_firstflr()
         {
             InitializeComponent();
-            //instance = this;
-            //cecsfirstWalkTimer.Start();
-            //this.Focus();
-            //this.KeyDown += key_is_down;
-            //this.KeyUp += key_is_up;
-            //this.TabStop = true;
-            //this.Enter += (sender, e) => this.Focus();
-
         }
 
         private void cecsfirstWalkTimer_Tick(object sender, EventArgs e)
@@ -142,8 +128,6 @@ namespace bsu_tnue_lipa_rpg
                         CECS_bldg.instance.Close();
                         Map returntomap = new Map();
                         returntomap.ShowDialog();
-                       
-
                     }
                 }
 
@@ -164,12 +148,9 @@ namespace bsu_tnue_lipa_rpg
                         go_up = false;
                         go_down = false;
 
-                        //proceed to elev -- to be fixed
+                        //proceed to elev
                         this.Hide();
                         CECS_bldg.instance.cecscontainer_panel.Visible = false;
-                        //cecsfirstWalkTimer.Enabled = true;
-                        //cecsfirstWalkTimer.Start();
-                        
                     }
                 }
             }
