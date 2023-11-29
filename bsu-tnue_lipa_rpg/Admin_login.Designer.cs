@@ -141,6 +141,7 @@
             this.login_btn.TabIndex = 10;
             this.login_btn.Text = "LOGIN";
             this.login_btn.UseVisualStyleBackColor = false;
+            this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
             // 
             // back_btn
             // 
@@ -155,6 +156,7 @@
             this.back_btn.TabIndex = 9;
             this.back_btn.Text = "BACK";
             this.back_btn.UseVisualStyleBackColor = false;
+            this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
             // 
             // Admin_login
             // 
@@ -174,7 +176,7 @@
             this.Controls.Add(this.admin_user_txt);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Admin_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin_login";

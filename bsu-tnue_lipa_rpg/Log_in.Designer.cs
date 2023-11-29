@@ -38,6 +38,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.admin_login_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -147,12 +148,27 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // admin_login_btn
+            // 
+            this.admin_login_btn.BackColor = System.Drawing.Color.Maroon;
+            this.admin_login_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.admin_login_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin_login_btn.ForeColor = System.Drawing.Color.Transparent;
+            this.admin_login_btn.Location = new System.Drawing.Point(939, 583);
+            this.admin_login_btn.Name = "admin_login_btn";
+            this.admin_login_btn.Size = new System.Drawing.Size(199, 44);
+            this.admin_login_btn.TabIndex = 10;
+            this.admin_login_btn.Text = "ADMIN LOGIN";
+            this.admin_login_btn.UseVisualStyleBackColor = false;
+            this.admin_login_btn.Click += new System.EventHandler(this.admin_login_btn_Click);
+            // 
             // Log_in
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.admin_login_btn);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
@@ -187,5 +203,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button admin_login_btn;
     }
 }

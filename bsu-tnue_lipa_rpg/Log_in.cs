@@ -84,5 +84,13 @@ namespace bsu_tnue_lipa_rpg
                 this.Close();
             }
         }
+
+        private void admin_login_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_login admin = new Admin_login();
+            admin.ShowDialog();
+            this.Close();
+        }
     }
 }

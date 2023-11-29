@@ -101,22 +101,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin_Create.cs">
+    <Compile Include="Admin_uc\Admin_Create.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin_Create.Designer.cs">
+    <Compile Include="Admin_uc\Admin_Create.Designer.cs">
       <DependentUpon>Admin_Create.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_Delete.cs">
+    <Compile Include="Admin_uc\Admin_Delete.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin_Delete.Designer.cs">
+    <Compile Include="Admin_uc\Admin_Delete.Designer.cs">
       <DependentUpon>Admin_Delete.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_Home.cs">
+    <Compile Include="Admin_uc\Admin_Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin_Home.Designer.cs">
+    <Compile Include="Admin_uc\Admin_Home.Designer.cs">
       <DependentUpon>Admin_Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin_login.cs">
@@ -125,10 +125,10 @@
     <Compile Include="Admin_login.Designer.cs">
       <DependentUpon>Admin_login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_Read.cs">
+    <Compile Include="Admin_uc\Admin_Read.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin_Read.Designer.cs">
+    <Compile Include="Admin_uc\Admin_Read.Designer.cs">
       <DependentUpon>Admin_Read.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin_section.cs">
@@ -137,10 +137,10 @@
     <Compile Include="Admin_section.Designer.cs">
       <DependentUpon>Admin_section.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_Update.cs">
+    <Compile Include="Admin_uc\Admin_Update.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin_Update.Designer.cs">
+    <Compile Include="Admin_uc\Admin_Update.Designer.cs">
       <DependentUpon>Admin_Update.cs</DependentUpon>
     </Compile>
     <Compile Include="Character_sel.cs">
@@ -235,25 +235,25 @@
     <Compile Include="Sign_up.Designer.cs">
       <DependentUpon>Sign_up.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admin_Create.resx">
+    <EmbeddedResource Include="Admin_uc\Admin_Create.resx">
       <DependentUpon>Admin_Create.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_Delete.resx">
+    <EmbeddedResource Include="Admin_uc\Admin_Delete.resx">
       <DependentUpon>Admin_Delete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_Home.resx">
+    <EmbeddedResource Include="Admin_uc\Admin_Home.resx">
       <DependentUpon>Admin_Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_login.resx">
       <DependentUpon>Admin_login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_Read.resx">
+    <EmbeddedResource Include="Admin_uc\Admin_Read.resx">
       <DependentUpon>Admin_Read.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_section.resx">
       <DependentUpon>Admin_section.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_Update.resx">
+    <EmbeddedResource Include="Admin_uc\Admin_Update.resx">
       <DependentUpon>Admin_Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Character_sel.resx">
