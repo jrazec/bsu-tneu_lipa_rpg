@@ -127,6 +127,7 @@
             this.exit_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.exit_pbox.TabIndex = 8;
             this.exit_pbox.TabStop = false;
+            this.exit_pbox.Click += new System.EventHandler(this.exit_pbox_Click);
             // 
             // login_btn
             // 

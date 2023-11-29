@@ -30,35 +30,33 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.name_ign_lbl = new System.Windows.Forms.Label();
+            this.id_pbox = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.create_pbox = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.delete_lbl = new System.Windows.Forms.Label();
             this.update_lbl = new System.Windows.Forms.Label();
             this.read_lbl = new System.Windows.Forms.Label();
             this.create_lbl = new System.Windows.Forms.Label();
             this.home_lbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.search_txt = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.exit_btn = new System.Windows.Forms.Button();
-            this.search_btn = new System.Windows.Forms.Button();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.id_pbox = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.create_pbox = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.search_txt = new System.Windows.Forms.TextBox();
+            this.search_btn = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.exit_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.id_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -68,6 +66,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -107,6 +107,27 @@
             this.name_ign_lbl.TabIndex = 13;
             this.name_ign_lbl.Text = "name(ign)";
             // 
+            // id_pbox
+            // 
+            this.id_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.male_org_front;
+            this.id_pbox.Location = new System.Drawing.Point(62, 53);
+            this.id_pbox.Name = "id_pbox";
+            this.id_pbox.Size = new System.Drawing.Size(116, 107);
+            this.id_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.id_pbox.TabIndex = 11;
+            this.id_pbox.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBox6.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._111_01;
+            this.pictureBox6.Location = new System.Drawing.Point(16, 607);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(29, 25);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 10;
+            this.pictureBox6.TabStop = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -117,6 +138,57 @@
             this.label5.Size = new System.Drawing.Size(109, 26);
             this.label5.TabIndex = 9;
             this.label5.Text = "RazBerYie";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.trash;
+            this.pictureBox5.Location = new System.Drawing.Point(65, 480);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 8;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.cloud_upload_alt;
+            this.pictureBox4.Location = new System.Drawing.Point(64, 417);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 7;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.search;
+            this.pictureBox3.Location = new System.Drawing.Point(62, 354);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabStop = false;
+            // 
+            // create_pbox
+            // 
+            this.create_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.select;
+            this.create_pbox.Location = new System.Drawing.Point(64, 291);
+            this.create_pbox.Name = "create_pbox";
+            this.create_pbox.Size = new System.Drawing.Size(25, 25);
+            this.create_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.create_pbox.TabIndex = 6;
+            this.create_pbox.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.home;
+            this.pictureBox1.Location = new System.Drawing.Point(64, 227);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // delete_lbl
             // 
@@ -183,141 +255,6 @@
             this.panel2.Size = new System.Drawing.Size(243, 55);
             this.panel2.TabIndex = 12;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.LightCoral;
-            this.panel3.Controls.Add(this.search_txt);
-            this.panel3.Controls.Add(this.search_btn);
-            this.panel3.Controls.Add(this.pictureBox7);
-            this.panel3.Location = new System.Drawing.Point(241, -3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(911, 57);
-            this.panel3.TabIndex = 1;
-            // 
-            // search_txt
-            // 
-            this.search_txt.BackColor = System.Drawing.Color.White;
-            this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.search_txt.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_txt.Location = new System.Drawing.Point(685, 18);
-            this.search_txt.Name = "search_txt";
-            this.search_txt.Size = new System.Drawing.Size(180, 29);
-            this.search_txt.TabIndex = 14;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(271, 81);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(862, 489);
-            this.panel4.TabIndex = 14;
-            // 
-            // exit_btn
-            // 
-            this.exit_btn.BackColor = System.Drawing.Color.Maroon;
-            this.exit_btn.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.power;
-            this.exit_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit_btn.ForeColor = System.Drawing.Color.Maroon;
-            this.exit_btn.Location = new System.Drawing.Point(1097, 587);
-            this.exit_btn.Name = "exit_btn";
-            this.exit_btn.Size = new System.Drawing.Size(42, 40);
-            this.exit_btn.TabIndex = 13;
-            this.exit_btn.UseVisualStyleBackColor = false;
-            // 
-            // search_btn
-            // 
-            this.search_btn.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.search;
-            this.search_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.search_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_btn.Location = new System.Drawing.Point(868, 19);
-            this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(24, 27);
-            this.search_btn.TabIndex = 12;
-            this.search_btn.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.main_title;
-            this.pictureBox7.Location = new System.Drawing.Point(15, 18);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(374, 26);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 10;
-            this.pictureBox7.TabStop = false;
-            // 
-            // id_pbox
-            // 
-            this.id_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.male_org_front;
-            this.id_pbox.Location = new System.Drawing.Point(62, 53);
-            this.id_pbox.Name = "id_pbox";
-            this.id_pbox.Size = new System.Drawing.Size(116, 107);
-            this.id_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.id_pbox.TabIndex = 11;
-            this.id_pbox.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox6.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._111_01;
-            this.pictureBox6.Location = new System.Drawing.Point(16, 607);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(29, 25);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 10;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.trash;
-            this.pictureBox5.Location = new System.Drawing.Point(65, 480);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.cloud_upload_alt;
-            this.pictureBox4.Location = new System.Drawing.Point(64, 417);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.search;
-            this.pictureBox3.Location = new System.Drawing.Point(62, 354);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
-            // 
-            // create_pbox
-            // 
-            this.create_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.select;
-            this.create_pbox.Location = new System.Drawing.Point(64, 291);
-            this.create_pbox.Name = "create_pbox";
-            this.create_pbox.Size = new System.Drawing.Size(25, 25);
-            this.create_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.create_pbox.TabIndex = 6;
-            this.create_pbox.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.home;
-            this.pictureBox1.Location = new System.Drawing.Point(64, 227);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
@@ -368,6 +305,70 @@
             this.panel10.Size = new System.Drawing.Size(243, 55);
             this.panel10.TabIndex = 16;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightCoral;
+            this.panel3.Controls.Add(this.search_txt);
+            this.panel3.Controls.Add(this.search_btn);
+            this.panel3.Controls.Add(this.pictureBox7);
+            this.panel3.Location = new System.Drawing.Point(241, -3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(911, 57);
+            this.panel3.TabIndex = 1;
+            // 
+            // search_txt
+            // 
+            this.search_txt.BackColor = System.Drawing.Color.White;
+            this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.search_txt.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_txt.Location = new System.Drawing.Point(685, 18);
+            this.search_txt.Name = "search_txt";
+            this.search_txt.Size = new System.Drawing.Size(180, 29);
+            this.search_txt.TabIndex = 14;
+            // 
+            // search_btn
+            // 
+            this.search_btn.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.search;
+            this.search_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.search_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_btn.Location = new System.Drawing.Point(868, 19);
+            this.search_btn.Name = "search_btn";
+            this.search_btn.Size = new System.Drawing.Size(24, 27);
+            this.search_btn.TabIndex = 12;
+            this.search_btn.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.main_title;
+            this.pictureBox7.Location = new System.Drawing.Point(15, 18);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(374, 26);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 10;
+            this.pictureBox7.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(271, 81);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(862, 489);
+            this.panel4.TabIndex = 14;
+            // 
+            // exit_btn
+            // 
+            this.exit_btn.BackColor = System.Drawing.Color.Maroon;
+            this.exit_btn.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.power;
+            this.exit_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit_btn.ForeColor = System.Drawing.Color.Maroon;
+            this.exit_btn.Location = new System.Drawing.Point(1097, 587);
+            this.exit_btn.Name = "exit_btn";
+            this.exit_btn.Size = new System.Drawing.Size(42, 40);
+            this.exit_btn.TabIndex = 13;
+            this.exit_btn.UseVisualStyleBackColor = false;
+            this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
+            // 
             // Admin_section
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -382,12 +383,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Admin_section";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin_section";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.id_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -397,6 +396,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }

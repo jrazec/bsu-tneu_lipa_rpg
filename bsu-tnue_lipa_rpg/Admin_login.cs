@@ -29,12 +29,25 @@ namespace bsu_tnue_lipa_rpg
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            if(admin_user_txt.Text == username && admin_pass_txt.Text == username)
+            if(admin_user_txt.Text == username && admin_pass_txt.Text == password)
             {
                 MessageBox.Show("Login Success.");
                 this.Hide();
                 Admin_section ads = new Admin_section();
                 ads.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Wrong Credentials!");
+            }
+        }
+
+        private void exit_pbox_Click(object sender, EventArgs e)
+        {
+            DialogResult sure = MessageBox.Show("Are you sure you want to close the program?", "Warning", MessageBoxButtons.YesNo);
+            if (sure == DialogResult.Yes)
+            {
                 this.Close();
             }
         }

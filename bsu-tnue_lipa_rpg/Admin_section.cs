@@ -240,5 +240,17 @@ namespace bsu_tnue_lipa_rpg
             pictureBox1.BackColor = Color.Maroon;
 
         }
+
+        private void exit_btn_Click(object sender, EventArgs e)
+        {
+            DialogResult sure = MessageBox.Show("Do you want to go back?", "Warning", MessageBoxButtons.YesNo);
+            if (sure == DialogResult.Yes)
+            {
+                this.Hide();
+                Form1 main = new Form1();
+                main.ShowDialog();
+                this.Close();
+            }
+        }
     }
 }
