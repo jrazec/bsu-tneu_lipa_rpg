@@ -440,5 +440,27 @@ namespace bsu_tnue_lipa_rpg
             }
             finally { mysqlConnection.Close(); }
         }
+
+        public void buy_refundItems(double[,] ITEM_PRICE,string[,] ITEMS,int i, int j)
+        {
+            //IF NOT OWN
+            DialogResult buy = MessageBox.Show($"This item cost: {ITEM_PRICE[i, j]:C}", "Warning", MessageBoxButtons.YesNo);
+            if (buy == DialogResult.Yes)
+            {
+                if(Bedroom.instance.CURRENT_MONEY < ITEM_PRICE[i,j])
+                {
+                    MessageBox.Show("Not Enough Pera :'<","Awweeee",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    //Bawasan pera nya here by ITEM PRICE
+                    MessageBox.Show($"You may now wear {ITEMS[i,j]}","Success!");
+                }
+            }
+          //IF OWN
+            /*
+             ARE YOU SURE YOU WANNA REFUND YOUR ITEM?
+             */
+        }
     }
 }
