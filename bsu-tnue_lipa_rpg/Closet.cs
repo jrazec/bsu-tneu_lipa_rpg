@@ -481,6 +481,7 @@ namespace bsu_tnue_lipa_rpg
                         buyItems(Form1.STUDENT_USER_SR_CODE, ITEM_ID[i, j]);
                         MessageBox.Show($"You may now wear {ITEMS[i, j]}", "Success!");
                         displayItemDesc();
+
                     }
                 }
             }

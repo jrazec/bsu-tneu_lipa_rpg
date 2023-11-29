@@ -479,7 +479,9 @@ choose the right ones.";
                 ON gameplay_records.task_id=tasks.task_id
                 INNER JOIN students
                 ON gameplay_records.sr_code=students.sr_code
-                WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'";
+                WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
+                ORDER BY tasks.task_id DESC
+                LIMIT 1";
 
             try
             {
@@ -515,7 +517,9 @@ choose the right ones.";
                 FROM gameplay_records 
                 INNER JOIN students
                 ON gameplay_records.sr_code=students.sr_code
-                WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'";
+                WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
+                ORDER BY gameplay_records.task_id DESC
+                LIMIT 1;";
             //SHOULD BE LATEST UNG MONEY NA MAKUKUHA, siguro limit by one tas desc order
 
             try
@@ -542,5 +546,44 @@ choose the right ones.";
             currency_lbl.Text = CURRENT_MONEY.ToString("C");
         }
 
+        public void checkTask()
+        {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
+
+            string slctCurrMoney = $@"
+                SELECT gameplay_records.task_id AS task
+                FROM tasks 
+                INNER JOIN gameplay_records
+                ON gameplay_records.task_id=tasks.task_id
+                INNER JOIN students
+                ON gameplay_records.sr_code=students.sr_code
+                WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
+                ORDER BY gameplay_records.task_id DESC
+                LIMIT 1;";
+            //SHOULD BE LATEST UNG MONEY NA MAKUKUHA, siguro limit by one tas desc order
+
+            try
+            {
+                mysqlConnection.Open();
+                MySqlCommand slctCurrMoneyCmd = new MySqlCommand(slctCurrMoney, mysqlConnection);
+
+                using (MySqlDataReader reader = slctCurrMoneyCmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        CURRENT_MONEY = Convert.ToDouble(reader["money"]);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                mysqlConnection.Close();
+            }
+            currency_lbl.Text = CURRENT_MONEY.ToString("C");
+        }
     }
 }
