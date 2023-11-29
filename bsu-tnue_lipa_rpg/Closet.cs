@@ -445,6 +445,7 @@ namespace bsu_tnue_lipa_rpg
             }
             finally { mysqlConnection.Close(); }
         }
+
         public void refundItems(string sr, int id)
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);//for tb
@@ -463,6 +464,24 @@ namespace bsu_tnue_lipa_rpg
             finally { mysqlConnection.Close(); }
         }
 
+        public void add_minusMoney(double money)
+        {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);//for tb
+            
+
+            try//---Try to open the sql connection
+            {
+                mysqlConnection.Open();
+                string updtCurrMon = $"UPDATE gameplay_records SET current_money={money} WHERE sr_code = '{Form1.STUDENT_USER_SR_CODE}' AND task_id = {Bedroom.instance.TASK_ID};";
+                MySqlCommand updtCurrMonCmd = new MySqlCommand(updtCurrMon, mysqlConnection);
+                updtCurrMonCmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally { mysqlConnection.Close(); }
+        }
         public void buy_refundItems(double[,] ITEM_PRICE,string[,] ITEMS,int i, int j)
         {
             //IF NOT OWN
@@ -477,9 +496,13 @@ namespace bsu_tnue_lipa_rpg
                     }
                     else
                     {
-                        //Bawasan pera nya here by ITEM PRICE
+                        double money = Bedroom.instance.CURRENT_MONEY;
+                        money = money - ITEM_PRICE[i, j];
+                        Bedroom.instance.checkTask();
+                        add_minusMoney(money);
                         buyItems(Form1.STUDENT_USER_SR_CODE, ITEM_ID[i, j]);
                         MessageBox.Show($"You may now wear {ITEMS[i, j]}", "Success!");
+                        Bedroom.instance.checkMoney();
                         displayItemDesc();
 
                     }
@@ -491,9 +514,13 @@ namespace bsu_tnue_lipa_rpg
                 DialogResult buy = MessageBox.Show($"Are you sure you want to refund: {ITEM_PRICE[i, j]:C}", "Warning", MessageBoxButtons.YesNo);
                 if (buy == DialogResult.Yes)
                 {
-                        //Dagdagan ung current money
+                        double money = Bedroom.instance.CURRENT_MONEY;
+                        money = money + ITEM_PRICE[i, j];
+                        Bedroom.instance.checkTask();
+                        add_minusMoney(money);
                         refundItems(Form1.STUDENT_USER_SR_CODE, ITEM_ID[i, j]);
                         MessageBox.Show($"{ITEMS[i, j]} Cannot be worn..", "Refunded");
+                        Bedroom.instance.checkMoney();
                         displayItemDesc();
                     }
                 }

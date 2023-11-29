@@ -22,6 +22,7 @@ namespace bsu_tnue_lipa_rpg
         public string DAY;
         public int DAY_ID;
         public double CURRENT_MONEY;
+        public int TASK_ID;
 
         public static Bedroom instance;
         bool go_up, go_down, go_left, go_right;
@@ -46,9 +47,10 @@ namespace bsu_tnue_lipa_rpg
             instance = this;
             Closet.instance = new Closet();
             checkCharac();
+            checkTask();
             checkMoney();
             checkDay();
-
+            
             characFront(bedroom_charac);
 
         }
@@ -551,7 +553,7 @@ choose the right ones.";
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
             string slctCurrMoney = $@"
-                SELECT gameplay_records.task_id AS task
+                SELECT tasks.task_id AS id
                 FROM tasks 
                 INNER JOIN gameplay_records
                 ON gameplay_records.task_id=tasks.task_id
@@ -571,7 +573,7 @@ choose the right ones.";
                 {
                     if (reader.Read())
                     {
-                        CURRENT_MONEY = Convert.ToDouble(reader["money"]);
+                        TASK_ID = Convert.ToInt32(reader["id"]);
                     }
                 }
             }
