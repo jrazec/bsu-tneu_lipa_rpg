@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 
 namespace bsu_tnue_lipa_rpg.OB_floors_uc
@@ -74,7 +75,7 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
         #endregion
 
         bool go_up, go_down, go_left, go_right;
-        int walk = 20;
+        readonly int walk = 20;
         public OB_secondflr()
         {
             InitializeComponent();
@@ -94,7 +95,7 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
             {
                 obsecondflr_charac.Top -= walk;
             }
-            if (go_down == true && obsecondflr_charac.Top < 354)
+            if (go_down == true && obsecondflr_charac.Top < 390)
             {
                 obsecondflr_charac.Top += walk;
             }
@@ -123,15 +124,14 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
                         this.Hide();
 
                         Old_Bldg.instance.obcontainer_panel.Controls.Clear();
-                        Old_Bldg.instance.obcontainer_panel.Controls.Add(OB_secondflr.INSTANCE);
+                        Old_Bldg.instance.obcontainer_panel.Controls.Add(OB_thirdflr.INSTANCE);
 
-                        OB_secondflr.INSTANCE.obsecondWalkTimer.Start();
-                        OB_secondflr.INSTANCE.Focus();
-                        OB_secondflr.INSTANCE.BringToFront();
+                        OB_thirdflr.INSTANCE.Show();
+                        OB_thirdflr.INSTANCE.obthirdWalkTimer.Start();
+                        OB_thirdflr.INSTANCE.Focus();
+                        OB_thirdflr.INSTANCE.BringToFront();
 
                     }
-
-
                 }
                 //go down
                 if (navigation is PictureBox && (string)navigation.Tag == "go_down")
@@ -160,12 +160,10 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
                         OB_firstflr.INSTANCE.obfirstWalkTimer.Start();
                         OB_firstflr.INSTANCE.Focus();
                         OB_firstflr.INSTANCE.BringToFront();
-
                     }
                 }
             }
         }
-
         private void key_is_down(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)

@@ -74,7 +74,7 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
         #endregion
 
         bool go_up, go_down, go_left, go_right;
-        int walk = 20;
+        readonly int walk = 20;
 
         public OB_firstflr()
         {
@@ -95,7 +95,7 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
             {
                 obfirstflr_charac.Top -= walk;
             }
-            if (go_down == true && obfirstflr_charac.Top < 354)
+            if (go_down == true && obfirstflr_charac.Top < 390)
             {
                 obfirstflr_charac.Top += walk;
             }
@@ -122,8 +122,8 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
 
                         //return to map form
                         this.Hide();
-                        CECS_bldg.instance.Hide();
-                        CECS_bldg.instance.Close();
+                        Old_Bldg.instance.Hide();
+                        Old_Bldg.instance.Close();
                         Map returntomap = new Map();
                         returntomap.ShowDialog();
                     }

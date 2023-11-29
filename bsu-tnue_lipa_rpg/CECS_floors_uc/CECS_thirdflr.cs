@@ -74,7 +74,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         #endregion
 
         bool go_up, go_down, go_left, go_right;
-        int walk = 20;
+        readonly int walk = 20;
 
         public CECS_thirdflr()
         {

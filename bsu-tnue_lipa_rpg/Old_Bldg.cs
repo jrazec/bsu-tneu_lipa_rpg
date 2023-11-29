@@ -25,14 +25,5 @@ namespace bsu_tnue_lipa_rpg
             }
             obcontainer_panel.Controls.Add(OB_firstflr.INSTANCE);
         }
-
-        private void addUC(UserControl uc)
-        {
-            uc.Dock = DockStyle.Fill;
-            obcontainer_panel.Controls.Clear();
-            obcontainer_panel.Controls.Add(uc);
-            uc.Focus();
-            uc.BringToFront();
-        }
     }
 }

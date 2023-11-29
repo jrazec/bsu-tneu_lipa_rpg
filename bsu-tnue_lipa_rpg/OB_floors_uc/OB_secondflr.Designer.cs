@@ -42,9 +42,9 @@
             // 
             this.obsecondflr_charac.BackColor = System.Drawing.Color.Transparent;
             this.obsecondflr_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.female_org_front;
-            this.obsecondflr_charac.Location = new System.Drawing.Point(208, 371);
+            this.obsecondflr_charac.Location = new System.Drawing.Point(238, 362);
             this.obsecondflr_charac.Name = "obsecondflr_charac";
-            this.obsecondflr_charac.Size = new System.Drawing.Size(133, 135);
+            this.obsecondflr_charac.Size = new System.Drawing.Size(99, 135);
             this.obsecondflr_charac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.obsecondflr_charac.TabIndex = 1;
             this.obsecondflr_charac.TabStop = false;
@@ -68,9 +68,9 @@
             // upflrcollision_pbox
             // 
             this.upflrcollision_pbox.BackColor = System.Drawing.Color.DimGray;
-            this.upflrcollision_pbox.Location = new System.Drawing.Point(1402, 200);
+            this.upflrcollision_pbox.Location = new System.Drawing.Point(1412, 200);
             this.upflrcollision_pbox.Name = "upflrcollision_pbox";
-            this.upflrcollision_pbox.Size = new System.Drawing.Size(31, 162);
+            this.upflrcollision_pbox.Size = new System.Drawing.Size(21, 162);
             this.upflrcollision_pbox.TabIndex = 3;
             this.upflrcollision_pbox.TabStop = false;
             this.upflrcollision_pbox.Tag = "go_up";

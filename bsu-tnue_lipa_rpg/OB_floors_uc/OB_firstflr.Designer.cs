@@ -44,7 +44,7 @@
             // 
             this.obfirstflr_charac.BackColor = System.Drawing.Color.Transparent;
             this.obfirstflr_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.female_org_front;
-            this.obfirstflr_charac.Location = new System.Drawing.Point(354, 295);
+            this.obfirstflr_charac.Location = new System.Drawing.Point(408, 280);
             this.obfirstflr_charac.Name = "obfirstflr_charac";
             this.obfirstflr_charac.Size = new System.Drawing.Size(133, 135);
             this.obfirstflr_charac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -94,10 +94,10 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.ob_1stflr;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.obfirstflr_charac);
             this.Controls.Add(this.returncollision_pbox);
             this.Controls.Add(this.upflrcollision_pbox);
             this.Controls.Add(this.staircollision_pbox);
-            this.Controls.Add(this.obfirstflr_charac);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OB_firstflr";
