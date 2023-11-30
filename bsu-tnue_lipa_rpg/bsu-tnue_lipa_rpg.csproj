@@ -203,10 +203,10 @@
     <Compile Include="Closet_garments_uc\bottom.Designer.cs">
       <DependentUpon>bottom.cs</DependentUpon>
     </Compile>
-    <Compile Include="Closet_garments_uc\ChapEnd.cs">
+    <Compile Include="ChapEnd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Closet_garments_uc\ChapEnd.Designer.cs">
+    <Compile Include="ChapEnd.Designer.cs">
       <DependentUpon>ChapEnd.cs</DependentUpon>
     </Compile>
     <Compile Include="Closet_garments_uc\neck.cs">
@@ -365,7 +365,7 @@
     <EmbeddedResource Include="Closet_garments_uc\bottom.resx">
       <DependentUpon>bottom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Closet_garments_uc\ChapEnd.resx">
+    <EmbeddedResource Include="ChapEnd.resx">
       <DependentUpon>ChapEnd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Closet_garments_uc\neck.resx">
