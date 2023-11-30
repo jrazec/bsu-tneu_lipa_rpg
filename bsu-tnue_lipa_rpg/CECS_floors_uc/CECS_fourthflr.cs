@@ -79,7 +79,17 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         {
             InitializeComponent();
             Bedroom.instance.characFront(cecsfourthflr_charac);
+            door1_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
+            door2_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
+            door3_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
+            sir_dg.BackColor = Color.FromArgb(179, 0, 0, 0);
         }
+
+        private void door_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void cecsfourthWalkTimer_Tick(object sender, EventArgs e)
         {
             if (go_left == true && cecsfourthflr_charac.Left > 0)
@@ -178,3 +188,4 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         }
     }
 }
+

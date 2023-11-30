@@ -1,4 +1,6 @@
-﻿namespace bsu_tnue_lipa_rpg.CECS_floors_uc
+﻿using System.Windows.Forms;
+
+namespace bsu_tnue_lipa_rpg.CECS_floors_uc
 {
     partial class CECS_fourthflr
     {
@@ -34,16 +36,22 @@
             this.cecsfourthWalkTimer = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.elevcollision_pbox = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.sir_dg = new System.Windows.Forms.Label();
+            this.door1_panel = new System.Windows.Forms.Panel();
+            this.door2_panel = new System.Windows.Forms.Panel();
+            this.door3_panel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.sirtiquio_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cecsfourthflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sirtiquio_pbox
             // 
             this.sirtiquio_pbox.BackColor = System.Drawing.Color.Transparent;
             this.sirtiquio_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Sir_Daryl;
-            this.sirtiquio_pbox.Location = new System.Drawing.Point(872, 192);
+            this.sirtiquio_pbox.Location = new System.Drawing.Point(1058, 184);
             this.sirtiquio_pbox.Name = "sirtiquio_pbox";
             this.sirtiquio_pbox.Size = new System.Drawing.Size(101, 119);
             this.sirtiquio_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -88,6 +96,55 @@
             this.elevcollision_pbox.TabStop = false;
             this.elevcollision_pbox.Tag = "go_to_elev";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.sir_dialogue;
+            this.pictureBox1.Location = new System.Drawing.Point(154, 387);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1189, 221);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // sir_dg
+            // 
+            this.sir_dg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.sir_dg.Font = new System.Drawing.Font("Trebuchet MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sir_dg.ForeColor = System.Drawing.Color.White;
+            this.sir_dg.Location = new System.Drawing.Point(413, 439);
+            this.sir_dg.Name = "sir_dg";
+            this.sir_dg.Size = new System.Drawing.Size(808, 112);
+            this.sir_dg.TabIndex = 7;
+            this.sir_dg.Text = "Congratulations Red Spartan! Let\'s now proceed\r\nto our class here in Room 401,  s" +
+    "hall we?";
+            this.sir_dg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // door1_panel
+            // 
+            this.door1_panel.BackColor = System.Drawing.Color.Transparent;
+            this.door1_panel.Location = new System.Drawing.Point(968, 162);
+            this.door1_panel.Name = "door1_panel";
+            this.door1_panel.Size = new System.Drawing.Size(11, 87);
+            this.door1_panel.TabIndex = 8;
+            this.door1_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.door_panel_Paint);
+            // 
+            // door2_panel
+            // 
+            this.door2_panel.BackColor = System.Drawing.Color.Transparent;
+            this.door2_panel.Location = new System.Drawing.Point(969, 162);
+            this.door2_panel.Name = "door2_panel";
+            this.door2_panel.Size = new System.Drawing.Size(70, 10);
+            this.door2_panel.TabIndex = 0;
+            // 
+            // door3_panel
+            // 
+            this.door3_panel.BackColor = System.Drawing.Color.Transparent;
+            this.door3_panel.Location = new System.Drawing.Point(1029, 167);
+            this.door3_panel.Name = "door3_panel";
+            this.door3_panel.Size = new System.Drawing.Size(10, 82);
+            this.door3_panel.TabIndex = 1;
+            // 
             // CECS_fourthflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -95,6 +152,11 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.cecs_hallway;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.door3_panel);
+            this.Controls.Add(this.door2_panel);
+            this.Controls.Add(this.door1_panel);
+            this.Controls.Add(this.sir_dg);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.elevcollision_pbox);
             this.Controls.Add(this.cecsfourthflr_charac);
@@ -108,6 +170,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sirtiquio_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cecsfourthflr_charac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,5 +183,10 @@
         public System.Windows.Forms.Timer cecsfourthWalkTimer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox elevcollision_pbox;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label sir_dg;
+        private System.Windows.Forms.Panel door1_panel;
+        private Panel door2_panel;
+        private Panel door3_panel;
     }
 }
