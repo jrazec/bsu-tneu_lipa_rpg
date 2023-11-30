@@ -79,6 +79,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         public CECS_thirdflr()
         {
             InitializeComponent();
+            Bedroom.instance.characFront(cecsthirdflr_charac);
         }
         private void cecsthirdWalkTimer_Tick(object sender, EventArgs e)
         {
@@ -131,34 +132,26 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
-                e.Handled = true;
                 go_left = true;
-                //characLeft();
-                cecsthirdflr_charac.Image = Properties.Resources.female_org_left;
+                Bedroom.instance.characLeft(cecsthirdflr_charac);
             }
 
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
-                e.Handled = true;
                 go_right = true;
-                //characRight();
-                cecsthirdflr_charac.Image = Properties.Resources.female_org_right;
+                Bedroom.instance.characRight(cecsthirdflr_charac);
             }
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
             {
-                e.Handled = true;
                 go_up = true;
-                // characBack();
-                cecsthirdflr_charac.Image = Properties.Resources.female_org_back;
+                Bedroom.instance.characBack(cecsthirdflr_charac);
             }
 
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
-                e.Handled = true;
                 go_down = true;
-                //characFront();
-                cecsthirdflr_charac.Image = Properties.Resources.female_org_front;
+                Bedroom.instance.characFront(cecsthirdflr_charac);
             }
         }
         private void key_is_up(object sender, KeyEventArgs e)

@@ -33,16 +33,18 @@
             this.returncollision_pbox = new System.Windows.Forms.PictureBox();
             this.elevcollision_pbox = new System.Windows.Forms.PictureBox();
             this.cecsfirstWalkTimer = new System.Windows.Forms.Timer(this.components);
+            this.atty_pbox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cecsfirstflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returncollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.atty_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // cecsfirstflr_charac
             // 
             this.cecsfirstflr_charac.BackColor = System.Drawing.Color.Transparent;
             this.cecsfirstflr_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.female_org_front;
-            this.cecsfirstflr_charac.Location = new System.Drawing.Point(186, 255);
+            this.cecsfirstflr_charac.Location = new System.Drawing.Point(36, 267);
             this.cecsfirstflr_charac.Name = "cecsfirstflr_charac";
             this.cecsfirstflr_charac.Size = new System.Drawing.Size(101, 119);
             this.cecsfirstflr_charac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -75,6 +77,17 @@
             this.cecsfirstWalkTimer.Interval = 50;
             this.cecsfirstWalkTimer.Tick += new System.EventHandler(this.cecsfirstWalkTimer_Tick);
             // 
+            // atty_pbox
+            // 
+            this.atty_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.atty_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Atty_Alvin;
+            this.atty_pbox.Location = new System.Drawing.Point(371, 166);
+            this.atty_pbox.Name = "atty_pbox";
+            this.atty_pbox.Size = new System.Drawing.Size(85, 116);
+            this.atty_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.atty_pbox.TabIndex = 3;
+            this.atty_pbox.TabStop = false;
+            // 
             // CECS_firstflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -82,6 +95,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.registrar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.atty_pbox);
             this.Controls.Add(this.elevcollision_pbox);
             this.Controls.Add(this.returncollision_pbox);
             this.Controls.Add(this.cecsfirstflr_charac);
@@ -94,6 +108,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cecsfirstflr_charac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returncollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.atty_pbox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -104,5 +119,6 @@
         private System.Windows.Forms.PictureBox returncollision_pbox;
         private System.Windows.Forms.PictureBox elevcollision_pbox;
         public System.Windows.Forms.Timer cecsfirstWalkTimer;
+        private System.Windows.Forms.PictureBox atty_pbox;
     }
 }

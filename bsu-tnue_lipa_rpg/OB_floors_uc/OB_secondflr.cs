@@ -79,6 +79,7 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
         public OB_secondflr()
         {
             InitializeComponent();
+            Bedroom.instance.characFront(obsecondflr_charac);
         }
 
         private void obsecondWalkTimer_Tick(object sender, EventArgs e)
@@ -168,34 +169,26 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
         {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
-                e.Handled = true;
                 go_left = true;
-                //characLeft();
-                obsecondflr_charac.Image = Properties.Resources.female_org_left;
+                Bedroom.instance.characLeft(obsecondflr_charac);
             }
 
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
-                e.Handled = true;
                 go_right = true;
-                //characRight();
-                obsecondflr_charac.Image = Properties.Resources.female_org_right;
+                Bedroom.instance.characRight(obsecondflr_charac);
             }
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
             {
-                e.Handled = true;
                 go_up = true;
-                // characBack();
-                obsecondflr_charac.Image = Properties.Resources.female_org_back;
+                Bedroom.instance.characBack(obsecondflr_charac);
             }
 
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
-                e.Handled = true;
                 go_down = true;
-                //characFront();
-                obsecondflr_charac.Image = Properties.Resources.female_org_front;
+                Bedroom.instance.characFront(obsecondflr_charac);
             }
         }
 

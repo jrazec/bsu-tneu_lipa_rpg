@@ -84,6 +84,8 @@
             // 
             // cecsfifthWalkTimer
             // 
+            this.cecsfifthWalkTimer.Enabled = true;
+            this.cecsfifthWalkTimer.Interval = 50;
             this.cecsfifthWalkTimer.Tick += new System.EventHandler(this.cecsfifthWalkTimer_Tick);
             // 
             // CECS_fifthflr

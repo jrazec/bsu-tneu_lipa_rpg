@@ -77,6 +77,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         public CECS_secondflr()
         {
             InitializeComponent();
+            Bedroom.instance.characFront(cecssecondflr_charac);
         }
         private void cecssecondWalkTimer_Tick(object sender, EventArgs e)
         {
@@ -129,34 +130,26 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
-                e.Handled = true;
                 go_left = true;
-                //characLeft();
-                cecssecondflr_charac.Image = Properties.Resources.female_org_left;
+                Bedroom.instance.characLeft(cecssecondflr_charac);
             }
 
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
-                e.Handled = true;
                 go_right = true;
-                //characRight();
-                cecssecondflr_charac.Image = Properties.Resources.female_org_right;
+                Bedroom.instance.characRight(cecssecondflr_charac);
             }
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
             {
-                e.Handled = true;
                 go_up = true;
-                // characBack();
-                cecssecondflr_charac.Image = Properties.Resources.female_org_back;
+                Bedroom.instance.characBack(cecssecondflr_charac);
             }
 
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
-                e.Handled = true;
                 go_down = true;
-                //characFront();
-                cecssecondflr_charac.Image = Properties.Resources.female_org_front;
+                Bedroom.instance.characFront(cecssecondflr_charac);
             }
         }
 
