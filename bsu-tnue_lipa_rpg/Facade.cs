@@ -94,21 +94,37 @@ namespace bsu_tnue_lipa_rpg
                     {
                         //stop character movement
                         facadeWalkTimer.Stop();
+                        DialogResult sure = MessageBox.Show("Are you sure you want to go to bed? Ur garments will revert..", "Warning", MessageBoxButtons.YesNo);
+                        if (sure == DialogResult.Yes) { 
 
-                        //move character away from collision box
-                        facade_charac.Location = new Point(277, 322);
 
-                        //reset boolean directions
-                        go_left = false;
-                        go_right = false;
-                        go_up = false;
-                        go_down = false;
+                            //switch to closet form
+                            this.Hide();
+                            
+                            Bedroom returned = new Bedroom();
+                            returned.CHARAC_CLOTHES = "BED";
+                            Closet.Garments_Worn[0, 0] = "";
+                            Closet.Garments_Worn[0, 1] = "";
+                            Closet.Garments_Worn[0, 2] = "";
+                            Closet.Garments_Worn[0, 3] = "";
+                            returned.ShowDialog();
+                            this.Close();
+                        }
+                        else {
 
-                        //switch to closet form
-                        this.Hide();
-                        Bedroom returned = new Bedroom();
-                        returned.ShowDialog();
-                        this.Close();
+                            //reset boolean directions
+                            go_left = false;
+                            go_right = false;
+                            go_up = false;
+                            go_down = false;
+
+
+                            //move character away from collision boxdd
+                            facadeWalkTimer.Start();
+                            facade_charac.Location = new Point(58, 398);
+                            MessageBox.Show("Lakad matatag..");
+                            
+                        }
                     }
                 }
             }
@@ -126,7 +142,6 @@ namespace bsu_tnue_lipa_rpg
             {
                 go_right = true;
                 Bedroom.instance.characRight(facade_charac);
-
             }
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)

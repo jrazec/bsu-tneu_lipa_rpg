@@ -59,16 +59,16 @@
             // 
             this.map_charac.BackColor = System.Drawing.Color.Transparent;
             this.map_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.male_uni_front;
-            this.map_charac.Location = new System.Drawing.Point(522, 378);
+            this.map_charac.Location = new System.Drawing.Point(493, 426);
             this.map_charac.Name = "map_charac";
-            this.map_charac.Size = new System.Drawing.Size(53, 86);
+            this.map_charac.Size = new System.Drawing.Size(46, 66);
             this.map_charac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.map_charac.TabIndex = 1;
             this.map_charac.TabStop = false;
             // 
             // mapWalkTimer
             // 
-            this.mapWalkTimer.Interval = 90;
+            this.mapWalkTimer.Interval = 75;
             this.mapWalkTimer.Tick += new System.EventHandler(this.mapWalkTimer_Tick);
             // 
             // cecscollision_pbox

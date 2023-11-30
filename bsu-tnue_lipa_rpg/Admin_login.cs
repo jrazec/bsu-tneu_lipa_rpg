@@ -48,6 +48,9 @@ namespace bsu_tnue_lipa_rpg
             DialogResult sure = MessageBox.Show("Are you sure you want to close the program?", "Warning", MessageBoxButtons.YesNo);
             if (sure == DialogResult.Yes)
             {
+                this.Hide();
+                Form1 ads = new Form1();
+                ads.ShowDialog();
                 this.Close();
             }
         }

@@ -12,6 +12,7 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Map : Form
     {
+        public static Map instance;
         protected override CreateParams CreateParams
         {
             get
@@ -22,10 +23,17 @@ namespace bsu_tnue_lipa_rpg
             }
         }
         bool go_up, go_down, go_left, go_right;
-        int walk = 10;
+        int walk = 8;
+
+        
         public Map()
         {
             InitializeComponent();
+            instance = this;
+            Bedroom.instance.characFront(map_charac);
+
+            
+
         }
 
         private void next_pbox_Click(object sender, EventArgs e)
@@ -88,9 +96,10 @@ namespace bsu_tnue_lipa_rpg
 
                         //switch to CECS form
                         this.Hide();
+                        this.Close();
                         CECS_bldg enter_cecs = new CECS_bldg();
                         enter_cecs.ShowDialog();
-                        this.Close();
+
                         
 
                     }
@@ -115,9 +124,10 @@ namespace bsu_tnue_lipa_rpg
 
                         //switch to OB form
                         this.Hide();
+                        this.Close();
                         Old_Bldg enter_ob = new Old_Bldg();
                         enter_ob.ShowDialog();
-                        this.Close();
+                        
 
                     }
                 }
@@ -128,30 +138,26 @@ namespace bsu_tnue_lipa_rpg
         {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
-                e.Handled = true;
                 go_left = true;
-                map_charac.Image = Properties.Resources.male_uni_left;
+                Bedroom.instance.characLeft(map_charac);
             }
 
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
-                e.Handled = true;
                 go_right = true;
-                map_charac.Image = Properties.Resources.male_uni_right;
+                Bedroom.instance.characRight(map_charac);
             }
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
             {
-                e.Handled = true;
                 go_up = true;
-                map_charac.Image = Properties.Resources.male_uni_back;
+                Bedroom.instance.characBack(map_charac);
             }
 
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
-                e.Handled = true;
                 go_down = true;
-                map_charac.Image = Properties.Resources.male_uni_front;
+                Bedroom.instance.characFront(map_charac);
             }
         }
 
