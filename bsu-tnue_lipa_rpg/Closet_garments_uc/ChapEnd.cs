@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace bsu_tnue_lipa_rpg.Closet_garments_uc
 {
-    public partial class ChapEnd : Form
+    public partial class Chapter_End : Form
     {
-        public ChapEnd()
+        public Chapter_End()
         {
             InitializeComponent();
+        }
+
+        private void proceed_pbox_Click(object sender, EventArgs e)
+        {
+            //Save timestamp
+            //Save date
+            //Save total time
+            //Create another gameplay record
+            //Ex. From task 1 going to task 2
         }
     }
 }
