@@ -1,4 +1,6 @@
-﻿using System;
+﻿using bsu_tnue_lipa_rpg.Closet_garments_uc;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,22 +26,29 @@ namespace bsu_tnue_lipa_rpg
         }
         bool go_up, go_down, go_left, go_right;
         int walk = 8;
+        public string[] DG_1 = {
+           "Good morning, Red Spartan! \r\nYour first task is to attend on your Database class and proctor will be Sir Tiquio for 7am - 10 am.  In your schedule, your room is at CECS Building, Room 401.",
+           "Greetings, Red Spartan! \r\nToday, your mission is to find the Mission, Vision, and Core Values of our campus.",
+           "Hello, Red Spartan! \r\nYour proctor for today will be Dr. Balazon from 1pm-3pm. Head to the Computer Laboratory for your Computer Science class",
+           "Greetings, Red Spartan! \r\nToday, you want to pass your form 137 and ask for your certified true copy of your card. However where could it be possibly located?",
+           "Good morning, Red Spartan! \r\nAfter your PE class, your professor tasked you to go to the clinic and ask for medical papers"
 
-        
+        };
+        public string CLUE;
+        int index = Bedroom.instance.TASK_ID - 1;
         public Map()
         {
             InitializeComponent();
             instance = this;
             Bedroom.instance.characFront(map_charac);
-
-            
-
+            dg_map.Text = DG_1[index];
+            displayClue();
         }
 
         private void next_pbox_Click(object sender, EventArgs e)
         {
             next_pbox.Visible = false;
-            dg_map.Text = "Clue: ...";
+            dg_map.Text = CLUE;
             click_lbl.Visible = true;
             click_lbl.Text = "Press to start.";
             enter_lbl.Visible = true;
@@ -181,6 +190,44 @@ namespace bsu_tnue_lipa_rpg
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
                 go_down = false;
+            }
+        }
+        private void displayClue()
+        {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
+
+            string slctItemNames = $@"
+                        SELECT day_tasks.day_task_clue as clue
+                        FROM day_tasks 
+                        INNER JOIN tasks
+                        ON tasks.day_task_id=day_tasks.day_task_id
+                        INNER JOIN gameplay_records
+                        ON gameplay_records.task_id=tasks.task_id
+                        INNER JOIN students
+                        ON gameplay_records.sr_code=gameplay_records.sr_code
+                        WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
+                        ORDER BY day_tasks.day_task_id DESC
+                        LIMIT 1;";
+            try
+            {
+                mysqlConnection.Open();
+                MySqlCommand slctItemNamesCmd = new MySqlCommand(slctItemNames, mysqlConnection);
+
+                using (MySqlDataReader reader = slctItemNamesCmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        CLUE = reader["clue"].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                mysqlConnection.Close();
             }
         }
     }
