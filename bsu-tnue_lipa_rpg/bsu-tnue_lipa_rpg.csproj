@@ -365,6 +365,9 @@
     <EmbeddedResource Include="Closet_garments_uc\bottom.resx">
       <DependentUpon>bottom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Closet_garments_uc\ChapEnd.resx">
+      <DependentUpon>ChapEnd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Closet_garments_uc\neck.resx">
       <DependentUpon>neck.cs</DependentUpon>
     </EmbeddedResource>
