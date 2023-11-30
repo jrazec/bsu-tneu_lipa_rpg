@@ -175,9 +175,9 @@ namespace bsu_tnue_lipa_rpg
                         day_tasks(day_task_id,day_name,day_task_clue,day_task_hint,day_garment_type)
                     VALUES
                         (1,'Monday','Did you know that in room number, the Hundreds(100) indicate the floor, and the Ones(1) indicate the sequence','Hint: Go to the CECS building in the left side, navigate through the 4th floor in elevator then find your room.','Normal Day'),
-                        (2,'Tuesday','May these old treasures be considered as such, yet hold the highest esteem and regard of the university.','Hint: Head to the Old Building, specifically in the highest floor and find someone to speak with. Seek and you shall see!','Normal Day'),
-                        (3,'Wednesday','Did you know that in the elevator part of our school that is the Entrance and the Exit is front face of building. Use the proper entrance and exit, whether you are on the Ground or fifth floor.','Hint: Head to the Left Building or CECS office in the first floor in the “nth” section!','Wash Day'),
-                        (4,'Thursday','As a first year, it is hard to navigate the offices but asking is not that hard right?','Hint: Go and ask him, he will tell you where exactly it is located','Normal Day'),
+                        (2,'Tuesday','May these OLD treasures be considered as such, yet hold the HIGHEST esteem and regard of the university.','Hint: Head to the Old Building, specifically in the highest floor and find someone to speak with. Seek and you shall see!','Normal Day'),
+                        (3,'Wednesday','Did you know that in the elevator part of our school that is the entrance and the exit is front face of building. Use the proper entrance and exit, whether you are on the ground or FIFTH floor.','Hint: Head to the Left Building or CECS office in the Fifth floor!','Wash Day'),
+                        (4,'Thursday','As a first year, it is hard to navigate the offices but asking is not that hard right?','Hint: Go to the first floor of Cecs building near the elevator and you shall see what you are seeking.','Normal Day'),
                         (5,'Friday','In the room for healing, where health stuffs are made, seek the answer where the Old echoes and Above the Ground unfolds.' ,'Hint: Head to the Old Building, and above the ground goes in the second floor where you shall find the clinic!','PE Day');
 
                     INSERT INTO
@@ -197,14 +197,14 @@ namespace bsu_tnue_lipa_rpg
                     INSERT INTO 
                         tasks(task_id,task_name,reward,day_task_id,achievement_id)
                     VALUES
-                        (1,'Your First day Starts Now.',500.00,1,1),
-                        (2,'Wednesday is a Free Day.',500.00,3,2),
-                        (3,'Embark on a rewarding week‘s journey.',500.00,5,3),
-                        (4,'Seek Day, Monday!',200.00,1,4),
-                        (5,'Navigate, Locate, and Ask this Tuesday Ahu!',200.00,2,5),
-                        (6,'Seek Day, Wednesday!',200.00,3,6),
-                        (7,'Ask, Locate, and Navigate this Thursday Ahu!',200.00,4,7),
-                        (8,'Crack the code, cuz its Friday!',200.00,5,8),
+                        (1,'Seek Day, Monday!',100.00,1,4),
+                        (2,'Navigate, Locate, and Ask this Tuesday Ahu!',200.00,2,5),
+                        (3,'Seek Day, Wednesday!',50.00,3,6),
+                        (4,'Ask, Locate, and Navigate this Thursday Ahu!',200.00,4,7),
+                        (5,'Crack the code, cuz its Friday!',200.00,5,8),
+                        (6,'Your First day Starts Now.',300.00,1,1),
+                        (7,'Wednesday is a Free Day.',100.00,3,2),
+                        (8,'Embark on a rewarding week‘s journey.',100.00,5,3),
                         (9,'Complete all tasks',1000.00,5,9),
                         (10,'Unlock all Garments',1000.00,null,10);";
 

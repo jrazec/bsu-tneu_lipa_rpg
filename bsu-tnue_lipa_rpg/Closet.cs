@@ -27,6 +27,11 @@ namespace bsu_tnue_lipa_rpg
         }
         #endregion
         public static Closet instance;
+        /*
+         Dito ilalagay ung achievement na nabili na lahat ni player ung lahat ng garments
+         */
+
+
 
         //Initialized them at first inorder to create the instance firsthand
         top top_uc = new top();
