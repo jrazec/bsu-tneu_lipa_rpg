@@ -242,7 +242,7 @@ choose the right ones.";
             {
                 if (CHARAC_CLOTHES == "CASUAL")
                 {
-                    bedroom_charac.Image = Properties.Resources.male_casual_front;
+                    bedroom_charac.Image = Properties.Resources.male_idcasual_front;
                 }
                 else if (CHARAC_CLOTHES == "UNI")
                 {
@@ -258,14 +258,14 @@ choose the right ones.";
                 }
                 else//Default Character garment
                 {
-                    bedroom_charac.Image = Properties.Resources.male_casual_front;
+                    bedroom_charac.Image = Properties.Resources.male_pajama_front;
                 }
             }
             else if (CHARAC_ID == 2)
             {
                 if (CHARAC_CLOTHES == "CASUAL")
                 {
-                    bedroom_charac.Image = Properties.Resources.female_casual_front;
+                    bedroom_charac.Image = Properties.Resources.female_idcasual_front;
                 }
                 else if (CHARAC_CLOTHES == "UNI")
                 {
@@ -281,7 +281,7 @@ choose the right ones.";
                 }
                 else//Default Character garment
                 {
-                    bedroom_charac.Image = Properties.Resources.female_casual_front;
+                    bedroom_charac.Image = Properties.Resources.female_pajama_front;
                 }
             }
         }
@@ -308,7 +308,7 @@ choose the right ones.";
                 }
                 else//Default Character garment
                 {
-                    bedroom_charac.Image = Properties.Resources.male_casual_back;
+                    bedroom_charac.Image = Properties.Resources.male_pajama_back;
                 }
             }
             else if (CHARAC_ID == 2)
@@ -331,7 +331,7 @@ choose the right ones.";
                 }
                 else//Default Character garment
                 {
-                    bedroom_charac.Image = Properties.Resources.female_casual_back;
+                    bedroom_charac.Image = Properties.Resources.female_pajama_back;
                 }
             }
         }
@@ -342,7 +342,7 @@ choose the right ones.";
             {
                 if (CHARAC_CLOTHES == "CASUAL")
                 {
-                    bedroom_charac.Image = Properties.Resources.male_casual_left;
+                    bedroom_charac.Image = Properties.Resources.male_idcasual_left;
                 }
                 else if (CHARAC_CLOTHES == "UNI")
                 {
@@ -358,14 +358,14 @@ choose the right ones.";
                 }
                 else//Default Character garment
                 {
-                    bedroom_charac.Image = Properties.Resources.male_casual_left;
+                    bedroom_charac.Image = Properties.Resources.male_pajama_left;
                 }
             }
             else if (CHARAC_ID == 2)
             {
                 if (CHARAC_CLOTHES == "CASUAL")
                 {
-                    bedroom_charac.Image = Properties.Resources.female_casual_left;
+                    bedroom_charac.Image = Properties.Resources.female_idcasual_left;
                 }
                 else if (CHARAC_CLOTHES == "UNI")
                 {
@@ -381,7 +381,7 @@ choose the right ones.";
                 }
                 else//Default Character garment
                 {
-                    bedroom_charac.Image = Properties.Resources.female_casual_left;
+                    bedroom_charac.Image = Properties.Resources.female_pajama_left;
                 }
             }
         }
@@ -392,7 +392,7 @@ choose the right ones.";
             {
                 if (CHARAC_CLOTHES == "CASUAL")
                 {
-                    bedroom_charac.Image = Properties.Resources.male_casual_right;
+                    bedroom_charac.Image = Properties.Resources.male_idcasual_right;
                 }
                 else if (CHARAC_CLOTHES == "UNI")
                 {
@@ -408,14 +408,14 @@ choose the right ones.";
                 }
                 else//Default Character garment
                 {
-                    bedroom_charac.Image = Properties.Resources.male_casual_right;
+                    bedroom_charac.Image = Properties.Resources.male_pajama_right;
                 }
             }
             else if (CHARAC_ID == 2)
             {
                 if (CHARAC_CLOTHES == "CASUAL")
                 {
-                    bedroom_charac.Image = Properties.Resources.female_casual_right;
+                    bedroom_charac.Image = Properties.Resources.female_idcasual_right;
                 }
                 else if (CHARAC_CLOTHES == "UNI")
                 {
@@ -431,7 +431,7 @@ choose the right ones.";
                 }
                 else//Default Character garment
                 {
-                    bedroom_charac.Image = Properties.Resources.female_casual_right;
+                    bedroom_charac.Image = Properties.Resources.female_pajama_right;
                 }
             }
         }

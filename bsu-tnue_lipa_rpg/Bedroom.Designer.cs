@@ -239,7 +239,7 @@
             // bedroom_charac
             // 
             this.bedroom_charac.BackColor = System.Drawing.Color.Transparent;
-            this.bedroom_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.male_casual_front;
+            this.bedroom_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.female_pajama_front;
             this.bedroom_charac.Location = new System.Drawing.Point(500, 243);
             this.bedroom_charac.Name = "bedroom_charac";
             this.bedroom_charac.Size = new System.Drawing.Size(152, 221);

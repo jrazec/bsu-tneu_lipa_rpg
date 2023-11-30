@@ -95,7 +95,7 @@ namespace bsu_tnue_lipa_rpg
                         mapWalkTimer.Stop();
 
                         //move character away from collision box
-                        map_charac.Location = new Point(213, 398);
+                        map_charac.Location = new Point(260, 431);
 
                         //reset boolean directions
                         go_left = false;

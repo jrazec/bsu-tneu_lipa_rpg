@@ -153,6 +153,16 @@ namespace bsu_tnue_lipa_rpg.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bluenelas {
+            get {
+                object obj = ResourceManager.GetObject("Bluenelas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cecs_hallway {
             get {
                 object obj = ResourceManager.GetObject("cecs-hallway", resourceCulture);
@@ -433,6 +443,36 @@ namespace bsu_tnue_lipa_rpg.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap female_idcasual_front {
+            get {
+                object obj = ResourceManager.GetObject("female-idcasual-front", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap female_idcasual_left {
+            get {
+                object obj = ResourceManager.GetObject("female-idcasual-left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap female_idcasual_right {
+            get {
+                object obj = ResourceManager.GetObject("female-idcasual-right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap female_org_back {
             get {
                 object obj = ResourceManager.GetObject("female-org-back", resourceCulture);
@@ -466,6 +506,46 @@ namespace bsu_tnue_lipa_rpg.Properties {
         internal static System.Drawing.Bitmap female_org_right {
             get {
                 object obj = ResourceManager.GetObject("female-org-right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap female_pajama_back {
+            get {
+                object obj = ResourceManager.GetObject("female-pajama-back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap female_pajama_front {
+            get {
+                object obj = ResourceManager.GetObject("female-pajama-front", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap female_pajama_left {
+            get {
+                object obj = ResourceManager.GetObject("female-pajama-left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap female_pajama_right {
+            get {
+                object obj = ResourceManager.GetObject("female-pajama-right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -683,6 +763,36 @@ namespace bsu_tnue_lipa_rpg.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap male_idcasual_front {
+            get {
+                object obj = ResourceManager.GetObject("male-idcasual-front", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap male_idcasual_left {
+            get {
+                object obj = ResourceManager.GetObject("male-idcasual-left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap male_idcasual_right {
+            get {
+                object obj = ResourceManager.GetObject("male-idcasual-right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap male_org_back {
             get {
                 object obj = ResourceManager.GetObject("male-org-back", resourceCulture);
@@ -716,6 +826,46 @@ namespace bsu_tnue_lipa_rpg.Properties {
         internal static System.Drawing.Bitmap male_org_right {
             get {
                 object obj = ResourceManager.GetObject("male-org-right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap male_pajama_back {
+            get {
+                object obj = ResourceManager.GetObject("male-pajama-back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap male_pajama_front {
+            get {
+                object obj = ResourceManager.GetObject("male-pajama-front", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap male_pajama_left {
+            get {
+                object obj = ResourceManager.GetObject("male-pajama-left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap male_pajama_right {
+            get {
+                object obj = ResourceManager.GetObject("male-pajama-right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -926,6 +1076,16 @@ namespace bsu_tnue_lipa_rpg.Properties {
         internal static System.Drawing.Bitmap PE_T_Shirt {
             get {
                 object obj = ResourceManager.GetObject("PE T-Shirt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pinknelas {
+            get {
+                object obj = ResourceManager.GetObject("Pinknelas", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1146,6 +1306,16 @@ namespace bsu_tnue_lipa_rpg.Properties {
         internal static System.Drawing.Bitmap tutorial_4 {
             get {
                 object obj = ResourceManager.GetObject("tutorial-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_Shoes {
+            get {
+                object obj = ResourceManager.GetObject("White Shoes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

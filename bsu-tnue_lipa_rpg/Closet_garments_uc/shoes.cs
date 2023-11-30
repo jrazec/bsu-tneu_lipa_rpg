@@ -19,15 +19,15 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             instance = this;
             if (Bedroom.instance.CHARAC_ID == 1)
             {
-                shoes1_pbox.Image = Properties.Resources.male_casual_front;
+                shoes1_pbox.Image = Properties.Resources.Bluenelas;
                 shoes2_pbox.Image = Properties.Resources.Shoes;
-                shoes3_pbox.Image = Properties.Resources._1;
+                shoes3_pbox.Image = Properties.Resources.White_Shoes;
             }
             else
             {
-                shoes1_pbox.Image = Properties.Resources.female_casual_front;
+                shoes1_pbox.Image = Properties.Resources.Pinknelas;
                 shoes2_pbox.Image = Properties.Resources.Shoes;
-                shoes3_pbox.Image = Properties.Resources._1;
+                shoes3_pbox.Image = Properties.Resources.White_Shoes;
             }
         }
         public bool shoes1_sel = false;
@@ -46,12 +46,12 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 if (Bedroom.instance.CHARAC_ID == 1)
                 {
                     Closet.Garments_Worn[0, 3] = "cas-shoes";
-                    Closet.instance.shoes_pbox.Image = Properties.Resources.male_casual_front;
+                    Closet.instance.shoes_pbox.Image = Properties.Resources.Bluenelas;
                 }
                 else
                 {
                     Closet.Garments_Worn[0, 3] = "cas-shoes";
-                    Closet.instance.shoes_pbox.Image = Properties.Resources.female_casual_front;
+                    Closet.instance.shoes_pbox.Image = Properties.Resources.Pinknelas;
                 }
             }
             else
@@ -96,7 +96,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
                 shoes2_pbox.BorderStyle = BorderStyle.Fixed3D;
                 Closet.Garments_Worn[0, 3] = "w-shoes";
-                Closet.instance.shoes_pbox.Image = Properties.Resources._1;
+                Closet.instance.shoes_pbox.Image = Properties.Resources.White_Shoes;
             }
             else
             {

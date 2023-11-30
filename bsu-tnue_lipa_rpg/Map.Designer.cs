@@ -30,6 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.hint_lbl = new System.Windows.Forms.Label();
+            this.day_lbl = new System.Windows.Forms.Label();
+            this.hint_pbox = new System.Windows.Forms.PictureBox();
+            this.currency_lbl = new System.Windows.Forms.Label();
+            this.menu_pbox = new System.Windows.Forms.PictureBox();
             this.map_charac = new System.Windows.Forms.PictureBox();
             this.mapWalkTimer = new System.Windows.Forms.Timer(this.components);
             this.cecscollision_pbox = new System.Windows.Forms.PictureBox();
@@ -39,19 +44,14 @@
             this.next_pbox = new System.Windows.Forms.PictureBox();
             this.click_lbl = new System.Windows.Forms.Label();
             this.enter_lbl = new System.Windows.Forms.Label();
-            this.hint_lbl = new System.Windows.Forms.Label();
-            this.hint_pbox = new System.Windows.Forms.PictureBox();
-            this.menu_pbox = new System.Windows.Forms.PictureBox();
-            this.currency_lbl = new System.Windows.Forms.Label();
-            this.day_lbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.map_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cecscollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.next_pbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,6 +67,59 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1151, 50);
             this.panel1.TabIndex = 0;
+            // 
+            // hint_lbl
+            // 
+            this.hint_lbl.AutoSize = true;
+            this.hint_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hint_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.hint_lbl.Location = new System.Drawing.Point(967, 7);
+            this.hint_lbl.Name = "hint_lbl";
+            this.hint_lbl.Size = new System.Drawing.Size(58, 34);
+            this.hint_lbl.TabIndex = 19;
+            this.hint_lbl.Text = "Hint";
+            // 
+            // day_lbl
+            // 
+            this.day_lbl.AutoSize = true;
+            this.day_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.day_lbl.Location = new System.Drawing.Point(170, 7);
+            this.day_lbl.Name = "day_lbl";
+            this.day_lbl.Size = new System.Drawing.Size(99, 34);
+            this.day_lbl.TabIndex = 15;
+            this.day_lbl.Text = "Monday";
+            // 
+            // hint_pbox
+            // 
+            this.hint_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.hint_icon;
+            this.hint_pbox.Location = new System.Drawing.Point(926, 7);
+            this.hint_pbox.Name = "hint_pbox";
+            this.hint_pbox.Size = new System.Drawing.Size(44, 34);
+            this.hint_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hint_pbox.TabIndex = 18;
+            this.hint_pbox.TabStop = false;
+            // 
+            // currency_lbl
+            // 
+            this.currency_lbl.AutoSize = true;
+            this.currency_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.currency_lbl.Location = new System.Drawing.Point(793, 6);
+            this.currency_lbl.Name = "currency_lbl";
+            this.currency_lbl.Size = new System.Drawing.Size(83, 34);
+            this.currency_lbl.TabIndex = 16;
+            this.currency_lbl.Text = "₱ 0.00";
+            // 
+            // menu_pbox
+            // 
+            this.menu_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.menu_icon;
+            this.menu_pbox.Location = new System.Drawing.Point(8, 8);
+            this.menu_pbox.Name = "menu_pbox";
+            this.menu_pbox.Size = new System.Drawing.Size(44, 34);
+            this.menu_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.menu_pbox.TabIndex = 17;
+            this.menu_pbox.TabStop = false;
             // 
             // map_charac
             // 
@@ -163,59 +216,6 @@
             this.enter_lbl.Visible = false;
             this.enter_lbl.Click += new System.EventHandler(this.enter_lbl_Click);
             // 
-            // hint_lbl
-            // 
-            this.hint_lbl.AutoSize = true;
-            this.hint_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hint_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.hint_lbl.Location = new System.Drawing.Point(967, 7);
-            this.hint_lbl.Name = "hint_lbl";
-            this.hint_lbl.Size = new System.Drawing.Size(58, 34);
-            this.hint_lbl.TabIndex = 19;
-            this.hint_lbl.Text = "Hint";
-            // 
-            // hint_pbox
-            // 
-            this.hint_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.hint_icon;
-            this.hint_pbox.Location = new System.Drawing.Point(926, 7);
-            this.hint_pbox.Name = "hint_pbox";
-            this.hint_pbox.Size = new System.Drawing.Size(44, 34);
-            this.hint_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hint_pbox.TabIndex = 18;
-            this.hint_pbox.TabStop = false;
-            // 
-            // menu_pbox
-            // 
-            this.menu_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.menu_icon;
-            this.menu_pbox.Location = new System.Drawing.Point(8, 8);
-            this.menu_pbox.Name = "menu_pbox";
-            this.menu_pbox.Size = new System.Drawing.Size(44, 34);
-            this.menu_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu_pbox.TabIndex = 17;
-            this.menu_pbox.TabStop = false;
-            // 
-            // currency_lbl
-            // 
-            this.currency_lbl.AutoSize = true;
-            this.currency_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.currency_lbl.Location = new System.Drawing.Point(793, 6);
-            this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Size = new System.Drawing.Size(83, 34);
-            this.currency_lbl.TabIndex = 16;
-            this.currency_lbl.Text = "₱ 0.00";
-            // 
-            // day_lbl
-            // 
-            this.day_lbl.AutoSize = true;
-            this.day_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.day_lbl.Location = new System.Drawing.Point(170, 7);
-            this.day_lbl.Name = "day_lbl";
-            this.day_lbl.Size = new System.Drawing.Size(99, 34);
-            this.day_lbl.TabIndex = 15;
-            this.day_lbl.Text = "Monday";
-            // 
             // Map
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -241,13 +241,13 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.key_is_up);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.map_charac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cecscollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.obcollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.next_pbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

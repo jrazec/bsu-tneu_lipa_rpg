@@ -768,5 +768,56 @@
   <ItemGroup>
     <None Include="Resources\power.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-pajama-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-pajama-front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-pajama-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-pajama-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-idcasual-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-idcasual-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-idcasual-front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-idcasual-front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-idcasual-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-idcasual-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-pajama-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-pajama-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-pajama-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pinknelas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White Shoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bluenelas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-pajama-front.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
