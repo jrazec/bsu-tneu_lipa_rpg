@@ -203,6 +203,12 @@
     <Compile Include="Closet_garments_uc\bottom.Designer.cs">
       <DependentUpon>bottom.cs</DependentUpon>
     </Compile>
+    <Compile Include="Closet_garments_uc\ChapEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Closet_garments_uc\ChapEnd.Designer.cs">
+      <DependentUpon>ChapEnd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Closet_garments_uc\neck.cs">
       <SubType>UserControl</SubType>
     </Compile>
