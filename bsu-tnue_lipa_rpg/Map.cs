@@ -95,7 +95,7 @@ namespace bsu_tnue_lipa_rpg
                         mapWalkTimer.Stop();
 
                         //move character away from collision box
-                        map_charac.Location = new Point(277, 322);
+                        map_charac.Location = new Point(213, 398);
 
                         //reset boolean directions
                         go_left = false;
@@ -105,7 +105,6 @@ namespace bsu_tnue_lipa_rpg
 
                         //switch to CECS form
                         this.Hide();
-                        this.Close();
                         CECS_bldg enter_cecs = new CECS_bldg();
                         enter_cecs.ShowDialog();
 
@@ -123,7 +122,7 @@ namespace bsu_tnue_lipa_rpg
                         mapWalkTimer.Stop();
 
                         //move character away from collision box
-                        map_charac.Location = new Point(277, 322);
+                        map_charac.Location = new Point(925, 234);
 
                         //reset boolean directions
                         go_left = false;
@@ -133,7 +132,6 @@ namespace bsu_tnue_lipa_rpg
 
                         //switch to OB form
                         this.Hide();
-                        this.Close();
                         Old_Bldg enter_ob = new Old_Bldg();
                         enter_ob.ShowDialog();
                         

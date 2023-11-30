@@ -127,8 +127,9 @@ namespace bsu_tnue_lipa_rpg
                         this.Hide();
                         CECS_bldg.instance.Hide();
                         CECS_bldg.instance.Close();
-                        Map returntomap = new Map();
-                        returntomap.ShowDialog();
+                        Map returntomap = Map.instance;
+                        returntomap.mapWalkTimer.Start();
+                        returntomap.Show();
                     }
                 }
 

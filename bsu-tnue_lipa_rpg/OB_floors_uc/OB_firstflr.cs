@@ -125,8 +125,9 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
                         this.Hide();
                         Old_Bldg.instance.Hide();
                         Old_Bldg.instance.Close();
-                        Map returntomap = new Map();
-                        returntomap.ShowDialog();
+                        Map returntomap = Map.instance;
+                        returntomap.mapWalkTimer.Start();
+                        returntomap.Show();
                     }
                 }
                 //go up
