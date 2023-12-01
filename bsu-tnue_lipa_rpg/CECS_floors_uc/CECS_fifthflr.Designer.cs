@@ -50,6 +50,7 @@
             // drbalazon_pbox
             // 
             this.drbalazon_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.drbalazon_pbox.Enabled = false;
             this.drbalazon_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Dr_Balazon;
             this.drbalazon_pbox.Location = new System.Drawing.Point(733, 163);
             this.drbalazon_pbox.Name = "drbalazon_pbox";
@@ -57,6 +58,7 @@
             this.drbalazon_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.drbalazon_pbox.TabIndex = 0;
             this.drbalazon_pbox.TabStop = false;
+            this.drbalazon_pbox.Visible = false;
             // 
             // cecsfifthflr_charac
             // 
@@ -99,10 +101,12 @@
             // success_door
             // 
             this.success_door.BackColor = System.Drawing.Color.Transparent;
+            this.success_door.Enabled = false;
             this.success_door.Location = new System.Drawing.Point(502, 175);
             this.success_door.Name = "success_door";
             this.success_door.Size = new System.Drawing.Size(50, 74);
             this.success_door.TabIndex = 15;
+            this.success_door.Visible = false;
             // 
             // door3_panel
             // 
@@ -111,6 +115,7 @@
             this.door3_panel.Name = "door3_panel";
             this.door3_panel.Size = new System.Drawing.Size(10, 82);
             this.door3_panel.TabIndex = 11;
+            this.door3_panel.Visible = false;
             // 
             // door2_panel
             // 
@@ -119,6 +124,7 @@
             this.door2_panel.Name = "door2_panel";
             this.door2_panel.Size = new System.Drawing.Size(70, 10);
             this.door2_panel.TabIndex = 10;
+            this.door2_panel.Visible = false;
             // 
             // door1_panel
             // 
@@ -127,6 +133,7 @@
             this.door1_panel.Name = "door1_panel";
             this.door1_panel.Size = new System.Drawing.Size(11, 87);
             this.door1_panel.TabIndex = 14;
+            this.door1_panel.Visible = false;
             // 
             // dr_dg
             // 
@@ -140,6 +147,7 @@
             this.dr_dg.Text = "Congratulations Red Spartan! Let\'s now proceed\r\nto our class here in Computer Lab" +
     " 1,  shall we?";
             this.dr_dg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dr_dg.Visible = false;
             // 
             // dg_pbox
             // 
@@ -151,10 +159,12 @@
             this.dg_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dg_pbox.TabIndex = 12;
             this.dg_pbox.TabStop = false;
+            this.dg_pbox.Visible = false;
             // 
             // padayon_btn
             // 
             this.padayon_btn.BackColor = System.Drawing.Color.Maroon;
+            this.padayon_btn.Enabled = false;
             this.padayon_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.padayon_btn.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.padayon_btn.ForeColor = System.Drawing.Color.White;

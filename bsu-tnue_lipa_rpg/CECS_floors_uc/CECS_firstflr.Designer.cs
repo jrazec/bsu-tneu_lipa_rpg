@@ -88,6 +88,7 @@
             // atty_pbox
             // 
             this.atty_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.atty_pbox.Enabled = false;
             this.atty_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Atty_Alvin;
             this.atty_pbox.Location = new System.Drawing.Point(371, 166);
             this.atty_pbox.Name = "atty_pbox";
@@ -95,14 +96,17 @@
             this.atty_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.atty_pbox.TabIndex = 3;
             this.atty_pbox.TabStop = false;
+            this.atty_pbox.Visible = false;
             // 
             // success_registrar
             // 
             this.success_registrar.BackColor = System.Drawing.Color.Transparent;
+            this.success_registrar.Enabled = false;
             this.success_registrar.Location = new System.Drawing.Point(1003, 180);
             this.success_registrar.Name = "success_registrar";
             this.success_registrar.Size = new System.Drawing.Size(394, 74);
             this.success_registrar.TabIndex = 21;
+            this.success_registrar.Visible = false;
             // 
             // door3_panel
             // 
@@ -111,6 +115,7 @@
             this.door3_panel.Name = "door3_panel";
             this.door3_panel.Size = new System.Drawing.Size(10, 104);
             this.door3_panel.TabIndex = 17;
+            this.door3_panel.Visible = false;
             // 
             // door2_panel
             // 
@@ -119,6 +124,7 @@
             this.door2_panel.Name = "door2_panel";
             this.door2_panel.Size = new System.Drawing.Size(455, 13);
             this.door2_panel.TabIndex = 16;
+            this.door2_panel.Visible = false;
             // 
             // door1_panel
             // 
@@ -127,6 +133,7 @@
             this.door1_panel.Name = "door1_panel";
             this.door1_panel.Size = new System.Drawing.Size(10, 104);
             this.door1_panel.TabIndex = 20;
+            this.door1_panel.Visible = false;
             // 
             // atty_dg
             // 
@@ -140,6 +147,7 @@
             this.atty_dg.Text = "The registrar\'s office is conveniently situated here on the first floor of the CE" +
     "CS Building . \r\nI am wishing you an excellent day ahead!";
             this.atty_dg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.atty_dg.Visible = false;
             // 
             // dg_pbox
             // 
@@ -151,10 +159,12 @@
             this.dg_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dg_pbox.TabIndex = 18;
             this.dg_pbox.TabStop = false;
+            this.dg_pbox.Visible = false;
             // 
             // padayon_btn
             // 
             this.padayon_btn.BackColor = System.Drawing.Color.Maroon;
+            this.padayon_btn.Enabled = false;
             this.padayon_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.padayon_btn.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.padayon_btn.ForeColor = System.Drawing.Color.White;

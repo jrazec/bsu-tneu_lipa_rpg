@@ -85,10 +85,12 @@
             // success_registrar
             // 
             this.success_registrar.BackColor = System.Drawing.Color.Transparent;
+            this.success_registrar.Enabled = false;
             this.success_registrar.Location = new System.Drawing.Point(238, 169);
             this.success_registrar.Name = "success_registrar";
             this.success_registrar.Size = new System.Drawing.Size(394, 74);
             this.success_registrar.TabIndex = 27;
+            this.success_registrar.Visible = false;
             // 
             // door3_panel
             // 
@@ -97,6 +99,7 @@
             this.door3_panel.Name = "door3_panel";
             this.door3_panel.Size = new System.Drawing.Size(10, 104);
             this.door3_panel.TabIndex = 23;
+            this.door3_panel.Visible = false;
             // 
             // door2_panel
             // 
@@ -105,6 +108,7 @@
             this.door2_panel.Name = "door2_panel";
             this.door2_panel.Size = new System.Drawing.Size(471, 13);
             this.door2_panel.TabIndex = 22;
+            this.door2_panel.Visible = false;
             // 
             // door1_panel
             // 
@@ -113,6 +117,7 @@
             this.door1_panel.Name = "door1_panel";
             this.door1_panel.Size = new System.Drawing.Size(10, 104);
             this.door1_panel.TabIndex = 26;
+            this.door1_panel.Visible = false;
             // 
             // dg_dg
             // 
@@ -125,6 +130,7 @@
             this.dg_dg.TabIndex = 25;
             this.dg_dg.Text = "Heading out for your medical appointment at the school clinic..";
             this.dg_dg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dg_dg.Visible = false;
             // 
             // dg_pbox
             // 
@@ -136,6 +142,7 @@
             this.dg_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dg_pbox.TabIndex = 24;
             this.dg_pbox.TabStop = false;
+            this.dg_pbox.Visible = false;
             // 
             // OB_secondflr
             // 

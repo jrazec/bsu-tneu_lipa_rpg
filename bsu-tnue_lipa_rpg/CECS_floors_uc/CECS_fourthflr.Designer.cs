@@ -52,6 +52,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             // sirtiquio_pbox
             // 
             this.sirtiquio_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.sirtiquio_pbox.Enabled = false;
             this.sirtiquio_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Sir_Daryl;
             this.sirtiquio_pbox.Location = new System.Drawing.Point(1058, 184);
             this.sirtiquio_pbox.Name = "sirtiquio_pbox";
@@ -59,6 +60,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.sirtiquio_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sirtiquio_pbox.TabIndex = 0;
             this.sirtiquio_pbox.TabStop = false;
+            this.sirtiquio_pbox.Visible = false;
             // 
             // cecsfourthflr_charac
             // 
@@ -108,6 +110,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.dg_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dg_pbox.TabIndex = 6;
             this.dg_pbox.TabStop = false;
+            this.dg_pbox.Visible = false;
             // 
             // sir_dg
             // 
@@ -121,6 +124,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.sir_dg.Text = "Congratulations Red Spartan! Let\'s now proceed\r\nto our class here in Room 401, sh" +
     "all we?";
             this.sir_dg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.sir_dg.Visible = false;
             // 
             // door1_panel
             // 
@@ -129,6 +133,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.door1_panel.Name = "door1_panel";
             this.door1_panel.Size = new System.Drawing.Size(11, 87);
             this.door1_panel.TabIndex = 8;
+            this.door1_panel.Visible = false;
             this.door1_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.door_panel_Paint);
             // 
             // door2_panel
@@ -138,6 +143,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.door2_panel.Name = "door2_panel";
             this.door2_panel.Size = new System.Drawing.Size(70, 10);
             this.door2_panel.TabIndex = 0;
+            this.door2_panel.Visible = false;
             // 
             // door3_panel
             // 
@@ -146,18 +152,22 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.door3_panel.Name = "door3_panel";
             this.door3_panel.Size = new System.Drawing.Size(10, 82);
             this.door3_panel.TabIndex = 1;
+            this.door3_panel.Visible = false;
             // 
             // success_door
             // 
             this.success_door.BackColor = System.Drawing.Color.Transparent;
+            this.success_door.Enabled = false;
             this.success_door.Location = new System.Drawing.Point(979, 174);
             this.success_door.Name = "success_door";
             this.success_door.Size = new System.Drawing.Size(50, 74);
             this.success_door.TabIndex = 9;
+            this.success_door.Visible = false;
             // 
             // padayon_btn
             // 
             this.padayon_btn.BackColor = System.Drawing.Color.Maroon;
+            this.padayon_btn.Enabled = false;
             this.padayon_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.padayon_btn.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.padayon_btn.ForeColor = System.Drawing.Color.White;

@@ -49,6 +49,7 @@
             // engrjonnah_pbox
             // 
             this.engrjonnah_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.engrjonnah_pbox.Enabled = false;
             this.engrjonnah_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Engr_Jonnah;
             this.engrjonnah_pbox.Location = new System.Drawing.Point(511, 139);
             this.engrjonnah_pbox.Name = "engrjonnah_pbox";
@@ -150,6 +151,7 @@
             // padayon_btn
             // 
             this.padayon_btn.BackColor = System.Drawing.Color.Maroon;
+            this.padayon_btn.Enabled = false;
             this.padayon_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.padayon_btn.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.padayon_btn.ForeColor = System.Drawing.Color.White;
