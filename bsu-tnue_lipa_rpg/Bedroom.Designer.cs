@@ -322,6 +322,8 @@
             this.tasks_panel.Name = "tasks_panel";
             this.tasks_panel.Size = new System.Drawing.Size(208, 59);
             this.tasks_panel.TabIndex = 17;
+            this.tasks_panel.MouseEnter += new System.EventHandler(this.tasks_hoverin);
+            this.tasks_panel.MouseLeave += new System.EventHandler(this.tasks_hoverout);
             // 
             // achievs_panel
             // 
@@ -386,7 +388,7 @@
             // 
             this.achievs_lbl.AutoSize = true;
             this.achievs_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.achievs_lbl.Location = new System.Drawing.Point(42, 18);
+            this.achievs_lbl.Location = new System.Drawing.Point(47, 18);
             this.achievs_lbl.Name = "achievs_lbl";
             this.achievs_lbl.Size = new System.Drawing.Size(120, 24);
             this.achievs_lbl.TabIndex = 22;
@@ -396,7 +398,7 @@
             // 
             this.return_label.AutoSize = true;
             this.return_label.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.return_label.Location = new System.Drawing.Point(56, 19);
+            this.return_label.Location = new System.Drawing.Point(59, 19);
             this.return_label.Name = "return_label";
             this.return_label.Size = new System.Drawing.Size(93, 24);
             this.return_label.TabIndex = 23;

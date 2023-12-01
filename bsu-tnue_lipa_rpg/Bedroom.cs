@@ -130,6 +130,31 @@ choose the right ones.";
                 hint_panel.Visible = false;
             }
         }
+
+        //hover menu events
+        private void tasks_hoverin(object sender, EventArgs e)
+        {
+            hoverChange(tasks_panel, tasks_lbl);
+        }
+        private void tasks_hoverout(object sender, EventArgs e)
+        {
+            hoverReset(tasks_panel, tasks_lbl);
+        }
+        //hover functions
+        private void hoverChange(Control panel, Control label)
+        {
+            panel.BackColor = Color.Maroon;
+            panel.Cursor = Cursors.Hand;
+            label.ForeColor = Color.White;
+        }
+
+        private void hoverReset(Control panel, Control label)
+        {
+            panel.BackColor = Color.White;
+            panel.Cursor = Cursors.Arrow;
+            label.ForeColor = Color.Black;
+        }
+
         //initiate character movement in the bedroom
         private void bedroomWalkTimer_Tick(object sender, EventArgs e)
         {
@@ -498,6 +523,7 @@ choose the right ones.";
         {
 
         }
+
 
         public void checkDay()
         {
