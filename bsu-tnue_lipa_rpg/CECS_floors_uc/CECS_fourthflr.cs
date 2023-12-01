@@ -128,35 +128,34 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
 
                         //proceed to elev
                         this.Hide();
-                        CECS_bldg.instance.Hide();
-                        CECS_bldg.instance.Close();
-                        Chapter_End cE = new Chapter_End();
-                        cE.ShowDialog();
+                        CECS_bldg.instance.cecscontainer_panel.Visible = false;
                     }
                 }
-
-                if (navigation is PictureBox && (string)navigation.Tag == "sir")
+                if (sirtiquio_pbox.Enabled)
                 {
-                    if (cecsfourthflr_charac.Bounds.IntersectsWith(navigation.Bounds))
+                    if (navigation is PictureBox && (string)navigation.Tag == "sir")
                     {
-                        //stop character movement
-                        cecsfourthWalkTimer.Stop();
+                        if (cecsfourthflr_charac.Bounds.IntersectsWith(navigation.Bounds))
+                        {
+                            //stop character movement
+                            cecsfourthWalkTimer.Stop();
 
-                        //move character away from collision box
-                        cecsfourthflr_charac.Location = new Point(878, 174);
+                            //move character away from collision box
+                            cecsfourthflr_charac.Location = new Point(878, 174);
 
-                        //reset boolean directions
-                        go_left = false;
-                        go_right = false;
-                        go_up = false;
-                        go_down = false;
+                            //reset boolean directions
+                            go_left = false;
+                            go_right = false;
+                            go_up = false;
+                            go_down = false;
 
-                        //proceed to elev
-                        padayon_btn.Visible = true;
-                        padayon_btn.Enabled = true;
-                        dg_pbox.Visible = true;
-                        sir_dg.Visible = true;
-                        sir_dg.BringToFront();
+                            //proceed to elev
+                            padayon_btn.Visible = true;
+                            padayon_btn.Enabled = true;
+                            dg_pbox.Visible = true;
+                            sir_dg.Visible = true;
+                            sir_dg.BringToFront();
+                        }
                     }
                 }
             }

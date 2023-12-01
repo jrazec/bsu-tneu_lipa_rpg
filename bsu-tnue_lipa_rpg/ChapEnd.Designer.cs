@@ -64,6 +64,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Chapter_End";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChapEnd";
             ((System.ComponentModel.ISupportInitialize)(this.proceed_pbox)).EndInit();
             this.ResumeLayout(false);

@@ -140,28 +140,31 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
                 }
 
                 //mam jonnah
-                if (navigation is PictureBox && (string)navigation.Tag == "engr")
+                if (engrjonnah_pbox.Enabled) 
                 {
-                    if (obfifthflr_charac.Bounds.IntersectsWith(navigation.Bounds))
+                    if (navigation is PictureBox && (string)navigation.Tag == "engr")
                     {
-                        //stop character movement
-                        obfifthWalkTimer.Stop();
+                        if (obfifthflr_charac.Bounds.IntersectsWith(navigation.Bounds))
+                        {
+                            //stop character movement
+                            obfifthWalkTimer.Stop();
 
-                        //move character away from collision box
-                        obfifthflr_charac.Location = new Point(574, 136);
+                            //move character away from collision box
+                            obfifthflr_charac.Location = new Point(574, 136);
 
-                        //reset boolean directions
-                        go_left = false;
-                        go_right = false;
-                        go_up = false;
-                        go_down = false;
+                            //reset boolean directions
+                            go_left = false;
+                            go_right = false;
+                            go_up = false;
+                            go_down = false;
 
-                        //proceed to elev
-                        padayon_btn.Visible = true;
-                        padayon_btn.Enabled = true;
-                        dg_pbox.Visible = true;
-                        engr_dg.Visible = true;
-                        engr_dg.BringToFront();
+                            //proceed to elev
+                            padayon_btn.Visible = true;
+                            padayon_btn.Enabled = true;
+                            dg_pbox.Visible = true;
+                            engr_dg.Visible = true;
+                            engr_dg.BringToFront();
+                        }
                     }
                 }
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bsu_tnue_lipa_rpg.Closet_garments_uc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -128,6 +129,35 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
                         CECS_bldg.instance.cecscontainer_panel.Visible = false;
                     }
                 }
+
+                if (drbalazon_pbox.Enabled)
+                {
+                    //Dr Balazon
+                    if (navigation is PictureBox && (string)navigation.Tag == "dr")
+                    {
+                        if (cecsfifthflr_charac.Bounds.IntersectsWith(navigation.Bounds))
+                        {
+                            //stop character movement
+                            cecsfifthWalkTimer.Stop();
+
+                            //move character away from collision box
+                            cecsfifthflr_charac.Location = new Point(364, 166);
+
+                            //reset boolean directions
+                            go_left = false;
+                            go_right = false;
+                            go_up = false;
+                            go_down = false;
+
+                            //proceed to elev
+                            padayon_btn.Visible = true;
+                            padayon_btn.Enabled = true;
+                            dg_pbox.Visible = true;
+                            dr_dg.Visible = true;
+                            dr_dg.BringToFront();
+                        }
+                    }
+                }
             }
         }
 
@@ -179,6 +209,25 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             {
                 go_down = false;
             }
+        }
+
+        private void padayon_btn_Click(object sender, EventArgs e)
+        {
+            door1_panel.Visible = true;
+            door2_panel.Visible = true;
+            door3_panel.Visible = true;
+            success_door.Enabled = true;
+            success_door.Visible = true;
+            click_lbl.Visible = true;
+        }
+
+        private void success_door_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CECS_bldg.instance.Hide();
+            CECS_bldg.instance.Close();
+            Chapter_End cE = new Chapter_End();
+            cE.ShowDialog();
         }
     }
 }
