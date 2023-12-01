@@ -102,6 +102,7 @@ choose the right ones.";
             bedroomWalkTimer.Start();
         }
 
+        //menu & hint events
         private void menu_pbox_Click(object sender, EventArgs e)
         {
             if (openMenu == false)
@@ -164,14 +165,14 @@ choose the right ones.";
         }
 
         //hover functions
-        private void hoverChange(Control panel, Control label)
+        public void hoverChange(Control panel, Control label)
         {
             panel.BackColor = Color.Maroon;
             panel.Cursor = Cursors.Hand;
             label.ForeColor = Color.White;
         }
 
-        private void hoverReset(Control panel, Control label)
+        public void hoverReset(Control panel, Control label)
         {
             panel.BackColor = Color.White;
             panel.Cursor = Cursors.Arrow;

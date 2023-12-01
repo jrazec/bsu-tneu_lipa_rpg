@@ -29,6 +29,74 @@ namespace bsu_tnue_lipa_rpg
             Bedroom.instance.characBack(facade_charac);
 
         }
+        bool openMenu = false;
+        bool openHint = false;
+
+
+
+        //menu & hint events
+        private void menu_pbox_Click(object sender, EventArgs e)
+        {
+            if (openMenu == false)
+            {
+                openMenu = true;
+                viewmenu_panel.Visible = true;
+                viewmenu_panel.BringToFront();
+                facadeWalkTimer.Stop();
+            }
+            else
+            {
+                openMenu = false;
+                viewmenu_panel.Visible = false;
+                facadeWalkTimer.Start();
+            }
+        }
+
+        private void hint_pbox_Click(object sender, EventArgs e)
+        {
+            if (openHint == false)
+            {
+                openHint = true;
+                hint_panel.Visible = true;
+                hint_panel.BringToFront();
+            }
+            else
+            {
+                openHint = false;
+                hint_panel.Visible = false;
+            }
+        }
+
+        //hover menu events
+        private void tasks_hoverin(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverChange(tasks_panel, tasks_lbl);
+        }
+
+        private void tasks_hoverout(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverReset(tasks_panel, tasks_lbl);
+        }
+
+        private void achievs_hoverin(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverChange(achievs_panel, achievs_lbl);
+        }
+
+        private void achievs_hoverout(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverReset(achievs_panel, achievs_lbl);
+        }
+
+        private void return_hoverin(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverChange(return_panel, return_label);
+        }
+
+        private void return_hoverout(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverReset(return_panel, return_label);
+        }
 
         private void facadeWalkTimer_Tick(object sender, EventArgs e)
         {
@@ -179,5 +247,8 @@ namespace bsu_tnue_lipa_rpg
                 go_down = false;
             }
         }
+
+        
+
     }
 }

@@ -139,6 +139,7 @@
             this.menu_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menu_pbox.TabIndex = 5;
             this.menu_pbox.TabStop = false;
+            this.menu_pbox.Click += new System.EventHandler(this.menu_pbox_Click);
             // 
             // day_lbl
             // 
@@ -183,6 +184,7 @@
             this.hint_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hint_pbox.TabIndex = 7;
             this.hint_pbox.TabStop = false;
+            this.hint_pbox.Click += new System.EventHandler(this.hint_pbox_Click);
             // 
             // viewmenu_panel
             // 
@@ -207,6 +209,8 @@
             this.return_panel.Name = "return_panel";
             this.return_panel.Size = new System.Drawing.Size(208, 59);
             this.return_panel.TabIndex = 19;
+            this.return_panel.MouseEnter += new System.EventHandler(this.return_hoverin);
+            this.return_panel.MouseLeave += new System.EventHandler(this.return_hoverout);
             // 
             // return_label
             // 
@@ -247,6 +251,8 @@
             this.achievs_panel.Name = "achievs_panel";
             this.achievs_panel.Size = new System.Drawing.Size(208, 59);
             this.achievs_panel.TabIndex = 18;
+            this.achievs_panel.MouseEnter += new System.EventHandler(this.achievs_hoverin);
+            this.achievs_panel.MouseLeave += new System.EventHandler(this.achievs_hoverout);
             // 
             // achievs_lbl
             // 
@@ -265,6 +271,8 @@
             this.tasks_panel.Name = "tasks_panel";
             this.tasks_panel.Size = new System.Drawing.Size(208, 59);
             this.tasks_panel.TabIndex = 17;
+            this.tasks_panel.MouseEnter += new System.EventHandler(this.tasks_hoverin);
+            this.tasks_panel.MouseLeave += new System.EventHandler(this.tasks_hoverout);
             // 
             // tasks_lbl
             // 
@@ -314,7 +322,7 @@
             this.hinttext_lbl.Name = "hinttext_lbl";
             this.hinttext_lbl.Size = new System.Drawing.Size(341, 79);
             this.hinttext_lbl.TabIndex = 0;
-            this.hinttext_lbl.Text = "Go to your closet, and choose the correct garments according to your schedule.";
+            this.hinttext_lbl.Text = "Hint goes here...";
             this.hinttext_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Facade
