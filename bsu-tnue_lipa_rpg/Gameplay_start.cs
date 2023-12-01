@@ -93,7 +93,7 @@ namespace bsu_tnue_lipa_rpg
         {
 
             
-            messagebox_error messageBoxForm = new messagebox_error();
+            messagebox_areyousure messageBoxForm = new messagebox_areyousure();
             messageBoxForm.Show();
             /* 
             * Tester

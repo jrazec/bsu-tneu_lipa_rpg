@@ -1,6 +1,6 @@
 ﻿namespace bsu_tnue_lipa_rpg
 {
-    partial class messagebox_error
+    partial class messagebox_areyousure
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.yes_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.no_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,11 +41,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(40, 119);
+            this.label1.Location = new System.Drawing.Point(40, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(315, 24);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "THERE IS SOMETHING WRONG SPARTAN";
+            this.label1.Size = new System.Drawing.Size(290, 24);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "YOU\'VE COME A LONG WAY SPARTAN";
             // 
             // label2
             // 
@@ -54,45 +55,57 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(32, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(277, 72);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "YOU FAILED!!!";
+            this.label2.Size = new System.Drawing.Size(322, 72);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "ARE YOU SURE?";
             // 
-            // button1
+            // yes_btn
             // 
-            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Maroon;
-            this.button1.Location = new System.Drawing.Point(444, 253);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 32);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "OKAY";
-            this.button1.UseVisualStyleBackColor = true;
+            this.yes_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yes_btn.ForeColor = System.Drawing.Color.Maroon;
+            this.yes_btn.Location = new System.Drawing.Point(345, 253);
+            this.yes_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.yes_btn.Name = "yes_btn";
+            this.yes_btn.Size = new System.Drawing.Size(93, 32);
+            this.yes_btn.TabIndex = 9;
+            this.yes_btn.Text = "YES";
+            this.yes_btn.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.spartan_transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(216, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(216, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(386, 308);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // messagebox_error
+            // no_btn
+            // 
+            this.no_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.no_btn.ForeColor = System.Drawing.Color.Maroon;
+            this.no_btn.Location = new System.Drawing.Point(444, 253);
+            this.no_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.no_btn.Name = "no_btn";
+            this.no_btn.Size = new System.Drawing.Size(93, 32);
+            this.no_btn.TabIndex = 13;
+            this.no_btn.Text = "NO";
+            this.no_btn.UseVisualStyleBackColor = true;
+            // 
+            // messagebox_areyousure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(549, 298);
+            this.Controls.Add(this.no_btn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.yes_btn);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "messagebox_error";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ERROR";
+            this.Name = "messagebox_areyousure";
+            this.Text = "WILL OF COURAGE";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -103,7 +116,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button yes_btn;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button no_btn;
     }
 }
