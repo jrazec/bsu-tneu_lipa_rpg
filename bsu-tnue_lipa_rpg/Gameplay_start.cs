@@ -93,7 +93,7 @@ namespace bsu_tnue_lipa_rpg
         {
 
             
-            messagebox_buying messageBoxForm = new messagebox_buying();
+            messagebox_refund2 messageBoxForm = new messagebox_refund2();
             messageBoxForm.Show();
             /* 
             * Tester
