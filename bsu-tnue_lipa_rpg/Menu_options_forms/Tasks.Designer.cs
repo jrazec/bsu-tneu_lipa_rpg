@@ -186,6 +186,7 @@
             this.close_btn.TabIndex = 13;
             this.close_btn.Text = "CLOSE";
             this.close_btn.UseVisualStyleBackColor = true;
+            this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
             // 
             // label12
             // 
@@ -220,7 +221,7 @@
             this.Controls.Add(this.label12);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Tasks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tasks";

@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using bsu_tnue_lipa_rpg.Menu_options_forms;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,13 +51,17 @@ namespace bsu_tnue_lipa_rpg
             checkTask();
             checkMoney();
             checkDay();
-            
+
             characFront(bedroom_charac);
 
         }
         bool openMenu = false;
         bool openSched = false;
         bool openHint = false;
+
+        public bool tasksClicked = false;
+        public bool achievsClicked = false;
+        public bool returnClicked = false;
 
 
         private void next_pbox_Click(object sender, EventArgs e)
@@ -135,7 +140,6 @@ choose the right ones.";
         }
 
         //hover menu events
-
         private void tasks_hoverin(object sender, EventArgs e)
         {
             hoverChange(tasks_lbl);
@@ -143,7 +147,14 @@ choose the right ones.";
 
         private void tasks_hoverout(object sender, EventArgs e)
         {
-            hoverReset(tasks_lbl);
+            if (!tasksClicked)
+            {
+                hoverReset(tasks_lbl);
+            }
+            else
+            {
+                hoverChange(tasks_lbl);
+            }
         }
 
         private void achievs_hoverin(object sender, EventArgs e)
@@ -162,6 +173,53 @@ choose the right ones.";
         private void return_hoverout(object sender, EventArgs e)
         {
             hoverReset(return_label);
+        }
+
+        //click menu events
+        private void tasks_lbl_Click(object sender, EventArgs e)
+        {
+            tasksClicked = true;
+            achievsClicked = false;
+            returnClicked = false;
+
+            hoverChange(tasks_lbl);
+            hoverReset(achievs_lbl);
+            hoverReset(return_label);
+            
+
+            Tasks tasks = new Tasks();
+            tasks.Show();
+
+           
+            
+            
+        }
+        private void achievs_lbl_Click(object sender, EventArgs e)
+        {
+            achievsClicked = true;
+            tasksClicked = false;
+            returnClicked = false;
+
+            hoverChange(achievs_lbl);
+            hoverReset(tasks_lbl);
+            hoverReset(return_label);
+
+            Achievements achievs = new Achievements();
+            achievs.Show();
+
+        }
+
+        private void return_label_Click(object sender, EventArgs e)
+        {
+            returnClicked = true;
+            tasksClicked = false;
+            achievsClicked = false;
+
+            hoverChange(return_label);
+            hoverReset(achievs_lbl);
+            hoverReset(tasks_lbl);
+
+            //code to return to main menu
         }
 
 
