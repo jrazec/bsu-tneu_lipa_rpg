@@ -148,8 +148,19 @@ choose the right ones.";
 
         private void achievs_hoverout(object sender, EventArgs e)
         {
-            hoverReset(achievs_lbl, achievs_lbl);
+            hoverReset(achievs_panel, achievs_lbl);
         }
+
+        private void return_hoverin(object sender, EventArgs e)
+        {
+            hoverChange(return_panel, return_label);
+        }
+
+        private void return_hoverout(object sender, EventArgs e)
+        {
+            hoverReset(return_panel, return_label);
+        }
+
         //hover functions
         private void hoverChange(Control panel, Control label)
         {
@@ -534,6 +545,7 @@ choose the right ones.";
 
         }
 
+        
 
         public void checkDay()
         {

@@ -342,6 +342,8 @@
             this.return_panel.Name = "return_panel";
             this.return_panel.Size = new System.Drawing.Size(208, 59);
             this.return_panel.TabIndex = 19;
+            this.return_panel.MouseEnter += new System.EventHandler(this.return_hoverin);
+            this.return_panel.MouseLeave += new System.EventHandler(this.return_hoverout);
             // 
             // label5
             // 
