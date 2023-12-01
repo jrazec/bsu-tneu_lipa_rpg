@@ -109,11 +109,13 @@ choose the right ones.";
                 openMenu = true;
                 viewmenu_panel.Visible = true;
                 viewmenu_panel.BringToFront();
+                bedroomWalkTimer.Stop();
             }
             else
             {
                 openMenu = false;
                 viewmenu_panel.Visible = false;
+                bedroomWalkTimer.Start();
             }
         }
         private void hint_pbox_Click(object sender, EventArgs e)
