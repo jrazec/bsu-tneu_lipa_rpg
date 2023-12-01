@@ -182,7 +182,9 @@ namespace bsu_tnue_lipa_rpg
             {
                 mySqlConnection.Open();
                 string updateChar = $@"INSERT INTO gameplay_records(sr_code,task_id,status)
-                                       VALUES ('{Form1.STUDENT_USER_SR_CODE}',1,false);";
+                                       VALUES ('{Form1.STUDENT_USER_SR_CODE}',1,false);
+                                        
+                                       UPDATE students SET current_money=850.00 WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';";
                 MySqlCommand updtCharCmd = new MySqlCommand(updateChar, mySqlConnection);
                 updtCharCmd.ExecuteNonQuery();
                 MessageBox.Show("Character Saved.");
