@@ -27,12 +27,14 @@ namespace bsu_tnue_lipa_rpg
             cecscontainer_panel.Controls.Add(CECS_firstflr.INSTANCE);
             
         }
+
         bool openMenu = false;
         bool openHint = false;
 
         #region menu and hint events
         private void menu_pbox_Click(object sender, EventArgs e)
         {
+
             if (openMenu == false)
             {
                 openMenu = true;
@@ -64,6 +66,7 @@ namespace bsu_tnue_lipa_rpg
             {
                 openMenu = false;
                 viewmenu_panel.Visible = false;
+
 
                 if (CECS_firstflr.INSTANCE.Visible)
                 {
@@ -166,7 +169,7 @@ namespace bsu_tnue_lipa_rpg
             CECS_fifthflr.INSTANCE.cecsfifthWalkTimer.Start();
             addUC(CECS_fifthflr.INSTANCE);
         }
-
+       
         
     }
 }

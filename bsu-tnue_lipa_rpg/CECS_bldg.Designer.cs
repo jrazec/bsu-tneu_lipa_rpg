@@ -55,7 +55,6 @@
             this.hinttext_lbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).BeginInit();
-            this.cecscontainer_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flr5_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flr4_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flr3_pbox)).BeginInit();
@@ -100,8 +99,6 @@
             // cecscontainer_panel
             // 
             this.cecscontainer_panel.BackColor = System.Drawing.Color.White;
-            this.cecscontainer_panel.Controls.Add(this.hint_panel);
-            this.cecscontainer_panel.Controls.Add(this.viewmenu_panel);
             this.cecscontainer_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cecscontainer_panel.Location = new System.Drawing.Point(0, 50);
             this.cecscontainer_panel.Name = "cecscontainer_panel";
@@ -228,7 +225,7 @@
             this.viewmenu_panel.Controls.Add(this.tasks_panel);
             this.viewmenu_panel.Controls.Add(this.profile_panel);
             this.viewmenu_panel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.viewmenu_panel.Location = new System.Drawing.Point(0, 0);
+            this.viewmenu_panel.Location = new System.Drawing.Point(0, 50);
             this.viewmenu_panel.Name = "viewmenu_panel";
             this.viewmenu_panel.Size = new System.Drawing.Size(208, 589);
             this.viewmenu_panel.TabIndex = 18;
@@ -333,8 +330,9 @@
             // 
             // hint_panel
             // 
+            this.hint_panel.BackColor = System.Drawing.Color.White;
             this.hint_panel.Controls.Add(this.hinttext_lbl);
-            this.hint_panel.Location = new System.Drawing.Point(1070, 0);
+            this.hint_panel.Location = new System.Drawing.Point(1070, 50);
             this.hint_panel.Name = "hint_panel";
             this.hint_panel.Size = new System.Drawing.Size(366, 104);
             this.hint_panel.TabIndex = 19;
@@ -359,6 +357,8 @@
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.elev;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1436, 639);
+            this.Controls.Add(this.hint_panel);
+            this.Controls.Add(this.viewmenu_panel);
             this.Controls.Add(this.cecscontainer_panel);
             this.Controls.Add(this.flr1_pbox);
             this.Controls.Add(this.flr2_pbox);
@@ -376,7 +376,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).EndInit();
-            this.cecscontainer_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.flr5_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flr4_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flr3_pbox)).EndInit();
