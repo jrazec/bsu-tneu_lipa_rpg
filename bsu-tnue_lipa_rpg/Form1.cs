@@ -93,6 +93,7 @@ namespace bsu_tnue_lipa_rpg
                         first_name VARCHAR(50) NOT NULL,
                         last_name VARCHAR(50) NOT NULL,
                         gender VARCHAR(20),
+                        current_money NUMERIC(7,2),
                         charac_id INT REFERENCES characters(charac_id)
                     );
 
@@ -137,7 +138,6 @@ namespace bsu_tnue_lipa_rpg
                         gameplay_id SERIAL PRIMARY KEY,
                         date_finished DATE,
                         total_time_spent TIME,
-                        current_money NUMERIC(7,2),
                         status BOOLEAN,
                         sr_code VARCHAR(8) REFERENCES students(sr_code),
                         task_id INT REFERENCES tasks(task_id)
