@@ -196,16 +196,16 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox engrjonnah_pbox;
+        public System.Windows.Forms.PictureBox engrjonnah_pbox;
         private System.Windows.Forms.PictureBox obfifthflr_charac;
         private System.Windows.Forms.PictureBox staircollision_pbox;
         public System.Windows.Forms.Timer obfifthWalkTimer;
-        private System.Windows.Forms.Panel success_door;
-        private System.Windows.Forms.Panel door3_panel;
-        private System.Windows.Forms.Panel door2_panel;
-        private System.Windows.Forms.Panel door1_panel;
-        private System.Windows.Forms.Label engr_dg;
-        private System.Windows.Forms.PictureBox dg_pbox;
-        private System.Windows.Forms.Button padayon_btn;
+        public System.Windows.Forms.Panel success_door;
+        public System.Windows.Forms.Panel door3_panel;
+        public System.Windows.Forms.Panel door2_panel;
+        public System.Windows.Forms.Panel door1_panel;
+        public System.Windows.Forms.Label engr_dg;
+        public System.Windows.Forms.PictureBox dg_pbox;
+        public System.Windows.Forms.Button padayon_btn;
     }
 }

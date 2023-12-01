@@ -214,17 +214,17 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
 
         #endregion
 
-        private System.Windows.Forms.PictureBox sirtiquio_pbox;
+        public System.Windows.Forms.PictureBox sirtiquio_pbox;
         private System.Windows.Forms.PictureBox cecsfourthflr_charac;
         public System.Windows.Forms.Timer cecsfourthWalkTimer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox elevcollision_pbox;
-        private System.Windows.Forms.PictureBox dg_pbox;
-        private System.Windows.Forms.Label sir_dg;
-        private System.Windows.Forms.Panel door1_panel;
-        private Panel door2_panel;
-        private Panel door3_panel;
-        private Panel success_door;
-        private Button padayon_btn;
+        public System.Windows.Forms.PictureBox dg_pbox;
+        public System.Windows.Forms.Label sir_dg;
+        public System.Windows.Forms.Panel door1_panel;
+        public Panel door2_panel;
+        public Panel door3_panel;
+        public Panel success_door;
+        public Button padayon_btn;
     }
 }

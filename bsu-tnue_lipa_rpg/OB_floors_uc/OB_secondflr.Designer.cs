@@ -180,11 +180,11 @@
         public System.Windows.Forms.Timer obsecondWalkTimer;
         private System.Windows.Forms.PictureBox staircollision_pbox;
         private System.Windows.Forms.PictureBox upflrcollision_pbox;
-        private System.Windows.Forms.Panel success_registrar;
-        private System.Windows.Forms.Panel door3_panel;
-        private System.Windows.Forms.Panel door2_panel;
-        private System.Windows.Forms.Panel door1_panel;
-        private System.Windows.Forms.Label dg_dg;
-        private System.Windows.Forms.PictureBox dg_pbox;
+        public System.Windows.Forms.Panel success_registrar;
+        public System.Windows.Forms.Panel door3_panel;
+        public System.Windows.Forms.Panel door2_panel;
+        public System.Windows.Forms.Panel door1_panel;
+        public System.Windows.Forms.Label dg_dg;
+        public System.Windows.Forms.PictureBox dg_pbox;
     }
 }

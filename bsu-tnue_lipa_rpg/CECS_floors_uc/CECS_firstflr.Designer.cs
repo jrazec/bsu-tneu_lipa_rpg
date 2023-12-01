@@ -215,13 +215,13 @@
         private System.Windows.Forms.PictureBox returncollision_pbox;
         private System.Windows.Forms.PictureBox elevcollision_pbox;
         public System.Windows.Forms.Timer cecsfirstWalkTimer;
-        private System.Windows.Forms.PictureBox atty_pbox;
-        private System.Windows.Forms.Panel success_registrar;
-        private System.Windows.Forms.Panel door3_panel;
-        private System.Windows.Forms.Panel door2_panel;
-        private System.Windows.Forms.Panel door1_panel;
-        private System.Windows.Forms.Label atty_dg;
-        private System.Windows.Forms.PictureBox dg_pbox;
-        private System.Windows.Forms.Button padayon_btn;
+        public System.Windows.Forms.PictureBox atty_pbox;
+        public System.Windows.Forms.Panel success_registrar;
+        public System.Windows.Forms.Panel door3_panel;
+        public System.Windows.Forms.Panel door2_panel;
+        public System.Windows.Forms.Panel door1_panel;
+        public System.Windows.Forms.Label atty_dg;
+        public System.Windows.Forms.PictureBox dg_pbox;
+        public System.Windows.Forms.Button padayon_btn;
     }
 }
