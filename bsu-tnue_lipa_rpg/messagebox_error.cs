@@ -10,15 +10,14 @@ using System.Windows.Forms;
 
 namespace bsu_tnue_lipa_rpg
 {
-    public partial class messagebox : Form
+    public partial class messagebox_error : Form
     {
-        public messagebox()
+        public messagebox_error()
         {
             InitializeComponent();
-
-
         }
 
+      
         protected override void WndProc(ref Message m)
         {
             base.WndProc(ref m);
@@ -59,16 +58,8 @@ namespace bsu_tnue_lipa_rpg
 
         }
 
- 
 
-        private void messagebox_Load(object sender, EventArgs e)
-        {
-           
-            label1.BackColor = System.Drawing.Color.Transparent;
-            label2.BackColor = System.Drawing.Color.Transparent;
 
-           
-            this.TransparencyKey = System.Drawing.Color.Transparent;
-        }
+    
     }
 }

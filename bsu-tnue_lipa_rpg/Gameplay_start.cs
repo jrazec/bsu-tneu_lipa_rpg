@@ -87,9 +87,15 @@ namespace bsu_tnue_lipa_rpg
 
         }
 
+
+   
         private void options_btn_Click(object sender, EventArgs e)
         {
-           /* 
+
+            
+            messagebox_error messageBoxForm = new messagebox_error();
+            messageBoxForm.Show();
+            /* 
             * Tester
             * Admin_section adminsectionForm = Application.OpenForms["Admin_section"] as Admin_section;
 
