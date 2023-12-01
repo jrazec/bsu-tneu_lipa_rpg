@@ -411,6 +411,9 @@
     <EmbeddedResource Include="Map.resx">
       <DependentUpon>Map.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menu_options_forms\Achievements.resx">
+      <DependentUpon>Achievements.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu_options_forms\Tasks.resx">
       <DependentUpon>Tasks.cs</DependentUpon>
     </EmbeddedResource>

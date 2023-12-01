@@ -163,7 +163,14 @@ choose the right ones.";
         }
         private void achievs_hoverout(object sender, EventArgs e)
         {
-            hoverReset(achievs_lbl);
+            if (!achievsClicked)
+            {
+                hoverReset(achievs_lbl);
+            }
+            else
+            {
+                hoverChange(achievs_lbl);
+            }
         }
         private void return_hoverin(object sender, EventArgs e)
         {
@@ -172,7 +179,14 @@ choose the right ones.";
 
         private void return_hoverout(object sender, EventArgs e)
         {
-            hoverReset(return_label);
+            if (!returnClicked)
+            {
+                hoverReset(return_label);
+            }
+            else
+            {
+                hoverChange(return_label);
+            }
         }
 
         //click menu events
@@ -189,10 +203,6 @@ choose the right ones.";
 
             Tasks tasks = new Tasks();
             tasks.Show();
-
-           
-            
-            
         }
         private void achievs_lbl_Click(object sender, EventArgs e)
         {
