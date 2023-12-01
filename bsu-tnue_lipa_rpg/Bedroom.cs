@@ -519,7 +519,7 @@ choose the right ones.";
                 SELECT current_money AS money
                 FROM students 
                 WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}';";
-            //SHOULD BE LATEST UNG MONEY NA MAKUKUHA, siguro limit by one tas desc order
+            //
 
             try
             {

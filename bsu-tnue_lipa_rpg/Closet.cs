@@ -504,7 +504,7 @@ namespace bsu_tnue_lipa_rpg
             try//---Try to open the sql connection
             {
                 mysqlConnection.Open();
-                string updtCurrMon = $"UPDATE gameplay_records SET current_money={money} WHERE sr_code = '{Form1.STUDENT_USER_SR_CODE}' AND task_id = {Bedroom.instance.TASK_ID};";
+                string updtCurrMon = $"UPDATE students SET current_money={money} WHERE sr_code = '{Form1.STUDENT_USER_SR_CODE}';";
                 MySqlCommand updtCurrMonCmd = new MySqlCommand(updtCurrMon, mysqlConnection);
                 updtCurrMonCmd.ExecuteNonQuery();
             }
