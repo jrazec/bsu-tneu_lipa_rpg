@@ -104,9 +104,32 @@ choose the right ones.";
 
         private void menu_pbox_Click(object sender, EventArgs e)
         {
-
+            if (openMenu == false)
+            {
+                openMenu = true;
+                viewmenu_panel.Visible = true;
+                viewmenu_panel.BringToFront();
+            }
+            else
+            {
+                openMenu = false;
+                viewmenu_panel.Visible = false;
+            }
         }
-
+        private void hint_pbox_Click(object sender, EventArgs e)
+        {
+            if (openHint == false)
+            {
+                openHint = true;
+                hint_panel.Visible = true;
+                hint_panel.BringToFront();
+            }
+            else
+            {
+                openHint = false;
+                hint_panel.Visible = false;
+            }
+        }
         //initiate character movement in the bedroom
         private void bedroomWalkTimer_Tick(object sender, EventArgs e)
         {
@@ -470,23 +493,6 @@ choose the right ones.";
             }
         }
 
-        private void hint_pbox_Click(object sender, EventArgs e)
-        {
-            if (openHint == false)
-            {
-                openHint = true;
-                hint_panel.Visible = true;
-                hint_panel.BringToFront();
-                hinttext_lbl.Visible = true;
-                hinttext_lbl.BringToFront();
-
-            }
-            else
-            {
-                openHint = false;
-                hint_panel.Visible = false;
-            }
-        }
 
         private void Bedroom_Load(object sender, EventArgs e)
         {

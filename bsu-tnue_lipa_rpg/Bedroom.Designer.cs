@@ -55,6 +55,10 @@
             this.return_panel = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.ign_lbl = new System.Windows.Forms.Label();
+            this.tasks_lbl = new System.Windows.Forms.Label();
+            this.achievs_lbl = new System.Windows.Forms.Label();
+            this.return_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.doorcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
             this.menu_panel.SuspendLayout();
@@ -66,6 +70,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.bedroom_charac)).BeginInit();
             this.hint_panel.SuspendLayout();
             this.viewmenu_panel.SuspendLayout();
+            this.profile_panel.SuspendLayout();
+            this.tasks_panel.SuspendLayout();
+            this.achievs_panel.SuspendLayout();
+            this.return_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,6 +136,7 @@
             // 
             // menu_pbox
             // 
+            this.menu_pbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menu_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.menu_icon;
             this.menu_pbox.Location = new System.Drawing.Point(10, 8);
             this.menu_pbox.Name = "menu_pbox";
@@ -280,7 +289,6 @@
             this.hinttext_lbl.TabIndex = 0;
             this.hinttext_lbl.Text = "Go to your closet, and choose the correct garments according to your schedule.";
             this.hinttext_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.hinttext_lbl.Visible = false;
             // 
             // viewmenu_panel
             // 
@@ -300,6 +308,7 @@
             // profile_panel
             // 
             this.profile_panel.BackColor = System.Drawing.Color.Maroon;
+            this.profile_panel.Controls.Add(this.ign_lbl);
             this.profile_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.profile_panel.Location = new System.Drawing.Point(0, 0);
             this.profile_panel.Name = "profile_panel";
@@ -308,6 +317,7 @@
             // 
             // tasks_panel
             // 
+            this.tasks_panel.Controls.Add(this.tasks_lbl);
             this.tasks_panel.Location = new System.Drawing.Point(0, 178);
             this.tasks_panel.Name = "tasks_panel";
             this.tasks_panel.Size = new System.Drawing.Size(208, 59);
@@ -315,13 +325,15 @@
             // 
             // achievs_panel
             // 
-            this.achievs_panel.Location = new System.Drawing.Point(0, 254);
+            this.achievs_panel.Controls.Add(this.achievs_lbl);
+            this.achievs_panel.Location = new System.Drawing.Point(0, 255);
             this.achievs_panel.Name = "achievs_panel";
             this.achievs_panel.Size = new System.Drawing.Size(208, 59);
             this.achievs_panel.TabIndex = 18;
             // 
             // return_panel
             // 
+            this.return_panel.Controls.Add(this.return_label);
             this.return_panel.Location = new System.Drawing.Point(0, 333);
             this.return_panel.Name = "return_panel";
             this.return_panel.Size = new System.Drawing.Size(208, 59);
@@ -348,6 +360,47 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 21;
             this.pictureBox6.TabStop = false;
+            // 
+            // ign_lbl
+            // 
+            this.ign_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ign_lbl.ForeColor = System.Drawing.Color.White;
+            this.ign_lbl.Location = new System.Drawing.Point(12, 23);
+            this.ign_lbl.Name = "ign_lbl";
+            this.ign_lbl.Size = new System.Drawing.Size(182, 68);
+            this.ign_lbl.TabIndex = 0;
+            this.ign_lbl.Text = "Hello, [IGN]\r\n\r\n[fullname] | [sr-code]";
+            this.ign_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tasks_lbl
+            // 
+            this.tasks_lbl.AutoSize = true;
+            this.tasks_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tasks_lbl.Location = new System.Drawing.Point(77, 15);
+            this.tasks_lbl.Name = "tasks_lbl";
+            this.tasks_lbl.Size = new System.Drawing.Size(53, 24);
+            this.tasks_lbl.TabIndex = 0;
+            this.tasks_lbl.Text = "Tasks";
+            // 
+            // achievs_lbl
+            // 
+            this.achievs_lbl.AutoSize = true;
+            this.achievs_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.achievs_lbl.Location = new System.Drawing.Point(42, 18);
+            this.achievs_lbl.Name = "achievs_lbl";
+            this.achievs_lbl.Size = new System.Drawing.Size(120, 24);
+            this.achievs_lbl.TabIndex = 22;
+            this.achievs_lbl.Text = "Achievements";
+            // 
+            // return_label
+            // 
+            this.return_label.AutoSize = true;
+            this.return_label.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.return_label.Location = new System.Drawing.Point(56, 19);
+            this.return_label.Name = "return_label";
+            this.return_label.Size = new System.Drawing.Size(93, 24);
+            this.return_label.TabIndex = 23;
+            this.return_label.Text = "Main Menu";
             // 
             // Bedroom
             // 
@@ -392,6 +445,13 @@
             this.hint_panel.ResumeLayout(false);
             this.viewmenu_panel.ResumeLayout(false);
             this.viewmenu_panel.PerformLayout();
+            this.profile_panel.ResumeLayout(false);
+            this.tasks_panel.ResumeLayout(false);
+            this.tasks_panel.PerformLayout();
+            this.achievs_panel.ResumeLayout(false);
+            this.achievs_panel.PerformLayout();
+            this.return_panel.ResumeLayout(false);
+            this.return_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -426,5 +486,9 @@
         private System.Windows.Forms.Panel tasks_panel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label ign_lbl;
+        private System.Windows.Forms.Label tasks_lbl;
+        private System.Windows.Forms.Label return_label;
+        private System.Windows.Forms.Label achievs_lbl;
     }
 }
