@@ -281,6 +281,12 @@
     <Compile Include="messagebox_areyousure.Designer.cs">
       <DependentUpon>messagebox_areyousure.cs</DependentUpon>
     </Compile>
+    <Compile Include="messagebox_buying.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messagebox_buying.Designer.cs">
+      <DependentUpon>messagebox_buying.cs</DependentUpon>
+    </Compile>
     <Compile Include="messagebox_error.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -422,6 +428,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="messagebox_areyousure.resx">
       <DependentUpon>messagebox_areyousure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messagebox_buying.resx">
+      <DependentUpon>messagebox_buying.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="messagebox_error.resx">
       <DependentUpon>messagebox_error.cs</DependentUpon>
