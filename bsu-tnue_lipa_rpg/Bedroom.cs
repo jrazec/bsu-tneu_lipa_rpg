@@ -516,13 +516,9 @@ choose the right ones.";
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
             string slctCurrMoney = $@"
-                SELECT gameplay_records.current_money AS money
-                FROM gameplay_records 
-                INNER JOIN students
-                ON gameplay_records.sr_code=students.sr_code
-                WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
-                ORDER BY gameplay_records.task_id DESC
-                LIMIT 1;";
+                SELECT current_money AS money
+                FROM students 
+                WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}';";
             //SHOULD BE LATEST UNG MONEY NA MAKUKUHA, siguro limit by one tas desc order
 
             try
