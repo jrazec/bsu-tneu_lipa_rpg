@@ -243,7 +243,7 @@
         public System.Windows.Forms.Label dr_dg;
         public System.Windows.Forms.PictureBox dg_pbox;
         public System.Windows.Forms.Button padayon_btn;
-        private System.Windows.Forms.PictureBox success_door;
+        public System.Windows.Forms.PictureBox success_door;
         public System.Windows.Forms.Label click_lbl;
     }
 }

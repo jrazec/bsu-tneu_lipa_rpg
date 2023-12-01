@@ -197,16 +197,16 @@ namespace bsu_tnue_lipa_rpg
                     INSERT INTO 
                         tasks(task_id,task_name,reward,day_task_id,achievement_id)
                     VALUES
-                        (1,'Seek Day, Monday!',100.00,1,4),
+                        (1,'Seek Day, Monday!',200.00,1,4),
                         (2,'Navigate, Locate, and Ask this Tuesday Ahu!',200.00,2,5),
-                        (3,'Seek Day, Wednesday!',50.00,3,6),
+                        (3,'Seek Day, Wednesday!',200.00,3,6),
                         (4,'Ask, Locate, and Navigate this Thursday Ahu!',200.00,4,7),
                         (5,'Crack the code, cuz its Friday!',200.00,5,8),
-                        (6,'Your First day Starts Now.',300.00,1,1),
-                        (7,'Wednesday is a Free Day.',100.00,3,2),
+                        (6,'Your First day Starts Now.',400.00,1,1),
+                        (7,'Wednesday is a Free Day.',200.00,3,2),
                         (8,'Embark on a rewarding week‘s journey.',100.00,5,3),
-                        (9,'Complete all tasks',1000.00,5,9),
-                        (10,'Unlock all Garments',1000.00,null,10);";
+                        (9,'Complete all tasks',100.00,5,9),
+                        (10,'Unlock all Garments',100.00,null,10);";
 
                 MySqlCommand crtTbl_insValCmd = new MySqlCommand(crtTables_insValues, mysqlConnection);
                 crtTbl_insValCmd.ExecuteNonQuery();

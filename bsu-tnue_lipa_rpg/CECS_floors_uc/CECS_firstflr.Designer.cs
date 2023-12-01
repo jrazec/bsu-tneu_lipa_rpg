@@ -225,7 +225,7 @@
         public System.Windows.Forms.Panel door1_panel;
         public System.Windows.Forms.Label atty_dg;
         public System.Windows.Forms.PictureBox dg_pbox;
-        private System.Windows.Forms.PictureBox success_registrar;
+        public System.Windows.Forms.PictureBox success_registrar;
         public System.Windows.Forms.Label click_lbl;
     }
 }

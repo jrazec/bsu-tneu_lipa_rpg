@@ -482,8 +482,9 @@ choose the right ones.";
                 INNER JOIN students
                 ON gameplay_records.sr_code=students.sr_code
                 WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
-                ORDER BY tasks.task_id DESC
-                LIMIT 1";
+                AND tasks.task_id BETWEEN 1 AND 5
+                ORDER BY id DESC
+                LIMIT 1;";
 
             try
             {
@@ -558,7 +559,8 @@ choose the right ones.";
                 INNER JOIN students
                 ON gameplay_records.sr_code=students.sr_code
                 WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
-                ORDER BY gameplay_records.task_id DESC
+                AND tasks.task_id BETWEEN 1 AND 5
+                ORDER BY id DESC
                 LIMIT 1;";
             //SHOULD BE LATEST UNG MONEY NA MAKUKUHA, siguro limit by one tas desc order
 

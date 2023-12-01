@@ -274,6 +274,20 @@ namespace bsu_tnue_lipa_rpg
                 OB_secondflr.INSTANCE.door1_panel.Visible = false;
                 OB_secondflr.INSTANCE.door2_panel.Visible = false;
                 OB_secondflr.INSTANCE.door3_panel.Visible = false;
+
+                #region JUST CLOSING ENTITIES
+                CECS_fourthflr.INSTANCE.sir_dg.Visible = false;
+                CECS_fourthflr.INSTANCE.door1_panel.Visible = false;
+                CECS_fourthflr.INSTANCE.door2_panel.Visible = false;
+                CECS_fourthflr.INSTANCE.door3_panel.Visible = false;
+                CECS_fourthflr.INSTANCE.success_door.Enabled = false;
+                CECS_fourthflr.INSTANCE.success_door.Visible = false;
+                CECS_fourthflr.INSTANCE.padayon_btn.Visible = false;
+                CECS_fourthflr.INSTANCE.dg_pbox.Visible = false;
+                CECS_fourthflr.INSTANCE.click_lbl.Visible = false;
+                CECS_fourthflr.INSTANCE.cecsfourthWalkTimer.Enabled = true;
+                CECS_fourthflr.INSTANCE.cecsfourthWalkTimer.Start();
+                #endregion
             }
             else if (Bedroom.instance.DAY_ID == 3)
             { //Dr. Balazon
@@ -295,6 +309,21 @@ namespace bsu_tnue_lipa_rpg
                 OB_secondflr.INSTANCE.door1_panel.Visible = false;
                 OB_secondflr.INSTANCE.door2_panel.Visible = false;
                 OB_secondflr.INSTANCE.door3_panel.Visible = false;
+
+                #region JUST CLOSING ENTITIES
+                OB_fifthflr.INSTANCE.engr_dg.Visible = false;
+                OB_fifthflr.INSTANCE.door1_panel.Visible = false;
+                OB_fifthflr.INSTANCE.door2_panel.Visible = false;
+                OB_fifthflr.INSTANCE.door3_panel.Visible = false;
+                OB_fifthflr.INSTANCE.padayon_btn.Visible = false;
+                OB_fifthflr.INSTANCE.success_door.Enabled = false;
+                OB_fifthflr.INSTANCE.success_door.Visible = false;
+                OB_fifthflr.INSTANCE.dg_pbox.Visible = false;
+                OB_fifthflr.INSTANCE.click_lbl.Visible = false;
+                OB_fifthflr.INSTANCE.obfifthWalkTimer.Enabled = true;
+                OB_fifthflr.INSTANCE.obfifthWalkTimer.Start();
+                #endregion
+
             }
             else if (Bedroom.instance.DAY_ID == 4)
             { //Atty. De Silva 
@@ -316,6 +345,20 @@ namespace bsu_tnue_lipa_rpg
                 OB_secondflr.INSTANCE.door1_panel.Visible = false;
                 OB_secondflr.INSTANCE.door2_panel.Visible = false;
                 OB_secondflr.INSTANCE.door3_panel.Visible = false;
+
+                #region JUST CLOSING ENTITIES
+                CECS_fifthflr.INSTANCE.dr_dg.Visible = false;
+                CECS_fifthflr.INSTANCE.door1_panel.Visible = false;
+                CECS_fifthflr.INSTANCE.door2_panel.Visible = false;
+                CECS_fifthflr.INSTANCE.success_door.Enabled = false;
+                CECS_fifthflr.INSTANCE.success_door.Visible = false;
+                CECS_fifthflr.INSTANCE.door3_panel.Visible = false;
+                CECS_fifthflr.INSTANCE.padayon_btn.Visible = false;
+                CECS_fifthflr.INSTANCE.dg_pbox.Visible = false;
+                CECS_fifthflr.INSTANCE.click_lbl.Visible = false;
+                CECS_fifthflr.INSTANCE.cecsfifthWalkTimer.Enabled = true;
+                CECS_fifthflr.INSTANCE.cecsfifthWalkTimer.Start();
+                #endregion
             }
             else if(Bedroom.instance.DAY_ID == 5)
             { //Clinic
@@ -338,6 +381,39 @@ namespace bsu_tnue_lipa_rpg
                 CECS_firstflr.INSTANCE.atty_pbox.Enabled = false;
                 CECS_firstflr.INSTANCE.atty_pbox.Visible = false;
 
+                #region JUST CLOSING ENTITIES
+                CECS_firstflr.INSTANCE.atty_dg.Visible = false;
+                CECS_firstflr.INSTANCE.door1_panel.Visible = false;
+                CECS_firstflr.INSTANCE.door2_panel.Visible = false;
+                CECS_firstflr.INSTANCE.door3_panel.Visible = false;
+                CECS_firstflr.INSTANCE.success_registrar.Enabled = false;
+                CECS_firstflr.INSTANCE.success_registrar.Visible = false;
+                CECS_firstflr.INSTANCE.dg_pbox.Visible = false;
+                CECS_firstflr.INSTANCE.click_lbl.Visible = false;
+                CECS_firstflr.INSTANCE.cecsfirstWalkTimer.Enabled = true;
+                CECS_firstflr.INSTANCE.cecsfirstWalkTimer.Start();
+                #endregion 
+            }
+            else
+            {
+                //DISABLING & HIDING OTHER NPC's TO MAKE SURE THEY WONT APPEAR 
+                OB_secondflr.INSTANCE.success_med.Enabled = false;
+                OB_secondflr.INSTANCE.success_med.Visible = false;
+                OB_secondflr.INSTANCE.door1_panel.Visible = false;
+                OB_secondflr.INSTANCE.door2_panel.Visible = false;
+                OB_secondflr.INSTANCE.door3_panel.Visible = false;
+
+                CECS_fourthflr.INSTANCE.sirtiquio_pbox.Enabled = false;
+                CECS_fourthflr.INSTANCE.sirtiquio_pbox.Visible = false;
+
+                CECS_fifthflr.INSTANCE.drbalazon_pbox.Enabled = false;
+                CECS_fifthflr.INSTANCE.drbalazon_pbox.Visible = false;
+
+                OB_fifthflr.INSTANCE.engrjonnah_pbox.Enabled = false;
+                OB_fifthflr.INSTANCE.engrjonnah_pbox.Visible = false;
+
+                CECS_firstflr.INSTANCE.atty_pbox.Enabled = false;
+                CECS_firstflr.INSTANCE.atty_pbox.Visible = false;
             }
         }
     }
