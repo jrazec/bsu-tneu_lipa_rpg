@@ -34,10 +34,17 @@
             this.elevcollision_pbox = new System.Windows.Forms.PictureBox();
             this.cecsfirstWalkTimer = new System.Windows.Forms.Timer(this.components);
             this.atty_pbox = new System.Windows.Forms.PictureBox();
+            this.success_registrar = new System.Windows.Forms.Panel();
+            this.door3_panel = new System.Windows.Forms.Panel();
+            this.door2_panel = new System.Windows.Forms.Panel();
+            this.door1_panel = new System.Windows.Forms.Panel();
+            this.dr_dg = new System.Windows.Forms.Label();
+            this.dg_pbox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cecsfirstflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returncollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.atty_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // cecsfirstflr_charac
@@ -88,6 +95,62 @@
             this.atty_pbox.TabIndex = 3;
             this.atty_pbox.TabStop = false;
             // 
+            // success_registrar
+            // 
+            this.success_registrar.BackColor = System.Drawing.Color.Transparent;
+            this.success_registrar.Location = new System.Drawing.Point(1003, 180);
+            this.success_registrar.Name = "success_registrar";
+            this.success_registrar.Size = new System.Drawing.Size(394, 74);
+            this.success_registrar.TabIndex = 21;
+            // 
+            // door3_panel
+            // 
+            this.door3_panel.BackColor = System.Drawing.Color.Transparent;
+            this.door3_panel.Location = new System.Drawing.Point(1409, 151);
+            this.door3_panel.Name = "door3_panel";
+            this.door3_panel.Size = new System.Drawing.Size(10, 104);
+            this.door3_panel.TabIndex = 17;
+            // 
+            // door2_panel
+            // 
+            this.door2_panel.BackColor = System.Drawing.Color.Transparent;
+            this.door2_panel.Location = new System.Drawing.Point(964, 151);
+            this.door2_panel.Name = "door2_panel";
+            this.door2_panel.Size = new System.Drawing.Size(455, 13);
+            this.door2_panel.TabIndex = 16;
+            // 
+            // door1_panel
+            // 
+            this.door1_panel.BackColor = System.Drawing.Color.Transparent;
+            this.door1_panel.Location = new System.Drawing.Point(963, 151);
+            this.door1_panel.Name = "door1_panel";
+            this.door1_panel.Size = new System.Drawing.Size(10, 104);
+            this.door1_panel.TabIndex = 20;
+            // 
+            // dr_dg
+            // 
+            this.dr_dg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.dr_dg.Font = new System.Drawing.Font("Trebuchet MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dr_dg.ForeColor = System.Drawing.Color.White;
+            this.dr_dg.Location = new System.Drawing.Point(364, 425);
+            this.dr_dg.Name = "dr_dg";
+            this.dr_dg.Size = new System.Drawing.Size(808, 143);
+            this.dr_dg.TabIndex = 19;
+            this.dr_dg.Text = "The registrar\'s office is conveniently situated here on the first floor of the CE" +
+    "CS Building . \r\nI am wishing you an excellent day ahead!";
+            this.dr_dg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dg_pbox
+            // 
+            this.dg_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.dg_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.atty_dialogue;
+            this.dg_pbox.Location = new System.Drawing.Point(114, 385);
+            this.dg_pbox.Name = "dg_pbox";
+            this.dg_pbox.Size = new System.Drawing.Size(1189, 221);
+            this.dg_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.dg_pbox.TabIndex = 18;
+            this.dg_pbox.TabStop = false;
+            // 
             // CECS_firstflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -95,6 +158,12 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.registrar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.success_registrar);
+            this.Controls.Add(this.door3_panel);
+            this.Controls.Add(this.door2_panel);
+            this.Controls.Add(this.door1_panel);
+            this.Controls.Add(this.dr_dg);
+            this.Controls.Add(this.dg_pbox);
             this.Controls.Add(this.atty_pbox);
             this.Controls.Add(this.elevcollision_pbox);
             this.Controls.Add(this.returncollision_pbox);
@@ -109,6 +178,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.returncollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.atty_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -120,5 +190,11 @@
         private System.Windows.Forms.PictureBox elevcollision_pbox;
         public System.Windows.Forms.Timer cecsfirstWalkTimer;
         private System.Windows.Forms.PictureBox atty_pbox;
+        private System.Windows.Forms.Panel success_registrar;
+        private System.Windows.Forms.Panel door3_panel;
+        private System.Windows.Forms.Panel door2_panel;
+        private System.Windows.Forms.Panel door1_panel;
+        private System.Windows.Forms.Label dr_dg;
+        private System.Windows.Forms.PictureBox dg_pbox;
     }
 }
