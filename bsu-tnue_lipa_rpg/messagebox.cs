@@ -58,5 +58,17 @@ namespace bsu_tnue_lipa_rpg
         {
 
         }
+
+ 
+
+        private void messagebox_Load(object sender, EventArgs e)
+        {
+            // Set the background color of the label to Transparent
+            label1.BackColor = System.Drawing.Color.Transparent;
+            label2.BackColor = System.Drawing.Color.Transparent;
+
+            // Set the TransparencyKey to the same color as the label's background
+            this.TransparencyKey = System.Drawing.Color.Transparent;
+        }
     }
 }
