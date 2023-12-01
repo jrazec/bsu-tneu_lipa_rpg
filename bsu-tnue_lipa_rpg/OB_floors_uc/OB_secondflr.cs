@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bsu_tnue_lipa_rpg.Closet_garments_uc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -165,6 +166,35 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
                         OB_firstflr.INSTANCE.obfirstWalkTimer.Start();
                         OB_firstflr.INSTANCE.Focus();
                         OB_firstflr.INSTANCE.BringToFront();
+                    }
+                }
+
+                //End CHAPTERR!!
+                if (success_med.Enabled)
+                {
+                    //going to chpater end part
+                    if (navigation is PictureBox && (string)navigation.Tag == "med")
+                    {
+                        if (obsecondflr_charac.Bounds.IntersectsWith(navigation.Bounds))
+                        {
+                            //stop character movement
+                            obsecondWalkTimer.Stop();
+
+                            //move character away from collision box
+                            obsecondflr_charac.Location = new Point(1259, 228);
+
+                            //reset boolean directions
+                            go_left = false;
+                            go_right = false;
+                            go_up = false;
+                            go_down = false;
+
+                            this.Hide();
+                            Old_Bldg.instance.Hide();
+                            Old_Bldg.instance.Close();
+                            Chapter_End cE = new Chapter_End();
+                            cE.ShowDialog();
+                        }
                     }
                 }
             }

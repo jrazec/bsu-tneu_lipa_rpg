@@ -248,8 +248,8 @@ namespace bsu_tnue_lipa_rpg
                 CECS_firstflr.INSTANCE.atty_pbox.Enabled = false;
                 CECS_firstflr.INSTANCE.atty_pbox.Visible = false;
 
-                OB_secondflr.INSTANCE.success_registrar.Enabled = false;
-                OB_secondflr.INSTANCE.success_registrar.Visible = false;
+                OB_secondflr.INSTANCE.success_med.Enabled = false;
+                OB_secondflr.INSTANCE.success_med.Visible = false;
                 OB_secondflr.INSTANCE.door1_panel.Visible = false;
                 OB_secondflr.INSTANCE.door2_panel.Visible = false;
                 OB_secondflr.INSTANCE.door3_panel.Visible = false;
@@ -269,8 +269,8 @@ namespace bsu_tnue_lipa_rpg
                 CECS_firstflr.INSTANCE.atty_pbox.Enabled = false;
                 CECS_firstflr.INSTANCE.atty_pbox.Visible = false;
 
-                OB_secondflr.INSTANCE.success_registrar.Enabled = false;
-                OB_secondflr.INSTANCE.success_registrar.Visible = false;
+                OB_secondflr.INSTANCE.success_med.Enabled = false;
+                OB_secondflr.INSTANCE.success_med.Visible = false;
                 OB_secondflr.INSTANCE.door1_panel.Visible = false;
                 OB_secondflr.INSTANCE.door2_panel.Visible = false;
                 OB_secondflr.INSTANCE.door3_panel.Visible = false;
@@ -290,8 +290,8 @@ namespace bsu_tnue_lipa_rpg
                 CECS_firstflr.INSTANCE.atty_pbox.Enabled = false;
                 CECS_firstflr.INSTANCE.atty_pbox.Visible = false;
 
-                OB_secondflr.INSTANCE.success_registrar.Enabled = false;
-                OB_secondflr.INSTANCE.success_registrar.Visible = false;
+                OB_secondflr.INSTANCE.success_med.Enabled = false;
+                OB_secondflr.INSTANCE.success_med.Visible = false;
                 OB_secondflr.INSTANCE.door1_panel.Visible = false;
                 OB_secondflr.INSTANCE.door2_panel.Visible = false;
                 OB_secondflr.INSTANCE.door3_panel.Visible = false;
@@ -311,16 +311,16 @@ namespace bsu_tnue_lipa_rpg
                 OB_fifthflr.INSTANCE.engrjonnah_pbox.Enabled = false;
                 OB_fifthflr.INSTANCE.engrjonnah_pbox.Visible = false;
 
-                OB_secondflr.INSTANCE.success_registrar.Enabled = false;
-                OB_secondflr.INSTANCE.success_registrar.Visible = false;
+                OB_secondflr.INSTANCE.success_med.Enabled = false;
+                OB_secondflr.INSTANCE.success_med.Visible = false;
                 OB_secondflr.INSTANCE.door1_panel.Visible = false;
                 OB_secondflr.INSTANCE.door2_panel.Visible = false;
                 OB_secondflr.INSTANCE.door3_panel.Visible = false;
             }
             else if(Bedroom.instance.DAY_ID == 5)
             { //Clinic
-                OB_secondflr.INSTANCE.success_registrar.Enabled = true;
-                OB_secondflr.INSTANCE.success_registrar.Visible = true;
+                OB_secondflr.INSTANCE.success_med.Enabled = true;
+                OB_secondflr.INSTANCE.success_med.Visible = true;
                 OB_secondflr.INSTANCE.door1_panel.Visible = true;
                 OB_secondflr.INSTANCE.door2_panel.Visible = true;
                 OB_secondflr.INSTANCE.door3_panel.Visible = true;

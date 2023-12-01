@@ -33,16 +33,17 @@
             this.obsecondWalkTimer = new System.Windows.Forms.Timer(this.components);
             this.staircollision_pbox = new System.Windows.Forms.PictureBox();
             this.upflrcollision_pbox = new System.Windows.Forms.PictureBox();
-            this.success_registrar = new System.Windows.Forms.Panel();
             this.door3_panel = new System.Windows.Forms.Panel();
             this.door2_panel = new System.Windows.Forms.Panel();
             this.door1_panel = new System.Windows.Forms.Panel();
             this.dg_dg = new System.Windows.Forms.Label();
             this.dg_pbox = new System.Windows.Forms.PictureBox();
+            this.success_med = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.obsecondflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staircollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upflrcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.success_med)).BeginInit();
             this.SuspendLayout();
             // 
             // obsecondflr_charac
@@ -81,16 +82,6 @@
             this.upflrcollision_pbox.TabIndex = 3;
             this.upflrcollision_pbox.TabStop = false;
             this.upflrcollision_pbox.Tag = "go_up";
-            // 
-            // success_registrar
-            // 
-            this.success_registrar.BackColor = System.Drawing.Color.Transparent;
-            this.success_registrar.Enabled = false;
-            this.success_registrar.Location = new System.Drawing.Point(238, 169);
-            this.success_registrar.Name = "success_registrar";
-            this.success_registrar.Size = new System.Drawing.Size(394, 74);
-            this.success_registrar.TabIndex = 27;
-            this.success_registrar.Visible = false;
             // 
             // door3_panel
             // 
@@ -144,6 +135,16 @@
             this.dg_pbox.TabStop = false;
             this.dg_pbox.Visible = false;
             // 
+            // success_med
+            // 
+            this.success_med.BackColor = System.Drawing.Color.Transparent;
+            this.success_med.Location = new System.Drawing.Point(266, 159);
+            this.success_med.Name = "success_med";
+            this.success_med.Size = new System.Drawing.Size(389, 12);
+            this.success_med.TabIndex = 27;
+            this.success_med.TabStop = false;
+            this.success_med.Tag = "med";
+            // 
             // OB_secondflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -151,7 +152,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.ob_clinic;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Controls.Add(this.success_registrar);
+            this.Controls.Add(this.success_med);
             this.Controls.Add(this.door3_panel);
             this.Controls.Add(this.door2_panel);
             this.Controls.Add(this.door1_panel);
@@ -170,6 +171,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.staircollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.upflrcollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.success_med)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -180,11 +182,11 @@
         public System.Windows.Forms.Timer obsecondWalkTimer;
         private System.Windows.Forms.PictureBox staircollision_pbox;
         private System.Windows.Forms.PictureBox upflrcollision_pbox;
-        public System.Windows.Forms.Panel success_registrar;
         public System.Windows.Forms.Panel door3_panel;
         public System.Windows.Forms.Panel door2_panel;
         public System.Windows.Forms.Panel door1_panel;
         public System.Windows.Forms.Label dg_dg;
         public System.Windows.Forms.PictureBox dg_pbox;
+        public System.Windows.Forms.PictureBox success_med;
     }
 }
