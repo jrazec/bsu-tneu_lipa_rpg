@@ -33,17 +33,19 @@
             this.obfifthflr_charac = new System.Windows.Forms.PictureBox();
             this.staircollision_pbox = new System.Windows.Forms.PictureBox();
             this.obfifthWalkTimer = new System.Windows.Forms.Timer(this.components);
-            this.success_door = new System.Windows.Forms.Panel();
             this.door3_panel = new System.Windows.Forms.Panel();
             this.door2_panel = new System.Windows.Forms.Panel();
             this.door1_panel = new System.Windows.Forms.Panel();
             this.engr_dg = new System.Windows.Forms.Label();
             this.dg_pbox = new System.Windows.Forms.PictureBox();
             this.padayon_btn = new System.Windows.Forms.Button();
+            this.success_door = new System.Windows.Forms.PictureBox();
+            this.click_lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.engrjonnah_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obfifthflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staircollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.success_door)).BeginInit();
             this.SuspendLayout();
             // 
             // engrjonnah_pbox
@@ -51,19 +53,20 @@
             this.engrjonnah_pbox.BackColor = System.Drawing.Color.Transparent;
             this.engrjonnah_pbox.Enabled = false;
             this.engrjonnah_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Engr_Jonnah;
-            this.engrjonnah_pbox.Location = new System.Drawing.Point(511, 139);
+            this.engrjonnah_pbox.Location = new System.Drawing.Point(768, 136);
             this.engrjonnah_pbox.Name = "engrjonnah_pbox";
             this.engrjonnah_pbox.Size = new System.Drawing.Size(111, 135);
             this.engrjonnah_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.engrjonnah_pbox.TabIndex = 0;
             this.engrjonnah_pbox.TabStop = false;
+            this.engrjonnah_pbox.Tag = "engr";
             this.engrjonnah_pbox.Visible = false;
             // 
             // obfifthflr_charac
             // 
             this.obfifthflr_charac.BackColor = System.Drawing.Color.Transparent;
             this.obfifthflr_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.female_org_front;
-            this.obfifthflr_charac.Location = new System.Drawing.Point(258, 194);
+            this.obfifthflr_charac.Location = new System.Drawing.Point(194, 347);
             this.obfifthflr_charac.Name = "obfifthflr_charac";
             this.obfifthflr_charac.Size = new System.Drawing.Size(111, 135);
             this.obfifthflr_charac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -85,15 +88,6 @@
             this.obfifthWalkTimer.Enabled = true;
             this.obfifthWalkTimer.Interval = 50;
             this.obfifthWalkTimer.Tick += new System.EventHandler(this.obfifthWalkTimer_Tick);
-            // 
-            // success_door
-            // 
-            this.success_door.BackColor = System.Drawing.Color.Transparent;
-            this.success_door.Location = new System.Drawing.Point(713, 167);
-            this.success_door.Name = "success_door";
-            this.success_door.Size = new System.Drawing.Size(50, 74);
-            this.success_door.TabIndex = 21;
-            this.success_door.Visible = false;
             // 
             // door3_panel
             // 
@@ -162,6 +156,32 @@
             this.padayon_btn.Text = "PADAYON";
             this.padayon_btn.UseVisualStyleBackColor = false;
             this.padayon_btn.Visible = false;
+            this.padayon_btn.Click += new System.EventHandler(this.padayon_btn_Click);
+            // 
+            // success_door
+            // 
+            this.success_door.BackColor = System.Drawing.Color.Transparent;
+            this.success_door.Enabled = false;
+            this.success_door.Location = new System.Drawing.Point(718, 169);
+            this.success_door.Name = "success_door";
+            this.success_door.Size = new System.Drawing.Size(44, 72);
+            this.success_door.TabIndex = 23;
+            this.success_door.TabStop = false;
+            this.success_door.Visible = false;
+            this.success_door.Click += new System.EventHandler(this.success_door_Click);
+            // 
+            // click_lbl
+            // 
+            this.click_lbl.BackColor = System.Drawing.Color.Green;
+            this.click_lbl.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.click_lbl.ForeColor = System.Drawing.Color.White;
+            this.click_lbl.Location = new System.Drawing.Point(680, 121);
+            this.click_lbl.Name = "click_lbl";
+            this.click_lbl.Size = new System.Drawing.Size(110, 32);
+            this.click_lbl.TabIndex = 24;
+            this.click_lbl.Text = "Click da door";
+            this.click_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.click_lbl.Visible = false;
             // 
             // OB_fifthflr
             // 
@@ -170,8 +190,9 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.ob_libr;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Controls.Add(this.padayon_btn);
+            this.Controls.Add(this.click_lbl);
             this.Controls.Add(this.success_door);
+            this.Controls.Add(this.padayon_btn);
             this.Controls.Add(this.door3_panel);
             this.Controls.Add(this.door2_panel);
             this.Controls.Add(this.door1_panel);
@@ -190,6 +211,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.obfifthflr_charac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.staircollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.success_door)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -200,12 +222,13 @@
         private System.Windows.Forms.PictureBox obfifthflr_charac;
         private System.Windows.Forms.PictureBox staircollision_pbox;
         public System.Windows.Forms.Timer obfifthWalkTimer;
-        public System.Windows.Forms.Panel success_door;
         public System.Windows.Forms.Panel door3_panel;
         public System.Windows.Forms.Panel door2_panel;
         public System.Windows.Forms.Panel door1_panel;
         public System.Windows.Forms.Label engr_dg;
         public System.Windows.Forms.PictureBox dg_pbox;
         public System.Windows.Forms.Button padayon_btn;
+        private System.Windows.Forms.PictureBox success_door;
+        public System.Windows.Forms.Label click_lbl;
     }
 }
