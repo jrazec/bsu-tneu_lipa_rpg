@@ -55,6 +55,7 @@ namespace bsu_tnue_lipa_rpg
 
         }
         bool openSched = false;
+        bool openHint = false;
 
 
         private void next_pbox_Click(object sender, EventArgs e)
@@ -470,7 +471,21 @@ choose the right ones.";
 
         private void hint_pbox_Click(object sender, EventArgs e)
         {
+            if (openHint == false)
+            {
+                openHint = true;
+                hint_panel.Visible = true;
+                hint_panel.BringToFront();
+                hinttext_lbl.Visible = true;
+                hinttext_lbl.BringToFront();
 
+            }
+            else
+            {
+                openHint = false;
+                hint_panel.Visible = false;
+                hinttext_lbl.Visible = false;
+            }
         }
 
         public void checkDay()

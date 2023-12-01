@@ -107,6 +107,7 @@
             // 
             // hint_pbox
             // 
+            this.hint_pbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.hint_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.hint_icon;
             this.hint_pbox.Location = new System.Drawing.Point(978, 9);
             this.hint_pbox.Name = "hint_pbox";
@@ -267,7 +268,8 @@
             this.hinttext_lbl.Name = "hinttext_lbl";
             this.hinttext_lbl.Size = new System.Drawing.Size(341, 79);
             this.hinttext_lbl.TabIndex = 0;
-            this.hinttext_lbl.Text = "Hint goes here...";
+            this.hinttext_lbl.Text = "Buy hint?";
+            this.hinttext_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.hinttext_lbl.Visible = false;
             // 
             // Bedroom
