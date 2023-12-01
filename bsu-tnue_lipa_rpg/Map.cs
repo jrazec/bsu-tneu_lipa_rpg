@@ -87,7 +87,17 @@ namespace bsu_tnue_lipa_rpg
 
         private void hint_pbox_Click(object sender, EventArgs e)
         {
-
+            if (openHint == false)
+            {
+                openHint = true;
+                hint_panel.Visible = true;
+                hint_panel.BringToFront();
+            }
+            else
+            {
+                openHint = false;
+                hint_panel.Visible = false;
+            }
         }
         #endregion
 
