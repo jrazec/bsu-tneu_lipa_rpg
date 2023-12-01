@@ -194,24 +194,24 @@ namespace bsu_tnue_lipa_rpg
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
-            string slctItemNames = $@"
-                        SELECT day_tasks.day_task_clue as clue
-                        FROM day_tasks 
-                        INNER JOIN tasks
-                        ON tasks.day_task_id=day_tasks.day_task_id
+            string slctClues = $@"
+                        SELECT students.sr_code, day_tasks.day_task_clue AS clue
+                        FROM students 
                         INNER JOIN gameplay_records
+                        ON gameplay_records.sr_code=students.sr_code
+                        INNER JOIN tasks
                         ON gameplay_records.task_id=tasks.task_id
-                        INNER JOIN students
-                        ON gameplay_records.sr_code=gameplay_records.sr_code
-                        WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
-                        ORDER BY day_tasks.day_task_id DESC
+						INNER JOIN day_tasks
+                        ON tasks.day_task_id=day_tasks.day_task_id
+                        WHERE students.sr_code='{Form1.STUDENT_USER_SR_CODE}' 
+                        ORDER BY students.sr_code,day_tasks.day_task_id DESC
                         LIMIT 1;";
             try
             {
                 mysqlConnection.Open();
-                MySqlCommand slctItemNamesCmd = new MySqlCommand(slctItemNames, mysqlConnection);
+                MySqlCommand slctCluesCmd = new MySqlCommand(slctClues, mysqlConnection);
 
-                using (MySqlDataReader reader = slctItemNamesCmd.ExecuteReader())
+                using (MySqlDataReader reader = slctCluesCmd.ExecuteReader())
                 {
                     if (reader.Read())
                     {
