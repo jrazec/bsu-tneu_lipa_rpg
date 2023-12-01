@@ -108,8 +108,36 @@ namespace bsu_tnue_lipa_rpg
         #endregion
 
         #region hover menu events
-        //
-        //
+        private void tasks_hoverin(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverChange(tasks_panel, tasks_lbl);
+        }
+
+        private void tasks_hoverout(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverReset(tasks_panel, tasks_lbl);
+        }
+
+        private void achievs_hoverin(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverChange(achievs_panel, achievs_lbl);
+        }
+
+        private void achievs_hoverout(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverReset(achievs_panel, achievs_lbl);
+        }
+
+        private void return_hoverin(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverChange(return_panel, return_label);
+        }
+
+        private void return_hoverout(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverReset(return_panel, return_label);
+        }
+
         #endregion
         private void addUC(UserControl uc)
         {
@@ -169,7 +197,7 @@ namespace bsu_tnue_lipa_rpg
             CECS_fifthflr.INSTANCE.cecsfifthWalkTimer.Start();
             addUC(CECS_fifthflr.INSTANCE);
         }
-       
-        
+
+
     }
 }
