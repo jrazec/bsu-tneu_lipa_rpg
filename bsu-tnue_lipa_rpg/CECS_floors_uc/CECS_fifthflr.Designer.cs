@@ -40,6 +40,7 @@
             this.door1_panel = new System.Windows.Forms.Panel();
             this.dr_dg = new System.Windows.Forms.Label();
             this.dg_pbox = new System.Windows.Forms.PictureBox();
+            this.padayon_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.drbalazon_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cecsfifthflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).BeginInit();
@@ -151,6 +152,20 @@
             this.dg_pbox.TabIndex = 12;
             this.dg_pbox.TabStop = false;
             // 
+            // padayon_btn
+            // 
+            this.padayon_btn.BackColor = System.Drawing.Color.Maroon;
+            this.padayon_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.padayon_btn.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.padayon_btn.ForeColor = System.Drawing.Color.White;
+            this.padayon_btn.Location = new System.Drawing.Point(610, 386);
+            this.padayon_btn.Name = "padayon_btn";
+            this.padayon_btn.Size = new System.Drawing.Size(224, 49);
+            this.padayon_btn.TabIndex = 16;
+            this.padayon_btn.Text = "PADAYON";
+            this.padayon_btn.UseVisualStyleBackColor = false;
+            this.padayon_btn.Visible = false;
+            // 
             // CECS_fifthflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -158,6 +173,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.cecs_hallway;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.padayon_btn);
             this.Controls.Add(this.success_door);
             this.Controls.Add(this.door3_panel);
             this.Controls.Add(this.door2_panel);
@@ -196,5 +212,6 @@
         private System.Windows.Forms.Panel door1_panel;
         private System.Windows.Forms.Label dr_dg;
         private System.Windows.Forms.PictureBox dg_pbox;
+        private System.Windows.Forms.Button padayon_btn;
     }
 }

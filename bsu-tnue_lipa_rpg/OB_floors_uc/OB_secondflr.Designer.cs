@@ -123,7 +123,7 @@
             this.dg_dg.Name = "dg_dg";
             this.dg_dg.Size = new System.Drawing.Size(808, 143);
             this.dg_dg.TabIndex = 25;
-            this.dg_dg.Text = "You proceed on getting you rmedical...";
+            this.dg_dg.Text = "Heading out for your medical appointment at the school clinic..";
             this.dg_dg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dg_pbox

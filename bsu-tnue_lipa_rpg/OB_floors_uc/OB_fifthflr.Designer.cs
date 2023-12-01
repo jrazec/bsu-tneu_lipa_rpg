@@ -39,6 +39,7 @@
             this.door1_panel = new System.Windows.Forms.Panel();
             this.engr_dg = new System.Windows.Forms.Label();
             this.dg_pbox = new System.Windows.Forms.PictureBox();
+            this.padayon_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.engrjonnah_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obfifthflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staircollision_pbox)).BeginInit();
@@ -55,6 +56,7 @@
             this.engrjonnah_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.engrjonnah_pbox.TabIndex = 0;
             this.engrjonnah_pbox.TabStop = false;
+            this.engrjonnah_pbox.Visible = false;
             // 
             // obfifthflr_charac
             // 
@@ -90,6 +92,7 @@
             this.success_door.Name = "success_door";
             this.success_door.Size = new System.Drawing.Size(50, 74);
             this.success_door.TabIndex = 21;
+            this.success_door.Visible = false;
             // 
             // door3_panel
             // 
@@ -98,6 +101,7 @@
             this.door3_panel.Name = "door3_panel";
             this.door3_panel.Size = new System.Drawing.Size(10, 82);
             this.door3_panel.TabIndex = 17;
+            this.door3_panel.Visible = false;
             // 
             // door2_panel
             // 
@@ -106,6 +110,7 @@
             this.door2_panel.Name = "door2_panel";
             this.door2_panel.Size = new System.Drawing.Size(70, 10);
             this.door2_panel.TabIndex = 16;
+            this.door2_panel.Visible = false;
             // 
             // door1_panel
             // 
@@ -114,6 +119,7 @@
             this.door1_panel.Name = "door1_panel";
             this.door1_panel.Size = new System.Drawing.Size(10, 86);
             this.door1_panel.TabIndex = 20;
+            this.door1_panel.Visible = false;
             // 
             // engr_dg
             // 
@@ -127,6 +133,7 @@
             this.engr_dg.Text = "Congratulations Red Spartan! Let\'s find the Vision\r\nMission and Core Values of th" +
     "e university in the\r\nLibrary, shall we?";
             this.engr_dg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.engr_dg.Visible = false;
             // 
             // dg_pbox
             // 
@@ -138,6 +145,21 @@
             this.dg_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dg_pbox.TabIndex = 18;
             this.dg_pbox.TabStop = false;
+            this.dg_pbox.Visible = false;
+            // 
+            // padayon_btn
+            // 
+            this.padayon_btn.BackColor = System.Drawing.Color.Maroon;
+            this.padayon_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.padayon_btn.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.padayon_btn.ForeColor = System.Drawing.Color.White;
+            this.padayon_btn.Location = new System.Drawing.Point(610, 384);
+            this.padayon_btn.Name = "padayon_btn";
+            this.padayon_btn.Size = new System.Drawing.Size(224, 49);
+            this.padayon_btn.TabIndex = 22;
+            this.padayon_btn.Text = "PADAYON";
+            this.padayon_btn.UseVisualStyleBackColor = false;
+            this.padayon_btn.Visible = false;
             // 
             // OB_fifthflr
             // 
@@ -146,6 +168,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.ob_libr;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.padayon_btn);
             this.Controls.Add(this.success_door);
             this.Controls.Add(this.door3_panel);
             this.Controls.Add(this.door2_panel);
@@ -181,5 +204,6 @@
         private System.Windows.Forms.Panel door1_panel;
         private System.Windows.Forms.Label engr_dg;
         private System.Windows.Forms.PictureBox dg_pbox;
+        private System.Windows.Forms.Button padayon_btn;
     }
 }

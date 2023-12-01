@@ -42,6 +42,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.door2_panel = new System.Windows.Forms.Panel();
             this.door3_panel = new System.Windows.Forms.Panel();
             this.success_door = new System.Windows.Forms.Panel();
+            this.padayon_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.sirtiquio_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cecsfourthflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).BeginInit();
@@ -117,8 +118,8 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.sir_dg.Name = "sir_dg";
             this.sir_dg.Size = new System.Drawing.Size(808, 112);
             this.sir_dg.TabIndex = 7;
-            this.sir_dg.Text = "Congratulations Red Spartan! Let\'s now proceed\r\nto our class here in Room 401,  s" +
-    "hall we?";
+            this.sir_dg.Text = "Congratulations Red Spartan! Let\'s now proceed\r\nto our class here in Room 401, sh" +
+    "all we?";
             this.sir_dg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // door1_panel
@@ -154,6 +155,20 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.success_door.Size = new System.Drawing.Size(50, 74);
             this.success_door.TabIndex = 9;
             // 
+            // padayon_btn
+            // 
+            this.padayon_btn.BackColor = System.Drawing.Color.Maroon;
+            this.padayon_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.padayon_btn.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.padayon_btn.ForeColor = System.Drawing.Color.White;
+            this.padayon_btn.Location = new System.Drawing.Point(635, 387);
+            this.padayon_btn.Name = "padayon_btn";
+            this.padayon_btn.Size = new System.Drawing.Size(224, 49);
+            this.padayon_btn.TabIndex = 10;
+            this.padayon_btn.Text = "PADAYON";
+            this.padayon_btn.UseVisualStyleBackColor = false;
+            this.padayon_btn.Visible = false;
+            // 
             // CECS_fourthflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -161,6 +176,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.cecs_hallway;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.padayon_btn);
             this.Controls.Add(this.success_door);
             this.Controls.Add(this.door3_panel);
             this.Controls.Add(this.door2_panel);
@@ -199,5 +215,6 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         private Panel door2_panel;
         private Panel door3_panel;
         private Panel success_door;
+        private Button padayon_btn;
     }
 }
