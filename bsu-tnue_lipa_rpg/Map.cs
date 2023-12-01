@@ -1,4 +1,6 @@
-﻿using bsu_tnue_lipa_rpg.Closet_garments_uc;
+﻿using bsu_tnue_lipa_rpg.CECS_floors_uc;
+using bsu_tnue_lipa_rpg.Closet_garments_uc;
+using bsu_tnue_lipa_rpg.OB_floors_uc;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -43,6 +45,7 @@ namespace bsu_tnue_lipa_rpg
             Bedroom.instance.characFront(map_charac);
             dg_map.Text = DG_1[index];
             displayClue();
+            enableNPCs();
         }
 
         private void next_pbox_Click(object sender, EventArgs e)
@@ -62,7 +65,6 @@ namespace bsu_tnue_lipa_rpg
             click_lbl.Visible = false;
             mapWalkTimer.Start();
         }
-
 
         private void mapWalkTimer_Tick(object sender, EventArgs e)
         {
@@ -108,7 +110,7 @@ namespace bsu_tnue_lipa_rpg
                         CECS_bldg enter_cecs = new CECS_bldg();
                         enter_cecs.ShowDialog();
 
-                        
+
 
                     }
                 }
@@ -134,7 +136,7 @@ namespace bsu_tnue_lipa_rpg
                         this.Hide();
                         Old_Bldg enter_ob = new Old_Bldg();
                         enter_ob.ShowDialog();
-                        
+
 
                     }
                 }
@@ -226,6 +228,116 @@ namespace bsu_tnue_lipa_rpg
             finally
             {
                 mysqlConnection.Close();
+            }
+        }
+
+        public void enableNPCs()
+        {
+            if (Bedroom.instance.DAY_ID == 1)
+            { //Sir Daryll
+                CECS_fourthflr.INSTANCE.sirtiquio_pbox.Enabled = true;
+                CECS_fourthflr.INSTANCE.sirtiquio_pbox.Visible = true;
+
+                //DISABLING & HIDING OTHER NPC's TO MAKE SURE THEY WONT APPEAR 
+                OB_fifthflr.INSTANCE.engrjonnah_pbox.Enabled = false;
+                OB_fifthflr.INSTANCE.engrjonnah_pbox.Visible = false;
+
+                CECS_fifthflr.INSTANCE.drbalazon_pbox.Enabled = false;
+                CECS_fifthflr.INSTANCE.drbalazon_pbox.Visible = false;
+
+                CECS_firstflr.INSTANCE.atty_pbox.Enabled = false;
+                CECS_firstflr.INSTANCE.atty_pbox.Visible = false;
+
+                OB_secondflr.INSTANCE.success_registrar.Enabled = false;
+                OB_secondflr.INSTANCE.success_registrar.Visible = false;
+                OB_secondflr.INSTANCE.door1_panel.Visible = false;
+                OB_secondflr.INSTANCE.door2_panel.Visible = false;
+                OB_secondflr.INSTANCE.door3_panel.Visible = false;
+            }
+            else if (Bedroom.instance.DAY_ID == 2)
+            { //Engr Jonnah
+                OB_fifthflr.INSTANCE.engrjonnah_pbox.Enabled = true;
+                OB_fifthflr.INSTANCE.engrjonnah_pbox.Visible = true;
+
+                //DISABLING & HIDING OTHER NPC's TO MAKE SURE THEY WONT APPEAR 
+                CECS_fourthflr.INSTANCE.sirtiquio_pbox.Enabled = false;
+                CECS_fourthflr.INSTANCE.sirtiquio_pbox.Visible = false;
+
+                CECS_fifthflr.INSTANCE.drbalazon_pbox.Enabled = false;
+                CECS_fifthflr.INSTANCE.drbalazon_pbox.Visible = false;
+
+                CECS_firstflr.INSTANCE.atty_pbox.Enabled = false;
+                CECS_firstflr.INSTANCE.atty_pbox.Visible = false;
+
+                OB_secondflr.INSTANCE.success_registrar.Enabled = false;
+                OB_secondflr.INSTANCE.success_registrar.Visible = false;
+                OB_secondflr.INSTANCE.door1_panel.Visible = false;
+                OB_secondflr.INSTANCE.door2_panel.Visible = false;
+                OB_secondflr.INSTANCE.door3_panel.Visible = false;
+            }
+            else if (Bedroom.instance.DAY_ID == 3)
+            { //Dr. Balazon
+                CECS_fifthflr.INSTANCE.drbalazon_pbox.Enabled = true;
+                CECS_fifthflr.INSTANCE.drbalazon_pbox.Visible = true;
+
+                //DISABLING & HIDING OTHER NPC's TO MAKE SURE THEY WONT APPEAR 
+                CECS_fourthflr.INSTANCE.sirtiquio_pbox.Enabled = false;
+                CECS_fourthflr.INSTANCE.sirtiquio_pbox.Visible = false;
+
+                OB_fifthflr.INSTANCE.engrjonnah_pbox.Enabled = false;
+                OB_fifthflr.INSTANCE.engrjonnah_pbox.Visible = false;
+
+                CECS_firstflr.INSTANCE.atty_pbox.Enabled = false;
+                CECS_firstflr.INSTANCE.atty_pbox.Visible = false;
+
+                OB_secondflr.INSTANCE.success_registrar.Enabled = false;
+                OB_secondflr.INSTANCE.success_registrar.Visible = false;
+                OB_secondflr.INSTANCE.door1_panel.Visible = false;
+                OB_secondflr.INSTANCE.door2_panel.Visible = false;
+                OB_secondflr.INSTANCE.door3_panel.Visible = false;
+            }
+            else if (Bedroom.instance.DAY_ID == 4)
+            { //Atty. De Silva 
+                CECS_firstflr.INSTANCE.atty_pbox.Enabled = true;
+                CECS_firstflr.INSTANCE.atty_pbox.Visible = true;
+
+                //DISABLING & HIDING OTHER NPC's TO MAKE SURE THEY WONT APPEAR 
+                CECS_fourthflr.INSTANCE.sirtiquio_pbox.Enabled = false;
+                CECS_fourthflr.INSTANCE.sirtiquio_pbox.Visible = false;
+
+                CECS_fifthflr.INSTANCE.drbalazon_pbox.Enabled = false;
+                CECS_fifthflr.INSTANCE.drbalazon_pbox.Visible = false;
+
+                OB_fifthflr.INSTANCE.engrjonnah_pbox.Enabled = false;
+                OB_fifthflr.INSTANCE.engrjonnah_pbox.Visible = false;
+
+                OB_secondflr.INSTANCE.success_registrar.Enabled = false;
+                OB_secondflr.INSTANCE.success_registrar.Visible = false;
+                OB_secondflr.INSTANCE.door1_panel.Visible = false;
+                OB_secondflr.INSTANCE.door2_panel.Visible = false;
+                OB_secondflr.INSTANCE.door3_panel.Visible = false;
+            }
+            else if(Bedroom.instance.DAY_ID == 5)
+            { //Clinic
+                OB_secondflr.INSTANCE.success_registrar.Enabled = true;
+                OB_secondflr.INSTANCE.success_registrar.Visible = true;
+                OB_secondflr.INSTANCE.door1_panel.Visible = true;
+                OB_secondflr.INSTANCE.door2_panel.Visible = true;
+                OB_secondflr.INSTANCE.door3_panel.Visible = true;
+
+                //DISABLING & HIDING OTHER NPC's TO MAKE SURE THEY WONT APPEAR 
+                CECS_fourthflr.INSTANCE.sirtiquio_pbox.Enabled = false;
+                CECS_fourthflr.INSTANCE.sirtiquio_pbox.Visible = false;
+
+                CECS_fifthflr.INSTANCE.drbalazon_pbox.Enabled = false;
+                CECS_fifthflr.INSTANCE.drbalazon_pbox.Visible = false;
+
+                OB_fifthflr.INSTANCE.engrjonnah_pbox.Enabled = false;
+                OB_fifthflr.INSTANCE.engrjonnah_pbox.Visible = false;
+
+                CECS_firstflr.INSTANCE.atty_pbox.Enabled = false;
+                CECS_firstflr.INSTANCE.atty_pbox.Visible = false;
+
             }
         }
     }
