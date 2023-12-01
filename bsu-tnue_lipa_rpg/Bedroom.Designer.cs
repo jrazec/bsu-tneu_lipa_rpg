@@ -292,6 +292,7 @@
             // 
             // viewmenu_panel
             // 
+            this.viewmenu_panel.BackColor = System.Drawing.Color.White;
             this.viewmenu_panel.Controls.Add(this.return_panel);
             this.viewmenu_panel.Controls.Add(this.pictureBox6);
             this.viewmenu_panel.Controls.Add(this.label5);
