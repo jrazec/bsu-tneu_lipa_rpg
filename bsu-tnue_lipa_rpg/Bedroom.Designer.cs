@@ -49,16 +49,13 @@
             this.hint_panel = new System.Windows.Forms.Panel();
             this.hinttext_lbl = new System.Windows.Forms.Label();
             this.viewmenu_panel = new System.Windows.Forms.Panel();
-            this.profile_panel = new System.Windows.Forms.Panel();
-            this.tasks_panel = new System.Windows.Forms.Panel();
-            this.achievs_panel = new System.Windows.Forms.Panel();
-            this.return_panel = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.ign_lbl = new System.Windows.Forms.Label();
-            this.tasks_lbl = new System.Windows.Forms.Label();
-            this.achievs_lbl = new System.Windows.Forms.Label();
             this.return_label = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.achievs_lbl = new System.Windows.Forms.Label();
+            this.tasks_lbl = new System.Windows.Forms.Label();
+            this.profile_panel = new System.Windows.Forms.Panel();
+            this.ign_lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.doorcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
             this.menu_panel.SuspendLayout();
@@ -70,11 +67,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bedroom_charac)).BeginInit();
             this.hint_panel.SuspendLayout();
             this.viewmenu_panel.SuspendLayout();
-            this.profile_panel.SuspendLayout();
-            this.tasks_panel.SuspendLayout();
-            this.achievs_panel.SuspendLayout();
-            this.return_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.profile_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // doorcollision_pbox
@@ -293,11 +287,11 @@
             // viewmenu_panel
             // 
             this.viewmenu_panel.BackColor = System.Drawing.Color.White;
-            this.viewmenu_panel.Controls.Add(this.return_panel);
+            this.viewmenu_panel.Controls.Add(this.return_label);
+            this.viewmenu_panel.Controls.Add(this.achievs_lbl);
+            this.viewmenu_panel.Controls.Add(this.tasks_lbl);
             this.viewmenu_panel.Controls.Add(this.pictureBox6);
             this.viewmenu_panel.Controls.Add(this.label5);
-            this.viewmenu_panel.Controls.Add(this.achievs_panel);
-            this.viewmenu_panel.Controls.Add(this.tasks_panel);
             this.viewmenu_panel.Controls.Add(this.profile_panel);
             this.viewmenu_panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.viewmenu_panel.Location = new System.Drawing.Point(0, 50);
@@ -306,56 +300,15 @@
             this.viewmenu_panel.TabIndex = 15;
             this.viewmenu_panel.Visible = false;
             // 
-            // profile_panel
+            // return_label
             // 
-            this.profile_panel.BackColor = System.Drawing.Color.Maroon;
-            this.profile_panel.Controls.Add(this.ign_lbl);
-            this.profile_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.profile_panel.Location = new System.Drawing.Point(0, 0);
-            this.profile_panel.Name = "profile_panel";
-            this.profile_panel.Size = new System.Drawing.Size(208, 127);
-            this.profile_panel.TabIndex = 16;
-            // 
-            // tasks_panel
-            // 
-            this.tasks_panel.Controls.Add(this.tasks_lbl);
-            this.tasks_panel.Location = new System.Drawing.Point(0, 178);
-            this.tasks_panel.Name = "tasks_panel";
-            this.tasks_panel.Size = new System.Drawing.Size(208, 59);
-            this.tasks_panel.TabIndex = 17;
-            this.tasks_panel.MouseEnter += new System.EventHandler(this.tasks_hoverin);
-            this.tasks_panel.MouseLeave += new System.EventHandler(this.tasks_hoverout);
-            // 
-            // achievs_panel
-            // 
-            this.achievs_panel.Controls.Add(this.achievs_lbl);
-            this.achievs_panel.Location = new System.Drawing.Point(0, 255);
-            this.achievs_panel.Name = "achievs_panel";
-            this.achievs_panel.Size = new System.Drawing.Size(208, 59);
-            this.achievs_panel.TabIndex = 18;
-            this.achievs_panel.MouseEnter += new System.EventHandler(this.achievs_hoverin);
-            this.achievs_panel.MouseLeave += new System.EventHandler(this.achievs_hoverout);
-            // 
-            // return_panel
-            // 
-            this.return_panel.Controls.Add(this.return_label);
-            this.return_panel.Location = new System.Drawing.Point(0, 333);
-            this.return_panel.Name = "return_panel";
-            this.return_panel.Size = new System.Drawing.Size(208, 59);
-            this.return_panel.TabIndex = 19;
-            this.return_panel.MouseEnter += new System.EventHandler(this.return_hoverin);
-            this.return_panel.MouseLeave += new System.EventHandler(this.return_hoverout);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Maroon;
-            this.label5.Location = new System.Drawing.Point(55, 555);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 26);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "RazBerYie";
+            this.return_label.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.return_label.Location = new System.Drawing.Point(0, 333);
+            this.return_label.Name = "return_label";
+            this.return_label.Size = new System.Drawing.Size(208, 59);
+            this.return_label.TabIndex = 23;
+            this.return_label.Text = "Main Menu";
+            this.return_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox6
             // 
@@ -368,6 +321,49 @@
             this.pictureBox6.TabIndex = 21;
             this.pictureBox6.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Maroon;
+            this.label5.Location = new System.Drawing.Point(55, 555);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 26);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "RazBerYie";
+            // 
+            // achievs_lbl
+            // 
+            this.achievs_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.achievs_lbl.Location = new System.Drawing.Point(0, 255);
+            this.achievs_lbl.Name = "achievs_lbl";
+            this.achievs_lbl.Size = new System.Drawing.Size(208, 59);
+            this.achievs_lbl.TabIndex = 22;
+            this.achievs_lbl.Text = "Achievements";
+            this.achievs_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tasks_lbl
+            // 
+            this.tasks_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tasks_lbl.Location = new System.Drawing.Point(0, 178);
+            this.tasks_lbl.Name = "tasks_lbl";
+            this.tasks_lbl.Size = new System.Drawing.Size(208, 59);
+            this.tasks_lbl.TabIndex = 0;
+            this.tasks_lbl.Text = "Tasks";
+            this.tasks_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tasks_lbl.MouseEnter += new System.EventHandler(this.tasks_hoverin);
+            this.tasks_lbl.MouseLeave += new System.EventHandler(this.tasks_hoverout);
+            // 
+            // profile_panel
+            // 
+            this.profile_panel.BackColor = System.Drawing.Color.Maroon;
+            this.profile_panel.Controls.Add(this.ign_lbl);
+            this.profile_panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.profile_panel.Location = new System.Drawing.Point(0, 0);
+            this.profile_panel.Name = "profile_panel";
+            this.profile_panel.Size = new System.Drawing.Size(208, 127);
+            this.profile_panel.TabIndex = 16;
+            // 
             // ign_lbl
             // 
             this.ign_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -378,36 +374,6 @@
             this.ign_lbl.TabIndex = 0;
             this.ign_lbl.Text = "Hello, [IGN]\r\n\r\n[fullname] | [sr-code]";
             this.ign_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tasks_lbl
-            // 
-            this.tasks_lbl.AutoSize = true;
-            this.tasks_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tasks_lbl.Location = new System.Drawing.Point(77, 15);
-            this.tasks_lbl.Name = "tasks_lbl";
-            this.tasks_lbl.Size = new System.Drawing.Size(53, 24);
-            this.tasks_lbl.TabIndex = 0;
-            this.tasks_lbl.Text = "Tasks";
-            // 
-            // achievs_lbl
-            // 
-            this.achievs_lbl.AutoSize = true;
-            this.achievs_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.achievs_lbl.Location = new System.Drawing.Point(47, 18);
-            this.achievs_lbl.Name = "achievs_lbl";
-            this.achievs_lbl.Size = new System.Drawing.Size(120, 24);
-            this.achievs_lbl.TabIndex = 22;
-            this.achievs_lbl.Text = "Achievements";
-            // 
-            // return_label
-            // 
-            this.return_label.AutoSize = true;
-            this.return_label.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.return_label.Location = new System.Drawing.Point(59, 19);
-            this.return_label.Name = "return_label";
-            this.return_label.Size = new System.Drawing.Size(93, 24);
-            this.return_label.TabIndex = 23;
-            this.return_label.Text = "Main Menu";
             // 
             // Bedroom
             // 
@@ -452,14 +418,8 @@
             this.hint_panel.ResumeLayout(false);
             this.viewmenu_panel.ResumeLayout(false);
             this.viewmenu_panel.PerformLayout();
-            this.profile_panel.ResumeLayout(false);
-            this.tasks_panel.ResumeLayout(false);
-            this.tasks_panel.PerformLayout();
-            this.achievs_panel.ResumeLayout(false);
-            this.achievs_panel.PerformLayout();
-            this.return_panel.ResumeLayout(false);
-            this.return_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.profile_panel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -488,9 +448,6 @@
         private System.Windows.Forms.Label hinttext_lbl;
         private System.Windows.Forms.Panel viewmenu_panel;
         private System.Windows.Forms.Panel profile_panel;
-        private System.Windows.Forms.Panel return_panel;
-        private System.Windows.Forms.Panel achievs_panel;
-        private System.Windows.Forms.Panel tasks_panel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label ign_lbl;

@@ -135,47 +135,48 @@ choose the right ones.";
         }
 
         //hover menu events
+        
         private void tasks_hoverin(object sender, EventArgs e)
         {
-            hoverChange(tasks_panel, tasks_lbl);
+            hoverChange(tasks_lbl);
         }
         private void tasks_hoverout(object sender, EventArgs e)
         {
-            hoverReset(tasks_panel, tasks_lbl);
+            hoverReset(tasks_lbl);
         }
 
         private void achievs_hoverin(object sender, EventArgs e)
         {
-            hoverChange(achievs_panel, achievs_lbl);
+            hoverChange(achievs_lbl);
         }
 
         private void achievs_hoverout(object sender, EventArgs e)
         {
-            hoverReset(achievs_panel, achievs_lbl);
+            hoverReset(achievs_lbl);
         }
 
         private void return_hoverin(object sender, EventArgs e)
         {
-            hoverChange(return_panel, return_label);
+            hoverChange(return_label);
         }
 
         private void return_hoverout(object sender, EventArgs e)
         {
-            hoverReset(return_panel, return_label);
+            hoverReset(return_label);
         }
-
+        
         //hover functions
-        public void hoverChange(Control panel, Control label)
+        public void hoverChange(Control label)
         {
-            panel.BackColor = Color.Maroon;
-            panel.Cursor = Cursors.Hand;
+            label.BackColor = Color.Maroon;
+            label.Cursor = Cursors.Hand;
             label.ForeColor = Color.White;
         }
 
-        public void hoverReset(Control panel, Control label)
+        public void hoverReset(Control label)
         {
-            panel.BackColor = Color.White;
-            panel.Cursor = Cursors.Arrow;
+            label.BackColor = Color.White;
+            label.Cursor = Cursors.Arrow;
             label.ForeColor = Color.Black;
         }
 
