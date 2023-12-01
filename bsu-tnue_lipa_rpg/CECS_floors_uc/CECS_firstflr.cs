@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bsu_tnue_lipa_rpg.Closet_garments_uc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -159,8 +160,76 @@ namespace bsu_tnue_lipa_rpg
                         CECS_bldg.instance.cecscontainer_panel.Visible = false;
                     }
                 }
+
+                if (atty_pbox.Enabled)
+                {
+                    //Atty. Alvin
+                    if (navigation is PictureBox && (string)navigation.Tag == "atty")
+                    {
+                        if (cecsfirstflr_charac.Bounds.IntersectsWith(navigation.Bounds))
+                        {
+                            //stop character movement
+
+
+                            //reset boolean directions
+                            go_left = false;
+                            go_right = false;
+                            go_up = false;
+                            go_down = false;
+
+                            //move character away from collision box
+                            cecsfirstflr_charac.Location = new Point(59, 148);
+
+                            //proceed to elev
+                            dg_pbox.Visible = true;
+                            atty_dg.Visible = true;
+                            atty_dg.BringToFront();
+
+                            door1_panel.Visible = true;
+                            door2_panel.Visible = true;
+                            door3_panel.Visible = true;
+                            success_registrar.Enabled = true;
+                            success_registrar.Visible = true;
+                            click_lbl.Visible = true;
+                        }
+                    }
+                }
+
+                if (success_registrar.Enabled)
+                {
+                    //going to chpater end part
+                    if (navigation is PictureBox && (string)navigation.Tag == "regis")
+                    {
+                        if (cecsfirstflr_charac.Bounds.IntersectsWith(navigation.Bounds))
+                        {
+                            //stop character movement
+                            cecsfirstWalkTimer.Stop();
+
+                            //move character away from collision box
+                            cecsfirstflr_charac.Location = new Point(1259, 228);
+
+                            //reset boolean directions
+                            go_left = false;
+                            go_right = false;
+                            go_up = false;
+                            go_down = false;
+
+                            this.Hide();
+                            CECS_bldg.instance.Hide();
+                            CECS_bldg.instance.Close();
+                            Chapter_End cE = new Chapter_End();
+                            cE.ShowDialog();
+                        }
+                    }
+                }
             }
         }
+
+        private void success_registrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void key_is_down(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
@@ -210,6 +279,7 @@ namespace bsu_tnue_lipa_rpg
                 go_down = false;
             }
         }
+
 
     }
 }
