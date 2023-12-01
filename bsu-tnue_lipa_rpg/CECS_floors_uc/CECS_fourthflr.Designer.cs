@@ -36,7 +36,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.cecsfourthWalkTimer = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.elevcollision_pbox = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dg_pbox = new System.Windows.Forms.PictureBox();
             this.sir_dg = new System.Windows.Forms.Label();
             this.door1_panel = new System.Windows.Forms.Panel();
             this.door2_panel = new System.Windows.Forms.Panel();
@@ -45,7 +45,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             ((System.ComponentModel.ISupportInitialize)(this.sirtiquio_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cecsfourthflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // sirtiquio_pbox
@@ -97,16 +97,16 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.elevcollision_pbox.TabStop = false;
             this.elevcollision_pbox.Tag = "go_to_elev";
             // 
-            // pictureBox1
+            // dg_pbox
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.sir_dialogue;
-            this.pictureBox1.Location = new System.Drawing.Point(154, 387);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1189, 221);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.dg_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.dg_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.sir_dialogue;
+            this.dg_pbox.Location = new System.Drawing.Point(154, 387);
+            this.dg_pbox.Name = "dg_pbox";
+            this.dg_pbox.Size = new System.Drawing.Size(1189, 221);
+            this.dg_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.dg_pbox.TabIndex = 6;
+            this.dg_pbox.TabStop = false;
             // 
             // sir_dg
             // 
@@ -148,6 +148,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             // 
             // success_door
             // 
+            this.success_door.BackColor = System.Drawing.Color.Transparent;
             this.success_door.Location = new System.Drawing.Point(979, 174);
             this.success_door.Name = "success_door";
             this.success_door.Size = new System.Drawing.Size(50, 74);
@@ -165,7 +166,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.Controls.Add(this.door2_panel);
             this.Controls.Add(this.door1_panel);
             this.Controls.Add(this.sir_dg);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dg_pbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.elevcollision_pbox);
             this.Controls.Add(this.cecsfourthflr_charac);
@@ -179,7 +180,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             ((System.ComponentModel.ISupportInitialize)(this.sirtiquio_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cecsfourthflr_charac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,7 +193,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         public System.Windows.Forms.Timer cecsfourthWalkTimer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox elevcollision_pbox;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox dg_pbox;
         private System.Windows.Forms.Label sir_dg;
         private System.Windows.Forms.Panel door1_panel;
         private Panel door2_panel;
