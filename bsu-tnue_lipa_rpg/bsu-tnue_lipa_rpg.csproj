@@ -269,6 +269,12 @@
     <Compile Include="Map.Designer.cs">
       <DependentUpon>Map.cs</DependentUpon>
     </Compile>
+    <Compile Include="messagebox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messagebox.Designer.cs">
+      <DependentUpon>messagebox.cs</DependentUpon>
+    </Compile>
     <Compile Include="OB_floors_uc\OB_fifthflr.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -398,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Map.resx">
       <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messagebox.resx">
+      <DependentUpon>messagebox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OB_floors_uc\OB_fifthflr.resx">
       <DependentUpon>OB_fifthflr.cs</DependentUpon>
