@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bsu_tnue_lipa_rpg.Closet_garments_uc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -85,10 +86,6 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             sir_dg.BackColor = Color.FromArgb(179, 0, 0, 0);
         }
 
-        private void door_panel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void cecsfourthWalkTimer_Tick(object sender, EventArgs e)
         {
@@ -131,10 +128,40 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
 
                         //proceed to elev
                         this.Hide();
-                        CECS_bldg.instance.cecscontainer_panel.Visible = false;
+                        CECS_bldg.instance.Hide();
+                        CECS_bldg.instance.Close();
+                        Chapter_End cE = new Chapter_End();
+                        cE.ShowDialog();
+                    }
+                }
+
+                if (navigation is PictureBox && (string)navigation.Tag == "sir")
+                {
+                    if (cecsfourthflr_charac.Bounds.IntersectsWith(navigation.Bounds))
+                    {
+                        //stop character movement
+                        cecsfourthWalkTimer.Stop();
+
+                        //move character away from collision box
+                        cecsfourthflr_charac.Location = new Point(878, 174);
+
+                        //reset boolean directions
+                        go_left = false;
+                        go_right = false;
+                        go_up = false;
+                        go_down = false;
+
+                        //proceed to elev
+                        padayon_btn.Visible = true;
+                        padayon_btn.Enabled = true;
+                        dg_pbox.Visible = true;
+                        sir_dg.Visible = true;
+                        sir_dg.BringToFront();
                     }
                 }
             }
+
+
         }
 
         private void key_is_down(object sender, KeyEventArgs e)
@@ -164,6 +191,25 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             }
         }
 
+        private void padayon_btn_Click(object sender, EventArgs e)
+        {
+            door1_panel.Visible = true;
+            door2_panel.Visible = true;
+            door3_panel.Visible = true;
+            success_door.Enabled = true;
+            success_door.Visible = true;
+            click_lbl.Visible = true;
+        }
+
+        private void success_door_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CECS_bldg.instance.Hide();
+            CECS_bldg.instance.Close();
+            Chapter_End cE = new Chapter_End();
+            cE.ShowDialog();
+        }
+
         private void key_is_up(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
@@ -185,6 +231,15 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             {
                 go_down = false;
             }
+        }
+
+        private void door_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void sirtiquio_pbox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -41,12 +41,14 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.door1_panel = new System.Windows.Forms.Panel();
             this.door2_panel = new System.Windows.Forms.Panel();
             this.door3_panel = new System.Windows.Forms.Panel();
-            this.success_door = new System.Windows.Forms.Panel();
             this.padayon_btn = new System.Windows.Forms.Button();
+            this.click_lbl = new System.Windows.Forms.Label();
+            this.success_door = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.sirtiquio_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cecsfourthflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.success_door)).BeginInit();
             this.SuspendLayout();
             // 
             // sirtiquio_pbox
@@ -54,13 +56,15 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.sirtiquio_pbox.BackColor = System.Drawing.Color.Transparent;
             this.sirtiquio_pbox.Enabled = false;
             this.sirtiquio_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Sir_Daryl;
-            this.sirtiquio_pbox.Location = new System.Drawing.Point(1058, 184);
+            this.sirtiquio_pbox.Location = new System.Drawing.Point(1045, 162);
             this.sirtiquio_pbox.Name = "sirtiquio_pbox";
             this.sirtiquio_pbox.Size = new System.Drawing.Size(101, 119);
             this.sirtiquio_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sirtiquio_pbox.TabIndex = 0;
             this.sirtiquio_pbox.TabStop = false;
+            this.sirtiquio_pbox.Tag = "sir";
             this.sirtiquio_pbox.Visible = false;
+            this.sirtiquio_pbox.Click += new System.EventHandler(this.sirtiquio_pbox_Click);
             // 
             // cecsfourthflr_charac
             // 
@@ -154,16 +158,6 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.door3_panel.TabIndex = 1;
             this.door3_panel.Visible = false;
             // 
-            // success_door
-            // 
-            this.success_door.BackColor = System.Drawing.Color.Transparent;
-            this.success_door.Enabled = false;
-            this.success_door.Location = new System.Drawing.Point(979, 174);
-            this.success_door.Name = "success_door";
-            this.success_door.Size = new System.Drawing.Size(50, 74);
-            this.success_door.TabIndex = 9;
-            this.success_door.Visible = false;
-            // 
             // padayon_btn
             // 
             this.padayon_btn.BackColor = System.Drawing.Color.Maroon;
@@ -178,6 +172,32 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.padayon_btn.Text = "PADAYON";
             this.padayon_btn.UseVisualStyleBackColor = false;
             this.padayon_btn.Visible = false;
+            this.padayon_btn.Click += new System.EventHandler(this.padayon_btn_Click);
+            // 
+            // click_lbl
+            // 
+            this.click_lbl.BackColor = System.Drawing.Color.Green;
+            this.click_lbl.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.click_lbl.ForeColor = System.Drawing.Color.White;
+            this.click_lbl.Location = new System.Drawing.Point(950, 127);
+            this.click_lbl.Name = "click_lbl";
+            this.click_lbl.Size = new System.Drawing.Size(110, 32);
+            this.click_lbl.TabIndex = 11;
+            this.click_lbl.Text = "Click da door";
+            this.click_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.click_lbl.Visible = false;
+            // 
+            // success_door
+            // 
+            this.success_door.BackColor = System.Drawing.Color.Transparent;
+            this.success_door.Enabled = false;
+            this.success_door.Location = new System.Drawing.Point(981, 176);
+            this.success_door.Name = "success_door";
+            this.success_door.Size = new System.Drawing.Size(48, 72);
+            this.success_door.TabIndex = 12;
+            this.success_door.TabStop = false;
+            this.success_door.Visible = false;
+            this.success_door.Click += new System.EventHandler(this.success_door_Click);
             // 
             // CECS_fourthflr
             // 
@@ -186,8 +206,9 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.cecs_hallway;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Controls.Add(this.padayon_btn);
             this.Controls.Add(this.success_door);
+            this.Controls.Add(this.click_lbl);
+            this.Controls.Add(this.padayon_btn);
             this.Controls.Add(this.door3_panel);
             this.Controls.Add(this.door2_panel);
             this.Controls.Add(this.door1_panel);
@@ -207,6 +228,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             ((System.ComponentModel.ISupportInitialize)(this.cecsfourthflr_charac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.success_door)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,7 +246,8 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         public System.Windows.Forms.Panel door1_panel;
         public Panel door2_panel;
         public Panel door3_panel;
-        public Panel success_door;
         public Button padayon_btn;
+        public Label click_lbl;
+        public PictureBox success_door;
     }
 }
