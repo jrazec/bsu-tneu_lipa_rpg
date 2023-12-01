@@ -140,6 +140,16 @@ choose the right ones.";
         {
             hoverReset(tasks_panel, tasks_lbl);
         }
+
+        private void achievs_hoverin(object sender, EventArgs e)
+        {
+            hoverChange(achievs_panel, achievs_lbl);
+        }
+
+        private void achievs_hoverout(object sender, EventArgs e)
+        {
+            hoverReset(achievs_lbl, achievs_lbl);
+        }
         //hover functions
         private void hoverChange(Control panel, Control label)
         {

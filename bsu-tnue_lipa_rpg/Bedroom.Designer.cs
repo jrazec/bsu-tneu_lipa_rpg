@@ -332,6 +332,8 @@
             this.achievs_panel.Name = "achievs_panel";
             this.achievs_panel.Size = new System.Drawing.Size(208, 59);
             this.achievs_panel.TabIndex = 18;
+            this.achievs_panel.MouseEnter += new System.EventHandler(this.achievs_hoverin);
+            this.achievs_panel.MouseLeave += new System.EventHandler(this.achievs_hoverout);
             // 
             // return_panel
             // 
