@@ -41,6 +41,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.door1_panel = new System.Windows.Forms.Panel();
             this.door2_panel = new System.Windows.Forms.Panel();
             this.door3_panel = new System.Windows.Forms.Panel();
+            this.success_door = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.sirtiquio_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cecsfourthflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).BeginInit();
@@ -145,6 +146,13 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.door3_panel.Size = new System.Drawing.Size(10, 82);
             this.door3_panel.TabIndex = 1;
             // 
+            // success_door
+            // 
+            this.success_door.Location = new System.Drawing.Point(979, 174);
+            this.success_door.Name = "success_door";
+            this.success_door.Size = new System.Drawing.Size(50, 74);
+            this.success_door.TabIndex = 9;
+            // 
             // CECS_fourthflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -152,6 +160,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.cecs_hallway;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.success_door);
             this.Controls.Add(this.door3_panel);
             this.Controls.Add(this.door2_panel);
             this.Controls.Add(this.door1_panel);
@@ -188,5 +197,6 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         private System.Windows.Forms.Panel door1_panel;
         private Panel door2_panel;
         private Panel door3_panel;
+        private Panel success_door;
     }
 }
