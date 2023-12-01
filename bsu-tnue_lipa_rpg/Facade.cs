@@ -33,8 +33,7 @@ namespace bsu_tnue_lipa_rpg
         bool openHint = false;
 
 
-
-        //menu & hint events
+        #region menu & hint events
         private void menu_pbox_Click(object sender, EventArgs e)
         {
             if (openMenu == false)
@@ -66,8 +65,9 @@ namespace bsu_tnue_lipa_rpg
                 hint_panel.Visible = false;
             }
         }
+        #endregion
 
-        //hover menu events
+        #region hover menu events
         private void tasks_hoverin(object sender, EventArgs e)
         {
             Bedroom.instance.hoverChange(tasks_panel, tasks_lbl);
@@ -97,6 +97,7 @@ namespace bsu_tnue_lipa_rpg
         {
             Bedroom.instance.hoverReset(return_panel, return_label);
         }
+        #endregion
 
         private void facadeWalkTimer_Tick(object sender, EventArgs e)
         {
