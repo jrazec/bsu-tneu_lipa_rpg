@@ -54,6 +54,7 @@ namespace bsu_tnue_lipa_rpg
             characFront(bedroom_charac);
 
         }
+        bool openMenu = false;
         bool openSched = false;
         bool openHint = false;
 
@@ -484,8 +485,12 @@ choose the right ones.";
             {
                 openHint = false;
                 hint_panel.Visible = false;
-                hinttext_lbl.Visible = false;
             }
+        }
+
+        private void Bedroom_Load(object sender, EventArgs e)
+        {
+
         }
 
         public void checkDay()

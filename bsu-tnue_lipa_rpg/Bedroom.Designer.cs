@@ -48,6 +48,13 @@
             this.bedroom_charac = new System.Windows.Forms.PictureBox();
             this.hint_panel = new System.Windows.Forms.Panel();
             this.hinttext_lbl = new System.Windows.Forms.Label();
+            this.viewmenu_panel = new System.Windows.Forms.Panel();
+            this.profile_panel = new System.Windows.Forms.Panel();
+            this.tasks_panel = new System.Windows.Forms.Panel();
+            this.achievs_panel = new System.Windows.Forms.Panel();
+            this.return_panel = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.doorcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
             this.menu_panel.SuspendLayout();
@@ -58,6 +65,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.closetcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bedroom_charac)).BeginInit();
             this.hint_panel.SuspendLayout();
+            this.viewmenu_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // doorcollision_pbox
@@ -264,13 +273,81 @@
             // hinttext_lbl
             // 
             this.hinttext_lbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hinttext_lbl.ForeColor = System.Drawing.Color.Maroon;
             this.hinttext_lbl.Location = new System.Drawing.Point(14, 12);
             this.hinttext_lbl.Name = "hinttext_lbl";
             this.hinttext_lbl.Size = new System.Drawing.Size(341, 79);
             this.hinttext_lbl.TabIndex = 0;
-            this.hinttext_lbl.Text = "Buy hint?";
+            this.hinttext_lbl.Text = "Go to your closet, and choose the correct garments according to your schedule.";
             this.hinttext_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.hinttext_lbl.Visible = false;
+            // 
+            // viewmenu_panel
+            // 
+            this.viewmenu_panel.Controls.Add(this.return_panel);
+            this.viewmenu_panel.Controls.Add(this.pictureBox6);
+            this.viewmenu_panel.Controls.Add(this.label5);
+            this.viewmenu_panel.Controls.Add(this.achievs_panel);
+            this.viewmenu_panel.Controls.Add(this.tasks_panel);
+            this.viewmenu_panel.Controls.Add(this.profile_panel);
+            this.viewmenu_panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.viewmenu_panel.Location = new System.Drawing.Point(0, 50);
+            this.viewmenu_panel.Name = "viewmenu_panel";
+            this.viewmenu_panel.Size = new System.Drawing.Size(208, 589);
+            this.viewmenu_panel.TabIndex = 15;
+            this.viewmenu_panel.Visible = false;
+            // 
+            // profile_panel
+            // 
+            this.profile_panel.BackColor = System.Drawing.Color.Maroon;
+            this.profile_panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.profile_panel.Location = new System.Drawing.Point(0, 0);
+            this.profile_panel.Name = "profile_panel";
+            this.profile_panel.Size = new System.Drawing.Size(208, 127);
+            this.profile_panel.TabIndex = 16;
+            // 
+            // tasks_panel
+            // 
+            this.tasks_panel.Location = new System.Drawing.Point(0, 178);
+            this.tasks_panel.Name = "tasks_panel";
+            this.tasks_panel.Size = new System.Drawing.Size(208, 59);
+            this.tasks_panel.TabIndex = 17;
+            // 
+            // achievs_panel
+            // 
+            this.achievs_panel.Location = new System.Drawing.Point(0, 254);
+            this.achievs_panel.Name = "achievs_panel";
+            this.achievs_panel.Size = new System.Drawing.Size(208, 59);
+            this.achievs_panel.TabIndex = 18;
+            // 
+            // return_panel
+            // 
+            this.return_panel.Location = new System.Drawing.Point(0, 333);
+            this.return_panel.Name = "return_panel";
+            this.return_panel.Size = new System.Drawing.Size(208, 59);
+            this.return_panel.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Maroon;
+            this.label5.Location = new System.Drawing.Point(55, 555);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 26);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "RazBerYie";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBox6.Image = global::bsu_tnue_lipa_rpg.Properties.Resources._111_01;
+            this.pictureBox6.Location = new System.Drawing.Point(18, 555);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(29, 25);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 21;
+            this.pictureBox6.TabStop = false;
             // 
             // Bedroom
             // 
@@ -278,6 +355,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.bedroom;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.viewmenu_panel);
             this.Controls.Add(this.hint_panel);
             this.Controls.Add(this.sched_pbox);
             this.Controls.Add(this.enter_lbl);
@@ -298,6 +376,7 @@
             this.Name = "Bedroom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bedroom";
+            this.Load += new System.EventHandler(this.Bedroom_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.key_is_down);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.key_is_up);
             ((System.ComponentModel.ISupportInitialize)(this.doorcollision_pbox)).EndInit();
@@ -311,6 +390,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.closetcollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bedroom_charac)).EndInit();
             this.hint_panel.ResumeLayout(false);
+            this.viewmenu_panel.ResumeLayout(false);
+            this.viewmenu_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -337,5 +419,12 @@
         public System.Windows.Forms.PictureBox bedroom_charac;
         private System.Windows.Forms.Panel hint_panel;
         private System.Windows.Forms.Label hinttext_lbl;
+        private System.Windows.Forms.Panel viewmenu_panel;
+        private System.Windows.Forms.Panel profile_panel;
+        private System.Windows.Forms.Panel return_panel;
+        private System.Windows.Forms.Panel achievs_panel;
+        private System.Windows.Forms.Panel tasks_panel;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
