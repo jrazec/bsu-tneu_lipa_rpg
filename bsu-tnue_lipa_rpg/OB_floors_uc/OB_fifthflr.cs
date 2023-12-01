@@ -80,6 +80,10 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
         {
             InitializeComponent();
             Bedroom.instance.characFront(obfifthflr_charac);
+            door1_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
+            door2_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
+            door3_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
+            engr_dg.BackColor = Color.FromArgb(179, 0, 0, 0);
         }
         private void obfifthWalkTimer_Tick(object sender, EventArgs e)
         {

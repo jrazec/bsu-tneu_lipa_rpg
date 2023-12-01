@@ -37,7 +37,7 @@
             this.door3_panel = new System.Windows.Forms.Panel();
             this.door2_panel = new System.Windows.Forms.Panel();
             this.door1_panel = new System.Windows.Forms.Panel();
-            this.dr_dg = new System.Windows.Forms.Label();
+            this.dg_dg = new System.Windows.Forms.Label();
             this.dg_pbox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.obsecondflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staircollision_pbox)).BeginInit();
@@ -114,17 +114,17 @@
             this.door1_panel.Size = new System.Drawing.Size(10, 104);
             this.door1_panel.TabIndex = 26;
             // 
-            // dr_dg
+            // dg_dg
             // 
-            this.dr_dg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.dr_dg.Font = new System.Drawing.Font("Trebuchet MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dr_dg.ForeColor = System.Drawing.Color.White;
-            this.dr_dg.Location = new System.Drawing.Point(326, 430);
-            this.dr_dg.Name = "dr_dg";
-            this.dr_dg.Size = new System.Drawing.Size(808, 143);
-            this.dr_dg.TabIndex = 25;
-            this.dr_dg.Text = "You proceed on getting you rmedical...";
-            this.dr_dg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dg_dg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.dg_dg.Font = new System.Drawing.Font("Trebuchet MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dg_dg.ForeColor = System.Drawing.Color.White;
+            this.dg_dg.Location = new System.Drawing.Point(326, 430);
+            this.dg_dg.Name = "dg_dg";
+            this.dg_dg.Size = new System.Drawing.Size(808, 143);
+            this.dg_dg.TabIndex = 25;
+            this.dg_dg.Text = "You proceed on getting you rmedical...";
+            this.dg_dg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dg_pbox
             // 
@@ -148,7 +148,7 @@
             this.Controls.Add(this.door3_panel);
             this.Controls.Add(this.door2_panel);
             this.Controls.Add(this.door1_panel);
-            this.Controls.Add(this.dr_dg);
+            this.Controls.Add(this.dg_dg);
             this.Controls.Add(this.dg_pbox);
             this.Controls.Add(this.upflrcollision_pbox);
             this.Controls.Add(this.staircollision_pbox);
@@ -177,7 +177,7 @@
         private System.Windows.Forms.Panel door3_panel;
         private System.Windows.Forms.Panel door2_panel;
         private System.Windows.Forms.Panel door1_panel;
-        private System.Windows.Forms.Label dr_dg;
+        private System.Windows.Forms.Label dg_dg;
         private System.Windows.Forms.PictureBox dg_pbox;
     }
 }

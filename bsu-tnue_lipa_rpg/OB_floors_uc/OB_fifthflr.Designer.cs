@@ -49,7 +49,7 @@
             // 
             this.engrjonnah_pbox.BackColor = System.Drawing.Color.Transparent;
             this.engrjonnah_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Engr_Jonnah;
-            this.engrjonnah_pbox.Location = new System.Drawing.Point(641, 137);
+            this.engrjonnah_pbox.Location = new System.Drawing.Point(511, 139);
             this.engrjonnah_pbox.Name = "engrjonnah_pbox";
             this.engrjonnah_pbox.Size = new System.Drawing.Size(111, 135);
             this.engrjonnah_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -86,7 +86,7 @@
             // success_door
             // 
             this.success_door.BackColor = System.Drawing.Color.Transparent;
-            this.success_door.Location = new System.Drawing.Point(1145, 167);
+            this.success_door.Location = new System.Drawing.Point(713, 167);
             this.success_door.Name = "success_door";
             this.success_door.Size = new System.Drawing.Size(50, 74);
             this.success_door.TabIndex = 21;
@@ -94,7 +94,7 @@
             // door3_panel
             // 
             this.door3_panel.BackColor = System.Drawing.Color.Transparent;
-            this.door3_panel.Location = new System.Drawing.Point(1195, 160);
+            this.door3_panel.Location = new System.Drawing.Point(762, 160);
             this.door3_panel.Name = "door3_panel";
             this.door3_panel.Size = new System.Drawing.Size(10, 82);
             this.door3_panel.TabIndex = 17;
@@ -102,7 +102,7 @@
             // door2_panel
             // 
             this.door2_panel.BackColor = System.Drawing.Color.Transparent;
-            this.door2_panel.Location = new System.Drawing.Point(1135, 155);
+            this.door2_panel.Location = new System.Drawing.Point(703, 156);
             this.door2_panel.Name = "door2_panel";
             this.door2_panel.Size = new System.Drawing.Size(70, 10);
             this.door2_panel.TabIndex = 16;
@@ -110,9 +110,9 @@
             // door1_panel
             // 
             this.door1_panel.BackColor = System.Drawing.Color.Transparent;
-            this.door1_panel.Location = new System.Drawing.Point(1134, 155);
+            this.door1_panel.Location = new System.Drawing.Point(703, 156);
             this.door1_panel.Name = "door1_panel";
-            this.door1_panel.Size = new System.Drawing.Size(11, 87);
+            this.door1_panel.Size = new System.Drawing.Size(10, 86);
             this.door1_panel.TabIndex = 20;
             // 
             // engr_dg

@@ -78,6 +78,10 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         {
             InitializeComponent();
             Bedroom.instance.characFront(cecsfifthflr_charac);
+            door1_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
+            door2_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
+            door3_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
+            dr_dg.BackColor = Color.FromArgb(179, 0, 0, 0);
         }
 
         private void cecsfifthWalkTimer_Tick(object sender, EventArgs e)

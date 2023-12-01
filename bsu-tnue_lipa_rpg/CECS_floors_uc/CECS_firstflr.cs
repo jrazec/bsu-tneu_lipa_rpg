@@ -81,6 +81,10 @@ namespace bsu_tnue_lipa_rpg
         {
             InitializeComponent();
             Bedroom.instance.characFront(cecsfirstflr_charac);
+            door1_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
+            door2_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
+            door3_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
+            atty_dg.BackColor = Color.FromArgb(179, 0, 0, 0);
         }
 
         private void cecsfirstWalkTimer_Tick(object sender, EventArgs e)
