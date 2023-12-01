@@ -46,6 +46,8 @@
             this.sched_pbox = new System.Windows.Forms.PictureBox();
             this.closetcollision_pbox = new System.Windows.Forms.PictureBox();
             this.bedroom_charac = new System.Windows.Forms.PictureBox();
+            this.hint_panel = new System.Windows.Forms.Panel();
+            this.hinttext_lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.doorcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
             this.menu_panel.SuspendLayout();
@@ -55,6 +57,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sched_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closetcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bedroom_charac)).BeginInit();
+            this.hint_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // doorcollision_pbox
@@ -111,6 +114,7 @@
             this.hint_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hint_pbox.TabIndex = 3;
             this.hint_pbox.TabStop = false;
+            this.hint_pbox.Click += new System.EventHandler(this.hint_pbox_Click);
             // 
             // menu_pbox
             // 
@@ -247,12 +251,32 @@
             this.bedroom_charac.TabIndex = 2;
             this.bedroom_charac.TabStop = false;
             // 
+            // hint_panel
+            // 
+            this.hint_panel.Controls.Add(this.hinttext_lbl);
+            this.hint_panel.Location = new System.Drawing.Point(784, 50);
+            this.hint_panel.Name = "hint_panel";
+            this.hint_panel.Size = new System.Drawing.Size(366, 104);
+            this.hint_panel.TabIndex = 14;
+            this.hint_panel.Visible = false;
+            // 
+            // hinttext_lbl
+            // 
+            this.hinttext_lbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hinttext_lbl.Location = new System.Drawing.Point(14, 12);
+            this.hinttext_lbl.Name = "hinttext_lbl";
+            this.hinttext_lbl.Size = new System.Drawing.Size(341, 79);
+            this.hinttext_lbl.TabIndex = 0;
+            this.hinttext_lbl.Text = "Hint goes here...";
+            this.hinttext_lbl.Visible = false;
+            // 
             // Bedroom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.bedroom;
             this.ClientSize = new System.Drawing.Size(1151, 639);
+            this.Controls.Add(this.hint_panel);
             this.Controls.Add(this.sched_pbox);
             this.Controls.Add(this.enter_lbl);
             this.Controls.Add(this.view_lbl);
@@ -284,6 +308,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sched_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closetcollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bedroom_charac)).EndInit();
+            this.hint_panel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,5 +333,7 @@
         private System.Windows.Forms.PictureBox sched_pbox;
         private System.Windows.Forms.PictureBox closetcollision_pbox;
         public System.Windows.Forms.PictureBox bedroom_charac;
+        private System.Windows.Forms.Panel hint_panel;
+        private System.Windows.Forms.Label hinttext_lbl;
     }
 }

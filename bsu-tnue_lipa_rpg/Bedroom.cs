@@ -468,6 +468,11 @@ choose the right ones.";
             }
         }
 
+        private void hint_pbox_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public void checkDay()
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
