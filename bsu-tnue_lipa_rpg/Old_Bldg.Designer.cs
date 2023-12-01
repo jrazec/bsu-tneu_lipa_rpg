@@ -29,35 +29,29 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.hint_lbl = new System.Windows.Forms.Label();
+            this.hint_pbox = new System.Windows.Forms.PictureBox();
+            this.currency_lbl = new System.Windows.Forms.Label();
+            this.day_lbl = new System.Windows.Forms.Label();
+            this.menu_pbox = new System.Windows.Forms.PictureBox();
             this.obcontainer_panel = new System.Windows.Forms.Panel();
             this.viewmenu_panel = new System.Windows.Forms.Panel();
-            this.return_panel = new System.Windows.Forms.Panel();
             this.return_label = new System.Windows.Forms.Label();
+            this.achievs_lbl = new System.Windows.Forms.Label();
+            this.tasks_lbl = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.achievs_panel = new System.Windows.Forms.Panel();
-            this.achievs_lbl = new System.Windows.Forms.Label();
-            this.tasks_panel = new System.Windows.Forms.Panel();
-            this.tasks_lbl = new System.Windows.Forms.Label();
             this.profile_panel = new System.Windows.Forms.Panel();
             this.ign_lbl = new System.Windows.Forms.Label();
             this.hint_panel = new System.Windows.Forms.Panel();
             this.hinttext_lbl = new System.Windows.Forms.Label();
-            this.menu_pbox = new System.Windows.Forms.PictureBox();
-            this.day_lbl = new System.Windows.Forms.Label();
-            this.currency_lbl = new System.Windows.Forms.Label();
-            this.hint_pbox = new System.Windows.Forms.PictureBox();
-            this.hint_lbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).BeginInit();
             this.viewmenu_panel.SuspendLayout();
-            this.return_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.achievs_panel.SuspendLayout();
-            this.tasks_panel.SuspendLayout();
             this.profile_panel.SuspendLayout();
             this.hint_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,6 +68,63 @@
             this.panel1.Size = new System.Drawing.Size(1436, 50);
             this.panel1.TabIndex = 0;
             // 
+            // hint_lbl
+            // 
+            this.hint_lbl.AutoSize = true;
+            this.hint_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hint_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.hint_lbl.Location = new System.Drawing.Point(1304, 8);
+            this.hint_lbl.Name = "hint_lbl";
+            this.hint_lbl.Size = new System.Drawing.Size(58, 34);
+            this.hint_lbl.TabIndex = 22;
+            this.hint_lbl.Text = "Hint";
+            // 
+            // hint_pbox
+            // 
+            this.hint_pbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hint_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.hint_icon;
+            this.hint_pbox.Location = new System.Drawing.Point(1263, 8);
+            this.hint_pbox.Name = "hint_pbox";
+            this.hint_pbox.Size = new System.Drawing.Size(44, 34);
+            this.hint_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hint_pbox.TabIndex = 21;
+            this.hint_pbox.TabStop = false;
+            this.hint_pbox.Click += new System.EventHandler(this.hint_pbox_Click);
+            // 
+            // currency_lbl
+            // 
+            this.currency_lbl.AutoSize = true;
+            this.currency_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.currency_lbl.Location = new System.Drawing.Point(1061, 8);
+            this.currency_lbl.Name = "currency_lbl";
+            this.currency_lbl.Size = new System.Drawing.Size(83, 34);
+            this.currency_lbl.TabIndex = 18;
+            this.currency_lbl.Text = "₱ 0.00";
+            // 
+            // day_lbl
+            // 
+            this.day_lbl.AutoSize = true;
+            this.day_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.day_lbl.Location = new System.Drawing.Point(147, 9);
+            this.day_lbl.Name = "day_lbl";
+            this.day_lbl.Size = new System.Drawing.Size(99, 34);
+            this.day_lbl.TabIndex = 17;
+            this.day_lbl.Text = "Monday";
+            // 
+            // menu_pbox
+            // 
+            this.menu_pbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menu_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.menu_icon;
+            this.menu_pbox.Location = new System.Drawing.Point(10, 8);
+            this.menu_pbox.Name = "menu_pbox";
+            this.menu_pbox.Size = new System.Drawing.Size(44, 34);
+            this.menu_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.menu_pbox.TabIndex = 4;
+            this.menu_pbox.TabStop = false;
+            this.menu_pbox.Click += new System.EventHandler(this.menu_pbox_Click);
+            // 
             // obcontainer_panel
             // 
             this.obcontainer_panel.BackColor = System.Drawing.Color.White;
@@ -86,11 +137,11 @@
             // viewmenu_panel
             // 
             this.viewmenu_panel.BackColor = System.Drawing.Color.White;
-            this.viewmenu_panel.Controls.Add(this.return_panel);
+            this.viewmenu_panel.Controls.Add(this.return_label);
+            this.viewmenu_panel.Controls.Add(this.achievs_lbl);
+            this.viewmenu_panel.Controls.Add(this.tasks_lbl);
             this.viewmenu_panel.Controls.Add(this.pictureBox6);
             this.viewmenu_panel.Controls.Add(this.label5);
-            this.viewmenu_panel.Controls.Add(this.achievs_panel);
-            this.viewmenu_panel.Controls.Add(this.tasks_panel);
             this.viewmenu_panel.Controls.Add(this.profile_panel);
             this.viewmenu_panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.viewmenu_panel.Location = new System.Drawing.Point(0, 50);
@@ -99,25 +150,41 @@
             this.viewmenu_panel.TabIndex = 19;
             this.viewmenu_panel.Visible = false;
             // 
-            // return_panel
-            // 
-            this.return_panel.Controls.Add(this.return_label);
-            this.return_panel.Location = new System.Drawing.Point(0, 333);
-            this.return_panel.Name = "return_panel";
-            this.return_panel.Size = new System.Drawing.Size(208, 59);
-            this.return_panel.TabIndex = 19;
-            this.return_panel.MouseEnter += new System.EventHandler(this.return_hoverin);
-            this.return_panel.MouseLeave += new System.EventHandler(this.return_hoverout);
-            // 
             // return_label
             // 
-            this.return_label.AutoSize = true;
             this.return_label.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.return_label.Location = new System.Drawing.Point(59, 19);
+            this.return_label.Location = new System.Drawing.Point(0, 333);
             this.return_label.Name = "return_label";
-            this.return_label.Size = new System.Drawing.Size(93, 24);
-            this.return_label.TabIndex = 23;
+            this.return_label.Size = new System.Drawing.Size(208, 59);
+            this.return_label.TabIndex = 32;
             this.return_label.Text = "Main Menu";
+            this.return_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.return_label.MouseEnter += new System.EventHandler(this.return_hoverin);
+            this.return_label.MouseLeave += new System.EventHandler(this.return_hoverout);
+            // 
+            // achievs_lbl
+            // 
+            this.achievs_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.achievs_lbl.Location = new System.Drawing.Point(0, 255);
+            this.achievs_lbl.Name = "achievs_lbl";
+            this.achievs_lbl.Size = new System.Drawing.Size(208, 59);
+            this.achievs_lbl.TabIndex = 31;
+            this.achievs_lbl.Text = "Achievements";
+            this.achievs_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.achievs_lbl.MouseEnter += new System.EventHandler(this.achievs_hoverin);
+            this.achievs_lbl.MouseLeave += new System.EventHandler(this.achievs_hoverout);
+            // 
+            // tasks_lbl
+            // 
+            this.tasks_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tasks_lbl.Location = new System.Drawing.Point(0, 178);
+            this.tasks_lbl.Name = "tasks_lbl";
+            this.tasks_lbl.Size = new System.Drawing.Size(208, 59);
+            this.tasks_lbl.TabIndex = 30;
+            this.tasks_lbl.Text = "Tasks";
+            this.tasks_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tasks_lbl.MouseEnter += new System.EventHandler(this.tasks_hoverin);
+            this.tasks_lbl.MouseLeave += new System.EventHandler(this.tasks_hoverout);
             // 
             // pictureBox6
             // 
@@ -140,46 +207,6 @@
             this.label5.Size = new System.Drawing.Size(109, 26);
             this.label5.TabIndex = 20;
             this.label5.Text = "RazBerYie";
-            // 
-            // achievs_panel
-            // 
-            this.achievs_panel.Controls.Add(this.achievs_lbl);
-            this.achievs_panel.Location = new System.Drawing.Point(0, 255);
-            this.achievs_panel.Name = "achievs_panel";
-            this.achievs_panel.Size = new System.Drawing.Size(208, 59);
-            this.achievs_panel.TabIndex = 18;
-            this.achievs_panel.MouseEnter += new System.EventHandler(this.achievs_hoverin);
-            this.achievs_panel.MouseLeave += new System.EventHandler(this.achievs_hoverout);
-            // 
-            // achievs_lbl
-            // 
-            this.achievs_lbl.AutoSize = true;
-            this.achievs_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.achievs_lbl.Location = new System.Drawing.Point(47, 18);
-            this.achievs_lbl.Name = "achievs_lbl";
-            this.achievs_lbl.Size = new System.Drawing.Size(120, 24);
-            this.achievs_lbl.TabIndex = 22;
-            this.achievs_lbl.Text = "Achievements";
-            // 
-            // tasks_panel
-            // 
-            this.tasks_panel.Controls.Add(this.tasks_lbl);
-            this.tasks_panel.Location = new System.Drawing.Point(0, 178);
-            this.tasks_panel.Name = "tasks_panel";
-            this.tasks_panel.Size = new System.Drawing.Size(208, 59);
-            this.tasks_panel.TabIndex = 17;
-            this.tasks_panel.MouseEnter += new System.EventHandler(this.tasks_hoverin);
-            this.tasks_panel.MouseLeave += new System.EventHandler(this.tasks_hoverout);
-            // 
-            // tasks_lbl
-            // 
-            this.tasks_lbl.AutoSize = true;
-            this.tasks_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tasks_lbl.Location = new System.Drawing.Point(77, 15);
-            this.tasks_lbl.Name = "tasks_lbl";
-            this.tasks_lbl.Size = new System.Drawing.Size(53, 24);
-            this.tasks_lbl.TabIndex = 0;
-            this.tasks_lbl.Text = "Tasks";
             // 
             // profile_panel
             // 
@@ -223,63 +250,6 @@
             this.hinttext_lbl.Text = "Hint goes here...";
             this.hinttext_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // menu_pbox
-            // 
-            this.menu_pbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menu_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.menu_icon;
-            this.menu_pbox.Location = new System.Drawing.Point(10, 8);
-            this.menu_pbox.Name = "menu_pbox";
-            this.menu_pbox.Size = new System.Drawing.Size(44, 34);
-            this.menu_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu_pbox.TabIndex = 4;
-            this.menu_pbox.TabStop = false;
-            this.menu_pbox.Click += new System.EventHandler(this.menu_pbox_Click);
-            // 
-            // day_lbl
-            // 
-            this.day_lbl.AutoSize = true;
-            this.day_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.day_lbl.Location = new System.Drawing.Point(147, 9);
-            this.day_lbl.Name = "day_lbl";
-            this.day_lbl.Size = new System.Drawing.Size(99, 34);
-            this.day_lbl.TabIndex = 17;
-            this.day_lbl.Text = "Monday";
-            // 
-            // currency_lbl
-            // 
-            this.currency_lbl.AutoSize = true;
-            this.currency_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.currency_lbl.Location = new System.Drawing.Point(1061, 8);
-            this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Size = new System.Drawing.Size(83, 34);
-            this.currency_lbl.TabIndex = 18;
-            this.currency_lbl.Text = "₱ 0.00";
-            // 
-            // hint_pbox
-            // 
-            this.hint_pbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hint_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.hint_icon;
-            this.hint_pbox.Location = new System.Drawing.Point(1263, 8);
-            this.hint_pbox.Name = "hint_pbox";
-            this.hint_pbox.Size = new System.Drawing.Size(44, 34);
-            this.hint_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hint_pbox.TabIndex = 21;
-            this.hint_pbox.TabStop = false;
-            this.hint_pbox.Click += new System.EventHandler(this.hint_pbox_Click);
-            // 
-            // hint_lbl
-            // 
-            this.hint_lbl.AutoSize = true;
-            this.hint_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hint_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.hint_lbl.Location = new System.Drawing.Point(1304, 8);
-            this.hint_lbl.Name = "hint_lbl";
-            this.hint_lbl.Size = new System.Drawing.Size(58, 34);
-            this.hint_lbl.TabIndex = 22;
-            this.hint_lbl.Text = "Hint";
-            // 
             // Old_Bldg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -297,19 +267,13 @@
             this.Text = "Old_Bldg";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).EndInit();
             this.viewmenu_panel.ResumeLayout(false);
             this.viewmenu_panel.PerformLayout();
-            this.return_panel.ResumeLayout(false);
-            this.return_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.achievs_panel.ResumeLayout(false);
-            this.achievs_panel.PerformLayout();
-            this.tasks_panel.ResumeLayout(false);
-            this.tasks_panel.PerformLayout();
             this.profile_panel.ResumeLayout(false);
             this.hint_panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -319,14 +283,8 @@
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Panel obcontainer_panel;
         private System.Windows.Forms.Panel viewmenu_panel;
-        private System.Windows.Forms.Panel return_panel;
-        private System.Windows.Forms.Label return_label;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel achievs_panel;
-        private System.Windows.Forms.Label achievs_lbl;
-        private System.Windows.Forms.Panel tasks_panel;
-        private System.Windows.Forms.Label tasks_lbl;
         private System.Windows.Forms.Panel profile_panel;
         private System.Windows.Forms.Label ign_lbl;
         private System.Windows.Forms.Panel hint_panel;
@@ -336,5 +294,8 @@
         private System.Windows.Forms.Label currency_lbl;
         private System.Windows.Forms.PictureBox hint_pbox;
         private System.Windows.Forms.Label hint_lbl;
+        private System.Windows.Forms.Label return_label;
+        private System.Windows.Forms.Label achievs_lbl;
+        private System.Windows.Forms.Label tasks_lbl;
     }
 }

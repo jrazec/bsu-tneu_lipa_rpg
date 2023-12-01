@@ -135,11 +135,12 @@ choose the right ones.";
         }
 
         //hover menu events
-        
+
         private void tasks_hoverin(object sender, EventArgs e)
         {
             hoverChange(tasks_lbl);
         }
+
         private void tasks_hoverout(object sender, EventArgs e)
         {
             hoverReset(tasks_lbl);
@@ -149,12 +150,10 @@ choose the right ones.";
         {
             hoverChange(achievs_lbl);
         }
-
         private void achievs_hoverout(object sender, EventArgs e)
         {
             hoverReset(achievs_lbl);
         }
-
         private void return_hoverin(object sender, EventArgs e)
         {
             hoverChange(return_label);
@@ -164,7 +163,8 @@ choose the right ones.";
         {
             hoverReset(return_label);
         }
-        
+
+
         //hover functions
         public void hoverChange(Control label)
         {
@@ -542,7 +542,6 @@ choose the right ones.";
                 mysqlConnection.Close();
             }
         }
-
 
         private void Bedroom_Load(object sender, EventArgs e)
         {

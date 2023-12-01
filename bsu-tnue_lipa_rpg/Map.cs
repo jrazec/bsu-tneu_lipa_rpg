@@ -104,32 +104,32 @@ namespace bsu_tnue_lipa_rpg
         #region hover menu events
         private void tasks_hoverin(object sender, EventArgs e)
         {
-            Bedroom.instance.hoverChange(tasks_panel, tasks_lbl);
+            Bedroom.instance.hoverChange(tasks_lbl);
         }
 
         private void tasks_hoverout(object sender, EventArgs e)
         {
-            Bedroom.instance.hoverReset(tasks_panel, tasks_lbl);
+            Bedroom.instance.hoverReset(tasks_lbl);
         }
 
         private void achievs_hoverin(object sender, EventArgs e)
         {
-            Bedroom.instance.hoverChange(achievs_panel, achievs_lbl);
+            Bedroom.instance.hoverChange(achievs_lbl);
         }
 
         private void achievs_hoverout(object sender, EventArgs e)
         {
-            Bedroom.instance.hoverReset(achievs_panel, achievs_lbl);
+            Bedroom.instance.hoverReset(achievs_lbl);
         }
 
         private void return_hoverin(object sender, EventArgs e)
         {
-            Bedroom.instance.hoverChange(return_panel, return_label);
+            Bedroom.instance.hoverChange(return_label);
         }
 
         private void return_hoverout(object sender, EventArgs e)
         {
-            Bedroom.instance.hoverReset(return_panel, return_label);
+            Bedroom.instance.hoverReset(return_label);
         }
         #endregion
 
@@ -210,7 +210,7 @@ namespace bsu_tnue_lipa_rpg
             }
         }
 
-
+        
         private void key_is_down(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)

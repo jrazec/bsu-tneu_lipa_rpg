@@ -309,6 +309,8 @@
             this.return_label.TabIndex = 23;
             this.return_label.Text = "Main Menu";
             this.return_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.return_label.MouseEnter += new System.EventHandler(this.return_hoverin);
+            this.return_label.MouseLeave += new System.EventHandler(this.return_hoverout);
             // 
             // pictureBox6
             // 
@@ -341,6 +343,8 @@
             this.achievs_lbl.TabIndex = 22;
             this.achievs_lbl.Text = "Achievements";
             this.achievs_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.achievs_lbl.MouseEnter += new System.EventHandler(this.achievs_hoverin);
+            this.achievs_lbl.MouseLeave += new System.EventHandler(this.achievs_hoverout);
             // 
             // tasks_lbl
             // 
