@@ -261,14 +261,14 @@
         private System.Windows.Forms.PictureBox cecscollision_pbox;
         private System.Windows.Forms.PictureBox obcollision_pbox;
         private System.Windows.Forms.PictureBox dg_pbox;
-        private System.Windows.Forms.Label dg_map;
-        private System.Windows.Forms.PictureBox next_pbox;
-        private System.Windows.Forms.Label click_lbl;
-        private System.Windows.Forms.Label enter_lbl;
-        private System.Windows.Forms.Label hint_lbl;
-        private System.Windows.Forms.Label day_lbl;
-        private System.Windows.Forms.PictureBox hint_pbox;
-        private System.Windows.Forms.Label currency_lbl;
+        public System.Windows.Forms.Label dg_map;
+        public System.Windows.Forms.PictureBox next_pbox;
+        public System.Windows.Forms.Label click_lbl;
+        public System.Windows.Forms.Label enter_lbl;
+        public System.Windows.Forms.Label hint_lbl;
+        public System.Windows.Forms.Label day_lbl;
+        public System.Windows.Forms.PictureBox hint_pbox;
+        public System.Windows.Forms.Label currency_lbl;
         private System.Windows.Forms.PictureBox menu_pbox;
     }
 }

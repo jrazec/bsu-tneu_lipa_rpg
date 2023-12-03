@@ -29,11 +29,10 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             //Create another gameplay record
             //Ex. From task 1 going to task 2
             add = (REWARD + Bedroom.instance.CURRENT_MONEY);
-            updateGameplayRecords();
             DialogResult sure = MessageBox.Show("Proceed to next day..", "Warning", MessageBoxButtons.YesNo);
             if (sure == DialogResult.Yes)
             {
-
+                updateGameplayRecords();
                 this.Hide();
                 Bedroom bd = new Bedroom();
                 bd.ShowDialog();
@@ -79,45 +78,141 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         public void updateGameplayRecords()
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
-            string updateRecords = $@"
+
+            try
+            {
+                mysqlConnection.Open();
+
+                if(Bedroom.instance.DAY_ID == 1)//Monday will accomplish two tasks
+                {
+                    string updateStudentRecord = $@"
+                    UPDATE gameplay_records
+                    SET status=true
+                    WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}' AND task_id=1;
+
+                    INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
+                    VALUES ('{Form1.STUDENT_USER_SR_CODE}',6,CURRENT_DATE,true);
+                
+                    UPDATE students
+                    SET current_money={add}
+                    WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';
+
+                    INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
+                    VALUES ('{Form1.STUDENT_USER_SR_CODE}',2,CURRENT_DATE,false);";
+                    MySqlCommand updateSRCmd = new MySqlCommand(updateStudentRecord, mysqlConnection);
+                    updateSRCmd.ExecuteNonQuery();
+                }
+                else if (Bedroom.instance.DAY_ID == 2)//Tuesday will accomplish only one tasks
+                {
+                    string updateStudentRecord = $@"
+                    UPDATE gameplay_records
+                    SET status=true
+                    WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}' AND task_id=2;
+                
+                    UPDATE students
+                    SET current_money={add}
+                    WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}'; 
+
+                    INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
+                    VALUES ('{Form1.STUDENT_USER_SR_CODE}',3,CURRENT_DATE,false);";
+                    MySqlCommand updateSRCmd = new MySqlCommand(updateStudentRecord, mysqlConnection);
+                    updateSRCmd.ExecuteNonQuery();
+                }
+                else if (Bedroom.instance.DAY_ID == 3)//Wednesday will accomplish two tasks
+                {
+                    string updateStudentRecord = $@"
+                    UPDATE gameplay_records
+                    SET status=true
+                    WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}' AND task_id=3;
+
+                    INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
+                    VALUES ('{Form1.STUDENT_USER_SR_CODE}',7,CURRENT_DATE,true);
+                
+                    UPDATE students
+                    SET current_money={add}
+                    WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';
+
+                    INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
+                    VALUES ('{Form1.STUDENT_USER_SR_CODE}',4,CURRENT_DATE,false);";
+                    MySqlCommand updateSRCmd = new MySqlCommand(updateStudentRecord, mysqlConnection);
+                    updateSRCmd.ExecuteNonQuery();
+                }
+                else if (Bedroom.instance.DAY_ID == 4)//Thursday will accomplish one task
+                {
+                    string updateStudentRecord = $@"
+                    UPDATE gameplay_records
+                    SET status=true
+                    WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}' AND task_id=4;
+                
+                    UPDATE students
+                    SET current_money={add}
+                    WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';
+
+                    INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
+                    VALUES ('{Form1.STUDENT_USER_SR_CODE}',5,CURRENT_DATE,false);";
+                    MySqlCommand updateSRCmd = new MySqlCommand(updateStudentRecord, mysqlConnection);
+                    updateSRCmd.ExecuteNonQuery();
+                }
+                else if (Bedroom.instance.DAY_ID == 5)//Friday will accomplish two tasks
+                {
+                    string updateStudentRecord = $@"
+                    UPDATE gameplay_records
+                    SET status=true
+                    WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}' AND task_id=5;
+
+                    INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
+                    VALUES ('{Form1.STUDENT_USER_SR_CODE}',8,CURRENT_DATE,true);
+                
+                    UPDATE students
+                    SET current_money={add}
+                    WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';";
+                    MySqlCommand updateSRCmd = new MySqlCommand(updateStudentRecord, mysqlConnection);
+                    updateSRCmd.ExecuteNonQuery();
+
+                    Bedroom.instance.DAY = "FREE DAY";
+                }
+                else
+                {
+                    
+                }
+
+                #region Scractch Code : Stash
+                /*
+                string updateRecords = $@"
                 UPDATE gameplay_records
                 SET status=true
-                WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}' AND task_id={Bedroom.instance.TASK_ID};       
+                WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}' AND task_id={Bedroom.instance.DAY_ID};       
                 
                 UPDATE students
                 SET current_money={add}
                 WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';
 
                 INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
-                VALUES ('{Form1.STUDENT_USER_SR_CODE}',{(Bedroom.instance.TASK_ID + 1)},CURRENT_DATE,false); ";
+                VALUES ('{Form1.STUDENT_USER_SR_CODE}',{(Bedroom.instance.DAY_ID + 1)},CURRENT_DATE,false); ";
 
-            string updateRecords5 = $@"
+                string updateRecords5 = $@"
                 INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
                 VALUES ('{Form1.STUDENT_USER_SR_CODE}',5,CURRENT_DATE,false);
                 UPDATE students
                 SET current_money={add}
                 WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';";
-            string updateTask6 = $@"
+                string updateTask6 = $@"
                 INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
                 VALUES ('{Form1.STUDENT_USER_SR_CODE}',6,CURRENT_DATE,true);";
-            string updateTask7 = $@"
+                string updateTask7 = $@"
                INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
                 VALUES ('{Form1.STUDENT_USER_SR_CODE}',7,CURRENT_DATE,true);";
-            string updateTask8 = $@"
+                string updateTask8 = $@"
                INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
                 VALUES ('{Form1.STUDENT_USER_SR_CODE}',8,CURRENT_DATE,true);;";
-            string updateTask9 = $@"
+                string updateTask9 = $@"
                 INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
                 VALUES ('{Form1.STUDENT_USER_SR_CODE}',9,CURRENT_DATE,true);";//All task
-            string updateTask10 = $@"
+                string updateTask10 = $@"
                 INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
                 VALUES ('{Form1.STUDENT_USER_SR_CODE}',10,CURRENT_DATE,true);";//All Garments to be added in closet
 
-            try
-            {
-                mysqlConnection.Open();
-
-                if (Bedroom.instance.TASK_ID < 5)
+                                if (Bedroom.instance.DAY_ID < 5)
                 {
                     if(Bedroom.instance.DAY_ID == 1)
                     {
@@ -133,7 +228,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                     MySqlCommand updateRecordsCmd = new MySqlCommand(updateRecords, mysqlConnection);
                     updateRecordsCmd.ExecuteNonQuery();
                 }
-                else if(Bedroom.instance.TASK_ID == 5)
+                else if(Bedroom.instance.DAY_ID == 5)
                 {
                     MySqlCommand updateTask8Cmd = new MySqlCommand(updateTask8, mysqlConnection);
                     updateTask8Cmd.ExecuteNonQuery();
@@ -147,6 +242,8 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 {
 
                 }
+                */
+                #endregion
             }
             catch (Exception ex)
             {

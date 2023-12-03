@@ -37,15 +37,31 @@ namespace bsu_tnue_lipa_rpg
 
         };
         public string CLUE;
-        int index = Bedroom.instance.TASK_ID - 1;
+        int index = Bedroom.instance.DAY_ID - 1;
+
         public Map()
         {
             InitializeComponent();
-            instance = this;
             Bedroom.instance.characFront(map_charac);
-            dg_map.Text = DG_1[index];
+            if(Bedroom.instance.DAY == "FREE DAY")
+            {
+                dg_map.Visible = false;
+                dg_pbox.Visible = false;
+                enter_lbl.Visible = false;
+                next_pbox.Visible = false;
+                click_lbl.Visible = false;
+                mapWalkTimer.Start();
+
+            }
+            else
+            {
+                dg_map.Text = DG_1[index];
+            }
+            day_lbl.Text = Bedroom.instance.DAY;
             displayClue();
             enableNPCs();
+            instance = this;
+            currency_lbl.Text = Bedroom.instance.CURRENT_MONEY.ToString("C");// IDK why may warning :<
         }
 
         private void next_pbox_Click(object sender, EventArgs e)
