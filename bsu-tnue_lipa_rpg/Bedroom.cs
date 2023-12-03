@@ -22,7 +22,7 @@ namespace bsu_tnue_lipa_rpg
         public string DAY;
         public int DAY_ID;
         public double CURRENT_MONEY;
-        public int TASK_ID;
+
 
         public static Bedroom instance;
         bool go_up, go_down, go_left, go_right;
@@ -47,7 +47,6 @@ namespace bsu_tnue_lipa_rpg
             instance = this;
             Closet.instance = new Closet();
             checkCharac();
-            checkTask();
             checkMoney();
             checkDay();
             
@@ -493,10 +492,21 @@ choose the right ones.";
 
                 using (MySqlDataReader reader = slctDayNameCmd.ExecuteReader())
                 {
-                    if (reader.Read())
+                    if(Gameplay_start.free)
                     {
-                        DAY = (string)reader["day"];
-                        DAY_ID = (int)reader["ID"];
+                        DAY = "FREE DAY!";
+                    }
+                    else
+                    {
+                        if (reader.Read())
+                        {
+                            DAY = (string)reader["day"];
+                            DAY_ID = (int)reader["ID"];
+                        }
+                        else
+                        {
+                            DAY_ID = 1;//If ever there will be an error, it will go on monday and wont crash the program
+                        }
                     }
                 }
             }
@@ -545,48 +555,9 @@ choose the right ones.";
             }
             currency_lbl.Text = CURRENT_MONEY.ToString("C");
             Closet.instance.currency_lbl.Text = CURRENT_MONEY.ToString("C");
+            //Facade.currency_lbl.Text = CURRENT_MONEY.ToString("C");
         }
 
-        public void checkTask()
-        {
-            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
-
-            string slctCurrMoney = $@"
-                SELECT tasks.task_id AS id
-                FROM tasks 
-                INNER JOIN gameplay_records
-                ON gameplay_records.task_id=tasks.task_id
-                INNER JOIN students
-                ON gameplay_records.sr_code=students.sr_code
-                WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
-                AND tasks.task_id BETWEEN 1 AND 5
-                ORDER BY id DESC
-                LIMIT 1;";
-            //SHOULD BE LATEST UNG MONEY NA MAKUKUHA, siguro limit by one tas desc order
-
-            try
-            {
-                mysqlConnection.Open();
-                MySqlCommand slctCurrMoneyCmd = new MySqlCommand(slctCurrMoney, mysqlConnection);
-
-                using (MySqlDataReader reader = slctCurrMoneyCmd.ExecuteReader())
-                {
-                    if (reader.Read())
-                    {
-                        TASK_ID = Convert.ToInt32(reader["id"]);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                mysqlConnection.Close();
-            }
-            currency_lbl.Text = CURRENT_MONEY.ToString("C");
-            Closet.instance.currency_lbl.Text = CURRENT_MONEY.ToString("C");
-        }
+       
     }
 }

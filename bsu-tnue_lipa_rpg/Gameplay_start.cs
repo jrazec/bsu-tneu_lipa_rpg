@@ -13,6 +13,7 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Gameplay_start : Form
     {
+        public static bool free;
         public Gameplay_start()
         {
             InitializeComponent();
@@ -43,6 +44,12 @@ namespace bsu_tnue_lipa_rpg
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
+            string slctFREEDAY= $@"
+                SELECT gameplay_records.status AS stat
+                FROM gameplay_records
+                WHERE sr_code = '{Form1.STUDENT_USER_SR_CODE}' AND task_id =5;"
+            ;
+
             string slctGmplyRec = $@"
                 SELECT gameplay_records.status
                 FROM gameplay_records
@@ -54,6 +61,22 @@ namespace bsu_tnue_lipa_rpg
             try
             {
                 mysqlConnection.Open();
+
+                MySqlCommand slctFreeCmd = new MySqlCommand(slctFREEDAY, mysqlConnection);
+
+                using (MySqlDataReader reader = slctFreeCmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        free = (bool)reader["stat"];
+                    }
+                    else
+                    {
+                        free = false;
+                    }
+                }
+
+
                 MySqlDataAdapter slctGmplyRecCmd = new MySqlDataAdapter(slctGmplyRec, mysqlConnection);
 
                 DataTable dt = new DataTable();
@@ -61,11 +84,23 @@ namespace bsu_tnue_lipa_rpg
 
                 if (dt.Rows.Count == 1)//if makikita ung gameplay record na task # 1 nya na nag iisa naman
                 {
-                    MessageBox.Show("Gameplay found, redirecting where you left out..");
-                    this.Hide();
-                    Bedroom bd = new Bedroom();
-                    bd.ShowDialog();
-                    this.Close();
+                    if (free)
+                    {
+                        MessageBox.Show("Its Free day! For you! redirecting where you left out..");
+                        this.Hide();
+                        Bedroom bd = new Bedroom();
+                        Bedroom.instance.DAY = "FREE DAY";
+                        bd.ShowDialog();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Gameplay found, redirecting where you left out..");
+                        this.Hide();
+                        Bedroom bd = new Bedroom();
+                        bd.ShowDialog();
+                        this.Close();
+                    }
                 }
                 else//if walang magpopop up na query, ito lalabas
                 {
