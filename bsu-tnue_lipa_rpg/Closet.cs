@@ -26,6 +26,8 @@ namespace bsu_tnue_lipa_rpg
             }
         }
         #endregion
+        public const int ALLITEMCOUNT = 13;
+        public int itemCount;
         public static Closet instance;
         /*
          Dito ilalagay ung achievement na nabili na lahat ni player ung lahat ng garments
@@ -46,9 +48,9 @@ namespace bsu_tnue_lipa_rpg
                         {"top",    "bot",  "neck","shoes"},//serves as attributes     
                         {"uni-top","uni-bot","id","gen-shoes"},//For monday       - 1   
                         {"uni-top","uni-bot","id","gen-shoes"},//For tuesday      - 2
-                        {"org-top","org-bot","id","gen-shoes"},//For wednesday    - 3   
+                        {"org-top","org-bot","id","w-shoes"},//For wednesday    - 3   
                         {"uni-top","uni-bot","id","gen-shoes"},//For thursday     - 4 
-                        {"pe-top", "pe-bot", "id","gen-shoes"}//For friday        - 5
+                        {"pe-top", "pe-bot", "id","w-shoes"}//For friday        - 5
                         };
         //i = day_id & j = item_class
 
@@ -77,6 +79,7 @@ namespace bsu_tnue_lipa_rpg
             addUC(top_uc);
             displayItemNames();
             displayItemDesc();
+            day_lbl.Text = Bedroom.instance.DAY;
             instance = this;
         }
         private void addUC(UserControl uc)
@@ -247,7 +250,6 @@ namespace bsu_tnue_lipa_rpg
         }
 
 
-
         public void displayItemDesc()
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
@@ -261,7 +263,18 @@ namespace bsu_tnue_lipa_rpg
                             ON student_items.sr_code=students.sr_code
                             WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
                             ORDER BY class,items.item_name;";
-            
+
+            string slctItemCount = $@"
+                SELECT COUNT(student_items.student_item_id) AS itmCount
+                FROM student_items
+                WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}'
+                AND is_owned=true;";
+            string insertAchievements = $@"
+                INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
+                VALUES ('{Form1.STUDENT_USER_SR_CODE}',9,CURRENT_DATE,true);
+                INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
+                VALUES ('{Form1.STUDENT_USER_SR_CODE}',10,CURRENT_DATE,true);";
+
             try
             {
                 mysqlConnection.Open();
@@ -448,7 +461,22 @@ namespace bsu_tnue_lipa_rpg
                 shoes.instance.shoes1_desc.Text = ITEM_DESC[3, 0];
                 shoes.instance.shoes2_desc.Text = ITEM_DESC[3, 1];
                 shoes.instance.shoes3_desc.Text = ITEM_DESC[3, 2];
-            }
+
+                MySqlCommand slctItemCountCmd = new MySqlCommand(slctItemCount, mysqlConnection);
+
+                using (MySqlDataReader reader = slctItemCountCmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        itemCount = Convert.ToInt32(reader["itmCount"]);
+                    }
+                }
+                if(ALLITEMCOUNT == itemCount)
+                {
+                    MySqlCommand insertAchievementsCmd = new MySqlCommand(insertAchievements, mysqlConnection);
+                    insertAchievementsCmd.ExecuteNonQuery();
+                }
+             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -530,7 +558,6 @@ namespace bsu_tnue_lipa_rpg
                     {
                         double money = Bedroom.instance.CURRENT_MONEY;
                         money = money - ITEM_PRICE[i, j];
-                        Bedroom.instance.checkTask();
                         add_minusMoney(money);
                         buyItems(Form1.STUDENT_USER_SR_CODE, ITEM_ID[i, j]);
                         MessageBox.Show($"You may now wear {ITEMS[i, j]}", "Success!");
@@ -549,7 +576,6 @@ namespace bsu_tnue_lipa_rpg
                         callback();//Ill use this for arrow functionsss
                         double money = Bedroom.instance.CURRENT_MONEY;
                         money = money + ITEM_PRICE[i, j];
-                        Bedroom.instance.checkTask();
                         add_minusMoney(money);
                         refundItems(Form1.STUDENT_USER_SR_CODE, ITEM_ID[i, j]);
                         MessageBox.Show($"{ITEMS[i, j]} Cannot be worn..", "Refunded");

@@ -72,13 +72,38 @@ namespace bsu_tnue_lipa_rpg
                         //
                         //
 
-                        //temporary code to go to map
-                        //if makapasok
-                        Map gotomap = new Map();
-                        this.Hide();
-                        gotomap.ShowDialog();
-                        this.Close();
-                        //else balik sa bedroom
+                        if (Gameplay_start.free)
+                        {
+                            MessageBox.Show("Baet aq today ehheheheehheeheheheh la tao dyan");
+                            Map gotomap = new Map();
+                            this.Hide();
+                            gotomap.ShowDialog();
+                            this.Close();
+                        }
+                        else
+                        {
+                            if (Closet.GARMENTS_FOR_DAY[Bedroom.instance.DAY_ID, 0] == Closet.Garments_Worn[0, 0] &&
+                            Closet.GARMENTS_FOR_DAY[Bedroom.instance.DAY_ID, 1] == Closet.Garments_Worn[0, 1] &&
+                            Closet.GARMENTS_FOR_DAY[Bedroom.instance.DAY_ID, 2] == Closet.Garments_Worn[0, 2] &&
+                            Closet.GARMENTS_FOR_DAY[Bedroom.instance.DAY_ID, 3] == Closet.Garments_Worn[0, 3])
+                            {
+                                //temporary code to go to map
+                                //if makapasok
+                                Map gotomap = new Map();
+                                this.Hide();
+                                gotomap.ShowDialog();
+                                this.Close();
+                                //else balik sa bedroom
+                            }
+                            else
+                            {
+                                //Guard saying wrong garments for monday
+
+                                facade_charac.Location = new Point(277, 322);
+                                MessageBox.Show("Ay pagkakaasbar, derederetcho eh mali naman yaong baro. Ay ikay umuwi muna sainyo't ikay ndi ko papapasuken. Kainaman na naman gang bata ire, laking laki nay tuong hindi pa maalam magsuot ng tamang damet. Ay wag sasama ang luob, at ikay pinagsasabihan ko laang namay nang ikaw ren ay matuto. Ay sya uwi muna sa inyong tinamaris ikaw. ", "Kausapin kita..", MessageBoxButtons.OK);
+
+                            }
+                        }
                         
                         
                     }
