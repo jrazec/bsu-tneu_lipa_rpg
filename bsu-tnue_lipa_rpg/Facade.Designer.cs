@@ -41,15 +41,15 @@
             this.returncollision_pbox = new System.Windows.Forms.PictureBox();
             this.facadeWalkTimer = new System.Windows.Forms.Timer(this.components);
             this.viewmenu_panel = new System.Windows.Forms.Panel();
+            this.return_label = new System.Windows.Forms.Label();
+            this.achievs_lbl = new System.Windows.Forms.Label();
+            this.tasks_lbl = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.profile_panel = new System.Windows.Forms.Panel();
             this.ign_lbl = new System.Windows.Forms.Label();
             this.hint_panel = new System.Windows.Forms.Panel();
             this.hinttext_lbl = new System.Windows.Forms.Label();
-            this.return_label = new System.Windows.Forms.Label();
-            this.achievs_lbl = new System.Windows.Forms.Label();
-            this.tasks_lbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hint_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menu_pbox)).BeginInit();
@@ -196,6 +196,45 @@
             this.viewmenu_panel.TabIndex = 16;
             this.viewmenu_panel.Visible = false;
             // 
+            // return_label
+            // 
+            this.return_label.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.return_label.Location = new System.Drawing.Point(0, 333);
+            this.return_label.Name = "return_label";
+            this.return_label.Size = new System.Drawing.Size(208, 59);
+            this.return_label.TabIndex = 26;
+            this.return_label.Text = "Main Menu";
+            this.return_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.return_label.Click += new System.EventHandler(this.return_label_Click);
+            this.return_label.MouseEnter += new System.EventHandler(this.return_hoverin);
+            this.return_label.MouseLeave += new System.EventHandler(this.return_hoverout);
+            // 
+            // achievs_lbl
+            // 
+            this.achievs_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.achievs_lbl.Location = new System.Drawing.Point(0, 255);
+            this.achievs_lbl.Name = "achievs_lbl";
+            this.achievs_lbl.Size = new System.Drawing.Size(208, 59);
+            this.achievs_lbl.TabIndex = 25;
+            this.achievs_lbl.Text = "Achievements";
+            this.achievs_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.achievs_lbl.Click += new System.EventHandler(this.achievs_lbl_Click);
+            this.achievs_lbl.MouseEnter += new System.EventHandler(this.achievs_hoverin);
+            this.achievs_lbl.MouseLeave += new System.EventHandler(this.achievs_hoverout);
+            // 
+            // tasks_lbl
+            // 
+            this.tasks_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tasks_lbl.Location = new System.Drawing.Point(0, 178);
+            this.tasks_lbl.Name = "tasks_lbl";
+            this.tasks_lbl.Size = new System.Drawing.Size(208, 59);
+            this.tasks_lbl.TabIndex = 24;
+            this.tasks_lbl.Text = "Tasks";
+            this.tasks_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tasks_lbl.Click += new System.EventHandler(this.tasks_lbl_Click);
+            this.tasks_lbl.MouseEnter += new System.EventHandler(this.tasks_hoverin);
+            this.tasks_lbl.MouseLeave += new System.EventHandler(this.tasks_hoverout);
+            // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Maroon;
@@ -258,42 +297,6 @@
             this.hinttext_lbl.TabIndex = 0;
             this.hinttext_lbl.Text = "Hint goes here...";
             this.hinttext_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // return_label
-            // 
-            this.return_label.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.return_label.Location = new System.Drawing.Point(0, 333);
-            this.return_label.Name = "return_label";
-            this.return_label.Size = new System.Drawing.Size(208, 59);
-            this.return_label.TabIndex = 26;
-            this.return_label.Text = "Main Menu";
-            this.return_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.return_label.MouseEnter += new System.EventHandler(this.return_hoverin);
-            this.return_label.MouseLeave += new System.EventHandler(this.return_hoverout);
-            // 
-            // achievs_lbl
-            // 
-            this.achievs_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.achievs_lbl.Location = new System.Drawing.Point(0, 255);
-            this.achievs_lbl.Name = "achievs_lbl";
-            this.achievs_lbl.Size = new System.Drawing.Size(208, 59);
-            this.achievs_lbl.TabIndex = 25;
-            this.achievs_lbl.Text = "Achievements";
-            this.achievs_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.achievs_lbl.MouseEnter += new System.EventHandler(this.achievs_hoverin);
-            this.achievs_lbl.MouseLeave += new System.EventHandler(this.achievs_hoverout);
-            // 
-            // tasks_lbl
-            // 
-            this.tasks_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tasks_lbl.Location = new System.Drawing.Point(0, 178);
-            this.tasks_lbl.Name = "tasks_lbl";
-            this.tasks_lbl.Size = new System.Drawing.Size(208, 59);
-            this.tasks_lbl.TabIndex = 24;
-            this.tasks_lbl.Text = "Tasks";
-            this.tasks_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tasks_lbl.MouseEnter += new System.EventHandler(this.tasks_hoverin);
-            this.tasks_lbl.MouseLeave += new System.EventHandler(this.tasks_hoverout);
             // 
             // Facade
             // 

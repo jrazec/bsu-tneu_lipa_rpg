@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bsu_tnue_lipa_rpg.Menu_options_forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +33,9 @@ namespace bsu_tnue_lipa_rpg
         bool openMenu = false;
         bool openHint = false;
 
+        public bool tasksClicked = false;
+        public bool achievsClicked = false;
+        public bool returnClicked = false;
 
         #region menu & hint events
         private void menu_pbox_Click(object sender, EventArgs e)
@@ -76,7 +80,14 @@ namespace bsu_tnue_lipa_rpg
 
         private void tasks_hoverout(object sender, EventArgs e)
         {
-            Bedroom.instance.hoverReset(tasks_lbl);
+            if (!tasksClicked)
+            {
+                Bedroom.instance.hoverReset(tasks_lbl);
+            }
+            else
+            {
+                Bedroom.instance.hoverChange(tasks_lbl);
+            }
         }
 
         private void achievs_hoverin(object sender, EventArgs e)
@@ -86,7 +97,14 @@ namespace bsu_tnue_lipa_rpg
 
         private void achievs_hoverout(object sender, EventArgs e)
         {
-            Bedroom.instance.hoverReset(achievs_lbl);
+            if (!achievsClicked)
+            {
+                Bedroom.instance.hoverReset(achievs_lbl);
+            }
+            else
+            {
+                Bedroom.instance.hoverChange(achievs_lbl);
+            }
         }
 
         private void return_hoverin(object sender, EventArgs e)
@@ -96,10 +114,59 @@ namespace bsu_tnue_lipa_rpg
 
         private void return_hoverout(object sender, EventArgs e)
         {
-            Bedroom.instance.hoverReset(return_label);
+            if (!returnClicked)
+            {
+                Bedroom.instance.hoverReset(return_label);
+            }
+            else
+            {
+                Bedroom.instance.hoverChange(return_label);
+            }
         }
         #endregion
 
+        #region click menu events
+        private void tasks_lbl_Click(object sender, EventArgs e)
+        {
+            tasksClicked = true;
+            achievsClicked = false;
+            returnClicked = false;
+
+            Bedroom.instance.hoverChange(tasks_lbl);
+            Bedroom.instance.hoverReset(achievs_lbl);
+            Bedroom.instance.hoverReset(return_label);
+
+            Tasks tasks = new Tasks();
+            tasks.Show();
+        }
+
+        private void achievs_lbl_Click(object sender, EventArgs e)
+        {
+            achievsClicked = true;
+            tasksClicked = false;
+            returnClicked = false;
+
+            Bedroom.instance.hoverChange(achievs_lbl);
+            Bedroom.instance.hoverReset(tasks_lbl);
+            Bedroom.instance.hoverReset(return_label);
+
+            Achievements achievs = new Achievements();
+            achievs.Show();
+        }
+
+        private void return_label_Click(object sender, EventArgs e)
+        {
+            returnClicked = true;
+            tasksClicked = false;
+            achievsClicked = false;
+
+            Bedroom.instance.hoverChange(return_label);
+            Bedroom.instance.hoverReset(achievs_lbl);
+            Bedroom.instance.hoverReset(tasks_lbl);
+
+            //code to return to main menu
+        }
+        #endregion
 
         private void facadeWalkTimer_Tick(object sender, EventArgs e)
         {
