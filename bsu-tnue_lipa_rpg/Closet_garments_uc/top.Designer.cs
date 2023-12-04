@@ -59,7 +59,7 @@
             // top3_lbl
             // 
             this.top3_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.top3_lbl.Location = new System.Drawing.Point(338, 124);
+            this.top3_lbl.Location = new System.Drawing.Point(337, 124);
             this.top3_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.top3_lbl.Name = "top3_lbl";
             this.top3_lbl.Size = new System.Drawing.Size(136, 35);
@@ -69,7 +69,7 @@
             // top2_lbl
             // 
             this.top2_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.top2_lbl.Location = new System.Drawing.Point(188, 124);
+            this.top2_lbl.Location = new System.Drawing.Point(178, 124);
             this.top2_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.top2_lbl.Name = "top2_lbl";
             this.top2_lbl.Size = new System.Drawing.Size(136, 35);
@@ -145,8 +145,7 @@
             // 
             // top3_pbox
             // 
-            this.top3_pbox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.top3_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.top3_pbox.BackColor = System.Drawing.Color.Transparent;
             this.top3_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.CICS_Org_Shirt;
             this.top3_pbox.Location = new System.Drawing.Point(359, 30);
             this.top3_pbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -159,8 +158,7 @@
             // 
             // top4_pbox
             // 
-            this.top4_pbox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.top4_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.top4_pbox.BackColor = System.Drawing.Color.Transparent;
             this.top4_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Civilian_Top_2;
             this.top4_pbox.Location = new System.Drawing.Point(40, 219);
             this.top4_pbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -173,8 +171,7 @@
             // 
             // top2_pbox
             // 
-            this.top2_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.top2_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.top2_pbox.BackColor = System.Drawing.Color.Black;
             this.top2_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.PE_T_Shirt;
             this.top2_pbox.Location = new System.Drawing.Point(202, 30);
             this.top2_pbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -187,8 +184,7 @@
             // 
             // top1_pbox
             // 
-            this.top1_pbox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.top1_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.top1_pbox.BackColor = System.Drawing.Color.Transparent;
             this.top1_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.College_Barong;
             this.top1_pbox.Location = new System.Drawing.Point(40, 30);
             this.top1_pbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -203,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.top4_desc);
             this.Controls.Add(this.top3_desc);
             this.Controls.Add(this.top2_desc);

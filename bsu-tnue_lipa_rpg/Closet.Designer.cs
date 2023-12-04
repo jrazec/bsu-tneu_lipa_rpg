@@ -143,7 +143,7 @@
             // 
             // garments_panel
             // 
-            this.garments_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
+            this.garments_panel.BackColor = System.Drawing.Color.Transparent;
             this.garments_panel.Location = new System.Drawing.Point(359, 87);
             this.garments_panel.Name = "garments_panel";
             this.garments_panel.Size = new System.Drawing.Size(671, 518);

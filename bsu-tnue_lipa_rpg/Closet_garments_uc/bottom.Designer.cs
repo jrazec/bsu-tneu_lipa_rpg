@@ -148,8 +148,7 @@
             // 
             // bottom3_pbox
             // 
-            this.bottom3_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.bottom3_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bottom3_pbox.BackColor = System.Drawing.Color.Transparent;
             this.bottom3_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Denim_Pants;
             this.bottom3_pbox.Location = new System.Drawing.Point(365, 30);
             this.bottom3_pbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -162,8 +161,7 @@
             // 
             // bottom4_pbox
             // 
-            this.bottom4_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.bottom4_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bottom4_pbox.BackColor = System.Drawing.Color.Transparent;
             this.bottom4_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Civilian_Bottom_2;
             this.bottom4_pbox.Location = new System.Drawing.Point(46, 219);
             this.bottom4_pbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -176,8 +174,7 @@
             // 
             // bottom2_pbox
             // 
-            this.bottom2_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.bottom2_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bottom2_pbox.BackColor = System.Drawing.Color.Transparent;
             this.bottom2_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.PE_Jogging_Pant;
             this.bottom2_pbox.Location = new System.Drawing.Point(208, 30);
             this.bottom2_pbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -190,8 +187,7 @@
             // 
             // bottom1_pbox
             // 
-            this.bottom1_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.bottom1_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bottom1_pbox.BackColor = System.Drawing.Color.Transparent;
             this.bottom1_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.College_Pants;
             this.bottom1_pbox.Location = new System.Drawing.Point(46, 30);
             this.bottom1_pbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -206,7 +202,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.bot4_desc);
             this.Controls.Add(this.bot3_desc);
             this.Controls.Add(this.bot2_desc);

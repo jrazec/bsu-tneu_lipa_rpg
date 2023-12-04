@@ -55,8 +55,7 @@
             // 
             // shoes1_pbox
             // 
-            this.shoes1_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.shoes1_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.shoes1_pbox.BackColor = System.Drawing.Color.Transparent;
             this.shoes1_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Shoes;
             this.shoes1_pbox.Location = new System.Drawing.Point(46, 30);
             this.shoes1_pbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -131,8 +130,7 @@
             // 
             // shoes3_pbox
             // 
-            this.shoes3_pbox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.shoes3_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.shoes3_pbox.BackColor = System.Drawing.Color.Transparent;
             this.shoes3_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.CICS_Org_Shirt;
             this.shoes3_pbox.Location = new System.Drawing.Point(356, 30);
             this.shoes3_pbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -145,8 +143,7 @@
             // 
             // shoes2_pbox
             // 
-            this.shoes2_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.shoes2_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.shoes2_pbox.BackColor = System.Drawing.Color.Transparent;
             this.shoes2_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.PE_T_Shirt;
             this.shoes2_pbox.Location = new System.Drawing.Point(198, 30);
             this.shoes2_pbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -161,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.shoes3_desc);
             this.Controls.Add(this.shoes2_desc);
             this.Controls.Add(this.shoes2_lbl);
