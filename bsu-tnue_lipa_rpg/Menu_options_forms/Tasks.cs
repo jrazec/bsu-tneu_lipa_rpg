@@ -70,12 +70,14 @@ namespace bsu_tnue_lipa_rpg.Menu_options_forms
                 Bedroom.instance.hoverReset(CECS_bldg.instance.tasks_lbl);
                 CECS_bldg.instance.Enabled = true;
             }
-            /*
+            
             else if (Old_Bldg.instance.Visible)
             {
-                //
+                Old_Bldg.instance.tasksClicked = false;
+                Bedroom.instance.hoverReset(Old_Bldg.instance.tasks_lbl);
+                Old_Bldg.instance.Enabled = true;
             }
-            */
+            
             this.Close();
         }
     }
