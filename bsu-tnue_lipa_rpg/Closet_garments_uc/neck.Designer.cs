@@ -41,10 +41,12 @@
             // neck2_desc
             // 
             this.neck2_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.neck2_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.neck2_desc.Location = new System.Drawing.Point(281, 196);
+            this.neck2_desc.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.neck2_desc.ForeColor = System.Drawing.Color.Gainsboro;
+            this.neck2_desc.Location = new System.Drawing.Point(211, 159);
+            this.neck2_desc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.neck2_desc.Name = "neck2_desc";
-            this.neck2_desc.Size = new System.Drawing.Size(122, 56);
+            this.neck2_desc.Size = new System.Drawing.Size(92, 46);
             this.neck2_desc.TabIndex = 25;
             this.neck2_desc.Text = "Unlock";
             this.neck2_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -53,10 +55,12 @@
             // neck1_desc
             // 
             this.neck1_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.neck1_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.neck1_desc.Location = new System.Drawing.Point(61, 196);
+            this.neck1_desc.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.neck1_desc.ForeColor = System.Drawing.Color.Gainsboro;
+            this.neck1_desc.Location = new System.Drawing.Point(46, 159);
+            this.neck1_desc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.neck1_desc.Name = "neck1_desc";
-            this.neck1_desc.Size = new System.Drawing.Size(122, 56);
+            this.neck1_desc.Size = new System.Drawing.Size(92, 46);
             this.neck1_desc.TabIndex = 24;
             this.neck1_desc.Text = "Unlock";
             this.neck1_desc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -65,9 +69,10 @@
             // neck2_lbl
             // 
             this.neck2_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.neck2_lbl.Location = new System.Drawing.Point(245, 154);
+            this.neck2_lbl.Location = new System.Drawing.Point(184, 125);
+            this.neck2_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.neck2_lbl.Name = "neck2_lbl";
-            this.neck2_lbl.Size = new System.Drawing.Size(192, 42);
+            this.neck2_lbl.Size = new System.Drawing.Size(144, 34);
             this.neck2_lbl.TabIndex = 21;
             this.neck2_lbl.Text = "PE T-Shirt";
             this.neck2_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -75,9 +80,10 @@
             // neck1_lbl
             // 
             this.neck1_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.neck1_lbl.Location = new System.Drawing.Point(57, 158);
+            this.neck1_lbl.Location = new System.Drawing.Point(43, 128);
+            this.neck1_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.neck1_lbl.Name = "neck1_lbl";
-            this.neck1_lbl.Size = new System.Drawing.Size(137, 34);
+            this.neck1_lbl.Size = new System.Drawing.Size(103, 28);
             this.neck1_lbl.TabIndex = 20;
             this.neck1_lbl.Text = "College Barong";
             this.neck1_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -87,9 +93,10 @@
             this.neck2_pbox.BackColor = System.Drawing.Color.DarkGray;
             this.neck2_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.neck2_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.School_ID_Lace;
-            this.neck2_pbox.Location = new System.Drawing.Point(277, 37);
+            this.neck2_pbox.Location = new System.Drawing.Point(208, 30);
+            this.neck2_pbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.neck2_pbox.Name = "neck2_pbox";
-            this.neck2_pbox.Size = new System.Drawing.Size(122, 113);
+            this.neck2_pbox.Size = new System.Drawing.Size(92, 93);
             this.neck2_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.neck2_pbox.TabIndex = 17;
             this.neck2_pbox.TabStop = false;
@@ -100,9 +107,10 @@
             this.neck1_pbox.BackColor = System.Drawing.Color.DarkGray;
             this.neck1_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.neck1_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Necklace_Unisex;
-            this.neck1_pbox.Location = new System.Drawing.Point(61, 37);
+            this.neck1_pbox.Location = new System.Drawing.Point(46, 30);
+            this.neck1_pbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.neck1_pbox.Name = "neck1_pbox";
-            this.neck1_pbox.Size = new System.Drawing.Size(122, 113);
+            this.neck1_pbox.Size = new System.Drawing.Size(92, 93);
             this.neck1_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.neck1_pbox.TabIndex = 16;
             this.neck1_pbox.TabStop = false;
@@ -110,7 +118,7 @@
             // 
             // neck
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
             this.Controls.Add(this.neck2_desc);
@@ -119,8 +127,9 @@
             this.Controls.Add(this.neck1_lbl);
             this.Controls.Add(this.neck2_pbox);
             this.Controls.Add(this.neck1_pbox);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "neck";
-            this.Size = new System.Drawing.Size(671, 518);
+            this.Size = new System.Drawing.Size(503, 421);
             ((System.ComponentModel.ISupportInitialize)(this.neck2_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.neck1_pbox)).EndInit();
             this.ResumeLayout(false);
