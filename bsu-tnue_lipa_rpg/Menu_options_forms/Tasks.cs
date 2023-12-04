@@ -12,6 +12,7 @@ namespace bsu_tnue_lipa_rpg.Menu_options_forms
 {
     public partial class Tasks : Form
     {
+        //Facade facade = new Facade();
         public Tasks()
         {
             InitializeComponent();
@@ -19,9 +20,18 @@ namespace bsu_tnue_lipa_rpg.Menu_options_forms
             {
                 Bedroom.instance.Enabled = false;
             }
+            else if (Facade.instance.Visible)
+            {
+                //to fix
+                Facade.instance.Enabled = false;
+            }
+            else if (Map.instance.Visible)
+            {
+                Map.instance.Enabled = false;
+            }
             
         }
-        Facade facade = new Facade();
+        
         private void close_btn_Click(object sender, EventArgs e)
         {
             if (Bedroom.instance.Visible)
@@ -30,17 +40,23 @@ namespace bsu_tnue_lipa_rpg.Menu_options_forms
                 Bedroom.instance.hoverReset(Bedroom.instance.tasks_lbl);
                 Bedroom.instance.Enabled = true;
             }
-
-            else if (facade.Visible)
+            
+            else if (Facade.instance.Visible)
             {
-                //
+                //to fix
+                Facade.instance.tasksClicked = false;
+                Bedroom.instance.hoverReset(Facade.instance.tasks_lbl);
+                Facade.instance.Enabled = true;
             }
-
+            
             else if (Map.instance.Visible)
             {
-                //
+                Map.instance.tasksClicked = false;
+                Bedroom.instance.hoverReset(Map.instance.tasks_lbl);
+                Map.instance.Enabled = true;
             }
-
+            
+            /*
             else if (CECS_bldg.instance.Visible)
             {
                 //
@@ -49,7 +65,7 @@ namespace bsu_tnue_lipa_rpg.Menu_options_forms
             {
                 //
             }
-            
+            */
             this.Close();
         }
     }

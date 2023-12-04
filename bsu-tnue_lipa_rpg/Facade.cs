@@ -13,6 +13,7 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Facade : Form
     {
+        public static Facade instance;
         protected override CreateParams CreateParams
         {
             get
@@ -28,6 +29,7 @@ namespace bsu_tnue_lipa_rpg
         {
             InitializeComponent();
             Bedroom.instance.characBack(facade_charac);
+            instance = this;
 
         }
         bool openMenu = false;

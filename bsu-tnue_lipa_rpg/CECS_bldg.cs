@@ -1,4 +1,5 @@
 ﻿using bsu_tnue_lipa_rpg.CECS_floors_uc;
+using bsu_tnue_lipa_rpg.Menu_options_forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,6 +31,10 @@ namespace bsu_tnue_lipa_rpg
 
         bool openMenu = false;
         bool openHint = false;
+
+        public bool tasksClicked = false;
+        public bool achievsClicked = false;
+        public bool returnClicked = false;
 
         #region menu and hint events
         private void menu_pbox_Click(object sender, EventArgs e)
@@ -139,6 +144,50 @@ namespace bsu_tnue_lipa_rpg
         }
 
         #endregion
+
+        #region menu click events
+        private void tasks_lbl_Click(object sender, EventArgs e)
+        {
+            tasksClicked = true;
+            achievsClicked = false;
+            returnClicked = false;
+
+            Bedroom.instance.hoverChange(tasks_lbl);
+            Bedroom.instance.hoverReset(achievs_lbl);
+            Bedroom.instance.hoverReset(return_label);
+
+            Tasks tasks = new Tasks();
+            tasks.Show();
+        }
+
+        private void achievs_lbl_Click(object sender, EventArgs e)
+        {
+            achievsClicked = true;
+            tasksClicked = false;
+            returnClicked = false;
+
+            Bedroom.instance.hoverChange(achievs_lbl);
+            Bedroom.instance.hoverReset(tasks_lbl);
+            Bedroom.instance.hoverReset(return_label);
+
+            Achievements achievs = new Achievements();
+            achievs.Show();
+        }
+
+        private void return_label_Click(object sender, EventArgs e)
+        {
+            returnClicked = true;
+            tasksClicked = false;
+            achievsClicked = false;
+
+            Bedroom.instance.hoverChange(return_label);
+            Bedroom.instance.hoverReset(achievs_lbl);
+            Bedroom.instance.hoverReset(tasks_lbl);
+
+            //code to return to main menu
+        }
+
+        #endregion
         private void addUC(UserControl uc)
         {
             uc.Dock = DockStyle.Fill;
@@ -198,6 +247,6 @@ namespace bsu_tnue_lipa_rpg
             addUC(CECS_fifthflr.INSTANCE);
         }
 
-
+        
     }
 }

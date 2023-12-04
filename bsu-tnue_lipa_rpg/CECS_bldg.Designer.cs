@@ -234,6 +234,7 @@
             this.return_label.TabIndex = 32;
             this.return_label.Text = "Main Menu";
             this.return_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.return_label.Click += new System.EventHandler(this.return_label_Click);
             this.return_label.MouseEnter += new System.EventHandler(this.return_hoverin);
             this.return_label.MouseLeave += new System.EventHandler(this.return_hoverout);
             // 
@@ -246,6 +247,7 @@
             this.achievs_lbl.TabIndex = 31;
             this.achievs_lbl.Text = "Achievements";
             this.achievs_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.achievs_lbl.Click += new System.EventHandler(this.achievs_lbl_Click);
             this.achievs_lbl.MouseEnter += new System.EventHandler(this.achievs_hoverin);
             this.achievs_lbl.MouseLeave += new System.EventHandler(this.achievs_hoverout);
             // 
@@ -258,6 +260,7 @@
             this.tasks_lbl.TabIndex = 30;
             this.tasks_lbl.Text = "Tasks";
             this.tasks_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tasks_lbl.Click += new System.EventHandler(this.tasks_lbl_Click);
             this.tasks_lbl.MouseEnter += new System.EventHandler(this.tasks_hoverin);
             this.tasks_lbl.MouseLeave += new System.EventHandler(this.tasks_hoverout);
             // 
