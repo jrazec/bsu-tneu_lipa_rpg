@@ -391,8 +391,8 @@
         private System.Windows.Forms.Label ign_lbl;
         private System.Windows.Forms.Panel hint_panel;
         private System.Windows.Forms.Label hinttext_lbl;
-        private System.Windows.Forms.Label return_label;
-        private System.Windows.Forms.Label achievs_lbl;
-        private System.Windows.Forms.Label tasks_lbl;
+        public System.Windows.Forms.Label return_label;
+        public System.Windows.Forms.Label achievs_lbl;
+        public System.Windows.Forms.Label tasks_lbl;
     }
 }

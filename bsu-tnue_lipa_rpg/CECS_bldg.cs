@@ -120,7 +120,14 @@ namespace bsu_tnue_lipa_rpg
 
         private void tasks_hoverout(object sender, EventArgs e)
         {
-            Bedroom.instance.hoverReset(tasks_lbl);
+            if (!tasksClicked)
+            {
+                Bedroom.instance.hoverReset(tasks_lbl);
+            }
+            else
+            {
+                Bedroom.instance.hoverChange(tasks_lbl);
+            }
         }
 
         private void achievs_hoverin(object sender, EventArgs e)
@@ -130,7 +137,14 @@ namespace bsu_tnue_lipa_rpg
 
         private void achievs_hoverout(object sender, EventArgs e)
         {
-            Bedroom.instance.hoverReset(achievs_lbl);
+            if (!achievsClicked)
+            {
+                Bedroom.instance.hoverReset(achievs_lbl);
+            }
+            else
+            {
+                Bedroom.instance.hoverChange(achievs_lbl);
+            }
         }
 
         private void return_hoverin(object sender, EventArgs e)
@@ -140,7 +154,14 @@ namespace bsu_tnue_lipa_rpg
 
         private void return_hoverout(object sender, EventArgs e)
         {
-            Bedroom.instance.hoverReset(return_label);
+            if (!returnClicked)
+            {
+                Bedroom.instance.hoverReset(return_label);
+            }
+            else
+            {
+                Bedroom.instance.hoverChange(return_label);
+            }
         }
 
         #endregion

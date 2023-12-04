@@ -22,12 +22,19 @@ namespace bsu_tnue_lipa_rpg.Menu_options_forms
             }
             else if (Facade.instance.Visible)
             {
-                //to fix
                 Facade.instance.Enabled = false;
             }
             else if (Map.instance.Visible)
             {
                 Map.instance.Enabled = false;
+            }
+            else if (CECS_bldg.instance.Visible)
+            {
+                CECS_bldg.instance.Enabled = false;
+            }
+            else if (Old_Bldg.instance.Visible)
+            {
+                Old_Bldg.instance.Enabled = false;
             }
             
         }
@@ -56,11 +63,14 @@ namespace bsu_tnue_lipa_rpg.Menu_options_forms
                 Map.instance.Enabled = true;
             }
             
-            /*
+            
             else if (CECS_bldg.instance.Visible)
             {
-                //
+                CECS_bldg.instance.tasksClicked = false;
+                Bedroom.instance.hoverReset(CECS_bldg.instance.tasks_lbl);
+                CECS_bldg.instance.Enabled = true;
             }
+            /*
             else if (Old_Bldg.instance.Visible)
             {
                 //
