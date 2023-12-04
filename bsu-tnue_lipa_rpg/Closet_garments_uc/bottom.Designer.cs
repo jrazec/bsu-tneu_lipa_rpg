@@ -49,7 +49,7 @@
             // bot4_desc
             // 
             this.bot4_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.bot4_desc.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot4_desc.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bot4_desc.ForeColor = System.Drawing.Color.Gainsboro;
             this.bot4_desc.Location = new System.Drawing.Point(46, 345);
             this.bot4_desc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -63,7 +63,7 @@
             // bot3_desc
             // 
             this.bot3_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.bot3_desc.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot3_desc.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bot3_desc.ForeColor = System.Drawing.Color.Gainsboro;
             this.bot3_desc.Location = new System.Drawing.Point(366, 159);
             this.bot3_desc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -77,7 +77,7 @@
             // bot2_desc
             // 
             this.bot2_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.bot2_desc.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot2_desc.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bot2_desc.ForeColor = System.Drawing.Color.Gainsboro;
             this.bot2_desc.Location = new System.Drawing.Point(211, 159);
             this.bot2_desc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -91,7 +91,7 @@
             // bot1_desc
             // 
             this.bot1_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.bot1_desc.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot1_desc.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bot1_desc.ForeColor = System.Drawing.Color.Gainsboro;
             this.bot1_desc.Location = new System.Drawing.Point(46, 159);
             this.bot1_desc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
