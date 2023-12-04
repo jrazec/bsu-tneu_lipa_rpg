@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.menu_panel = new System.Windows.Forms.Panel();
+            this.currency_lbl = new System.Windows.Forms.Label();
+            this.day_lbl = new System.Windows.Forms.Label();
             this.top_pbox = new System.Windows.Forms.PictureBox();
             this.pants_pbox = new System.Windows.Forms.PictureBox();
             this.necklace_pbox = new System.Windows.Forms.PictureBox();
@@ -39,8 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.currency_lbl = new System.Windows.Forms.Label();
-            this.day_lbl = new System.Windows.Forms.Label();
             this.menu_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.top_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pants_pbox)).BeginInit();
@@ -58,6 +58,28 @@
             this.menu_panel.Name = "menu_panel";
             this.menu_panel.Size = new System.Drawing.Size(1151, 50);
             this.menu_panel.TabIndex = 0;
+            // 
+            // currency_lbl
+            // 
+            this.currency_lbl.AutoSize = true;
+            this.currency_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.currency_lbl.Location = new System.Drawing.Point(776, 9);
+            this.currency_lbl.Name = "currency_lbl";
+            this.currency_lbl.Size = new System.Drawing.Size(64, 27);
+            this.currency_lbl.TabIndex = 12;
+            this.currency_lbl.Text = "₱ 0.00";
+            // 
+            // day_lbl
+            // 
+            this.day_lbl.AutoSize = true;
+            this.day_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.day_lbl.Location = new System.Drawing.Point(176, 9);
+            this.day_lbl.Name = "day_lbl";
+            this.day_lbl.Size = new System.Drawing.Size(77, 27);
+            this.day_lbl.TabIndex = 11;
+            this.day_lbl.Text = "Monday";
             // 
             // top_pbox
             // 
@@ -130,64 +152,46 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(62, 141);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 22);
+            this.label1.Size = new System.Drawing.Size(42, 18);
             this.label1.TabIndex = 7;
             this.label1.Text = "label1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(62, 268);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 22);
+            this.label2.Size = new System.Drawing.Size(44, 18);
             this.label2.TabIndex = 8;
             this.label2.Text = "label2";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(62, 402);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 22);
+            this.label3.Size = new System.Drawing.Size(44, 18);
             this.label3.TabIndex = 9;
             this.label3.Text = "label3";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(62, 528);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 22);
+            this.label4.Size = new System.Drawing.Size(45, 18);
             this.label4.TabIndex = 10;
             this.label4.Text = "label4";
             // 
-            // currency_lbl
-            // 
-            this.currency_lbl.AutoSize = true;
-            this.currency_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.currency_lbl.Location = new System.Drawing.Point(776, 9);
-            this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Size = new System.Drawing.Size(83, 34);
-            this.currency_lbl.TabIndex = 12;
-            this.currency_lbl.Text = "₱ 0.00";
-            // 
-            // day_lbl
-            // 
-            this.day_lbl.AutoSize = true;
-            this.day_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.day_lbl.Location = new System.Drawing.Point(176, 9);
-            this.day_lbl.Name = "day_lbl";
-            this.day_lbl.Size = new System.Drawing.Size(99, 34);
-            this.day_lbl.TabIndex = 11;
-            this.day_lbl.Text = "Monday";
-            // 
             // Closet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.closet;
             this.ClientSize = new System.Drawing.Size(1151, 639);
