@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,7 +37,32 @@ namespace bsu_tnue_lipa_rpg.Menu_options_forms
                 Old_Bldg.instance.Enabled = false;
             }
         }
+        private void displayAchievs()
+        {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
+            string slctItemNames = $@"
+                        SELECT items.item_name AS name,items.item_class AS class, items.item_id AS id
+                        FROM items 
+                        INNER JOIN student_items
+                        ON student_items.item_id=items.item_id
+                        INNER JOIN students
+                        ON student_items.sr_code=students.sr_code
+                        WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
+                        ORDER BY class,name;";
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                mysqlConnection.Close();
+            }
+        }
         private void close_btn_Click(object sender, EventArgs e)
         {
             if (Bedroom.instance.Visible)
