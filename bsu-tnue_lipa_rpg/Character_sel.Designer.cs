@@ -71,11 +71,11 @@
             // 
             this.dg_chracter_sel1.AutoSize = true;
             this.dg_chracter_sel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.dg_chracter_sel1.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dg_chracter_sel1.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dg_chracter_sel1.ForeColor = System.Drawing.Color.White;
-            this.dg_chracter_sel1.Location = new System.Drawing.Point(212, 525);
+            this.dg_chracter_sel1.Location = new System.Drawing.Point(287, 518);
             this.dg_chracter_sel1.Name = "dg_chracter_sel1";
-            this.dg_chracter_sel1.Size = new System.Drawing.Size(524, 28);
+            this.dg_chracter_sel1.Size = new System.Drawing.Size(603, 33);
             this.dg_chracter_sel1.TabIndex = 1;
             this.dg_chracter_sel1.Text = "Welcome to your bedroom! But first what do you want to be called?";
             // 
@@ -87,7 +87,7 @@
             this.dg1_clicknxt_lbl.ForeColor = System.Drawing.Color.White;
             this.dg1_clicknxt_lbl.Location = new System.Drawing.Point(840, 588);
             this.dg1_clicknxt_lbl.Name = "dg1_clicknxt_lbl";
-            this.dg1_clicknxt_lbl.Size = new System.Drawing.Size(116, 18);
+            this.dg1_clicknxt_lbl.Size = new System.Drawing.Size(93, 14);
             this.dg1_clicknxt_lbl.TabIndex = 3;
             this.dg1_clicknxt_lbl.Text = "Click to proceed....";
             this.dg1_clicknxt_lbl.Visible = false;
@@ -136,7 +136,7 @@
             this.cs_lbl.ForeColor = System.Drawing.Color.Maroon;
             this.cs_lbl.Location = new System.Drawing.Point(24, 110);
             this.cs_lbl.Name = "cs_lbl";
-            this.cs_lbl.Size = new System.Drawing.Size(126, 28);
+            this.cs_lbl.Size = new System.Drawing.Size(105, 23);
             this.cs_lbl.TabIndex = 7;
             this.cs_lbl.Text = "COMING SOON...";
             this.cs_lbl.Visible = false;
@@ -149,7 +149,7 @@
             this.c1name_lbl.ForeColor = System.Drawing.Color.Black;
             this.c1name_lbl.Location = new System.Drawing.Point(330, 353);
             this.c1name_lbl.Name = "c1name_lbl";
-            this.c1name_lbl.Size = new System.Drawing.Size(67, 28);
+            this.c1name_lbl.Size = new System.Drawing.Size(56, 23);
             this.c1name_lbl.TabIndex = 7;
             this.c1name_lbl.Text = "Baddey";
             this.c1name_lbl.Visible = false;
@@ -162,7 +162,7 @@
             this.c2name_lbl.ForeColor = System.Drawing.Color.Black;
             this.c2name_lbl.Location = new System.Drawing.Point(542, 353);
             this.c2name_lbl.Name = "c2name_lbl";
-            this.c2name_lbl.Size = new System.Drawing.Size(67, 28);
+            this.c2name_lbl.Size = new System.Drawing.Size(56, 23);
             this.c2name_lbl.TabIndex = 8;
             this.c2name_lbl.Text = "Yuh Gie";
             this.c2name_lbl.Visible = false;
@@ -197,22 +197,22 @@
             this.dg2_clicknxt_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.dg2_clicknxt_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dg2_clicknxt_lbl.ForeColor = System.Drawing.Color.White;
-            this.dg2_clicknxt_lbl.Location = new System.Drawing.Point(840, 588);
+            this.dg2_clicknxt_lbl.Location = new System.Drawing.Point(840, 592);
             this.dg2_clicknxt_lbl.Name = "dg2_clicknxt_lbl";
-            this.dg2_clicknxt_lbl.Size = new System.Drawing.Size(116, 18);
+            this.dg2_clicknxt_lbl.Size = new System.Drawing.Size(151, 14);
             this.dg2_clicknxt_lbl.TabIndex = 14;
-            this.dg2_clicknxt_lbl.Text = "Click to proceed....";
+            this.dg2_clicknxt_lbl.Text = "Click the dialogue to proceed.";
             this.dg2_clicknxt_lbl.Visible = false;
             // 
             // dg_chracter_sel2
             // 
             this.dg_chracter_sel2.AutoSize = true;
             this.dg_chracter_sel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.dg_chracter_sel2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dg_chracter_sel2.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dg_chracter_sel2.ForeColor = System.Drawing.Color.White;
-            this.dg_chracter_sel2.Location = new System.Drawing.Point(212, 525);
+            this.dg_chracter_sel2.Location = new System.Drawing.Point(383, 522);
             this.dg_chracter_sel2.Name = "dg_chracter_sel2";
-            this.dg_chracter_sel2.Size = new System.Drawing.Size(363, 28);
+            this.dg_chracter_sel2.Size = new System.Drawing.Size(422, 33);
             this.dg_chracter_sel2.TabIndex = 12;
             this.dg_chracter_sel2.Text = "Great! Now Please choose your character.........\r\n";
             this.dg_chracter_sel2.Visible = false;
@@ -238,7 +238,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(840, 588);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 18);
+            this.label1.Size = new System.Drawing.Size(93, 14);
             this.label1.TabIndex = 17;
             this.label1.Text = "Click to proceed....";
             this.label1.Visible = false;
@@ -247,14 +247,14 @@
             // 
             this.dg_chracter_sel3.AutoSize = true;
             this.dg_chracter_sel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.dg_chracter_sel3.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dg_chracter_sel3.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dg_chracter_sel3.ForeColor = System.Drawing.Color.White;
-            this.dg_chracter_sel3.Location = new System.Drawing.Point(212, 525);
+            this.dg_chracter_sel3.Location = new System.Drawing.Point(328, 512);
             this.dg_chracter_sel3.Name = "dg_chracter_sel3";
-            this.dg_chracter_sel3.Size = new System.Drawing.Size(707, 28);
+            this.dg_chracter_sel3.Size = new System.Drawing.Size(562, 66);
             this.dg_chracter_sel3.TabIndex = 16;
-            this.dg_chracter_sel3.Text = "Splendid! You have acquired the requirements to confront the challenges of the un" +
-    "iversity.";
+            this.dg_chracter_sel3.Text = "Splendid! You have acquired the requirements to confront the \r\n                  " +
+    "         challenges of the university.";
             this.dg_chracter_sel3.Visible = false;
             // 
             // dg3_pbox
@@ -273,9 +273,14 @@
             // enter_btn
             // 
             this.enter_btn.BackColor = System.Drawing.Color.White;
+            this.enter_btn.FlatAppearance.BorderSize = 0;
+            this.enter_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.enter_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.enter_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.enter_btn.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enter_btn.ForeColor = System.Drawing.Color.Black;
-            this.enter_btn.Location = new System.Drawing.Point(527, 567);
+            this.enter_btn.Location = new System.Drawing.Point(902, 568);
+            this.enter_btn.Margin = new System.Windows.Forms.Padding(0);
             this.enter_btn.Name = "enter_btn";
             this.enter_btn.Size = new System.Drawing.Size(82, 39);
             this.enter_btn.TabIndex = 18;
@@ -285,14 +290,17 @@
             // 
             // ign_tbox
             // 
-            this.ign_tbox.Location = new System.Drawing.Point(713, 524);
+            this.ign_tbox.BackColor = System.Drawing.Color.White;
+            this.ign_tbox.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ign_tbox.Location = new System.Drawing.Point(507, 564);
             this.ign_tbox.Name = "ign_tbox";
-            this.ign_tbox.Size = new System.Drawing.Size(198, 29);
+            this.ign_tbox.Size = new System.Drawing.Size(137, 33);
             this.ign_tbox.TabIndex = 19;
+            this.ign_tbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Character_sel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.bedroom;
             this.ClientSize = new System.Drawing.Size(1151, 639);

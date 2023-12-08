@@ -24,15 +24,27 @@ namespace bsu_tnue_lipa_rpg
                 return handleParams;
             }
         }
+
+        public string[] CHAR_NAME = new string[2];
+        public string[] CHAR_DESC = new string[2];
         public Character_sel()
         {
             InitializeComponent();
+            dg1_clicknxt_lbl.BackColor = Color.FromArgb(179, 0, 0, 0);
+            dg_chracter_sel1.BackColor = Color.FromArgb(179, 0, 0, 0);
+            dg_chracter_sel2.BackColor = Color.FromArgb(179, 0, 0, 0);
+            dg_chracter_sel3.BackColor = Color.FromArgb(179, 0, 0, 0);
+            displayCharacters();
         }
-        
+
+
+
         private void enter_btn_Click(object sender, EventArgs e)
         {
+
             if (ign_tbox.Text != string.Empty)
             {
+
                 dg_chracter_sel1.Visible = false;
                 dg1_pbox.Visible = false;
                 ign_tbox.Visible = false;
@@ -228,14 +240,46 @@ namespace bsu_tnue_lipa_rpg
 
         private void dg2_pbox_Click(object sender, EventArgs e)
         {
-            //dg_chracter_sel2.Visible = false;
-            //dg2_pbox.Visible = false;
-            //dg2_pbox.SendToBack();
-            //code here to insert into  ign tbox to students table
 
-            //dg3_pbox.Visible = true;
-            //dg_chracter_sel3.Visible = true;
+        }
 
+        private void displayCharacters()
+        {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
+
+            string slctChars = $@"
+                        SELECT charac_name AS nm,charac_desc AS dsc
+                        FROM characters
+                        ORDER BY charac_id DESC;";
+            try
+            {
+                mysqlConnection.Open();
+                MySqlCommand slctCharCmd = new MySqlCommand(slctChars, mysqlConnection);
+
+                using (MySqlDataReader reader = slctCharCmd.ExecuteReader())
+                {
+                    int i = 0;
+                    while (reader.Read())
+                    {
+                        CHAR_NAME[i] = (string)reader["nm"];
+                        CHAR_DESC[i] = (string)reader["dsc"];
+                        i++;
+                        
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                mysqlConnection.Close();
+            }
+            c1name_lbl.Text = CHAR_NAME[0];
+            c2name_lbl.Text = CHAR_NAME[1];
+            c1desc_lbl.Text = CHAR_DESC[0];
+            c2desc_lbl.Text = CHAR_DESC[1];
         }
     }
 }
