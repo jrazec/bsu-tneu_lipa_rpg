@@ -13,8 +13,12 @@ using System.Windows.Forms;
 
 namespace bsu_tnue_lipa_rpg
 {
-
-
+//Created a func pero d nagamit i think
+//FIXED::::
+//Solved the free day out of bounds issue
+//freeday wont occur if the instance isn't closed
+//freeday wont happen after friday 
+//:::::::::::::::::::::::::::::::::::::::::::::::::
     public partial class Bedroom : Form
     {
         public int CHARAC_ID;
@@ -46,6 +50,7 @@ namespace bsu_tnue_lipa_rpg
             InitializeComponent();
             instance = this;
             Closet.instance = new Closet();
+            
             checkCharac();
             checkMoney();
             checkDay();

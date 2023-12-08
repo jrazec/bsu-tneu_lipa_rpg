@@ -43,7 +43,7 @@ namespace bsu_tnue_lipa_rpg
         {
             InitializeComponent();
             Bedroom.instance.characFront(map_charac);
-            if(Bedroom.instance.DAY == "FREE DAY")
+            if(Gameplay_start.free)
             {
                 dg_map.Visible = false;
                 dg_pbox.Visible = false;

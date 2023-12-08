@@ -487,7 +487,6 @@ namespace bsu_tnue_lipa_rpg
             }
         }
 
-
         public void buyItems(string sr, int id)
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);//for tb

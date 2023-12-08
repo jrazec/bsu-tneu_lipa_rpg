@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -139,6 +140,31 @@ namespace bsu_tnue_lipa_rpg
             
                 adminsectionForm.BringToFront();
             }*/
+        }
+        public static void checkFree()
+        {//Draft Yet, use proper try catch handling
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
+
+            string slctFREEDAY = $@"
+                SELECT gameplay_records.status AS stat
+                FROM gameplay_records
+                WHERE sr_code = '{Form1.STUDENT_USER_SR_CODE}' AND task_id =5;"
+            ;
+            mysqlConnection.Open();
+            MySqlCommand slctFreeCmd = new MySqlCommand(slctFREEDAY, mysqlConnection);
+
+            using (MySqlDataReader reader = slctFreeCmd.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    free = (bool)reader["stat"];
+                }
+                else
+                {
+                    free = false;
+                }
+            }
+            mysqlConnection.Close();
         }
     }
 }

@@ -169,7 +169,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                     MySqlCommand updateSRCmd = new MySqlCommand(updateStudentRecord, mysqlConnection);
                     updateSRCmd.ExecuteNonQuery();
 
-                    Bedroom.instance.DAY = "FREE DAY";
+                    Gameplay_start.free = true;
                 }
                 else
                 {
