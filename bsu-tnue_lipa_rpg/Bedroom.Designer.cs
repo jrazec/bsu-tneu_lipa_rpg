@@ -112,7 +112,7 @@
             this.hint_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.hint_lbl.Location = new System.Drawing.Point(1019, 9);
             this.hint_lbl.Name = "hint_lbl";
-            this.hint_lbl.Size = new System.Drawing.Size(58, 34);
+            this.hint_lbl.Size = new System.Drawing.Size(46, 27);
             this.hint_lbl.TabIndex = 4;
             this.hint_lbl.Text = "Hint";
             // 
@@ -147,7 +147,7 @@
             this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.currency_lbl.Location = new System.Drawing.Point(776, 9);
             this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Size = new System.Drawing.Size(83, 34);
+            this.currency_lbl.Size = new System.Drawing.Size(64, 27);
             this.currency_lbl.TabIndex = 1;
             this.currency_lbl.Text = "₱ 0.00";
             // 
@@ -158,7 +158,7 @@
             this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.day_lbl.Location = new System.Drawing.Point(147, 9);
             this.day_lbl.Name = "day_lbl";
-            this.day_lbl.Size = new System.Drawing.Size(99, 34);
+            this.day_lbl.Size = new System.Drawing.Size(77, 27);
             this.day_lbl.TabIndex = 0;
             this.day_lbl.Text = "Monday";
             // 
@@ -166,11 +166,11 @@
             // 
             this.dg_bedroom.AutoSize = true;
             this.dg_bedroom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.dg_bedroom.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dg_bedroom.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dg_bedroom.ForeColor = System.Drawing.Color.White;
             this.dg_bedroom.Location = new System.Drawing.Point(174, 539);
             this.dg_bedroom.Name = "dg_bedroom";
-            this.dg_bedroom.Size = new System.Drawing.Size(504, 28);
+            this.dg_bedroom.Size = new System.Drawing.Size(581, 33);
             this.dg_bedroom.TabIndex = 5;
             this.dg_bedroom.Text = "Good morning, Red Spartan! Let\'s check your schedule for today.";
             // 
@@ -180,9 +180,9 @@
             this.click_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.click_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.click_lbl.ForeColor = System.Drawing.Color.White;
-            this.click_lbl.Location = new System.Drawing.Point(854, 597);
+            this.click_lbl.Location = new System.Drawing.Point(864, 608);
             this.click_lbl.Name = "click_lbl";
-            this.click_lbl.Size = new System.Drawing.Size(124, 24);
+            this.click_lbl.Size = new System.Drawing.Size(98, 19);
             this.click_lbl.TabIndex = 10;
             this.click_lbl.Text = "Click to proceed..";
             this.click_lbl.Visible = false;
@@ -191,7 +191,7 @@
             // 
             this.next_pbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.next_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.next_pbtn;
-            this.next_pbox.Location = new System.Drawing.Point(962, 591);
+            this.next_pbox.Location = new System.Drawing.Point(968, 598);
             this.next_pbox.Name = "next_pbox";
             this.next_pbox.Size = new System.Drawing.Size(33, 32);
             this.next_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -202,26 +202,26 @@
             // 
             // view_lbl
             // 
-            this.view_lbl.AutoSize = true;
             this.view_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.view_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.view_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.view_lbl.ForeColor = System.Drawing.Color.Black;
-            this.view_lbl.Location = new System.Drawing.Point(631, 541);
+            this.view_lbl.Location = new System.Drawing.Point(760, 536);
             this.view_lbl.Name = "view_lbl";
-            this.view_lbl.Size = new System.Drawing.Size(47, 28);
+            this.view_lbl.Size = new System.Drawing.Size(70, 38);
             this.view_lbl.TabIndex = 12;
             this.view_lbl.Text = "VIEW";
+            this.view_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.view_lbl.Click += new System.EventHandler(this.view_lbl_Click);
             // 
             // enter_lbl
             // 
             this.enter_lbl.AutoSize = true;
             this.enter_lbl.BackColor = System.Drawing.Color.Maroon;
-            this.enter_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enter_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enter_lbl.ForeColor = System.Drawing.Color.White;
-            this.enter_lbl.Location = new System.Drawing.Point(955, 596);
+            this.enter_lbl.Location = new System.Drawing.Point(931, 598);
             this.enter_lbl.Name = "enter_lbl";
-            this.enter_lbl.Size = new System.Drawing.Size(59, 28);
+            this.enter_lbl.Size = new System.Drawing.Size(70, 33);
             this.enter_lbl.TabIndex = 13;
             this.enter_lbl.Text = "ENTER";
             this.enter_lbl.Visible = false;
@@ -357,7 +357,7 @@
             this.label5.ForeColor = System.Drawing.Color.Maroon;
             this.label5.Location = new System.Drawing.Point(55, 555);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 26);
+            this.label5.Size = new System.Drawing.Size(87, 22);
             this.label5.TabIndex = 20;
             this.label5.Text = "RazBerYie";
             // 
@@ -384,7 +384,7 @@
             // 
             // Bedroom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.bedroom;
             this.ClientSize = new System.Drawing.Size(1151, 639);

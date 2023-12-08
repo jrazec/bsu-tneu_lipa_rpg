@@ -63,6 +63,12 @@ namespace bsu_tnue_lipa_rpg
             enableNPCs();
             instance = this;
             currency_lbl.Text = Bedroom.instance.CURRENT_MONEY.ToString("C");// IDK why may warning :<
+
+            //To Make the labels transparent
+            dg_map.BackColor = Color.FromArgb(179, 0, 0, 0);
+            click_lbl.BackColor = Color.FromArgb(179, 0, 0, 0);
+            next_pbox.BackColor = Color.FromArgb(179, 0, 0, 0);
+
         }
         bool openMenu = false;
         bool openHint = false;

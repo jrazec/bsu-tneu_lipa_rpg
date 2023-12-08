@@ -58,6 +58,11 @@ namespace bsu_tnue_lipa_rpg
 
             characFront(bedroom_charac);
 
+            //To make the labels transparent 
+            dg_bedroom.BackColor = Color.FromArgb(179, 0, 0, 0);
+            click_lbl.BackColor = Color.FromArgb(179, 0, 0, 0);
+
+
         }
         bool openMenu = false;
         bool openSched = false;
