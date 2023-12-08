@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bsu_tnue_lipa_rpg.Menu_options_forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class Facade : Form
     {
+        public static Facade instance;
         protected override CreateParams CreateParams
         {
             get
@@ -27,8 +29,146 @@ namespace bsu_tnue_lipa_rpg
         {
             InitializeComponent();
             Bedroom.instance.characBack(facade_charac);
+            instance = this;
 
         }
+        bool openMenu = false;
+        bool openHint = false;
+
+        public bool tasksClicked = false;
+        public bool achievsClicked = false;
+        public bool returnClicked = false;
+
+        #region menu & hint events
+        private void menu_pbox_Click(object sender, EventArgs e)
+        {
+            if (openMenu == false)
+            {
+                openMenu = true;
+                viewmenu_panel.Visible = true;
+                viewmenu_panel.BringToFront();
+                facadeWalkTimer.Stop();
+            }
+            else
+            {
+                openMenu = false;
+                viewmenu_panel.Visible = false;
+                facadeWalkTimer.Start();
+            }
+        }
+
+        private void hint_pbox_Click(object sender, EventArgs e)
+        {
+            if (openHint == false)
+            {
+                openHint = true;
+                hint_panel.Visible = true;
+                hint_panel.BringToFront();
+            }
+            else
+            {
+                openHint = false;
+                hint_panel.Visible = false;
+            }
+        }
+        #endregion
+
+        #region hover menu events
+
+        private void tasks_hoverin(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverChange(tasks_lbl);
+        }
+
+        private void tasks_hoverout(object sender, EventArgs e)
+        {
+            if (!tasksClicked)
+            {
+                Bedroom.instance.hoverReset(tasks_lbl);
+            }
+            else
+            {
+                Bedroom.instance.hoverChange(tasks_lbl);
+            }
+        }
+
+        private void achievs_hoverin(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverChange(achievs_lbl);
+        }
+
+        private void achievs_hoverout(object sender, EventArgs e)
+        {
+            if (!achievsClicked)
+            {
+                Bedroom.instance.hoverReset(achievs_lbl);
+            }
+            else
+            {
+                Bedroom.instance.hoverChange(achievs_lbl);
+            }
+        }
+
+        private void return_hoverin(object sender, EventArgs e)
+        {
+            Bedroom.instance.hoverChange(return_label);
+        }
+
+        private void return_hoverout(object sender, EventArgs e)
+        {
+            if (!returnClicked)
+            {
+                Bedroom.instance.hoverReset(return_label);
+            }
+            else
+            {
+                Bedroom.instance.hoverChange(return_label);
+            }
+        }
+        #endregion
+
+        #region click menu events
+        private void tasks_lbl_Click(object sender, EventArgs e)
+        {
+            tasksClicked = true;
+            achievsClicked = false;
+            returnClicked = false;
+
+            Bedroom.instance.hoverChange(tasks_lbl);
+            Bedroom.instance.hoverReset(achievs_lbl);
+            Bedroom.instance.hoverReset(return_label);
+
+            Tasks tasks = new Tasks();
+            tasks.Show();
+        }
+
+        private void achievs_lbl_Click(object sender, EventArgs e)
+        {
+            achievsClicked = true;
+            tasksClicked = false;
+            returnClicked = false;
+
+            Bedroom.instance.hoverChange(achievs_lbl);
+            Bedroom.instance.hoverReset(tasks_lbl);
+            Bedroom.instance.hoverReset(return_label);
+
+            Achievements achievs = new Achievements();
+            achievs.Show();
+        }
+
+        private void return_label_Click(object sender, EventArgs e)
+        {
+            returnClicked = true;
+            tasksClicked = false;
+            achievsClicked = false;
+
+            Bedroom.instance.hoverChange(return_label);
+            Bedroom.instance.hoverReset(achievs_lbl);
+            Bedroom.instance.hoverReset(tasks_lbl);
+
+            //code to return to main menu
+        }
+        #endregion
 
         private void facadeWalkTimer_Tick(object sender, EventArgs e)
         {
@@ -204,5 +344,8 @@ namespace bsu_tnue_lipa_rpg
                 go_down = false;
             }
         }
+
+        
+
     }
 }

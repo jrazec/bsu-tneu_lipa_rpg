@@ -269,6 +269,18 @@
     <Compile Include="Map.Designer.cs">
       <DependentUpon>Map.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu_options_forms\Achievements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_options_forms\Achievements.Designer.cs">
+      <DependentUpon>Achievements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_options_forms\Tasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_options_forms\Tasks.Designer.cs">
+      <DependentUpon>Tasks.cs</DependentUpon>
+    </Compile>
     <Compile Include="OB_floors_uc\OB_fifthflr.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -398,6 +410,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Map.resx">
       <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_options_forms\Achievements.resx">
+      <DependentUpon>Achievements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_options_forms\Tasks.resx">
+      <DependentUpon>Tasks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OB_floors_uc\OB_fifthflr.resx">
       <DependentUpon>OB_fifthflr.cs</DependentUpon>

@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using bsu_tnue_lipa_rpg.Menu_options_forms;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,11 +55,17 @@ namespace bsu_tnue_lipa_rpg
             checkCharac();
             checkMoney();
             checkDay();
-            
+
             characFront(bedroom_charac);
 
         }
+        bool openMenu = false;
         bool openSched = false;
+        bool openHint = false;
+
+        public bool tasksClicked = false;
+        public bool achievsClicked = false;
+        public bool returnClicked = false;
 
 
         private void next_pbox_Click(object sender, EventArgs e)
@@ -104,9 +111,145 @@ choose the right ones.";
             bedroomWalkTimer.Start();
         }
 
+        //menu & hint events
         private void menu_pbox_Click(object sender, EventArgs e)
         {
+            if (openMenu == false)
+            {
+                openMenu = true;
+                viewmenu_panel.Visible = true;
+                viewmenu_panel.BringToFront();
+                bedroomWalkTimer.Stop();
+            }
+            else
+            {
+                openMenu = false;
+                viewmenu_panel.Visible = false;
+                bedroomWalkTimer.Start();
+            }
+        }
+        private void hint_pbox_Click(object sender, EventArgs e)
+        {
+            if (openHint == false)
+            {
+                openHint = true;
+                hint_panel.Visible = true;
+                hint_panel.BringToFront();
+            }
+            else
+            {
+                openHint = false;
+                hint_panel.Visible = false;
+            }
+        }
 
+        //hover menu events
+        private void tasks_hoverin(object sender, EventArgs e)
+        {
+            hoverChange(tasks_lbl);
+        }
+
+        private void tasks_hoverout(object sender, EventArgs e)
+        {
+            if (!tasksClicked)
+            {
+                hoverReset(tasks_lbl);
+            }
+            else
+            {
+                hoverChange(tasks_lbl);
+            }
+        }
+
+        private void achievs_hoverin(object sender, EventArgs e)
+        {
+            hoverChange(achievs_lbl);
+        }
+        private void achievs_hoverout(object sender, EventArgs e)
+        {
+            if (!achievsClicked)
+            {
+                hoverReset(achievs_lbl);
+            }
+            else
+            {
+                hoverChange(achievs_lbl);
+            }
+        }
+        private void return_hoverin(object sender, EventArgs e)
+        {
+            hoverChange(return_label);
+        }
+
+        private void return_hoverout(object sender, EventArgs e)
+        {
+            if (!returnClicked)
+            {
+                hoverReset(return_label);
+            }
+            else
+            {
+                hoverChange(return_label);
+            }
+        }
+
+        //click menu events
+        private void tasks_lbl_Click(object sender, EventArgs e)
+        {
+            tasksClicked = true;
+            achievsClicked = false;
+            returnClicked = false;
+
+            hoverChange(tasks_lbl);
+            hoverReset(achievs_lbl);
+            hoverReset(return_label);
+            
+
+            Tasks tasks = new Tasks();
+            tasks.Show();
+        }
+        private void achievs_lbl_Click(object sender, EventArgs e)
+        {
+            achievsClicked = true;
+            tasksClicked = false;
+            returnClicked = false;
+
+            hoverChange(achievs_lbl);
+            hoverReset(tasks_lbl);
+            hoverReset(return_label);
+
+            Achievements achievs = new Achievements();
+            achievs.Show();
+
+        }
+
+        private void return_label_Click(object sender, EventArgs e)
+        {
+            returnClicked = true;
+            tasksClicked = false;
+            achievsClicked = false;
+
+            hoverChange(return_label);
+            hoverReset(achievs_lbl);
+            hoverReset(tasks_lbl);
+
+            //code to return to main menu
+        }
+
+
+        //hover functions
+        public void hoverChange(Control label)
+        {
+            label.BackColor = Color.Maroon;
+            label.Cursor = Cursors.Hand;
+            label.ForeColor = Color.White;
+        }
+
+        public void hoverReset(Control label)
+        {
+            label.BackColor = Color.White;
+            label.Cursor = Cursors.Arrow;
+            label.ForeColor = Color.Black;
         }
 
         //initiate character movement in the bedroom
@@ -471,6 +614,13 @@ choose the right ones.";
                 mysqlConnection.Close();
             }
         }
+
+        private void Bedroom_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
 
         public void checkDay()
         {
