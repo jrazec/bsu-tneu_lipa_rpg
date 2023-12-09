@@ -101,11 +101,11 @@
             // 
             this.name_ign_lbl.AutoSize = true;
             this.name_ign_lbl.ForeColor = System.Drawing.Color.Maroon;
-            this.name_ign_lbl.Location = new System.Drawing.Point(72, 163);
+            this.name_ign_lbl.Location = new System.Drawing.Point(90, 163);
             this.name_ign_lbl.Name = "name_ign_lbl";
-            this.name_ign_lbl.Size = new System.Drawing.Size(90, 22);
+            this.name_ign_lbl.Size = new System.Drawing.Size(66, 22);
             this.name_ign_lbl.TabIndex = 13;
-            this.name_ign_lbl.Text = "name(ign)";
+            this.name_ign_lbl.Text = "ADMIN";
             // 
             // id_pbox
             // 
