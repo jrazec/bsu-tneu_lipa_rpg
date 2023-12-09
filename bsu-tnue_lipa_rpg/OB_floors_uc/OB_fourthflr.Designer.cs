@@ -33,6 +33,8 @@
             this.upflrcollision_pbox = new System.Windows.Forms.PictureBox();
             this.obfourthflr_charac = new System.Windows.Forms.PictureBox();
             this.obfourthWalkTimer = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.staircollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upflrcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obfourthflr_charac)).BeginInit();
@@ -40,7 +42,7 @@
             // 
             // staircollision_pbox
             // 
-            this.staircollision_pbox.BackColor = System.Drawing.Color.DimGray;
+            this.staircollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.staircollision_pbox.Location = new System.Drawing.Point(3, 253);
             this.staircollision_pbox.Name = "staircollision_pbox";
             this.staircollision_pbox.Size = new System.Drawing.Size(16, 117);
@@ -50,7 +52,7 @@
             // 
             // upflrcollision_pbox
             // 
-            this.upflrcollision_pbox.BackColor = System.Drawing.Color.DimGray;
+            this.upflrcollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.upflrcollision_pbox.Location = new System.Drawing.Point(1412, 230);
             this.upflrcollision_pbox.Name = "upflrcollision_pbox";
             this.upflrcollision_pbox.Size = new System.Drawing.Size(21, 162);
@@ -75,6 +77,30 @@
             this.obfourthWalkTimer.Interval = 50;
             this.obfourthWalkTimer.Tick += new System.EventHandler(this.obfourthWalkTimer_Tick);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.DarkGreen;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(37, 302);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 22);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "<- Go down";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DarkGreen;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(1329, 302);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 22);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Go up ->";
+            // 
             // OB_fourthflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -82,9 +108,11 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.ob_hallway;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.obfourthflr_charac);
-            this.Controls.Add(this.upflrcollision_pbox);
             this.Controls.Add(this.staircollision_pbox);
+            this.Controls.Add(this.upflrcollision_pbox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OB_fourthflr";
@@ -95,6 +123,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.upflrcollision_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.obfourthflr_charac)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -104,5 +133,7 @@
         private System.Windows.Forms.PictureBox upflrcollision_pbox;
         public System.Windows.Forms.PictureBox obfourthflr_charac;
         public System.Windows.Forms.Timer obfourthWalkTimer;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

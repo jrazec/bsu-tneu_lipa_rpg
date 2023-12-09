@@ -73,6 +73,7 @@
             // 
             // doorcollision_pbox
             // 
+            this.doorcollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.doorcollision_pbox.Location = new System.Drawing.Point(1001, 500);
             this.doorcollision_pbox.Name = "doorcollision_pbox";
             this.doorcollision_pbox.Size = new System.Drawing.Size(11, 108);
@@ -112,7 +113,7 @@
             this.hint_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.hint_lbl.Location = new System.Drawing.Point(1019, 9);
             this.hint_lbl.Name = "hint_lbl";
-            this.hint_lbl.Size = new System.Drawing.Size(46, 27);
+            this.hint_lbl.Size = new System.Drawing.Size(58, 34);
             this.hint_lbl.TabIndex = 4;
             this.hint_lbl.Text = "Hint";
             // 
@@ -147,7 +148,7 @@
             this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.currency_lbl.Location = new System.Drawing.Point(776, 9);
             this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Size = new System.Drawing.Size(64, 27);
+            this.currency_lbl.Size = new System.Drawing.Size(83, 34);
             this.currency_lbl.TabIndex = 1;
             this.currency_lbl.Text = "₱ 0.00";
             // 
@@ -158,7 +159,7 @@
             this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.day_lbl.Location = new System.Drawing.Point(147, 9);
             this.day_lbl.Name = "day_lbl";
-            this.day_lbl.Size = new System.Drawing.Size(77, 27);
+            this.day_lbl.Size = new System.Drawing.Size(99, 34);
             this.day_lbl.TabIndex = 0;
             this.day_lbl.Text = "Monday";
             // 
@@ -170,7 +171,7 @@
             this.dg_bedroom.ForeColor = System.Drawing.Color.White;
             this.dg_bedroom.Location = new System.Drawing.Point(174, 539);
             this.dg_bedroom.Name = "dg_bedroom";
-            this.dg_bedroom.Size = new System.Drawing.Size(581, 33);
+            this.dg_bedroom.Size = new System.Drawing.Size(745, 41);
             this.dg_bedroom.TabIndex = 5;
             this.dg_bedroom.Text = "Good morning, Red Spartan! Let\'s check your schedule for today.";
             // 
@@ -208,7 +209,7 @@
             this.enter_lbl.ForeColor = System.Drawing.Color.White;
             this.enter_lbl.Location = new System.Drawing.Point(936, 594);
             this.enter_lbl.Name = "enter_lbl";
-            this.enter_lbl.Size = new System.Drawing.Size(70, 33);
+            this.enter_lbl.Size = new System.Drawing.Size(88, 41);
             this.enter_lbl.TabIndex = 13;
             this.enter_lbl.Text = "ENTER";
             this.enter_lbl.Visible = false;
@@ -233,6 +234,7 @@
             // 
             // closetcollision_pbox
             // 
+            this.closetcollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.closetcollision_pbox.Location = new System.Drawing.Point(264, 132);
             this.closetcollision_pbox.Name = "closetcollision_pbox";
             this.closetcollision_pbox.Size = new System.Drawing.Size(143, 45);
@@ -344,7 +346,7 @@
             this.label5.ForeColor = System.Drawing.Color.Maroon;
             this.label5.Location = new System.Drawing.Point(55, 555);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 22);
+            this.label5.Size = new System.Drawing.Size(109, 26);
             this.label5.TabIndex = 20;
             this.label5.Text = "RazBerYie";
             // 
@@ -377,14 +379,14 @@
             this.click_lbl.ForeColor = System.Drawing.Color.White;
             this.click_lbl.Location = new System.Drawing.Point(862, 608);
             this.click_lbl.Name = "click_lbl";
-            this.click_lbl.Size = new System.Drawing.Size(98, 19);
+            this.click_lbl.Size = new System.Drawing.Size(124, 24);
             this.click_lbl.TabIndex = 10;
             this.click_lbl.Text = "Click to proceed..";
             this.click_lbl.Visible = false;
             // 
             // Bedroom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.bedroom;
             this.ClientSize = new System.Drawing.Size(1151, 639);

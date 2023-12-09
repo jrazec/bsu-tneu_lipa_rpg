@@ -41,6 +41,7 @@
             this.success_door = new System.Windows.Forms.PictureBox();
             this.click_lbl = new System.Windows.Forms.Label();
             this.engrjonnah_pbox = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.obfifthflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staircollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
@@ -61,7 +62,7 @@
             // 
             // staircollision_pbox
             // 
-            this.staircollision_pbox.BackColor = System.Drawing.Color.DimGray;
+            this.staircollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.staircollision_pbox.Location = new System.Drawing.Point(29, 415);
             this.staircollision_pbox.Name = "staircollision_pbox";
             this.staircollision_pbox.Size = new System.Drawing.Size(16, 117);
@@ -183,9 +184,21 @@
             this.engrjonnah_pbox.Tag = "engr";
             this.engrjonnah_pbox.Visible = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.DarkGreen;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(76, 491);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 22);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "<- Go down";
+            // 
             // OB_fifthflr
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.ob_libr;
@@ -201,6 +214,7 @@
             this.Controls.Add(this.staircollision_pbox);
             this.Controls.Add(this.obfifthflr_charac);
             this.Controls.Add(this.engrjonnah_pbox);
+            this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OB_fifthflr";
@@ -213,6 +227,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.success_door)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.engrjonnah_pbox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -229,5 +244,6 @@
         public System.Windows.Forms.PictureBox success_door;
         public System.Windows.Forms.Label click_lbl;
         public System.Windows.Forms.PictureBox engrjonnah_pbox;
+        private System.Windows.Forms.Label label2;
     }
 }

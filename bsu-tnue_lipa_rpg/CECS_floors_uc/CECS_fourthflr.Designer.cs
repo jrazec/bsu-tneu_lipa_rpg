@@ -34,7 +34,6 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.sirtiquio_pbox = new System.Windows.Forms.PictureBox();
             this.cecsfourthflr_charac = new System.Windows.Forms.PictureBox();
             this.cecsfourthWalkTimer = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.elevcollision_pbox = new System.Windows.Forms.PictureBox();
             this.dg_pbox = new System.Windows.Forms.PictureBox();
             this.sir_dg = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.padayon_btn = new System.Windows.Forms.Button();
             this.click_lbl = new System.Windows.Forms.Label();
             this.success_door = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sirtiquio_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cecsfourthflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).BeginInit();
@@ -83,20 +83,9 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.cecsfourthWalkTimer.Interval = 50;
             this.cecsfourthWalkTimer.Tick += new System.EventHandler(this.cecsfourthWalkTimer_Tick);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DarkGreen;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(1296, 280);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 23);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "To elevator ->";
-            // 
             // elevcollision_pbox
             // 
+            this.elevcollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.elevcollision_pbox.Location = new System.Drawing.Point(1404, 206);
             this.elevcollision_pbox.Name = "elevcollision_pbox";
             this.elevcollision_pbox.Size = new System.Drawing.Size(29, 185);
@@ -199,6 +188,18 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.success_door.Visible = false;
             this.success_door.Click += new System.EventHandler(this.success_door_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DarkGreen;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(1295, 297);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 22);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "To elevator ->";
+            // 
             // CECS_fourthflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -214,10 +215,10 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             this.Controls.Add(this.door1_panel);
             this.Controls.Add(this.sir_dg);
             this.Controls.Add(this.dg_pbox);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.elevcollision_pbox);
             this.Controls.Add(this.cecsfourthflr_charac);
             this.Controls.Add(this.sirtiquio_pbox);
+            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CECS_fourthflr";
@@ -239,7 +240,6 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         public System.Windows.Forms.PictureBox sirtiquio_pbox;
         public System.Windows.Forms.PictureBox cecsfourthflr_charac;
         public System.Windows.Forms.Timer cecsfourthWalkTimer;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox elevcollision_pbox;
         public System.Windows.Forms.PictureBox dg_pbox;
         public System.Windows.Forms.Label sir_dg;
@@ -249,5 +249,6 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         public Button padayon_btn;
         public Label click_lbl;
         public PictureBox success_door;
+        private Label label1;
     }
 }

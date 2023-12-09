@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.cecsthirdflr_charac = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.elevcollision_pbox = new System.Windows.Forms.PictureBox();
             this.cecsthirdWalkTimer = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cecsthirdflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).BeginInit();
             this.SuspendLayout();
@@ -48,20 +48,9 @@
             this.cecsthirdflr_charac.TabIndex = 3;
             this.cecsthirdflr_charac.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DarkGreen;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(1296, 271);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 23);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "To elevator ->";
-            // 
             // elevcollision_pbox
             // 
+            this.elevcollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.elevcollision_pbox.Location = new System.Drawing.Point(1404, 201);
             this.elevcollision_pbox.Name = "elevcollision_pbox";
             this.elevcollision_pbox.Size = new System.Drawing.Size(29, 185);
@@ -75,6 +64,18 @@
             this.cecsthirdWalkTimer.Interval = 50;
             this.cecsthirdWalkTimer.Tick += new System.EventHandler(this.cecsthirdWalkTimer_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DarkGreen;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(1295, 297);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 22);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "To elevator ->";
+            // 
             // CECS_thirdflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -82,9 +83,9 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.cecs_hallway;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.elevcollision_pbox);
             this.Controls.Add(this.cecsthirdflr_charac);
+            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CECS_thirdflr";
@@ -101,8 +102,8 @@
         #endregion
 
         public System.Windows.Forms.PictureBox cecsthirdflr_charac;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox elevcollision_pbox;
         public System.Windows.Forms.Timer cecsthirdWalkTimer;
+        private System.Windows.Forms.Label label1;
     }
 }

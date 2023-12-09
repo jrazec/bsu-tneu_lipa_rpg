@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.drbalazon_pbox = new System.Windows.Forms.PictureBox();
             this.cecsfifthflr_charac = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.elevcollision_pbox = new System.Windows.Forms.PictureBox();
             this.cecsfifthWalkTimer = new System.Windows.Forms.Timer(this.components);
             this.door3_panel = new System.Windows.Forms.Panel();
@@ -42,6 +41,7 @@
             this.padayon_btn = new System.Windows.Forms.Button();
             this.success_door = new System.Windows.Forms.PictureBox();
             this.click_lbl = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.drbalazon_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cecsfifthflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).BeginInit();
@@ -74,20 +74,9 @@
             this.cecsfifthflr_charac.TabIndex = 3;
             this.cecsfifthflr_charac.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DarkGreen;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(1296, 289);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 23);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "To elevator ->";
-            // 
             // elevcollision_pbox
             // 
+            this.elevcollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.elevcollision_pbox.Location = new System.Drawing.Point(1404, 204);
             this.elevcollision_pbox.Name = "elevcollision_pbox";
             this.elevcollision_pbox.Size = new System.Drawing.Size(29, 185);
@@ -195,6 +184,18 @@
             this.click_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.click_lbl.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DarkGreen;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(1295, 297);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 22);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "To elevator ->";
+            // 
             // CECS_fifthflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -212,8 +213,8 @@
             this.Controls.Add(this.dg_pbox);
             this.Controls.Add(this.cecsfifthflr_charac);
             this.Controls.Add(this.drbalazon_pbox);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.elevcollision_pbox);
+            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CECS_fifthflr";
@@ -234,7 +235,6 @@
 
         public System.Windows.Forms.PictureBox drbalazon_pbox;
         public System.Windows.Forms.PictureBox cecsfifthflr_charac;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox elevcollision_pbox;
         public System.Windows.Forms.Timer cecsfifthWalkTimer;
         public System.Windows.Forms.Panel door3_panel;
@@ -245,5 +245,6 @@
         public System.Windows.Forms.Button padayon_btn;
         public System.Windows.Forms.PictureBox success_door;
         public System.Windows.Forms.Label click_lbl;
+        private System.Windows.Forms.Label label1;
     }
 }

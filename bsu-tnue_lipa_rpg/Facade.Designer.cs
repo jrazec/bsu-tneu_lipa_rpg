@@ -158,6 +158,7 @@
             // 
             // interactcollision_pbox
             // 
+            this.interactcollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.interactcollision_pbox.Location = new System.Drawing.Point(463, 146);
             this.interactcollision_pbox.Name = "interactcollision_pbox";
             this.interactcollision_pbox.Size = new System.Drawing.Size(189, 28);
@@ -167,6 +168,7 @@
             // 
             // returncollision_pbox
             // 
+            this.returncollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.returncollision_pbox.Location = new System.Drawing.Point(0, 454);
             this.returncollision_pbox.Name = "returncollision_pbox";
             this.returncollision_pbox.Size = new System.Drawing.Size(16, 149);

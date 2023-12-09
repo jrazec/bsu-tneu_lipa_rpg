@@ -41,6 +41,8 @@
             this.dg_pbox = new System.Windows.Forms.PictureBox();
             this.success_registrar = new System.Windows.Forms.PictureBox();
             this.click_lbl = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cecsfirstflr_charac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returncollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevcollision_pbox)).BeginInit();
@@ -62,7 +64,7 @@
             // 
             // returncollision_pbox
             // 
-            this.returncollision_pbox.BackColor = System.Drawing.Color.White;
+            this.returncollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.returncollision_pbox.Location = new System.Drawing.Point(3, 258);
             this.returncollision_pbox.Name = "returncollision_pbox";
             this.returncollision_pbox.Size = new System.Drawing.Size(27, 128);
@@ -72,7 +74,7 @@
             // 
             // elevcollision_pbox
             // 
-            this.elevcollision_pbox.BackColor = System.Drawing.Color.White;
+            this.elevcollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.elevcollision_pbox.Location = new System.Drawing.Point(1395, 283);
             this.elevcollision_pbox.Name = "elevcollision_pbox";
             this.elevcollision_pbox.Size = new System.Drawing.Size(27, 128);
@@ -179,6 +181,30 @@
             this.click_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.click_lbl.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DarkGreen;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(1292, 334);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 22);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "To elevator ->";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.DarkGreen;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(3, 233);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 22);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Exit";
+            // 
             // CECS_firstflr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -197,6 +223,8 @@
             this.Controls.Add(this.atty_pbox);
             this.Controls.Add(this.elevcollision_pbox);
             this.Controls.Add(this.returncollision_pbox);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label3);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CECS_firstflr";
@@ -210,6 +238,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.success_registrar)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -227,5 +256,7 @@
         public System.Windows.Forms.PictureBox dg_pbox;
         public System.Windows.Forms.PictureBox success_registrar;
         public System.Windows.Forms.Label click_lbl;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }

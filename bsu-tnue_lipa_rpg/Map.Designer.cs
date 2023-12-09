@@ -89,7 +89,7 @@
             this.hint_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.hint_lbl.Location = new System.Drawing.Point(1019, 9);
             this.hint_lbl.Name = "hint_lbl";
-            this.hint_lbl.Size = new System.Drawing.Size(46, 27);
+            this.hint_lbl.Size = new System.Drawing.Size(58, 34);
             this.hint_lbl.TabIndex = 19;
             this.hint_lbl.Text = "Hint";
             // 
@@ -100,7 +100,7 @@
             this.day_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.day_lbl.Location = new System.Drawing.Point(147, 9);
             this.day_lbl.Name = "day_lbl";
-            this.day_lbl.Size = new System.Drawing.Size(77, 27);
+            this.day_lbl.Size = new System.Drawing.Size(99, 34);
             this.day_lbl.TabIndex = 15;
             this.day_lbl.Text = "Monday";
             // 
@@ -123,7 +123,7 @@
             this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.currency_lbl.Location = new System.Drawing.Point(776, 9);
             this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Size = new System.Drawing.Size(64, 27);
+            this.currency_lbl.Size = new System.Drawing.Size(83, 34);
             this.currency_lbl.TabIndex = 16;
             this.currency_lbl.Text = "₱ 0.00";
             // 
@@ -157,6 +157,7 @@
             // 
             // cecscollision_pbox
             // 
+            this.cecscollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.cecscollision_pbox.Location = new System.Drawing.Point(159, 370);
             this.cecscollision_pbox.Name = "cecscollision_pbox";
             this.cecscollision_pbox.Size = new System.Drawing.Size(48, 213);
@@ -166,6 +167,7 @@
             // 
             // obcollision_pbox
             // 
+            this.obcollision_pbox.BackColor = System.Drawing.Color.Transparent;
             this.obcollision_pbox.Location = new System.Drawing.Point(977, 212);
             this.obcollision_pbox.Name = "obcollision_pbox";
             this.obcollision_pbox.Size = new System.Drawing.Size(48, 125);
@@ -218,7 +220,7 @@
             this.click_lbl.ForeColor = System.Drawing.Color.White;
             this.click_lbl.Location = new System.Drawing.Point(844, 608);
             this.click_lbl.Name = "click_lbl";
-            this.click_lbl.Size = new System.Drawing.Size(98, 19);
+            this.click_lbl.Size = new System.Drawing.Size(124, 24);
             this.click_lbl.TabIndex = 11;
             this.click_lbl.Text = "Click to proceed..";
             // 
@@ -231,7 +233,7 @@
             this.enter_lbl.ForeColor = System.Drawing.Color.White;
             this.enter_lbl.Location = new System.Drawing.Point(946, 605);
             this.enter_lbl.Name = "enter_lbl";
-            this.enter_lbl.Size = new System.Drawing.Size(49, 23);
+            this.enter_lbl.Size = new System.Drawing.Size(59, 28);
             this.enter_lbl.TabIndex = 14;
             this.enter_lbl.Text = "ENTER";
             this.enter_lbl.Visible = false;
@@ -310,7 +312,7 @@
             this.label5.ForeColor = System.Drawing.Color.Maroon;
             this.label5.Location = new System.Drawing.Point(55, 555);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 22);
+            this.label5.Size = new System.Drawing.Size(109, 26);
             this.label5.TabIndex = 20;
             this.label5.Text = "RazBerYie";
             // 
@@ -357,7 +359,7 @@
             // 
             // Map
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bsu_tnue_lipa_rpg.Properties.Resources.map_art;
             this.ClientSize = new System.Drawing.Size(1151, 639);
