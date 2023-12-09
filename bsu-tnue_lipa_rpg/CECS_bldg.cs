@@ -26,7 +26,10 @@ namespace bsu_tnue_lipa_rpg
                 CECS_firstflr.INSTANCE.cecsfirstWalkTimer.Start();
             }
             cecscontainer_panel.Controls.Add(CECS_firstflr.INSTANCE);
-            
+            day_lbl.Text = Bedroom.instance.DAY;
+            ign_lbl.Text = $@"Hello, {Bedroom.instance.ign}
+
+{Bedroom.instance.firstName + " " + Bedroom.instance.lastName} | {Form1.STUDENT_USER_SR_CODE}";
         }
 
         bool openMenu = false;
@@ -268,6 +271,6 @@ namespace bsu_tnue_lipa_rpg
             addUC(CECS_fifthflr.INSTANCE);
         }
 
-        
+
     }
 }

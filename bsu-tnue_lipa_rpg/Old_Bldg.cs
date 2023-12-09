@@ -25,6 +25,10 @@ namespace bsu_tnue_lipa_rpg
                 OB_firstflr.INSTANCE.obfirstWalkTimer.Start();
             }
             obcontainer_panel.Controls.Add(OB_firstflr.INSTANCE);
+            day_lbl.Text = Bedroom.instance.DAY;
+            ign_lbl.Text = $@"Hello, {Bedroom.instance.ign}
+
+{Bedroom.instance.firstName + " " + Bedroom.instance.lastName} | {Form1.STUDENT_USER_SR_CODE}";
         }
 
         bool openMenu = false;
