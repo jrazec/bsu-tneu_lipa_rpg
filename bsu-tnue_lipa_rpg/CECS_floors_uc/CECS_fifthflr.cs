@@ -79,6 +79,9 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         {
             InitializeComponent();
             Bedroom.instance.characFront(cecsfifthflr_charac);
+            Bedroom.instance.characLeft(cecsfifthflr_charac);
+            Bedroom.instance.characBack(cecsfifthflr_charac);
+            Bedroom.instance.characRight(cecsfifthflr_charac);
             door1_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
             door2_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
             door3_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
@@ -116,7 +119,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
                         cecsfifthWalkTimer.Stop();
 
                         //move character away from collision box
-                        cecsfifthflr_charac.Location = new Point(277, 322);
+                        cecsfifthflr_charac.Location = new Point(82, 259);
 
                         //reset boolean directions
                         go_left = false;

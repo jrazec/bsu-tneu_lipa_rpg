@@ -78,6 +78,9 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         {
             InitializeComponent();
             Bedroom.instance.characFront(cecssecondflr_charac);
+            Bedroom.instance.characLeft(cecssecondflr_charac);
+            Bedroom.instance.characBack(cecssecondflr_charac);
+            Bedroom.instance.characRight(cecssecondflr_charac);
         }
         private void cecssecondWalkTimer_Tick(object sender, EventArgs e)
         {

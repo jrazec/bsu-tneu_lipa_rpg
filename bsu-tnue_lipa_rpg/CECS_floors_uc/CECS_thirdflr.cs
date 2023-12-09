@@ -80,6 +80,9 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         {
             InitializeComponent();
             Bedroom.instance.characFront(cecsthirdflr_charac);
+            Bedroom.instance.characLeft(cecsthirdflr_charac);
+            Bedroom.instance.characBack(cecsthirdflr_charac);
+            Bedroom.instance.characRight(cecsthirdflr_charac);
         }
         private void cecsthirdWalkTimer_Tick(object sender, EventArgs e)
         {
@@ -112,7 +115,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
                         cecsthirdWalkTimer.Stop();
 
                         //move character away from collision box
-                        cecsthirdflr_charac.Location = new Point(277, 322);
+                        cecsthirdflr_charac.Location = new Point(73, 267);
 
                         //reset boolean directions
                         go_left = false;

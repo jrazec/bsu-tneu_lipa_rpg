@@ -102,7 +102,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox elevcollision_pbox;
-        private System.Windows.Forms.PictureBox cecssecondflr_charac;
+        public System.Windows.Forms.PictureBox cecssecondflr_charac;
         public System.Windows.Forms.Timer cecssecondWalkTimer;
     }
 }

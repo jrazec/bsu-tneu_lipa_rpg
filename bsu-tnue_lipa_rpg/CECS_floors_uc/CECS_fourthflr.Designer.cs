@@ -237,7 +237,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
         #endregion
 
         public System.Windows.Forms.PictureBox sirtiquio_pbox;
-        private System.Windows.Forms.PictureBox cecsfourthflr_charac;
+        public System.Windows.Forms.PictureBox cecsfourthflr_charac;
         public System.Windows.Forms.Timer cecsfourthWalkTimer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox elevcollision_pbox;

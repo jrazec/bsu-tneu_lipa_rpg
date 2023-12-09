@@ -82,6 +82,9 @@ namespace bsu_tnue_lipa_rpg
         {
             InitializeComponent();
             Bedroom.instance.characFront(cecsfirstflr_charac);
+            Bedroom.instance.characLeft(cecsfirstflr_charac);
+            Bedroom.instance.characBack(cecsfirstflr_charac);
+            Bedroom.instance.characRight(cecsfirstflr_charac);
             door1_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
             door2_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
             door3_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
@@ -120,7 +123,7 @@ namespace bsu_tnue_lipa_rpg
                         cecsfirstWalkTimer.Stop();
 
                         //move character away from collision box
-                        cecsfirstflr_charac.Location = new Point(277, 322);
+                        cecsfirstflr_charac.Location = new Point(73, 267);
 
                         //reset boolean directions
                         go_left = false;
@@ -147,7 +150,7 @@ namespace bsu_tnue_lipa_rpg
                         cecsfirstWalkTimer.Stop();
 
                         //move character away from collision box
-                        cecsfirstflr_charac.Location = new Point(277, 322);
+                        cecsfirstflr_charac.Location = new Point(73, 267);
 
                         //reset boolean directions
                         go_left = false;
@@ -178,7 +181,7 @@ namespace bsu_tnue_lipa_rpg
                             go_down = false;
 
                             //move character away from collision box
-                            cecsfirstflr_charac.Location = new Point(59, 148);
+                            cecsfirstflr_charac.Location = new Point(208, 151);
 
                             //proceed to elev
                             dg_pbox.Visible = true;
@@ -191,6 +194,7 @@ namespace bsu_tnue_lipa_rpg
                             success_registrar.Enabled = true;
                             success_registrar.Visible = true;
                             click_lbl.Visible = true;
+                            click_lbl.BringToFront();
                         }
                     }
                 }

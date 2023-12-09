@@ -100,7 +100,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox cecsthirdflr_charac;
+        public System.Windows.Forms.PictureBox cecsthirdflr_charac;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox elevcollision_pbox;
         public System.Windows.Forms.Timer cecsthirdWalkTimer;

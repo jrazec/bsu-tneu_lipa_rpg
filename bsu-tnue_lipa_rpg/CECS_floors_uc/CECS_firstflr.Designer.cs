@@ -53,7 +53,7 @@
             // 
             this.cecsfirstflr_charac.BackColor = System.Drawing.Color.Transparent;
             this.cecsfirstflr_charac.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.female_org_front;
-            this.cecsfirstflr_charac.Location = new System.Drawing.Point(95, 283);
+            this.cecsfirstflr_charac.Location = new System.Drawing.Point(50, 267);
             this.cecsfirstflr_charac.Name = "cecsfirstflr_charac";
             this.cecsfirstflr_charac.Size = new System.Drawing.Size(101, 119);
             this.cecsfirstflr_charac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -91,7 +91,7 @@
             this.atty_pbox.BackColor = System.Drawing.Color.Transparent;
             this.atty_pbox.Enabled = false;
             this.atty_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Atty_Alvin;
-            this.atty_pbox.Location = new System.Drawing.Point(192, 151);
+            this.atty_pbox.Location = new System.Drawing.Point(386, 151);
             this.atty_pbox.Name = "atty_pbox";
             this.atty_pbox.Size = new System.Drawing.Size(85, 116);
             this.atty_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -215,7 +215,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox cecsfirstflr_charac;
+        public System.Windows.Forms.PictureBox cecsfirstflr_charac;
         private System.Windows.Forms.PictureBox returncollision_pbox;
         private System.Windows.Forms.PictureBox elevcollision_pbox;
         public System.Windows.Forms.Timer cecsfirstWalkTimer;
