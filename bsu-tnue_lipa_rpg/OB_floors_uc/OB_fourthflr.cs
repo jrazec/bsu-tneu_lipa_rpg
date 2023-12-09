@@ -79,6 +79,9 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
         {
             InitializeComponent();
             Bedroom.instance.characFront(obfourthflr_charac);
+            Bedroom.instance.characLeft(obfourthflr_charac);
+            Bedroom.instance.characBack(obfourthflr_charac);
+            Bedroom.instance.characRight(obfourthflr_charac);
         }
 
         private void obfourthWalkTimer_Tick(object sender, EventArgs e)

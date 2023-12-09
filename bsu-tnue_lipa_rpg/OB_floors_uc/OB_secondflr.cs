@@ -81,6 +81,9 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
         {
             InitializeComponent();
             Bedroom.instance.characFront(obsecondflr_charac);
+            Bedroom.instance.characLeft(obsecondflr_charac);
+            Bedroom.instance.characBack(obsecondflr_charac);
+            Bedroom.instance.characRight(obsecondflr_charac);
             door1_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
             door2_panel.BackColor = Color.FromArgb(180, 128, 0, 0);
             door3_panel.BackColor = Color.FromArgb(180, 128, 0, 0);

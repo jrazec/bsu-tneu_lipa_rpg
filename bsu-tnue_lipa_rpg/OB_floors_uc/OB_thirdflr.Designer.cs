@@ -102,7 +102,7 @@
 
         private System.Windows.Forms.PictureBox staircollision_pbox;
         private System.Windows.Forms.PictureBox upflrcollision_pbox;
-        private System.Windows.Forms.PictureBox obthirdflr_charac;
+        public System.Windows.Forms.PictureBox obthirdflr_charac;
         public System.Windows.Forms.Timer obthirdWalkTimer;
     }
 }

@@ -80,6 +80,9 @@ namespace bsu_tnue_lipa_rpg.OB_floors_uc
         {
             InitializeComponent();
             Bedroom.instance.characFront(obfirstflr_charac);
+            Bedroom.instance.characLeft(obfirstflr_charac);
+            Bedroom.instance.characBack(obfirstflr_charac);
+            Bedroom.instance.characRight(obfirstflr_charac);
         }
 
         private void obfirstWalkTimer_Tick(object sender, EventArgs e)

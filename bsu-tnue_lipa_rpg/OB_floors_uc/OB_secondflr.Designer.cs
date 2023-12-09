@@ -178,7 +178,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox obsecondflr_charac;
+        public System.Windows.Forms.PictureBox obsecondflr_charac;
         public System.Windows.Forms.Timer obsecondWalkTimer;
         private System.Windows.Forms.PictureBox staircollision_pbox;
         private System.Windows.Forms.PictureBox upflrcollision_pbox;
