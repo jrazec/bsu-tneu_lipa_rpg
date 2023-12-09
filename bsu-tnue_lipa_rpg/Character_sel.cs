@@ -111,7 +111,10 @@ namespace bsu_tnue_lipa_rpg
                                            ";
                     MySqlCommand updtChar_insrtStudItemsCmd = new MySqlCommand(updateChar_insrtStudItems, mySqlConnection);
                     updtChar_insrtStudItemsCmd.ExecuteNonQuery();
-                    MessageBox.Show("Character Saved.");
+                    messagebox msg = new messagebox();
+                    msg.label1.Text = "CHARACTER SAVED...";
+                    msg.label2.Text = "YOU CHOSE BADDEY!";
+                    msg.ShowDialog();
                 }
                 catch (Exception ex)
                 {
@@ -164,7 +167,11 @@ namespace bsu_tnue_lipa_rpg
                                            ";
                     MySqlCommand updtChar_insrtStudItemsCmd = new MySqlCommand(updateChar_insrtStudItems, mySqlConnection);
                     updtChar_insrtStudItemsCmd.ExecuteNonQuery();
-                    MessageBox.Show("Character Saved.");
+                    messagebox msg = new messagebox();
+                    msg.label1.Text = "CHARACTER SAVED...";
+                    msg.label2.Text = "YOU CHOSE YUH GIE!";
+                    msg.ShowDialog();
+
                 }
                 catch (Exception ex)
                 {
@@ -199,7 +206,6 @@ namespace bsu_tnue_lipa_rpg
                                        UPDATE students SET current_money=850.00 WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';";
                 MySqlCommand updtCharCmd = new MySqlCommand(updateChar, mySqlConnection);
                 updtCharCmd.ExecuteNonQuery();
-                MessageBox.Show("Character Saved.");
             }
             catch (Exception ex)
             {
@@ -233,15 +239,6 @@ namespace bsu_tnue_lipa_rpg
 
         }
 
-        private void dg1_pbox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dg2_pbox_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void displayCharacters()
         {
@@ -280,6 +277,16 @@ namespace bsu_tnue_lipa_rpg
             c2name_lbl.Text = CHAR_NAME[1];
             c1desc_lbl.Text = CHAR_DESC[0];
             c2desc_lbl.Text = CHAR_DESC[1];
+        }
+
+        private void dg2_pbox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dg1_pbox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -65,7 +65,6 @@
             this.dg1_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dg1_pbox.TabIndex = 0;
             this.dg1_pbox.TabStop = false;
-            this.dg1_pbox.Click += new System.EventHandler(this.dg1_pbox_Click);
             // 
             // dg_chracter_sel1
             // 
@@ -228,7 +227,6 @@
             this.dg2_pbox.TabIndex = 11;
             this.dg2_pbox.TabStop = false;
             this.dg2_pbox.Visible = false;
-            this.dg2_pbox.Click += new System.EventHandler(this.dg2_pbox_Click);
             // 
             // label1
             // 

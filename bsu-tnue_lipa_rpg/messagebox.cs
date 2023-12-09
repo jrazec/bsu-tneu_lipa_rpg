@@ -12,6 +12,15 @@ namespace bsu_tnue_lipa_rpg
 {
     public partial class messagebox : Form
     {
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParams = base.CreateParams;
+                handleParams.ExStyle |= 0x02000000;
+                return handleParams;
+            }
+        }
         public messagebox()
         {
             InitializeComponent();
@@ -69,6 +78,11 @@ namespace bsu_tnue_lipa_rpg
 
            
             this.TransparencyKey = System.Drawing.Color.Transparent;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
