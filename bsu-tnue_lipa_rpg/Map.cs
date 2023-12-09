@@ -38,13 +38,15 @@ namespace bsu_tnue_lipa_rpg
 
         };
         public string CLUE;
+        public string HINT;
         int index = Bedroom.instance.DAY_ID - 1;
 
         public Map()
         {
             InitializeComponent();
             Bedroom.instance.characFront(map_charac);
-            if(Gameplay_start.free)
+            checkClue_Hint();
+            if (Gameplay_start.free)
             {
                 dg_map.Visible = false;
                 dg_pbox.Visible = false;
@@ -52,14 +54,15 @@ namespace bsu_tnue_lipa_rpg
                 next_pbox.Visible = false;
                 click_lbl.Visible = false;
                 mapWalkTimer.Start();
-
+                hinttext_lbl.Text = "Roam Around, its your free roam day!!";
             }
             else
             {
+                hinttext_lbl.Text = HINT;
                 dg_map.Text = DG_1[index];
             }
             day_lbl.Text = Bedroom.instance.DAY;
-            displayClue();
+
             enableNPCs();
             instance = this;
             currency_lbl.Text = Bedroom.instance.CURRENT_MONEY.ToString("C");// IDK why may warning :<
@@ -69,6 +72,9 @@ namespace bsu_tnue_lipa_rpg
             click_lbl.BackColor = Color.FromArgb(179, 0, 0, 0);
             next_pbox.BackColor = Color.FromArgb(179, 0, 0, 0);
 
+            ign_lbl.Text = $@"Hello, {Bedroom.instance.ign}
+
+{Bedroom.instance.firstName + " " + Bedroom.instance.lastName} | {Form1.STUDENT_USER_SR_CODE}";
         }
         bool openMenu = false;
         bool openHint = false;
@@ -353,12 +359,12 @@ namespace bsu_tnue_lipa_rpg
                 go_down = false;
             }
         }
-        private void displayClue()
+        private void checkClue_Hint()
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
             string slctClues = $@"
-                        SELECT students.sr_code, day_tasks.day_task_clue AS clue
+                        SELECT students.sr_code, day_tasks.day_task_clue AS clue, day_tasks.day_task_hint AS hnt
                         FROM students 
                         INNER JOIN gameplay_records
                         ON gameplay_records.sr_code=students.sr_code
@@ -379,6 +385,7 @@ namespace bsu_tnue_lipa_rpg
                     if (reader.Read())
                     {
                         CLUE = reader["clue"].ToString();
+                        HINT = reader["hnt"].ToString();
                     }
                 }
             }
@@ -577,5 +584,7 @@ namespace bsu_tnue_lipa_rpg
                 CECS_firstflr.INSTANCE.atty_pbox.Visible = false;
             }
         }
+
+        
     }
 }
