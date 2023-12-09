@@ -38,7 +38,6 @@
             this.currency_lbl = new System.Windows.Forms.Label();
             this.day_lbl = new System.Windows.Forms.Label();
             this.dg_bedroom = new System.Windows.Forms.Label();
-            this.click_lbl = new System.Windows.Forms.Label();
             this.next_pbox = new System.Windows.Forms.PictureBox();
             this.view_lbl = new System.Windows.Forms.Label();
             this.enter_lbl = new System.Windows.Forms.Label();
@@ -56,6 +55,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.profile_panel = new System.Windows.Forms.Panel();
             this.ign_lbl = new System.Windows.Forms.Label();
+            this.click_lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.doorcollision_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_pbox)).BeginInit();
             this.menu_panel.SuspendLayout();
@@ -174,19 +174,6 @@
             this.dg_bedroom.TabIndex = 5;
             this.dg_bedroom.Text = "Good morning, Red Spartan! Let\'s check your schedule for today.";
             // 
-            // click_lbl
-            // 
-            this.click_lbl.AutoSize = true;
-            this.click_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.click_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.click_lbl.ForeColor = System.Drawing.Color.White;
-            this.click_lbl.Location = new System.Drawing.Point(864, 608);
-            this.click_lbl.Name = "click_lbl";
-            this.click_lbl.Size = new System.Drawing.Size(98, 19);
-            this.click_lbl.TabIndex = 10;
-            this.click_lbl.Text = "Click to proceed..";
-            this.click_lbl.Visible = false;
-            // 
             // next_pbox
             // 
             this.next_pbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
@@ -219,7 +206,7 @@
             this.enter_lbl.BackColor = System.Drawing.Color.Maroon;
             this.enter_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enter_lbl.ForeColor = System.Drawing.Color.White;
-            this.enter_lbl.Location = new System.Drawing.Point(931, 598);
+            this.enter_lbl.Location = new System.Drawing.Point(936, 594);
             this.enter_lbl.Name = "enter_lbl";
             this.enter_lbl.Size = new System.Drawing.Size(70, 33);
             this.enter_lbl.TabIndex = 13;
@@ -382,6 +369,19 @@
             this.ign_lbl.Text = "Hello, [IGN]\r\n\r\n[fullname] | [sr-code]";
             this.ign_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // click_lbl
+            // 
+            this.click_lbl.AutoSize = true;
+            this.click_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.click_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.click_lbl.ForeColor = System.Drawing.Color.White;
+            this.click_lbl.Location = new System.Drawing.Point(862, 608);
+            this.click_lbl.Name = "click_lbl";
+            this.click_lbl.Size = new System.Drawing.Size(98, 19);
+            this.click_lbl.TabIndex = 10;
+            this.click_lbl.Text = "Click to proceed..";
+            this.click_lbl.Visible = false;
+            // 
             // Bedroom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -442,7 +442,6 @@
         private System.Windows.Forms.Label currency_lbl;
         private System.Windows.Forms.Label day_lbl;
         private System.Windows.Forms.Label dg_bedroom;
-        private System.Windows.Forms.Label click_lbl;
         private System.Windows.Forms.PictureBox next_pbox;
         private System.Windows.Forms.Label view_lbl;
         private System.Windows.Forms.Label enter_lbl;
@@ -461,5 +460,6 @@
         public System.Windows.Forms.Label tasks_lbl;
         public System.Windows.Forms.Label return_label;
         public System.Windows.Forms.Label achievs_lbl;
+        private System.Windows.Forms.Label click_lbl;
     }
 }

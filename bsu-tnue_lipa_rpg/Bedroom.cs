@@ -22,6 +22,10 @@ namespace bsu_tnue_lipa_rpg
 //:::::::::::::::::::::::::::::::::::::::::::::::::
     public partial class Bedroom : Form
     {
+        public string firstName;
+        public string lastName;
+        public string ign;
+
         public int CHARAC_ID;
         public string CHARAC_CLOTHES;
         public string DAY;
@@ -55,12 +59,17 @@ namespace bsu_tnue_lipa_rpg
             checkCharac();
             checkMoney();
             checkDay();
+            checkPlayerCredentials();
 
             characFront(bedroom_charac);
 
             //To make the labels transparent 
             dg_bedroom.BackColor = Color.FromArgb(179, 0, 0, 0);
-            click_lbl.BackColor = Color.FromArgb(179, 0, 0, 0);
+
+            //Display students Credentials
+            ign_lbl.Text = $@"Hello, {ign}
+
+{firstName + " " + lastName} | {Form1.STUDENT_USER_SR_CODE}";
 
 
         }
@@ -80,8 +89,7 @@ namespace bsu_tnue_lipa_rpg
             next_pbox.Visible = false;
             dg_bedroom.Text = @"Before you head out, remember to dress appropriately. Today's schedule includes prescribed
                    garments and you'll need to choose the right ones.";
-            click_lbl.Visible = true;
-            click_lbl.Text = "Press to start.";
+            click_lbl.Visible = false;
             enter_lbl.Visible = true;
 
         }
@@ -717,7 +725,38 @@ namespace bsu_tnue_lipa_rpg
             Closet.instance.currency_lbl.Text = CURRENT_MONEY.ToString("C");
             //Facade.currency_lbl.Text = CURRENT_MONEY.ToString("C");
         }
+        public void checkPlayerCredentials()
+        {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
-       
+            string slctClues = $@"
+                        SELECT last_name AS ln, first_name AS fn, in_game_name AS ign
+                        FROM students 
+                        WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';";
+            try
+            {
+                mysqlConnection.Open();
+                MySqlCommand slctCluesCmd = new MySqlCommand(slctClues, mysqlConnection);
+
+                using (MySqlDataReader reader = slctCluesCmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        firstName = reader["fn"].ToString();
+                        lastName = reader["ln"].ToString();
+                        ign = reader["ign"].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                mysqlConnection.Close();
+            }
+        }
+
     }
 }
