@@ -28,6 +28,7 @@ namespace bsu_tnue_lipa_rpg
         #endregion
         public const int ALLITEMCOUNT = 13;
         public int itemCount;
+        public bool taskStat;
         public static Closet instance;
         /*
          Dito ilalagay ung achievement na nabili na lahat ni player ung lahat ng garments
@@ -269,11 +270,6 @@ namespace bsu_tnue_lipa_rpg
                 FROM student_items
                 WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}'
                 AND is_owned=true;";
-            string insertAchievements = $@"
-                INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
-                VALUES ('{Form1.STUDENT_USER_SR_CODE}',9,CURRENT_DATE,true);
-                INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
-                VALUES ('{Form1.STUDENT_USER_SR_CODE}',10,CURRENT_DATE,true);";
 
             try
             {
@@ -473,10 +469,66 @@ namespace bsu_tnue_lipa_rpg
                 }
                 if(ALLITEMCOUNT == itemCount)
                 {
+                    top.instance.top1_desc.Enabled = false;
+                    top.instance.top2_desc.Enabled = false;
+                    top.instance.top3_desc.Enabled = false;
+                    top.instance.top4_desc.Enabled = false;
+                    bottom.instance.bot1_desc.Enabled = false;
+                    bottom.instance.bot2_desc.Enabled = false;
+                    bottom.instance.bot3_desc.Enabled = false;
+                    bottom.instance.bot4_desc.Enabled = false;
+                    neck.instance.neck1_desc.Enabled = false;
+                    neck.instance.neck2_desc.Enabled = false;
+                    shoes.instance.shoes1_desc.Enabled = false;
+                    shoes.instance.shoes2_desc.Enabled = false;
+                    shoes.instance.shoes3_desc.Enabled = false;
+                    insertAchs();
+                }
+             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                mysqlConnection.Close();
+            }
+        }
+
+        public void insertAchs()
+        {
+            MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
+
+            string slctGamplayRecords = $@"
+                SELECT gameplay_records.status AS sts
+                FROM gameplay_records
+                WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}'
+                AND task_id=10;";
+            string insertAchievements = $@"
+                INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
+                VALUES ('{Form1.STUDENT_USER_SR_CODE}',9,CURRENT_DATE,true);
+                INSERT INTO gameplay_records(sr_code,task_id,date_finished,status)
+                VALUES ('{Form1.STUDENT_USER_SR_CODE}',10,CURRENT_DATE,true);";
+
+            try
+            {
+                mysqlConnection.Open();
+
+                MySqlCommand slctGamplayRecordsCmd = new MySqlCommand(slctGamplayRecords, mysqlConnection);
+
+                using (MySqlDataReader reader = slctGamplayRecordsCmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        taskStat = (bool)reader["sts"];
+                    }
+                }
+                if (!taskStat)
+                {
                     MySqlCommand insertAchievementsCmd = new MySqlCommand(insertAchievements, mysqlConnection);
                     insertAchievementsCmd.ExecuteNonQuery();
                 }
-             }
+            }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);

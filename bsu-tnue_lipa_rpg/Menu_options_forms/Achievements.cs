@@ -13,6 +13,8 @@ namespace bsu_tnue_lipa_rpg.Menu_options_forms
 {
     public partial class Achievements : Form
     {
+        public string[] ACH_NAME = new string[10];
+        public string[] ACH_DESC = new string[10];
         public Achievements()
         {
             InitializeComponent();
@@ -36,22 +38,48 @@ namespace bsu_tnue_lipa_rpg.Menu_options_forms
             {
                 Old_Bldg.instance.Enabled = false;
             }
+            displayAchievs();
         }
         private void displayAchievs()
         {
             MySqlConnection mysqlConnection = new MySqlConnection(Form1.mysqlConn);
 
-            string slctItemNames = $@"
-                        SELECT items.item_name AS name,items.item_class AS class, items.item_id AS id
-                        FROM items 
-                        INNER JOIN student_items
-                        ON student_items.item_id=items.item_id
+            string slctAchievNames = $@"
+                        SELECT achievements.ach_name AS ach, achievements.ach_desc AS dsc
+                        FROM achievements
+                        INNER JOIN tasks
+                        ON tasks.achievement_id = achievements.achievement_id
+                        INNER JOIN gameplay_records
+                        ON gameplay_records.task_id = tasks.task_id
                         INNER JOIN students
-                        ON student_items.sr_code=students.sr_code
+                        ON gameplay_records.sr_code = students.sr_code
                         WHERE students.sr_code = '{Form1.STUDENT_USER_SR_CODE}'
-                        ORDER BY class,name;";
+                        AND gameplay_records.status=true;" ;
             try
             {
+                mysqlConnection.Open();
+                MySqlCommand slctAchievNamesCmd = new MySqlCommand(slctAchievNames, mysqlConnection);
+
+                using (MySqlDataReader reader = slctAchievNamesCmd.ExecuteReader())
+                {
+                    int i = 0;
+                    int j = 0;
+                    while (reader.Read())
+                    {
+                        if (reader["ach"].ToString() != "")
+                        {
+                            ACH_NAME[i] = (string)reader["ach"];
+                            i++;
+                        }
+                        if (reader["dsc"].ToString() != "")
+                        {
+                            ACH_DESC[j] = (string)reader["dsc"];
+                            j++;
+                        }
+                           
+                        
+                    }
+                }
 
             }
             catch (Exception ex)
@@ -62,6 +90,27 @@ namespace bsu_tnue_lipa_rpg.Menu_options_forms
             {
                 mysqlConnection.Close();
             }
+            a1.Text = ACH_NAME[0];
+            a2.Text = ACH_NAME[1];
+            a3.Text = ACH_NAME[2];
+            a4.Text = ACH_NAME[3];
+            a5.Text = ACH_NAME[4];
+            a6.Text = ACH_NAME[5];
+            a7.Text = ACH_NAME[6];
+            a8.Text = ACH_NAME[7];
+            a9.Text = ACH_NAME[8];
+            a10.Text = ACH_NAME[9];
+
+            d1.Text = ACH_DESC[0];
+            d2.Text = ACH_DESC[1];
+            d3.Text = ACH_DESC[2];
+            d4.Text = ACH_DESC[3];
+            d5.Text = ACH_DESC[4];
+            d6.Text = ACH_DESC[5];
+            d7.Text = ACH_DESC[6];
+            d8.Text = ACH_DESC[7];
+            d9.Text = ACH_DESC[8];
+            d10.Text = ACH_DESC[9];
         }
         private void close_btn_Click(object sender, EventArgs e)
         {
@@ -103,5 +152,11 @@ namespace bsu_tnue_lipa_rpg.Menu_options_forms
 
             this.Close();
         }
+
+        private void Achievements_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
