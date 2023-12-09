@@ -44,7 +44,7 @@
             // 
             // shoes1_lbl
             // 
-            this.shoes1_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shoes1_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shoes1_lbl.Location = new System.Drawing.Point(49, 162);
             this.shoes1_lbl.Name = "shoes1_lbl";
             this.shoes1_lbl.Size = new System.Drawing.Size(136, 34);
@@ -54,8 +54,7 @@
             // 
             // shoes1_pbox
             // 
-            this.shoes1_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.shoes1_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.shoes1_pbox.BackColor = System.Drawing.Color.Transparent;
             this.shoes1_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Shoes;
             this.shoes1_pbox.Location = new System.Drawing.Point(61, 37);
             this.shoes1_pbox.Name = "shoes1_pbox";
@@ -67,8 +66,9 @@
             // 
             // shoes1_desc
             // 
-            this.shoes1_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.shoes1_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.shoes1_desc.BackColor = System.Drawing.Color.Maroon;
+            this.shoes1_desc.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shoes1_desc.ForeColor = System.Drawing.Color.White;
             this.shoes1_desc.Location = new System.Drawing.Point(61, 196);
             this.shoes1_desc.Name = "shoes1_desc";
             this.shoes1_desc.Size = new System.Drawing.Size(122, 56);
@@ -79,8 +79,9 @@
             // 
             // shoes3_desc
             // 
-            this.shoes3_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.shoes3_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.shoes3_desc.BackColor = System.Drawing.Color.Maroon;
+            this.shoes3_desc.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shoes3_desc.ForeColor = System.Drawing.Color.White;
             this.shoes3_desc.Location = new System.Drawing.Point(475, 196);
             this.shoes3_desc.Name = "shoes3_desc";
             this.shoes3_desc.Size = new System.Drawing.Size(122, 56);
@@ -91,8 +92,9 @@
             // 
             // shoes2_desc
             // 
-            this.shoes2_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.shoes2_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.shoes2_desc.BackColor = System.Drawing.Color.Maroon;
+            this.shoes2_desc.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shoes2_desc.ForeColor = System.Drawing.Color.White;
             this.shoes2_desc.Location = new System.Drawing.Point(268, 196);
             this.shoes2_desc.Name = "shoes2_desc";
             this.shoes2_desc.Size = new System.Drawing.Size(122, 56);
@@ -103,7 +105,7 @@
             // 
             // shoes2_lbl
             // 
-            this.shoes2_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shoes2_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shoes2_lbl.Location = new System.Drawing.Point(246, 152);
             this.shoes2_lbl.Name = "shoes2_lbl";
             this.shoes2_lbl.Size = new System.Drawing.Size(181, 43);
@@ -112,7 +114,7 @@
             // 
             // shoes3_lbl
             // 
-            this.shoes3_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shoes3_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shoes3_lbl.Location = new System.Drawing.Point(446, 153);
             this.shoes3_lbl.Name = "shoes3_lbl";
             this.shoes3_lbl.Size = new System.Drawing.Size(181, 43);
@@ -121,8 +123,7 @@
             // 
             // shoes3_pbox
             // 
-            this.shoes3_pbox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.shoes3_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.shoes3_pbox.BackColor = System.Drawing.Color.Transparent;
             this.shoes3_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.CICS_Org_Shirt;
             this.shoes3_pbox.Location = new System.Drawing.Point(474, 37);
             this.shoes3_pbox.Name = "shoes3_pbox";
@@ -134,8 +135,7 @@
             // 
             // shoes2_pbox
             // 
-            this.shoes2_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.shoes2_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.shoes2_pbox.BackColor = System.Drawing.Color.Transparent;
             this.shoes2_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.PE_T_Shirt;
             this.shoes2_pbox.Location = new System.Drawing.Point(264, 37);
             this.shoes2_pbox.Name = "shoes2_pbox";
@@ -149,7 +149,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.shoes3_desc);
             this.Controls.Add(this.shoes2_desc);
             this.Controls.Add(this.shoes2_lbl);

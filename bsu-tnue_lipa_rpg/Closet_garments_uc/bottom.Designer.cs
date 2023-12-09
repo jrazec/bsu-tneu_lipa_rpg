@@ -48,8 +48,9 @@
             // 
             // bot4_desc
             // 
-            this.bot4_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.bot4_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bot4_desc.BackColor = System.Drawing.Color.Maroon;
+            this.bot4_desc.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot4_desc.ForeColor = System.Drawing.Color.White;
             this.bot4_desc.Location = new System.Drawing.Point(61, 425);
             this.bot4_desc.Name = "bot4_desc";
             this.bot4_desc.Size = new System.Drawing.Size(122, 56);
@@ -60,8 +61,9 @@
             // 
             // bot3_desc
             // 
-            this.bot3_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.bot3_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bot3_desc.BackColor = System.Drawing.Color.Maroon;
+            this.bot3_desc.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot3_desc.ForeColor = System.Drawing.Color.White;
             this.bot3_desc.Location = new System.Drawing.Point(488, 196);
             this.bot3_desc.Name = "bot3_desc";
             this.bot3_desc.Size = new System.Drawing.Size(122, 56);
@@ -72,8 +74,9 @@
             // 
             // bot2_desc
             // 
-            this.bot2_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.bot2_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bot2_desc.BackColor = System.Drawing.Color.Maroon;
+            this.bot2_desc.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot2_desc.ForeColor = System.Drawing.Color.White;
             this.bot2_desc.Location = new System.Drawing.Point(281, 196);
             this.bot2_desc.Name = "bot2_desc";
             this.bot2_desc.Size = new System.Drawing.Size(122, 56);
@@ -84,8 +87,9 @@
             // 
             // bot1_desc
             // 
-            this.bot1_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.bot1_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bot1_desc.BackColor = System.Drawing.Color.Maroon;
+            this.bot1_desc.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot1_desc.ForeColor = System.Drawing.Color.White;
             this.bot1_desc.Location = new System.Drawing.Point(61, 196);
             this.bot1_desc.Name = "bot1_desc";
             this.bot1_desc.Size = new System.Drawing.Size(122, 56);
@@ -96,7 +100,7 @@
             // 
             // bot4_lbl
             // 
-            this.bot4_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot4_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bot4_lbl.Location = new System.Drawing.Point(44, 385);
             this.bot4_lbl.Name = "bot4_lbl";
             this.bot4_lbl.Size = new System.Drawing.Size(149, 40);
@@ -106,7 +110,7 @@
             // 
             // bot2_lbl
             // 
-            this.bot2_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot2_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bot2_lbl.Location = new System.Drawing.Point(263, 153);
             this.bot2_lbl.Name = "bot2_lbl";
             this.bot2_lbl.Size = new System.Drawing.Size(162, 43);
@@ -116,8 +120,8 @@
             // 
             // bot3_lbl
             // 
-            this.bot3_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bot3_lbl.Location = new System.Drawing.Point(509, 153);
+            this.bot3_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot3_lbl.Location = new System.Drawing.Point(486, 153);
             this.bot3_lbl.Name = "bot3_lbl";
             this.bot3_lbl.Size = new System.Drawing.Size(125, 42);
             this.bot3_lbl.TabIndex = 22;
@@ -126,8 +130,8 @@
             // 
             // bot1_lbl
             // 
-            this.bot1_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bot1_lbl.Location = new System.Drawing.Point(66, 153);
+            this.bot1_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot1_lbl.Location = new System.Drawing.Point(50, 153);
             this.bot1_lbl.Name = "bot1_lbl";
             this.bot1_lbl.Size = new System.Drawing.Size(143, 43);
             this.bot1_lbl.TabIndex = 20;
@@ -136,8 +140,7 @@
             // 
             // bottom3_pbox
             // 
-            this.bottom3_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.bottom3_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bottom3_pbox.BackColor = System.Drawing.Color.Transparent;
             this.bottom3_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Denim_Pants;
             this.bottom3_pbox.Location = new System.Drawing.Point(487, 37);
             this.bottom3_pbox.Name = "bottom3_pbox";
@@ -149,8 +152,7 @@
             // 
             // bottom4_pbox
             // 
-            this.bottom4_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.bottom4_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bottom4_pbox.BackColor = System.Drawing.Color.Transparent;
             this.bottom4_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Civilian_Bottom_2;
             this.bottom4_pbox.Location = new System.Drawing.Point(61, 269);
             this.bottom4_pbox.Name = "bottom4_pbox";
@@ -162,8 +164,7 @@
             // 
             // bottom2_pbox
             // 
-            this.bottom2_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.bottom2_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bottom2_pbox.BackColor = System.Drawing.Color.Transparent;
             this.bottom2_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.PE_Jogging_Pant;
             this.bottom2_pbox.Location = new System.Drawing.Point(277, 37);
             this.bottom2_pbox.Name = "bottom2_pbox";
@@ -175,8 +176,7 @@
             // 
             // bottom1_pbox
             // 
-            this.bottom1_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.bottom1_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bottom1_pbox.BackColor = System.Drawing.Color.Transparent;
             this.bottom1_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.College_Pants;
             this.bottom1_pbox.Location = new System.Drawing.Point(61, 37);
             this.bottom1_pbox.Name = "bottom1_pbox";
@@ -190,7 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.bot4_desc);
             this.Controls.Add(this.bot3_desc);
             this.Controls.Add(this.bot2_desc);

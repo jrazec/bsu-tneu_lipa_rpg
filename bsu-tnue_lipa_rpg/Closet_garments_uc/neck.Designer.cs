@@ -40,8 +40,9 @@
             // 
             // neck2_desc
             // 
-            this.neck2_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.neck2_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.neck2_desc.BackColor = System.Drawing.Color.Maroon;
+            this.neck2_desc.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.neck2_desc.ForeColor = System.Drawing.Color.White;
             this.neck2_desc.Location = new System.Drawing.Point(281, 196);
             this.neck2_desc.Name = "neck2_desc";
             this.neck2_desc.Size = new System.Drawing.Size(122, 56);
@@ -52,8 +53,9 @@
             // 
             // neck1_desc
             // 
-            this.neck1_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.neck1_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.neck1_desc.BackColor = System.Drawing.Color.Maroon;
+            this.neck1_desc.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.neck1_desc.ForeColor = System.Drawing.Color.White;
             this.neck1_desc.Location = new System.Drawing.Point(61, 196);
             this.neck1_desc.Name = "neck1_desc";
             this.neck1_desc.Size = new System.Drawing.Size(122, 56);
@@ -64,7 +66,7 @@
             // 
             // neck2_lbl
             // 
-            this.neck2_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.neck2_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.neck2_lbl.Location = new System.Drawing.Point(245, 154);
             this.neck2_lbl.Name = "neck2_lbl";
             this.neck2_lbl.Size = new System.Drawing.Size(192, 42);
@@ -74,7 +76,7 @@
             // 
             // neck1_lbl
             // 
-            this.neck1_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.neck1_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.neck1_lbl.Location = new System.Drawing.Point(57, 158);
             this.neck1_lbl.Name = "neck1_lbl";
             this.neck1_lbl.Size = new System.Drawing.Size(137, 34);
@@ -84,8 +86,7 @@
             // 
             // neck2_pbox
             // 
-            this.neck2_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.neck2_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.neck2_pbox.BackColor = System.Drawing.Color.Transparent;
             this.neck2_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.School_ID_Lace;
             this.neck2_pbox.Location = new System.Drawing.Point(277, 37);
             this.neck2_pbox.Name = "neck2_pbox";
@@ -97,8 +98,7 @@
             // 
             // neck1_pbox
             // 
-            this.neck1_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.neck1_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.neck1_pbox.BackColor = System.Drawing.Color.Transparent;
             this.neck1_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Necklace_Unisex;
             this.neck1_pbox.Location = new System.Drawing.Point(61, 37);
             this.neck1_pbox.Name = "neck1_pbox";
@@ -112,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.neck2_desc);
             this.Controls.Add(this.neck1_desc);
             this.Controls.Add(this.neck2_lbl);

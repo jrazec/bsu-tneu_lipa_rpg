@@ -39,15 +39,20 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             {
                 neck1_sel = true;
                 neck2_sel = false;
-                neck1_pbox.BorderStyle = BorderStyle.FixedSingle;
-                neck2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                neck1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                neck1_pbox.BackColor = Color.DarkGray;
+
+                neck2_pbox.BorderStyle = BorderStyle.None;
+                neck2_pbox.BackColor = Color.Transparent;
+
                 Closet.Garments_Worn[0, 2] = "gold-neck";
                 Closet.instance.necklace_pbox.Image = Properties.Resources.Necklace_Unisex;
             }
             else
             {
                 neck1_sel = false;
-                neck1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                neck1_pbox.BorderStyle = BorderStyle.None;
+                neck1_pbox.BackColor = Color.Transparent;
                 emptyIcon();
             }
             Closet.instance.label3.Text = Closet.Garments_Worn[0, 2];
@@ -59,15 +64,20 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             {
                 neck2_sel = true;
                 neck1_sel = false;
-                neck2_pbox.BorderStyle = BorderStyle.FixedSingle;
-                neck1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                neck2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                neck2_pbox.BackColor = Color.DarkGray;
+
+                neck1_pbox.BorderStyle = BorderStyle.None;
+                neck1_pbox.BackColor = Color.Transparent;
+
                 Closet.Garments_Worn[0, 2] = "id";
                 Closet.instance.necklace_pbox.Image = Properties.Resources.School_ID_Lace;
             }
             else
             {
                 neck2_sel = false;
-                neck2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                neck2_pbox.BorderStyle = BorderStyle.None;
+                neck2_pbox.BackColor = Color.Transparent;
                 emptyIcon();
             }
             Closet.instance.label3.Text = Closet.Garments_Worn[0, 2];
@@ -75,7 +85,6 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
 
         private void neck1_desc_Click(object sender, EventArgs e)
         {
-            //Closet.instance.label3.Text = Closet.instance.ITEM_PRICE[2, 0].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 0, () => {
                 if (neck1_sel) {
                     emptyIcon();
@@ -88,7 +97,6 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
 
         private void neck2_desc_Click(object sender, EventArgs e)
         {
-            //Closet.instance.label3.Text = Closet.instance.ITEM_PRICE[2, 1].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 2, 1, () => {
                 if (neck2_sel) {
                     emptyIcon();

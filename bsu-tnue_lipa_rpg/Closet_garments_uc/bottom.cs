@@ -58,10 +58,16 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 bot2_sel = false;
                 bot3_sel = false;
                 bot4_sel = false;
-                bottom1_pbox.BorderStyle = BorderStyle.FixedSingle;
-                bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
-                bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
-                bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom1_pbox.BackColor = Color.DarkGray;
+
+                bottom2_pbox.BorderStyle = BorderStyle.None;
+                bottom2_pbox.BackColor = Color.Transparent;
+                bottom3_pbox.BorderStyle = BorderStyle.None;
+                bottom3_pbox.BackColor = Color.Transparent;
+                bottom4_pbox.BorderStyle = BorderStyle.None;
+                bottom4_pbox.BackColor = Color.Transparent;
+
                 Closet.Garments_Worn[0, 1] = "uni-bot";
                 if (Bedroom.instance.CHARAC_ID == 1)
                 {
@@ -75,7 +81,8 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             else
             {
                 bot1_sel = false;
-                bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom1_pbox.BorderStyle = BorderStyle.None;
+                bottom1_pbox.BackColor = Color.Transparent;
                 emptyIcon();
             }
             Closet.instance.label2.Text = Closet.Garments_Worn[0, 1];
@@ -90,10 +97,16 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 bot1_sel = false;
                 bot3_sel = false;
                 bot4_sel = false;
-                bottom2_pbox.BorderStyle = BorderStyle.FixedSingle;
-                bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
-                bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
-                bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom2_pbox.BackColor = Color.DarkGray;
+
+                bottom3_pbox.BorderStyle = BorderStyle.None;
+                bottom3_pbox.BackColor = Color.Transparent;
+                bottom1_pbox.BorderStyle = BorderStyle.None;
+                bottom1_pbox.BackColor = Color.Transparent;
+                bottom4_pbox.BorderStyle = BorderStyle.None;
+                bottom4_pbox.BackColor = Color.Transparent;
+
                 Closet.Garments_Worn[0, 1] = "org-bot";
                 Closet.instance.pants_pbox.Image = Properties.Resources.Denim_Pants;
 
@@ -101,7 +114,8 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             else
             {
                 bot2_sel = false;
-                bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom2_pbox.BorderStyle = BorderStyle.None;
+                bottom2_pbox.BackColor = Color.Transparent;
                 emptyIcon();
             }
             Closet.instance.label2.Text = Closet.Garments_Worn[0, 1];
@@ -115,10 +129,16 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 bot1_sel = false;
                 bot2_sel = false;
                 bot4_sel = false;
-                bottom3_pbox.BorderStyle = BorderStyle.FixedSingle;
-                bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
-                bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
-                bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom3_pbox.BackColor = Color.DarkGray;
+
+                bottom1_pbox.BorderStyle = BorderStyle.None;
+                bottom1_pbox.BackColor = Color.Transparent;
+                bottom2_pbox.BorderStyle = BorderStyle.None;
+                bottom2_pbox.BackColor= Color.Transparent;
+                bottom4_pbox.BorderStyle = BorderStyle.None;
+                bottom4_pbox.BackColor = Color.Transparent;
+
                 Closet.Garments_Worn[0, 1] = "pe-bot";
                 Closet.instance.pants_pbox.Image = Properties.Resources.PE_Jogging_Pant;
 
@@ -126,7 +146,8 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             else
             {
                 bot3_sel = false;
-                bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom3_pbox.BorderStyle = BorderStyle.None;
+                bottom3_pbox.BackColor = Color.Transparent;
                 emptyIcon();
             }
             Closet.instance.label2.Text = Closet.Garments_Worn[0, 1];
@@ -140,10 +161,16 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 bot1_sel = false;
                 bot2_sel = false;
                 bot3_sel = false;
-                bottom4_pbox.BorderStyle = BorderStyle.FixedSingle;
-                bottom1_pbox.BorderStyle = BorderStyle.Fixed3D;
-                bottom2_pbox.BorderStyle = BorderStyle.Fixed3D;
-                bottom3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom4_pbox.BackColor = Color.DarkGray;
+
+                bottom1_pbox.BorderStyle = BorderStyle.None;
+                bottom1_pbox.BackColor = Color.Transparent;
+                bottom2_pbox.BorderStyle = BorderStyle.None;
+                bottom2_pbox.BackColor = Color.Transparent;
+                bottom3_pbox.BorderStyle = BorderStyle.None;
+                bottom3_pbox.BackColor = Color.Transparent;
+
                 Closet.Garments_Worn[0, 1] = "cas-bot";
                 if (Bedroom.instance.CHARAC_ID == 1)
                 {
@@ -157,7 +184,8 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             else
             {
                 bot4_sel = false;
-                bottom4_pbox.BorderStyle = BorderStyle.Fixed3D;
+                bottom4_pbox.BorderStyle = BorderStyle.None;
+                bottom4_pbox.BackColor= Color.Transparent;
                 emptyIcon();
             }
             Closet.instance.label2.Text = Closet.Garments_Worn[0, 1];
@@ -165,7 +193,6 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
 
         private void bot1_desc_Click(object sender, EventArgs e)
         {
-            //Closet.instance.label2.Text = Closet.instance.ITEM_PRICE[1, 0].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 1, 0, () => {
                 if (bot1_sel) { 
                     emptyIcon();
@@ -178,7 +205,6 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
 
         private void bot2_desc_Click(object sender, EventArgs e)
         {
-            //Closet.instance.label2.Text = Closet.instance.ITEM_PRICE[1, 1].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 1, 1, () => {
                if (bot2_sel) {
                     emptyIcon();
@@ -191,7 +217,6 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
 
         private void bot3_desc_Click(object sender, EventArgs e)
         {
-            //Closet.instance.label2.Text = Closet.instance.ITEM_PRICE[1, 2].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 1, 2, () => {
                 if (bot3_sel) {
                     emptyIcon();
@@ -204,7 +229,6 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
 
         private void bot4_desc_Click(object sender, EventArgs e)
         {
-            //Closet.instance.label2.Text = Closet.instance.ITEM_PRICE[1, 3].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 1, 3, () => {
                 if (bot4_sel) {
                     emptyIcon();

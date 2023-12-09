@@ -40,9 +40,14 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 shoes1_sel = true;
                 shoes2_sel = false;
                 shoes3_sel = false;
-                shoes1_pbox.BorderStyle = BorderStyle.FixedSingle;
-                shoes2_pbox.BorderStyle = BorderStyle.Fixed3D;
-                shoes3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                shoes1_pbox.BackColor = Color.DarkGray;
+
+                shoes2_pbox.BorderStyle = BorderStyle.None;
+                shoes2_pbox.BackColor = Color.Transparent;
+                shoes3_pbox.BorderStyle = BorderStyle.None;
+                shoes3_pbox.BackColor = Color.Transparent;
+
                 if (Bedroom.instance.CHARAC_ID == 1)
                 {
                     Closet.Garments_Worn[0, 3] = "cas-shoes";
@@ -57,7 +62,8 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
             else
             {
                 shoes1_sel = false;
-                shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
+                shoes1_pbox.BorderStyle = BorderStyle.None;
+                shoes1_pbox.BackColor = Color.Transparent;
                 emptyIcon();
             }
             Closet.instance.label4.Text = Closet.Garments_Worn[0, 3];
@@ -70,16 +76,22 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 shoes2_sel = true;
                 shoes1_sel = false;
                 shoes3_sel = false;
-                shoes2_pbox.BorderStyle = BorderStyle.FixedSingle;
-                shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
-                shoes3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                shoes2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                shoes2_pbox.BackColor = Color.DarkGray;
+
+                shoes1_pbox.BorderStyle = BorderStyle.None;
+                shoes1_pbox.BackColor = Color.Transparent;
+                shoes3_pbox.BorderStyle = BorderStyle.None;
+                shoes3_pbox.BackColor = Color.Transparent;
+
                 Closet.Garments_Worn[0, 3] = "gen-shoes";
                 Closet.instance.shoes_pbox.Image = Properties.Resources.Shoes;
             }
             else
             {
                 shoes2_sel = false;
-                shoes2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                shoes2_pbox.BorderStyle = BorderStyle.None;
+                shoes2_pbox.BackColor = Color.Transparent;
                 emptyIcon();
             }
             Closet.instance.label4.Text = Closet.Garments_Worn[0, 3];
@@ -92,16 +104,22 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 shoes3_sel = true;
                 shoes1_sel = false;
                 shoes2_sel = false;
-                shoes3_pbox.BorderStyle = BorderStyle.FixedSingle;
-                shoes1_pbox.BorderStyle = BorderStyle.Fixed3D;
-                shoes2_pbox.BorderStyle = BorderStyle.Fixed3D;
+                shoes3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                shoes3_pbox.BackColor = Color.DarkGray;
+
+                shoes1_pbox.BorderStyle = BorderStyle.None;
+                shoes1_pbox.BackColor = Color.Transparent;
+                shoes2_pbox.BorderStyle = BorderStyle.None;
+                shoes2_pbox.BackColor = Color.Transparent;
+
                 Closet.Garments_Worn[0, 3] = "w-shoes";
                 Closet.instance.shoes_pbox.Image = Properties.Resources.White_Shoes;
             }
             else
             {
                 shoes3_sel = false;
-                shoes3_pbox.BorderStyle = BorderStyle.Fixed3D;
+                shoes3_pbox.BorderStyle = BorderStyle.None;
+                shoes3_pbox.BackColor = Color.Transparent;
                 emptyIcon();
             }
             Closet.instance.label4.Text = Closet.Garments_Worn[0, 3];
@@ -110,7 +128,6 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
 
         private void shoes1_desc_Click(object sender, EventArgs e)
         {
-            //Closet.instance.label4.Text = Closet.instance.ITEM_PRICE[3, 0].ToString();
             Closet.instance.buy_refundItems(Closet.instance.ITEM_PRICE, Closet.instance.ITEMS, 3, 0, () => {
                 if (shoes1_sel) {
                     emptyIcon();

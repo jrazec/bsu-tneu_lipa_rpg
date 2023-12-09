@@ -48,7 +48,7 @@
             // 
             // top1_lbl
             // 
-            this.top1_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top1_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.top1_lbl.Location = new System.Drawing.Point(43, 153);
             this.top1_lbl.Name = "top1_lbl";
             this.top1_lbl.Size = new System.Drawing.Size(145, 34);
@@ -57,7 +57,7 @@
             // 
             // top3_lbl
             // 
-            this.top3_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top3_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.top3_lbl.Location = new System.Drawing.Point(451, 153);
             this.top3_lbl.Name = "top3_lbl";
             this.top3_lbl.Size = new System.Drawing.Size(181, 43);
@@ -66,7 +66,7 @@
             // 
             // top2_lbl
             // 
-            this.top2_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top2_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.top2_lbl.Location = new System.Drawing.Point(251, 152);
             this.top2_lbl.Name = "top2_lbl";
             this.top2_lbl.Size = new System.Drawing.Size(181, 43);
@@ -75,7 +75,7 @@
             // 
             // top4_lbl
             // 
-            this.top4_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top4_lbl.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.top4_lbl.Location = new System.Drawing.Point(49, 395);
             this.top4_lbl.Name = "top4_lbl";
             this.top4_lbl.Size = new System.Drawing.Size(139, 30);
@@ -85,8 +85,9 @@
             // 
             // top1_desc
             // 
-            this.top1_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.top1_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.top1_desc.BackColor = System.Drawing.Color.Maroon;
+            this.top1_desc.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top1_desc.ForeColor = System.Drawing.Color.White;
             this.top1_desc.Location = new System.Drawing.Point(53, 196);
             this.top1_desc.Name = "top1_desc";
             this.top1_desc.Size = new System.Drawing.Size(122, 56);
@@ -97,8 +98,9 @@
             // 
             // top2_desc
             // 
-            this.top2_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.top2_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.top2_desc.BackColor = System.Drawing.Color.Maroon;
+            this.top2_desc.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top2_desc.ForeColor = System.Drawing.Color.White;
             this.top2_desc.Location = new System.Drawing.Point(273, 196);
             this.top2_desc.Name = "top2_desc";
             this.top2_desc.Size = new System.Drawing.Size(122, 56);
@@ -109,8 +111,9 @@
             // 
             // top3_desc
             // 
-            this.top3_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.top3_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.top3_desc.BackColor = System.Drawing.Color.Maroon;
+            this.top3_desc.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top3_desc.ForeColor = System.Drawing.Color.White;
             this.top3_desc.Location = new System.Drawing.Point(480, 196);
             this.top3_desc.Name = "top3_desc";
             this.top3_desc.Size = new System.Drawing.Size(122, 56);
@@ -121,8 +124,9 @@
             // 
             // top4_desc
             // 
-            this.top4_desc.BackColor = System.Drawing.Color.IndianRed;
-            this.top4_desc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.top4_desc.BackColor = System.Drawing.Color.Maroon;
+            this.top4_desc.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top4_desc.ForeColor = System.Drawing.Color.White;
             this.top4_desc.Location = new System.Drawing.Point(53, 425);
             this.top4_desc.Name = "top4_desc";
             this.top4_desc.Size = new System.Drawing.Size(122, 56);
@@ -133,8 +137,7 @@
             // 
             // top3_pbox
             // 
-            this.top3_pbox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.top3_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.top3_pbox.BackColor = System.Drawing.Color.Transparent;
             this.top3_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.CICS_Org_Shirt;
             this.top3_pbox.Location = new System.Drawing.Point(479, 37);
             this.top3_pbox.Name = "top3_pbox";
@@ -146,8 +149,7 @@
             // 
             // top4_pbox
             // 
-            this.top4_pbox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.top4_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.top4_pbox.BackColor = System.Drawing.Color.Transparent;
             this.top4_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.Civilian_Top_2;
             this.top4_pbox.Location = new System.Drawing.Point(53, 269);
             this.top4_pbox.Name = "top4_pbox";
@@ -159,8 +161,7 @@
             // 
             // top2_pbox
             // 
-            this.top2_pbox.BackColor = System.Drawing.Color.DarkGray;
-            this.top2_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.top2_pbox.BackColor = System.Drawing.Color.Transparent;
             this.top2_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.PE_T_Shirt;
             this.top2_pbox.Location = new System.Drawing.Point(269, 37);
             this.top2_pbox.Name = "top2_pbox";
@@ -172,8 +173,7 @@
             // 
             // top1_pbox
             // 
-            this.top1_pbox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.top1_pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.top1_pbox.BackColor = System.Drawing.Color.Transparent;
             this.top1_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.College_Barong;
             this.top1_pbox.Location = new System.Drawing.Point(53, 37);
             this.top1_pbox.Name = "top1_pbox";
@@ -187,7 +187,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.top4_desc);
             this.Controls.Add(this.top3_desc);
             this.Controls.Add(this.top2_desc);
