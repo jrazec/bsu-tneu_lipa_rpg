@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.menu_panel = new System.Windows.Forms.Panel();
+            this.currency_lbl = new System.Windows.Forms.Label();
+            this.day_lbl = new System.Windows.Forms.Label();
             this.top_pbox = new System.Windows.Forms.PictureBox();
             this.pants_pbox = new System.Windows.Forms.PictureBox();
             this.necklace_pbox = new System.Windows.Forms.PictureBox();
@@ -39,8 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.currency_lbl = new System.Windows.Forms.Label();
-            this.day_lbl = new System.Windows.Forms.Label();
             this.menu_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.top_pbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pants_pbox)).BeginInit();
@@ -58,110 +58,6 @@
             this.menu_panel.Name = "menu_panel";
             this.menu_panel.Size = new System.Drawing.Size(1151, 50);
             this.menu_panel.TabIndex = 0;
-            // 
-            // top_pbox
-            // 
-            this.top_pbox.BackColor = System.Drawing.Color.Transparent;
-            this.top_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.top_icon;
-            this.top_pbox.Location = new System.Drawing.Point(177, 102);
-            this.top_pbox.Name = "top_pbox";
-            this.top_pbox.Size = new System.Drawing.Size(110, 83);
-            this.top_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.top_pbox.TabIndex = 1;
-            this.top_pbox.TabStop = false;
-            this.top_pbox.Click += new System.EventHandler(this.top_pbox_Click);
-            // 
-            // pants_pbox
-            // 
-            this.pants_pbox.BackColor = System.Drawing.Color.Transparent;
-            this.pants_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.pants_icon;
-            this.pants_pbox.Location = new System.Drawing.Point(180, 238);
-            this.pants_pbox.Name = "pants_pbox";
-            this.pants_pbox.Size = new System.Drawing.Size(107, 82);
-            this.pants_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pants_pbox.TabIndex = 2;
-            this.pants_pbox.TabStop = false;
-            this.pants_pbox.Click += new System.EventHandler(this.pants_pbox_Click);
-            // 
-            // necklace_pbox
-            // 
-            this.necklace_pbox.BackColor = System.Drawing.Color.Transparent;
-            this.necklace_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.neck_icon;
-            this.necklace_pbox.Location = new System.Drawing.Point(176, 363);
-            this.necklace_pbox.Name = "necklace_pbox";
-            this.necklace_pbox.Size = new System.Drawing.Size(110, 86);
-            this.necklace_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.necklace_pbox.TabIndex = 3;
-            this.necklace_pbox.TabStop = false;
-            this.necklace_pbox.Click += new System.EventHandler(this.necklace_pbox_Click);
-            // 
-            // shoes_pbox
-            // 
-            this.shoes_pbox.BackColor = System.Drawing.Color.Transparent;
-            this.shoes_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.shoes_icon;
-            this.shoes_pbox.Location = new System.Drawing.Point(178, 498);
-            this.shoes_pbox.Name = "shoes_pbox";
-            this.shoes_pbox.Size = new System.Drawing.Size(108, 90);
-            this.shoes_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.shoes_pbox.TabIndex = 4;
-            this.shoes_pbox.TabStop = false;
-            this.shoes_pbox.Click += new System.EventHandler(this.shoes_pbox_Click);
-            // 
-            // backtoroom_btn
-            // 
-            this.backtoroom_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.backtoroom_btn.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backtoroom_btn.Location = new System.Drawing.Point(12, 67);
-            this.backtoroom_btn.Name = "backtoroom_btn";
-            this.backtoroom_btn.Size = new System.Drawing.Size(75, 33);
-            this.backtoroom_btn.TabIndex = 5;
-            this.backtoroom_btn.Text = "Back";
-            this.backtoroom_btn.UseVisualStyleBackColor = false;
-            this.backtoroom_btn.Click += new System.EventHandler(this.backtoroom_btn_Click);
-            // 
-            // garments_panel
-            // 
-            this.garments_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(128)))), ((int)(((byte)(97)))));
-            this.garments_panel.Location = new System.Drawing.Point(359, 87);
-            this.garments_panel.Name = "garments_panel";
-            this.garments_panel.Size = new System.Drawing.Size(671, 518);
-            this.garments_panel.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 141);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 22);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "label1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 268);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 22);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(62, 402);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 22);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "label3";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(62, 528);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 22);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "label4";
             // 
             // currency_lbl
             // 
@@ -184,6 +80,118 @@
             this.day_lbl.Size = new System.Drawing.Size(99, 34);
             this.day_lbl.TabIndex = 11;
             this.day_lbl.Text = "Monday";
+            // 
+            // top_pbox
+            // 
+            this.top_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.top_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.top_icon;
+            this.top_pbox.Location = new System.Drawing.Point(181, 87);
+            this.top_pbox.Name = "top_pbox";
+            this.top_pbox.Size = new System.Drawing.Size(110, 83);
+            this.top_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.top_pbox.TabIndex = 1;
+            this.top_pbox.TabStop = false;
+            this.top_pbox.Click += new System.EventHandler(this.top_pbox_Click);
+            // 
+            // pants_pbox
+            // 
+            this.pants_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.pants_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.pants_icon;
+            this.pants_pbox.Location = new System.Drawing.Point(183, 223);
+            this.pants_pbox.Name = "pants_pbox";
+            this.pants_pbox.Size = new System.Drawing.Size(107, 82);
+            this.pants_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pants_pbox.TabIndex = 2;
+            this.pants_pbox.TabStop = false;
+            this.pants_pbox.Click += new System.EventHandler(this.pants_pbox_Click);
+            // 
+            // necklace_pbox
+            // 
+            this.necklace_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.necklace_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.neck_icon;
+            this.necklace_pbox.Location = new System.Drawing.Point(181, 348);
+            this.necklace_pbox.Name = "necklace_pbox";
+            this.necklace_pbox.Size = new System.Drawing.Size(110, 86);
+            this.necklace_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.necklace_pbox.TabIndex = 3;
+            this.necklace_pbox.TabStop = false;
+            this.necklace_pbox.Click += new System.EventHandler(this.necklace_pbox_Click);
+            // 
+            // shoes_pbox
+            // 
+            this.shoes_pbox.BackColor = System.Drawing.Color.Transparent;
+            this.shoes_pbox.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.shoes_icon;
+            this.shoes_pbox.Location = new System.Drawing.Point(182, 490);
+            this.shoes_pbox.Name = "shoes_pbox";
+            this.shoes_pbox.Size = new System.Drawing.Size(108, 90);
+            this.shoes_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.shoes_pbox.TabIndex = 4;
+            this.shoes_pbox.TabStop = false;
+            this.shoes_pbox.Click += new System.EventHandler(this.shoes_pbox_Click);
+            // 
+            // backtoroom_btn
+            // 
+            this.backtoroom_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.backtoroom_btn.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backtoroom_btn.Location = new System.Drawing.Point(12, 67);
+            this.backtoroom_btn.Name = "backtoroom_btn";
+            this.backtoroom_btn.Size = new System.Drawing.Size(75, 33);
+            this.backtoroom_btn.TabIndex = 5;
+            this.backtoroom_btn.Text = "Back";
+            this.backtoroom_btn.UseVisualStyleBackColor = false;
+            this.backtoroom_btn.Click += new System.EventHandler(this.backtoroom_btn_Click);
+            // 
+            // garments_panel
+            // 
+            this.garments_panel.BackColor = System.Drawing.Color.Transparent;
+            this.garments_panel.Location = new System.Drawing.Point(359, 87);
+            this.garments_panel.Name = "garments_panel";
+            this.garments_panel.Size = new System.Drawing.Size(671, 518);
+            this.garments_panel.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Maroon;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(217, 176);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 21);
+            this.label1.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Maroon;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(217, 312);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 21);
+            this.label2.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Maroon;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(217, 440);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 21);
+            this.label3.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Maroon;
+            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(217, 576);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 21);
+            this.label4.TabIndex = 10;
             // 
             // Closet
             // 
