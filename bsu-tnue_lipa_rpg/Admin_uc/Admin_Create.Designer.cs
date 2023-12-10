@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Create));
             this.create_btn = new System.Windows.Forms.Button();
             this.create_pbox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.create_pbox)).BeginInit();
@@ -46,9 +47,11 @@
             // 
             // create_pbox
             // 
+            this.create_pbox.Image = ((System.Drawing.Image)(resources.GetObject("create_pbox.Image")));
             this.create_pbox.Location = new System.Drawing.Point(44, 19);
             this.create_pbox.Name = "create_pbox";
             this.create_pbox.Size = new System.Drawing.Size(781, 387);
+            this.create_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.create_pbox.TabIndex = 21;
             this.create_pbox.TabStop = false;
             // 

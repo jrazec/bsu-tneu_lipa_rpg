@@ -19,9 +19,8 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             InitializeComponent();
             selectRewards();
-            label1.BackColor = Color.FromArgb(0, 0, 0, 0);
-            achievement_lbl.BackColor = Color.FromArgb(0, 0, 0, 0);
-            proceed_pbox.BackColor = Color.FromArgb(0, 0, 0, 0);
+            label1.BackColor = Color.FromArgb(179, 0, 0, 0);
+            achievement_lbl.BackColor = Color.FromArgb(179, 0, 0, 0);
 
             if (Bedroom.instance.DAY_ID == 1)
             {

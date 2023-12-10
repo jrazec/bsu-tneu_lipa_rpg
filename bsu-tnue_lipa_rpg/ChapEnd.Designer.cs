@@ -38,23 +38,24 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(452, 9);
+            this.label1.Location = new System.Drawing.Point(251, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(535, 144);
+            this.label1.Size = new System.Drawing.Size(142, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Success!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // achievement_lbl
             // 
             this.achievement_lbl.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.achievement_lbl.ForeColor = System.Drawing.Color.White;
-            this.achievement_lbl.Location = new System.Drawing.Point(607, 167);
+            this.achievement_lbl.Location = new System.Drawing.Point(3, 0);
             this.achievement_lbl.Name = "achievement_lbl";
             this.achievement_lbl.Size = new System.Drawing.Size(229, 66);
             this.achievement_lbl.TabIndex = 2;
-            this.achievement_lbl.Text = "Achievement!";
+            this.achievement_lbl.Text = "Earned Money:";
             this.achievement_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chapterend_pbox

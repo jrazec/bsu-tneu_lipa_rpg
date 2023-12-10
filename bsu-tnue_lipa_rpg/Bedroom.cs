@@ -65,7 +65,8 @@ namespace bsu_tnue_lipa_rpg
 
             //To make the labels transparent 
             dg_bedroom.BackColor = Color.FromArgb(179, 0, 0, 0);
-
+            click_lbl.BackColor = Color.FromArgb(179, 0, 0, 0);
+            next_pbox.BackColor = Color.FromArgb(179, 0, 0, 0);
             //Display students Credentials
             ign_lbl.Text = $@"Hello, {ign}
 

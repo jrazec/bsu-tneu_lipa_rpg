@@ -33,10 +33,14 @@ namespace bsu_tnue_lipa_rpg
             update_lbl.Click += label3_Click;
             delete_lbl.Click += label4_Click;
             home_lbl.Click += home_lbl_Click;
+            Admin_Home ahome = new Admin_Home();
 
+            panel4.Controls.Add(ahome);
+            ahome.Dock = DockStyle.Fill;
+            ahome.Show();
         }
 
-     
+        
 
         private void create_lbl_Click(object sender, EventArgs e)
         {

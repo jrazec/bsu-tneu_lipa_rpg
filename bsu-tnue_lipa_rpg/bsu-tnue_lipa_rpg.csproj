@@ -465,6 +465,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OB_floors_uc\OB_fifthflr.resx">
       <DependentUpon>OB_fifthflr.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="OB_floors_uc\OB_firstflr.resx">
       <DependentUpon>OB_firstflr.cs</DependentUpon>

@@ -125,8 +125,8 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(224, 161);
             this.label7.TabIndex = 15;
-            this.label7.Text = "          Agno, John Razec M.\r\n\r\nProject Head and Leader\r\nConceptualizerist\r\nData" +
-    "base Developer and Architect\r\nBackend Developer\r\nSub-Front End Developer\r\n";
+            this.label7.Text = "          Agno, John Razec M.\r\n\r\nProject Head and Leader\r\nDatabase Developer and " +
+    "Architect\r\nBackend Developer\r\nSub-Front End Developer\r\n";
             // 
             // pictureBox8
             // 
@@ -145,7 +145,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(31, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(803, 158);
+            this.label6.Size = new System.Drawing.Size(803, 159);
             this.label6.TabIndex = 18;
             this.label6.Text = resources.GetString("label6.Text");
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
