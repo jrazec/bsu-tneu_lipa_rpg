@@ -633,6 +633,16 @@ namespace bsu_tnue_lipa_rpg.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap form137 {
+            get {
+                object obj = ResourceManager.GetObject("form137", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Guard {
             get {
                 object obj = ResourceManager.GetObject("Guard", resourceCulture);
@@ -973,9 +983,29 @@ namespace bsu_tnue_lipa_rpg.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap medical_record {
+            get {
+                object obj = ResourceManager.GetObject("medical-record", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap menu_icon {
             get {
                 object obj = ResourceManager.GetObject("menu-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mission_vision {
+            get {
+                object obj = ResourceManager.GetObject("mission-vision", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1216,6 +1246,46 @@ namespace bsu_tnue_lipa_rpg.Properties {
         internal static System.Drawing.Bitmap sir_dialogue {
             get {
                 object obj = ResourceManager.GetObject("sir-dialogue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sirbalazon_boyc {
+            get {
+                object obj = ResourceManager.GetObject("sirbalazon-boyc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sirbalazon_girlc {
+            get {
+                object obj = ResourceManager.GetObject("sirbalazon-girlc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sirtikyo_boyc {
+            get {
+                object obj = ResourceManager.GetObject("sirtikyo-boyc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sirtikyo_girlc {
+            get {
+                object obj = ResourceManager.GetObject("sirtikyo-girlc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

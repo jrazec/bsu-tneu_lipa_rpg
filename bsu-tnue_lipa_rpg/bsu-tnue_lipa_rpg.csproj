@@ -892,5 +892,26 @@
   <ItemGroup>
     <None Include="Resources\female-pajama-front.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form137.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-record.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mission-vision.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sirbalazon-boyc.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sirbalazon-girlc.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sirtikyo-boyc.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sirtikyo-girlc.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

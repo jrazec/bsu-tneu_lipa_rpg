@@ -31,7 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.proceed_pbox = new System.Windows.Forms.PictureBox();
             this.achievement_lbl = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.proceed_pbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -66,12 +68,22 @@
             this.achievement_lbl.Text = "Achiement!";
             this.achievement_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::bsu_tnue_lipa_rpg.Properties.Resources.sirtikyo_boyc;
+            this.pictureBox1.Location = new System.Drawing.Point(245, 400);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(263, 197);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // Chapter_End
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1439, 799);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.achievement_lbl);
             this.Controls.Add(this.proceed_pbox);
             this.Controls.Add(this.label1);
@@ -80,6 +92,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChapEnd";
             ((System.ComponentModel.ISupportInitialize)(this.proceed_pbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -89,5 +102,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox proceed_pbox;
         private System.Windows.Forms.Label achievement_lbl;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
