@@ -107,7 +107,7 @@
             this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.currency_lbl.Location = new System.Drawing.Point(776, 9);
             this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Size = new System.Drawing.Size(0, 43);
+            this.currency_lbl.Size = new System.Drawing.Size(0, 34);
             this.currency_lbl.TabIndex = 6;
             // 
             // day_lbl
@@ -296,7 +296,7 @@
             this.hinttext_lbl.Name = "hinttext_lbl";
             this.hinttext_lbl.Size = new System.Drawing.Size(341, 79);
             this.hinttext_lbl.TabIndex = 0;
-            this.hinttext_lbl.Text = "Hint goes here...";
+            this.hinttext_lbl.Text = "Try to pass through the guard.";
             this.hinttext_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Facade

@@ -312,7 +312,7 @@
             this.hinttext_lbl.Name = "hinttext_lbl";
             this.hinttext_lbl.Size = new System.Drawing.Size(341, 79);
             this.hinttext_lbl.TabIndex = 0;
-            this.hinttext_lbl.Text = "Hint goes here...";
+            this.hinttext_lbl.Text = "Go outside the building to check the hint.";
             this.hinttext_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CECS_bldg

@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.hint_lbl = new System.Windows.Forms.Label();
             this.hint_pbox = new System.Windows.Forms.PictureBox();
-            this.currency_lbl = new System.Windows.Forms.Label();
             this.day_lbl = new System.Windows.Forms.Label();
             this.menu_pbox = new System.Windows.Forms.PictureBox();
             this.obcontainer_panel = new System.Windows.Forms.Panel();
@@ -59,7 +58,6 @@
             this.panel1.BackColor = System.Drawing.Color.Maroon;
             this.panel1.Controls.Add(this.hint_lbl);
             this.panel1.Controls.Add(this.hint_pbox);
-            this.panel1.Controls.Add(this.currency_lbl);
             this.panel1.Controls.Add(this.day_lbl);
             this.panel1.Controls.Add(this.menu_pbox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -90,17 +88,6 @@
             this.hint_pbox.TabIndex = 21;
             this.hint_pbox.TabStop = false;
             this.hint_pbox.Click += new System.EventHandler(this.hint_pbox_Click);
-            // 
-            // currency_lbl
-            // 
-            this.currency_lbl.AutoSize = true;
-            this.currency_lbl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.currency_lbl.Location = new System.Drawing.Point(1061, 8);
-            this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Size = new System.Drawing.Size(83, 34);
-            this.currency_lbl.TabIndex = 18;
-            this.currency_lbl.Text = "₱ 0.00";
             // 
             // day_lbl
             // 
@@ -250,7 +237,7 @@
             this.hinttext_lbl.Name = "hinttext_lbl";
             this.hinttext_lbl.Size = new System.Drawing.Size(341, 79);
             this.hinttext_lbl.TabIndex = 0;
-            this.hinttext_lbl.Text = "Hint goes here...";
+            this.hinttext_lbl.Text = "Go outside the building to check the hint.";
             this.hinttext_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Old_Bldg
@@ -294,7 +281,6 @@
         private System.Windows.Forms.Label hinttext_lbl;
         private System.Windows.Forms.PictureBox menu_pbox;
         private System.Windows.Forms.Label day_lbl;
-        private System.Windows.Forms.Label currency_lbl;
         private System.Windows.Forms.PictureBox hint_pbox;
         private System.Windows.Forms.Label hint_lbl;
         public System.Windows.Forms.Label return_label;
