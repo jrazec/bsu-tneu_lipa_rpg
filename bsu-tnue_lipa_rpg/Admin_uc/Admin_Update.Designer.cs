@@ -87,7 +87,7 @@
             // pass_txt
             // 
             this.pass_txt.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pass_txt.Location = new System.Drawing.Point(307, 351);
+            this.pass_txt.Location = new System.Drawing.Point(307, 326);
             this.pass_txt.Name = "pass_txt";
             this.pass_txt.Size = new System.Drawing.Size(221, 35);
             this.pass_txt.TabIndex = 26;
@@ -141,11 +141,11 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(380, 389);
+            this.label10.Location = new System.Drawing.Point(358, 364);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(83, 21);
+            this.label10.Size = new System.Drawing.Size(117, 21);
             this.label10.TabIndex = 32;
-            this.label10.Text = "PASSWORD";
+            this.label10.Text = "NEW PASSWORD";
             // 
             // up_search_btn
             // 
@@ -167,9 +167,9 @@
             this.update_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.update_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update_btn.ForeColor = System.Drawing.Color.White;
-            this.update_btn.Location = new System.Drawing.Point(307, 426);
+            this.update_btn.Location = new System.Drawing.Point(307, 408);
             this.update_btn.Name = "update_btn";
-            this.update_btn.Size = new System.Drawing.Size(220, 46);
+            this.update_btn.Size = new System.Drawing.Size(220, 60);
             this.update_btn.TabIndex = 34;
             this.update_btn.Text = "UPDATE";
             this.update_btn.UseVisualStyleBackColor = false;
