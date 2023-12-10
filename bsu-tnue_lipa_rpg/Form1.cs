@@ -137,7 +137,6 @@ namespace bsu_tnue_lipa_rpg
                     CREATE TABLE IF NOT EXISTS gameplay_records (
                         gameplay_id SERIAL PRIMARY KEY,
                         date_finished DATE,
-                        total_time_spent TIME,
                         status BOOLEAN,
                         sr_code VARCHAR(8) REFERENCES students(sr_code),
                         task_id INT REFERENCES tasks(task_id)

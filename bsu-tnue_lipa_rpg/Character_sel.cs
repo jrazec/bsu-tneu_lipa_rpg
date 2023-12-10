@@ -200,8 +200,8 @@ namespace bsu_tnue_lipa_rpg
             try
             {
                 mySqlConnection.Open();
-                string updateChar = $@"INSERT INTO gameplay_records(sr_code,task_id,status)
-                                       VALUES ('{Form1.STUDENT_USER_SR_CODE}',1,false);
+                string updateChar = $@"INSERT INTO gameplay_records(sr_code,task_id,status, date_finished)
+                                       VALUES ('{Form1.STUDENT_USER_SR_CODE}',1,false, CURRENT_DATE);
                                         
                                        UPDATE students SET current_money=850.00 WHERE sr_code='{Form1.STUDENT_USER_SR_CODE}';";
                 MySqlCommand updtCharCmd = new MySqlCommand(updateChar, mySqlConnection);

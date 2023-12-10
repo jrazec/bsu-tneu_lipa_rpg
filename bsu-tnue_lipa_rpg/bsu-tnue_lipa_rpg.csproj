@@ -913,5 +913,11 @@
   <ItemGroup>
     <None Include="Resources\sirtikyo-girlc.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sirbalazon-boyc-org.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sirbalazon-girlc-org.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1263,9 +1263,29 @@ namespace bsu_tnue_lipa_rpg.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sirbalazon_boyc_org {
+            get {
+                object obj = ResourceManager.GetObject("sirbalazon-boyc-org", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sirbalazon_girlc {
             get {
                 object obj = ResourceManager.GetObject("sirbalazon-girlc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sirbalazon_girlc_org {
+            get {
+                object obj = ResourceManager.GetObject("sirbalazon-girlc-org", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

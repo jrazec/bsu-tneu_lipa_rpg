@@ -19,6 +19,45 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
         {
             InitializeComponent();
             selectRewards();
+            label1.BackColor = Color.FromArgb(0, 0, 0, 0);
+            achievement_lbl.BackColor = Color.FromArgb(0, 0, 0, 0);
+            proceed_pbox.BackColor = Color.FromArgb(0, 0, 0, 0);
+
+            if (Bedroom.instance.DAY_ID == 1)
+            {
+                if (Bedroom.instance.CHARAC_ID == 1)
+                {
+                    chapterend_pbox.Image = Properties.Resources.sirtikyo_boyc;
+                }
+                else if (Bedroom.instance.CHARAC_ID == 2)
+                {
+                    chapterend_pbox.Image = Properties.Resources.sirtikyo_girlc;
+                }
+            }
+            else if (Bedroom.instance.DAY_ID == 2)
+            {
+                chapterend_pbox.Image = Properties.Resources.mission_vision;
+            }
+            else if (Bedroom.instance.DAY_ID == 3)
+            {
+                if (Bedroom.instance.CHARAC_ID == 1)
+                {
+                    chapterend_pbox.Image = Properties.Resources.sirbalazon_boyc_org;
+                }
+                else if (Bedroom.instance.CHARAC_ID == 2)
+                {
+                    chapterend_pbox.Image = Properties.Resources.sirbalazon_girlc_org;
+                }
+            }
+            else if (Bedroom.instance.DAY_ID == 4)
+            {
+                chapterend_pbox.Image = Properties.Resources.form137;
+            }
+            else if (Bedroom.instance.DAY_ID == 5)
+            {
+                chapterend_pbox.Image = Properties.Resources.medical_record;
+            }
+            
         }
 
         private void proceed_pbox_Click(object sender, EventArgs e)
