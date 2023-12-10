@@ -30,6 +30,7 @@ namespace bsu_tnue_lipa_rpg
             InitializeComponent();
             Bedroom.instance.characBack(facade_charac);
             instance = this;
+            day_lbl.Text = Bedroom.instance.DAY;
 
         }
         bool openMenu = false;
@@ -167,6 +168,14 @@ namespace bsu_tnue_lipa_rpg
             Bedroom.instance.hoverReset(tasks_lbl);
 
             //code to return to main menu
+            this.Hide();
+            this.Close();
+            Gameplay_start gameplay_Start = new Gameplay_start();
+            gameplay_Start.ShowDialog();
+            CECS_bldg.instance.Close();
+            Old_Bldg.instance.Close();
+            Map.instance.Close();
+            Bedroom.instance.Close();
         }
         #endregion
 
@@ -214,7 +223,7 @@ namespace bsu_tnue_lipa_rpg
 
                         if (Gameplay_start.free)
                         {
-                            MessageBox.Show("Baet aq today ehheheheehheeheheheh la tao dyan");
+                            MessageBox.Show("Its Free day!");
                             Map gotomap = new Map();
                             this.Hide();
                             gotomap.ShowDialog();
@@ -240,7 +249,7 @@ namespace bsu_tnue_lipa_rpg
                                 //Guard saying wrong garments for monday
 
                                 facade_charac.Location = new Point(277, 322);
-                                MessageBox.Show("Ay pagkakaasbar, derederetcho eh mali naman yaong baro. Ay ikay umuwi muna sainyo't ikay ndi ko papapasuken. Kainaman na naman gang bata ire, laking laki nay tuong hindi pa maalam magsuot ng tamang damet. Ay wag sasama ang luob, at ikay pinagsasabihan ko laang namay nang ikaw ren ay matuto. Ay sya uwi muna sa inyong tinamaris ikaw. ", "Kausapin kita..", MessageBoxButtons.OK);
+                                MessageBox.Show("Make sure to wear your proper garments for  today!", "Wear Proper Garments!", MessageBoxButtons.OK);
 
                             }
                         }

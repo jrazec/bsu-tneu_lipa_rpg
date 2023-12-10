@@ -82,6 +82,7 @@ namespace bsu_tnue_lipa_rpg
             displayItemDesc();
             day_lbl.Text = Bedroom.instance.DAY;
             instance = this;
+            
         }
         private void addUC(UserControl uc)
         {

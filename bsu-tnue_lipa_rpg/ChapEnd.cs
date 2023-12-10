@@ -76,6 +76,7 @@ namespace bsu_tnue_lipa_rpg.Closet_garments_uc
                 Bedroom bd = new Bedroom();
                 bd.ShowDialog();
                 this.Close();
+
             }
         }
 

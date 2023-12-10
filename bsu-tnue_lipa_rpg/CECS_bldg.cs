@@ -209,6 +209,11 @@ namespace bsu_tnue_lipa_rpg
             Bedroom.instance.hoverReset(tasks_lbl);
 
             //code to return to main menu
+            this.Hide();
+            this.Close();
+            Gameplay_start gameplay_Start = new Gameplay_start();
+            gameplay_Start.ShowDialog();
+
         }
 
         #endregion

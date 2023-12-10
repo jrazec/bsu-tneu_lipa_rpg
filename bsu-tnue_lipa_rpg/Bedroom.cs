@@ -71,6 +71,11 @@ namespace bsu_tnue_lipa_rpg
 
 {firstName + " " + lastName} | {Form1.STUDENT_USER_SR_CODE}";
 
+            Closet.Garments_Worn[0, 0] = "";
+            Closet.Garments_Worn[0, 1] = "";
+            Closet.Garments_Worn[0, 2] = "";
+            Closet.Garments_Worn[0, 3] = "";
+
 
         }
         bool openMenu = false;
@@ -247,6 +252,14 @@ namespace bsu_tnue_lipa_rpg
             hoverReset(tasks_lbl);
 
             //code to return to main menu
+            this.Hide();
+            this.Close(); 
+            Gameplay_start gameplay_Start = new Gameplay_start();
+            gameplay_Start.ShowDialog();
+            CECS_bldg.instance.Close();
+            Old_Bldg.instance.Close();
+            Map.instance.Close();
+            Facade.instance.Close();
         }
 
 

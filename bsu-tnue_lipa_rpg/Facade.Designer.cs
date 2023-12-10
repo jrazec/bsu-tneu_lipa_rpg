@@ -107,9 +107,8 @@
             this.currency_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.currency_lbl.Location = new System.Drawing.Point(776, 9);
             this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Size = new System.Drawing.Size(83, 34);
+            this.currency_lbl.Size = new System.Drawing.Size(0, 43);
             this.currency_lbl.TabIndex = 6;
-            this.currency_lbl.Text = "₱ 0.00";
             // 
             // day_lbl
             // 

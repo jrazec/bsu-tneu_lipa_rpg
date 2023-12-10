@@ -230,6 +230,14 @@ namespace bsu_tnue_lipa_rpg
             Bedroom.instance.hoverReset(tasks_lbl);
 
             //code to return to main menu
+            this.Hide();
+            this.Close();
+            Gameplay_start gameplay_Start = new Gameplay_start();
+            gameplay_Start.ShowDialog();
+            CECS_bldg.instance.Close();
+            Old_Bldg.instance.Close();
+            Facade.instance.Close();
+            Bedroom.instance.Close();
         }
         #endregion
         private void mapWalkTimer_Tick(object sender, EventArgs e)
