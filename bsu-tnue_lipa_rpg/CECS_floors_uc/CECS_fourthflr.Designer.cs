@@ -150,6 +150,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             // padayon_btn
             // 
             this.padayon_btn.BackColor = System.Drawing.Color.Maroon;
+            this.padayon_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.padayon_btn.Enabled = false;
             this.padayon_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.padayon_btn.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -179,6 +180,7 @@ namespace bsu_tnue_lipa_rpg.CECS_floors_uc
             // success_door
             // 
             this.success_door.BackColor = System.Drawing.Color.Transparent;
+            this.success_door.Cursor = System.Windows.Forms.Cursors.Hand;
             this.success_door.Enabled = false;
             this.success_door.Location = new System.Drawing.Point(981, 176);
             this.success_door.Name = "success_door";
