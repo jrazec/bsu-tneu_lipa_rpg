@@ -42,6 +42,7 @@
             this.create_btn.TabIndex = 22;
             this.create_btn.Text = "CREATE";
             this.create_btn.UseVisualStyleBackColor = true;
+            this.create_btn.Click += new System.EventHandler(this.create_btn_Click);
             // 
             // create_pbox
             // 
