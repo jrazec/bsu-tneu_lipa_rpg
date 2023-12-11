@@ -1,5 +1,5 @@
 ## Documentation
-
+NOTE: **if the zip file FAILED TO DOWNLOAD, try accessing this instead:** https://github.com/jrazec/game_download
 ## PROBLEM:
 Navigating a new university campus poses a significant challenge for incoming freshmen or first-year students—specifically, in Batangas State University-TNEU Lipa Campus. The intricate maze of classrooms, offices, and facilities often becomes an intimidating obstacle in their early academic journey. The unfamiliar layout can easily overwhelm newcomers, hindering their ability to accustom and find their way around swiftly. 
 
